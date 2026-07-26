@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse
 
 from .auth_service import get_admin_user, get_current_user
-from .integrated_tests_service import (
+from .integrated_tests_supabase_service import (
     build_default_test_questions,
     build_standard_test_template,
     create_integrated_test,

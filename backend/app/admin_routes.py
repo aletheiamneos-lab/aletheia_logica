@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import FileResponse
 
 from .auth_service import get_admin_user
-from .integrated_tests_service import (
+from .integrated_tests_supabase_service import (
     get_admin_pdf_path,
     get_admin_report,
     get_admin_report_email_delivery,

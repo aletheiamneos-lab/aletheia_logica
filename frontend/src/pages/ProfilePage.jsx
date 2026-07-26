@@ -31,6 +31,7 @@ import {
 import useAppearancePreferences from "../components/settings/useAppearancePreferences"
 import { useAuth } from "../context/useAuth"
 import Button from "../components/ui/Button"
+import AllowedStudentsAdminPanel from "../components/testing/AllowedStudentsAdminPanel"
 
 const reportGridSx = {
   border: 0,
@@ -1099,6 +1100,8 @@ function ProfilePage() {
           </div>
         </section>
       ) : null}
+
+      <AllowedStudentsAdminPanel />
     </div>
   )
 }

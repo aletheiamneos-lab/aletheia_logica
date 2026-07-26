@@ -3,7 +3,7 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends
 
 from .auth_service import get_current_user
-from .integrated_tests_service import submit_test
+from .integrated_tests_supabase_service import submit_test
 from .schemas import SubmitTestRequest
 
 router = APIRouter(tags=["submission"])
