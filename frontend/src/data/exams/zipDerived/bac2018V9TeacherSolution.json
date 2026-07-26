@@ -1,0 +1,108 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2018_v9",
+  "examId": "bac_logica_2018_v9",
+  "visibility": "teacher_only",
+  "source": "Barem oficial 2018 - Varianta 9",
+  "subiectul_I": {
+    "A": {
+      "answers": {
+        "1": "b",
+        "2": "b",
+        "3": "d",
+        "4": "a",
+        "5": "d",
+        "6": "c",
+        "7": "b",
+        "8": "d",
+        "9": "a",
+        "10": "c"
+      },
+      "points": "10x2p=20p"
+    },
+    "B": {
+      "diagram": "Reprezentare Euler corecta pentru patru termeni",
+      "answers": {
+        "a": "A",
+        "b": "F",
+        "c": "A",
+        "d": "F",
+        "e": "F",
+        "f": "A"
+      },
+      "points": "4p + 6x1p=10p"
+    }
+  },
+  "subiectul_II": {
+    "A": {
+      "formal": {
+        "1": "SaP",
+        "3": "SoP"
+      },
+      "points": "2x1p=2p"
+    },
+    "B": {
+      "formal_targets": [
+        "contrara propozitiei 1: SeP",
+        "contradictoria propozitiei 2: SeP",
+        "subcontrara propozitiei 3: SiP",
+        "subalterna propozitiei 4: SoP"
+      ],
+      "points": "8p"
+    },
+    "C": {
+      "task": "conversiune si obversiune pentru propozitiile 1 si 4",
+      "points": "8p"
+    },
+    "D": {
+      "formal": "obversa conversiei propozitiei 2: Po~S",
+      "points": "4p"
+    },
+    "E": {
+      "opinionsFormal": {
+        "X": "SeP -> PoS",
+        "Y": "SoP -> PoS"
+      },
+      "teacherNote": "Conform baremului, se puncteaza formalizarea, corectitudinea si explicatia rationamentului cerut.",
+      "points": "8p"
+    }
+  },
+  "subiectul_III": {
+    "A": {
+      "modes": {
+        "aaa-1": {
+          "schema": [
+            "MaP",
+            "SaM",
+            "SaP"
+          ],
+          "validity": "valid"
+        },
+        "aii-4": {
+          "schema": [
+            "PaM",
+            "MaS",
+            "SiP"
+          ],
+          "validity": "valid"
+        }
+      },
+      "points": "14p"
+    },
+    "B": {
+      "requirement": "Silogism valid pentru: Toate pisicile sunt mamifere.",
+      "points": "6p"
+    },
+    "C": {
+      "answers": {
+        "a": "termen mediu: M = mamifer",
+        "b": "premisa majora: Nicio pasare nu este mamifer"
+      },
+      "points": "4p"
+    },
+    "D": {
+      "definedTerm": "cerc",
+      "definitionGiven": "Cercul este figura geometrica plana care nu este nici romb, nici dreptunghi.",
+      "scoring": "2p regula incalcata + 2p alta regula + 2p definitie construita"
+    }
+  }
+}

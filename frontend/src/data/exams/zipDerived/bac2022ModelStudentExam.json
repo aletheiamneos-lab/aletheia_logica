@@ -1,0 +1,583 @@
+{
+  "examId": "bac_logica_2022_model",
+  "title": "BAC Logica 2022 - Model",
+  "mode": "student_exam",
+  "visibility": "student",
+  "points": {
+    "subjectI": 30,
+    "subjectII": 30,
+    "subjectIII": 30,
+    "office": 10,
+    "total": 100
+  },
+  "durationMinutes": 180,
+  "sourceDocuments": {
+    "subject": "Examenul national de bacalaureat 2022_Model.pdf",
+    "barem": "Examenul national de bacalaureat 2022_Model_BAREM.pdf"
+  },
+  "studentRules": {
+    "noSolutionsInStudentJson": true,
+    "placeholdersAreHintsOnly": true,
+    "teacherSolutionHidden": true,
+    "allowSaveProgress": true,
+    "finalizeButton": {
+      "enabled": true,
+      "label": "Finalizeaza testul"
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 20,
+          "officialPrompt": "Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "number": "1",
+              "prompt": "Intr-o demonstratie corecta, teza de demonstrat:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "este neclar formulata",
+                "b": "este cel putin o propozitie probabila",
+                "c": "este o propozitie infirmata",
+                "d": "se modifica pe parcursul demonstratiei"
+              }
+            },
+            {
+              "id": "I_A_2",
+              "number": "2",
+              "prompt": "Rationamentul „Deoarece niciun lucru constructiv nu este discutie tensionata, urmeaza ca unele discutii tensionate nu sunt constructive” este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "deductiv imediat, de tip conversiune prin accident",
+                "b": "inductiv incomplet, de tip inductie stiintifica",
+                "c": "deductiv imediat, de tip obversiune",
+                "d": "deductiv mediat, de tip silogism"
+              }
+            },
+            {
+              "id": "I_A_3",
+              "number": "3",
+              "prompt": "Termenii examen si examen final se afla in raport de:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "identitate",
+                "b": "incrucisare",
+                "c": "contrarietate",
+                "d": "ordonare"
+              }
+            },
+            {
+              "id": "I_A_4",
+              "number": "4",
+              "prompt": "In cadrul propozitiei „Unii copii sunt dornici sa mearga la scoala” cuantorul este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "singular",
+                "b": "universal",
+                "c": "particular",
+                "d": "individual"
+              }
+            },
+            {
+              "id": "I_A_5",
+              "number": "5",
+              "prompt": "Incalcarea regulii omogenitatii, in cazul clasificarii, presupune ca:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "intr-o operatie sa se foloseasca simultan mai multe criterii",
+                "b": "intre clasele aflate pe aceeasi treapta sa existe raporturi de ordonare",
+                "c": "deosebirile dintre obiectele aceleiasi clase sa fie mai importante decat asemanarile",
+                "d": "in clasele obtinute sa nu se regaseasca fiecare dintre elementele initiale ale clasificarii"
+              }
+            },
+            {
+              "id": "I_A_6",
+              "number": "6",
+              "prompt": "Din punct de vedere intensional, termenul test de chimie este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "abstract, absolut",
+                "b": "concret, compus",
+                "c": "negativ, precis",
+                "d": "vid, vag"
+              }
+            },
+            {
+              "id": "I_A_7",
+              "number": "7",
+              "prompt": "Concluzia unei inductii incomplete este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "probabila si are caracter amplificator",
+                "b": "certa/sigura si are caracter amplificator",
+                "c": "probabila si are caracter diminuator",
+                "d": "certa/sigura si are caracter diminuator"
+              }
+            },
+            {
+              "id": "I_A_8",
+              "number": "8",
+              "prompt": "Inductia completa este o argumentare care presupune:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "simpla repetare a unor constatari si absenta unui contra-exemplu",
+                "b": "o concluzie cu caracter cert",
+                "c": "o clasa cu un numar infinit de obiecte",
+                "d": "o concluzie probabila"
+              }
+            },
+            {
+              "id": "I_A_9",
+              "number": "9",
+              "prompt": "Seria de termeni ordonati descrescator din punct de vedere extensional este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "randunica, pasare migratoare, pasare, animal",
+                "b": "pasare, animal, randunica, pasare migratoare",
+                "c": "pasare migratoare, animal, randunica, pasare",
+                "d": "animal, pasare, pasare migratoare, randunica"
+              }
+            },
+            {
+              "id": "I_A_10",
+              "number": "10",
+              "prompt": "Propozitia categorica „Unele cirese sunt amare” este:",
+              "inputType": "single_choice",
+              "points": 2,
+              "options": {
+                "a": "particulara afirmativa",
+                "b": "particulara negativa",
+                "c": "universala afirmativa",
+                "d": "universala negativa"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi intre termeni",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C, D si E astfel incat termenii B si C sunt in raport de incrucisare; termenii A si D sunt in raport de identitate, fiind subordonati intersectiei dintre termenii B si C; termenul E se afla in raport de incrucisare cu termenii B si C, dar, in acelasi timp, in raport de opozitie cu termenii A si D.",
+          "items": [
+            {
+              "id": "I_B_diagram",
+              "title": "Diagrama Euler",
+              "points": 2,
+              "inputType": "hybrid_diagram",
+              "requiresDiagram": true,
+              "diagramId": "diagram_I_B_euler_2022_model",
+              "studentTask": "Reprezinta, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre cei cinci termeni.",
+              "inputConfig": {
+                "label": "Diagrama Euler",
+                "helperText": "Deseneaza aici raporturile dintre termenii A, B, C, D si E. Poti desena direct sau incarca o imagine.",
+                "canvas": {
+                  "enabled": true,
+                  "width": 720,
+                  "height": 420,
+                  "tools": [
+                    "pen",
+                    "eraser",
+                    "undo",
+                    "clear",
+                    "save"
+                  ],
+                  "allowTextLabels": true,
+                  "defaultLabels": [
+                    "A",
+                    "B",
+                    "C",
+                    "D",
+                    "E"
+                  ],
+                  "saveFormat": [
+                    "strokes_json",
+                    "png_export"
+                  ]
+                },
+                "upload": {
+                  "enabled": true,
+                  "acceptedTypes": [
+                    "image/png",
+                    "image/jpeg",
+                    "image/webp",
+                    "application/pdf"
+                  ],
+                  "maxFileSizeMb": 10
+                }
+              }
+            },
+            {
+              "id": "I_B_tf",
+              "title": "Stabilirea valorii de adevar",
+              "points": 8,
+              "inputType": "true_false_group",
+              "items": [
+                {
+                  "id": "I_B_a",
+                  "label": "a",
+                  "statement": "Niciun E nu este D."
+                },
+                {
+                  "id": "I_B_b",
+                  "label": "b",
+                  "statement": "Toti A sunt B."
+                },
+                {
+                  "id": "I_B_c",
+                  "label": "c",
+                  "statement": "Unii C nu sunt B."
+                },
+                {
+                  "id": "I_B_d",
+                  "label": "d",
+                  "statement": "Unii E sunt A."
+                },
+                {
+                  "id": "I_B_e",
+                  "label": "e",
+                  "statement": "Unii B nu sunt C."
+                },
+                {
+                  "id": "I_B_f",
+                  "label": "f",
+                  "statement": "Toti C sunt D."
+                },
+                {
+                  "id": "I_B_g",
+                  "label": "g",
+                  "statement": "Niciun C nu este E."
+                },
+                {
+                  "id": "I_B_h",
+                  "label": "h",
+                  "statement": "Unii B sunt E."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Se dau urmatoarele propozitii:",
+        "items": [
+          "1. Nicio masina de epoca nu este ieftina.",
+          "2. Unii profesionisti sunt medici.",
+          "3. Unii elevi de clasa a XII-a nu sunt premianti.",
+          "4. Toate filmele istorice sunt educative."
+        ]
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi in patratul logic",
+          "points": 8,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, contrara propozitiei 1, subcontrara propozitiei 2, contradictoria propozitiei 3 si subalterna propozitiei 4.",
+          "items": [
+            {
+              "id": "II_A_1",
+              "title": "Contrara propozitiei 1",
+              "points": 2,
+              "answerInputs": [
+                {
+                  "fieldId": "formal",
+                  "inputType": "short_text",
+                  "placeholder": "Scrie forma logica. Exemplu de format: SaP"
+                },
+                {
+                  "fieldId": "natural",
+                  "inputType": "structured_text",
+                  "placeholder": "Scrie propozitia completa in limbaj natural."
+                }
+              ]
+            },
+            {
+              "id": "II_A_2",
+              "title": "Subcontrara propozitiei 2",
+              "points": 2,
+              "answerInputs": [
+                {
+                  "fieldId": "formal",
+                  "inputType": "short_text",
+                  "placeholder": "Scrie forma logica. Exemplu de format: SoP"
+                },
+                {
+                  "fieldId": "natural",
+                  "inputType": "structured_text",
+                  "placeholder": "Scrie propozitia completa in limbaj natural."
+                }
+              ]
+            },
+            {
+              "id": "II_A_3",
+              "title": "Contradictoria propozitiei 3",
+              "points": 2,
+              "answerInputs": [
+                {
+                  "fieldId": "formal",
+                  "inputType": "short_text",
+                  "placeholder": "Scrie forma logica. Exemplu de format: SaP"
+                },
+                {
+                  "fieldId": "natural",
+                  "inputType": "structured_text",
+                  "placeholder": "Scrie propozitia completa in limbaj natural."
+                }
+              ]
+            },
+            {
+              "id": "II_A_4",
+              "title": "Subalterna propozitiei 4",
+              "points": 2,
+              "answerInputs": [
+                {
+                  "fieldId": "formal",
+                  "inputType": "short_text",
+                  "placeholder": "Scrie forma logica. Exemplu de format: SiP"
+                },
+                {
+                  "fieldId": "natural",
+                  "inputType": "structured_text",
+                  "placeholder": "Scrie propozitia completa in limbaj natural."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune si obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 1 si 2, atat in limbaj formal, cat si in limbaj natural.",
+          "items": [
+            {
+              "id": "II_B_p1",
+              "title": "Propozitia 1",
+              "inputType": "operation_pair",
+              "points": 4
+            },
+            {
+              "id": "II_B_p2",
+              "title": "Propozitia 2",
+              "inputType": "operation_pair",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operatii compuse",
+          "points": 6,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei contradictoriei propozitiei 3, respectiv, obversa contrarei propozitiei 4.",
+          "items": [
+            {
+              "id": "II_C_1",
+              "title": "Conversa obversei contradictoriei propozitiei 3",
+              "points": 3,
+              "inputType": "formal_and_natural"
+            },
+            {
+              "id": "II_C_2",
+              "title": "Obversa contrarei propozitiei 4",
+              "points": 3,
+              "inputType": "formal_and_natural"
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza rationamentelor elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X si Y, opineaza astfel. Pornind de la aceasta situatie: scrieti opiniile in limbaj formal, precizati corectitudinea/incorectitudinea si explicati rationamentul elevului X.",
+          "contextBlock": {
+            "items": [
+              "X: Ideea conform careia toti cei orgoliosi sunt prea siguri pe ei insisi, se poate deduce din faptul ca toti cei prea siguri pe ei insisi sunt orgoliosi.",
+              "Y: Daca unii oratori nu sunt experimentati, atunci unii oratori sunt neexperimentati."
+            ]
+          },
+          "items": [
+            {
+              "id": "II_D_X",
+              "title": "Elevul X",
+              "points": 4,
+              "inputType": "formal_validity_explanation"
+            },
+            {
+              "id": "II_D_Y",
+              "title": "Elevul Y",
+              "points": 4,
+              "inputType": "formal_validity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice: aoo-2, aaa-4",
+          "points": 18,
+          "items": [
+            {
+              "id": "III_A_schema_aoo_2",
+              "title": "Schema aoo-2",
+              "points": 2,
+              "inputType": "syllogism_schema",
+              "fields": [
+                "majorPremise",
+                "minorPremise",
+                "conclusion"
+              ]
+            },
+            {
+              "id": "III_A_schema_aaa_4",
+              "title": "Schema aaa-4",
+              "points": 2,
+              "inputType": "syllogism_schema",
+              "fields": [
+                "majorPremise",
+                "minorPremise",
+                "conclusion"
+              ]
+            },
+            {
+              "id": "III_A_natural",
+              "title": "Silogism in limbaj natural",
+              "points": 4,
+              "inputType": "long_text",
+              "placeholder": "Construieste un silogism in limbaj natural care respecta una dintre scheme."
+            },
+            {
+              "id": "III_A_venn_aoo_2",
+              "title": "Verificare Venn - aoo-2",
+              "points": 3,
+              "inputType": "hybrid_diagram",
+              "requiresDiagram": true,
+              "diagramId": "diagram_III_A_aoo_2_venn_2022_model"
+            },
+            {
+              "id": "III_A_venn_aaa_4",
+              "title": "Verificare Venn - aaa-4",
+              "points": 3,
+              "inputType": "hybrid_diagram",
+              "requiresDiagram": true,
+              "diagramId": "diagram_III_A_aaa_4_venn_2022_model"
+            },
+            {
+              "id": "III_A_decisions",
+              "title": "Decizie validitate",
+              "points": 2,
+              "inputType": "validity_decision_group",
+              "items": [
+                "aoo-2",
+                "aaa-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati propozitia „Unele romane de aventuri nu sunt interesante pentru adolescenti”.",
+          "items": [
+            {
+              "id": "III_B_answer",
+              "inputType": "formal_and_natural_long",
+              "points": 6
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "contextBlock": {
+            "items": [
+              "Este adevarat ca unele lectii de logica sunt greu de invatat, stiut fiind faptul ca unele lectii ce contin informatii mai tehnice sunt lectii de logica si ca toate lectiile ce contin informatii mai tehnice sunt greu de invatat."
+            ]
+          },
+          "items": [
+            {
+              "id": "III_C_tf",
+              "inputType": "true_false_group",
+              "points": 4,
+              "items": [
+                {
+                  "id": "III_C_1",
+                  "label": "1",
+                  "statement": "Termenul mediu este distribuit numai in premisa majora."
+                },
+                {
+                  "id": "III_C_2",
+                  "label": "2",
+                  "statement": "Predicatul logic al concluziei este reprezentat de termenul „lectii de logica”."
+                },
+                {
+                  "id": "III_C_3",
+                  "label": "3",
+                  "statement": "Concluzia silogismului este o propozitie universala afirmativa."
+                },
+                {
+                  "id": "III_C_4",
+                  "label": "4",
+                  "statement": "Termenul minor este distribuit in concluzie, dar nedistribuit in premisa."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definire",
+          "points": 6,
+          "contextBlock": {
+            "items": [
+              "Educatia este cel mai valoros dar oferit oamenilor de catre zei."
+            ]
+          },
+          "items": [
+            {
+              "id": "III_D_1",
+              "title": "Regula incalcata",
+              "points": 2,
+              "inputType": "long_text",
+              "placeholder": "Mentioneaza regula de corectitudine incalcata."
+            },
+            {
+              "id": "III_D_2",
+              "title": "Alta regula si definitie construita",
+              "points": 4,
+              "inputType": "long_text",
+              "placeholder": "Precizeaza alta regula si construieste o definitie care o incalca, avand ca definit termenul educatie."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

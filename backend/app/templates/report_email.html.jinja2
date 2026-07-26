@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platforma de Logică - Raport elev</title>
+  <style>
+    :root {
+      --blue: #256ef1;
+      --navy: #0b1b4d;
+      --navy-strong: #102a66;
+      --secondary-text: #23345d;
+      --line: #d7e2f4;
+      --pdf-panel: #f3f8ff;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+    body {
+      padding: 24px;
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .email-card {
+      width: 760px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .header {
+      position: relative;
+      height: 136px;
+      padding: 36px 52px;
+      background: transparent;
+    }
+    .header-dots {
+      position: absolute;
+      inset: 0;
+      opacity: .7;
+      background:
+        radial-gradient(circle at 88% 20%, rgba(37,110,241,.18) 0 2px, transparent 3px),
+        radial-gradient(circle at 78% 50%, rgba(37,110,241,.2) 0 2px, transparent 3px);
+    }
+    .header::after {
+      content: none;
+    }
+    .header-row {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { display: flex; align-items: center; gap: 28px; }
+    .brand-title {
+      margin: 0;
+      color: var(--navy-strong);
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .header-icon { color: var(--blue); flex-shrink: 0; }
+    .content { padding: 42px 52px; }
+    .greeting {
+      margin: 0 0 22px;
+      color: var(--navy-strong);
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .paragraph {
+      margin: 0 0 12px;
+      color: var(--secondary-text);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    .paragraph.last { margin-bottom: 44px; }
+    .score-row {
+      margin: 44px 0 56px;
+      display: grid;
+      grid-template-columns: 300px 1px minmax(0, 1fr);
+      gap: 34px;
+      align-items: center;
+    }
+    .score-box {
+      position: relative;
+      width: 245px;
+      height: 245px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .score-text { position: absolute; text-align: center; }
+    .score-value {
+      color: var(--blue);
+      font-size: 58px;
+      line-height: 1;
+      font-weight: 800;
+    }
+    .score-value span { font-size: 36px; }
+    .score-label {
+      margin-top: 12px;
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .score-divider { width: 1px; height: 224px; background: var(--line); }
+    .meta { display: flex; flex-direction: column; gap: 36px; min-width: 0; }
+    .meta-row { display: flex; align-items: center; gap: 20px; min-width: 0; }
+    .meta-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .meta-label { margin-bottom: 6px; color: #34456f; font-size: 15px; }
+    .meta-value {
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.28;
+      overflow-wrap: anywhere;
+    }
+    .section-title {
+      margin: 0 0 30px;
+      color: var(--blue);
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 42px;
+    }
+    .feature {
+      min-height: 112px;
+      padding: 0 18px;
+      text-align: center;
+      color: var(--navy);
+      border-right: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature:last-child { border-right: 0; }
+    .feature-icon { margin-bottom: 16px; color: var(--blue); }
+    .feature-text { white-space: pre-line; font-size: 15px; line-height: 1.35; }
+    .download-box {
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      padding: 20px 28px;
+      border: 1px solid #cfe0ff;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--navy);
+      margin-bottom: 44px;
+    }
+    .download-title { margin-bottom: 10px; font-size: 18px; font-weight: 800; }
+    .download-subtitle {
+      color: var(--secondary-text);
+      font-size: 15px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
+    .signature { margin: 0 0 28px; color: var(--navy); font-size: 16px; }
+    .footer-brain { margin-left: 22px; color: #9dc1ff; }
+  </style>
+</head>
+<body>
+  <main class="email-card">
+    <header class="header">
+      <div class="header-dots"></div>
+      <div class="header-row">
+        <div class="brand">
+          <svg class="header-icon" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9.5 2A3.5 3.5 0 0 0 6 5.5v13A3.5 3.5 0 0 0 9.5 22V2Z"/>
+            <path d="M14.5 2A3.5 3.5 0 0 1 18 5.5v13a3.5 3.5 0 0 1-3.5 3.5V2Z"/>
+            <path d="M9.5 7.5H8M9.5 12H7.5M9.5 16.5H8M14.5 7.5H16M14.5 12h2M14.5 16.5H16"/>
+            <path d="M6 8H4a2 2 0 0 0 0 4h2M18 8h2a2 2 0 0 1 0 4h-2"/>
+          </svg>
+          <h1 class="brand-title">PLATFORMA DE LOGICĂ</h1>
+        </div>
+        <svg class="header-icon" width="74" height="74" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5M22 10v6"/>
+        </svg>
+      </div>
+    </header>
+
+    <section class="content">
+      <h2 class="greeting">Bună ziua,</h2>
+      <p class="paragraph">Atașat găsiți raportul complet al testului de logică realizat de elev pe platforma noastră.</p>
+      <p class="paragraph last">Vă mulțumim pentru încredere!</p>
+
+      <section class="score-row">
+        <div class="score-box">
+          <svg width="245" height="245" viewBox="0 0 245 245" aria-label="Scor final {{ score }}%">
+            <circle cx="122.5" cy="122.5" r="104" fill="none" stroke="#eef2f8" stroke-width="16"/>
+            <circle cx="122.5" cy="122.5" r="104" fill="none" stroke="#256ef1" stroke-width="16" stroke-linecap="round" stroke-dasharray="{{ score_circumference }}" stroke-dashoffset="{{ score_offset }}" transform="rotate(-90 122.5 122.5)"/>
+          </svg>
+          <div class="score-text">
+            <div class="score-value">{{ score }}<span>%</span></div>
+            <div class="score-label">Scor final</div>
+          </div>
+        </div>
+        <div class="score-divider"></div>
+        <div class="meta">
+          <div class="meta-row">
+            <div class="meta-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div><div class="meta-label">Elev</div><div class="meta-value">{{ student_name }}</div></div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M10 13h4M10 17h4"/></svg></div>
+            <div><div class="meta-label">Test</div><div class="meta-value">{{ test_name }}</div></div>
+          </div>
+          <div class="meta-row">
+            <div class="meta-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+            <div><div class="meta-label">Data completării</div><div class="meta-value">{{ completed_at }}</div></div>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="section-title">Raportul include:</h3>
+      <section class="features">
+        <div class="feature">
+          <svg class="feature-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="m16.5 7.5 4-4M17 4h3v3"/></svg>
+          <div class="feature-text">Rezultatul
+general</div>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-8M22 20V8"/></svg>
+          <div class="feature-text">Analiza
+performanței</div>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12A9 9 0 1 1 12 3M12 3v9h9"/></svg>
+          <div class="feature-text">Distribuția
+pe capitole</div>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16m-14-4 4-4 3 3 5-6M18 8h-5m5 0v5"/></svg>
+          <div class="feature-text">Statistici
+detaliate</div>
+        </div>
+      </section>
+
+      <div class="download-box">
+        <svg class="header-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M12 11v6m-3-3 3 3 3-3"/></svg>
+        <div>
+          <div class="download-title">Raportul complet este atașat în format PDF.</div>
+          <div class="download-subtitle">Fișier atașat: {{ pdf_file_name }}. Vă recomandăm să îl descărcați și să îl analizați în detaliu.</div>
+        </div>
+      </div>
+
+      <p class="signature">Cu respect,</p>
+      <div class="footer-brain">
+        <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A3.5 3.5 0 0 0 6 5.5v13A3.5 3.5 0 0 0 9.5 22V2Z"/><path d="M14.5 2A3.5 3.5 0 0 1 18 5.5v13a3.5 3.5 0 0 1-3.5 3.5V2Z"/><path d="M9.5 7.5H8M9.5 12H7.5M9.5 16.5H8M14.5 7.5H16M14.5 12h2M14.5 16.5H16"/><path d="M6 8H4a2 2 0 0 0 0 4h2M18 8h2a2 2 0 0 1 0 4h-2"/></svg>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

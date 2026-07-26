@@ -1,0 +1,576 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "MinisterulEducatiei",
+      "x": 1619.5738525390625,
+      "y": 153.8578643798828,
+      "score": 0.9834803970236528,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1239.119384765625,
+      "y": 214.87046813964844,
+      "score": 0.9819100702062566,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2024",
+      "x": 1231.1932373046875,
+      "y": 334.2429504394531,
+      "score": 0.9974287387096521,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1669.772705078125,
+      "y": 400.5610046386719,
+      "score": 0.9682211117310957,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1289.3182373046875,
+      "y": 490.7535400390625,
+      "score": 0.980624106797305,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 4",
+      "x": 3027.7841796875,
+      "y": 626.0423583984375,
+      "score": 0.9580179989337921,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 364.6022644042969,
+      "y": 758.678466796875,
+      "score": 0.9666434004193261,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 367.24432373046875,
+      "y": 838.2601318359375,
+      "score": 0.9819041822637831,
+      "page_number": 1
+    },
+    {
+      "text": "Toatesubiectelesuntobligatorii.Seacordazecepunctedinoficiu.",
+      "x": 586.5341186523438,
+      "y": 973.5489501953125,
+      "score": 0.9959929282382384,
+      "page_number": 1
+    },
+    {
+      "text": "Timpuldelucru efectivestedetreiore.",
+      "x": 594.4602661132812,
+      "y": 1055.7833251953125,
+      "score": 0.9815183963094439,
+      "page_number": 1
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2858.693115234375,
+      "y": 1180.461181640625,
+      "score": 0.9838754917894091,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.8863830566406,
+      "y": 1191.0721435546875,
+      "score": 0.9905990779399871,
+      "page_number": 1
+    },
+    {
+      "text": "A. Pentru fiecare dintre urmatorii itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si",
+      "x": 361.9602355957031,
+      "y": 1262.695556640625,
+      "score": 0.9843287402391434,
+      "page_number": 1
+    },
+    {
+      "text": "notati indreptul ei doar litera asociata raspunsului corect.Este corecta o singuravariantade",
+      "x": 364.6022644042969,
+      "y": 1347.582763671875,
+      "score": 0.9519899798476178,
+      "page_number": 1
+    },
+    {
+      "text": "raspuns.",
+      "x": 364.6022644042969,
+      "y": 1429.817138671875,
+      "score": 0.9997713342308998,
+      "page_number": 1
+    },
+    {
+      "text": "1. O regula de corectitudine cu privire la fundamentul demonstratiei stipuleaza ca:",
+      "x": 446.50567626953125,
+      "y": 1525.3150634765625,
+      "score": 0.9839240441839379,
+      "page_number": 1
+    },
+    {
+      "text": "a.teza de demonstrat trebuiesafiecelputinopropozitiefalsa",
+      "x": 364.6022644042969,
+      "y": 1607.5494384765625,
+      "score": 0.9751531795451516,
+      "page_number": 1
+    },
+    {
+      "text": "b.argumentele/premiseletrebuiesafieadevarate",
+      "x": 367.24432373046875,
+      "y": 1692.4365234375,
+      "score": 0.9972941658713601,
+      "page_number": 1
+    },
+    {
+      "text": "c.procesul de demonstrareesteunuldeductiv",
+      "x": 364.6022644042969,
+      "y": 1769.365478515625,
+      "score": 0.9786041771493307,
+      "page_number": 1
+    },
+    {
+      "text": "d. fundamentul demonstratiei trebuie sa fie alcatuit din propoziti probabile",
+      "x": 361.9602355957031,
+      "y": 1840.989013671875,
+      "score": 0.9782820791006088,
+      "page_number": 1
+    },
+    {
+      "text": "2.Rationamentul,Unelemamifereacvaticesuntbalene,avandinvederecatoatebalenelesunt",
+      "x": 454.43182373046875,
+      "y": 1955.0560302734375,
+      "score": 0.987625104188919,
+      "page_number": 1
+    },
+    {
+      "text": "mamifereacvatice.\"este:",
+      "x": 451.789794921875,
+      "y": 2029.332275390625,
+      "score": 0.9798535445462102,
+      "page_number": 1
+    },
+    {
+      "text": "a.o deductie completa",
+      "x": 364.6022644042969,
+      "y": 2111.566650390625,
+      "score": 0.9633026350112188,
+      "page_number": 1
+    },
+    {
+      "text": "c. o deductie imediata",
+      "x": 1936.619384765625,
+      "y": 2111.566650390625,
+      "score": 0.9743993769992482,
+      "page_number": 1
+    },
+    {
+      "text": "b. o deductie mediata",
+      "x": 367.24432373046875,
+      "y": 2188.49560546875,
+      "score": 0.9472757776578268,
+      "page_number": 1
+    },
+    {
+      "text": "d. o deductie incompleta",
+      "x": 1939.2613525390625,
+      "y": 2191.148193359375,
+      "score": 0.9813909605145454,
+      "page_number": 1
+    },
+    {
+      "text": "3. intre termeni medic si tanar se stabileste un raport de:",
+      "x": 446.50567626953125,
+      "y": 2281.3408203125,
+      "score": 0.9961224056906619,
+      "page_number": 1
+    },
+    {
+      "text": "a. identitate",
+      "x": 367.24432373046875,
+      "y": 2371.533447265625,
+      "score": 0.9492657505548917,
+      "page_number": 1
+    },
+    {
+      "text": "c. ordonare",
+      "x": 1936.619384765625,
+      "y": 2374.18603515625,
+      "score": 0.9731911312450062,
+      "page_number": 1
+    },
+    {
+      "text": "b.incrucisare",
+      "x": 367.24432373046875,
+      "y": 2453.767822265625,
+      "score": 0.9906190358675443,
+      "page_number": 1
+    },
+    {
+      "text": "d.contrarietate",
+      "x": 1936.619384765625,
+      "y": 2453.767822265625,
+      "score": 0.9978294372558594,
+      "page_number": 1
+    },
+    {
+      "text": "4. Subiectul logic al propozitiei ,Uni profesori de filosofie sunt directori de liceu.\"este:",
+      "x": 443.8636474609375,
+      "y": 2549.265625,
+      "score": 0.992076215536698,
+      "page_number": 1
+    },
+    {
+      "text": "a. profesori",
+      "x": 367.24432373046875,
+      "y": 2636.8056640625,
+      "score": 0.9838107625643412,
+      "page_number": 1
+    },
+    {
+      "text": "c. profesori de filosofie",
+      "x": 1944.5455322265625,
+      "y": 2639.458251953125,
+      "score": 0.9735313487052918,
+      "page_number": 1
+    },
+    {
+      "text": "b. unii profesori",
+      "x": 367.24432373046875,
+      "y": 2716.38720703125,
+      "score": 0.9815438670270583,
+      "page_number": 1
+    },
+    {
+      "text": "d. unii profesori de filosofie",
+      "x": 1936.619384765625,
+      "y": 2716.38720703125,
+      "score": 0.9692910194396973,
+      "page_number": 1
+    },
+    {
+      "text": "5. Cerinta ca intr-o clasificare corecta, asemanarile obiectelor situate in aceeasi clasa sa fie mai",
+      "x": 451.789794921875,
+      "y": 2817.190673828125,
+      "score": 0.9683438122272492,
+      "page_number": 1
+    },
+    {
+      "text": "importantesimainumeroasedecatdeosebirile,esteimpusaderegula:",
+      "x": 457.0738830566406,
+      "y": 2902.07763671875,
+      "score": 0.9819865554571152,
+      "page_number": 1
+    },
+    {
+      "text": "a.consistentei",
+      "x": 367.24432373046875,
+      "y": 2981.659423828125,
+      "score": 0.9977173379489354,
+      "page_number": 1
+    },
+    {
+      "text": "b. claritatii si preciziei  c. omogenitati",
+      "x": 1128.1534423828125,
+      "y": 2979.006591796875,
+      "score": 0.9662608163697379,
+      "page_number": 1
+    },
+    {
+      "text": "d. completitudini",
+      "x": 2652.61376953125,
+      "y": 2976.35400390625,
+      "score": 0.9939507771940792,
+      "page_number": 1
+    },
+    {
+      "text": "6. Din punct de vedere intensional, termenul frate geaman este:",
+      "x": 451.789794921875,
+      "y": 3085.115478515625,
+      "score": 0.9623167155280946,
+      "page_number": 1
+    },
+    {
+      "text": "a. vid, general, colectiv, vag",
+      "x": 364.6022644042969,
+      "y": 3156.739013671875,
+      "score": 0.9969053049882253,
+      "page_number": 1
+    },
+    {
+      "text": "c. absolut, abstract, pozitiv, simplu",
+      "x": 1894.3466796875,
+      "y": 3164.697265625,
+      "score": 0.9905390852206463,
+      "page_number": 1
+    },
+    {
+      "text": "b.nevid, general, distributiv, precis",
+      "x": 364.6022644042969,
+      "y": 3241.626220703125,
+      "score": 0.9611915575491415,
+      "page_number": 1
+    },
+    {
+      "text": "d. relativ, concret, pozitiv, compus",
+      "x": 1891.70458984375,
+      "y": 3238.973388671875,
+      "score": 0.9914751913812425,
+      "page_number": 1
+    },
+    {
+      "text": "7. Propozitiei categorice \",Unele masini de mare viteza sunt masini de curse.\"li corespunde",
+      "x": 451.789794921875,
+      "y": 3371.609619140625,
+      "score": 0.9861832811282232,
+      "page_number": 1
+    },
+    {
+      "text": "formula:",
+      "x": 443.8636474609375,
+      "y": 3451.191162109375,
+      "score": 0.9980716407299042,
+      "page_number": 1
+    },
+    {
+      "text": "a.SaP",
+      "x": 359.31817626953125,
+      "y": 3533.425537109375,
+      "score": 0.9997380375862122,
+      "page_number": 1
+    },
+    {
+      "text": "c.SeP",
+      "x": 1931.335205078125,
+      "y": 3536.078369140625,
+      "score": 0.9940469861030579,
+      "page_number": 1
+    },
+    {
+      "text": "b. SiP",
+      "x": 359.31817626953125,
+      "y": 3610.3544921875,
+      "score": 0.9750478466351827,
+      "page_number": 1
+    },
+    {
+      "text": "d. SoP",
+      "x": 1933.977294921875,
+      "y": 3610.3544921875,
+      "score": 0.9386374255021414,
+      "page_number": 1
+    },
+    {
+      "text": "8.Rationamenteledeductivemediatesecaracterizeazaprinaavea:",
+      "x": 449.1477355957031,
+      "y": 3750.94873046875,
+      "score": 0.99222305930894,
+      "page_number": 1
+    },
+    {
+      "text": "a.mai multe premise",
+      "x": 367.24432373046875,
+      "y": 3835.8359375,
+      "score": 0.9764743572787234,
+      "page_number": 1
+    },
+    {
+      "text": "b. o concluzie probabila",
+      "x": 364.6022644042969,
+      "y": 3907.459228515625,
+      "score": 0.9765212362011274,
+      "page_number": 1
+    },
+    {
+      "text": "c. o singura premisa",
+      "x": 364.6022644042969,
+      "y": 3992.346435546875,
+      "score": 0.9915148228406906,
+      "page_number": 1
+    },
+    {
+      "text": "d.doua concluzii",
+      "x": 367.24432373046875,
+      "y": 4066.62255859375,
+      "score": 0.9699644632637501,
+      "page_number": 1
+    },
+    {
+      "text": "9.Dacatermenuluisensuniciseeliminainsusireaunic:",
+      "x": 449.1477355957031,
+      "y": 4170.07861328125,
+      "score": 0.9900420717895031,
+      "page_number": 1
+    },
+    {
+      "text": "a.extensiuneacreste,darintensiuneascade",
+      "x": 364.6022644042969,
+      "y": 4257.61865234375,
+      "score": 0.9876290911283249,
+      "page_number": 1
+    },
+    {
+      "text": "b. intensiunea creste, dar extensiunea scade",
+      "x": 361.9602355957031,
+      "y": 4326.58935546875,
+      "score": 0.977791505781087,
+      "page_number": 1
+    },
+    {
+      "text": "c.intensiunea creste,iarextensiunea crestesi ea",
+      "x": 367.24432373046875,
+      "y": 4411.4765625,
+      "score": 0.968582697371219,
+      "page_number": 1
+    },
+    {
+      "text": "d. extensiunea scade, iar intensiunea scade si ea",
+      "x": 361.9602355957031,
+      "y": 4480.447265625,
+      "score": 0.9737047169889722,
+      "page_number": 1
+    },
+    {
+      "text": "10. Propozitia ,Aristotel este parintele logicii.\"este un tip de propozitie categorica:",
+      "x": 451.789794921875,
+      "y": 4591.86181640625,
+      "score": 0.9927241754257816,
+      "page_number": 1
+    },
+    {
+      "text": "a. particulara negativa",
+      "x": 369.8863830566406,
+      "y": 4674.09619140625,
+      "score": 0.979807726714922,
+      "page_number": 1
+    },
+    {
+      "text": "c. particulara afirmativa",
+      "x": 1939.2613525390625,
+      "y": 4674.09619140625,
+      "score": 0.985894479751587,
+      "page_number": 1
+    },
+    {
+      "text": "b. universala negativa",
+      "x": 369.8863830566406,
+      "y": 4751.02490234375,
+      "score": 0.9746901745145972,
+      "page_number": 1
+    },
+    {
+      "text": "d. universala afirmativa",
+      "x": 1939.2613525390625,
+      "y": 4751.02490234375,
+      "score": 0.9662741050124168,
+      "page_number": 1
+    },
+    {
+      "text": "20 de puncte",
+      "x": 2932.67041015625,
+      "y": 4819.99560546875,
+      "score": 0.9941592812538147,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisala logica,argumentaresi comunicare",
+      "x": 361.9602355957031,
+      "y": 5032.21337890625,
+      "score": 0.9505276874355648,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 4",
+      "x": 2922.102294921875,
+      "y": 5037.51904296875,
+      "score": 0.9902586817741394,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 2",
+      "x": 1680.3409423828125,
+      "y": 5101.18408203125,
+      "score": 0.9921426219599587,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "MinisterulEducatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2024",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Varianta 4",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "Toatesubiectelesuntobligatorii.Seacordazecepunctedinoficiu.",
+    "Timpuldelucru efectivestedetreiore.",
+    "(30 de puncte)",
+    "SUBIECTULI",
+    "A. Pentru fiecare dintre urmatorii itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si",
+    "notati indreptul ei doar litera asociata raspunsului corect.Este corecta o singuravariantade",
+    "raspuns.",
+    "1. O regula de corectitudine cu privire la fundamentul demonstratiei stipuleaza ca:",
+    "a.teza de demonstrat trebuiesafiecelputinopropozitiefalsa",
+    "b.argumentele/premiseletrebuiesafieadevarate",
+    "c.procesul de demonstrareesteunuldeductiv",
+    "d. fundamentul demonstratiei trebuie sa fie alcatuit din propoziti probabile",
+    "2.Rationamentul,Unelemamifereacvaticesuntbalene,avandinvederecatoatebalenelesunt",
+    "mamifereacvatice.\"este:",
+    "a.o deductie completa",
+    "c. o deductie imediata",
+    "b. o deductie mediata",
+    "d. o deductie incompleta",
+    "3. intre termeni medic si tanar se stabileste un raport de:",
+    "a. identitate",
+    "c. ordonare",
+    "b.incrucisare",
+    "d.contrarietate",
+    "4. Subiectul logic al propozitiei ,Uni profesori de filosofie sunt directori de liceu.\"este:",
+    "a. profesori",
+    "c. profesori de filosofie",
+    "b. unii profesori",
+    "d. unii profesori de filosofie",
+    "5. Cerinta ca intr-o clasificare corecta, asemanarile obiectelor situate in aceeasi clasa sa fie mai",
+    "importantesimainumeroasedecatdeosebirile,esteimpusaderegula:",
+    "a.consistentei",
+    "b. claritatii si preciziei  c. omogenitati",
+    "d. completitudini",
+    "6. Din punct de vedere intensional, termenul frate geaman este:",
+    "a. vid, general, colectiv, vag",
+    "c. absolut, abstract, pozitiv, simplu",
+    "b.nevid, general, distributiv, precis",
+    "d. relativ, concret, pozitiv, compus",
+    "7. Propozitiei categorice \",Unele masini de mare viteza sunt masini de curse.\"li corespunde",
+    "formula:",
+    "a.SaP",
+    "c.SeP",
+    "b. SiP",
+    "d. SoP",
+    "8.Rationamenteledeductivemediatesecaracterizeazaprinaavea:",
+    "a.mai multe premise",
+    "b. o concluzie probabila",
+    "c. o singura premisa",
+    "d.doua concluzii",
+    "9.Dacatermenuluisensuniciseeliminainsusireaunic:",
+    "a.extensiuneacreste,darintensiuneascade",
+    "b. intensiunea creste, dar extensiunea scade",
+    "c.intensiunea creste,iarextensiunea crestesi ea",
+    "d. extensiunea scade, iar intensiunea scade si ea",
+    "10. Propozitia ,Aristotel este parintele logicii.\"este un tip de propozitie categorica:",
+    "a. particulara negativa",
+    "c. particulara afirmativa",
+    "b. universala negativa",
+    "d. universala afirmativa",
+    "20 de puncte",
+    "Proba scrisala logica,argumentaresi comunicare",
+    "Varianta 4",
+    "Pagina 1 din 2"
+  ],
+  "text": "MinisterulEducatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2024\nProba E. d)\nLogica, argumentare si comunicare\nVarianta 4\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\nToatesubiectelesuntobligatorii.Seacordazecepunctedinoficiu.\nTimpuldelucru efectivestedetreiore.\n(30 de puncte)\nSUBIECTULI\nA. Pentru fiecare dintre urmatorii itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si\nnotati indreptul ei doar litera asociata raspunsului corect.Este corecta o singuravariantade\nraspuns.\n1. O regula de corectitudine cu privire la fundamentul demonstratiei stipuleaza ca:\na.teza de demonstrat trebuiesafiecelputinopropozitiefalsa\nb.argumentele/premiseletrebuiesafieadevarate\nc.procesul de demonstrareesteunuldeductiv\nd. fundamentul demonstratiei trebuie sa fie alcatuit din propoziti probabile\n2.Rationamentul,Unelemamifereacvaticesuntbalene,avandinvederecatoatebalenelesunt\nmamifereacvatice.\"este:\na.o deductie completa\nc. o deductie imediata\nb. o deductie mediata\nd. o deductie incompleta\n3. intre termeni medic si tanar se stabileste un raport de:\na. identitate\nc. ordonare\nb.incrucisare\nd.contrarietate\n4. Subiectul logic al propozitiei ,Uni profesori de filosofie sunt directori de liceu.\"este:\na. profesori\nc. profesori de filosofie\nb. unii profesori\nd. unii profesori de filosofie\n5. Cerinta ca intr-o clasificare corecta, asemanarile obiectelor situate in aceeasi clasa sa fie mai\nimportantesimainumeroasedecatdeosebirile,esteimpusaderegula:\na.consistentei\nb. claritatii si preciziei  c. omogenitati\nd. completitudini\n6. Din punct de vedere intensional, termenul frate geaman este:\na. vid, general, colectiv, vag\nc. absolut, abstract, pozitiv, simplu\nb.nevid, general, distributiv, precis\nd. relativ, concret, pozitiv, compus\n7. Propozitiei categorice \",Unele masini de mare viteza sunt masini de curse.\"li corespunde\nformula:\na.SaP\nc.SeP\nb. SiP\nd. SoP\n8.Rationamenteledeductivemediatesecaracterizeazaprinaavea:\na.mai multe premise\nb. o concluzie probabila\nc. o singura premisa\nd.doua concluzii\n9.Dacatermenuluisensuniciseeliminainsusireaunic:\na.extensiuneacreste,darintensiuneascade\nb. intensiunea creste, dar extensiunea scade\nc.intensiunea creste,iarextensiunea crestesi ea\nd. extensiunea scade, iar intensiunea scade si ea\n10. Propozitia ,Aristotel este parintele logicii.\"este un tip de propozitie categorica:\na. particulara negativa\nc. particulara afirmativa\nb. universala negativa\nd. universala afirmativa\n20 de puncte\nProba scrisala logica,argumentaresi comunicare\nVarianta 4\nPagina 1 din 2"
+}

@@ -1,0 +1,330 @@
+{
+  "test_name": "Test Logica Set 2",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Ce tip de definitie este: Culoarea rosie este aceasta?",
+      "options": {
+        "A": "Clasica",
+        "B": "Operationala",
+        "C": "Ostensiva",
+        "D": "Enumerativa",
+        "E": "Lexicala"
+      },
+      "correct_answer": "C",
+      "justification": "Definitia se realizeaza prin indicarea directa a obiectului."
+    },
+    {
+      "id": 2,
+      "question": "Care definitie este circulara?",
+      "options": {
+        "A": "Legea este norma juridica",
+        "B": "Contractul este acord",
+        "C": "Legea este ceea ce este legal",
+        "D": "Omul este animal rational",
+        "E": "Dreptul este sistem de norme"
+      },
+      "correct_answer": "C",
+      "justification": "Termenul este explicat printr-un derivat al sau."
+    },
+    {
+      "id": 3,
+      "question": "Ce eroare contine: Cainele este un animal?",
+      "options": {
+        "A": "Circularitate",
+        "B": "Prea restransa",
+        "C": "Prea larga",
+        "D": "Metaforica",
+        "E": "Contradictorie"
+      },
+      "correct_answer": "C",
+      "justification": "Definitia include mai multe obiecte decat termenul definit."
+    },
+    {
+      "id": 4,
+      "question": "Care definitie este prea restransa?",
+      "options": {
+        "A": "Triunghiul este poligon",
+        "B": "Triunghiul are 3 laturi",
+        "C": "Cainele este animal mic",
+        "D": "Omul este rational",
+        "E": "Contractul este acord"
+      },
+      "correct_answer": "C",
+      "justification": "Exclude cazuri valide din extensiune."
+    },
+    {
+      "id": 5,
+      "question": "Care este metaforica?",
+      "options": {
+        "A": "Omul este rational",
+        "B": "Contractul este acord",
+        "C": "Viata este o calatorie",
+        "D": "Statul este institutie",
+        "E": "Legea este norma"
+      },
+      "correct_answer": "C",
+      "justification": "Foloseste limbaj figurat."
+    },
+    {
+      "id": 6,
+      "question": "Clasificarea numere pare/impare respecta:",
+      "options": {
+        "A": "Criterii multiple",
+        "B": "Unicitate criteriu",
+        "C": "Suprapunere",
+        "D": "Incompletitudine",
+        "E": "Ambiguitate"
+      },
+      "correct_answer": "B",
+      "justification": "Foloseste un singur criteriu."
+    },
+    {
+      "id": 7,
+      "question": "Ce eroare: elevi buni, slabi, inalti?",
+      "options": {
+        "A": "Incomplet",
+        "B": "Criteriu unic",
+        "C": "Amestec criterii",
+        "D": "Corect",
+        "E": "Circular"
+      },
+      "correct_answer": "C",
+      "justification": "Se folosesc criterii diferite."
+    },
+    {
+      "id": 8,
+      "question": "Clasificarea corecta trebuie:",
+      "options": {
+        "A": "Sa fie lunga",
+        "B": "Sa fie abstracta",
+        "C": "Sa respecte criteriu unic",
+        "D": "Sa fie simpla",
+        "E": "Sa fie scurta"
+      },
+      "correct_answer": "C",
+      "justification": "Regula fundamentala."
+    },
+    {
+      "id": 9,
+      "question": "Element in doua clase =",
+      "options": {
+        "A": "Circularitate",
+        "B": "Suprapunere",
+        "C": "Ambiguitate",
+        "D": "Generalizare",
+        "E": "Contradictie"
+      },
+      "correct_answer": "B",
+      "justification": "Incalca excluderea reciproca."
+    },
+    {
+      "id": 10,
+      "question": "Vehicule: autoturisme, camioane, biciclete este:",
+      "options": {
+        "A": "Incompleta",
+        "B": "Corecta",
+        "C": "Metaforica",
+        "D": "Contradictorie",
+        "E": "Circulara"
+      },
+      "correct_answer": "B",
+      "justification": "Clasificare dupa tip."
+    },
+    {
+      "id": 11,
+      "question": "Niciun elev nu este absent este:",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "O",
+        "D": "E",
+        "E": "Particulara"
+      },
+      "correct_answer": "D",
+      "justification": "Este universala negativa."
+    },
+    {
+      "id": 12,
+      "question": "In O este distribuit:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "Ambii",
+        "D": "Niciunul",
+        "E": "Variabil"
+      },
+      "correct_answer": "B",
+      "justification": "Predicatul este distribuit."
+    },
+    {
+      "id": 13,
+      "question": "Unii studenti sunt angajati:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "Universal"
+      },
+      "correct_answer": "C",
+      "justification": "Particular afirmativa."
+    },
+    {
+      "id": 14,
+      "question": "In I:",
+      "options": {
+        "A": "Ambii distribuiti",
+        "B": "S distribuit",
+        "C": "Niciunul distribuit",
+        "D": "P distribuit",
+        "E": "Ambiguu"
+      },
+      "correct_answer": "C",
+      "justification": "Niciun termen distribuit."
+    },
+    {
+      "id": 15,
+      "question": "Doar medicii sunt specialisti:",
+      "options": {
+        "A": "SaP",
+        "B": "PaS",
+        "C": "SiP",
+        "D": "SoP",
+        "E": "SeP"
+      },
+      "correct_answer": "B",
+      "justification": "Se inverseaza raportul."
+    },
+    {
+      "id": 16,
+      "question": "Cate tipuri propozi\u021bii?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5",
+        "E": "6"
+      },
+      "correct_answer": "C",
+      "justification": "A,E,I,O."
+    },
+    {
+      "id": 17,
+      "question": "Termenul care dispare:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "M",
+        "D": "Toate",
+        "E": "Niciun"
+      },
+      "correct_answer": "C",
+      "justification": "M nu apare in concluzie."
+    },
+    {
+      "id": 18,
+      "question": "Doua negative:",
+      "options": {
+        "A": "Afirmativa",
+        "B": "Negativa",
+        "C": "Fara concluzie",
+        "D": "Universala",
+        "E": "Particulara"
+      },
+      "correct_answer": "C",
+      "justification": "Regula silogismului."
+    },
+    {
+      "id": 19,
+      "question": "Termen mediu trebuie:",
+      "options": {
+        "A": "Sa apara concluzie",
+        "B": "Distribuit",
+        "C": "Singular",
+        "D": "Predicat",
+        "E": "Negativ"
+      },
+      "correct_answer": "B",
+      "justification": "Altfel nu leaga termenii."
+    },
+    {
+      "id": 20,
+      "question": "Premisa particulara:",
+      "options": {
+        "A": "Universal",
+        "B": "Particular",
+        "C": "Fara concluzie",
+        "D": "Negativ",
+        "E": "Ambiguu"
+      },
+      "correct_answer": "B",
+      "justification": "Nu poti generaliza."
+    },
+    {
+      "id": 21,
+      "question": "To\u021bi\u2192Unii:",
+      "options": {
+        "A": "Eroare",
+        "B": "Valid",
+        "C": "Contradictie",
+        "D": "Ambiguu",
+        "E": "Fals"
+      },
+      "correct_answer": "B",
+      "justification": "Subalternare."
+    },
+    {
+      "id": 22,
+      "question": "Unii\u2192To\u021bi:",
+      "options": {
+        "A": "Valid",
+        "B": "Inductie",
+        "C": "Generalizare",
+        "D": "Deductie",
+        "E": "Contradictie"
+      },
+      "correct_answer": "C",
+      "justification": "Extindere nejustificata."
+    },
+    {
+      "id": 23,
+      "question": "Fara legatura:",
+      "options": {
+        "A": "Echivocatie",
+        "B": "Termen mediu nedistribuit",
+        "C": "Generalizare",
+        "D": "Inductie",
+        "E": "Analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Nu exista conexiune."
+    },
+    {
+      "id": 24,
+      "question": "Legea este legala:",
+      "options": {
+        "A": "Corect",
+        "B": "Circular",
+        "C": "Inductiv",
+        "D": "Deductiv",
+        "E": "Analogic"
+      },
+      "correct_answer": "B",
+      "justification": "Definitie circulara."
+    },
+    {
+      "id": 25,
+      "question": "Unii\u2192To\u021bi oameni bogati:",
+      "options": {
+        "A": "Valid",
+        "B": "Eroare",
+        "C": "Analogie",
+        "D": "Deductie",
+        "E": "Definitie"
+      },
+      "correct_answer": "B",
+      "justification": "Generalizare nejustificata."
+    }
+  ]
+}

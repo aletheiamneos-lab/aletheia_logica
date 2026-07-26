@@ -1,0 +1,434 @@
+{
+  "examId": "bac_logica_2019_simulare",
+  "year": 2019,
+  "variant": "Simulare",
+  "title": "BAC Logica 2019 - Simulare",
+  "mode": "student_exam",
+  "visibility": "student",
+  "totalPoints": 100,
+  "basePoints": 10,
+  "studentRules": {
+    "showSolutions": false,
+    "showTeacherNotes": false,
+    "showScoring": false,
+    "finalizeButton": true,
+    "generateStudentPdfOnFinalize": true,
+    "previewStudentPdf": true,
+    "sendEmailEnabled": true,
+    "adminReportEnabled": true
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 20,
+          "officialPrompt": "Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Una din regulile corectitudinii demonstratiei, referitoare la fundamentul demonstratiei, este:",
+              "options": {
+                "a": "argumentele demonstratiei trebuie sa se contrazica reciproc",
+                "b": "argumentele trebuie sa constituie un temei suficient pentru teza de demonstrat",
+                "c": "pentru a sustine teza, nu este necesar ca argumentele demonstratiei sa fie adevarate",
+                "d": "demonstratia argumentelor este dependenta de demonstrarea tezei"
+              }
+            },
+            {
+              "id": "I_A_2",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Rationamentul „Niciun leu nu este animal erbivor, deoarece nicio felina nu este animal erbivor, iar leii sunt feline” este:",
+              "options": {
+                "a": "o obversiune",
+                "b": "o conversiune simpla",
+                "c": "o conversiune prin accident",
+                "d": "un silogism"
+              }
+            },
+            {
+              "id": "I_A_3",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Termenii „englez” si „sportiv” se afla in raport de:",
+              "options": {
+                "a": "ordonare",
+                "b": "incrucisare",
+                "c": "contrarietate",
+                "d": "contradictie"
+              }
+            },
+            {
+              "id": "I_A_4",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Subiectul logic al propozitiei „Unele triunghiuri dreptunghice sunt isoscele” este:",
+              "options": {
+                "a": "triunghiuri dreptunghice",
+                "b": "unele",
+                "c": "unele triunghiuri",
+                "d": "unele triunghiuri dreptunghice"
+              }
+            },
+            {
+              "id": "I_A_5",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Una din regulile de corectitudine ale operatiei de clasificare este aceea conform careia:",
+              "options": {
+                "a": "o clasificare este corecta daca nu apar toate speciile genului dat",
+                "b": "o clasificare este corecta daca pe aceeasi treapta a clasificarii se utilizeaza doua criterii",
+                "c": "o clasificare este corecta daca pe aceeasi treapta a clasificarii se utilizeaza un singur criteriu",
+                "d": "o clasificare este corecta daca apar specii in plus fata de speciile genului dat"
+              }
+            },
+            {
+              "id": "I_A_6",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Dupa directia procesului de inferenta intre general si particular, inferentele sunt:",
+              "options": {
+                "a": "valide si nevalide",
+                "b": "imediate si mediate",
+                "c": "tari si slabe",
+                "d": "deductive si inductive"
+              }
+            },
+            {
+              "id": "I_A_7",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Inductia incompleta este o argumentare care presupune:",
+              "options": {
+                "a": "o concluzie cu caracter amplificator fata de premise",
+                "b": "examinarea unei clase cu un numar finit de elemente",
+                "c": "o concluzie cu caracter cert",
+                "d": "obtinerea unei concluzii mai putin generale decat premisele"
+              }
+            },
+            {
+              "id": "I_A_8",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Inductia completa este o argumentare care presupune:",
+              "options": {
+                "a": "examinarea tuturor elementelor unei clase cu un numar infinit de elemente",
+                "b": "examinarea tuturor elementelor unei clase cu un numar finit de elemente",
+                "c": "o concluzie cu caracter probabil",
+                "d": "o concluzie cu caracter incert"
+              }
+            },
+            {
+              "id": "I_A_9",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Daca termenului „cerb carpatin” i se elimina proprietatea „carpatin”, atunci:",
+              "options": {
+                "a": "intensiunea scade, extensiunea scade",
+                "b": "intensiunea creste, extensiunea scade",
+                "c": "intensiunea creste, extensiunea creste",
+                "d": "intensiunea scade, extensiunea creste"
+              }
+            },
+            {
+              "id": "I_A_10",
+              "points": 2,
+              "type": "single_choice",
+              "prompt": "Propozitia „Unii elevi sunt pasionati de informatica” este:",
+              "options": {
+                "a": "particulara negativa",
+                "b": "universala negativa",
+                "c": "particulara afirmativa",
+                "d": "universala afirmativa"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi logice intre termeni si diagrama Euler",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C si D, astfel incat termenul B este supraordonat termenului A si este subordonat termenului C. Termenul D se afla in raport de opozitie cu termenul A si este in raport de incrucisare atat cu termenul C, cat si cu termenul B.",
+          "items": [
+            {
+              "id": "I_B_diagram",
+              "points": 4,
+              "type": "hybrid_diagram",
+              "studentTask": "Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre cei patru termeni.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_I_B_euler_terms",
+                "diagramType": "euler",
+                "inputConfig": {
+                  "label": "Diagrama Euler",
+                  "helperText": "Deseneaza aici raporturile dintre termenii A, B, C si D. Poti incarca si o imagine cu diagrama realizata pe hartie.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "A",
+                      "B",
+                      "C",
+                      "D"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            },
+            {
+              "id": "I_B_AF",
+              "points": 6,
+              "type": "true_false_group",
+              "studentTask": "Stabiliti, pe baza raporturilor existente intre termenii A, B, C, D, care dintre urmatoarele propozitii sunt adevarate si care sunt false.",
+              "statements": {
+                "a": "Niciun A nu este D.",
+                "b": "Toti C sunt B.",
+                "c": "Toti B sunt D.",
+                "d": "Unii A nu sunt C.",
+                "e": "Toti B sunt C.",
+                "f": "Niciun D nu este C."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "II_intro",
+          "title": "Propozitii date",
+          "type": "info",
+          "propositions": {
+            "1": "Toate teoriile politice sunt modele ideale de analiza.",
+            "2": "Unele opere ale lui Platon nu sunt traduse in limba romana.",
+            "3": "Nicio trasatura de caracter nu este ereditara.",
+            "4": "Unele firme de IT sunt profitabile."
+          }
+        },
+        {
+          "id": "II_A",
+          "title": "A. Formule logice",
+          "points": 2,
+          "officialPrompt": "Precizati formulele logice corespunzatoare propozitiilor 1 si 2.",
+          "items": [
+            {
+              "id": "II_A_1",
+              "type": "short_text",
+              "label": "Formula propozitiei 1",
+              "placeholder": "Scrie forma logica. Exemplu de format: SaP"
+            },
+            {
+              "id": "II_A_2",
+              "type": "short_text",
+              "label": "Formula propozitiei 2",
+              "placeholder": "Scrie forma logica. Exemplu de format: SoP"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Operatii logice",
+          "points": 8,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subalterna propozitiei 1, contradictoria propozitiei 2, contrara propozitiei 3 si subcontrara propozitiei 4.",
+          "items": [
+            {
+              "id": "II_B_subalterna_1",
+              "type": "structured_text",
+              "placeholder": "Scrie forma logica si apoi propozitia in limbaj natural."
+            },
+            {
+              "id": "II_B_contradictoria_2",
+              "type": "structured_text",
+              "placeholder": "Scrie forma logica si apoi propozitia in limbaj natural."
+            },
+            {
+              "id": "II_B_contrara_3",
+              "type": "structured_text",
+              "placeholder": "Scrie forma logica si apoi propozitia in limbaj natural."
+            },
+            {
+              "id": "II_B_subcontrara_4",
+              "type": "structured_text",
+              "placeholder": "Scrie forma logica si apoi propozitia in limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune si obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 1 si 3, atat in limbaj formal, cat si in limbaj natural.",
+          "items": [
+            {
+              "id": "II_C_prop1",
+              "type": "structured_text",
+              "placeholder": "Scrie conversa si obversa propozitiei 1."
+            },
+            {
+              "id": "II_C_prop3",
+              "type": "structured_text",
+              "placeholder": "Scrie conversa si obversa propozitiei 3."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Conversa obversei",
+          "points": 4,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei propozitiei 3.",
+          "items": [
+            {
+              "id": "II_D_answer",
+              "type": "structured_text",
+              "placeholder": "Scrie forma logica si apoi propozitia in limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "II_E",
+          "title": "E. Analiza opiniilor elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X si Y, opineaza astfel: X: Deoarece unele subiecte dificile nu sunt subiecte de admitere, rezulta ca unele subiecte de admitere nu sunt subiecte dificile. Y: Unele rationamente imediate sunt rationamente incorecte si, de aceea, unele rationamente incorecte sunt rationamente imediate. Pornind de la aceasta situatie: scrieti, in limbaj formal, opiniile celor doi elevi; precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; explicati corectitudinea/incorectitudinea rationamentului elevului X.",
+          "items": [
+            {
+              "id": "II_E_formal",
+              "type": "structured_text",
+              "placeholder": "Scrie formalizarea pentru X si Y. Exemplu de format: SiP -> PiS"
+            },
+            {
+              "id": "II_E_decision",
+              "type": "structured_text",
+              "placeholder": "Precizeaza daca rationamentul este corect sau incorect."
+            },
+            {
+              "id": "II_E_explanation",
+              "type": "long_text",
+              "placeholder": "Explica pe scurt de ce rationamentul elevului X este corect sau incorect."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "III_A",
+          "title": "A. Silogisme si diagrame Venn",
+          "points": 18,
+          "officialPrompt": "Fie urmatoarele doua moduri silogistice: aee-2, aai-4. Scrieti schema de inferenta corespunzatoare fiecareia si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre scheme. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri silogistice date, precizand totodata decizia la care ati ajuns.",
+          "items": [
+            {
+              "id": "III_A_schema_aee_2",
+              "type": "syllogism_schema",
+              "mode": "aee-2",
+              "fields": [
+                "premisa majora",
+                "premisa minora",
+                "concluzie"
+              ]
+            },
+            {
+              "id": "III_A_schema_aai_4",
+              "type": "syllogism_schema",
+              "mode": "aai-4",
+              "fields": [
+                "premisa majora",
+                "premisa minora",
+                "concluzie"
+              ]
+            },
+            {
+              "id": "III_A_venn_aee_2",
+              "type": "hybrid_diagram",
+              "diagramId": "diagram_III_A_aee_2_venn",
+              "requiresDiagram": true
+            },
+            {
+              "id": "III_A_venn_aai_4",
+              "type": "hybrid_diagram",
+              "diagramId": "diagram_III_A_aai_4_venn",
+              "requiresDiagram": true
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati propozitia „Unele teorii istorice nu sunt corecte”.",
+          "items": [
+            {
+              "id": "III_B_answer",
+              "type": "long_text",
+              "placeholder": "Scrie schema formala si silogismul in limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Fie urmatorul silogism: Unele rationamente imediate sunt corecte deci unele rationamente deductive nu sunt corecte, pentru ca unele rationamente deductive sunt imediate. Stabiliti care dintre propozitiile date sunt adevarate si care sunt false.",
+          "statements": {
+            "1": "Termenul mediu este distribuit in ambele premise.",
+            "2": "Subiectul logic al concluziei este reprezentat de termenul „rationament deductiv”.",
+            "3": "Concluzia silogismului este o propozitie particulara negativa.",
+            "4": "Predicatul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie."
+          },
+          "type": "true_false_group"
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definitie",
+          "points": 6,
+          "officialPrompt": "Fie urmatoarea definitie: Silogismul este un rationament deductiv. Mentionati o regula de corectitudine pe care o incalca definitia data. Precizati o alta regula de corectitudine a definirii, diferita de regula identificata, si construiti o definitie care sa o incalce, avand ca definit termenul „silogism”.",
+          "items": [
+            {
+              "id": "III_D_answer",
+              "type": "long_text",
+              "placeholder": "Scrie regula incalcata, o alta regula si o definitie gresita care incalca acea regula."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

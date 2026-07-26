@@ -1,0 +1,363 @@
+{
+  "id": "bac_logica_2016_v9",
+  "title": "BAC Logică 2016 - Varianta 9",
+  "year": 2016,
+  "variant": "Varianta 9",
+  "mode": "exam",
+  "student_visible": true,
+  "teacher_solution_visibility": "teacher_only",
+  "source_files": {
+    "subject_pdf": "Examenul de bacalaureat național 2016_V9.pdf",
+    "barem_pdf": "Examenul de bacalaureat național 2016_V9_BAREM.pdf"
+  },
+  "scoring": {
+    "total": 100,
+    "oficiu": 10,
+    "exam_points": 90
+  },
+  "notes": [
+    "Examenul elevului nu conține răspunsuri sau explicații de barem.",
+    "Răspunsurile profesorului sunt separate în teacher_solution_BACKEND.json.",
+    "Itemii cu desen/diagramă au diagramId pentru randare sau upload ulterior."
+  ],
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "I.1",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Una din regulile corectitudinii demonstrației, referitoare la teza de demonstrat este:",
+          "options": {
+            "a": "teza de demonstrat să conțină termeni cu mai multe semnificații",
+            "b": "teza de demonstrat să rămână aceeași pe tot parcursul demonstrației",
+            "c": "teza de demonstrat să fie înlocuită cu alta printr-o reformulare aparent identică",
+            "d": "teza de demonstrat să fie o propoziție care a fost infirmată"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.2",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Într-o inducție incompletă, concluzia are un grad de generalitate:",
+          "options": {
+            "a": "mai mare decât cel al premiselor",
+            "b": "egal cu cel al premiselor",
+            "c": "mai mic decât cel al premiselor",
+            "d": "ce nu se raportează la cel al premiselor"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.3",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenii fotbal și handbal sunt în raport de:",
+          "options": {
+            "a": "ordonare",
+            "b": "identitate",
+            "c": "contradicție",
+            "d": "contrarietate"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.4",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Predicatul logic al propoziției „Elevii prezenți azi sunt o parte dintre cei care vor lipsi mâine” este:",
+          "options": {
+            "a": "sunt",
+            "b": "sunt o parte",
+            "c": "o parte dintre cei care vor lipsi mâine",
+            "d": "sunt o parte dintre cei care vor lipsi mâine"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.5",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "O operație de clasificare este corectă dacă:",
+          "options": {
+            "a": "nu apar toate speciile genului",
+            "b": "apar toate speciile genului",
+            "c": "apar specii străine care aparțin altui gen",
+            "d": "între clasele obținute există raporturi de identitate"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.6",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Este logic negativ următorul termen:",
+          "options": {
+            "a": "negustor",
+            "b": "nepăsător",
+            "c": "negociator",
+            "d": "neurolog"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.7",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Un exemplu de inducție incompletă este următorul raționament:",
+          "options": {
+            "a": "Dacă unii elevi sunt buni la logică, atunci toți elevii sunt buni la logică",
+            "b": "Dacă toți elevii sunt buni la logică, atunci unii elevi sunt buni la logică",
+            "c": "Dacă fiecare elev este bun la logică, atunci toți elevii sunt buni la logică",
+            "d": "Dacă unii elevi sunt buni la logică, atunci alți elevi sunt slabi la logică"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.8",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Inducția completă este:",
+          "options": {
+            "a": "o abstractizare într-o clasă infinită, concretă de obiecte",
+            "b": "o concretizare într-o clasă abstractă de obiecte",
+            "c": "o particularizare într-o clasă infinită de obiecte",
+            "d": "o generalizare într-o clasă finită de obiecte"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.9",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Eliminând termenului animal sălbatic proprietatea sălbatic:",
+          "options": {
+            "a": "intensiunea crește, iar extensiunea scade",
+            "b": "extensiunea crește iar intensiunea scade",
+            "c": "intensiunea nu se modifică, iar extensiunea crește",
+            "d": "extensiunea nu se modifică, iar intensiunea crește"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.10",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Propoziția „Unii angajați din sectorul public sunt nemotivați” este:",
+          "options": {
+            "a": "universală afirmativă",
+            "b": "universală negativă",
+            "c": "particulară afirmativă",
+            "d": "particulară negativă"
+          },
+          "answer_visible_to_student": false
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "intro": "Se dau următoarele propoziții: 1. Unele ipoteze științifice sunt confirmate. 2. Unele piese de mobilier nu sunt recondiționabile. 3. Niciun infractor nu este nevinovat. 4. Toți acizii sunt substanțe corozive.",
+      "items": [
+        {
+          "id": "II.A",
+          "type": "text_input",
+          "points": 2,
+          "prompt": "Precizați formula propoziției 4.",
+          "placeholder": "Exemplu de structură: SaP / SeP / SiP / SoP, în funcție de cantitate și calitate."
+        },
+        {
+          "id": "II.B",
+          "type": "structured_text_inputs",
+          "points": 6,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subcontrara propoziției 1 și supraalterna propoziției 2.",
+          "fields": [
+            {
+              "key": "formal_subcontrara_p1",
+              "label": "Subcontrara propoziției 1 - limbaj formal",
+              "placeholder": "Exemplu: SoP"
+            },
+            {
+              "key": "natural_subcontrara_p1",
+              "label": "Subcontrara propoziției 1 - limbaj natural",
+              "placeholder": "Exemplu: Unele S nu sunt P."
+            },
+            {
+              "key": "formal_supraalterna_p2",
+              "label": "Supraalterna propoziției 2 - limbaj formal",
+              "placeholder": "Exemplu: SeP"
+            },
+            {
+              "key": "natural_supraalterna_p2",
+              "label": "Supraalterna propoziției 2 - limbaj natural",
+              "placeholder": "Exemplu: Niciun S nu este P."
+            }
+          ]
+        },
+        {
+          "id": "II.C",
+          "type": "structured_text_inputs",
+          "points": 10,
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+          "fields": [
+            {
+              "key": "p1_conversa",
+              "label": "Conversa propoziției 1",
+              "placeholder": "Exemplu: PiS - Unele P sunt S."
+            },
+            {
+              "key": "p1_obversa",
+              "label": "Obversa propoziției 1",
+              "placeholder": "Exemplu: So~P - Unele S nu sunt non-P."
+            },
+            {
+              "key": "p4_conversa",
+              "label": "Conversa propoziției 4",
+              "placeholder": "Exemplu: PiS - Unele P sunt S."
+            },
+            {
+              "key": "p4_obversa",
+              "label": "Obversa propoziției 4",
+              "placeholder": "Exemplu: Se~P - Niciun S nu este non-P."
+            }
+          ]
+        },
+        {
+          "id": "II.D",
+          "type": "diagram_euler",
+          "points": 4,
+          "prompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+          "diagramId": "euler_II_D_2016_v9",
+          "student_input_modes": [
+            "draw_canvas",
+            "upload_image"
+          ],
+          "placeholder": "Desenează două clase fără elemente comune, dacă propoziția este de tip SeP."
+        },
+        {
+          "id": "II.E",
+          "type": "structured_text_inputs",
+          "points": 8,
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă unii șerpi nu sunt reptile veninoase, atunci unele reptile veninoase nu sunt șerpi. Y: Dacă toți trandafirii sunt flori cu ghimpi, atunci unele flori cu ghimpi sunt trandafiri. Pornind de la această situație: scrieți în limbaj formal opiniile celor doi elevi și explicați corectitudinea raționamentelor formalizate.",
+          "fields": [
+            {
+              "key": "x_formal",
+              "label": "Opinia elevului X - limbaj formal",
+              "placeholder": "Exemplu: SoP → PoS"
+            },
+            {
+              "key": "x_explanation",
+              "label": "Explicația pentru X",
+              "placeholder": "Precizează dacă operația este validă/nevalidă și regula folosită."
+            },
+            {
+              "key": "y_formal",
+              "label": "Opinia elevului Y - limbaj formal",
+              "placeholder": "Exemplu: SaP → PiS"
+            },
+            {
+              "key": "y_explanation",
+              "label": "Explicația pentru Y",
+              "placeholder": "Precizează dacă operația este validă/nevalidă și regula folosită."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III.A",
+          "type": "structured_text_inputs_with_venn",
+          "points": 12,
+          "prompt": "Fie următoarele două moduri silogistice: eio-1, aee-2. Scrieți schema de inferență corespunzătoare fiecărui mod, construiți în limbaj natural câte un silogism și verificați validitatea prin diagrame Venn.",
+          "diagramIds": [
+            "venn_III_A_eio1_2016_v9",
+            "venn_III_A_aee2_2016_v9"
+          ],
+          "fields": [
+            {
+              "key": "schema_eio1",
+              "label": "Schema eio-1",
+              "placeholder": "Exemplu: MeP / SiM / SoP"
+            },
+            {
+              "key": "natural_eio1",
+              "label": "Silogism în limbaj natural pentru eio-1",
+              "placeholder": "Scrie două premise și o concluzie."
+            },
+            {
+              "key": "schema_aee2",
+              "label": "Schema aee-2",
+              "placeholder": "Exemplu: PaM / SeM / SeP"
+            },
+            {
+              "key": "natural_aee2",
+              "label": "Silogism în limbaj natural pentru aee-2",
+              "placeholder": "Scrie două premise și o concluzie."
+            }
+          ]
+        },
+        {
+          "id": "III.B",
+          "type": "structured_text_inputs",
+          "points": 8,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unele animale terestre sunt vertebrate”.",
+          "fields": [
+            {
+              "key": "formal_argument",
+              "label": "Argument formal",
+              "placeholder": "Exemplu: MaP / SiM / SiP"
+            },
+            {
+              "key": "natural_argument",
+              "label": "Argument în limbaj natural",
+              "placeholder": "Scrie două premise adevărate și concluzia cerută."
+            }
+          ]
+        },
+        {
+          "id": "III.C",
+          "type": "structured_text_inputs",
+          "points": 10,
+          "prompt": "Fie următoarea definiție: „Pisica este un animal domestic.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Enunțați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți, pentru fiecare dintre acestea, câte o definiție care să le încalce.",
+          "fields": [
+            {
+              "key": "rule_broken",
+              "label": "Regula încălcată de definiția dată",
+              "placeholder": "Exemplu: definiția trebuie să fie adecvată, nici prea largă, nici prea îngustă."
+            },
+            {
+              "key": "rule_1",
+              "label": "Altă regulă de corectitudine 1",
+              "placeholder": "Exemplu: definiția nu trebuie să fie circulară."
+            },
+            {
+              "key": "bad_definition_1",
+              "label": "Definiție care încalcă regula 1",
+              "placeholder": "Scrie o definiție greșită și menționează eroarea."
+            },
+            {
+              "key": "rule_2",
+              "label": "Altă regulă de corectitudine 2",
+              "placeholder": "Exemplu: definiția trebuie să fie clară și precisă."
+            },
+            {
+              "key": "bad_definition_2",
+              "label": "Definiție care încalcă regula 2",
+              "placeholder": "Scrie o definiție greșită și menționează eroarea."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

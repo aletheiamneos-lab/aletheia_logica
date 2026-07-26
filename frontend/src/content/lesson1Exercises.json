@@ -1,0 +1,413 @@
+{
+  "lesson_id": 1,
+  "title": "Termeni și raporturi logice",
+  "slug": "termeni-si-raporturi-logice",
+  "ui_notes": {
+    "showExplanationAfterAnswer": true,
+    "allowRetry": true,
+    "shuffleOptions": false,
+    "showTopicBadge": true
+  },
+  "exercises": [
+    {
+      "id": "L1_01",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "intensiune_extensiune",
+      "question": "Dacă unui termen i se adaugă o proprietate:",
+      "options": [
+        "extensiunea crește",
+        "extensiunea scade",
+        "extensiunea rămâne constantă",
+        "extensiunea și intensiunea cresc"
+      ],
+      "correct": "extensiunea scade",
+      "correct_explanation": "Când adaugi o proprietate, termenul devine mai specific. Asta înseamnă că mai puține obiecte îl mai satisfac, deci extensiunea scade. În același timp, intensiunea crește, pentru că termenul conține mai multe note definitorii.",
+      "incorrect_explanations": {
+        "extensiunea crește": "Greșit. Extensiunea nu crește când adaugi o proprietate; crește doar când termenul devine mai general.",
+        "extensiunea rămâne constantă": "Greșit. Numărul obiectelor vizate se modifică, pentru că termenul devine mai restrictiv.",
+        "extensiunea și intensiunea cresc": "Greșit. Între intensiune și extensiune există variație inversă: dacă una crește, cealaltă scade."
+      }
+    },
+    {
+      "id": "L1_02",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "intensiune_extensiune",
+      "question": "Dacă un termen devine mai general:",
+      "options": [
+        "crește intensiunea",
+        "scade extensiunea",
+        "crește extensiunea",
+        "nu se schimbă nimic"
+      ],
+      "correct": "crește extensiunea",
+      "correct_explanation": "Un termen mai general se aplică unui număr mai mare de obiecte. De aceea extensiunea lui crește, iar intensiunea tinde să scadă.",
+      "incorrect_explanations": {
+        "crește intensiunea": "Greșit. Când termenul devine mai general, el pierde din proprietățile specifice, deci intensiunea nu crește.",
+        "scade extensiunea": "Greșit. Scăderea extensiunii apare când termenul devine mai specific, nu mai general.",
+        "nu se schimbă nimic": "Greșit. Generalizarea schimbă raportul dintre proprietăți și numărul obiectelor desemnate."
+      }
+    },
+    {
+      "id": "L1_03",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "extensiune",
+      "question": "Extensiunea termenului „oglindă” este:",
+      "options": [
+        "totalitatea oglinzilor",
+        "suprafață reflectorizantă",
+        "obiect decorativ",
+        "simbol"
+      ],
+      "correct": "totalitatea oglinzilor",
+      "correct_explanation": "Extensiunea unui termen este mulțimea tuturor obiectelor la care se aplică acel termen. În acest caz, extensiunea este formată din toate oglinzile.",
+      "incorrect_explanations": {
+        "suprafață reflectorizantă": "Greșit. Aceasta este o proprietate sau o notă definitorie, deci ține de intensiune, nu de extensiune.",
+        "obiect decorativ": "Greșit. Aceasta poate fi o caracterizare parțială, dar nu exprimă totalitatea obiectelor desemnate.",
+        "simbol": "Greșit. Nu descrie nici proprietățile esențiale, nici totalitatea obiectelor vizate de termen."
+      }
+    },
+    {
+      "id": "L1_04",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "tipuri_termeni",
+      "question": "Termenul „libertate” este:",
+      "options": [
+        "concret",
+        "abstract",
+        "compus",
+        "relativ"
+      ],
+      "correct": "abstract",
+      "correct_explanation": "„Libertate” nu desemnează un obiect material individual, ci o idee sau o însușire conceptuală. De aceea este un termen abstract.",
+      "incorrect_explanations": {
+        "concret": "Greșit. Termenii concreți desemnează obiecte sau entități considerate ca existențe de sine stătătoare.",
+        "compus": "Greșit. „Libertate” este un singur termen lexical, nu o expresie compusă din mai multe elemente definitorii.",
+        "relativ": "Greșit. Un termen relativ exprimă o relație față de alt obiect, precum „frate” sau „părinte”; aici nu este cazul."
+      }
+    },
+    {
+      "id": "L1_05",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "tipuri_termeni",
+      "question": "„Echipă de fotbal” este un termen:",
+      "options": [
+        "simplu",
+        "compus",
+        "negativ",
+        "abstract"
+      ],
+      "correct": "compus",
+      "correct_explanation": "Termenul este alcătuit din mai multe cuvinte care formează împreună o singură unitate logică. De aceea este un termen compus.",
+      "incorrect_explanations": {
+        "simplu": "Greșit. Un termen simplu este exprimat, de regulă, printr-un singur cuvânt.",
+        "negativ": "Greșit. Termenii negativi indică absența unei însușiri, cum ar fi „imoral” sau „inutil”.",
+        "abstract": "Greșit. „Echipă de fotbal” desemnează o realitate colectivă concretă, nu o noțiune abstractă."
+      }
+    },
+    {
+      "id": "L1_06",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "„Mamifer” și „animal” sunt în raport de:",
+      "options": [
+        "identitate",
+        "incluziune",
+        "contradicție",
+        "intersectare"
+      ],
+      "correct": "incluziune",
+      "correct_explanation": "Toate mamiferele sunt animale, dar nu toate animalele sunt mamifere. Prin urmare, extensiunea termenului „mamifer” este inclusă în extensiunea termenului „animal”.",
+      "incorrect_explanations": {
+        "identitate": "Greșit. Nu au aceeași extensiune; „animal” este un termen mai larg.",
+        "contradicție": "Greșit. Cele două noțiuni nu se exclud reciproc; dimpotrivă, una este subordonată celeilalte.",
+        "intersectare": "Greșit. La intersectare, fiecare termen păstrează și o zonă proprie separată, ceea ce aici nu se aplică."
+      }
+    },
+    {
+      "id": "L1_07",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "„Elev” și „sportiv” sunt în raport de:",
+      "options": [
+        "identitate",
+        "contradicție",
+        "intersectare",
+        "incluziune"
+      ],
+      "correct": "intersectare",
+      "correct_explanation": "Există persoane care sunt și elevi, și sportivi, dar există și elevi care nu sunt sportivi, precum și sportivi care nu sunt elevi. De aceea raportul este de intersectare.",
+      "incorrect_explanations": {
+        "identitate": "Greșit. Nu toți elevii sunt sportivi și nu toți sportivii sunt elevi.",
+        "contradicție": "Greșit. Cei doi termeni nu se exclud total; au o zonă comună.",
+        "incluziune": "Greșit. Niciunul dintre termeni nu este inclus în totalitate în celălalt."
+      }
+    },
+    {
+      "id": "L1_08",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "„Legal” și „ilegal” sunt în raport de:",
+      "options": [
+        "contrarietate",
+        "contradicție",
+        "intersectare",
+        "incluziune"
+      ],
+      "correct": "contradicție",
+      "correct_explanation": "În logica clasică, „ilegal” este negația lui „legal”. Cele două extensiuni se exclud reciproc și, împreună, epuizează universul de discurs relevant.",
+      "incorrect_explanations": {
+        "contrarietate": "Greșit. Contrarietatea presupune că ambele pot fi false; aici nu există o a treia variantă în schema logică de bază.",
+        "intersectare": "Greșit. Un lucru nu poate fi simultan legal și ilegal sub același raport.",
+        "incluziune": "Greșit. Niciun termen nu îl include pe celălalt."
+      }
+    },
+    {
+      "id": "L1_09",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "„Alb” și „negru” sunt în raport de:",
+      "options": [
+        "contradicție",
+        "contrarietate",
+        "identitate",
+        "incluziune"
+      ],
+      "correct": "contrarietate",
+      "correct_explanation": "„Alb” și „negru” nu pot caracteriza simultan, în mod normal, același obiect sub același raport, dar pot fi ambele false pentru un obiect gri, albastru sau roșu. De aceea raportul este de contrarietate, nu de contradicție.",
+      "incorrect_explanations": {
+        "contradicție": "Greșit. Dacă ar fi contradicție, una dintre variante ar trebui să fie mereu adevărată, ceea ce nu se întâmplă.",
+        "identitate": "Greșit. Termenii nu au aceeași extensiune și nici același conținut.",
+        "incluziune": "Greșit. Niciunul nu este subordonat celuilalt."
+      }
+    },
+    {
+      "id": "L1_10",
+      "type": "mcq",
+      "difficulty": "hard",
+      "topic": "raporturi",
+      "question": "Este falsă afirmația:",
+      "options": [
+        "vertebrat și nevertebrat sunt în contradicție",
+        "pisică și animal alintat sunt în intersectare",
+        "pix și stilou sunt în contrarietate",
+        "crizantemă și floare roșie sunt în ordonare"
+      ],
+      "correct": "crizantemă și floare roșie sunt în ordonare",
+      "correct_explanation": "Afirmația este falsă fiindcă „crizantemă” și „floare roșie” nu se află în raport de ordonare, ci de intersectare: unele crizanteme pot fi roșii, dar nu toate, iar nu toate florile roșii sunt crizanteme.",
+      "incorrect_explanations": {
+        "vertebrat și nevertebrat sunt în contradicție": "Aceasta este corectă. Termenul „nevertebrat” funcționează aici ca negația clasei vertebratelor.",
+        "pisică și animal alintat sunt în intersectare": "Aceasta este corectă. Unele pisici sunt animale alintate, dar nu toate animalele alintate sunt pisici.",
+        "pix și stilou sunt în contrarietate": "Aceasta este acceptată ca adevărată în schema școlară, deoarece se exclud reciproc, dar nu epuizează întregul univers al instrumentelor de scris."
+      }
+    },
+    {
+      "id": "L1_11",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "clasificare",
+      "question": "O clasificare corectă trebuie să respecte, între altele, regula:",
+      "options": [
+        "omogenității",
+        "ambiguității",
+        "echivocului",
+        "metaforei"
+      ],
+      "correct": "omogenității",
+      "correct_explanation": "Clasificarea trebuie realizată după un criteriu unitar, iar elementele din aceeași clasă trebuie să fie grupate în mod coerent. Regula omogenității cere tocmai acest lucru.",
+      "incorrect_explanations": {
+        "ambiguității": "Greșit. Ambiguitatea afectează negativ corectitudinea clasificării.",
+        "echivocului": "Greșit. Echivocul este o eroare de limbaj, nu o regulă logică a clasificării.",
+        "metaforei": "Greșit. Metafora nu este instrument de clasificare logică riguroasă."
+      }
+    },
+    {
+      "id": "L1_12",
+      "type": "mcq",
+      "difficulty": "hard",
+      "topic": "clasificare",
+      "question": "Clasificarea animalelor în domestice, sălbatice, patrupede și bipede este:",
+      "options": [
+        "corectă",
+        "completă",
+        "incorectă",
+        "adecvată"
+      ],
+      "correct": "incorectă",
+      "correct_explanation": "Clasificarea este incorectă deoarece amestecă două criterii diferite: mediul de viață/comportamentul (domestice, sălbatice) și numărul membrelor folosite la mers (patrupede, bipede). O clasificare validă trebuie să folosească un singur criteriu pe aceeași treaptă.",
+      "incorrect_explanations": {
+        "corectă": "Greșit. Tocmai amestecarea criteriilor o face invalidă.",
+        "completă": "Greșit. Chiar dacă ar părea amplă, problema nu este completitudinea, ci lipsa criteriului unic.",
+        "adecvată": "Greșit. O clasificare adecvată trebuie să fie logic unitară."
+      }
+    },
+    {
+      "id": "L1_13",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "tipuri_termeni",
+      "question": "Din punct de vedere intensional, termenul „frumusețe” este:",
+      "options": [
+        "vid",
+        "abstract",
+        "negativ",
+        "compus"
+      ],
+      "correct": "abstract",
+      "correct_explanation": "„Frumusețe” desemnează o însușire considerată separat de obiectele care o posedă. De aceea este termen abstract.",
+      "incorrect_explanations": {
+        "vid": "Greșit. Un termen vid este lipsit de obiecte în extensiune; aici nu acesta este criteriul central.",
+        "negativ": "Greșit. Termenii negativi exprimă absența unei însușiri, cum ar fi „injust”.",
+        "compus": "Greșit. Termenul este exprimat printr-un singur cuvânt."
+      }
+    },
+    {
+      "id": "L1_14",
+      "type": "mcq",
+      "difficulty": "hard",
+      "topic": "tipuri_termeni",
+      "question": "Termenul „pătrat rotund” este:",
+      "options": [
+        "general",
+        "relativ",
+        "vid logic",
+        "distributiv"
+      ],
+      "correct": "vid logic",
+      "correct_explanation": "„Pătrat rotund” reunește note incompatibile în logica clasică. Nu există niciun obiect care să poată aparține acestei extensiuni, deci termenul este vid logic.",
+      "incorrect_explanations": {
+        "general": "Greșit. Un termen general are cel puțin două obiecte în extensiune; aici nu există niciunul.",
+        "relativ": "Greșit. Nu exprimă o relație între obiecte.",
+        "distributiv": "Greșit. Criteriul distributiv/colectiv nu este relevant aici."
+      }
+    },
+    {
+      "id": "L1_15",
+      "type": "mcq",
+      "difficulty": "hard",
+      "topic": "probleme_euler",
+      "question": "Se dau termenii A, B și C în intersectare, iar D reprezintă intersecția lor. Ce afirmație este corectă?",
+      "options": [
+        "D este inclus în A, B și C",
+        "D este în contradicție cu A",
+        "D include complet pe B",
+        "D nu are nicio legătură cu C"
+      ],
+      "correct": "D este inclus în A, B și C",
+      "correct_explanation": "Dacă D reprezintă chiar intersecția lui A, B și C, atunci orice element din D aparține simultan lui A, lui B și lui C. Prin urmare, D este inclus în toate trei.",
+      "incorrect_explanations": {
+        "D este în contradicție cu A": "Greșit. D este parte din A, deci nu poate fi în contradicție cu el.",
+        "D include complet pe B": "Greșit. Raportul este invers: D este mai restrâns decât B.",
+        "D nu are nicio legătură cu C": "Greșit. D aparține și lui C, tocmai pentru că este intersecția comună."
+      }
+    },
+    {
+      "id": "L1_16",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "„Scriitor contemporan român” și „scriitor” sunt în raport de:",
+      "options": [
+        "identitate",
+        "incluziune",
+        "contradicție",
+        "intersectare"
+      ],
+      "correct": "incluziune",
+      "correct_explanation": "„Scriitor contemporan român” este o specie a genului „scriitor”. Are intensiune mai mare și extensiune mai mică, fiind inclus în termenul mai general.",
+      "incorrect_explanations": {
+        "identitate": "Greșit. Nu toți scriitorii sunt contemporani români.",
+        "contradicție": "Greșit. Cei doi termeni nu se exclud total.",
+        "intersectare": "Greșit. Aici nu există două clase independente care se întâlnesc doar parțial; una este subordonată celeilalte."
+      }
+    },
+    {
+      "id": "L1_17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "tipuri_termeni",
+      "question": "Termenul „inutil” este un termen:",
+      "options": [
+        "pozitiv",
+        "negativ",
+        "abstract",
+        "colectiv"
+      ],
+      "correct": "negativ",
+      "correct_explanation": "Termenul exprimă absența unei însușiri, aceea de a fi util. De aceea este termen negativ.",
+      "incorrect_explanations": {
+        "pozitiv": "Greșit. Termenii pozitivi indică prezența unei însușiri, nu lipsa ei.",
+        "abstract": "Greșit. Criteriul principal vizat aici este pozitiv/negativ, nu abstract/concret.",
+        "colectiv": "Greșit. Nu desemnează o colecție de obiecte."
+      }
+    },
+    {
+      "id": "L1_18",
+      "type": "mcq",
+      "difficulty": "easy",
+      "topic": "tipuri_termeni",
+      "question": "„Pădure” este, din punct de vedere extensiv, un termen:",
+      "options": [
+        "colectiv",
+        "distributiv",
+        "vid",
+        "relativ"
+      ],
+      "correct": "colectiv",
+      "correct_explanation": "„Pădure” desemnează o colecție luată ca întreg. Proprietățile termenului se aplică ansamblului, nu fiecărui arbore separat.",
+      "incorrect_explanations": {
+        "distributiv": "Greșit. Un termen distributiv se aplică fiecărui membru în parte, cum ar fi „arbore”.",
+        "vid": "Greșit. Termenul are obiecte reale în extensiune.",
+        "relativ": "Greșit. Nu exprimă o relație între două obiecte."
+      }
+    },
+    {
+      "id": "L1_19",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "tipuri_termeni",
+      "question": "„Soț” este un termen:",
+      "options": [
+        "absolut",
+        "relativ",
+        "vid",
+        "colectiv"
+      ],
+      "correct": "relativ",
+      "correct_explanation": "Termenul „soț” presupune raportarea la altă persoană, anume la „soție”. De aceea este termen relativ.",
+      "incorrect_explanations": {
+        "absolut": "Greșit. Termenii absoluți au sens de sine stătător, fără raportare necesară la altceva.",
+        "vid": "Greșit. Termenul are obiecte reale în extensiune.",
+        "colectiv": "Greșit. Nu desemnează o colecție."
+      }
+    },
+    {
+      "id": "L1_20",
+      "type": "mcq",
+      "difficulty": "medium",
+      "topic": "raporturi",
+      "question": "Care dintre următoarele perechi se află în raport de identitate?",
+      "options": [
+        "om / ființă rațională",
+        "mamifer / animal",
+        "elev / sportiv",
+        "alb / negru"
+      ],
+      "correct": "om / ființă rațională",
+      "correct_explanation": "În logica tradițională școlară, „om” și „ființă rațională” sunt considerați termeni cu aceeași extensiune. De aceea raportul este de identitate.",
+      "incorrect_explanations": {
+        "mamifer / animal": "Greșit. Aici avem incluziune, nu identitate.",
+        "elev / sportiv": "Greșit. Aici avem intersectare.",
+        "alb / negru": "Greșit. Aici avem contrarietate."
+      }
+    }
+  ]
+}

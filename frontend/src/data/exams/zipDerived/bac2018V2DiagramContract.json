@@ -1,0 +1,62 @@
+{
+  "examId": "bac_logica_2018_v2",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_2018_v2",
+      "type": "euler",
+      "studentVisible": "canvas_only",
+      "teacherRender": {
+        "terms": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "relations": [
+          "A intersects B",
+          "C is subset of A ∩ B",
+          "D is subset of C"
+        ],
+        "truthValues": {
+          "Unii D nu sunt B": "F",
+          "Toți A sunt D": "F",
+          "Niciun C nu este D": "F",
+          "Niciun A nu este B": "F",
+          "Toți D sunt C": "A",
+          "Toți C sunt A": "A"
+        }
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_venn_2018_v2",
+      "type": "venn_three_terms",
+      "studentVisible": "canvas_only",
+      "teacherRender": {
+        "terms": [
+          "S",
+          "P",
+          "M"
+        ],
+        "modes": {
+          "aaa-4": {
+            "schema": [
+              "PaM",
+              "MaS",
+              "SaP"
+            ],
+            "validity": "invalid"
+          },
+          "eae-2": {
+            "schema": [
+              "PeM",
+              "SaM",
+              "SeP"
+            ],
+            "validity": "valid"
+          }
+        },
+        "renderInstruction": "Render two separate Venn diagrams, one for aaa-4 and one for eae-2. Show shaded areas for universal negative/affirmative premises and mark conclusion status."
+      }
+    }
+  ]
+}

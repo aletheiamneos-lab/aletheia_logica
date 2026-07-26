@@ -1,0 +1,672 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei Nationale",
+      "x": 1492.3543701171875,
+      "y": 193.64869689941406,
+      "score": 0.9740359405676524,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul National deEvaluaresi Examinare",
+      "x": 1333.874267578125,
+      "y": 257.31402587890625,
+      "score": 0.9747966436239389,
+      "page_number": 1
+    },
+    {
+      "text": "Examenuldebacalaureatnational2020",
+      "x": 1228.220947265625,
+      "y": 376.6864929199219,
+      "score": 0.9966427719954288,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1674.6065673828125,
+      "y": 450.96270751953125,
+      "score": 0.9900589260188016,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1283.68896484375,
+      "y": 527.8916625976562,
+      "score": 0.9794722741300409,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3148.4716796875,
+      "y": 610.1260375976562,
+      "score": 0.9980041027069092,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.8629150390625,
+      "y": 737.4566650390625,
+      "score": 0.9715608750070844,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile dinfiliera vocationala, cu exceptia profilului militar",
+      "x": 364.5042724609375,
+      "y": 824.9965209960938,
+      "score": 0.9809458843175916,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.",
+      "x": 367.1455993652344,
+      "y": 981.507080078125,
+      "score": 0.9795549965616482,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpuldelucruefectivestede3ore.",
+      "x": 369.78692626953125,
+      "y": 1069.046875,
+      "score": 0.9739691456779838,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.78692626953125,
+      "y": 1225.5574951171875,
+      "score": 0.9854210674762726,
+      "page_number": 1
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2863.20751953125,
+      "y": 1225.5574951171875,
+      "score": 0.9499078478131976,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+      "x": 364.5042724609375,
+      "y": 1302.4864501953125,
+      "score": 0.9724330673826501,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 364.5042724609375,
+      "y": 1382.068115234375,
+      "score": 0.9855562836834879,
+      "page_number": 1
+    },
+    {
+      "text": "Intr-o demonstratie logic corecta, teza de demonstrat trebuie:",
+      "x": 522.984375,
+      "y": 1504.09326171875,
+      "score": 0.9858216374151169,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 369.78692626953125,
+      "y": 1512.051513671875,
+      "score": 0.9973056614398956,
+      "page_number": 1
+    },
+    {
+      "text": "a.sa fie cel putin o propozitie probabila",
+      "x": 412.0483093261719,
+      "y": 1596.9385986328125,
+      "score": 0.9655296061097122,
+      "page_number": 1
+    },
+    {
+      "text": "b.sa contina termeni cu semnificatie multipla",
+      "x": 406.765625,
+      "y": 1668.56201171875,
+      "score": 0.970194771554735,
+      "page_number": 1
+    },
+    {
+      "text": "c. sa fie o propozitie infirmata anterior",
+      "x": 412.0483093261719,
+      "y": 1753.44921875,
+      "score": 0.9740220817123971,
+      "page_number": 1
+    },
+    {
+      "text": "d.sa fie inlocuita pe parcursul demonstratiei cu alta teza",
+      "x": 406.765625,
+      "y": 1825.0726318359375,
+      "score": 0.9697886335438696,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 361.8629150390625,
+      "y": 1965.6668701171875,
+      "score": 0.9981454312801361,
+      "page_number": 1
+    },
+    {
+      "text": "RationamentulDacaunele produse deuz casnic sunt poluante,atunci unele produse",
+      "x": 538.8323974609375,
+      "y": 1963.01416015625,
+      "score": 0.9653478079027944,
+      "page_number": 1
+    },
+    {
+      "text": "poluantesuntdeuzcasnicesteunexempludeargument:",
+      "x": 544.1150512695312,
+      "y": 2045.24853515625,
+      "score": 0.9978661951811417,
+      "page_number": 1
+    },
+    {
+      "text": "inductiv complet",
+      "x": 533.5497436523438,
+      "y": 2124.830322265625,
+      "score": 0.9810736067593098,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 2130.1357421875,
+      "score": 0.9982661604881287,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 419.9722900390625,
+      "y": 2207.064697265625,
+      "score": 0.9994802176952362,
+      "page_number": 1
+    },
+    {
+      "text": "silogistic",
+      "x": 536.1910400390625,
+      "y": 2204.411865234375,
+      "score": 0.99961559176445,
+      "page_number": 1
+    },
+    {
+      "text": "deductivimediat",
+      "x": 533.5497436523438,
+      "y": 2281.3408203125,
+      "score": 0.99763503074646,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 2286.646240234375,
+      "score": 0.886101633310318,
+      "page_number": 1
+    },
+    {
+      "text": "d.（",
+      "x": 414.68963623046875,
+      "y": 2358.269775390625,
+      "score": 0.7555544773737589,
+      "page_number": 1
+    },
+    {
+      "text": "deductiv mediat",
+      "x": 525.625732421875,
+      "y": 2358.269775390625,
+      "score": 0.9916513164838155,
+      "page_number": 1
+    },
+    {
+      "text": "Termenii sulita si sabie, ca specii ale termenului arma, se afla in raport de:",
+      "x": 530.9083862304688,
+      "y": 2485.600341796875,
+      "score": 0.9787547932221339,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 364.5042724609375,
+      "y": 2493.55859375,
+      "score": 0.99667027592659,
+      "page_number": 1
+    },
+    {
+      "text": "identitate",
+      "x": 528.2670288085938,
+      "y": 2565.18212890625,
+      "score": 0.9564667582511902,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 2578.445556640625,
+      "score": 0.9995149970054626,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 412.0483093261719,
+      "y": 2647.41650390625,
+      "score": 0.9983310699462891,
+      "page_number": 1
+    },
+    {
+      "text": "contrarietate",
+      "x": 533.5497436523438,
+      "y": 2650.069091796875,
+      "score": 0.9977421668859628,
+      "page_number": 1
+    },
+    {
+      "text": "ordonare",
+      "x": 536.1910400390625,
+      "y": 2729.65087890625,
+      "score": 0.9982477128505707,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 2734.956298828125,
+      "score": 0.9109719097614288,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 417.3309631347656,
+      "y": 2809.232421875,
+      "score": 0.9960136711597443,
+      "page_number": 1
+    },
+    {
+      "text": "contradictie",
+      "x": 528.2670288085938,
+      "y": 2806.579833984375,
+      "score": 0.9996817906697592,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 361.8629150390625,
+      "y": 2939.2158203125,
+      "score": 0.9979554116725922,
+      "page_number": 1
+    },
+    {
+      "text": "Subiectul logic al propozitiei Unele strategii de rezolvare a problemelor sunt procedee",
+      "x": 541.4737548828125,
+      "y": 2941.86865234375,
+      "score": 0.9637452727076651,
+      "page_number": 1
+    },
+    {
+      "text": "euristice este:",
+      "x": 546.7564086914062,
+      "y": 3026.755615234375,
+      "score": 0.9726710637410482,
+      "page_number": 1
+    },
+    {
+      "text": "unele strategii",
+      "x": 533.5497436523438,
+      "y": 3098.379150390625,
+      "score": 0.9829616228739421,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 3103.6845703125,
+      "score": 0.9915756583213806,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 3180.613525390625,
+      "score": 0.9997603595256805,
+      "page_number": 1
+    },
+    {
+      "text": "strategiiderezolvare",
+      "x": 541.4737548828125,
+      "y": 3180.613525390625,
+      "score": 0.9962398290634156,
+      "page_number": 1
+    },
+    {
+      "text": "rezolvareaproblemelor",
+      "x": 536.1910400390625,
+      "y": 3254.8896484375,
+      "score": 0.997185142267318,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 419.9722900390625,
+      "y": 3265.500732421875,
+      "score": 0.9181625843048096,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 417.3309631347656,
+      "y": 3339.77685546875,
+      "score": 0.996536374092102,
+      "page_number": 1
+    },
+    {
+      "text": "strategiiderezolvareaproblemelor",
+      "x": 538.8323974609375,
+      "y": 3339.77685546875,
+      "score": 0.9957656711339951,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 359.2215881347656,
+      "y": 3467.107421875,
+      "score": 0.997367650270462,
+      "page_number": 1
+    },
+    {
+      "text": "Una dinregulile de corectitudine ale operatiei de clasificare este aceea conform careia, pe",
+      "x": 541.4737548828125,
+      "y": 3467.107421875,
+      "score": 0.9751101011758322,
+      "page_number": 1
+    },
+    {
+      "text": "aceeasi treapta a clasificari, intre clasele obtinute trebuie sa existe numai raporturi logice de:",
+      "x": 544.1150512695312,
+      "y": 3546.689208984375,
+      "score": 0.9733875582412798,
+      "page_number": 1
+    },
+    {
+      "text": "identitate",
+      "x": 533.5497436523438,
+      "y": 3618.312744140625,
+      "score": 0.9987321734428406,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 412.0483093261719,
+      "y": 3634.22900390625,
+      "score": 0.9974600374698639,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 409.4069519042969,
+      "y": 3703.19970703125,
+      "score": 0.99421626329422,
+      "page_number": 1
+    },
+    {
+      "text": "opozitie",
+      "x": 528.2670288085938,
+      "y": 3703.19970703125,
+      "score": 0.9652798995375633,
+      "page_number": 1
+    },
+    {
+      "text": "ordonare",
+      "x": 530.9083862304688,
+      "y": 3785.43408203125,
+      "score": 0.9988061562180519,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 3788.0869140625,
+      "score": 0.9362552762031555,
+      "page_number": 1
+    },
+    {
+      "text": "d. incrucisare",
+      "x": 406.765625,
+      "y": 3854.40478515625,
+      "score": 0.9729659599917275,
+      "page_number": 1
+    },
+    {
+      "text": "Din punct de vedere intensional, termenul sportiv de performanta, este un termen:",
+      "x": 536.1910400390625,
+      "y": 3989.693603515625,
+      "score": 0.9758044172216345,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 364.5042724609375,
+      "y": 3994.999267578125,
+      "score": 0.9986770749092102,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 4082.5390625,
+      "score": 0.9968317449092865,
+      "page_number": 1
+    },
+    {
+      "text": "precis",
+      "x": 528.2670288085938,
+      "y": 4079.88623046875,
+      "score": 0.9995929896831512,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 4156.8154296875,
+      "score": 0.9995923936367035,
+      "page_number": 1
+    },
+    {
+      "text": "simplu",
+      "x": 533.5497436523438,
+      "y": 4151.509765625,
+      "score": 0.9990999698638916,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 4239.0498046875,
+      "score": 0.9340745806694031,
+      "page_number": 1
+    },
+    {
+      "text": "concret",
+      "x": 533.5497436523438,
+      "y": 4233.744140625,
+      "score": 0.9993643675531659,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 412.0483093261719,
+      "y": 4310.6728515625,
+      "score": 0.9925015270709991,
+      "page_number": 1
+    },
+    {
+      "text": "abstract",
+      "x": 528.2670288085938,
+      "y": 4308.0205078125,
+      "score": 0.9997613951563835,
+      "page_number": 1
+    },
+    {
+      "text": "Un rationament inductiv incomplet nu se caracterizeaza prin:",
+      "x": 544.1150512695312,
+      "y": 4445.9619140625,
+      "score": 0.9670131186644236,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 364.5042724609375,
+      "y": 4448.61474609375,
+      "score": 0.9992687106132507,
+      "page_number": 1
+    },
+    {
+      "text": "caracterul amplificator al concluziei",
+      "x": 538.8323974609375,
+      "y": 4525.54345703125,
+      "score": 0.9577413281878909,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 4533.50146484375,
+      "score": 0.9971823394298553,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 412.0483093261719,
+      "y": 4602.47265625,
+      "score": 0.9979923069477081,
+      "page_number": 1
+    },
+    {
+      "text": "concluzieprobabila",
+      "x": 530.9083862304688,
+      "y": 4605.125,
+      "score": 0.9933811359935336,
+      "page_number": 1
+    },
+    {
+      "text": "c. concluzie certa",
+      "x": 409.4069519042969,
+      "y": 4679.4013671875,
+      "score": 0.9682628909746805,
+      "page_number": 1
+    },
+    {
+      "text": "d. concluzie mai generala decat premisele",
+      "x": 406.765625,
+      "y": 4748.3720703125,
+      "score": 0.9806574117846605,
+      "page_number": 1
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresi comunicare",
+      "x": 361.8629150390625,
+      "y": 4947.326171875,
+      "score": 0.97960995815017,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3145.830322265625,
+      "y": 4944.673828125,
+      "score": 0.9991814732551575,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1656.1171875,
+      "y": 5024.25537109375,
+      "score": 0.9908138087817601,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei Nationale",
+    "Centrul National deEvaluaresi Examinare",
+    "Examenuldebacalaureatnational2020",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Model",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile dinfiliera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.",
+    "·Timpuldelucruefectivestede3ore.",
+    "SUBIECTULI",
+    "(30 de puncte)",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "Intr-o demonstratie logic corecta, teza de demonstrat trebuie:",
+    "1.",
+    "a.sa fie cel putin o propozitie probabila",
+    "b.sa contina termeni cu semnificatie multipla",
+    "c. sa fie o propozitie infirmata anterior",
+    "d.sa fie inlocuita pe parcursul demonstratiei cu alta teza",
+    "2.",
+    "RationamentulDacaunele produse deuz casnic sunt poluante,atunci unele produse",
+    "poluantesuntdeuzcasnicesteunexempludeargument:",
+    "inductiv complet",
+    "a.",
+    "b.",
+    "silogistic",
+    "deductivimediat",
+    "C.",
+    "d.（",
+    "deductiv mediat",
+    "Termenii sulita si sabie, ca specii ale termenului arma, se afla in raport de:",
+    "3.",
+    "identitate",
+    "a.",
+    "b.",
+    "contrarietate",
+    "ordonare",
+    "C.",
+    "d.",
+    "contradictie",
+    "4.",
+    "Subiectul logic al propozitiei Unele strategii de rezolvare a problemelor sunt procedee",
+    "euristice este:",
+    "unele strategii",
+    "a.",
+    "b.",
+    "strategiiderezolvare",
+    "rezolvareaproblemelor",
+    "C.",
+    "d.",
+    "strategiiderezolvareaproblemelor",
+    "5.",
+    "Una dinregulile de corectitudine ale operatiei de clasificare este aceea conform careia, pe",
+    "aceeasi treapta a clasificari, intre clasele obtinute trebuie sa existe numai raporturi logice de:",
+    "identitate",
+    "a.",
+    "b.",
+    "opozitie",
+    "ordonare",
+    "C.",
+    "d. incrucisare",
+    "Din punct de vedere intensional, termenul sportiv de performanta, este un termen:",
+    "6.",
+    "a.",
+    "precis",
+    "b.",
+    "simplu",
+    "C.",
+    "concret",
+    "d.",
+    "abstract",
+    "Un rationament inductiv incomplet nu se caracterizeaza prin:",
+    "7.",
+    "caracterul amplificator al concluziei",
+    "a.",
+    "b.",
+    "concluzieprobabila",
+    "c. concluzie certa",
+    "d. concluzie mai generala decat premisele",
+    "Probascrisalalogica,argumentaresi comunicare",
+    "Model",
+    "Pagina 1 din 3"
+  ],
+  "text": "Ministerul Educatiei Nationale\nCentrul National deEvaluaresi Examinare\nExamenuldebacalaureatnational2020\nProba E. d)\nLogica, argumentare si comunicare\nModel\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile dinfiliera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.\n·Timpuldelucruefectivestede3ore.\nSUBIECTULI\n(30 de puncte)\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\nIntr-o demonstratie logic corecta, teza de demonstrat trebuie:\n1.\na.sa fie cel putin o propozitie probabila\nb.sa contina termeni cu semnificatie multipla\nc. sa fie o propozitie infirmata anterior\nd.sa fie inlocuita pe parcursul demonstratiei cu alta teza\n2.\nRationamentulDacaunele produse deuz casnic sunt poluante,atunci unele produse\npoluantesuntdeuzcasnicesteunexempludeargument:\ninductiv complet\na.\nb.\nsilogistic\ndeductivimediat\nC.\nd.（\ndeductiv mediat\nTermenii sulita si sabie, ca specii ale termenului arma, se afla in raport de:\n3.\nidentitate\na.\nb.\ncontrarietate\nordonare\nC.\nd.\ncontradictie\n4.\nSubiectul logic al propozitiei Unele strategii de rezolvare a problemelor sunt procedee\neuristice este:\nunele strategii\na.\nb.\nstrategiiderezolvare\nrezolvareaproblemelor\nC.\nd.\nstrategiiderezolvareaproblemelor\n5.\nUna dinregulile de corectitudine ale operatiei de clasificare este aceea conform careia, pe\naceeasi treapta a clasificari, intre clasele obtinute trebuie sa existe numai raporturi logice de:\nidentitate\na.\nb.\nopozitie\nordonare\nC.\nd. incrucisare\nDin punct de vedere intensional, termenul sportiv de performanta, este un termen:\n6.\na.\nprecis\nb.\nsimplu\nC.\nconcret\nd.\nabstract\nUn rationament inductiv incomplet nu se caracterizeaza prin:\n7.\ncaracterul amplificator al concluziei\na.\nb.\nconcluzieprobabila\nc. concluzie certa\nd. concluzie mai generala decat premisele\nProbascrisalalogica,argumentaresi comunicare\nModel\nPagina 1 din 3"
+}

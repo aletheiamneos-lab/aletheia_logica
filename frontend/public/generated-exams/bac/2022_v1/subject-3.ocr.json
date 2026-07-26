@@ -1,0 +1,336 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1681.787109375,
+      "y": 184.664306640625,
+      "score": 0.9879899203777314,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1325.497314453125,
+      "y": 247.0509033203125,
+      "score": 0.9769320678203663,
+      "page_number": 3
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 568.0703125,
+      "y": 351.8603820800781,
+      "score": 0.984695001884743,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti,in limbaj formal,opinile celor doi elevi;",
+      "x": 667.7317504882812,
+      "y": 431.7152099609375,
+      "score": 0.9459663734716528,
+      "page_number": 3
+    },
+    {
+      "text": "4puncte",
+      "x": 3024.72509765625,
+      "y": 426.7242736816406,
+      "score": 0.9989911147526332,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+      "x": 665.240234375,
+      "y": 501.58819580078125,
+      "score": 0.9849868098894755,
+      "page_number": 3
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+      "x": 665.240234375,
+      "y": 578.9475708007812,
+      "score": 0.9693706542253494,
+      "page_number": 3
+    },
+    {
+      "text": ".2puncte",
+      "x": 2880.216064453125,
+      "y": 578.9475708007812,
+      "score": 0.928071241825819,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 505.7818908691406,
+      "y": 791.0619506835938,
+      "score": 0.9017789463202158,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2882.70751953125,
+      "y": 796.0529174804688,
+      "score": 0.9896074036757151,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fieurmatoareledouamoduri silogistice:aoo-2,eae-3.",
+      "x": 505.7818908691406,
+      "y": 868.4213256835938,
+      "score": 0.978702049629361,
+      "page_number": 3
+    },
+    {
+      "text": "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 588.0025634765625,
+      "y": 943.2852172851562,
+      "score": 0.9751682694141681,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 583.01953125,
+      "y": 1013.158203125,
+      "score": 0.9969616856264032,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 588.0025634765625,
+      "y": 1090.517578125,
+      "score": 0.992486082845264,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3017.25048828125,
+      "y": 1093.0130615234375,
+      "score": 0.9772124588489532,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 583.01953125,
+      "y": 1162.885986328125,
+      "score": 0.9847154960487828,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 588.0025634765625,
+      "y": 1237.75,
+      "score": 0.9928163545472282,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3019.7421875,
+      "y": 1240.245361328125,
+      "score": 0.977311909198761,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 508.2734069824219,
+      "y": 1312.6138916015625,
+      "score": 0.9818407567042224,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia,Unele alimente fara gluten nu sunt gustoase\"",
+      "x": 583.01953125,
+      "y": 1387.477783203125,
+      "score": 0.9641537232832476,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3014.759033203125,
+      "y": 1389.9732666015625,
+      "score": 0.9979009330272675,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorul silogism:Unelecomportamente acceptatesocial sunt empatice,deoarece unele",
+      "x": 505.7818908691406,
+      "y": 1457.3507080078125,
+      "score": 0.9752766620153668,
+      "page_number": 3
+    },
+    {
+      "text": "manifestariempaticesuntdezirabilemoral，iartoatecomportamenteledezirabilemoralsunt",
+      "x": 590.494140625,
+      "y": 1537.20556640625,
+      "score": 0.988885721306742,
+      "page_number": 3
+    },
+    {
+      "text": "acceptatesocial.",
+      "x": 590.494140625,
+      "y": 1609.573974609375,
+      "score": 0.9951108209788799,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 505.7818908691406,
+      "y": 1681.9425048828125,
+      "score": 0.9701183332074986,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 500.7987976074219,
+      "y": 1751.8154296875,
+      "score": 0.9881100335291454,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenul minorestenedistribuit inpremisa.",
+      "x": 585.5110473632812,
+      "y": 1829.1748046875,
+      "score": 0.9777097812918729,
+      "page_number": 3
+    },
+    {
+      "text": "2. Subiectul logic al concluziei este reprezentat de termenul ,empatic\".",
+      "x": 580.5279541015625,
+      "y": 1899.0478515625,
+      "score": 0.986352864238951,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala afirmativa.",
+      "x": 585.5110473632812,
+      "y": 1976.4072265625,
+      "score": 0.996908263726668,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3027.216796875,
+      "y": 2041.2891845703125,
+      "score": 0.9956463500857353,
+      "page_number": 3
+    },
+    {
+      "text": "4.Predicatul logic al concluziei este nedistribuit in concluzie.",
+      "x": 583.01953125,
+      "y": 2046.2801513671875,
+      "score": 0.9814430382102728,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 505.7818908691406,
+      "y": 2123.6396484375,
+      "score": 0.9763074693856416,
+      "page_number": 3
+    },
+    {
+      "text": "Politicaesteactivitateapoliticianului.",
+      "x": 585.5110473632812,
+      "y": 2196.008056640625,
+      "score": 0.9925405241941151,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 583.01953125,
+      "y": 2265.880859375,
+      "score": 0.9824094093508191,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3032.19970703125,
+      "y": 2273.367431640625,
+      "score": 0.9885659143328667,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 583.01953125,
+      "y": 2343.240234375,
+      "score": 0.9750716376304627,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,politica\"",
+      "x": 707.5963134765625,
+      "y": 2420.599609375,
+      "score": 0.9724272231996796,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3027.216796875,
+      "y": 2418.104248046875,
+      "score": 0.9970497116446495,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 500.7987976074219,
+      "y": 4649.048828125,
+      "score": 0.968034548064073,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 1",
+      "x": 3014.759033203125,
+      "y": 4654.03955078125,
+      "score": 0.9874805331230163,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1716.6685791015625,
+      "y": 4723.91259765625,
+      "score": 0.9769675093037742,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti,in limbaj formal,opinile celor doi elevi;",
+    "4puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+    ".2puncte",
+    "SUBIECTULaIIII-lea",
+    "(30depuncte)",
+    "A.Fieurmatoareledouamoduri silogistice:aoo-2,eae-3.",
+    "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia,Unele alimente fara gluten nu sunt gustoase\"",
+    "6 puncte",
+    "C.Fieurmatorul silogism:Unelecomportamente acceptatesocial sunt empatice,deoarece unele",
+    "manifestariempaticesuntdezirabilemoral，iartoatecomportamenteledezirabilemoralsunt",
+    "acceptatesocial.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenul minorestenedistribuit inpremisa.",
+    "2. Subiectul logic al concluziei este reprezentat de termenul ,empatic\".",
+    "3. Concluzia silogismului este o propozitie universala afirmativa.",
+    "4 puncte",
+    "4.Predicatul logic al concluziei este nedistribuit in concluzie.",
+    "D.Fie urmatoarea definitie:",
+    "Politicaesteactivitateapoliticianului.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,politica\"",
+    "4 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 1",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nPorninddelaaceastasituatie:\na.scrieti,in limbaj formal,opinile celor doi elevi;\n4puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.\n.2puncte\nSUBIECTULaIIII-lea\n(30depuncte)\nA.Fieurmatoareledouamoduri silogistice:aoo-2,eae-3.\n1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia,Unele alimente fara gluten nu sunt gustoase\"\n6 puncte\nC.Fieurmatorul silogism:Unelecomportamente acceptatesocial sunt empatice,deoarece unele\nmanifestariempaticesuntdezirabilemoral，iartoatecomportamenteledezirabilemoralsunt\nacceptatesocial.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenul minorestenedistribuit inpremisa.\n2. Subiectul logic al concluziei este reprezentat de termenul ,empatic\".\n3. Concluzia silogismului este o propozitie universala afirmativa.\n4 puncte\n4.Predicatul logic al concluziei este nedistribuit in concluzie.\nD.Fie urmatoarea definitie:\nPoliticaesteactivitateapoliticianului.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,politica\"\n4 puncte\nProba scrisa la logica,argumentare si comunicare\nVarianta 1\nPagina 3 din 3"
+}

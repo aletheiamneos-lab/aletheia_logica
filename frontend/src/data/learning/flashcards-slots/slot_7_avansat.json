@@ -1,0 +1,134 @@
+{
+  "slot": 7,
+  "nivel": "avansat",
+  "title": "Slot 7 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat, pe argumentare și sofisme.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_7_avansat_card_1",
+      "front": "Analizează: „Este vinovat, pentru că toată lumea îl consideră vinovat.”",
+      "back": "Sofism de apel la majoritate; opinia majorității nu este probă logică."
+    },
+    {
+      "id": "slot_7_avansat_card_2",
+      "front": "Analizează: „Nu lua în serios argumentul lui, pentru că este tânăr.”",
+      "back": "Argument ad hominem; se atacă persoana, nu argumentul."
+    },
+    {
+      "id": "slot_7_avansat_card_3",
+      "front": "Analizează: „Trebuie să acceptați cererea mea, pentru că am avut o viață grea.”",
+      "back": "Argument ad misericordiam; mila nu demonstrează teza."
+    },
+    {
+      "id": "slot_7_avansat_card_4",
+      "front": "Analizează: „Dacă nu ești cu noi, ești împotriva adevărului.”",
+      "back": "Falsă dilemă; reduce nejustificat opțiunile."
+    },
+    {
+      "id": "slot_7_avansat_card_5",
+      "front": "Analizează: „Această regulă este corectă pentru că este o regulă justă.”",
+      "back": "Petiție de principiu; concluzia este presupusă în premisă."
+    },
+    {
+      "id": "slot_7_avansat_card_6",
+      "front": "Analizează: „A câștigat după ce a purtat acel ceas, deci ceasul i-a adus succesul.”",
+      "back": "Cauză falsă; succesiunea temporală nu dovedește cauzalitate."
+    },
+    {
+      "id": "slot_7_avansat_card_7",
+      "front": "Analizează: „Ai spus că unele reguli sunt utile, deci vrei reguli pentru orice.”",
+      "back": "Om de paie; poziția inițială este exagerată și deformată."
+    },
+    {
+      "id": "slot_7_avansat_card_8",
+      "front": "Analizează: „Discutăm validitatea argumentului, dar mai important este că elevii nu citesc.”",
+      "back": "Ignoratio elenchi; se schimbă teza discutată."
+    },
+    {
+      "id": "slot_7_avansat_card_9",
+      "front": "Analizează: „Legea este legală deoarece este lege.”",
+      "back": "Circularitate; termenul este justificat prin sine însuși."
+    },
+    {
+      "id": "slot_7_avansat_card_10",
+      "front": "Analizează: „Profesorul a spus, deci este adevărat.”",
+      "back": "Apel la autoritate insuficient; autoritatea nu înlocuiește argumentul."
+    },
+    {
+      "id": "slot_7_avansat_card_11",
+      "front": "Completează entimema: „Este avocat, deci este jurist.”",
+      "back": "Premisa ascunsă este: Toți avocații sunt juriști."
+    },
+    {
+      "id": "slot_7_avansat_card_12",
+      "front": "Completează entimema: „Este mamifer, deci este vertebrat.”",
+      "back": "Premisa ascunsă este: Toate mamiferele sunt vertebrate."
+    },
+    {
+      "id": "slot_7_avansat_card_13",
+      "front": "Identifică premisa ascunsă: „Nu poate vota, fiindcă este minor.”",
+      "back": "Premisa ascunsă este: Minorii nu au drept de vot."
+    },
+    {
+      "id": "slot_7_avansat_card_14",
+      "front": "Identifică problema: o entimemă are premisa ascunsă falsă.",
+      "back": "Argumentul devine vulnerabil, chiar dacă pare convingător."
+    },
+    {
+      "id": "slot_7_avansat_card_15",
+      "front": "Construiește lanț soritic: Toți A sunt B; toți B sunt C; toți C sunt D.",
+      "back": "Concluzia finală este: Toți A sunt D."
+    },
+    {
+      "id": "slot_7_avansat_card_16",
+      "front": "Verifică soritul: Toți elevii sunt persoane; toate persoanele au drepturi; deci elevii au drepturi.",
+      "back": "Raționament corect, dacă premisele sunt acceptate."
+    },
+    {
+      "id": "slot_7_avansat_card_17",
+      "front": "Identifică eroarea în sorit: o verigă nu leagă termenii.",
+      "back": "Lanțul devine nevalid, deoarece concluzia finală nu mai este susținută."
+    },
+    {
+      "id": "slot_7_avansat_card_18",
+      "front": "Analizează dilema: „Dacă înveți, ai șanse; dacă nu înveți, pierzi șanse; deci învățarea este rațională.”",
+      "back": "Dilemă constructivă, dacă alternativele sunt corect formulate."
+    },
+    {
+      "id": "slot_7_avansat_card_19",
+      "front": "Analizează: „Ori studiezi logică, ori nu poți gândi deloc.”",
+      "back": "Falsă dilemă; există grade și forme diferite de gândire."
+    },
+    {
+      "id": "slot_7_avansat_card_20",
+      "front": "De ce apelul la emoție nu este probă logică?",
+      "back": "Pentru că emoția poate influența acceptarea, dar nu demonstrează adevărul concluziei."
+    },
+    {
+      "id": "slot_7_avansat_card_21",
+      "front": "De ce atacul la persoană nu respinge argumentul?",
+      "back": "Pentru că valoarea argumentului depinde de premise și inferență, nu de persoană."
+    },
+    {
+      "id": "slot_7_avansat_card_22",
+      "front": "De ce omul de paie este periculos?",
+      "back": "Pentru că pare să respingă teza adversă, dar respinge de fapt o versiune falsificată."
+    },
+    {
+      "id": "slot_7_avansat_card_23",
+      "front": "De ce petiția de principiu poate părea convingătoare?",
+      "back": "Pentru că repetă concluzia într-o formă apropiată de premisă."
+    },
+    {
+      "id": "slot_7_avansat_card_24",
+      "front": "De ce ambiguitatea poate produce sofisme?",
+      "back": "Pentru că permite trecerea neobservată de la un sens al termenului la altul."
+    },
+    {
+      "id": "slot_7_avansat_card_25",
+      "front": "Cum verifici un argument complex?",
+      "back": "Identifici teza, premisele, concluziile intermediare, inferențele și eventualele premise ascunse."
+    }
+  ]
+}

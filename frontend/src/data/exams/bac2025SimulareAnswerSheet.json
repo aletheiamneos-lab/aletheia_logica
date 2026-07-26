@@ -1,0 +1,1236 @@
+{
+  "schemaVersion": "1.0.0",
+  "examId": "bac_logica_2025_simulare",
+  "type": "BAC_EXAM",
+  "title": "Examenul național de bacalaureat 2025 - Simulare - Logică, argumentare și comunicare",
+  "discipline": "Logică, argumentare și comunicare",
+  "variant": "Simulare 2025",
+  "workingTimeMinutes": 180,
+  "officialBonusPoints": 10,
+  "totalExamPointsWithoutBonus": 90,
+  "totalExamPointsWithBonus": 100,
+  "gradingNote": "Nota finală se calculează prin împărțirea la zece a punctajului total acordat pentru lucrare.",
+  "sourceFiles": {
+    "subjectPdf": "Examenul național de bacalaureat 2025_Simulare.pdf",
+    "baremPdf": "Examenul național de bacalaureat 2025_Simulare_BAREM.pdf"
+  },
+  "layout": {
+    "mode": "exam_with_answer_sheet",
+    "preserveExistingVisualStyle": true,
+    "showOriginalSubject": true,
+    "showAnswerSheet": true,
+    "answerSheetPlacement": "right_on_desktop_below_on_mobile",
+    "useExistingRadioButtonsForSingleChoice": true,
+    "doNotChangeTheme": true
+  },
+  "correctionPolicy": {
+    "singleChoice": "automatic_exact",
+    "trueFalse": "automatic_exact",
+    "formalLogic": "automatic_normalized",
+    "syllogismSchema": "automatic_normalized_per_field",
+    "naturalLanguage": "manual_or_semiautomatic",
+    "longExplanation": "manual_or_semiautomatic",
+    "normalizationRules": [
+      "trim whitespace",
+      "remove internal whitespace for formal formulas",
+      "case-insensitive comparison for formal formulas",
+      "accept diacritics and non-diacritics for Romanian text in semiautomatic checks"
+    ]
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "renderAs": "choice_table",
+          "items": [
+            {
+              "id": "I_A_1",
+              "number": 1,
+              "answerType": "single_choice",
+              "prompt": "Demonstrația este procesul logic în care:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "o propoziție falsă este derivată din propoziții adevărate"
+                },
+                {
+                  "key": "b",
+                  "text": "o propoziție adevărată este derivată din propoziții probabile"
+                },
+                {
+                  "key": "c",
+                  "text": "o propoziție dată este derivată din propoziții adevărate"
+                },
+                {
+                  "key": "d",
+                  "text": "o propoziție falsă este derivată din propoziții false"
+                }
+              ],
+              "correctAnswer": "c",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "c",
+                "explanation": "Demonstrația urmărește derivarea unei propoziții din propoziții considerate adevărate."
+              }
+            },
+            {
+              "id": "I_A_2",
+              "number": 2,
+              "answerType": "single_choice",
+              "prompt": "Inferența «Unele ființe muritoare sunt oameni, dacă oamenii sunt ființe muritoare.» este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "o inducție incompletă"
+                },
+                {
+                  "key": "b",
+                  "text": "o deducție mediată"
+                },
+                {
+                  "key": "c",
+                  "text": "o conversiune prin accident"
+                },
+                {
+                  "key": "d",
+                  "text": "o obversiune validă"
+                }
+              ],
+              "correctAnswer": "c",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "c",
+                "explanation": "Din propoziția universal afirmativă «Toți oamenii sunt ființe muritoare» se poate obține prin conversiune prin accident «Unele ființe muritoare sunt oameni»."
+              }
+            },
+            {
+              "id": "I_A_3",
+              "number": 3,
+              "answerType": "single_choice",
+              "prompt": "Este falsă afirmația, cu privire la raporturile dintre termeni:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "termenii vertebrat și nevertebrat se află în raport de contradicție"
+                },
+                {
+                  "key": "b",
+                  "text": "termenii pisică și animal alintat se află în raport de intersectare"
+                },
+                {
+                  "key": "c",
+                  "text": "termenii pix și stilou se află în raport de contrarietate"
+                },
+                {
+                  "key": "d",
+                  "text": "termenii crizantemă și floare roșie se află în raport de ordonare"
+                }
+              ],
+              "correctAnswer": "d",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "d",
+                "explanation": "«Crizantemă» și «floare roșie» nu sunt în raport simplu de ordonare, deoarece nu toate crizantemele sunt flori roșii și nu toate florile roșii sunt crizanteme."
+              }
+            },
+            {
+              "id": "I_A_4",
+              "number": 4,
+              "answerType": "single_choice",
+              "prompt": "Subiectul logic al propoziției «Toate prăjiturile cu fistic sunt deserturi aromate.» este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "toate"
+                },
+                {
+                  "key": "b",
+                  "text": "prăjiturile cu fistic"
+                },
+                {
+                  "key": "c",
+                  "text": "toate prăjiturile cu fistic"
+                },
+                {
+                  "key": "d",
+                  "text": "toate prăjiturile"
+                }
+              ],
+              "correctAnswer": "b",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "b",
+                "explanation": "Subiectul logic este termenul despre care se afirmă ceva: «prăjiturile cu fistic»."
+              }
+            },
+            {
+              "id": "I_A_5",
+              "number": 5,
+              "answerType": "single_choice",
+              "prompt": "Clasificarea raționamentelor în funcție de direcția procesului de inferare în deductive și inductive este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "corectă"
+                },
+                {
+                  "key": "b",
+                  "text": "incompletă"
+                },
+                {
+                  "key": "c",
+                  "text": "neomogenă"
+                },
+                {
+                  "key": "d",
+                  "text": "abundentă"
+                }
+              ],
+              "correctAnswer": "a",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "a",
+                "explanation": "Criteriul este unic, iar clasele sunt relevante pentru direcția inferenței."
+              }
+            },
+            {
+              "id": "I_A_6",
+              "number": 6,
+              "answerType": "single_choice",
+              "prompt": "Din punct de vedere intensional, termenul libertate este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "concret, absolut"
+                },
+                {
+                  "key": "b",
+                  "text": "abstract, absolut"
+                },
+                {
+                  "key": "c",
+                  "text": "concret, simplu"
+                },
+                {
+                  "key": "d",
+                  "text": "pozitiv, relativ"
+                }
+              ],
+              "correctAnswer": "b",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "b",
+                "explanation": "«Libertate» desemnează o însușire/stare abstractă și are sens de sine stătător."
+              }
+            },
+            {
+              "id": "I_A_7",
+              "number": 7,
+              "answerType": "single_choice",
+              "prompt": "Raționamentul «Unele melodii sunt relaxante, deci unele melodii nu sunt nerelaxante.» este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "conversiune"
+                },
+                {
+                  "key": "b",
+                  "text": "silogism"
+                },
+                {
+                  "key": "c",
+                  "text": "deducție mediată"
+                },
+                {
+                  "key": "d",
+                  "text": "obversiune"
+                }
+              ],
+              "correctAnswer": "d",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "d",
+                "explanation": "Se schimbă calitatea și se neagă predicatul: aceasta este obversiune."
+              }
+            },
+            {
+              "id": "I_A_8",
+              "number": 8,
+              "answerType": "single_choice",
+              "prompt": "Propoziția «Niciun mamifer nu este nevertebrat.» este un exemplu de propoziție:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "universală afirmativă"
+                },
+                {
+                  "key": "b",
+                  "text": "particulară negativă"
+                },
+                {
+                  "key": "c",
+                  "text": "universală negativă"
+                },
+                {
+                  "key": "d",
+                  "text": "particulară afirmativă"
+                }
+              ],
+              "correctAnswer": "c",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "c",
+                "explanation": "Formula este SeP: propoziție universală negativă."
+              }
+            },
+            {
+              "id": "I_A_9",
+              "number": 9,
+              "answerType": "single_choice",
+              "prompt": "Extensiunea termenului oglindă este:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "totalitatea oglinzilor"
+                },
+                {
+                  "key": "b",
+                  "text": "suprafață netedă și lucioasă, care are proprietatea de a reflecta lumina"
+                },
+                {
+                  "key": "c",
+                  "text": "totalitatea obiectelor de decor"
+                },
+                {
+                  "key": "d",
+                  "text": "lucru care înfățișează, reprezintă, simbolizează ceva"
+                }
+              ],
+              "correctAnswer": "a",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "a",
+                "explanation": "Extensiunea este clasa obiectelor la care termenul se aplică."
+              }
+            },
+            {
+              "id": "I_A_10",
+              "number": 10,
+              "answerType": "single_choice",
+              "prompt": "Propoziției categorice «Toți diplomații sunt oameni politici.» îi corespunde formula:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "SiP"
+                },
+                {
+                  "key": "b",
+                  "text": "SaP"
+                },
+                {
+                  "key": "c",
+                  "text": "SeP"
+                },
+                {
+                  "key": "d",
+                  "text": "SoP"
+                }
+              ],
+              "correctAnswer": "b",
+              "points": 2,
+              "correction": "automatic",
+              "solution": {
+                "answer": "b",
+                "explanation": "«Toți S sunt P» este propoziție universal afirmativă, deci SaP."
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "renderAs": "euler_and_true_false",
+          "items": [
+            {
+              "id": "I_B_1",
+              "answerType": "euler_diagram_upload_or_canvas",
+              "prompt": "Reprezentați, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei cinci termeni A, B, C, D, E.",
+              "points": 2,
+              "correction": "manual",
+              "solution": {
+                "description": "Diagrama trebuie să respecte raporturile: A este gen pentru B; C este încrucișat cu D și subordonat lui A; D este supraordonat lui E și în opoziție cu A; E este încrucișat cu B și în opoziție cu C.",
+                "gradingNote": "Punctajul pentru itemii adevărat/fals se acordă independent de reprezentarea de la acest subpunct."
+              }
+            },
+            {
+              "id": "I_B_2_a",
+              "answerType": "true_false",
+              "label": "a",
+              "prompt": "Unii E sunt D.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "A",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "A",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_b",
+              "answerType": "true_false",
+              "label": "b",
+              "prompt": "Toți C sunt A.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "A",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "A",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_c",
+              "answerType": "true_false",
+              "label": "c",
+              "prompt": "Niciun B nu este C.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_d",
+              "answerType": "true_false",
+              "label": "d",
+              "prompt": "Unii D nu sunt A.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_e",
+              "answerType": "true_false",
+              "label": "e",
+              "prompt": "Niciun C nu este D.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "A",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "A",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_f",
+              "answerType": "true_false",
+              "label": "f",
+              "prompt": "Unii E nu sunt A.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_g",
+              "answerType": "true_false",
+              "label": "g",
+              "prompt": "Toți E sunt B.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            },
+            {
+              "id": "I_B_2_h",
+              "answerType": "true_false",
+              "label": "h",
+              "prompt": "Unii C sunt A.",
+              "options": [
+                "A",
+                "F"
+              ],
+              "correctAnswer": "A",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "A",
+                "explanation": "Conform baremului oficial pentru simularea 2025."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "givenPropositions": [
+        {
+          "number": 1,
+          "text": "Niciun supliment alimentar nu este eliberat cu prescripție medicală.",
+          "formal": "SeP",
+          "S": "suplimente alimentare",
+          "P": "produse eliberate cu prescripție medicală"
+        },
+        {
+          "number": 2,
+          "text": "Unele raționamente sunt incorecte.",
+          "formal": "SiP",
+          "S": "raționamente",
+          "P": "incorecte"
+        },
+        {
+          "number": 3,
+          "text": "Toți scriitorii contemporani sunt afectați de evoluția inteligenței artificiale.",
+          "formal": "SaP",
+          "S": "scriitori contemporani",
+          "P": "persoane afectate de evoluția inteligenței artificiale"
+        },
+        {
+          "number": 4,
+          "text": "Unele viețuitoare acvatice nu sunt pești.",
+          "formal": "SoP",
+          "S": "viețuitoare acvatice",
+          "P": "pești"
+        }
+      ],
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "items": [
+            {
+              "id": "II_A_1",
+              "label": "Subalterna propoziției 1",
+              "prompt": "Construiți subalterna propoziției 1, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "SoP"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Unele suplimente alimentare nu sunt eliberate cu prescripție medicală.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SoP",
+                "natural": "Unele suplimente alimentare nu sunt eliberate cu prescripție medicală.",
+                "explanation": "Propoziția 1 este SeP. Subalterna unei universale negative este particulara negativă, deci SoP."
+              }
+            },
+            {
+              "id": "II_A_2",
+              "label": "Subcontrara propoziției 2",
+              "prompt": "Construiți subcontrara propoziției 2, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "SoP"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Unele raționamente nu sunt incorecte.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SoP",
+                "natural": "Unele raționamente nu sunt incorecte.",
+                "explanation": "Propoziția 2 este SiP. Subcontrara lui SiP este SoP."
+              }
+            },
+            {
+              "id": "II_A_3",
+              "label": "Contrara propoziției 3",
+              "prompt": "Construiți contrara propoziției 3, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "SeP"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Niciun scriitor contemporan nu este afectat de evoluția inteligenței artificiale.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SeP",
+                "natural": "Niciun scriitor contemporan nu este afectat de evoluția inteligenței artificiale.",
+                "explanation": "Propoziția 3 este SaP. Contrara lui SaP este SeP."
+              }
+            },
+            {
+              "id": "II_A_4",
+              "label": "Contradictoria propoziției 4",
+              "prompt": "Construiți contradictoria propoziției 4, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "SaP"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Toate viețuitoarele acvatice sunt pești.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SaP",
+                "natural": "Toate viețuitoarele acvatice sunt pești.",
+                "explanation": "Propoziția 4 este SoP. Contradictoria lui SoP este SaP."
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "items": [
+            {
+              "id": "II_B_2",
+              "label": "Propoziția 2",
+              "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 2.",
+              "answerType": "logic_operation_pair",
+              "fields": [
+                {
+                  "key": "converseFormal",
+                  "label": "Conversa - formă logică",
+                  "expectedAnswers": [
+                    "PiS"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "converseNatural",
+                  "label": "Conversa - limbaj natural",
+                  "expectedAnswer": "Unele lucruri incorecte sunt raționamente.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                },
+                {
+                  "key": "obverseFormal",
+                  "label": "Obversa - formă logică",
+                  "expectedAnswers": [
+                    "So~P",
+                    "So¬P",
+                    "SoP'"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "obverseNatural",
+                  "label": "Obversa - limbaj natural",
+                  "expectedAnswer": "Unele raționamente nu sunt corecte.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "converseFormal": "PiS",
+                "converseNatural": "Unele lucruri incorecte sunt raționamente.",
+                "obverseFormal": "So~P",
+                "obverseNatural": "Unele raționamente nu sunt corecte.",
+                "explanation": "Propoziția 2 este SiP. Conversiunea simplă a lui SiP este PiS. Obversa schimbă calitatea și neagă predicatul: So~P."
+              }
+            },
+            {
+              "id": "II_B_3",
+              "label": "Propoziția 3",
+              "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 3.",
+              "answerType": "logic_operation_pair",
+              "fields": [
+                {
+                  "key": "converseFormal",
+                  "label": "Conversa - formă logică",
+                  "expectedAnswers": [
+                    "PiS"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "converseNatural",
+                  "label": "Conversa - limbaj natural",
+                  "expectedAnswer": "Unele persoane afectate de evoluția inteligenței artificiale sunt scriitori contemporani.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                },
+                {
+                  "key": "obverseFormal",
+                  "label": "Obversa - formă logică",
+                  "expectedAnswers": [
+                    "Se~P",
+                    "Se¬P",
+                    "SeP'"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "obverseNatural",
+                  "label": "Obversa - limbaj natural",
+                  "expectedAnswer": "Niciun scriitor contemporan nu este neafectat de evoluția inteligenței artificiale.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "converseFormal": "PiS",
+                "converseNatural": "Unele persoane afectate de evoluția inteligenței artificiale sunt scriitori contemporani.",
+                "obverseFormal": "Se~P",
+                "obverseNatural": "Niciun scriitor contemporan nu este neafectat de evoluția inteligenței artificiale.",
+                "explanation": "Propoziția 3 este SaP. Conversa validă este prin accident: PiS. Obversa este Se~P."
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "items": [
+            {
+              "id": "II_C_1",
+              "label": "Supraalterna conversei subcontrarei propoziției 4",
+              "prompt": "Construiți supraalterna conversei subcontrarei propoziției 4, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "PaS"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Toți peștii sunt viețuitoare acvatice.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "PaS",
+                "natural": "Toți peștii sunt viețuitoare acvatice.",
+                "explanation": "Propoziția 4 este SoP. Subcontrara este SiP; conversa lui SiP este PiS; supraalterna lui PiS este PaS."
+              }
+            },
+            {
+              "id": "II_C_2",
+              "label": "Obversa conversei propoziției 2",
+              "prompt": "Construiți obversa conversei propoziției 2, atât în limbaj formal, cât și în limbaj natural.",
+              "answerType": "formal_and_natural",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswers": [
+                    "Po~S"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Unele lucruri incorecte nu sunt non-raționamente.",
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "Po~S",
+                "natural": "Unele lucruri incorecte nu sunt non-raționamente.",
+                "explanation": "Propoziția 2 este SiP. Conversa este PiS; obversa conversei este Po~S."
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "items": [
+            {
+              "id": "II_D_X",
+              "label": "Elevul X",
+              "prompt": "X: Dacă niciun campion olimpic nu este fumător, atunci toți campionii olimpici sunt nefumători.",
+              "answerType": "formal_validity_explanation",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formalizare",
+                  "expectedAnswers": [
+                    "SeP->Sa~P",
+                    "SeP→Sa~P",
+                    "SeP-Sa~P"
+                  ],
+                  "points": 2,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "validity",
+                  "label": "Corectitudine logică",
+                  "expectedAnswers": [
+                    "corect",
+                    "valid",
+                    "raționament corect",
+                    "obversiune validă"
+                  ],
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SeP→Sa~P",
+                "validity": "raționament corect / obversiune validă",
+                "explanation": "Din SeP se obține valid Sa~P prin obversiune: se schimbă calitatea și se neagă predicatul."
+              }
+            },
+            {
+              "id": "II_D_Y",
+              "label": "Elevul Y",
+              "prompt": "Y: Putem susține că unele calamități naturale nu sunt evenimente predictibile, dacă ne bazăm pe faptul că unele evenimente predictibile nu sunt calamități naturale.",
+              "answerType": "formal_validity_explanation",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formalizare",
+                  "expectedAnswers": [
+                    "SoP->PoS",
+                    "SoP→PoS",
+                    "SoP-PoS"
+                  ],
+                  "points": 2,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "validity",
+                  "label": "Corectitudine logică",
+                  "expectedAnswers": [
+                    "incorect",
+                    "nevalid",
+                    "raționament incorect",
+                    "conversiune nevalidă"
+                  ],
+                  "points": 1,
+                  "correction": "manual_or_semiautomatic"
+                },
+                {
+                  "key": "explanation",
+                  "label": "Explicație",
+                  "expectedAnswer": "Conversiunea propoziției O este nevalidă. Se încalcă legea distribuirii termenilor: termenul S apare distribuit în concluzie, dar nu este distribuit în premisă.",
+                  "points": 2,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "SoP→PoS",
+                "validity": "raționament incorect / conversiune nevalidă",
+                "explanation": "Conversiunea unei propoziții particulare negative de tip O nu este validă. Se încalcă legea distribuirii termenilor."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "items": [
+            {
+              "id": "III_A_a_eae1",
+              "label": "Schema eae-1",
+              "answerType": "syllogism_schema",
+              "prompt": "Scrieți schema de inferență corespunzătoare modului silogistic eae-1.",
+              "fields": [
+                {
+                  "key": "major",
+                  "label": "Premisa majoră",
+                  "expectedAnswers": [
+                    "MeP"
+                  ],
+                  "points": 0.67,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "minor",
+                  "label": "Premisa minoră",
+                  "expectedAnswers": [
+                    "SaM"
+                  ],
+                  "points": 0.67,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "conclusion",
+                  "label": "Concluzia",
+                  "expectedAnswers": [
+                    "SeP"
+                  ],
+                  "points": 0.66,
+                  "correction": "automatic_normalized"
+                }
+              ],
+              "solution": {
+                "major": "MeP",
+                "minor": "SaM",
+                "conclusion": "SeP",
+                "explanation": "În figura I, termenul mediu este subiect în premisa majoră și predicat în premisa minoră."
+              }
+            },
+            {
+              "id": "III_A_a_aii3",
+              "label": "Schema aii-3",
+              "answerType": "syllogism_schema",
+              "prompt": "Scrieți schema de inferență corespunzătoare modului silogistic aii-3.",
+              "fields": [
+                {
+                  "key": "major",
+                  "label": "Premisa majoră",
+                  "expectedAnswers": [
+                    "MaP"
+                  ],
+                  "points": 0.67,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "minor",
+                  "label": "Premisa minoră",
+                  "expectedAnswers": [
+                    "MiS"
+                  ],
+                  "points": 0.67,
+                  "correction": "automatic_normalized"
+                },
+                {
+                  "key": "conclusion",
+                  "label": "Concluzia",
+                  "expectedAnswers": [
+                    "SiP"
+                  ],
+                  "points": 0.66,
+                  "correction": "automatic_normalized"
+                }
+              ],
+              "solution": {
+                "major": "MaP",
+                "minor": "MiS",
+                "conclusion": "SiP",
+                "explanation": "În figura III, termenul mediu este subiect în ambele premise."
+              }
+            },
+            {
+              "id": "III_A_b",
+              "label": "Silogism în limbaj natural",
+              "answerType": "long_text",
+              "prompt": "Construiți, în limbaj natural, un silogism care să corespundă uneia dintre schemele de inferență scrise la subpunctul a).",
+              "points": 2,
+              "correction": "manual_or_semiautomatic",
+              "solution": {
+                "example": "Niciun mamifer nu este plantă. Toți câinii sunt mamifere. Prin urmare, niciun câine nu este plantă.",
+                "formalExample": "MeP / SaM // SeP",
+                "explanation": "Exemplul respectă schema eae-1."
+              }
+            },
+            {
+              "id": "III_A_c_eae1",
+              "label": "Validitate eae-1",
+              "answerType": "validity_with_explanation",
+              "prompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului eae-1 și precizați decizia rezultată.",
+              "fields": [
+                {
+                  "key": "validity",
+                  "label": "Verdict",
+                  "expectedAnswers": [
+                    "valid",
+                    "mod silogistic valid"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_or_semiautomatic"
+                },
+                {
+                  "key": "explanation",
+                  "label": "Explicație Venn",
+                  "expectedAnswer": "Reprezentarea premiselor MeP și SaM face vizibilă concluzia SeP; prin urmare modul eae-1 este valid.",
+                  "points": 2,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "validity": "valid",
+                "explanation": "Modul eae-1 este valid. După reprezentarea premiselor, concluzia SeP rezultă din diagramă."
+              }
+            },
+            {
+              "id": "III_A_c_aii3",
+              "label": "Validitate aii-3",
+              "answerType": "validity_with_explanation",
+              "prompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului aii-3 și precizați decizia rezultată.",
+              "fields": [
+                {
+                  "key": "validity",
+                  "label": "Verdict",
+                  "expectedAnswers": [
+                    "valid",
+                    "mod silogistic valid"
+                  ],
+                  "points": 1,
+                  "correction": "automatic_or_semiautomatic"
+                },
+                {
+                  "key": "explanation",
+                  "label": "Explicație Venn",
+                  "expectedAnswer": "Reprezentarea premiselor MaP și MiS face vizibilă concluzia SiP; prin urmare modul aii-3 este valid.",
+                  "points": 2,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "validity": "valid",
+                "explanation": "Modul aii-3 este valid. După reprezentarea premiselor, concluzia SiP rezultă din diagramă."
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "items": [
+            {
+              "id": "III_B_1",
+              "answerType": "formal_and_natural_long",
+              "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid prin care să justificați propoziția «Unele pisici persane nu sunt un companion docil.»",
+              "fields": [
+                {
+                  "key": "formal",
+                  "label": "Formă logică",
+                  "expectedAnswer": "MeP / SiM // SoP",
+                  "points": 3,
+                  "correction": "manual_or_semiautomatic"
+                },
+                {
+                  "key": "natural",
+                  "label": "Limbaj natural",
+                  "expectedAnswer": "Niciun animal foarte independent nu este un companion docil. Unele pisici persane sunt animale foarte independente. Prin urmare, unele pisici persane nu sunt un companion docil.",
+                  "points": 3,
+                  "correction": "manual_or_semiautomatic"
+                }
+              ],
+              "solution": {
+                "formal": "MeP / SiM // SoP",
+                "natural": "Niciun animal foarte independent nu este un companion docil. Unele pisici persane sunt animale foarte independente. Prin urmare, unele pisici persane nu sunt un companion docil.",
+                "explanation": "Este un silogism de tip EIO-1, valid, cu S = pisici persane, P = companion docil, M = animale foarte independente."
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "givenSyllogism": "Unele caracteristici apreciate de ceilalți sunt virtuți, fiindcă toate calitățile dezirabile sunt caracteristici apreciate de ceilalți, iar virtuțile sunt calități dezirabile.",
+          "items": [
+            {
+              "id": "III_C_1",
+              "answerType": "true_false",
+              "prompt": "Termenul major este distribuit în premisa majoră.",
+              "correctAnswer": "A",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "A",
+                "explanation": "Termenul major este «virtuți» și apare ca subiect în premisa majoră «Virtuțile sunt calități dezirabile», deci este distribuit."
+              }
+            },
+            {
+              "id": "III_C_2",
+              "answerType": "true_false",
+              "prompt": "Concluzia este o propoziție universală afirmativă.",
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Concluzia este «Unele caracteristici apreciate de ceilalți sunt virtuți», deci este particular afirmativă."
+              }
+            },
+            {
+              "id": "III_C_3",
+              "answerType": "true_false",
+              "prompt": "Termenul minor este distribuit în concluzie.",
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "Într-o propoziție particular afirmativă, nici subiectul, nici predicatul nu sunt distribuiți."
+              }
+            },
+            {
+              "id": "III_C_4",
+              "answerType": "true_false",
+              "prompt": "Termenul major este calități dezirabile.",
+              "correctAnswer": "F",
+              "points": 1,
+              "correction": "automatic",
+              "solution": {
+                "answer": "F",
+                "explanation": "«Calități dezirabile» este termenul mediu, nu termenul major. Termenul major este predicatul concluziei: «virtuți»."
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "givenDefinition": "Parfumul este secretul eleganței.",
+          "items": [
+            {
+              "id": "III_D_a",
+              "answerType": "short_text",
+              "prompt": "Menționați o regulă de corectitudine pe care o încalcă definiția dată.",
+              "points": 2,
+              "correction": "manual_or_semiautomatic",
+              "solution": {
+                "expected": "Regula clarității și preciziei / regula evitării limbajului figurat.",
+                "explanation": "Definiția este metaforică și nu precizează riguros ce este parfumul."
+              }
+            },
+            {
+              "id": "III_D_b",
+              "answerType": "short_text",
+              "prompt": "Precizați o regulă de corectitudine a definirii, alta decât cea menționată la subpunctul a).",
+              "points": 2,
+              "correction": "manual_or_semiautomatic",
+              "solution": {
+                "example": "Regula evitării circularității.",
+                "explanation": "Orice altă regulă validă de corectitudine a definirii poate fi acceptată dacă este diferită de cea de la a)."
+              }
+            },
+            {
+              "id": "III_D_c",
+              "answerType": "long_text",
+              "prompt": "Construiți o definiție, având ca definit termenul «parfum», care să încalce regula precizată la subpunctul b).",
+              "points": 2,
+              "correction": "manual_or_semiautomatic",
+              "solution": {
+                "example": "Parfumul este un produs parfumat.",
+                "violatedRule": "Evitarea circularității",
+                "explanation": "Exemplul încalcă regula evitării circularității, deoarece explică termenul printr-un derivat al aceluiași termen."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

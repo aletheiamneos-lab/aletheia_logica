@@ -1,0 +1,66 @@
+{
+  "diagramSpecs": [
+    {
+      "diagramId": "bac_2015_v2_ii_d_euler",
+      "type": "euler_categorical",
+      "formula": "SoP",
+      "natural": "Unii profesori nu sunt vorbitori de limba franceza.",
+      "studentAction": "Deseneaza doua cercuri S si P care se intersecteaza si marcheaza un x in zona S din afara lui P.",
+      "renderHints": {
+        "style": "euler2_small",
+        "caption": "Propozitia 3: SoP - unii S nu sunt P.",
+        "note": "S = profesori; P = vorbitori de limba franceza."
+      }
+    },
+    {
+      "diagramId": "bac_2015_v2_iii_a_venn",
+      "type": "venn_three_terms",
+      "mode": "aaa-1",
+      "validity": "valid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": {
+        "major": "MaP",
+        "minor": "SaM",
+        "conclusion": "SaP"
+      },
+      "vennActions": [
+        {
+          "step": 1,
+          "premise": "MaP",
+          "action": "shade",
+          "regions": [
+            "M&!P"
+          ],
+          "meaning": "Tot M este P, deci zona M din afara lui P este vida."
+        },
+        {
+          "step": 2,
+          "premise": "SaM",
+          "action": "shade",
+          "regions": [
+            "S&!M"
+          ],
+          "meaning": "Tot S este M, deci zona S din afara lui M este vida."
+        },
+        {
+          "step": 3,
+          "conclusion": "SaP",
+          "action": "read",
+          "meaning": "Rezulta ca tot S este P; modulul aaa-1 este valid."
+        }
+      ],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "aaa-1: MaP / SaM / SaP - valid"
+      }
+    }
+  ],
+  "sourceContract": {
+    "examId": "bac_logica_2015_v2",
+    "renderingNotes": "Diagrama Euler si diagrama Venn sunt teacher-only in rezolvarea profesorului; elevul primeste doar instrumentul de desen sau upload."
+  }
+}

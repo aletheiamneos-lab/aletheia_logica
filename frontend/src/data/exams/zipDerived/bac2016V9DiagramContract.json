@@ -1,0 +1,37 @@
+{
+  "exam_id": "bac_logica_2016_v9",
+  "diagrams": [
+    {
+      "diagramId": "euler_II_D_2016_v9",
+      "type": "euler",
+      "prompt": "Niciun infractor nu este nevinovat.",
+      "expected_structure": {
+        "sets": [
+          "infractori",
+          "nevinovați"
+        ],
+        "relation": "disjoint"
+      },
+      "student_input_modes": [
+        "draw_canvas",
+        "upload_image"
+      ],
+      "teacher_hint": "Două cercuri separate, fără intersecție."
+    },
+    {
+      "diagramId": "venn_III_A_eio1_2016_v9",
+      "type": "venn_3_terms",
+      "mode": "eio-1",
+      "schema": "MeP / SiM / SoP",
+      "expected_validity": "valid"
+    },
+    {
+      "diagramId": "venn_III_A_aee2_2016_v9",
+      "type": "venn_3_terms",
+      "mode": "aee-2",
+      "schema": "PaM / SeM / SeP",
+      "expected_validity": "valid"
+    }
+  ],
+  "rendering_notes": "Aplicația trebuie să permită desen canvas sau upload imagine pentru elev, iar pentru profesor să poată afișa schema așteptată."
+}

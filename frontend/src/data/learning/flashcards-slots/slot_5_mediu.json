@@ -1,0 +1,134 @@
+{
+  "slot": 5,
+  "nivel": "mediu",
+  "title": "Slot 5 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu, formulate didactic și aplicat.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_5_mediu_card_1",
+      "front": "Cum identifici termenul minor?",
+      "back": "Termenul minor este subiectul concluziei."
+    },
+    {
+      "id": "slot_5_mediu_card_2",
+      "front": "Cum identifici termenul major?",
+      "back": "Termenul major este predicatul concluziei."
+    },
+    {
+      "id": "slot_5_mediu_card_3",
+      "front": "Cum identifici termenul mediu?",
+      "back": "Termenul mediu apare în ambele premise și dispare din concluzie."
+    },
+    {
+      "id": "slot_5_mediu_card_4",
+      "front": "De ce termenul mediu nu apare în concluzie?",
+      "back": "Pentru că funcția lui este doar de legătură între termenul minor și termenul major."
+    },
+    {
+      "id": "slot_5_mediu_card_5",
+      "front": "Care este prima lege a silogismului?",
+      "back": "Silogismul trebuie să conțină exact trei termeni: S, P și M."
+    },
+    {
+      "id": "slot_5_mediu_card_6",
+      "front": "De ce silogismul trebuie să aibă exact trei termeni?",
+      "back": "Pentru că apariția unui al patrulea termen rupe legătura logică dintre premise și concluzie."
+    },
+    {
+      "id": "slot_5_mediu_card_7",
+      "front": "Ce eroare apare când există patru termeni?",
+      "back": "Apare eroarea celor patru termeni."
+    },
+    {
+      "id": "slot_5_mediu_card_8",
+      "front": "Care este legea termenului mediu?",
+      "back": "Termenul mediu trebuie să fie distribuit cel puțin o dată în premise."
+    },
+    {
+      "id": "slot_5_mediu_card_9",
+      "front": "De ce termenul mediu trebuie distribuit?",
+      "back": "Pentru ca el să poată lega întreaga clasă relevantă de termenii extremi."
+    },
+    {
+      "id": "slot_5_mediu_card_10",
+      "front": "Ce eroare apare dacă termenul mediu nu este distribuit?",
+      "back": "Apare eroarea termenului mediu nedistribuit."
+    },
+    {
+      "id": "slot_5_mediu_card_11",
+      "front": "Ce spune legea distribuirii termenilor extremi?",
+      "back": "Un termen distribuit în concluzie trebuie să fie distribuit și în premisa în care apare."
+    },
+    {
+      "id": "slot_5_mediu_card_12",
+      "front": "Ce este ilicitul major?",
+      "back": "Ilicitul major apare când termenul major este distribuit în concluzie, dar nu este distribuit în premisa majoră."
+    },
+    {
+      "id": "slot_5_mediu_card_13",
+      "front": "Ce este ilicitul minor?",
+      "back": "Ilicitul minor apare când termenul minor este distribuit în concluzie, dar nu este distribuit în premisa minoră."
+    },
+    {
+      "id": "slot_5_mediu_card_14",
+      "front": "Ce spune legea premiselor negative?",
+      "back": "Din două premise negative nu se poate obține o concluzie validă."
+    },
+    {
+      "id": "slot_5_mediu_card_15",
+      "front": "De ce două premise negative nu dau concluzie?",
+      "back": "Pentru că nu creează o legătură afirmativă între termenii extremi."
+    },
+    {
+      "id": "slot_5_mediu_card_16",
+      "front": "Ce spune legea premisei negative?",
+      "back": "Dacă o premisă este negativă, concluzia trebuie să fie negativă."
+    },
+    {
+      "id": "slot_5_mediu_card_17",
+      "front": "Ce spune legea premiselor particulare?",
+      "back": "Din două premise particulare nu rezultă concluzie validă."
+    },
+    {
+      "id": "slot_5_mediu_card_18",
+      "front": "De ce două premise particulare sunt insuficiente?",
+      "back": "Pentru că nu oferă o legătură suficient de generală între termenii silogismului."
+    },
+    {
+      "id": "slot_5_mediu_card_19",
+      "front": "Ce spune legea premisei particulare?",
+      "back": "Dacă o premisă este particulară, concluzia trebuie să fie particulară."
+    },
+    {
+      "id": "slot_5_mediu_card_20",
+      "front": "Cum stabilești figura silogistică?",
+      "back": "Analizezi poziția termenului mediu în premisa majoră și în premisa minoră."
+    },
+    {
+      "id": "slot_5_mediu_card_21",
+      "front": "Cum stabilești modul silogistic?",
+      "back": "Notezi tipul premisei majore, al premisei minore și al concluziei: A, E, I sau O."
+    },
+    {
+      "id": "slot_5_mediu_card_22",
+      "front": "Ce verifici prima dată într-un silogism?",
+      "back": "Identifici concluzia și apoi stabilești S, P și M."
+    },
+    {
+      "id": "slot_5_mediu_card_23",
+      "front": "Ce verifici după identificarea termenilor?",
+      "back": "Verifici distribuirea termenului mediu și a termenilor distribuiți în concluzie."
+    },
+    {
+      "id": "slot_5_mediu_card_24",
+      "front": "Ce verifici după distribuire?",
+      "back": "Verifici regulile privind premisele negative, premisele particulare și tipul concluziei."
+    },
+    {
+      "id": "slot_5_mediu_card_25",
+      "front": "De ce Venn este util în silogisme?",
+      "back": "Pentru că arată vizual dacă concluzia este deja conținută în premise."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "test_meta": {
+    "test_id": "logica_set_01",
+    "test_name": "Test Logica - Set 01",
+    "subject": "Logica",
+    "level": "bac_admitere",
+    "language": "ro",
+    "total_questions": 25,
+    "categories": [
+      "Definitii",
+      "Clasificare",
+      "Propozitii categorice",
+      "Silogisme si rationamente",
+      "Erori de rationament"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definitii",
+      "question": "Textul intrebarii",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
+        "E": "Varianta E"
+      },
+      "correct_answer": "B",
+      "justification": "Argumentarea raspunsului corect.",
+      "difficulty": "mediu",
+      "source_lesson": "Lectia 1",
+      "tags": [
+        "definitie",
+        "reguli"
+      ]
+    }
+  ],
+  "report_template": {
+    "include_score": true,
+    "include_category_breakdown": true,
+    "include_correct_answers": true,
+    "include_justifications": true,
+    "include_student_answers": true,
+    "include_recommendations": true
+  }
+}

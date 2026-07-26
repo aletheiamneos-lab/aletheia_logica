@@ -1,0 +1,134 @@
+{
+  "slot": 2,
+  "nivel": "basic",
+  "title": "Slot 2 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_2_basic_card_1",
+      "front": "Ce este un termen absolut?",
+      "back": "Un termen absolut are sens de sine stătător, fără a presupune o relație cu alt termen."
+    },
+    {
+      "id": "slot_2_basic_card_2",
+      "front": "Ce este un termen relativ?",
+      "back": "Un termen relativ exprimă o relație între două sau mai multe obiecte."
+    },
+    {
+      "id": "slot_2_basic_card_3",
+      "front": "Ce este un termen abstract?",
+      "back": "Un termen abstract desemnează o însușire considerată separat de obiectele care o posedă."
+    },
+    {
+      "id": "slot_2_basic_card_4",
+      "front": "Ce este un termen concret?",
+      "back": "Un termen concret desemnează obiecte considerate ca atare."
+    },
+    {
+      "id": "slot_2_basic_card_5",
+      "front": "Ce este un termen pozitiv?",
+      "back": "Un termen pozitiv indică prezența unei însușiri."
+    },
+    {
+      "id": "slot_2_basic_card_6",
+      "front": "Ce este un termen negativ?",
+      "back": "Un termen negativ indică absența unei însușiri."
+    },
+    {
+      "id": "slot_2_basic_card_7",
+      "front": "Ce este un termen simplu?",
+      "back": "Un termen simplu exprimă o noțiune de bază, fără structură compusă."
+    },
+    {
+      "id": "slot_2_basic_card_8",
+      "front": "Ce este un termen compus?",
+      "back": "Un termen compus este format din mai multe elemente conceptuale."
+    },
+    {
+      "id": "slot_2_basic_card_9",
+      "front": "Ce este un termen vid?",
+      "back": "Un termen vid nu are obiecte reale sau logic posibile în extensiune."
+    },
+    {
+      "id": "slot_2_basic_card_10",
+      "front": "Ce este un termen nevid?",
+      "back": "Un termen nevid are cel puțin un obiect în extensiunea sa."
+    },
+    {
+      "id": "slot_2_basic_card_11",
+      "front": "Ce este un termen singular?",
+      "back": "Un termen singular se referă la un singur obiect."
+    },
+    {
+      "id": "slot_2_basic_card_12",
+      "front": "Ce este un termen general?",
+      "back": "Un termen general se referă la o clasă cu mai multe obiecte."
+    },
+    {
+      "id": "slot_2_basic_card_13",
+      "front": "Ce este un termen colectiv?",
+      "back": "Un termen colectiv desemnează o colecție luată ca întreg."
+    },
+    {
+      "id": "slot_2_basic_card_14",
+      "front": "Ce este un termen distributiv?",
+      "back": "Un termen distributiv se aplică fiecărui membru al clasei."
+    },
+    {
+      "id": "slot_2_basic_card_15",
+      "front": "Ce este un termen precis?",
+      "back": "Un termen precis are limite clare de aplicare."
+    },
+    {
+      "id": "slot_2_basic_card_16",
+      "front": "Ce este un termen vag?",
+      "back": "Un termen vag are o zonă de incertitudine privind aplicarea."
+    },
+    {
+      "id": "slot_2_basic_card_17",
+      "front": "Ce este clasificarea naturală?",
+      "back": "Clasificarea naturală se bazează pe trăsături esențiale ale obiectelor."
+    },
+    {
+      "id": "slot_2_basic_card_18",
+      "front": "Ce este clasificarea artificială?",
+      "back": "Clasificarea artificială se bazează pe criterii convenționale sau practice."
+    },
+    {
+      "id": "slot_2_basic_card_19",
+      "front": "Ce este diviziunea logică?",
+      "back": "Diviziunea logică descompune un gen în speciile sale."
+    },
+    {
+      "id": "slot_2_basic_card_20",
+      "front": "Ce este universul de discurs?",
+      "back": "Universul de discurs este domeniul total la care se raportează afirmațiile."
+    },
+    {
+      "id": "slot_2_basic_card_21",
+      "front": "Ce este calitatea unei propoziții categorice?",
+      "back": "Calitatea indică dacă propoziția este afirmativă sau negativă."
+    },
+    {
+      "id": "slot_2_basic_card_22",
+      "front": "Ce este cantitatea unei propoziții categorice?",
+      "back": "Cantitatea indică dacă propoziția este universală sau particulară."
+    },
+    {
+      "id": "slot_2_basic_card_23",
+      "front": "Ce este pătratul opoziției?",
+      "back": "Schema raporturilor dintre propozițiile A, E, I și O."
+    },
+    {
+      "id": "slot_2_basic_card_24",
+      "front": "Ce este inferența imediată?",
+      "back": "Trecerea de la o propoziție la alta fără premisă intermediară."
+    },
+    {
+      "id": "slot_2_basic_card_25",
+      "front": "Ce este conversiunea?",
+      "back": "Operația prin care se inversează subiectul și predicatul unei propoziții."
+    }
+  ]
+}

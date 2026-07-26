@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "examId": "bac_logica_2014_v4",
+    "title": "BAC Logică 2014 - Varianta 4",
+    "visibility": "teacher_only",
+    "basedOn": "official_barem",
+    "studentMustNotSee": true
+  },
+  "answerKey": {
+    "S1_A": {
+      "1": "c",
+      "2": "b",
+      "3": "c",
+      "4": "d",
+      "5": "b",
+      "6": "a"
+    },
+    "S1_B": {
+      "eao-2": {
+        "schema": [
+          "PeM",
+          "SaM",
+          "SoP"
+        ],
+        "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem"
+      },
+      "aee-4": {
+        "schema": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem"
+      }
+    },
+    "S2_A": "SoP",
+    "S2_B": {
+      "subcontrara_prop3_formal": "SoP",
+      "subcontrara_prop3_natural": "Unele teorii despre Univers nu sunt false.",
+      "subalterna_prop4_formal": "SoP",
+      "subalterna_prop4_natural": "Unele acțiuni pripite nu sunt eficiente."
+    },
+    "S2_C": {
+      "prop1": {
+        "original": "SaP",
+        "conversa_formal": "PiS",
+        "conversa_natural": "Unele lucruri epuizabile sunt resurse neregenerabile.",
+        "obversa_formal": "Se non-P",
+        "obversa_natural": "Nicio resursă neregenerabilă nu este neepuizabilă."
+      },
+      "prop4": {
+        "original": "SeP",
+        "conversa_formal": "PeS",
+        "conversa_natural": "Nicio acțiune eficientă nu este pripită.",
+        "obversa_formal": "Sa non-P",
+        "obversa_natural": "Toate acțiunile pripite sunt ineficiente."
+      }
+    },
+    "S2_D": "Propoziția 2 este de tip O, SoP. Propozițiile particulare negative nu se convertesc valid. Conversa ar fi PoS, dar prin această trecere se schimbă distribuirea termenilor și se poate ajunge la o concluzie nejustificată.",
+    "S2_E": {
+      "formula": "SiP",
+      "natural": "Unele teorii despre Univers sunt false. Diagrama Euler trebuie să indice existența unei intersecții între S și P."
+    },
+    "S3_1": "Sofismul este un raționament aparent corect, dar în realitate incorect, folosit de regulă pentru a produce convingere printr-o eroare logică.",
+    "S3_2": [
+      "raționamente valide",
+      "raționamente nevalide"
+    ],
+    "S3_3": {
+      "formal": "MeP; SiM; deci SoP",
+      "natural": "Niciun elev corigent nu este premiant. Unii elevi sunt corigenți. Prin urmare, unii elevi nu sunt premianți."
+    },
+    "S3_4": {
+      "violated_rule": "Definiția „Copiii sunt florile vieții” încalcă regula clarității și preciziei, deoarece folosește o formulare metaforică.",
+      "other_rules_examples": [
+        {
+          "rule": "Definiția nu trebuie să fie prea largă.",
+          "bad_definition": "Copilul este o ființă vie."
+        },
+        {
+          "rule": "Definiția nu trebuie să fie circulară.",
+          "bad_definition": "Copilul este o persoană copilăroasă."
+        }
+      ]
+    }
+  },
+  "verificationChecklist": [
+    "Subiectul I.A comparat cu baremul: 1-c, 2-b, 3-c, 4-d, 5-b, 6-a.",
+    "Subiectul I.B comparat cu baremul: eao-2 și aee-4, schemele oficiale introduse.",
+    "Subiectul II.A-E comparat cu baremul: formula SoP, operații și diagramă Euler.",
+    "Subiectul III.1-4 comparat cu baremul: definiție sofism, tipuri raționament, argument valid, definiție greșită.",
+    "JSON-ul elevului nu conține soluții.",
+    "JSON-ul profesorului este marcat teacher_only."
+  ]
+}

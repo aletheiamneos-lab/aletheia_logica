@@ -1,0 +1,608 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei Nationale si Cercetari Stintifice",
+      "x": 1215.01416015625,
+      "y": 236.09225463867188,
+      "score": 0.9533358337702574,
+      "page_number": 2
+    },
+    {
+      "text": "Centrul National deEvaluaresi Examinare",
+      "x": 1336.515625,
+      "y": 305.0630187988281,
+      "score": 0.9746885635913947,
+      "page_number": 2
+    },
+    {
+      "text": "8.",
+      "x": 361.8629150390625,
+      "y": 379.3392333984375,
+      "score": 0.994730681180954,
+      "page_number": 2
+    },
+    {
+      "text": "Concluzia inductiei complete, din punct de vedere al valorii de adevar, este:",
+      "x": 528.2670288085938,
+      "y": 379.3392333984375,
+      "score": 0.9703219076255699,
+      "page_number": 2
+    },
+    {
+      "text": "a. certa",
+      "x": 404.1242980957031,
+      "y": 458.9208984375,
+      "score": 0.936433307826519,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 409.4069519042969,
+      "y": 535.8497924804688,
+      "score": 0.9963796436786652,
+      "page_number": 2
+    },
+    {
+      "text": "probabila",
+      "x": 520.343017578125,
+      "y": 538.5025634765625,
+      "score": 0.993606275982327,
+      "page_number": 2
+    },
+    {
+      "text": "incerta",
+      "x": 525.625732421875,
+      "y": 615.4314575195312,
+      "score": 0.9573689954621452,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 620.7369384765625,
+      "score": 0.9688616096973419,
+      "page_number": 2
+    },
+    {
+      "text": "d. abstracta",
+      "x": 406.765625,
+      "y": 687.0549926757812,
+      "score": 0.9755817800760269,
+      "page_number": 2
+    },
+    {
+      "text": "Daca termenului gestspontaniseeliminaproprietatea spontan,atunci",
+      "x": 538.8323974609375,
+      "y": 851.5237426757812,
+      "score": 0.9807086493819952,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 939.0635375976562,
+      "score": 0.993129700422287,
+      "page_number": 2
+    },
+    {
+      "text": "cresteintensiuneatermenuluisiextensiuneascade",
+      "x": 536.1910400390625,
+      "y": 936.4108276367188,
+      "score": 0.9931906342506409,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 1010.68701171875,
+      "score": 0.9995329976081848,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneatermenuluiscadesiextensiuneacreste",
+      "x": 530.9083862304688,
+      "y": 1010.68701171875,
+      "score": 0.9956929630703396,
+      "page_number": 2
+    },
+    {
+      "text": "cresteatatextensiuneatermenuluicatsi intensiuneaacestuia",
+      "x": 541.4737548828125,
+      "y": 1090.2686767578125,
+      "score": 0.9881261576499257,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 419.9722900390625,
+      "y": 1100.879638671875,
+      "score": 0.9537844061851501,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneasi extensiuneatermenuluiscad",
+      "x": 533.5497436523438,
+      "y": 1169.850341796875,
+      "score": 0.9850143316464547,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 419.9722900390625,
+      "y": 1175.15576171875,
+      "score": 0.9970661997795105,
+      "page_number": 2
+    },
+    {
+      "text": "10.",
+      "x": 372.42828369140625,
+      "y": 1336.9718017578125,
+      "score": 0.997511088848114,
+      "page_number": 2
+    },
+    {
+      "text": "Propozitia“Unelefotografinusuntprelucratepecalculator”este:",
+      "x": 536.1910400390625,
+      "y": 1334.319091796875,
+      "score": 0.9651292991840233,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 1421.85888671875,
+      "score": 0.9978704452514648,
+      "page_number": 2
+    },
+    {
+      "text": "universalaafirmativa",
+      "x": 538.8323974609375,
+      "y": 1411.248046875,
+      "score": 0.9913964629173279,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 412.0483093261719,
+      "y": 1488.177001953125,
+      "score": 0.9970033168792725,
+      "page_number": 2
+    },
+    {
+      "text": "particulara negativa",
+      "x": 520.343017578125,
+      "y": 1490.8297119140625,
+      "score": 0.9725584870293027,
+      "page_number": 2
+    },
+    {
+      "text": "c.particulara afirmativa",
+      "x": 406.765625,
+      "y": 1567.7586669921875,
+      "score": 0.9604785367846489,
+      "page_number": 2
+    },
+    {
+      "text": "d. universala negativa",
+      "x": 412.0483093261719,
+      "y": 1642.0347900390625,
+      "score": 0.9821083274754611,
+      "page_number": 2
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2857.9248046875,
+      "y": 1793.239990234375,
+      "score": 0.9807561536629995,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 369.78692626953125,
+      "y": 1801.1981201171875,
+      "score": 0.9021787818740395,
+      "page_number": 2
+    },
+    {
+      "text": "Sedauurmatoarelepropoziti:",
+      "x": 367.1455993652344,
+      "y": 1878.1270751953125,
+      "score": 0.9897764485615951,
+      "page_number": 2
+    },
+    {
+      "text": "1.Unelesituatideviatasuntprovocatoare.",
+      "x": 586.3764038085938,
+      "y": 1957.708740234375,
+      "score": 0.9799534898055228,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 583.735107421875,
+      "y": 2037.2904052734375,
+      "score": 0.9990630149841309,
+      "page_number": 2
+    },
+    {
+      "text": "Unelegreselinusuntintentionate.",
+      "x": 678.8231811523438,
+      "y": 2039.943115234375,
+      "score": 0.9865364855335604,
+      "page_number": 2
+    },
+    {
+      "text": "3.Niciun om cinstit nu este mincinos.",
+      "x": 575.8110961914062,
+      "y": 2106.26123046875,
+      "score": 0.9922997484336028,
+      "page_number": 2
+    },
+    {
+      "text": "4. Toti judecatorii sunt persoane responsabile.",
+      "x": 578.452392578125,
+      "y": 2188.49560546875,
+      "score": 0.9949987936527172,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 2345.006103515625,
+      "score": 0.9418894425034523,
+      "page_number": 2
+    },
+    {
+      "text": "A.Precizati formulapropozitiei 4.",
+      "x": 367.1455993652344,
+      "y": 2347.658935546875,
+      "score": 0.9696090654893355,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna",
+      "x": 364.5042724609375,
+      "y": 2427.240478515625,
+      "score": 0.9912350727961614,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.100830078125,
+      "y": 2501.516845703125,
+      "score": 0.9107634797692299,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2.",
+      "x": 475.4403381347656,
+      "y": 2509.474853515625,
+      "score": 0.9996857557977948,
+      "page_number": 2
+    },
+    {
+      "text": "C.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+      "x": 367.1455993652344,
+      "y": 2583.751220703125,
+      "score": 0.9585930429006878,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 475.4403381347656,
+      "y": 2663.332763671875,
+      "score": 0.9886205359218047,
+      "page_number": 2
+    },
+    {
+      "text": "10 puncte",
+      "x": 3029.611572265625,
+      "y": 2742.914306640625,
+      "score": 0.9892164534992642,
+      "page_number": 2
+    },
+    {
+      "text": "D. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+      "x": 367.1455993652344,
+      "y": 2814.537841796875,
+      "score": 0.9830850524561746,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3042.818115234375,
+      "y": 2814.537841796875,
+      "score": 0.9850217178463936,
+      "page_number": 2
+    },
+    {
+      "text": "E. Doi elevi, X si Y, opineaza astfel:",
+      "x": 361.8629150390625,
+      "y": 2891.466796875,
+      "score": 0.9708088150149897,
+      "page_number": 2
+    },
+    {
+      "text": "X:Dacaunii conducatori autonu suntfemei,atunci unelefemeinu suntconducatori auto.",
+      "x": 433.1789855957031,
+      "y": 2976.35400390625,
+      "score": 0.9631574117107156,
+      "page_number": 2
+    },
+    {
+      "text": "Y: Daca toate balenele sunt mamifere, atunci unele mamifere sunt balene.",
+      "x": 430.53765869140625,
+      "y": 3050.630126953125,
+      "score": 0.9778035382429758,
+      "page_number": 2
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 430.53765869140625,
+      "y": 3207.140869140625,
+      "score": 0.9893877925696196,
+      "page_number": 2
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 538.8323974609375,
+      "y": 3292.02783203125,
+      "score": 0.9577667921219232,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3050.7421875,
+      "y": 3284.069580078125,
+      "score": 0.9879689812660217,
+      "page_number": 2
+    },
+    {
+      "text": "b.explicati corectitudinea rationamentelor formalizate.",
+      "x": 536.1910400390625,
+      "y": 3363.6513671875,
+      "score": 0.9962316242131319,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 3363.6513671875,
+      "score": 0.9984448552131653,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2863.20751953125,
+      "y": 3520.161865234375,
+      "score": 0.9499163712774005,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 364.5042724609375,
+      "y": 3522.814697265625,
+      "score": 0.8981007271342807,
+      "page_number": 2
+    },
+    {
+      "text": "A.Fie urmatoarele douamoduri silogistice:eae-2, aai-1.",
+      "x": 364.5042724609375,
+      "y": 3599.74365234375,
+      "score": 0.9723835565425731,
+      "page_number": 2
+    },
+    {
+      "text": "1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice",
+      "x": 454.3096618652344,
+      "y": 3684.630615234375,
+      "score": 0.9855290150936739,
+      "page_number": 2
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 449.0269775390625,
+      "y": 3753.6015625,
+      "score": 0.9825119175340818,
+      "page_number": 2
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 456.95098876953125,
+      "y": 3841.141357421875,
+      "score": 0.991802391078737,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.894287109375,
+      "y": 3838.488525390625,
+      "score": 0.9440341293811798,
+      "page_number": 2
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri",
+      "x": 449.0269775390625,
+      "y": 3915.41748046875,
+      "score": 0.9890351452008642,
+      "page_number": 2
+    },
+    {
+      "text": "silogistice date,precizand totodata decizia la care ati ajuns.",
+      "x": 454.3096618652344,
+      "y": 3994.999267578125,
+      "score": 0.9698377193943146,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3034.894287109375,
+      "y": 3994.999267578125,
+      "score": 0.9687183946371078,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin",
+      "x": 364.5042724609375,
+      "y": 4069.275390625,
+      "score": 0.9822126124419418,
+      "page_number": 2
+    },
+    {
+      "text": "care sa justificati propozitia“Toate faptele bune sunt admirate”",
+      "x": 451.6683349609375,
+      "y": 4151.509765625,
+      "score": 0.9578424515202641,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3037.53564453125,
+      "y": 4148.85693359375,
+      "score": 0.9991329684853554,
+      "page_number": 2
+    },
+    {
+      "text": "C.Fieurmatoareadefinitie:Istoriaestestiintacarestudiazaevenimenteleistorice.",
+      "x": 367.1455993652344,
+      "y": 4228.4384765625,
+      "score": 0.9842202443825571,
+      "page_number": 2
+    },
+    {
+      "text": "a.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.",
+      "x": 451.6683349609375,
+      "y": 4313.32568359375,
+      "score": 0.9858210029140595,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3053.383544921875,
+      "y": 4308.0205078125,
+      "score": 0.9515851140022278,
+      "page_number": 2
+    },
+    {
+      "text": "b. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si",
+      "x": 443.74432373046875,
+      "y": 4382.29638671875,
+      "score": 0.9689539408945775,
+      "page_number": 2
+    },
+    {
+      "text": "construiti, pentru fiecare dintre acestea, cate o definitie care sa leincalce.",
+      "x": 583.735107421875,
+      "y": 4464.53076171875,
+      "score": 0.9686845113069583,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3050.7421875,
+      "y": 4467.18359375,
+      "score": 0.9917343184351921,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 364.5042724609375,
+      "y": 4902.22998046875,
+      "score": 0.9749053965012232,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta 10",
+      "x": 3003.1982421875,
+      "y": 4902.22998046875,
+      "score": 0.9822236462072893,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1656.1171875,
+      "y": 4971.20068359375,
+      "score": 0.9834528991154262,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei Nationale si Cercetari Stintifice",
+    "Centrul National deEvaluaresi Examinare",
+    "8.",
+    "Concluzia inductiei complete, din punct de vedere al valorii de adevar, este:",
+    "a. certa",
+    "b.",
+    "probabila",
+    "incerta",
+    "C.",
+    "d. abstracta",
+    "Daca termenului gestspontaniseeliminaproprietatea spontan,atunci",
+    "a.",
+    "cresteintensiuneatermenuluisiextensiuneascade",
+    "b.",
+    "intensiuneatermenuluiscadesiextensiuneacreste",
+    "cresteatatextensiuneatermenuluicatsi intensiuneaacestuia",
+    "C.",
+    "intensiuneasi extensiuneatermenuluiscad",
+    "d.",
+    "10.",
+    "Propozitia“Unelefotografinusuntprelucratepecalculator”este:",
+    "a.",
+    "universalaafirmativa",
+    "b.",
+    "particulara negativa",
+    "c.particulara afirmativa",
+    "d. universala negativa",
+    "(30depuncte)",
+    "SUBIECTULalII-lea",
+    "Sedauurmatoarelepropoziti:",
+    "1.Unelesituatideviatasuntprovocatoare.",
+    "2.",
+    "Unelegreselinusuntintentionate.",
+    "3.Niciun om cinstit nu este mincinos.",
+    "4. Toti judecatorii sunt persoane responsabile.",
+    "2 puncte",
+    "A.Precizati formulapropozitiei 4.",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna",
+    "6 puncte",
+    "propozitiei 2.",
+    "C.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+    "corecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.",
+    "10 puncte",
+    "D. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+    "4 puncte",
+    "E. Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacaunii conducatori autonu suntfemei,atunci unelefemeinu suntconducatori auto.",
+    "Y: Daca toate balenele sunt mamifere, atunci unele mamifere sunt balene.",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.explicati corectitudinea rationamentelor formalizate.",
+    "4 puncte",
+    "(30 de puncte)",
+    "SUBIECTULaIIII-lea",
+    "A.Fie urmatoarele douamoduri silogistice:eae-2, aai-1.",
+    "1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri",
+    "silogistice date,precizand totodata decizia la care ati ajuns.",
+    "4 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin",
+    "care sa justificati propozitia“Toate faptele bune sunt admirate”",
+    "8 puncte",
+    "C.Fieurmatoareadefinitie:Istoriaestestiintacarestudiazaevenimenteleistorice.",
+    "a.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.",
+    "2 puncte",
+    "b. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si",
+    "construiti, pentru fiecare dintre acestea, cate o definitie care sa leincalce.",
+    "8 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 10",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatiei Nationale si Cercetari Stintifice\nCentrul National deEvaluaresi Examinare\n8.\nConcluzia inductiei complete, din punct de vedere al valorii de adevar, este:\na. certa\nb.\nprobabila\nincerta\nC.\nd. abstracta\nDaca termenului gestspontaniseeliminaproprietatea spontan,atunci\na.\ncresteintensiuneatermenuluisiextensiuneascade\nb.\nintensiuneatermenuluiscadesiextensiuneacreste\ncresteatatextensiuneatermenuluicatsi intensiuneaacestuia\nC.\nintensiuneasi extensiuneatermenuluiscad\nd.\n10.\nPropozitia“Unelefotografinusuntprelucratepecalculator”este:\na.\nuniversalaafirmativa\nb.\nparticulara negativa\nc.particulara afirmativa\nd. universala negativa\n(30depuncte)\nSUBIECTULalII-lea\nSedauurmatoarelepropoziti:\n1.Unelesituatideviatasuntprovocatoare.\n2.\nUnelegreselinusuntintentionate.\n3.Niciun om cinstit nu este mincinos.\n4. Toti judecatorii sunt persoane responsabile.\n2 puncte\nA.Precizati formulapropozitiei 4.\nB. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna\n6 puncte\npropozitiei 2.\nC.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa\ncorecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.\n10 puncte\nD. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.\n4 puncte\nE. Doi elevi, X si Y, opineaza astfel:\nX:Dacaunii conducatori autonu suntfemei,atunci unelefemeinu suntconducatori auto.\nY: Daca toate balenele sunt mamifere, atunci unele mamifere sunt balene.\nPorninddelaaceastasituatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.explicati corectitudinea rationamentelor formalizate.\n4 puncte\n(30 de puncte)\nSUBIECTULaIIII-lea\nA.Fie urmatoarele douamoduri silogistice:eae-2, aai-1.\n1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri\nsilogistice date,precizand totodata decizia la care ati ajuns.\n4 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin\ncare sa justificati propozitia“Toate faptele bune sunt admirate”\n8 puncte\nC.Fieurmatoareadefinitie:Istoriaestestiintacarestudiazaevenimenteleistorice.\na.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.\n2 puncte\nb. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si\nconstruiti, pentru fiecare dintre acestea, cate o definitie care sa leincalce.\n8 puncte\nProba scrisa la logica,argumentare si comunicare\nVarianta 10\nPagina 2 din 2"
+}

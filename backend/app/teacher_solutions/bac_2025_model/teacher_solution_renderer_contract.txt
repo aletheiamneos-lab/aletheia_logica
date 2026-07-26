@@ -1,0 +1,29 @@
+TEACHER SOLUTION RENDERER CONTRACT
+
+1. Source of truth:
+   teacher_solution_bac_logica_2025_simulare_BACKEND.json
+
+2. The template must not contain hardcoded answers. It must read:
+   - solutions[].groups[].items[] for answers and explanations
+   - diagramSpecs[] for diagrams
+   - scoringSummary for points
+
+3. Required teacher output sections:
+   - Header: title, exam id, total points
+   - Subiectul I: official prompts + answers + short explanations
+   - Subiectul II: context propositions + formal/natural answers
+   - Subiectul III: syllogism schemes + Venn diagrams + definitions
+
+4. Diagrams:
+   - Use diagramId as stable key.
+   - Render style can change, but the logical actions must remain unchanged.
+   - For venn_three_terms, parse vennActions: shade, place_x, read.
+   - For euler_relation_map, parse relations and render a clean SVG/Euler map.
+
+5. Preview:
+   - Preview can be HTML or PDF.
+   - Preview must use the same JSON data as download PDF.
+
+6. Security:
+   - teacherOnly JSON must never be sent to student routes.
+   - Student route must use only student_exam JSON.

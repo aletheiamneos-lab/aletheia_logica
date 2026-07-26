@@ -1,0 +1,121 @@
+{
+  "diagramSpecs": [
+    {
+      "diagramId": "diagram_I_B_euler",
+      "type": "euler_relation_map",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        {
+          "from": "A",
+          "to": "B",
+          "relation": "contradicție"
+        },
+        {
+          "from": "C",
+          "to": "A",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "C",
+          "to": "B",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "C",
+          "to": "D",
+          "relation": "opoziție"
+        },
+        {
+          "from": "D",
+          "to": "A",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "D",
+          "to": "B",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "D",
+          "to": "E",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "E",
+          "to": "B",
+          "relation": "încrucișare"
+        },
+        {
+          "from": "E",
+          "to": "A",
+          "relation": "opoziție"
+        },
+        {
+          "from": "E",
+          "to": "C",
+          "relation": "opoziție"
+        }
+      ],
+      "natural": "Se dau termenii A, B, C, D și E. Reprezentați prin metoda diagramelor Euler raporturile dintre cei cinci termeni și stabiliți valoarea de adevăr a propozițiilor a–h.",
+      "renderHints": {
+        "style": "euler_relation_map",
+        "caption": "Diagrama trebuie folosită pentru a verifica propozițiile a–h."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_4",
+      "type": "venn_three_terms",
+      "mode": "eio-2",
+      "validity": "valid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": "PeM / SiM ∴ SoP",
+      "vennActions": [],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "După hașurarea lui P∩M, X-ul din S∩M rămâne în afara lui P; concluzia SoP este vizibilă.",
+        "showShadedRegions": true,
+        "showXMarks": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_5",
+      "type": "venn_three_terms",
+      "mode": "aaa-4",
+      "validity": "nevalid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": "PaM / MaS ∴ SaP",
+      "vennActions": [],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "Reprezentarea premiselor nu obligă toate elementele lui S să fie în P; concluzia SaP nu rezultă.",
+        "showShadedRegions": true,
+        "showXMarks": true
+      }
+    }
+  ],
+  "contractVersion": "DERIVED_FROM_EXPLAINED_RESOLUTION_V1",
+  "studentDiagramPolicy": {
+    "studentNeverSeesTeacherDiagram": true,
+    "inputs": [
+      "canvas",
+      "image_upload"
+    ]
+  },
+  "teacherDiagramPolicy": {
+    "renderFromDiagramContract": true
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "slot": 3,
+  "nivel": "basic",
+  "title": "Slot 3 - Basic",
+  "description": "Set complet de 35 flashcarduri pentru nivelul basic.",
+  "card_count": 35,
+  "cards": [
+    {
+      "id": "slot_3_basic_card_1",
+      "front": "Ce este deducția?",
+      "back": "Deducția este raționamentul prin care concluzia rezultă cu necesitate din premise."
+    },
+    {
+      "id": "slot_3_basic_card_2",
+      "front": "Ce este inducția?",
+      "back": "Inducția este raționamentul prin care se trece de la cazuri particulare la o concluzie generală probabilă."
+    },
+    {
+      "id": "slot_3_basic_card_3",
+      "front": "Ce este analogia?",
+      "back": "Analogia este raționamentul prin care se transferă o proprietate de la un caz la altul pe baza asemănărilor relevante."
+    },
+    {
+      "id": "slot_3_basic_card_4",
+      "front": "Ce este validitatea?",
+      "back": "Validitatea este proprietatea unui raționament în care concluzia rezultă corect din premise."
+    },
+    {
+      "id": "slot_3_basic_card_5",
+      "front": "Ce este adevărul unei propoziții?",
+      "back": "Adevărul privește valoarea propoziției, nu forma raționamentului."
+    },
+    {
+      "id": "slot_3_basic_card_6",
+      "front": "Ce este o premisă?",
+      "back": "Premisa este o propoziție de la care pornește un raționament."
+    },
+    {
+      "id": "slot_3_basic_card_7",
+      "front": "Ce este concluzia?",
+      "back": "Concluzia este propoziția obținută din premise."
+    },
+    {
+      "id": "slot_3_basic_card_8",
+      "front": "Ce este o inferență?",
+      "back": "Inferența este trecerea logică de la premise la concluzie."
+    },
+    {
+      "id": "slot_3_basic_card_9",
+      "front": "Ce este o propoziție simplă?",
+      "back": "O propoziție simplă nu conține alte propoziții componente."
+    },
+    {
+      "id": "slot_3_basic_card_10",
+      "front": "Ce este o propoziție compusă?",
+      "back": "O propoziție compusă este formată din propoziții simple unite prin conectori logici."
+    },
+    {
+      "id": "slot_3_basic_card_11",
+      "front": "Ce este negația?",
+      "back": "Negația inversează valoarea de adevăr a unei propoziții."
+    },
+    {
+      "id": "slot_3_basic_card_12",
+      "front": "Ce este conjuncția?",
+      "back": "Conjuncția este propoziția compusă de forma p și q."
+    },
+    {
+      "id": "slot_3_basic_card_13",
+      "front": "Ce este disjuncția?",
+      "back": "Disjuncția este propoziția compusă de forma p sau q."
+    },
+    {
+      "id": "slot_3_basic_card_14",
+      "front": "Ce este implicația?",
+      "back": "Implicația este propoziția compusă de forma dacă p, atunci q."
+    },
+    {
+      "id": "slot_3_basic_card_15",
+      "front": "Ce este echivalența logică?",
+      "back": "Echivalența logică este propoziția de forma p dacă și numai dacă q."
+    },
+    {
+      "id": "slot_3_basic_card_16",
+      "front": "Ce este antecedentul?",
+      "back": "Antecedentul este prima parte a implicației: p."
+    },
+    {
+      "id": "slot_3_basic_card_17",
+      "front": "Ce este consecventul?",
+      "back": "Consecventul este a doua parte a implicației: q."
+    },
+    {
+      "id": "slot_3_basic_card_18",
+      "front": "Ce este tabelul de adevăr?",
+      "back": "Tabelul de adevăr arată valorile unei formule pentru toate combinațiile posibile."
+    },
+    {
+      "id": "slot_3_basic_card_19",
+      "front": "Ce este o tautologie?",
+      "back": "O tautologie este adevărată pentru orice valori ale propozițiilor simple."
+    },
+    {
+      "id": "slot_3_basic_card_20",
+      "front": "Ce este contradicția logică?",
+      "back": "O contradicție logică este falsă pentru orice valori ale propozițiilor simple."
+    },
+    {
+      "id": "slot_3_basic_card_21",
+      "front": "Ce este contingența?",
+      "back": "Contingența este o formulă uneori adevărată și uneori falsă."
+    },
+    {
+      "id": "slot_3_basic_card_22",
+      "front": "Ce este demonstrația directă?",
+      "back": "Demonstrația directă dovedește concluzia pornind de la premise acceptate."
+    },
+    {
+      "id": "slot_3_basic_card_23",
+      "front": "Ce este demonstrația indirectă?",
+      "back": "Demonstrația indirectă dovedește concluzia arătând că negarea ei duce la contradicție."
+    },
+    {
+      "id": "slot_3_basic_card_24",
+      "front": "Ce este reducerea la absurd?",
+      "back": "Reducerea la absurd este demonstrația prin care ipoteza contrară produce contradicție."
+    },
+    {
+      "id": "slot_3_basic_card_25",
+      "front": "Ce este un argument?",
+      "back": "Argumentul este o structură în care premisele susțin o concluzie."
+    },
+    {
+      "id": "slot_3_basic_card_26",
+      "front": "Ce este teza?",
+      "back": "Teza este ideea principală care trebuie susținută."
+    },
+    {
+      "id": "slot_3_basic_card_27",
+      "front": "Ce este temeiul?",
+      "back": "Temeiul este motivul pe care se sprijină o afirmație."
+    },
+    {
+      "id": "slot_3_basic_card_28",
+      "front": "Ce este contraargumentul?",
+      "back": "Contraargumentul este argumentul formulat împotriva unei teze."
+    },
+    {
+      "id": "slot_3_basic_card_29",
+      "front": "Ce este un sofism?",
+      "back": "Sofismul este o eroare de raționare aparent convingătoare."
+    },
+    {
+      "id": "slot_3_basic_card_30",
+      "front": "Ce este paralogismul?",
+      "back": "Paralogismul este o eroare de raționare neintenționată."
+    },
+    {
+      "id": "slot_3_basic_card_31",
+      "front": "Ce este echivocația?",
+      "back": "Echivocația este folosirea aceluiași termen cu sensuri diferite."
+    },
+    {
+      "id": "slot_3_basic_card_32",
+      "front": "Ce este amfibolia?",
+      "back": "Amfibolia este eroarea produsă de ambiguitatea structurii gramaticale."
+    },
+    {
+      "id": "slot_3_basic_card_33",
+      "front": "Ce este argumentul ad hominem?",
+      "back": "Argumentul ad hominem atacă persoana în locul ideii."
+    },
+    {
+      "id": "slot_3_basic_card_34",
+      "front": "Ce este argumentul ad misericordiam?",
+      "back": "Argumentul ad misericordiam apelează la milă în locul justificării logice."
+    },
+    {
+      "id": "slot_3_basic_card_35",
+      "front": "Ce este falsa dilemă?",
+      "back": "Falsa dilemă reduce nejustificat opțiunile la două variante."
+    }
+  ]
+}

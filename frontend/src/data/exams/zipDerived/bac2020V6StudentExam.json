@@ -1,0 +1,558 @@
+{
+  "examId": "bac_logica_2020_v6",
+  "title": "Examenul de bacalaureat national 2020 - Varianta 6 - Logica, argumentare si comunicare",
+  "mode": "student_exam",
+  "visibility": "student",
+  "examYear": 2020,
+  "variant": "Varianta 6",
+  "subject": "Logica, argumentare si comunicare",
+  "durationMinutes": 180,
+  "score": {
+    "examPoints": 90,
+    "officePoints": 10,
+    "totalPoints": 100
+  },
+  "rules": {
+    "noSolutionsInStudentJson": true,
+    "teacherOnlySolutionSeparate": true,
+    "finalizeButton": true,
+    "studentPdfReport": true,
+    "emailReport": true,
+    "adminReport": true
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 20,
+          "officialPrompt": "Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+          "inputType": "single_choice",
+          "items": [
+            {
+              "id": "I_A_1",
+              "prompt": "Nu face parte din structura demonstratiei:",
+              "options": {
+                "a": "teza de demonstrat",
+                "b": "fundamentul demonstratiei",
+                "c": "criteriul demonstratiei",
+                "d": "procesul de demonstrare"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_2",
+              "prompt": "O inferenta deductiva este imediata daca:",
+              "options": {
+                "a": "se realizeaza cu prioritate maxima",
+                "b": "concluzia este derivata dintr-o singura premisa",
+                "c": "concluzia este derivata din cel putin doua premise",
+                "d": "se realizeaza de indata ce avem timp"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_3",
+              "prompt": "Intre termenii elev si elev de liceu exista un raport de:",
+              "options": {
+                "a": "ordonare",
+                "b": "intersectare",
+                "c": "contrarietate",
+                "d": "identitate"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_4",
+              "prompt": "Predicatul logic al propozitiei Toate florile de primavara sunt frumos mirositoare este:",
+              "options": {
+                "a": "sunt frumos mirositoare",
+                "b": "frumos mirositoare",
+                "c": "sunt frumos",
+                "d": "sunt"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_5",
+              "prompt": "Intr-o clasificare corecta:",
+              "options": {
+                "a": "criteriul folosit intr-o operatie trebuie sa fie unic",
+                "b": "intre clasele situate pe aceeasi treapta exista raporturi de identitate",
+                "c": "deosebirile dintre obiectele aceleiasi clase sunt mai importante decat asemanarile",
+                "d": "unele dintre elementele ce formeaza obiectul clasificarii se regasesc in mai multe clase"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_6",
+              "prompt": "Din punct de vedere extensional, termenul profesor de chimie este:",
+              "options": {
+                "a": "vag, singular",
+                "b": "colectiv, vid",
+                "c": "distributiv, singular",
+                "d": "general, precis"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_7",
+              "prompt": "Rationamentul Unele fapte demne de lauda sunt acte de caritate, avand in vedere ca toate actele de caritate sunt fapte demne de lauda este un exemplu de:",
+              "options": {
+                "a": "inductie incompleta",
+                "b": "inductie completa",
+                "c": "deductie imediata",
+                "d": "deductie mediata"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_8",
+              "prompt": "Inductia incompleta se caracterizeaza prin:",
+              "options": {
+                "a": "valoare de cunoastere redusa",
+                "b": "concluzie probabila",
+                "c": "concluzie certa",
+                "d": "aplicarea asupra unei clase cu un numar mic de elemente"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_9",
+              "prompt": "Seria de termeni ordonati crescator din punct de vedere extensional este:",
+              "options": {
+                "a": "elev, elev de liceu, elev de clasa a IX-a, elev de clasa a IX-a premiant",
+                "b": "elev de clasa a IX-a premiant, elev de clasa a IX-a, elev de liceu, elev",
+                "c": "elev de clasa a IX-a, elev, elev de clasa a IX-a premiant, elev de liceu",
+                "d": "elev de liceu, elev, elev de clasa a IX-a premiant, elev de clasa a IX-a"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            },
+            {
+              "id": "I_A_10",
+              "prompt": "Propozitia categorica Oameni sunt fiinte sociale este:",
+              "options": {
+                "a": "universala afirmativa",
+                "b": "universala negativa",
+                "c": "particulara afirmativa",
+                "d": "particulara negativa"
+              },
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi intre termeni",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C, D si E astfel incat A si B sunt in raport de contradictie, C este supraordonat fata de A si B, dar, totodata, este specie a lui D, termenul E este specie a lui D, intersectat cu C si in opozitie cu A si B.",
+          "items": [
+            {
+              "id": "I_B_diagram",
+              "prompt": "Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre cei cinci termeni.",
+              "points": 2,
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_I_B_euler_terms",
+                "diagramType": "euler",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "label": "Diagrama Euler",
+                  "helperText": "Deseneaza aici raporturile dintre termenii A, B, C, D si E.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "A",
+                      "B",
+                      "C",
+                      "D",
+                      "E"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            },
+            {
+              "id": "I_B_tf",
+              "prompt": "Stabiliti valoarea de adevar pentru propozitiile a-h.",
+              "points": 8,
+              "answerInput": {
+                "inputType": "true_false_grid",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              },
+              "statements": {
+                "a": "Niciun A nu este C.",
+                "b": "Unii B sunt E.",
+                "c": "Unii C nu sunt E.",
+                "d": "Toti E sunt D.",
+                "e": "Toti D sunt A.",
+                "f": "Toti B sunt D.",
+                "g": "Niciun A nu este D.",
+                "h": "Toti C sunt D."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Se dau urmatoarele propozitii:",
+        "items": [
+          "1. Toate virtutile sunt calitati dobandite in vederea unei vieti bune.",
+          "2. Unele secrete sunt informatii banuite de toata lumea.",
+          "3. Niciun absolvent de studii superioare nu este somer.",
+          "4. Unele echipe de fotbal nu sunt formatiuni bine antrenate."
+        ]
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Patratul logic",
+          "points": 8,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subalterna propozitiei 1, contradictoria propozitiei 2, contrara propozitiei 3 si subcontrara propozitiei 4.",
+          "items": [
+            {
+              "id": "II_A_responses",
+              "answerInput": {
+                "inputType": "structured_fields",
+                "fields": [
+                  {
+                    "fieldId": "subalterna_1_formal",
+                    "label": "Subalterna propozitiei 1 - forma logica",
+                    "placeholder": "Scrie forma logica. Exemplu: SiP"
+                  },
+                  {
+                    "fieldId": "subalterna_1_natural",
+                    "label": "Subalterna propozitiei 1 - limbaj natural",
+                    "placeholder": "Scrie propozitia completa in limbaj natural."
+                  },
+                  {
+                    "fieldId": "contradictoria_2_formal",
+                    "label": "Contradictoria propozitiei 2 - forma logica",
+                    "placeholder": "Scrie forma logica. Exemplu: SeP"
+                  },
+                  {
+                    "fieldId": "contradictoria_2_natural",
+                    "label": "Contradictoria propozitiei 2 - limbaj natural",
+                    "placeholder": "Scrie propozitia completa in limbaj natural."
+                  },
+                  {
+                    "fieldId": "contrara_3_formal",
+                    "label": "Contrara propozitiei 3 - forma logica",
+                    "placeholder": "Scrie forma logica. Exemplu: SaP"
+                  },
+                  {
+                    "fieldId": "contrara_3_natural",
+                    "label": "Contrara propozitiei 3 - limbaj natural",
+                    "placeholder": "Scrie propozitia completa in limbaj natural."
+                  },
+                  {
+                    "fieldId": "subcontrara_4_formal",
+                    "label": "Subcontrara propozitiei 4 - forma logica",
+                    "placeholder": "Scrie forma logica. Exemplu: SiP"
+                  },
+                  {
+                    "fieldId": "subcontrara_4_natural",
+                    "label": "Subcontrara propozitiei 4 - limbaj natural",
+                    "placeholder": "Scrie propozitia completa in limbaj natural."
+                  }
+                ],
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune si obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 1 si 3, atat in limbaj formal, cat si in limbaj natural.",
+          "items": [
+            {
+              "id": "II_B_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie aici rezolvarea in forma logica si in limbaj natural, conform cerintei.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operatii compuse",
+          "points": 6,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, obversa conversei supraalterniei propozitiei 2, respectiv, obversa contrarei propozitiei 3.",
+          "items": [
+            {
+              "id": "II_C_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie aici rezolvarea in forma logica si in limbaj natural, conform cerintei.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X si Y, opineaza astfel: X: Daca unele eforturi depuse nu sunt actiuni zadarnice, atunci unele actiuni zadarnice nu sunt eforturi depuse. Y: Daca toate actiunile noastre sunt morale, putem spune ca nicio actiune a noastra nu este imorala.",
+          "items": [
+            {
+              "id": "II_D_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie aici rezolvarea in forma logica si in limbaj natural, conform cerintei.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 18,
+          "officialPrompt": "Fie urmatoarele doua moduri silogistice: aaa-1, aoo-2. Scrieti schemele, construiti un silogism in limbaj natural si verificati validitatea prin diagrame Venn.",
+          "items": [
+            {
+              "id": "III_A_schemas",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "label": "Scheme si silogism in limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "fields": [
+                    {
+                      "fieldId": "schema_aaa_1",
+                      "label": "Schema aaa-1",
+                      "placeholder": "Completeaza schema. Exemplu: MaP / SaM / SaP"
+                    },
+                    {
+                      "fieldId": "schema_aoo_2",
+                      "label": "Schema aoo-2",
+                      "placeholder": "Completeaza schema. Exemplu: PaM / SoM / SoP"
+                    },
+                    {
+                      "fieldId": "natural_syllogism",
+                      "label": "Silogism in limbaj natural",
+                      "placeholder": "Construieste un silogism care corespunde uneia dintre scheme."
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "III_A_venn",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_venn_aaa1_aoo2",
+                "diagramType": "venn_three_terms",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "label": "Diagrame Venn",
+                  "helperText": "Deseneaza verificarea Venn pentru fiecare mod silogistic.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "S",
+                      "P",
+                      "M"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati propozitia Nicio persoana imorala nu este interesata de dreptate.",
+          "items": [
+            {
+              "id": "III_B_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie raspunsul complet cerut de subpunct.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Fie urmatorul silogism: Daca niciun adolescent nu este pensionar, atunci niciun pensionar nu este elev de liceu, avand in vedere ca toti elevii de liceu sunt adolescenti.",
+          "items": [
+            {
+              "id": "III_C_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie raspunsul complet cerut de subpunct.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definitia",
+          "points": 6,
+          "officialPrompt": "Fie urmatoarea definitie: Adolescenta este varsta marilor reverii.",
+          "items": [
+            {
+              "id": "III_D_response",
+              "answerInput": {
+                "inputType": "long_text",
+                "label": "Raspuns",
+                "placeholder": "Scrie raspunsul complet cerut de subpunct.",
+                "studentVisible": true,
+                "teacherSolutionVisible": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "finalization": {
+    "buttonLabel": "Finalizeaza testul",
+    "generateStudentPdf": true,
+    "previewBeforeEmail": true,
+    "allowEmailSend": true,
+    "includeInAdminReport": true
+  }
+}

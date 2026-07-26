@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "id": "bac-logica-2017-v4",
+    "title": "BAC Logică 2017 - Varianta 4",
+    "type": "bac_exam_student",
+    "year": 2017,
+    "variant": "Varianta 4",
+    "discipline": "Logică, argumentare și comunicare",
+    "student_visible": true,
+    "teacher_solution_visible": false,
+    "official_subject_file": "Examenul de bacalaureat național 2017_V4.pdf",
+    "official_barem_file": "Examenul de bacalaureat național 2017_V4_BAREM.pdf",
+    "scoring": {
+      "total": 100,
+      "official_bonus": 10,
+      "exam_points": 90
+    },
+    "rules": [
+      "Elevul vede doar cerințele, itemii și câmpurile de completare.",
+      "Nu se afișează răspunsurile oficiale în interfața elevului.",
+      "Câmpurile de completare afișează doar placeholder structural, nu rezolvarea.",
+      "La finalizare se generează PDF-ul cu răspunsurile elevului, preview, email și raport administrator."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S1A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "type": "single_choice_group",
+          "items": [
+            {
+              "id": "S1A_1",
+              "prompt": "Una din regulile corectitudinii demonstrației, referitoare la teza de demonstrat, este:",
+              "options": {
+                "a": "teza de demonstrat trebuie să fie clar și precis formulată",
+                "b": "teza de demonstrat trebuie să fie o propoziție care a fost infirmată",
+                "c": "teza de demonstrat trebuie să fie înlocuită cu altă teză",
+                "d": "teza de demonstrat trebuie să fie înlocuită cu altă teză printr-o reformulare aparent identică"
+              }
+            },
+            {
+              "id": "S1A_2",
+              "prompt": "Raționamentul «Păsările nu sunt reptile și reptilele nu zboară, deci există păsări care zboară» este un exemplu de raționament:",
+              "options": {
+                "a": "inductiv incomplet",
+                "b": "inductiv complet",
+                "c": "deductiv imediat",
+                "d": "deductiv mediat"
+              }
+            },
+            {
+              "id": "S1A_3",
+              "prompt": "Termenii lalea și trandafir se află în raport de:",
+              "options": {
+                "a": "ordonare",
+                "b": "încrucișare",
+                "c": "opoziție",
+                "d": "concordanță"
+              }
+            },
+            {
+              "id": "S1A_4",
+              "prompt": "Predicatul logic al propoziției «Adevărul este un concept filosofic» este:",
+              "options": {
+                "a": "adevărul",
+                "b": "un concept filosofic",
+                "c": "este",
+                "d": "un concept"
+              }
+            },
+            {
+              "id": "S1A_5",
+              "prompt": "Pe aceeași treaptă, clasificarea oamenilor în bărbați, femei, copii este:",
+              "options": {
+                "a": "corectă, are criteriu unic",
+                "b": "incorectă, cu mai multe trepte",
+                "c": "incorectă, nu are criteriu unic",
+                "d": "corectă, cu mai multe criterii"
+              }
+            },
+            {
+              "id": "S1A_6",
+              "prompt": "Din punct de vedere extensional, termenul roi de albine este:",
+              "options": {
+                "a": "vid, general",
+                "b": "nevid, singular",
+                "c": "distributiv, general",
+                "d": "nevid, colectiv"
+              }
+            },
+            {
+              "id": "S1A_7",
+              "prompt": "Este un exemplu corect de inducție incompletă:",
+              "options": {
+                "a": "Dacă niciun pictor nu scrie versuri, atunci unii oameni care scriu versuri nu sunt pictori.",
+                "b": "Dacă unii crocodili sunt agresivi, atunci unii crocodili nu sunt agresivi.",
+                "c": "Dacă unele exerciții sunt dificile, atunci toate exercițiile sunt dificile.",
+                "d": "Dacă unii hipopotami nu sunt domestici atunci niciun animal domestic nu este hipopotam."
+              }
+            },
+            {
+              "id": "S1A_8",
+              "prompt": "Inducția completă este un tip de argumentare caracterizată prin existența unei clase:",
+              "options": {
+                "a": "mici și finite de cazuri și cercetarea tuturor cazurilor reprezentative",
+                "b": "mari și finite de cazuri și cercetarea tuturor excepțiilor",
+                "c": "infinite de cazuri și cercetarea tuturor cazurilor reprezentative",
+                "d": "mici și finite de cazuri și cercetarea tuturor cazurilor existente"
+              }
+            },
+            {
+              "id": "S1A_9",
+              "prompt": "Intensiunea termenului raționament valid se referă la:",
+              "options": {
+                "a": "totalitatea raționamentelor valide",
+                "b": "proprietățile definitorii ale elementelor ce aparțin sferei termenului raționament valid",
+                "c": "raționamentele deductive și raționamentele inductive",
+                "d": "însușirile comune ale elementelor din sfera termenului raționament"
+              }
+            },
+            {
+              "id": "S1A_10",
+              "prompt": "Propoziția «Unele propoziții afirmative sunt propoziții universale» este:",
+              "options": {
+                "a": "universală afirmativă",
+                "b": "universală negativă",
+                "c": "particulară afirmativă",
+                "d": "particulară negativă"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1B",
+          "title": "B. Diagramă Euler și propoziții A/F",
+          "points": 10,
+          "type": "euler_and_true_false",
+          "term_relations": "A este subordonat termenului C; D este în opoziție cu A, dar în încrucișare cu C; B este subordonat lui D și, în același timp, este în încrucișare cu C.",
+          "diagram": {
+            "diagramId": "euler_2017_v4_S1B",
+            "mode": "canvas_or_upload",
+            "student_task": "Reprezintă, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei patru termeni.",
+            "points": 4
+          },
+          "items": [
+            {
+              "label": "a",
+              "text": "Niciun A nu este D."
+            },
+            {
+              "label": "b",
+              "text": "Toți C sunt A."
+            },
+            {
+              "label": "c",
+              "text": "Niciun D nu este C."
+            },
+            {
+              "label": "d",
+              "text": "Unii D sunt C."
+            },
+            {
+              "label": "e",
+              "text": "Toți A sunt D."
+            },
+            {
+              "label": "f",
+              "text": "Toți B sunt D."
+            }
+          ],
+          "answer_input": {
+            "type": "true_false_grid",
+            "placeholder": "Exemplu de completare: a-A, b-F, c-F ..."
+          }
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "intro": "Se dau următoarele propoziții:",
+      "propositions": [
+        "Toate pisicile negre sunt domestice.",
+        "Unele poezii nu sunt apreciate de critici.",
+        "Niciun articol științific nu este ușor de citit.",
+        "Unele piese de mobilier sunt vândute la licitație."
+      ],
+      "parts": [
+        {
+          "id": "S2A",
+          "title": "A. Formule logice",
+          "points": 2,
+          "prompt": "Precizați formulele logice corespunzătoare propozițiilor 1 și 2.",
+          "input": {
+            "type": "text",
+            "placeholder": "Exemplu structură: 1-SaP; 2-SoP"
+          }
+        },
+        {
+          "id": "S2B",
+          "title": "B. Raporturi în pătratul opoziției",
+          "points": 8,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subalterna propoziției 1, contradictoria propoziției 2, contrara propoziției 3 și subcontrara propoziției 4.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Scrie pentru fiecare: operația cerută + formula + propoziția în limbaj natural."
+          }
+        },
+        {
+          "id": "S2C",
+          "title": "C. Conversiune și obversiune",
+          "points": 8,
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: Prop. 1: conversa ...; obversa ... / Prop. 3: conversa ...; obversa ..."
+          }
+        },
+        {
+          "id": "S2D",
+          "title": "D. Obversa conversei",
+          "points": 4,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei propoziției 1.",
+          "input": {
+            "type": "text",
+            "placeholder": "Scrie întâi conversa propoziției, apoi obversa acesteia."
+          }
+        },
+        {
+          "id": "S2E",
+          "title": "E. Opiniile elevilor X și Y",
+          "points": 8,
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Pentru că niciun exercițiu din test nu este rezolvat corect, rezultă că toate exercițiile din test sunt rezolvate incorect. Y: Dacă unele persoane sunt morale, atunci unele persoane nu sunt imorale. Pornind de la această situație: a) scrieți, în limbaj formal, opiniile celor doi elevi; b) precizați corectitudinea raționamentelor formalizate.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: X: [formă] - valid/nevalid; Y: [formă] - valid/nevalid; regulă aplicată."
+          }
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S3A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "prompt": "Fie următoarele două moduri silogistice: aee-2, aii-1. Scrieți schema de inferență pentru fiecare, construiți un silogism corespunzător uneia dintre scheme și verificați explicit, prin diagrame Venn, validitatea fiecăruia.",
+          "diagrams": [
+            {
+              "diagramId": "venn_2017_v4_aee2",
+              "mode": "canvas_or_upload",
+              "figure": "aee-2"
+            },
+            {
+              "diagramId": "venn_2017_v4_aii1",
+              "mode": "canvas_or_upload",
+              "figure": "aii-1"
+            }
+          ],
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Scrie schema: premisa majoră / premisa minoră / concluzie; apoi decizia de validitate pentru fiecare mod."
+          }
+        },
+        {
+          "id": "S3B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid, prin care să justificați propoziția «Unele vertebrate sunt animale acvatice»."
+        },
+        {
+          "id": "S3C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "prompt": "Fie următorul silogism: Niciun iphone 6 nu este original, pentru că niciun iphone 6 nu este scump și toate lucrurile originale sunt scumpe. Precizați termenul minor al silogismului dat și menționați, în limbaj natural, premisa majoră a silogismului dat.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: Termen minor: ...; Premisa majoră: ..."
+          }
+        },
+        {
+          "id": "S3D",
+          "title": "D. Definiție",
+          "points": 6,
+          "prompt": "Fie următoarea definiție: Dealul este o formă de relief care nu e nici munte, nici câmpie. Menționați o regulă de corectitudine pe care o încalcă definiția dată. Precizați o altă regulă de corectitudine a definirii și construiți o definiție care să o încalce, având ca definit termenul «deal»."
+        }
+      ]
+    }
+  ],
+  "finalization": {
+    "submit_button_label": "Finalizează testul",
+    "after_submit": [
+      "generează PDF-ul elevului",
+      "afișează preview",
+      "permite trimiterea pe email",
+      "adaugă în raportul administratorului"
+    ],
+    "teacher_solution_source": "teacher_solution_bac_logica_2017_v4_BACKEND.json"
+  }
+}

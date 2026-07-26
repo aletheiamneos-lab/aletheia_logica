@@ -1,0 +1,672 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1619.5738525390625,
+      "y": 233.4395294189453,
+      "score": 0.9777965486049652,
+      "page_number": 1
+    },
+    {
+      "text": "CentrulNationaldePoliticisi EvaluareinEducatie",
+      "x": 1236.477294921875,
+      "y": 291.7994079589844,
+      "score": 0.9784021610799043,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2022",
+      "x": 1231.1932373046875,
+      "y": 456.2681579589844,
+      "score": 0.9964340437542308,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E.d)",
+      "x": 1675.056884765625,
+      "y": 533.1970825195312,
+      "score": 0.9961762070655823,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1284.0340576171875,
+      "y": 607.4733276367188,
+      "score": 0.9964502345431935,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3064.772705078125,
+      "y": 684.4022216796875,
+      "score": 0.9977503418922424,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.9602355957031,
+      "y": 819.6910400390625,
+      "score": 0.98133738892419,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 367.24432373046875,
+      "y": 907.2308959960938,
+      "score": 0.9928454560892922,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+      "x": 367.24432373046875,
+      "y": 1063.741455078125,
+      "score": 0.9590488680894824,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpul de lucru efectiv este de trei ore.",
+      "x": 364.6022644042969,
+      "y": 1145.975830078125,
+      "score": 0.9346383810043335,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.8863830566406,
+      "y": 1228.210205078125,
+      "score": 0.9838074147701263,
+      "page_number": 1
+    },
+    {
+      "text": "(30 depuncte)",
+      "x": 2863.977294921875,
+      "y": 1225.5574951171875,
+      "score": 0.976174703011146,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+      "x": 361.9602355957031,
+      "y": 1299.833740234375,
+      "score": 0.9857610736755614,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 367.24432373046875,
+      "y": 1379.4154052734375,
+      "score": 0.972706372087652,
+      "page_number": 1
+    },
+    {
+      "text": "Una dintre regulile de corectitudine in demonstrare, cu privire la fundamentul demonstratiei,",
+      "x": 562.7556762695312,
+      "y": 1456.3443603515625,
+      "score": 0.9847640830983397,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 396.30682373046875,
+      "y": 1464.302490234375,
+      "score": 0.9985063374042511,
+      "page_number": 1
+    },
+    {
+      "text": "precizeazaca acesta:",
+      "x": 568.039794921875,
+      "y": 1541.2314453125,
+      "score": 0.9771031647920608,
+      "page_number": 1
+    },
+    {
+      "text": "trebuie sa fie clar si precisformulat",
+      "x": 554.8295288085938,
+      "y": 1615.507568359375,
+      "score": 0.9366088509559631,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 454.43182373046875,
+      "y": 1626.1185302734375,
+      "score": 0.9889049232006073,
+      "page_number": 1
+    },
+    {
+      "text": "trebuie safiefals",
+      "x": 557.4716186523438,
+      "y": 1695.0892333984375,
+      "score": 0.9852425736539504,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 454.43182373046875,
+      "y": 1700.394775390625,
+      "score": 0.9954335391521454,
+      "page_number": 1
+    },
+    {
+      "text": "nupoatefi constituit dinpropoziti adevarate",
+      "x": 557.4716186523438,
+      "y": 1777.3236083984375,
+      "score": 0.9604615264160689,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 1782.629150390625,
+      "score": 0.8845459222793579,
+      "page_number": 1
+    },
+    {
+      "text": "d.trebuie sa constituie un temei suficient pentru derivarea tezei",
+      "x": 441.2215881347656,
+      "y": 1846.29443359375,
+      "score": 0.9780429097322317,
+      "page_number": 1
+    },
+    {
+      "text": "RationamentulUnelecartiutiletinerilorsuntcartidinbibliotecascolara,intrucattoate",
+      "x": 581.25,
+      "y": 2005.457763671875,
+      "score": 0.9867820844054223,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 396.30682373046875,
+      "y": 2013.4158935546875,
+      "score": 0.9936302900314331,
+      "page_number": 1
+    },
+    {
+      "text": "cartiledinbibliotecascolarasuntcartiutiletineriloreste:",
+      "x": 586.5341186523438,
+      "y": 2087.692138671875,
+      "score": 0.9896876421841708,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 2169.926513671875,
+      "score": 0.9970457553863525,
+      "page_number": 1
+    },
+    {
+      "text": "deductivimediatvalid",
+      "x": 581.25,
+      "y": 2169.926513671875,
+      "score": 0.9945325285196305,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 2246.85546875,
+      "score": 0.9998595416545868,
+      "page_number": 1
+    },
+    {
+      "text": "inductieincompleta",
+      "x": 575.9659423828125,
+      "y": 2246.85546875,
+      "score": 0.9879295958413018,
+      "page_number": 1
+    },
+    {
+      "text": "deductivimediatnevalid",
+      "x": 575.9659423828125,
+      "y": 2321.131591796875,
+      "score": 0.9973882653496482,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 449.1477355957031,
+      "y": 2329.08984375,
+      "score": 0.7635980844497681,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 2406.018798828125,
+      "score": 0.9986133575439453,
+      "page_number": 1
+    },
+    {
+      "text": "inductie completa",
+      "x": 575.9659423828125,
+      "y": 2406.018798828125,
+      "score": 0.973981310339535,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 396.30682373046875,
+      "y": 2557.223876953125,
+      "score": 0.9951813817024231,
+      "page_number": 1
+    },
+    {
+      "text": "Cu privire la raporturile logice intre termeni, este falsa afirmatia:",
+      "x": 565.3977661132812,
+      "y": 2554.5712890625,
+      "score": 0.9847518888072692,
+      "page_number": 1
+    },
+    {
+      "text": "a.termenulmamiferestesupraordonattermenuluidelfin",
+      "x": 446.50567626953125,
+      "y": 2639.458251953125,
+      "score": 0.996510058033223,
+      "page_number": 1
+    },
+    {
+      "text": "b.termeni ghepard si pantera se afla in raport logic de contrarietate",
+      "x": 441.2215881347656,
+      "y": 2708.428955078125,
+      "score": 0.9861204684644506,
+      "page_number": 1
+    },
+    {
+      "text": "c.t",
+      "x": 451.789794921875,
+      "y": 2801.2744140625,
+      "score": 0.9135497411092123,
+      "page_number": 1
+    },
+    {
+      "text": "termenulcaietestespecieatermenuluicaietalbastru",
+      "x": 554.8295288085938,
+      "y": 2795.96875,
+      "score": 0.9955163027377839,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 449.1477355957031,
+      "y": 2872.897705078125,
+      "score": 0.9929448962211609,
+      "page_number": 1
+    },
+    {
+      "text": "termenii om si adolescent se afla in raport logic de ordonare",
+      "x": 552.1875,
+      "y": 2867.59228515625,
+      "score": 0.9795189480312535,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 396.30682373046875,
+      "y": 3026.755615234375,
+      "score": 0.9979405403137207,
+      "page_number": 1
+    },
+    {
+      "text": "CuantorulpropozitieiCartilesuntsprijinulinvatari este:",
+      "x": 583.8920288085938,
+      "y": 3029.408447265625,
+      "score": 0.9848350871492315,
+      "page_number": 1
+    },
+    {
+      "text": "particular",
+      "x": 575.9659423828125,
+      "y": 3108.989990234375,
+      "score": 0.9992211163043976,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 449.1477355957031,
+      "y": 3114.29541015625,
+      "score": 0.9982576370239258,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 446.50567626953125,
+      "y": 3183.266357421875,
+      "score": 0.9979788362979889,
+      "page_number": 1
+    },
+    {
+      "text": "universal",
+      "x": 570.6818237304688,
+      "y": 3183.266357421875,
+      "score": 0.9987606406211853,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 3268.1533203125,
+      "score": 0.808372437953949,
+      "page_number": 1
+    },
+    {
+      "text": "afirmativ",
+      "x": 578.6079711914062,
+      "y": 3260.1953125,
+      "score": 0.9844682282871671,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 3345.082275390625,
+      "score": 0.9984466135501862,
+      "page_number": 1
+    },
+    {
+      "text": "negativ",
+      "x": 575.9659423828125,
+      "y": 3345.082275390625,
+      "score": 0.9765140329088483,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 396.30682373046875,
+      "y": 3496.287353515625,
+      "score": 0.998211681842804,
+      "page_number": 1
+    },
+    {
+      "text": "Clasificarearationamentelordeductivenimediate,mediate,valide,nevalideeste:",
+      "x": 581.25,
+      "y": 3493.634765625,
+      "score": 0.9825459195149912,
+      "page_number": 1
+    },
+    {
+      "text": "corecta,deoarececontinetoaterationamenteledeductive",
+      "x": 578.6079711914062,
+      "y": 3581.174560546875,
+      "score": 0.9823368402088389,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 3583.8271484375,
+      "score": 0.999031126499176,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 3658.103515625,
+      "score": 0.998614639043808,
+      "page_number": 1
+    },
+    {
+      "text": "incorecta,deoareceincalcaregulacriteriuluiunic",
+      "x": 578.6079711914062,
+      "y": 3660.756103515625,
+      "score": 0.980594154285348,
+      "page_number": 1
+    },
+    {
+      "text": "incorecta,deoareceesteoclasificareincompleta",
+      "x": 575.9659423828125,
+      "y": 3735.032470703125,
+      "score": 0.9784397374499928,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 454.43182373046875,
+      "y": 3740.337890625,
+      "score": 0.8109031915664673,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 3814.614013671875,
+      "score": 0.9923269152641296,
+      "page_number": 1
+    },
+    {
+      "text": "incorecta,deoareceincalcalegeadistribuiriitermenilor",
+      "x": 570.6818237304688,
+      "y": 3811.96142578125,
+      "score": 0.9832153973671106,
+      "page_number": 1
+    },
+    {
+      "text": "Din punct de vedere extensional, termenul marar este:",
+      "x": 581.25,
+      "y": 3963.16650390625,
+      "score": 0.9698607291815415,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 398.9488830566406,
+      "y": 3971.124755859375,
+      "score": 0.999116063117981,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 454.43182373046875,
+      "y": 4058.66455078125,
+      "score": 0.9974947273731232,
+      "page_number": 1
+    },
+    {
+      "text": "singular,precis,nevid,distributiv",
+      "x": 581.25,
+      "y": 4050.706298828125,
+      "score": 0.9869190273862897,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 454.43182373046875,
+      "y": 4132.94091796875,
+      "score": 0.9988861382007599,
+      "page_number": 1
+    },
+    {
+      "text": "vid,general,distributiv,precis",
+      "x": 581.25,
+      "y": 4130.2880859375,
+      "score": 0.9557605942090353,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 454.43182373046875,
+      "y": 4215.17529296875,
+      "score": 0.8750440776348114,
+      "page_number": 1
+    },
+    {
+      "text": "colectiv,vag,vid, general",
+      "x": 581.25,
+      "y": 4207.216796875,
+      "score": 0.9630126619338989,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 4284.14599609375,
+      "score": 0.9996129870414734,
+      "page_number": 1
+    },
+    {
+      "text": "precis,nevid,general,distributiv",
+      "x": 575.9659423828125,
+      "y": 4286.79833984375,
+      "score": 0.9664893299341202,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 398.9488830566406,
+      "y": 4440.65625,
+      "score": 0.9986414611339569,
+      "page_number": 1
+    },
+    {
+      "text": "Inductiaincompletasecaracterizeazaprin:",
+      "x": 573.3238525390625,
+      "y": 4440.65625,
+      "score": 0.9786136073943896,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 446.50567626953125,
+      "y": 4522.890625,
+      "score": 0.9841238558292389,
+      "page_number": 1
+    },
+    {
+      "text": "examinareatuturorelementelorexistenteintr-oclasa",
+      "x": 565.3977661132812,
+      "y": 4520.23828125,
+      "score": 0.9970318985482057,
+      "page_number": 1
+    },
+    {
+      "text": "b.concluzie cu caracter amplificator",
+      "x": 438.5795593261719,
+      "y": 4589.208984375,
+      "score": 0.9890172613991631,
+      "page_number": 1
+    },
+    {
+      "text": "c.certitudinea sau probabilitatea concluziei",
+      "x": 446.50567626953125,
+      "y": 4671.443359375,
+      "score": 0.9668299786069177,
+      "page_number": 1
+    },
+    {
+      "text": "d.adevarulpremiselordincareestederivataconcluzia",
+      "x": 451.789794921875,
+      "y": 4753.677734375,
+      "score": 0.9970382004976273,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 361.9602355957031,
+      "y": 4957.93701171875,
+      "score": 0.9622900833686193,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3101.761474609375,
+      "y": 4960.58984375,
+      "score": 0.9994203746318817,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1675.056884765625,
+      "y": 5026.908203125,
+      "score": 0.9792090654373169,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "CentrulNationaldePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2022",
+    "Proba E.d)",
+    "Logica, argumentare si comunicare",
+    "Simulare",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+    "·Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULI",
+    "(30 depuncte)",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "Una dintre regulile de corectitudine in demonstrare, cu privire la fundamentul demonstratiei,",
+    "1.",
+    "precizeazaca acesta:",
+    "trebuie sa fie clar si precisformulat",
+    "a.",
+    "trebuie safiefals",
+    "b.",
+    "nupoatefi constituit dinpropoziti adevarate",
+    "C.",
+    "d.trebuie sa constituie un temei suficient pentru derivarea tezei",
+    "RationamentulUnelecartiutiletinerilorsuntcartidinbibliotecascolara,intrucattoate",
+    "2.",
+    "cartiledinbibliotecascolarasuntcartiutiletineriloreste:",
+    "a.",
+    "deductivimediatvalid",
+    "b.",
+    "inductieincompleta",
+    "deductivimediatnevalid",
+    "C.",
+    "d.",
+    "inductie completa",
+    "3.",
+    "Cu privire la raporturile logice intre termeni, este falsa afirmatia:",
+    "a.termenulmamiferestesupraordonattermenuluidelfin",
+    "b.termeni ghepard si pantera se afla in raport logic de contrarietate",
+    "c.t",
+    "termenulcaietestespecieatermenuluicaietalbastru",
+    "d.",
+    "termenii om si adolescent se afla in raport logic de ordonare",
+    "4.",
+    "CuantorulpropozitieiCartilesuntsprijinulinvatari este:",
+    "particular",
+    "a.",
+    "b.",
+    "universal",
+    "C.",
+    "afirmativ",
+    "d.",
+    "negativ",
+    "5.",
+    "Clasificarearationamentelordeductivenimediate,mediate,valide,nevalideeste:",
+    "corecta,deoarececontinetoaterationamenteledeductive",
+    "a.",
+    "b.",
+    "incorecta,deoareceincalcaregulacriteriuluiunic",
+    "incorecta,deoareceesteoclasificareincompleta",
+    "C.",
+    "d.",
+    "incorecta,deoareceincalcalegeadistribuiriitermenilor",
+    "Din punct de vedere extensional, termenul marar este:",
+    "6.",
+    "a.",
+    "singular,precis,nevid,distributiv",
+    "b.",
+    "vid,general,distributiv,precis",
+    "C.",
+    "colectiv,vag,vid, general",
+    "d.",
+    "precis,nevid,general,distributiv",
+    "7.",
+    "Inductiaincompletasecaracterizeazaprin:",
+    "a.",
+    "examinareatuturorelementelorexistenteintr-oclasa",
+    "b.concluzie cu caracter amplificator",
+    "c.certitudinea sau probabilitatea concluziei",
+    "d.adevarulpremiselordincareestederivataconcluzia",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Simulare",
+    "Pagina 1 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrulNationaldePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2022\nProba E.d)\nLogica, argumentare si comunicare\nSimulare\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.\n·Timpul de lucru efectiv este de trei ore.\nSUBIECTULI\n(30 depuncte)\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\nUna dintre regulile de corectitudine in demonstrare, cu privire la fundamentul demonstratiei,\n1.\nprecizeazaca acesta:\ntrebuie sa fie clar si precisformulat\na.\ntrebuie safiefals\nb.\nnupoatefi constituit dinpropoziti adevarate\nC.\nd.trebuie sa constituie un temei suficient pentru derivarea tezei\nRationamentulUnelecartiutiletinerilorsuntcartidinbibliotecascolara,intrucattoate\n2.\ncartiledinbibliotecascolarasuntcartiutiletineriloreste:\na.\ndeductivimediatvalid\nb.\ninductieincompleta\ndeductivimediatnevalid\nC.\nd.\ninductie completa\n3.\nCu privire la raporturile logice intre termeni, este falsa afirmatia:\na.termenulmamiferestesupraordonattermenuluidelfin\nb.termeni ghepard si pantera se afla in raport logic de contrarietate\nc.t\ntermenulcaietestespecieatermenuluicaietalbastru\nd.\ntermenii om si adolescent se afla in raport logic de ordonare\n4.\nCuantorulpropozitieiCartilesuntsprijinulinvatari este:\nparticular\na.\nb.\nuniversal\nC.\nafirmativ\nd.\nnegativ\n5.\nClasificarearationamentelordeductivenimediate,mediate,valide,nevalideeste:\ncorecta,deoarececontinetoaterationamenteledeductive\na.\nb.\nincorecta,deoareceincalcaregulacriteriuluiunic\nincorecta,deoareceesteoclasificareincompleta\nC.\nd.\nincorecta,deoareceincalcalegeadistribuiriitermenilor\nDin punct de vedere extensional, termenul marar este:\n6.\na.\nsingular,precis,nevid,distributiv\nb.\nvid,general,distributiv,precis\nC.\ncolectiv,vag,vid, general\nd.\nprecis,nevid,general,distributiv\n7.\nInductiaincompletasecaracterizeazaprin:\na.\nexaminareatuturorelementelorexistenteintr-oclasa\nb.concluzie cu caracter amplificator\nc.certitudinea sau probabilitatea concluziei\nd.adevarulpremiselordincareestederivataconcluzia\nProba scrisa la logica,argumentare si comunicare\nSimulare\nPagina 1 din 3"
+}

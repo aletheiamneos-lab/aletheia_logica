@@ -1,0 +1,81 @@
+{
+  "examId": "bac_logica_2019_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler",
+      "studentVisibleAs": "canvas_or_upload",
+      "teacherRendering": {
+        "terms": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "relations": [
+          "C și D sunt încrucișate și sunt specii ale lui A",
+          "B este subordonat lui A",
+          "B este supraordonat lui C",
+          "B se încrucișează cu D"
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_oao_3_venn",
+      "diagramType": "venn_three_terms",
+      "terms": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "oao-3",
+      "schema": [
+        "MoP",
+        "MaS",
+        "SoP"
+      ],
+      "validity": "valid",
+      "teacherRendering": {
+        "shade": [],
+        "existenceMarkers": [
+          "conform modului oao-3; concluzia SoP rezultă"
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_iai_2_venn",
+      "diagramType": "venn_three_terms",
+      "terms": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "iai-2",
+      "schema": [
+        "PaM",
+        "SiM",
+        "SaP"
+      ],
+      "validity": "invalid",
+      "teacherRendering": {
+        "shade": [],
+        "existenceMarkers": [
+          "conform modului iai-2; concluzia SaP nu rezultă"
+        ]
+      }
+    }
+  ],
+  "studentDiagramStorage": {
+    "saveFormat": [
+      "strokes_json",
+      "png_export"
+    ],
+    "allowUpload": true,
+    "acceptedTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp",
+      "application/pdf"
+    ]
+  }
+}

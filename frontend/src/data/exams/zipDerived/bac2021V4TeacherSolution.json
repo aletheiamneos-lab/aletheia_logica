@@ -1,0 +1,277 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2021_v4",
+  "examId": "bac_logica_2021_v4",
+  "visibility": "teacher_only",
+  "access": "admin_or_teacher",
+  "source": "Barem oficial 2021 V4",
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "solutions": {
+        "I_A": [
+          {
+            "itemId": "I_A_1",
+            "correctAnswer": "c",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_2",
+            "correctAnswer": "b",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_3",
+            "correctAnswer": "a",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_4",
+            "correctAnswer": "c",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_5",
+            "correctAnswer": "d",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_6",
+            "correctAnswer": "d",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_7",
+            "correctAnswer": "b",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_8",
+            "correctAnswer": "a",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_9",
+            "correctAnswer": "a",
+            "points": 2
+          },
+          {
+            "itemId": "I_A_10",
+            "correctAnswer": "c",
+            "points": 2
+          }
+        ],
+        "I_B": [
+          {
+            "itemId": "I_B_a",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_b",
+            "correctAnswer": "A",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_c",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_d",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_e",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_f",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_g",
+            "correctAnswer": "A",
+            "points": 1
+          },
+          {
+            "itemId": "I_B_h",
+            "correctAnswer": "A",
+            "points": 1
+          }
+        ],
+        "I_B_diagram": {
+          "diagramId": "diagram_I_B_euler_terms",
+          "points": 2,
+          "renderFromContract": true
+        }
+      }
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "solutions": {
+        "II_A": [
+          {
+            "itemId": "II_A_1",
+            "formal": "SiP",
+            "natural": "Unele automobile electrice sunt nepoluante.",
+            "points": 2
+          },
+          {
+            "itemId": "II_A_2",
+            "formal": "SeP",
+            "natural": "Niciun curent artistic din secolul XXI nu este dificil de înțeles.",
+            "points": 2
+          },
+          {
+            "itemId": "II_A_3",
+            "formal": "SaP",
+            "natural": "Toate păsările migratoare sunt solitare.",
+            "points": 2
+          },
+          {
+            "itemId": "II_A_4",
+            "formal": "SiP",
+            "natural": "Unele hituri rock sunt lansate de formații celebre.",
+            "points": 2
+          }
+        ],
+        "II_B": [
+          {
+            "itemId": "II_B_2_conv",
+            "formal": "PiS",
+            "natural": "Unele lucruri dificil de înțeles sunt curente artistice din secolul XXI.",
+            "points": 2
+          },
+          {
+            "itemId": "II_B_2_obv",
+            "formal": "So¬P",
+            "natural": "Unele curente artistice din secolul XXI nu sunt lucruri nedificil de înțeles.",
+            "points": 2
+          },
+          {
+            "itemId": "II_B_3_conv",
+            "formal": "PeS",
+            "natural": "Nicio pasăre solitară nu este pasăre migratoare.",
+            "points": 2
+          },
+          {
+            "itemId": "II_B_3_obv",
+            "formal": "Sa¬P",
+            "natural": "Toate păsările migratoare sunt nesolitare.",
+            "points": 2
+          }
+        ],
+        "II_C": [
+          {
+            "itemId": "II_C_1",
+            "formal": "Po¬S",
+            "natural": "Unele lucruri lansate de formații celebre nu sunt non-hituri rock.",
+            "operationChain": "SoP -> SaP -> SiP -> PiS -> Po¬S",
+            "points": 3
+          },
+          {
+            "itemId": "II_C_2",
+            "formal": "Po¬S",
+            "natural": "Unele lucruri nepoluante nu sunt non-automobile electrice.",
+            "operationChain": "SaP -> PiS -> Po¬S",
+            "points": 3
+          }
+        ],
+        "II_D": [
+          {
+            "itemId": "II_D_X",
+            "formal": "SoP -> PoS",
+            "decision": "incorect",
+            "explanation": "Conversiunea propoziției de tip O este nevalidă; termenul S apare distribuit în concluzie, dar nu este distribuit în premisă.",
+            "points": 4
+          },
+          {
+            "itemId": "II_D_Y",
+            "formal": "SiP -> So¬P",
+            "decision": "corect",
+            "explanation": "Obversiunea este o inferență imediată validă.",
+            "points": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "solutions": {
+        "III_A": [
+          {
+            "itemId": "III_A_eao_1_schema",
+            "scheme": [
+              "MeP",
+              "SaM",
+              "SoP"
+            ],
+            "mode": "eao-1",
+            "validity": "valid",
+            "diagramId": "diagram_III_A_eao_1_venn",
+            "points": 7
+          },
+          {
+            "itemId": "III_A_aaa_2_schema",
+            "scheme": [
+              "PaM",
+              "SaM",
+              "SaP"
+            ],
+            "mode": "aaa-2",
+            "validity": "invalid",
+            "diagramId": "diagram_III_A_aaa_2_venn",
+            "points": 7
+          },
+          {
+            "itemId": "III_A_natural",
+            "example": "Nicio persoană dezordonată nu este disciplinată. Toți elevii model sunt persoane dezordonate. Deci unii elevi model nu sunt disciplinați.",
+            "points": 4
+          }
+        ],
+        "III_B": {
+          "formal": [
+            "MaP",
+            "SaM",
+            "SaP"
+          ],
+          "natural": "Toți elevii cu rezultate foarte bune sunt beneficiari ai burselor de merit. Toți elevii premianți sunt elevi cu rezultate foarte bune. Deci toți elevii premianți sunt beneficiari ai burselor de merit.",
+          "points": 6
+        },
+        "III_C": [
+          {
+            "itemId": "III_C_1",
+            "correctAnswer": "A",
+            "points": 1
+          },
+          {
+            "itemId": "III_C_2",
+            "correctAnswer": "F",
+            "points": 1
+          },
+          {
+            "itemId": "III_C_3",
+            "correctAnswer": "A",
+            "points": 1
+          },
+          {
+            "itemId": "III_C_4",
+            "correctAnswer": "F",
+            "points": 1
+          }
+        ],
+        "III_D": {
+          "ruleViolated": "Definiția este prea largă și încalcă regula adecvării: nu orice animal carnivor este tigru.",
+          "otherRuleExample": "Altă regulă: evitarea circularității. Exemplu de definiție greșită: Tigrul este un animal tigrat de tip tigru.",
+          "points": 6
+        }
+      }
+    }
+  ]
+}

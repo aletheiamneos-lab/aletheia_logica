@@ -1,0 +1,357 @@
+{
+  "test_name": "Test Logica Set 5",
+  "subject": "Logica",
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este prea restrânsă?",
+      "options": {
+        "A": "Mamiferul este un animal vertebrat.",
+        "B": "Mamiferul este un animal vertebrat care naște pui vii.",
+        "C": "Mamiferul este un animal.",
+        "D": "Mamiferul este o specie de ființă vie.",
+        "E": "Mamiferul este un organism biologic."
+      },
+      "correct_answer": "B",
+      "justification": "Exclude monotremele."
+    },
+    {
+      "id": 2,
+      "category": "Definitii",
+      "question": "Care definiție este clară și precisă?",
+      "options": {
+        "A": "Dreptatea este frumusețea ordinii sociale.",
+        "B": "Statul este sufletul comunității.",
+        "C": "Legea este o normă juridică adoptată de autoritatea competentă.",
+        "D": "Contractul este magia voinței.",
+        "E": "Judecata este inima dreptului."
+      },
+      "correct_answer": "C",
+      "justification": "Non-metaforică și precisă."
+    },
+    {
+      "id": 3,
+      "category": "Definitii",
+      "question": "Definiția „Avocatul este persoana care avocă” este:",
+      "options": {
+        "A": "prea largă",
+        "B": "prea restrânsă",
+        "C": "circulară",
+        "D": "contradictorie",
+        "E": "ostensivă"
+      },
+      "correct_answer": "C",
+      "justification": "Termen explicat prin sine."
+    },
+    {
+      "id": 4,
+      "category": "Definitii",
+      "question": "Definiția corectă pentru triunghi este:",
+      "options": {
+        "A": "figură geometrică",
+        "B": "poligon cu trei laturi",
+        "C": "formă",
+        "D": "desen cu trei linii",
+        "E": "ceva cu unghiuri"
+      },
+      "correct_answer": "B",
+      "justification": "Gen + diferență."
+    },
+    {
+      "id": 5,
+      "category": "Definitii",
+      "question": "Regula adecvării cere:",
+      "options": {
+        "A": "definiție scurtă",
+        "B": "definiție negativă",
+        "C": "echivalență de sferă",
+        "D": "exemple",
+        "E": "abstractizare"
+      },
+      "correct_answer": "C",
+      "justification": "Extensiuni egale."
+    },
+    {
+      "id": 6,
+      "category": "Clasificare",
+      "question": "Clasificarea incompletă este:",
+      "options": {
+        "A": "Anotimpuri: 4",
+        "B": "Numere: +,-,0",
+        "C": "Zile lucrătoare: luni, marți, miercuri",
+        "D": "Persoane: minori/majori",
+        "E": "Animale: vertebrate/nevertebrate"
+      },
+      "correct_answer": "C",
+      "justification": "Lipsesc zile."
+    },
+    {
+      "id": 7,
+      "category": "Clasificare",
+      "question": "Clasificarea invalidă:",
+      "options": {
+        "A": "pare/impare",
+        "B": "minori/majori",
+        "C": "vehicule: electrice, rapide, mari",
+        "D": "vertebrate",
+        "E": "genuri"
+      },
+      "correct_answer": "C",
+      "justification": "Criterii diferite."
+    },
+    {
+      "id": 8,
+      "category": "Clasificare",
+      "question": "Excludere reciprocă:",
+      "options": {
+        "A": "elevi/minori",
+        "B": "bărbați/șefi",
+        "C": "bursieri/sportivi",
+        "D": "pare/impare",
+        "E": "autoturisme/mari"
+      },
+      "correct_answer": "D",
+      "justification": "Nu se suprapun."
+    },
+    {
+      "id": 9,
+      "category": "Clasificare",
+      "question": "Clasificare corectă trebuie:",
+      "options": {
+        "A": "multe clase",
+        "B": "criteriu unic",
+        "C": "abstractă",
+        "D": "scurtă",
+        "E": "negativă"
+      },
+      "correct_answer": "B",
+      "justification": "Regulă fundamentală."
+    },
+    {
+      "id": 10,
+      "category": "Clasificare",
+      "question": "Criteriul minori/majori:",
+      "options": {
+        "A": "profesie",
+        "B": "vârstă juridică",
+        "C": "înălțime",
+        "D": "venit",
+        "E": "educație"
+      },
+      "correct_answer": "B",
+      "justification": "Vârstă."
+    },
+    {
+      "id": 11,
+      "category": "Propozitii",
+      "question": "„Unii juriști sunt profesori” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "singular"
+      },
+      "correct_answer": "C",
+      "justification": "Particular afirmativ."
+    },
+    {
+      "id": 12,
+      "category": "Propozitii",
+      "question": "„Unii studenți nu sunt bursieri” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "singular"
+      },
+      "correct_answer": "D",
+      "justification": "Particular negativ."
+    },
+    {
+      "id": 13,
+      "category": "Propozitii",
+      "question": "Conversiune E:",
+      "options": {
+        "A": "Toți P sunt non-S",
+        "B": "Niciun P nu este S",
+        "C": "Unii P nu sunt S",
+        "D": "Toți S nu sunt P",
+        "E": "Unii S sunt P"
+      },
+      "correct_answer": "B",
+      "justification": "Conversiune simplă."
+    },
+    {
+      "id": 14,
+      "category": "Propozitii",
+      "question": "Obversiune SaP:",
+      "options": {
+        "A": "SaP",
+        "B": "Se non-P",
+        "C": "SiP",
+        "D": "SoP",
+        "E": "PaS"
+      },
+      "correct_answer": "B",
+      "justification": "Schimbă calitatea."
+    },
+    {
+      "id": 15,
+      "category": "Propozitii",
+      "question": "Contradictoria lui A:",
+      "options": {
+        "A": "E",
+        "B": "I",
+        "C": "O",
+        "D": "SaP",
+        "E": "PaS"
+      },
+      "correct_answer": "C",
+      "justification": "A↔O."
+    },
+    {
+      "id": 16,
+      "category": "Silogisme",
+      "question": "PeM înseamnă:",
+      "options": {
+        "A": "Toți P sunt M",
+        "B": "Niciun P nu este M",
+        "C": "Unii P sunt M",
+        "D": "Unii P nu sunt M",
+        "E": "Toți M sunt P"
+      },
+      "correct_answer": "B",
+      "justification": "Universal negativ."
+    },
+    {
+      "id": 17,
+      "category": "Silogisme",
+      "question": "Premisă particulară → concluzie:",
+      "options": {
+        "A": "universală",
+        "B": "negativă",
+        "C": "particulară",
+        "D": "contradictorie",
+        "E": "imposibilă"
+      },
+      "correct_answer": "C",
+      "justification": "Regulă."
+    },
+    {
+      "id": 18,
+      "category": "Silogisme",
+      "question": "E și I sunt:",
+      "options": {
+        "A": "contrare",
+        "B": "contradictorii",
+        "C": "subcontrare",
+        "D": "subalterne",
+        "E": "identice"
+      },
+      "correct_answer": "B",
+      "justification": "Contradicție."
+    },
+    {
+      "id": 19,
+      "category": "Silogisme",
+      "question": "A adevărat → I:",
+      "options": {
+        "A": "fals",
+        "B": "adevărat",
+        "C": "nedeterminat",
+        "D": "contradictoriu",
+        "E": "imposibil"
+      },
+      "correct_answer": "B",
+      "justification": "Subalternare."
+    },
+    {
+      "id": 20,
+      "category": "Silogisme",
+      "question": "EOI este:",
+      "options": {
+        "A": "invalid",
+        "B": "valid",
+        "C": "inductiv",
+        "D": "analogic",
+        "E": "clasificare"
+      },
+      "correct_answer": "B",
+      "justification": "Mod valid."
+    },
+    {
+      "id": 21,
+      "category": "Erori",
+      "question": "Echivocația:",
+      "options": {
+        "A": "sens unic",
+        "B": "sens dublu",
+        "C": "definiție",
+        "D": "clasificare",
+        "E": "deducție"
+      },
+      "correct_answer": "B",
+      "justification": "Ambiguitate."
+    },
+    {
+      "id": 22,
+      "category": "Erori",
+      "question": "Unii→Toți:",
+      "options": {
+        "A": "valid",
+        "B": "eroare",
+        "C": "deducție",
+        "D": "analogie",
+        "E": "definiție"
+      },
+      "correct_answer": "B",
+      "justification": "Generalizare."
+    },
+    {
+      "id": 23,
+      "category": "Erori",
+      "question": "Distribuire ilegală:",
+      "options": {
+        "A": "corect",
+        "B": "termen extins",
+        "C": "deducție",
+        "D": "inducție",
+        "E": "analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Extindere ilegală."
+    },
+    {
+      "id": 24,
+      "category": "Erori",
+      "question": "Două premise particulare:",
+      "options": {
+        "A": "valid",
+        "B": "universal",
+        "C": "nu dau concluzie",
+        "D": "negativ",
+        "E": "contradictoriu"
+      },
+      "correct_answer": "C",
+      "justification": "Regulă."
+    },
+    {
+      "id": 25,
+      "category": "Erori",
+      "question": "Eroare silogism: juriști:",
+      "options": {
+        "A": "generalizare",
+        "B": "termen mediu nedistribuit",
+        "C": "echivocație",
+        "D": "circularitate",
+        "E": "obversiune"
+      },
+      "correct_answer": "B",
+      "justification": "M nedistribuit."
+    }
+  ]
+}

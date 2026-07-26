@@ -1,0 +1,132 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2019_v4",
+  "examId": "bac_logica_2019_v4",
+  "visibility": "teacher_only",
+  "teacherOnly": true,
+  "title": "Rezolvare profesor - BAC Logica 2019 Varianta 4",
+  "sections": [
+    {
+      "id": "I_A",
+      "answers": {
+        "I_A_1": "c",
+        "I_A_2": "a",
+        "I_A_3": "b",
+        "I_A_4": "b",
+        "I_A_5": "a",
+        "I_A_6": "d",
+        "I_A_7": "a",
+        "I_A_8": "b",
+        "I_A_9": "d",
+        "I_A_10": "a"
+      },
+      "scoring": "10 x 2p = 20p"
+    },
+    {
+      "id": "I_B",
+      "answers": {
+        "a": "A",
+        "b": "F",
+        "c": "F",
+        "d": "F",
+        "e": "A",
+        "f": "A"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_2019_v4",
+        "renderFromContract": true
+      },
+      "scoring": "4p diagrama Euler + 6 x 1p = 6p"
+    },
+    {
+      "id": "II_A",
+      "correctAnswer": {
+        "p2": "SoP",
+        "p4": "SaP"
+      }
+    },
+    {
+      "id": "II_B",
+      "correctAnswer": {
+        "contradictory_p1": "SiP - Unii lideri de opinie sunt timizi.",
+        "subcontrary_p2": "SiP - Unele resurse naturale sunt regenerabile.",
+        "superaltern_p3": "SaP - Toti studentii sunt antreprenori de succes.",
+        "subaltern_p4": "SiP - Unele cosmetice sunt produse perisabile."
+      }
+    },
+    {
+      "id": "II_C",
+      "correctAnswer": {
+        "p1_converse": "SeP -> PeS: Niciun timid nu este lider de opinie.",
+        "p1_obverse": "SeP -> Sa~P: Toti liderii de opinie sunt netimizi.",
+        "p4_converse": "SaP -> PiS: Unele produse perisabile sunt cosmetice.",
+        "p4_obverse": "SaP -> Se~P: Niciun cosmetic nu este produs neperisabil."
+      }
+    },
+    {
+      "id": "II_D",
+      "correctAnswer": "SiP -> PiS -> Po~S. In limbaj natural: Unele persoane care nu sunt studenti nu sunt antreprenori de succes / Unele antreprenori de succes nu sunt non-studenti, in functie de notarea termenilor folosita de evaluator; se puncteaza lantul formal corect al conversei si obversei."
+    },
+    {
+      "id": "II_E",
+      "correctAnswer": {
+        "formal_opinions": "X: SoP -> Si~P; Y: SaP -> PaS.",
+        "correctness": "X: obversiune valida, rationament corect. Y: conversiune nevalida, rationament incorect.",
+        "explanation_y": "In rationamentul elevului Y se incalca legea distribuirii termenilor: termenul P apare distribuit in concluzie, dar nu este distribuit in premisa."
+      }
+    },
+    {
+      "id": "III_A",
+      "correctAnswer": {
+        "schemes": {
+          "aae-2": [
+            "PaM",
+            "SaM",
+            "SeP"
+          ],
+          "iai-3": [
+            "MiP",
+            "MaS",
+            "SiP"
+          ]
+        },
+        "validity": {
+          "aae-2": "invalid",
+          "iai-3": "valid"
+        }
+      },
+      "diagramSolution": [
+        {
+          "diagramId": "diagram_III_A_aae_2_2019_v4",
+          "renderFromContract": true
+        },
+        {
+          "diagramId": "diagram_III_A_iai_3_2019_v4",
+          "renderFromContract": true
+        }
+      ]
+    },
+    {
+      "id": "III_B",
+      "correctAnswer": {
+        "formal": "MeP / SaM / SeP",
+        "natural": "Nicio propozitie formulata ambiguu nu este interpretabila. Toate propozitiile clare sunt propozitii neformulate ambiguu. Prin urmare, nicio propozitie clara nu este interpretabila. Se accepta orice silogism valid care are drept concluzie propozitia ceruta."
+      }
+    },
+    {
+      "id": "III_C",
+      "answers": {
+        "1": "A",
+        "2": "F",
+        "3": "A",
+        "4": "F"
+      }
+    },
+    {
+      "id": "III_D",
+      "correctAnswer": {
+        "rule_violated": "Definitia este prea ingusta / nu este adecvata, deoarece geografia nu studiaza doar muntii si campiile.",
+        "other_rule_and_definition": "Exemplu de alta regula: definitia nu trebuie sa fie circulara. Definitie incorecta: Geografia este stiinta care se ocupa cu geografia."
+      }
+    }
+  ]
+}

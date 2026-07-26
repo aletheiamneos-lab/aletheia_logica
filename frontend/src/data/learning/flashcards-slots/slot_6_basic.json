@@ -1,0 +1,134 @@
+{
+  "slot": 6,
+  "nivel": "basic",
+  "title": "Slot 6 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_6_basic_card_1",
+      "front": "Ce este raționamentul nedeductiv?",
+      "back": "Raționamentul nedeductiv susține concluzia cu probabilitate, nu cu necesitate absolută."
+    },
+    {
+      "id": "slot_6_basic_card_2",
+      "front": "Ce este inducția enumerativă?",
+      "back": "Inducția enumerativă generalizează pornind de la mai multe cazuri observate."
+    },
+    {
+      "id": "slot_6_basic_card_3",
+      "front": "Ce este inducția completă?",
+      "back": "Inducția completă verifică toate cazurile unei clase finite."
+    },
+    {
+      "id": "slot_6_basic_card_4",
+      "front": "Ce este inducția incompletă?",
+      "back": "Inducția incompletă verifică doar o parte dintre cazuri și formulează o concluzie probabilă."
+    },
+    {
+      "id": "slot_6_basic_card_5",
+      "front": "Ce este generalizarea?",
+      "back": "Generalizarea extinde o constatare de la cazuri particulare la o clasă mai largă."
+    },
+    {
+      "id": "slot_6_basic_card_6",
+      "front": "Ce este generalizarea pripită?",
+      "back": "Generalizarea pripită trage o concluzie generală din prea puține cazuri."
+    },
+    {
+      "id": "slot_6_basic_card_7",
+      "front": "Ce este cauzalitatea?",
+      "back": "Cauzalitatea este relația prin care un fenomen produce sau determină alt fenomen."
+    },
+    {
+      "id": "slot_6_basic_card_8",
+      "front": "Ce este cauza?",
+      "back": "Cauza este factorul care contribuie la apariția unui efect."
+    },
+    {
+      "id": "slot_6_basic_card_9",
+      "front": "Ce este efectul?",
+      "back": "Efectul este rezultatul produs de una sau mai multe cauze."
+    },
+    {
+      "id": "slot_6_basic_card_10",
+      "front": "Ce este corelația?",
+      "back": "Corelația este asocierea dintre două fenomene, fără dovadă automată de cauzalitate."
+    },
+    {
+      "id": "slot_6_basic_card_11",
+      "front": "Ce este eroarea corelație-cauzalitate?",
+      "back": "Este presupunerea greșită că două fenomene asociate sunt neapărat legate cauzal."
+    },
+    {
+      "id": "slot_6_basic_card_12",
+      "front": "Ce este metoda concordanței?",
+      "back": "Metoda concordanței caută factorul comun cazurilor în care apare același efect."
+    },
+    {
+      "id": "slot_6_basic_card_13",
+      "front": "Ce este metoda diferenței?",
+      "back": "Metoda diferenței compară un caz cu efectul prezent și unul similar cu efectul absent."
+    },
+    {
+      "id": "slot_6_basic_card_14",
+      "front": "Ce este metoda variațiilor concomitente?",
+      "back": "Metoda variațiilor concomitente urmărește modificarea paralelă a două fenomene."
+    },
+    {
+      "id": "slot_6_basic_card_15",
+      "front": "Ce este metoda reziduurilor?",
+      "back": "Metoda reziduurilor explică partea rămasă a unui efect după eliminarea cauzelor cunoscute."
+    },
+    {
+      "id": "slot_6_basic_card_16",
+      "front": "Ce este explicația cauzală?",
+      "back": "Explicația cauzală arată de ce se produce un fenomen prin indicarea factorilor determinanți."
+    },
+    {
+      "id": "slot_6_basic_card_17",
+      "front": "Ce este ipoteza?",
+      "back": "Ipoteza este o explicație provizorie care trebuie verificată."
+    },
+    {
+      "id": "slot_6_basic_card_18",
+      "front": "Ce este confirmarea unei ipoteze?",
+      "back": "Confirmarea apare când datele susțin ipoteza."
+    },
+    {
+      "id": "slot_6_basic_card_19",
+      "front": "Ce este infirmarea unei ipoteze?",
+      "back": "Infirmarea apare când datele contrazic ipoteza."
+    },
+    {
+      "id": "slot_6_basic_card_20",
+      "front": "Ce este probabilitatea concluziei?",
+      "back": "Probabilitatea concluziei arată cât de puternic susțin premisele concluzia."
+    },
+    {
+      "id": "slot_6_basic_card_21",
+      "front": "Ce este un eșantion?",
+      "back": "Eșantionul este o parte selectată dintr-o populație analizată."
+    },
+    {
+      "id": "slot_6_basic_card_22",
+      "front": "Ce este un eșantion reprezentativ?",
+      "back": "Un eșantion reprezentativ reflectă caracteristicile importante ale populației."
+    },
+    {
+      "id": "slot_6_basic_card_23",
+      "front": "Ce este părtinirea eșantionului?",
+      "back": "Părtinirea apare când selecția cazurilor favorizează nejustificat o concluzie."
+    },
+    {
+      "id": "slot_6_basic_card_24",
+      "front": "Ce este analogia slabă?",
+      "back": "Analogia slabă se bazează pe asemănări superficiale sau irelevante."
+    },
+    {
+      "id": "slot_6_basic_card_25",
+      "front": "Ce este analogia puternică?",
+      "back": "Analogia puternică se bazează pe asemănări relevante și diferențe nesemnificative."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "teacher_solution_bac_logica_2016_v10",
+  "exam_id": "bac_logica_2016_v10",
+  "visibility": "teacher_only",
+  "source": "Barem oficial 2016 Varianta 10",
+  "answers": {
+    "I.A": {
+      "I.1": "d",
+      "I.2": "c",
+      "I.3": "b",
+      "I.4": "c",
+      "I.5": "c",
+      "I.6": "d",
+      "I.7": "c",
+      "I.8": "a",
+      "I.9": "b",
+      "I.10": "b"
+    },
+    "II.A": {
+      "formal": "SaP",
+      "explanation": "Propoziția 4 este universală afirmativă: Toți S sunt P."
+    },
+    "II.B": {
+      "subcontrara_p1_formal": "SoP",
+      "subcontrara_p1_natural": "Unele situații de viață nu sunt provocatoare.",
+      "supraalterna_p2_formal": "SeP",
+      "supraalterna_p2_natural": "Nicio greșeală nu este intenționată."
+    },
+    "II.C": {
+      "p1_conversa": "PiS - Unele lucruri provocatoare sunt situații de viață.",
+      "p1_obversa": "So~P - Unele situații de viață nu sunt neprovocatoare.",
+      "p4_conversa": "PiS - Unele persoane responsabile sunt judecători.",
+      "p4_obversa": "Se~P - Niciun judecător nu este persoană iresponsabilă."
+    },
+    "II.D": {
+      "diagram": "Euler: două clase disjuncte, S=oameni cinstiți și P=mincinoși, fără intersecție."
+    },
+    "II.E": {
+      "X": "SoP → PoS. Raționament incorect; conversiunea propoziției de tip O este nevalidă.",
+      "Y": "SaP → PiS. Raționament corect; conversiune prin accident validă, cu respectarea legii distribuirii termenilor."
+    },
+    "III.A": {
+      "eae-2": "PeM / SaM / SeP - mod valid.",
+      "aai-1": "MaP / SaM / SiP - mod valid.",
+      "natural_example_eae2": "Nicio faptă rea nu este lucru admirat. Toate faptele bune sunt lucruri admirate. Deci nicio faptă bună nu este faptă rea.",
+      "natural_example_aai1": "Toate balenele sunt mamifere. Toate balenele albastre sunt balene. Deci unele balene albastre sunt mamifere."
+    },
+    "III.B": {
+      "formal": "MaP / SaM / SaP",
+      "natural": "Toate faptele morale sunt admirate. Toate faptele bune sunt fapte morale. Deci toate faptele bune sunt admirate."
+    },
+    "III.C": {
+      "given_definition_error": "Definiția încalcă regula evitării circularității, deoarece definește istoria prin evenimente istorice.",
+      "rule_1": "Definiția trebuie să fie adecvată, nici prea largă, nici prea îngustă.",
+      "bad_definition_1": "Istoria este o știință despre oameni. Aceasta este prea largă.",
+      "rule_2": "Definiția trebuie să fie afirmativă, atunci când este posibil.",
+      "bad_definition_2": "Istoria nu este matematică. Aceasta este o definiție negativă și neconstructivă."
+    }
+  },
+  "verification_checklist": [
+    "Răspunsurile Subiectului I au fost preluate din barem: 1-d, 2-c, 3-b, 4-c, 5-c, 6-d, 7-c, 8-a, 9-b, 10-b.",
+    "Subiectul II.A-E este construit pe cerințele oficiale și pe formele indicate în barem.",
+    "Subiectul III.A folosește schemele eae-2 și aai-1 din barem.",
+    "JSON-ul elevului nu conține soluții; soluțiile sunt doar în acest fișier teacher-only."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2018_v1",
+  "examId": "bac_logica_2018_v1",
+  "visibility": "teacher_only",
+  "source": "Examenul de bacalaureat național 2018 - Varianta 1 + barem oficial",
+  "sections": {
+    "I_A": {
+      "answers": [
+        "1-d",
+        "2-b",
+        "3-c",
+        "4-a",
+        "5-d",
+        "6-c",
+        "7-a",
+        "8-b",
+        "9-d",
+        "10-c"
+      ],
+      "points": "10 x 2p = 20p"
+    },
+    "I_B": {
+      "diagram": "Euler: A și B sunt în încrucișare; ambele subordonate lui C; D este opus față de A și B, dar subordonat lui C.",
+      "answers": [
+        "a-A",
+        "b-A",
+        "c-F",
+        "d-A",
+        "e-F",
+        "f-F"
+      ],
+      "points": "4p diagramă + 6 x 1p"
+    },
+    "II": {
+      "A": {
+        "p1": "SaP",
+        "p2": "SoP"
+      },
+      "B": {
+        "subalterna_p1": "Unii intelectuali sunt adepți ai libertății individuale. (SiP)",
+        "contradictoria_p2": "Toți peștii albaștri sunt animale de dimensiuni mari. (SaP)",
+        "contrara_p3": "Toate alimentele bogate în calorii sunt recomandate de medicul nutriționist. (SaP)",
+        "subcontrara_p4": "Unele flori de primăvară nu sunt plante rezistente la frig. (SoP)"
+      },
+      "C": {
+        "p3_conversa": "PeS - Unele lucruri recomandate de medicul nutriționist nu sunt alimente bogate în calorii? Pentru propoziția E, conversa corectă se păstrează ca PeS: Niciun lucru recomandat de medicul nutriționist nu este aliment bogat în calorii.",
+        "p3_obversa": "Sa~P - Toate alimentele bogate în calorii sunt nerecomandate de medicul nutriționist.",
+        "p4_conversa": "PiS - Unele plante rezistente la frig sunt flori de primăvară.",
+        "p4_obversa": "So~P - Unele flori de primăvară nu sunt plante nerezistente la frig."
+      },
+      "D": {
+        "formal": "Po~S",
+        "natural": "Unele plante rezistente la frig nu sunt non-flori de primăvară."
+      },
+      "E": {
+        "X": "SiP -> PiS; conversiune validă.",
+        "Y": "SoP -> PoS; conversiune nevalidă pentru propoziția particular negativă."
+      }
+    },
+    "III_A": {
+      "schemes": {
+        "eae-4": [
+          "PeM",
+          "MaS",
+          "SeP"
+        ],
+        "aii-3": [
+          "MaP",
+          "MiS",
+          "SiP"
+        ]
+      },
+      "validity": {
+        "eae-4": "valid",
+        "aii-3": "valid"
+      },
+      "points": "8p scheme + 4p diagrame + 2p decizii"
+    },
+    "III_B": {
+      "requirement": "Orice silogism valid care justifică propoziția „Unii artiști nu sunt pictori”, în limbaj formal și natural."
+    },
+    "III_C": {
+      "term_mediu": "M = invenție",
+      "premisa_minora_natural": "Niciun adevăr nu este invenție."
+    },
+    "III_D": {
+      "definition": "Tortul este un produs de cofetărie.",
+      "rule_violation": "Definiție prea largă / lipsa diferenței specifice; definitorul nu delimitează suficient definitul de alte produse de cofetărie.",
+      "other_rule": "Definiția nu trebuie să fie circulară; sau nu trebuie să fie negativă când poate fi afirmativă; sau trebuie să fie clară și precisă.",
+      "example_wrong_definition": "Tortul este un tort dulce. (încalcă regula evitării circularității)"
+    }
+  },
+  "teacherPdf": {
+    "enabled": true,
+    "previewEnabled": true,
+    "downloadEnabled": true
+  },
+  "studentExposure": "never"
+}

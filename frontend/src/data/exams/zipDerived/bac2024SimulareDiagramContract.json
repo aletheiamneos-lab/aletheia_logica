@@ -1,0 +1,66 @@
+{
+  "examId": "bac_logica_2024_simulare",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler_relation_map",
+      "studentInput": "hybrid_canvas_upload",
+      "teacherRendering": {
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "relations": [
+          "C subset A",
+          "A subset B",
+          "D intersects A",
+          "D intersects B",
+          "D disjoint C",
+          "E subset D",
+          "E disjoint B"
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_c_eae_2_venn",
+      "diagramType": "venn_three_terms",
+      "studentInput": "hybrid_canvas_upload",
+      "teacherRendering": {
+        "labels": [
+          "S",
+          "P",
+          "M"
+        ],
+        "premises": [
+          "PeM",
+          "SaM"
+        ],
+        "conclusion": "SeP",
+        "validity": "valid",
+        "instructions": "Hașurează zonele cerute de premise; concluzia SeP se citește din diagramă."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_c_iae_4_venn",
+      "diagramType": "venn_three_terms",
+      "studentInput": "hybrid_canvas_upload",
+      "teacherRendering": {
+        "labels": [
+          "S",
+          "P",
+          "M"
+        ],
+        "premises": [
+          "PiM",
+          "MaS"
+        ],
+        "conclusion": "SeP",
+        "validity": "invalid",
+        "instructions": "După reprezentarea premiselor, concluzia SeP nu rezultă din diagramă."
+      }
+    }
+  ]
+}

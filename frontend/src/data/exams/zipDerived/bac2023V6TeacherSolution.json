@@ -1,0 +1,213 @@
+{
+  "examId": "bac_logica_2023_v6",
+  "title": "Examenul national de bacalaureat 2023 - Logica, argumentare si comunicare - Varianta 6",
+  "year": 2023,
+  "variant": "V6",
+  "type": "BAC_LOGICA_EXAM",
+  "workingTimeMinutes": 180,
+  "totalPoints": 100,
+  "examPoints": 90,
+  "officePoints": 10,
+  "sourceFiles": {
+    "subject": "Examenul național de bacalaureat 2023_V6.pdf",
+    "barem": "Examenul național de bacalaureat 2023_V6_BAREM.pdf"
+  },
+  "visibility": "teacher_only",
+  "containsSolutions": true,
+  "security": {
+    "mustNotBeBundledInStudentFrontend": true,
+    "requiresRole": [
+      "teacher",
+      "admin"
+    ]
+  },
+  "solutions": [
+    {
+      "sectionId": "I_A",
+      "title": "Subiectul I.A - răspunsuri grilă",
+      "answers": {
+        "I_A_1": "c",
+        "I_A_2": "d",
+        "I_A_3": "a",
+        "I_A_4": "b",
+        "I_A_5": "d",
+        "I_A_6": "b",
+        "I_A_7": "c",
+        "I_A_8": "d",
+        "I_A_9": "b",
+        "I_A_10": "d"
+      },
+      "scoring": "10 x 2p = 20p"
+    },
+    {
+      "sectionId": "I_B",
+      "title": "Subiectul I.B - Euler și A/F",
+      "context": "Se dau termenii M, N, O, P și Q astfel încât termenii P și Q se află în raport de încrucișare; termenul M este subordonat termenului P, fiind totodată în raport de încrucișare cu termenul Q, dar de opoziție cu termenul N; termenul N este specie a termenului Q și se află în raport de încrucișare cu termenul P; termenul O este, simultan, în raport de încrucișare cu termenii P și Q, dar de opoziție cu ceilalți doi termeni.",
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_MNOPQ",
+        "renderFromContract": true
+      },
+      "answers": {
+        "I_B_2_a": "F",
+        "I_B_2_b": "A",
+        "I_B_2_c": "F",
+        "I_B_2_d": "A",
+        "I_B_2_e": "A",
+        "I_B_2_f": "A",
+        "I_B_2_g": "F",
+        "I_B_2_h": "A"
+      },
+      "scoring": "2p diagramă + 8 x 1p = 10p"
+    },
+    {
+      "sectionId": "II_A",
+      "title": "Subiectul II.A",
+      "answers": {
+        "II_A_1": {
+          "formal": "SoP",
+          "natural": "Unele articole de filosofia limbajului nu sunt scrieri dificile."
+        },
+        "II_A_2": {
+          "formal": "SiP",
+          "natural": "Unele prăjituri sunt preparate cu ingrediente naturale."
+        },
+        "II_A_3": {
+          "formal": "SaP",
+          "natural": "Toate fenomenele meteorologice sunt evenimente inexplicabile."
+        },
+        "II_A_4": {
+          "formal": "SaP",
+          "natural": "Toate instrumentele muzicale sunt viori de colecție."
+        }
+      },
+      "scoring": "4 x 1p formal + 4 x 1p natural = 8p"
+    },
+    {
+      "sectionId": "II_B",
+      "title": "Subiectul II.B",
+      "answers": {
+        "II_B_1_conversa": {
+          "formal": "PiS",
+          "natural": "Unele scrieri dificile sunt articole de filosofia limbajului."
+        },
+        "II_B_1_obversa": {
+          "formal": "Se¬P",
+          "natural": "Niciun articol de filosofia limbajului nu este scriere nedificilă."
+        },
+        "II_B_3_conversa": {
+          "formal": "PeS",
+          "natural": "Niciun eveniment inexplicabil nu este fenomen meteorologic."
+        },
+        "II_B_3_obversa": {
+          "formal": "Sa¬P",
+          "natural": "Toate fenomenele meteorologice sunt evenimente explicabile."
+        }
+      },
+      "scoring": "4p formal + 4p natural = 8p"
+    },
+    {
+      "sectionId": "II_C",
+      "title": "Subiectul II.C",
+      "answers": {
+        "II_C_1": {
+          "formal": "Po¬S",
+          "natural": "Unele preparate cu ingrediente naturale nu sunt non-prăjituri."
+        },
+        "II_C_2": {
+          "formal": "PiS",
+          "natural": "Unele viori de colecție sunt instrumente muzicale."
+        }
+      },
+      "scoring": "2p formal + 4p natural = 6p"
+    },
+    {
+      "sectionId": "II_D",
+      "title": "Subiectul II.D",
+      "answers": {
+        "X": {
+          "formal": "SaP→PaS",
+          "verdict": "incorect",
+          "operation": "conversiune nevalidă",
+          "explanation": "Raționamentul este incorect deoarece conversiunea propoziției A nu este conversiune simplă validă; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+        },
+        "Y": {
+          "formal": "SoP→Si¬P",
+          "verdict": "corect",
+          "operation": "obversiune validă",
+          "explanation": "Obversiunea propoziției O păstrează valoarea de adevăr: unii S nu sunt P devine unii S sunt non-P."
+        }
+      },
+      "scoring": "4p formal + 2p verdict + 2p explicație X = 8p"
+    },
+    {
+      "sectionId": "III_A",
+      "title": "Subiectul III.A",
+      "answers": {
+        "eao-1": {
+          "schema": [
+            "MeP",
+            "SaM",
+            "SoP"
+          ],
+          "validity": "valid",
+          "diagramId": "diagram_III_A_eao_1_venn"
+        },
+        "aai-3": {
+          "schema": [
+            "MaP",
+            "MaS",
+            "SiP"
+          ],
+          "validity": "valid",
+          "diagramId": "diagram_III_A_aai_3_venn"
+        },
+        "naturalExample": "Niciun elev dezinteresat nu este persoană care obține rezultate excelente. Toți elevii din clasa X sunt elevi dezinteresați. Prin urmare, unii elevi din clasa X nu sunt persoane care obțin rezultate excelente."
+      },
+      "scoring": "4p scheme + 4p exemplu natural + 6p Venn + 2p decizii validitate = 16p din totalul grupului A"
+    },
+    {
+      "sectionId": "III_B",
+      "title": "Subiectul III.B",
+      "answer": {
+        "formal": [
+          "MeP",
+          "SiM",
+          "SoP"
+        ],
+        "natural": [
+          "Niciun adolescent care își ascunde problemele nu este persoană înțeleasă de către părinți.",
+          "Unii adolescenți sunt adolescenți care își ascund problemele.",
+          "Prin urmare, unii adolescenți nu sunt persoane înțelese de către părinți."
+        ]
+      },
+      "scoring": "3p formal + 3p natural = 6p"
+    },
+    {
+      "sectionId": "III_C",
+      "title": "Subiectul III.C",
+      "answers": {
+        "1": "F",
+        "2": "A",
+        "3": "A",
+        "4": "F"
+      },
+      "analysis": {
+        "S": "persoane dificile",
+        "P": "persoane agreabile",
+        "M": "atoateștiutori",
+        "conclusion": "Nicio persoană dificilă nu este agreabilă (SeP)"
+      },
+      "scoring": "4 x 1p = 4p"
+    },
+    {
+      "sectionId": "III_D",
+      "title": "Subiectul III.D",
+      "answers": {
+        "a": "Definiția încalcă regula clarității și preciziei / interdicția limbajului figurat, deoarece „medicamentul sufletului” este formulare metaforică.",
+        "b": "O altă regulă: evitarea circularității.",
+        "c": "Exemplu de definiție care încalcă circularitatea: Muzica este arta muzicii."
+      },
+      "scoring": "2p + 2p + 2p = 6p"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "examId": "bac_logica_2018_v9",
+  "title": "BAC Logica 2018 - Varianta 9",
+  "mode": "student_exam",
+  "visibility": "student",
+  "totalPoints": 100,
+  "officialPoints": 10,
+  "studentRules": {
+    "showSolutions": false,
+    "showTeacherExplanation": false,
+    "finalizeButton": true,
+    "generateStudentPdfAfterSubmit": true,
+    "previewStudentPdf": true,
+    "sendStudentPdfByEmail": true,
+    "includeInAdminReport": true
+  },
+  "sections": [
+    {
+      "id": "I_A",
+      "title": "Subiectul I.A - itemi cu alegere unica",
+      "points": 20,
+      "items": [
+        {
+          "id": "I_A_1",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_2",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_3",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_4",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_5",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_6",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_7",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_8",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_9",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "id": "I_A_10",
+          "inputType": "single_choice",
+          "points": 2,
+          "options": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I_B",
+      "title": "Subiectul I.B - diagrame Euler si A/F",
+      "points": 10,
+      "items": [
+        {
+          "id": "I_B_diagram",
+          "inputType": "hybrid_diagram",
+          "requiresDiagram": true,
+          "diagramId": "diagram_I_B_euler_2018_v9",
+          "points": 4,
+          "inputConfig": {
+            "label": "Diagrama Euler",
+            "helperText": "Deseneaza raporturile dintre termenii A, B, C si D. Poti desena direct sau incarca o imagine.",
+            "canvas": {
+              "enabled": true,
+              "tools": [
+                "pen",
+                "eraser",
+                "undo",
+                "clear",
+                "save"
+              ],
+              "saveFormat": [
+                "strokes_json",
+                "png_export"
+              ]
+            },
+            "upload": {
+              "enabled": true
+            }
+          }
+        },
+        {
+          "id": "I_B_AF",
+          "inputType": "true_false_group",
+          "points": 6,
+          "statements": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea - operatii logice si rationamente",
+      "points": 30,
+      "items": [
+        {
+          "id": "II_A",
+          "inputType": "short_text_group",
+          "points": 2,
+          "fields": [
+            {
+              "fieldId": "prop1",
+              "placeholder": "Scrie forma logica. Exemplu: SaP"
+            },
+            {
+              "fieldId": "prop3",
+              "placeholder": "Scrie forma logica. Exemplu: SoP"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "inputType": "structured_text",
+          "points": 8,
+          "placeholder": "Construieste raspunsurile in limbaj formal si natural, fara a introduce rezolvarea in placeholder."
+        },
+        {
+          "id": "II_C",
+          "inputType": "structured_text",
+          "points": 8,
+          "placeholder": "Aplica explicit conversiunea si obversiunea pentru propozitiile indicate."
+        },
+        {
+          "id": "II_D",
+          "inputType": "structured_text",
+          "points": 4,
+          "placeholder": "Scrie obversa conversiei cerute, in limbaj formal si natural."
+        },
+        {
+          "id": "II_E",
+          "inputType": "structured_text",
+          "points": 8,
+          "placeholder": "Scrie formele logice, precizeaza corectitudinea si explica rationamentul indicat."
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea - silogisme, Venn si definitie",
+      "points": 30,
+      "items": [
+        {
+          "id": "III_A_aaa_1",
+          "inputType": "syllogism_schema",
+          "points": 4,
+          "mode": "aaa-1",
+          "requiresDiagram": true,
+          "diagramId": "diagram_III_A_aaa_1_2018_v9"
+        },
+        {
+          "id": "III_A_aii_4",
+          "inputType": "syllogism_schema",
+          "points": 4,
+          "mode": "aii-4",
+          "requiresDiagram": true,
+          "diagramId": "diagram_III_A_aii_4_2018_v9"
+        },
+        {
+          "id": "III_B",
+          "inputType": "structured_text",
+          "points": 6,
+          "placeholder": "Construieste un silogism valid care justifica propozitia data."
+        },
+        {
+          "id": "III_C",
+          "inputType": "structured_text",
+          "points": 4,
+          "placeholder": "Precizeaza termenul mediu si premisa majora."
+        },
+        {
+          "id": "III_D",
+          "inputType": "long_text",
+          "points": 6,
+          "placeholder": "Mentioneaza regula incalcata, apoi construieste o definitie care incalca o alta regula."
+        }
+      ]
+    }
+  ]
+}

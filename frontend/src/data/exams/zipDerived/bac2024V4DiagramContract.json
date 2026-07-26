@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "2.0",
+  "examId": "bac_logica_2024_v4",
+  "title": "BAC Logică 2024 - Varianta 4 - contract diagrame",
+  "studentDiagramPolicy": {
+    "studentCanDraw": true,
+    "studentCanUpload": true,
+    "studentDoesNotSeeTeacherDiagram": true
+  },
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_A_B_C_D_E",
+      "diagramType": "euler_relation_map",
+      "usage": [
+        "student_canvas",
+        "teacher_solution"
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        {
+          "between": [
+            "A",
+            "B"
+          ],
+          "relation": "overlap"
+        },
+        {
+          "between": [
+            "C",
+            "A"
+          ],
+          "relation": "overlap"
+        },
+        {
+          "between": [
+            "C",
+            "B"
+          ],
+          "relation": "overlap"
+        },
+        {
+          "between": [
+            "C",
+            "D"
+          ],
+          "relation": "opposition"
+        },
+        {
+          "between": [
+            "C",
+            "E"
+          ],
+          "relation": "opposition"
+        },
+        {
+          "between": [
+            "D",
+            "A"
+          ],
+          "relation": "overlap"
+        },
+        {
+          "between": [
+            "D",
+            "B"
+          ],
+          "relation": "overlap"
+        },
+        {
+          "between": [
+            "D",
+            "C"
+          ],
+          "relation": "opposition"
+        },
+        {
+          "between": [
+            "D",
+            "E"
+          ],
+          "relation": "opposition"
+        },
+        {
+          "between": [
+            "E",
+            "A_intersect_B"
+          ],
+          "relation": "subset"
+        }
+      ],
+      "teacherRenderingInstructions": "Randare Euler: A și B se intersectează; E se plasează integral în intersecția A∩B; C intersectează A și B, dar nu intersectează D sau E; D intersectează A și B, dar nu intersectează C sau E."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eae_1_venn",
+      "diagramType": "venn_three_terms",
+      "usage": [
+        "student_canvas",
+        "teacher_solution"
+      ],
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eae-1",
+      "premises": [
+        "MeP",
+        "SaM"
+      ],
+      "conclusion": "SeP",
+      "validity": "valid",
+      "teacherRenderingInstructions": "Hașurează intersecția M∩P pentru MeP. Hașurează zona S din afara lui M pentru SaM. Concluzia SeP se citește din diagramă."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eae_3_venn",
+      "diagramType": "venn_three_terms",
+      "usage": [
+        "student_canvas",
+        "teacher_solution"
+      ],
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eae-3",
+      "premises": [
+        "MeP",
+        "MaS"
+      ],
+      "conclusion": "SeP",
+      "validity": "invalid",
+      "teacherRenderingInstructions": "Hașurează intersecția M∩P pentru MeP. Hașurează zona M din afara lui S pentru MaS. Concluzia SeP nu rezultă necesar; modul este nevalid."
+    }
+  ]
+}

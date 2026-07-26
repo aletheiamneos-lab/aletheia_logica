@@ -1,0 +1,144 @@
+{
+  "solutionId": "bac_logica_2018_v2_teacher_solution",
+  "examId": "bac_logica_2018_v2",
+  "visibility": "teacher_only",
+  "title": "BAC Logică 2018 - Varianta 2 - Rezolvare profesor",
+  "metadata": {
+    "sourceSubject": "Examenul de bacalaureat național 2018_v2.pdf",
+    "sourceBarem": "Examenul de bacalaureat național 2018_v2_BAREM.pdf"
+  },
+  "answers": {
+    "I_A": {
+      "1": "c",
+      "2": "d",
+      "3": "a",
+      "4": "d",
+      "5": "c",
+      "6": "a",
+      "7": "b",
+      "8": "a",
+      "9": "a",
+      "10": "b"
+    },
+    "I_B": {
+      "diagramId": "diagram_I_B_euler_2018_v2",
+      "truthValues": {
+        "a": "F",
+        "b": "F",
+        "c": "F",
+        "d": "F",
+        "e": "A",
+        "f": "A"
+      }
+    },
+    "II_A": {
+      "2": "SiP",
+      "4": "SoP"
+    },
+    "II_B": {
+      "contrara_prop1": {
+        "formal": "SaP",
+        "natural": "Toate felinele sunt animale erbivore."
+      },
+      "subcontrara_prop2": {
+        "formal": "SoP",
+        "natural": "Unele alimente nu sunt produse cu un conținut ridicat de grăsimi."
+      },
+      "subalterna_prop3": {
+        "formal": "SiP",
+        "natural": "Unii magistrați sunt persoane responsabile."
+      },
+      "supraalterna_prop4": {
+        "formal": "SeP",
+        "natural": "Nicio temă pentru acasă nu este activitate ușor de îndeplinit."
+      }
+    },
+    "II_C": {
+      "conversa_prop1": {
+        "formal": "PeS",
+        "natural": "Niciun animal erbivor nu este felină."
+      },
+      "obversa_prop1": {
+        "formal": "Sa~P",
+        "natural": "Toate felinele sunt non-animale erbivore."
+      },
+      "conversa_prop2": {
+        "formal": "PiS",
+        "natural": "Unele produse cu un conținut ridicat de grăsimi sunt alimente."
+      },
+      "obversa_prop2": {
+        "formal": "So~P",
+        "natural": "Unele alimente nu sunt produse fără conținut ridicat de grăsimi."
+      }
+    },
+    "II_D": {
+      "formal": "Po~S",
+      "natural": "Unele persoane responsabile nu sunt non-magistrați."
+    },
+    "II_E": {
+      "formalizare": {
+        "X": "SoP -> PoS",
+        "Y": "SiP -> PiS"
+      },
+      "corectitudine": {
+        "X": "raționament incorect / conversiune nevalidă",
+        "Y": "raționament corect / conversiune validă"
+      },
+      "explanationY": "Raționamentul elevului Y este corect deoarece propoziția de tip I se convertește valid: din „Unele S sunt P” rezultă „Unele P sunt S”."
+    },
+    "III_A": {
+      "modes": {
+        "aaa-4": {
+          "schema": [
+            "PaM",
+            "MaS",
+            "SaP"
+          ],
+          "validity": "invalid"
+        },
+        "eae-2": {
+          "schema": [
+            "PeM",
+            "SaM",
+            "SeP"
+          ],
+          "validity": "valid"
+        }
+      },
+      "diagramId": "diagram_III_A_venn_2018_v2"
+    },
+    "III_B": {
+      "formal": [
+        "MaP",
+        "SaM",
+        "SaP"
+      ],
+      "natural": [
+        "Toate argumentele care induc în eroare sunt argumente eronate.",
+        "Toate sofismele sunt argumente care induc în eroare.",
+        "Deci toate sofismele sunt argumente eronate."
+      ]
+    },
+    "III_C": {
+      "middleTerm": "introvertit",
+      "majorPremise": "Niciun introvertit nu este sociabil."
+    },
+    "III_D": {
+      "violatedRule": "Definiția nu trebuie să fie negativă, deoarece definiția dată precizează aritmetica prin ceea ce nu studiază.",
+      "otherRuleExample": "Altă regulă: definiția nu trebuie să fie circulară. Exemplu de definiție greșită: „Aritmetica este aritmetica numerelor.”"
+    }
+  },
+  "scoring": {
+    "I_A": "10x2p=20p",
+    "I_B": "4p diagramă + 6x1p=6p",
+    "II": "30p",
+    "III": "30p"
+  },
+  "teacherOnlySecurity": {
+    "mustNotBeBundledInStudentFrontend": true,
+    "requireRole": [
+      "teacher",
+      "admin"
+    ]
+  }
+}

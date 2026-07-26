@@ -1,0 +1,81 @@
+{
+  "examId": "bac_logica_2020_v5",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_2020_v5",
+      "diagramType": "euler_relation_map",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "teacherRendering": {
+        "relations": [
+          "B subset A",
+          "C intersects A",
+          "C disjoint B",
+          "D subset A",
+          "D intersects B",
+          "D intersects C",
+          "E subset C",
+          "E intersects A",
+          "E intersects D"
+        ],
+        "caption": "Diagrama trebuie să redea raporturile descrise în enunț."
+      },
+      "studentRendering": {
+        "mode": "hybrid_diagram",
+        "allowCanvas": true,
+        "allowUpload": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_eae3_2020_v5",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "teacherRendering": {
+        "premises": [
+          "MeP",
+          "MaS"
+        ],
+        "conclusion": "SeP",
+        "validity": "invalid",
+        "caption": "Modul eae-3 este nevalid conform baremului."
+      },
+      "studentRendering": {
+        "mode": "hybrid_diagram",
+        "allowCanvas": true,
+        "allowUpload": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_iai4_2020_v5",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "teacherRendering": {
+        "premises": [
+          "PiM",
+          "MaS"
+        ],
+        "conclusion": "SiP",
+        "validity": "valid",
+        "caption": "Modul iai-4 este valid conform baremului."
+      },
+      "studentRendering": {
+        "mode": "hybrid_diagram",
+        "allowCanvas": true,
+        "allowUpload": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "MinisterulEducatieiNationale",
+      "x": 1492.3543701171875,
+      "y": 193.64869689941406,
+      "score": 0.9966902754136494,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.156982421875,
+      "y": 262.6194763183594,
+      "score": 0.9938136123948627,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2886.9794921875,
+      "y": 443.0045471191406,
+      "score": 0.9458719364234379,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 364.5042724609375,
+      "y": 450.96270751953125,
+      "score": 0.9242998589487637,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fieurmatoareledouamodurisilogistice:aaa-2,aee-4.",
+      "x": 364.5042724609375,
+      "y": 530.5443725585938,
+      "score": 0.988707001209259,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 449.0269775390625,
+      "y": 604.8206176757812,
+      "score": 0.9821779533572819,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.6683349609375,
+      "y": 687.0549926757812,
+      "score": 0.978340222135834,
+      "page_number": 3
+    },
+    {
+      "text": "scheme de inferenta.",
+      "x": 454.3096618652344,
+      "y": 769.2893676757812,
+      "score": 0.969179430603981,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3037.53564453125,
+      "y": 766.6365966796875,
+      "score": 0.9502677023410797,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.0269775390625,
+      "y": 840.912841796875,
+      "score": 0.985240577447294,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 451.6683349609375,
+      "y": 920.4945068359375,
+      "score": 0.9612292098620582,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.894287109375,
+      "y": 920.4945068359375,
+      "score": 0.9483950883150101,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.1455993652344,
+      "y": 1000.076171875,
+      "score": 0.986185074414847,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Uneleinferentenusuntrationamenteimediate”",
+      "x": 449.0269775390625,
+      "y": 1082.310546875,
+      "score": 0.9814917743206024,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3050.7421875,
+      "y": 1082.310546875,
+      "score": 0.9657623395323753,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Daca unii elevi sunt nerabdatori sa ajunga studenti, atunci uni liceeni",
+      "x": 361.8629150390625,
+      "y": 1153.9339599609375,
+      "score": 0.9609936749448582,
+      "page_number": 3
+    },
+    {
+      "text": "suntnerabdatorisaajungastudenti,avandinvederecatotiliceeniisuntelevi.",
+      "x": 454.3096618652344,
+      "y": 1241.473876953125,
+      "score": 0.9828570312347965,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1310.444580078125,
+      "score": 0.9898489788174629,
+      "page_number": 3
+    },
+    {
+      "text": "a.Precizati termenul major al silogismului dat.",
+      "x": 451.6683349609375,
+      "y": 1318.40283203125,
+      "score": 0.978448710543044,
+      "page_number": 3
+    },
+    {
+      "text": "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+      "x": 449.0269775390625,
+      "y": 1392.678955078125,
+      "score": 0.9841952060951906,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1392.678955078125,
+      "score": 0.9625381901860237,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 364.5042724609375,
+      "y": 1469.60791015625,
+      "score": 0.9864130329202723,
+      "page_number": 3
+    },
+    {
+      "text": "Celulelesuntneistoviteleuzinealetesutuluiviu",
+      "x": 454.3096618652344,
+      "y": 1549.1895751953125,
+      "score": 0.9955822960896925,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 451.6683349609375,
+      "y": 1628.771240234375,
+      "score": 0.9770601383513875,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1626.1185302734375,
+      "score": 0.9402882382273674,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 446.3856506347656,
+      "y": 1703.0474853515625,
+      "score": 0.9767702251672745,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,celula\".",
+      "x": 578.452392578125,
+      "y": 1787.9345703125,
+      "score": 0.9805210754275322,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3032.2529296875,
+      "y": 1782.629150390625,
+      "score": 0.9990324079990387,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4942.02099609375,
+      "score": 0.9755334750730165,
+      "page_number": 3
+    },
+    {
+      "text": "Simulare",
+      "x": 3074.51416015625,
+      "y": 4947.326171875,
+      "score": 0.9995797127485275,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.475830078125,
+      "y": 5021.6025390625,
+      "score": 0.950807490519115,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "MinisterulEducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "(30 de puncte)",
+    "SUBIECTULalII-lea",
+    "A.Fieurmatoareledouamodurisilogistice:aaa-2,aee-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme de inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Uneleinferentenusuntrationamenteimediate”",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Daca unii elevi sunt nerabdatori sa ajunga studenti, atunci uni liceeni",
+    "suntnerabdatorisaajungastudenti,avandinvederecatotiliceeniisuntelevi.",
+    "2 puncte",
+    "a.Precizati termenul major al silogismului dat.",
+    "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+    "2 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Celulelesuntneistoviteleuzinealetesutuluiviu",
+    "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,celula\".",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Simulare",
+    "Pagina 3 din 3"
+  ],
+  "text": "MinisterulEducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\n(30 de puncte)\nSUBIECTULalII-lea\nA.Fieurmatoareledouamodurisilogistice:aaa-2,aee-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme de inferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Uneleinferentenusuntrationamenteimediate”\n6 puncte\nC. Fie urmatorul silogism: Daca unii elevi sunt nerabdatori sa ajunga studenti, atunci uni liceeni\nsuntnerabdatorisaajungastudenti,avandinvederecatotiliceeniisuntelevi.\n2 puncte\na.Precizati termenul major al silogismului dat.\nb. Mentionati, in limbaj natural, premisa minora a silogismului dat.\n2 puncte\nD.Fie urmatoarea definitie:\nCelulelesuntneistoviteleuzinealetesutuluiviu\na.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,celula\".\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nSimulare\nPagina 3 din 3"
+}

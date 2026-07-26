@@ -1,0 +1,402 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2024_v3",
+  "examId": "bac_logica_2024_v3",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2024 - Varianta 3",
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "answers": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "a",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni",
+          "context": "Se dau termenii A, B, C, D și E astfel încât termenul A și termenul B sunt în raport de contradicție; termenul C este supraordonat față de termenii A și B, dar, totodată, este specie a termenului D; termenul E este specie a termenului D, aflat în raport de încrucișare cu termenul C și de opoziție cu termenii A și B.",
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler_terms_v3",
+            "renderFromContract": true
+          },
+          "answers": [
+            {
+              "itemId": "I_B_2_a",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_b",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_c",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_d",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_e",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_f",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_g",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_h",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "1": "Unele examene nu sunt evaluări ce pot fi realizate on-line.",
+        "2": "Toate gândurile pozitive sunt idei ce conduc la fapte bune.",
+        "3": "Unii câini sunt animale agresive.",
+        "4": "Nicio criză de identitate nu este ușor de depășit pentru un adolescent."
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Pătratul logic",
+          "answers": [
+            {
+              "itemId": "II_A_1",
+              "correctAnswer": {
+                "formal": "SaP",
+                "natural": "Toate examenele sunt evaluări ce pot fi realizate on-line."
+              },
+              "points": 2,
+              "explanation": "Propoziția 1 este de tip SoP. Contradictoria lui SoP este SaP."
+            },
+            {
+              "itemId": "II_A_2",
+              "correctAnswer": {
+                "formal": "SiP",
+                "natural": "Unele gânduri pozitive sunt idei ce conduc la fapte bune."
+              },
+              "points": 2,
+              "explanation": "Propoziția 2 este de tip SaP. Subalterna lui SaP este SiP."
+            },
+            {
+              "itemId": "II_A_3",
+              "correctAnswer": {
+                "formal": "SoP",
+                "natural": "Unii câini nu sunt animale agresive."
+              },
+              "points": 2,
+              "explanation": "Propoziția 3 este de tip SiP. Subcontrara lui SiP este SoP."
+            },
+            {
+              "itemId": "II_A_4",
+              "correctAnswer": {
+                "formal": "SaP",
+                "natural": "Toate crizele de identitate sunt ușor de depășit pentru un adolescent."
+              },
+              "points": 2,
+              "explanation": "Propoziția 4 este de tip SeP. Contrara lui SeP este SaP."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "answers": [
+            {
+              "itemId": "II_B_p2",
+              "correctAnswer": {
+                "converseFormal": "PiS",
+                "converseNatural": "Unele idei ce conduc la fapte bune sunt gânduri pozitive.",
+                "obverseFormal": "Se¬P",
+                "obverseNatural": "Niciun gând pozitiv nu este idee care nu conduce la fapte bune."
+              },
+              "points": 4,
+              "explanation": "Pentru SaP, conversa prin accident este PiS, iar obversa este Se¬P."
+            },
+            {
+              "itemId": "II_B_p4",
+              "correctAnswer": {
+                "converseFormal": "PeS",
+                "converseNatural": "Niciun lucru ușor de depășit pentru un adolescent nu este criză de identitate.",
+                "obverseFormal": "Sa¬P",
+                "obverseNatural": "Toate crizele de identitate sunt lucruri care nu sunt ușor de depășit pentru un adolescent."
+              },
+              "points": 4,
+              "explanation": "Pentru SeP, conversa simplă este PeS, iar obversa este Sa¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "answers": [
+            {
+              "itemId": "II_C_1",
+              "correctAnswer": {
+                "formal": "Pa¬S",
+                "natural": "Toate evaluările ce pot fi realizate on-line sunt non-examene / nu sunt examene."
+              },
+              "points": 3,
+              "explanation": "SoP -> supraalternă SeP -> conversa PeS -> obversa Pa¬S."
+            },
+            {
+              "itemId": "II_C_2",
+              "correctAnswer": {
+                "formal": "PeS",
+                "natural": "Niciun animal agresiv nu este câine."
+              },
+              "points": 3,
+              "explanation": "SiP -> contradictorie SeP -> conversa PeS."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Opiniile elevilor",
+          "answers": [
+            {
+              "itemId": "II_D_X",
+              "correctAnswer": {
+                "formal": "SeP→Sa¬P",
+                "decision": "corect"
+              },
+              "points": 3,
+              "explanation": "Raționamentul elevului X este o obversiune validă."
+            },
+            {
+              "itemId": "II_D_Y",
+              "correctAnswer": {
+                "formal": "SoP→PoS",
+                "decision": "incorect",
+                "explanation": "Conversiunea propoziției de tip O nu este validă. Se încalcă legea distribuirii termenilor: termenul S apare distribuit în concluzie, dar nu este distribuit în premisă."
+              },
+              "points": 5,
+              "explanation": "Raționament incorect, conform baremului oficial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Silogisme",
+          "answers": [
+            {
+              "itemId": "III_A_eio_2_schema",
+              "correctAnswer": {
+                "majorPremise": "PeM",
+                "minorPremise": "SiM",
+                "conclusion": "SoP"
+              },
+              "points": 2,
+              "explanation": "Figura a II-a: P-M / S-M // S-P."
+            },
+            {
+              "itemId": "III_A_aaa_3_schema",
+              "correctAnswer": {
+                "majorPremise": "MaP",
+                "minorPremise": "MaS",
+                "conclusion": "SaP"
+              },
+              "points": 2,
+              "explanation": "Figura a III-a: M-P / M-S // S-P."
+            },
+            {
+              "itemId": "III_A_b_natural",
+              "correctAnswer": "Exemplu pentru eio-2: Niciun reptil nu este mamifer. Unele animale de companie sunt mamifere. Deci unele animale de companie nu sunt reptile.",
+              "points": 2,
+              "explanation": "Se acceptă orice silogism în limbaj natural care corespunde uneia dintre schemele cerute."
+            },
+            {
+              "itemId": "III_A_c_eio_2_venn",
+              "correctAnswer": {
+                "validityDecision": "valid",
+                "diagramId": "diagram_III_A_c_eio_2_venn_v3"
+              },
+              "points": 4,
+              "explanation": "Modul eio-2 este valid; concluzia SoP rezultă din reprezentarea premiselor."
+            },
+            {
+              "itemId": "III_A_c_aaa_3_venn",
+              "correctAnswer": {
+                "validityDecision": "invalid",
+                "diagramId": "diagram_III_A_c_aaa_3_venn_v3"
+              },
+              "points": 4,
+              "explanation": "Modul aaa-3 este nevalid; concluzia SaP nu rezultă din reprezentarea premiselor."
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid construit",
+          "answers": [
+            {
+              "itemId": "III_B_formal",
+              "correctAnswer": {
+                "majorPremise": "MaP",
+                "minorPremise": "SiM",
+                "conclusion": "SiP"
+              },
+              "points": 3,
+              "explanation": "Exemplu valid de tip Darii, figura I."
+            },
+            {
+              "itemId": "III_B_natural",
+              "correctAnswer": "Toate persoanele care salvează vieți sunt adevărați eroi. Unii profesioniști sunt persoane care salvează vieți. Prin urmare, unii profesioniști sunt adevărați eroi.",
+              "points": 3,
+              "explanation": "Premisele sunt plauzibile și justifică propoziția dată."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "answers": [
+            {
+              "itemId": "III_C_1",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Termenul mediu „leneș” este distribuit în premisa minoră de tip E."
+            },
+            {
+              "itemId": "III_C_2",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Predicatul logic al concluziei este „om nemulțumit”, nu „elev premiant”."
+            },
+            {
+              "itemId": "III_C_3",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Concluzia este universală negativă, nu universală afirmativă."
+            },
+            {
+              "itemId": "III_C_4",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Subiectul concluziei este distribuit atât în premisa minoră, cât și în concluzie."
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "answers": [
+            {
+              "itemId": "III_D_a",
+              "correctAnswer": "Definiția încalcă regula clarității și preciziei / evitarea limbajului figurat, deoarece „examenul maturității” este o formulare metaforică și imprecisă.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_b",
+              "correctAnswer": "O altă regulă posibilă: evitarea circularității definiției.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_c",
+              "correctAnswer": "Exemplu: „Bacalaureatul este examenul de bacalaureat.” Această definiție încalcă regula evitării circularității.",
+              "points": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "test_name": "Test Logica Set 6",
+  "subject": "Logica",
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este prea largă?",
+      "options": {
+        "A": "Pasărea este animal",
+        "B": "Pasărea este vertebrat cu pene",
+        "C": "Pasărea este animal zburător",
+        "D": "Pasărea este ființă vie",
+        "E": "Pasărea este organism biologic"
+      },
+      "correct_answer": "A",
+      "justification": "Include toate animalele, nu doar păsările."
+    },
+    {
+      "id": 2,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este corectă?",
+      "options": {
+        "A": "Statul este ceva important",
+        "B": "Statul este instituție politică organizată",
+        "C": "Statul este putere",
+        "D": "Statul este societate",
+        "E": "Statul este guvern"
+      },
+      "correct_answer": "B",
+      "justification": "Gen proxim + diferență specifică."
+    },
+    {
+      "id": 3,
+      "category": "Definitii",
+      "question": "Definiția „Judecătorul este cel care judecă” este:",
+      "options": {
+        "A": "corectă",
+        "B": "circulară",
+        "C": "prea largă",
+        "D": "prea restrânsă",
+        "E": "metaforică"
+      },
+      "correct_answer": "B",
+      "justification": "Termen explicat prin sine."
+    },
+    {
+      "id": 4,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este metaforică?",
+      "options": {
+        "A": "Legea este o normă juridică",
+        "B": "Dreptul este sistem de norme",
+        "C": "Justiția este oarbă",
+        "D": "Contractul este acord juridic",
+        "E": "Statul este instituție politică"
+      },
+      "correct_answer": "C",
+      "justification": "Limbaj figurat."
+    },
+    {
+      "id": 5,
+      "category": "Definitii",
+      "question": "O definiție corectă trebuie să evite:",
+      "options": {
+        "A": "claritatea",
+        "B": "precizia",
+        "C": "circularitatea",
+        "D": "echivalența",
+        "E": "regula"
+      },
+      "correct_answer": "C",
+      "justification": "Circularitatea nu aduce informație nouă."
+    },
+    {
+      "id": 6,
+      "category": "Clasificare",
+      "question": "Care clasificare este corectă?",
+      "options": {
+        "A": "Numerele naturale sunt pare și impare",
+        "B": "Elevii sunt buni și înalți",
+        "C": "Vehiculele sunt rapide și mari",
+        "D": "Oamenii sunt frumoși și tineri",
+        "E": "Studiile sunt ușoare și dificile"
+      },
+      "correct_answer": "A",
+      "justification": "Criteriu unic."
+    },
+    {
+      "id": 7,
+      "category": "Clasificare",
+      "question": "Clasificarea „elevi și sportivi” este:",
+      "options": {
+        "A": "completă",
+        "B": "corectă",
+        "C": "cu suprapunere",
+        "D": "circulară",
+        "E": "abstractă"
+      },
+      "correct_answer": "C",
+      "justification": "Un elev poate fi și sportiv."
+    },
+    {
+      "id": 8,
+      "category": "Clasificare",
+      "question": "O clasificare completă este aceea care:",
+      "options": {
+        "A": "are puține clase",
+        "B": "include toate elementele",
+        "C": "este scurtă",
+        "D": "este abstractă",
+        "E": "este negativă"
+      },
+      "correct_answer": "B",
+      "justification": "Acoperă întreaga extensiune."
+    },
+    {
+      "id": 9,
+      "category": "Clasificare",
+      "question": "Regula criteriului unic înseamnă:",
+      "options": {
+        "A": "folosirea mai multor criterii",
+        "B": "folosirea unui singur criteriu",
+        "C": "criterii abstracte",
+        "D": "criterii variabile",
+        "E": "criterii mixte"
+      },
+      "correct_answer": "B",
+      "justification": "Regulă de bază."
+    },
+    {
+      "id": 10,
+      "category": "Clasificare",
+      "question": "Clasificarea „vehicule: electrice, rapide” este:",
+      "options": {
+        "A": "corectă",
+        "B": "completă",
+        "C": "incorectă",
+        "D": "exactă",
+        "E": "validă"
+      },
+      "correct_answer": "C",
+      "justification": "Amestec criterii."
+    },
+    {
+      "id": 11,
+      "category": "Propozitii",
+      "question": "Propoziția „Toți S sunt P” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "singulară"
+      },
+      "correct_answer": "A",
+      "justification": "Universal afirmativ."
+    },
+    {
+      "id": 12,
+      "category": "Propozitii",
+      "question": "Propoziția „Unii S nu sunt P” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "universală"
+      },
+      "correct_answer": "D",
+      "justification": "Particular negativ."
+    },
+    {
+      "id": 13,
+      "category": "Propozitii",
+      "question": "În propoziția O, termenul distribuit este:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "ambele",
+        "D": "niciunul",
+        "E": "variabil"
+      },
+      "correct_answer": "B",
+      "justification": "Predicatul este distribuit."
+    },
+    {
+      "id": 14,
+      "category": "Propozitii",
+      "question": "Conversiunea propoziției I este:",
+      "options": {
+        "A": "Unii P sunt S",
+        "B": "Toți P sunt S",
+        "C": "Niciun P nu este S",
+        "D": "Unii P nu sunt S",
+        "E": "Toți S sunt P"
+      },
+      "correct_answer": "A",
+      "justification": "Conversiune validă pentru I."
+    },
+    {
+      "id": 15,
+      "category": "Propozitii",
+      "question": "Contradictoria propoziției E este:",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "O",
+        "D": "E",
+        "E": "SaP"
+      },
+      "correct_answer": "B",
+      "justification": "E și I sunt contradictorii."
+    },
+    {
+      "id": 16,
+      "category": "Silogisme",
+      "question": "SiP înseamnă:",
+      "options": {
+        "A": "Toți S sunt P",
+        "B": "Unii S sunt P",
+        "C": "Niciun S nu este P",
+        "D": "Unii S nu sunt P",
+        "E": "Toți P sunt S"
+      },
+      "correct_answer": "B",
+      "justification": "Particular afirmativ."
+    },
+    {
+      "id": 17,
+      "category": "Silogisme",
+      "question": "Dacă am două premise afirmative, concluzia este:",
+      "options": {
+        "A": "negativă",
+        "B": "afirmativă",
+        "C": "imposibilă",
+        "D": "particulară",
+        "E": "contradictorie"
+      },
+      "correct_answer": "B",
+      "justification": "Regulă silogistică."
+    },
+    {
+      "id": 18,
+      "category": "Silogisme",
+      "question": "Termenul mediu trebuie:",
+      "options": {
+        "A": "să apară în concluzie",
+        "B": "să fie distribuit",
+        "C": "să fie singular",
+        "D": "să fie predicat",
+        "E": "să fie negativ"
+      },
+      "correct_answer": "B",
+      "justification": "Altfel nu leagă termenii."
+    },
+    {
+      "id": 19,
+      "category": "Silogisme",
+      "question": "Propozițiile A și E sunt:",
+      "options": {
+        "A": "contradictorii",
+        "B": "contrare",
+        "C": "subcontrare",
+        "D": "subalterne",
+        "E": "identice"
+      },
+      "correct_answer": "B",
+      "justification": "Nu pot fi simultan adevărate."
+    },
+    {
+      "id": 20,
+      "category": "Silogisme",
+      "question": "Dacă A este falsă, propoziția O este:",
+      "options": {
+        "A": "adevărată",
+        "B": "falsă",
+        "C": "nedeterminată",
+        "D": "contradictorie",
+        "E": "imposibilă"
+      },
+      "correct_answer": "C",
+      "justification": "Nu rezultă direct."
+    },
+    {
+      "id": 21,
+      "category": "Erori",
+      "question": "Eroarea termenului mediu nedistribuit apare când:",
+      "options": {
+        "A": "termenul apare de două ori",
+        "B": "nu face legătura între premise",
+        "C": "este prea lung",
+        "D": "este abstract",
+        "E": "este singular"
+      },
+      "correct_answer": "B",
+      "justification": "Nu leagă premisele."
+    },
+    {
+      "id": 22,
+      "category": "Erori",
+      "question": "Generalizarea pripită este:",
+      "options": {
+        "A": "validă",
+        "B": "eroare",
+        "C": "deducție",
+        "D": "analogie",
+        "E": "definiție"
+      },
+      "correct_answer": "B",
+      "justification": "Extindere nejustificată."
+    },
+    {
+      "id": 23,
+      "category": "Erori",
+      "question": "Echivocația apare când:",
+      "options": {
+        "A": "termenul are un singur sens",
+        "B": "termenul are mai multe sensuri",
+        "C": "termenul este abstract",
+        "D": "termenul este concret",
+        "E": "termenul este singular"
+      },
+      "correct_answer": "B",
+      "justification": "Ambiguitate."
+    },
+    {
+      "id": 24,
+      "category": "Erori",
+      "question": "Distribuirea ilegală apare când:",
+      "options": {
+        "A": "termenul este distribuit în concluzie fără a fi fost în premise",
+        "B": "termenul este corect",
+        "C": "termenul este singular",
+        "D": "termenul este abstract",
+        "E": "termenul este concret"
+      },
+      "correct_answer": "A",
+      "justification": "Extindere nejustificată."
+    },
+    {
+      "id": 25,
+      "category": "Erori",
+      "question": "Eroarea clasică din silogism este:",
+      "options": {
+        "A": "termen mediu nedistribuit",
+        "B": "analogie",
+        "C": "inducție",
+        "D": "definiție",
+        "E": "clasificare"
+      },
+      "correct_answer": "A",
+      "justification": "Eroare standard."
+    }
+  ]
+}

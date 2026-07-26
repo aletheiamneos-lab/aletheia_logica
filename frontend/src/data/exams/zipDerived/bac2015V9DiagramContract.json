@@ -1,0 +1,42 @@
+{
+  "exam_id": "bac-logica-2015-v9",
+  "diagrams": [
+    {
+      "diagramId": "2015-v9-II-D-EULER-SoP",
+      "type": "euler",
+      "student_visible": true,
+      "instruction": "Reprezentare pentru propoziția de tip SoP: Unele acțiuni umane nu sunt legale.",
+      "expected_structure": {
+        "S": "acțiuni umane",
+        "P": "legale",
+        "mark": "x in S outside P",
+        "relation": "partial_non_inclusion"
+      },
+      "teacher_solution_only": false
+    },
+    {
+      "diagramId": "2015-v9-III-A-VENN-aii-1",
+      "type": "venn_syllogism",
+      "student_visible": true,
+      "mode": "aii-1",
+      "expected_validity": "valid",
+      "schema": [
+        "MaP",
+        "SiM",
+        "SiP"
+      ]
+    },
+    {
+      "diagramId": "2015-v9-III-A-VENN-eao-4",
+      "type": "venn_syllogism",
+      "student_visible": true,
+      "mode": "eao-4",
+      "expected_validity": "valid_conform_barem",
+      "schema": [
+        "PeM",
+        "MaS",
+        "SoP"
+      ]
+    }
+  ]
+}

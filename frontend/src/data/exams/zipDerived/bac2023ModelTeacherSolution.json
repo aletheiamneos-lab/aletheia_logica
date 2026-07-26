@@ -1,0 +1,394 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2023_model",
+  "examId": "bac_logica_2023_model",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2023 Model",
+  "source": "Barem oficial 2023 Model",
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "answers": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "d",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "c",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "c",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "a",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "a",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "d",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "d",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Euler și A/F",
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler_terms_2023_model",
+            "renderFromContract": true
+          },
+          "answers": [
+            {
+              "itemId": "I_B_2_a",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_b",
+              "correctAnswer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_c",
+              "correctAnswer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_d",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_e",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_f",
+              "correctAnswer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_g",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_h",
+              "correctAnswer": "F",
+              "points": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "context": [
+        "1. Toate sportivele cu rezultate bune la olimpiadă sunt persoane motivate.",
+        "2. Unele tratate nefilosofice ale lui Aristotel sunt traduse integral în limba română.",
+        "3. Nicio guvernare militară nu este favorabilă libertății presei.",
+        "4. Unele articole din revista de psihologie nu sunt articole despre inteligența emoțională."
+      ],
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "answers": [
+            {
+              "itemId": "II_A_1",
+              "correctAnswer": {
+                "formal": "SiP",
+                "natural": "Unele sportive cu rezultate bune la olimpiadă sunt persoane motivate."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Subalterna propoziției SaP este SiP."
+            },
+            {
+              "itemId": "II_A_2",
+              "correctAnswer": {
+                "formal": "SoP",
+                "natural": "Unele tratate nefilosofice ale lui Aristotel nu sunt traduse integral în limba română."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Subcontrara propoziției SiP este SoP."
+            },
+            {
+              "itemId": "II_A_3",
+              "correctAnswer": {
+                "formal": "SaP",
+                "natural": "Toate guvernările militare sunt favorabile libertății presei."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Contrara propoziției SeP este SaP."
+            },
+            {
+              "itemId": "II_A_4",
+              "correctAnswer": {
+                "formal": "SaP",
+                "natural": "Toate articolele din revista de psihologie sunt articole despre inteligența emoțională."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Contradictoria propoziției SoP este SaP."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "answers": [
+            {
+              "itemId": "II_B_1_conv",
+              "correctAnswer": {
+                "formal": "PiS",
+                "natural": "Unele persoane motivate sunt sportive cu rezultate bune la olimpiadă."
+              },
+              "points": 2,
+              "explanation": "Conversa prin accident a propoziției A este PiS."
+            },
+            {
+              "itemId": "II_B_1_obv",
+              "correctAnswer": {
+                "formal": "Se¬P",
+                "natural": "Nicio sportivă cu rezultate bune la olimpiadă nu este persoană nemotivată."
+              },
+              "points": 2,
+              "explanation": "Obversa lui SaP este Se¬P."
+            },
+            {
+              "itemId": "II_B_2_conv",
+              "correctAnswer": {
+                "formal": "PiS",
+                "natural": "Unele lucruri traduse integral în limba română sunt tratate nefilosofice ale lui Aristotel."
+              },
+              "points": 2,
+              "explanation": "Conversa simplă a propoziției I este PiS."
+            },
+            {
+              "itemId": "II_B_2_obv",
+              "correctAnswer": {
+                "formal": "So¬P",
+                "natural": "Unele tratate nefilosofice ale lui Aristotel nu sunt lucruri netraduse integral în limba română."
+              },
+              "points": 2,
+              "explanation": "Obversa lui SiP este So¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "answers": [
+            {
+              "itemId": "II_C_1",
+              "correctAnswer": {
+                "formal": "PaS",
+                "natural": "Toate entitățile favorabile libertății presei sunt guvernări militare."
+              },
+              "points": 3,
+              "explanation": "Prop. 3 SeP -> contradictoria SiP -> conversa PiS -> supraalterna PaS."
+            },
+            {
+              "itemId": "II_C_2",
+              "correctAnswer": {
+                "formal": "PeS / PoS",
+                "natural": "Niciun articol despre inteligența emoțională nu este articol din revista de psihologie. / Unele articole despre inteligența emoțională nu sunt articole din revista de psihologie."
+              },
+              "points": 3,
+              "explanation": "Baremul acceptă forma PeS/PoS pentru conversa supraalternei propoziției 4."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "answers": [
+            {
+              "itemId": "II_D_X",
+              "correctAnswer": {
+                "formal": "SaP→PiS",
+                "validity": "corect"
+              },
+              "points": 4,
+              "explanation": "Raționamentul elevului X este o conversiune validă prin accident."
+            },
+            {
+              "itemId": "II_D_Y",
+              "correctAnswer": {
+                "formal": "SaP→PaS",
+                "validity": "incorect",
+                "explanation": "Conversiunea propoziției A în PaS este nevalidă; se încalcă legea distribuirii termenilor, deoarece termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+              },
+              "points": 4,
+              "explanation": "Raționamentul elevului Y este o conversiune nevalidă."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "answers": [
+            {
+              "itemId": "III_A_a_oao_3",
+              "correctAnswer": {
+                "majorPremise": "MoP",
+                "minorPremise": "MaS",
+                "conclusion": "SoP"
+              },
+              "points": 2,
+              "explanation": "Schema corespunde modului oao-3."
+            },
+            {
+              "itemId": "III_A_a_eee_4",
+              "correctAnswer": {
+                "majorPremise": "PeM",
+                "minorPremise": "MeS",
+                "conclusion": "SeP"
+              },
+              "points": 2,
+              "explanation": "Schema corespunde modului eee-4."
+            },
+            {
+              "itemId": "III_A_b",
+              "correctAnswer": {
+                "example": "Exemplu pentru oao-3: Unii M nu sunt P. Toți M sunt S. Prin urmare, unii S nu sunt P."
+              },
+              "points": 4,
+              "explanation": "Se acceptă oricare silogism în limbaj natural care corespunde uneia dintre scheme."
+            },
+            {
+              "itemId": "III_A_c_oao_3",
+              "correctAnswer": {
+                "validityDecision": "valid",
+                "diagramId": "diagram_III_A_c_oao_3_venn_2023_model"
+              },
+              "points": 3,
+              "explanation": "oao-3 este mod silogistic valid, conform baremului."
+            },
+            {
+              "itemId": "III_A_c_eee_4",
+              "correctAnswer": {
+                "validityDecision": "invalid",
+                "diagramId": "diagram_III_A_c_eee_4_venn_2023_model"
+              },
+              "points": 3,
+              "explanation": "eee-4 este mod silogistic nevalid, conform baremului."
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid construit",
+          "answers": [
+            {
+              "itemId": "III_B_1",
+              "correctAnswer": {
+                "formalSchema": "MeP / SaM / SeP",
+                "naturalSyllogism": "Nicio persoană care se pregătește constant nu este nepregătită pentru examene. Toți elevii conștiincioși sunt persoane care se pregătesc constant. Prin urmare, niciun elev conștiincios nu este nepregătit pentru examene."
+              },
+              "points": 6,
+              "explanation": "Exemplu valid care justifică propoziția dată. Baremul permite orice silogism valid construit corect."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "answers": [
+            {
+              "itemId": "III_C_1",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Conform baremului oficial."
+            },
+            {
+              "itemId": "III_C_2",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Conform baremului oficial."
+            },
+            {
+              "itemId": "III_C_3",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Conform baremului oficial."
+            },
+            {
+              "itemId": "III_C_4",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Conform baremului oficial."
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "answers": [
+            {
+              "itemId": "III_D_1",
+              "correctAnswer": "Regula evitării circularității.",
+              "points": 2,
+              "explanation": "Definiția explică filosofia prin «concepțiile filosofice», deci folosește un termen derivat din definit."
+            },
+            {
+              "itemId": "III_D_2",
+              "correctAnswer": {
+                "otherRule": "Evitarea limbajului figurat / claritate și precizie.",
+                "constructedDefinition": "Filosofia este lumina gândirii omenești."
+              },
+              "points": 4,
+              "explanation": "Exemplu de definiție care încalcă regula aleasă. Se acceptă orice altă regulă corect precizată și o definiție care o încalcă."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

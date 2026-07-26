@@ -1,0 +1,576 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1619.5738525390625,
+      "y": 196.30142211914062,
+      "score": 0.9697483956813813,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul National dePoliticisi EvaluareinEducatie",
+      "x": 1241.7613525390625,
+      "y": 262.6194763183594,
+      "score": 0.9650659287969271,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2024",
+      "x": 1228.5511474609375,
+      "y": 376.6864929199219,
+      "score": 0.9971272620287809,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1669.772705078125,
+      "y": 448.30999755859375,
+      "score": 0.9855468110604719,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1286.6761474609375,
+      "y": 586.2515258789062,
+      "score": 0.9948248176863699,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3062.130615234375,
+      "y": 716.2349243164062,
+      "score": 0.9826982468366623,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.9602355957031,
+      "y": 830.3019409179688,
+      "score": 0.982492404892331,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 367.24432373046875,
+      "y": 915.1890258789062,
+      "score": 0.9819569902760642,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+      "x": 364.6022644042969,
+      "y": 1050.4779052734375,
+      "score": 0.961472649505173,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpul de lucru efectiv este de trei ore.",
+      "x": 364.6022644042969,
+      "y": 1135.364990234375,
+      "score": 0.969053118001847,
+      "page_number": 1
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2879.82958984375,
+      "y": 1265.348388671875,
+      "score": 0.9349921771458217,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.8863830566406,
+      "y": 1273.3065185546875,
+      "score": 0.9747079610824585,
+      "page_number": 1
+    },
+    {
+      "text": "A.Scrietipefoaiadeexamenliteracorespunzatoareraspunsuluicorect,pentrufiecaredintre",
+      "x": 367.24432373046875,
+      "y": 1352.88818359375,
+      "score": 0.9906418447087451,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 364.6022644042969,
+      "y": 1429.817138671875,
+      "score": 0.9804870323701338,
+      "page_number": 1
+    },
+    {
+      "text": "1.Procesul de demonstrare esteansamblul de:",
+      "x": 454.43182373046875,
+      "y": 1559.8004150390625,
+      "score": 0.9600531833116398,
+      "page_number": 1
+    },
+    {
+      "text": "a.premisedincareurmeazasaconchidemteza",
+      "x": 369.8863830566406,
+      "y": 1647.34033203125,
+      "score": 0.9974729105045921,
+      "page_number": 1
+    },
+    {
+      "text": "b.rationamenteprincareconchidemfundamentuldinteza",
+      "x": 369.8863830566406,
+      "y": 1721.616455078125,
+      "score": 0.9983026287993606,
+      "page_number": 1
+    },
+    {
+      "text": "c. rationamente prin care conchidem teza din fundament",
+      "x": 367.24432373046875,
+      "y": 1798.54541015625,
+      "score": 0.9743462657486951,
+      "page_number": 1
+    },
+    {
+      "text": "d.tezedincareurmeazasaconchidempremisele",
+      "x": 364.6022644042969,
+      "y": 1875.474365234375,
+      "score": 0.9975377276539803,
+      "page_number": 1
+    },
+    {
+      "text": "2.Rationamentul,Niciunanimaldecompanienuesteneindragitdecatrecopii;findstiutfaptul",
+      "x": 454.43182373046875,
+      "y": 2010.76318359375,
+      "score": 0.9898678231530074,
+      "page_number": 1
+    },
+    {
+      "text": "ca toate animalele de companie sunt indragite de catre copi.\"este:",
+      "x": 451.789794921875,
+      "y": 2085.039306640625,
+      "score": 0.9770299616185102,
+      "page_number": 1
+    },
+    {
+      "text": "a.o conversiune simpla",
+      "x": 364.6022644042969,
+      "y": 2175.23193359375,
+      "score": 0.9797489941120148,
+      "page_number": 1
+    },
+    {
+      "text": "c. un silogism",
+      "x": 1939.2613525390625,
+      "y": 2172.5791015625,
+      "score": 0.9984027785914285,
+      "page_number": 1
+    },
+    {
+      "text": "b. o obversiune valida",
+      "x": 367.24432373046875,
+      "y": 2246.85546875,
+      "score": 0.9558623622764241,
+      "page_number": 1
+    },
+    {
+      "text": "d. conversiune prin accident",
+      "x": 1936.619384765625,
+      "y": 2246.85546875,
+      "score": 0.9734731976475034,
+      "page_number": 1
+    },
+    {
+      "text": "3. intre termeni medic si tanar exista un raport logic de:",
+      "x": 446.50567626953125,
+      "y": 2366.22802734375,
+      "score": 0.9912153729077043,
+      "page_number": 1
+    },
+    {
+      "text": "a. incrucisare",
+      "x": 364.6022644042969,
+      "y": 2456.42041015625,
+      "score": 0.9975883790424892,
+      "page_number": 1
+    },
+    {
+      "text": "b.identitate",
+      "x": 1191.5625,
+      "y": 2461.725830078125,
+      "score": 0.9993428538242976,
+      "page_number": 1
+    },
+    {
+      "text": "c. ordonare",
+      "x": 1931.335205078125,
+      "y": 2456.42041015625,
+      "score": 0.9955340461297468,
+      "page_number": 1
+    },
+    {
+      "text": "d.contrarietate",
+      "x": 2731.875,
+      "y": 2461.725830078125,
+      "score": 0.9970150669415792,
+      "page_number": 1
+    },
+    {
+      "text": "4.Cuantorul propozitiei,Toate autoturismele electrice sunt masini nepoluante.\"este:",
+      "x": 449.1477355957031,
+      "y": 2591.709228515625,
+      "score": 0.9702517727771437,
+      "page_number": 1
+    },
+    {
+      "text": "a.toateautoturismele",
+      "x": 369.8863830566406,
+      "y": 2676.596435546875,
+      "score": 0.9981421381235123,
+      "page_number": 1
+    },
+    {
+      "text": "c. sunt",
+      "x": 1931.335205078125,
+      "y": 2676.596435546875,
+      "score": 0.9055954217910767,
+      "page_number": 1
+    },
+    {
+      "text": "d. toate",
+      "x": 1933.977294921875,
+      "y": 2748.219970703125,
+      "score": 0.9421550184488297,
+      "page_number": 1
+    },
+    {
+      "text": "b.toateautoturismeleelectrice",
+      "x": 367.24432373046875,
+      "y": 2756.177978515625,
+      "score": 0.9977871570093878,
+      "page_number": 1
+    },
+    {
+      "text": "5.Cerintaca,asemanarileobiectelorsituateinaceeasi clasasafiemai importantesi mai",
+      "x": 451.789794921875,
+      "y": 2883.5087890625,
+      "score": 0.9679814912378788,
+      "page_number": 1
+    },
+    {
+      "text": "numeroase decat deosebirile, intr-o clasificare corecta, este o cerinta impusa de regula:",
+      "x": 449.1477355957031,
+      "y": 2960.4375,
+      "score": 0.9844658917255615,
+      "page_number": 1
+    },
+    {
+      "text": "a. consistentei",
+      "x": 364.6022644042969,
+      "y": 3047.9775390625,
+      "score": 0.998137374718984,
+      "page_number": 1
+    },
+    {
+      "text": "b. omogenitati",
+      "x": 1186.2784423828125,
+      "y": 3045.32470703125,
+      "score": 0.9968315618378776,
+      "page_number": 1
+    },
+    {
+      "text": "c. claritatii si preciziei",
+      "x": 1933.977294921875,
+      "y": 3050.630126953125,
+      "score": 0.9610108022506421,
+      "page_number": 1
+    },
+    {
+      "text": "d. completitudini",
+      "x": 2771.505615234375,
+      "y": 3047.9775390625,
+      "score": 0.9765740492764641,
+      "page_number": 1
+    },
+    {
+      "text": "6. Dinpunct devedere intensional, termenul fratele meu este:",
+      "x": 451.789794921875,
+      "y": 3177.960693359375,
+      "score": 0.955978512763977,
+      "page_number": 1
+    },
+    {
+      "text": "a.absolut,abstract",
+      "x": 361.9602355957031,
+      "y": 3262.847900390625,
+      "score": 0.9956462979316711,
+      "page_number": 1
+    },
+    {
+      "text": "b. vid, general",
+      "x": 1188.9205322265625,
+      "y": 3262.847900390625,
+      "score": 0.983836813767751,
+      "page_number": 1
+    },
+    {
+      "text": "c. relativ, concret",
+      "x": 1936.619384765625,
+      "y": 3262.847900390625,
+      "score": 0.9880353055502239,
+      "page_number": 1
+    },
+    {
+      "text": "d. general, nevid",
+      "x": 2774.147705078125,
+      "y": 3262.847900390625,
+      "score": 0.9841684278319863,
+      "page_number": 1
+    },
+    {
+      "text": "7. Predicatul logic al propozitiei \"Unele instrumente de scris sunt obiecte scolare.\" este:",
+      "x": 449.1477355957031,
+      "y": 3390.178466796875,
+      "score": 0.9728531247966892,
+      "page_number": 1
+    },
+    {
+      "text": "a. obiecte scolare",
+      "x": 364.6022644042969,
+      "y": 3472.412841796875,
+      "score": 0.9620877106984457,
+      "page_number": 1
+    },
+    {
+      "text": "b. scolare",
+      "x": 361.9602355957031,
+      "y": 3549.341796875,
+      "score": 0.9976621448993683,
+      "page_number": 1
+    },
+    {
+      "text": "c. instrumente",
+      "x": 361.9602355957031,
+      "y": 3631.576171875,
+      "score": 0.9929677673748561,
+      "page_number": 1
+    },
+    {
+      "text": "d.sunt obiecte scolare",
+      "x": 367.24432373046875,
+      "y": 3711.157958984375,
+      "score": 0.976098816503178,
+      "page_number": 1
+    },
+    {
+      "text": "8. Este un exemplu de propozitie universal afirmativa,propozitia:",
+      "x": 396.30682373046875,
+      "y": 3838.488525390625,
+      "score": 0.9643009800177355,
+      "page_number": 1
+    },
+    {
+      "text": "a.Majoritateafilmelorartisticesuntflmedecomedie.",
+      "x": 367.24432373046875,
+      "y": 3920.722900390625,
+      "score": 0.9968132277329763,
+      "page_number": 1
+    },
+    {
+      "text": "b.Multeramuri sportive sunt activitati placutetinerilor.",
+      "x": 369.8863830566406,
+      "y": 4000.3046875,
+      "score": 0.9656968382852418,
+      "page_number": 1
+    },
+    {
+      "text": "c. Toti studenti sunt absolventi de liceu care au promovat examenul de bacalaureat.",
+      "x": 367.24432373046875,
+      "y": 4077.233642578125,
+      "score": 0.9801954569586788,
+      "page_number": 1
+    },
+    {
+      "text": "d.Ceasuriledebirou cumecanism mecanicnu sunt instrumente demasurare avitezei.",
+      "x": 367.24432373046875,
+      "y": 4156.8154296875,
+      "score": 0.9600026475918757,
+      "page_number": 1
+    },
+    {
+      "text": "9.Propozitia \"Detinatorii de diploma de licenta sunt absolventi de facultate.\" este un tip de",
+      "x": 401.5909118652344,
+      "y": 4289.451171875,
+      "score": 0.956118623415629,
+      "page_number": 1
+    },
+    {
+      "text": "propozitie categorica:",
+      "x": 401.5909118652344,
+      "y": 4371.685546875,
+      "score": 0.9962505806576122,
+      "page_number": 1
+    },
+    {
+      "text": "a. particulara negativa",
+      "x": 367.24432373046875,
+      "y": 4451.26708984375,
+      "score": 0.9947074807208517,
+      "page_number": 1
+    },
+    {
+      "text": "c. particulara afirmativa",
+      "x": 1941.9034423828125,
+      "y": 4451.26708984375,
+      "score": 0.9781097674369812,
+      "page_number": 1
+    },
+    {
+      "text": "b.universalanegativa",
+      "x": 367.24432373046875,
+      "y": 4530.84912109375,
+      "score": 0.9970586240291596,
+      "page_number": 1
+    },
+    {
+      "text": "d.universala afirmativa",
+      "x": 1936.619384765625,
+      "y": 4530.84912109375,
+      "score": 0.9775367456933727,
+      "page_number": 1
+    },
+    {
+      "text": "10. Propozitiei categorice ,Unele plante sunt flori.\"fi corespunde formula:",
+      "x": 451.789794921875,
+      "y": 4658.1796875,
+      "score": 0.9751708137989045,
+      "page_number": 1
+    },
+    {
+      "text": "a.SaP",
+      "x": 359.31817626953125,
+      "y": 4740.4140625,
+      "score": 0.9996604084968567,
+      "page_number": 1
+    },
+    {
+      "text": "c.SeP",
+      "x": 2031.7330322265625,
+      "y": 4743.06689453125,
+      "score": 0.9912558674812317,
+      "page_number": 1
+    },
+    {
+      "text": "d. SoP",
+      "x": 2037.01708984375,
+      "y": 4817.3427734375,
+      "score": 0.9166034658749899,
+      "page_number": 1
+    },
+    {
+      "text": "b.SiP",
+      "x": 364.6022644042969,
+      "y": 4819.99560546875,
+      "score": 0.9976822137832642,
+      "page_number": 1
+    },
+    {
+      "text": "20 de puncte",
+      "x": 2937.95458984375,
+      "y": 4896.9248046875,
+      "score": 0.9590814212958018,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 364.6022644042969,
+      "y": 4989.77001953125,
+      "score": 0.9752956081409844,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3101.761474609375,
+      "y": 4989.77001953125,
+      "score": 0.9991264939308167,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 2",
+      "x": 1680.3409423828125,
+      "y": 5056.087890625,
+      "score": 0.991035635982241,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul National dePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2024",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Simulare",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+    "·Timpul de lucru efectiv este de trei ore.",
+    "(30 de puncte)",
+    "SUBIECTULI",
+    "A.Scrietipefoaiadeexamenliteracorespunzatoareraspunsuluicorect,pentrufiecaredintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "1.Procesul de demonstrare esteansamblul de:",
+    "a.premisedincareurmeazasaconchidemteza",
+    "b.rationamenteprincareconchidemfundamentuldinteza",
+    "c. rationamente prin care conchidem teza din fundament",
+    "d.tezedincareurmeazasaconchidempremisele",
+    "2.Rationamentul,Niciunanimaldecompanienuesteneindragitdecatrecopii;findstiutfaptul",
+    "ca toate animalele de companie sunt indragite de catre copi.\"este:",
+    "a.o conversiune simpla",
+    "c. un silogism",
+    "b. o obversiune valida",
+    "d. conversiune prin accident",
+    "3. intre termeni medic si tanar exista un raport logic de:",
+    "a. incrucisare",
+    "b.identitate",
+    "c. ordonare",
+    "d.contrarietate",
+    "4.Cuantorul propozitiei,Toate autoturismele electrice sunt masini nepoluante.\"este:",
+    "a.toateautoturismele",
+    "c. sunt",
+    "d. toate",
+    "b.toateautoturismeleelectrice",
+    "5.Cerintaca,asemanarileobiectelorsituateinaceeasi clasasafiemai importantesi mai",
+    "numeroase decat deosebirile, intr-o clasificare corecta, este o cerinta impusa de regula:",
+    "a. consistentei",
+    "b. omogenitati",
+    "c. claritatii si preciziei",
+    "d. completitudini",
+    "6. Dinpunct devedere intensional, termenul fratele meu este:",
+    "a.absolut,abstract",
+    "b. vid, general",
+    "c. relativ, concret",
+    "d. general, nevid",
+    "7. Predicatul logic al propozitiei \"Unele instrumente de scris sunt obiecte scolare.\" este:",
+    "a. obiecte scolare",
+    "b. scolare",
+    "c. instrumente",
+    "d.sunt obiecte scolare",
+    "8. Este un exemplu de propozitie universal afirmativa,propozitia:",
+    "a.Majoritateafilmelorartisticesuntflmedecomedie.",
+    "b.Multeramuri sportive sunt activitati placutetinerilor.",
+    "c. Toti studenti sunt absolventi de liceu care au promovat examenul de bacalaureat.",
+    "d.Ceasuriledebirou cumecanism mecanicnu sunt instrumente demasurare avitezei.",
+    "9.Propozitia \"Detinatorii de diploma de licenta sunt absolventi de facultate.\" este un tip de",
+    "propozitie categorica:",
+    "a. particulara negativa",
+    "c. particulara afirmativa",
+    "b.universalanegativa",
+    "d.universala afirmativa",
+    "10. Propozitiei categorice ,Unele plante sunt flori.\"fi corespunde formula:",
+    "a.SaP",
+    "c.SeP",
+    "d. SoP",
+    "b.SiP",
+    "20 de puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Simulare",
+    "Pagina 1 din 2"
+  ],
+  "text": "Ministerul Educatiei\nCentrul National dePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2024\nProba E. d)\nLogica, argumentare si comunicare\nSimulare\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.\n·Timpul de lucru efectiv este de trei ore.\n(30 de puncte)\nSUBIECTULI\nA.Scrietipefoaiadeexamenliteracorespunzatoareraspunsuluicorect,pentrufiecaredintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\n1.Procesul de demonstrare esteansamblul de:\na.premisedincareurmeazasaconchidemteza\nb.rationamenteprincareconchidemfundamentuldinteza\nc. rationamente prin care conchidem teza din fundament\nd.tezedincareurmeazasaconchidempremisele\n2.Rationamentul,Niciunanimaldecompanienuesteneindragitdecatrecopii;findstiutfaptul\nca toate animalele de companie sunt indragite de catre copi.\"este:\na.o conversiune simpla\nc. un silogism\nb. o obversiune valida\nd. conversiune prin accident\n3. intre termeni medic si tanar exista un raport logic de:\na. incrucisare\nb.identitate\nc. ordonare\nd.contrarietate\n4.Cuantorul propozitiei,Toate autoturismele electrice sunt masini nepoluante.\"este:\na.toateautoturismele\nc. sunt\nd. toate\nb.toateautoturismeleelectrice\n5.Cerintaca,asemanarileobiectelorsituateinaceeasi clasasafiemai importantesi mai\nnumeroase decat deosebirile, intr-o clasificare corecta, este o cerinta impusa de regula:\na. consistentei\nb. omogenitati\nc. claritatii si preciziei\nd. completitudini\n6. Dinpunct devedere intensional, termenul fratele meu este:\na.absolut,abstract\nb. vid, general\nc. relativ, concret\nd. general, nevid\n7. Predicatul logic al propozitiei \"Unele instrumente de scris sunt obiecte scolare.\" este:\na. obiecte scolare\nb. scolare\nc. instrumente\nd.sunt obiecte scolare\n8. Este un exemplu de propozitie universal afirmativa,propozitia:\na.Majoritateafilmelorartisticesuntflmedecomedie.\nb.Multeramuri sportive sunt activitati placutetinerilor.\nc. Toti studenti sunt absolventi de liceu care au promovat examenul de bacalaureat.\nd.Ceasuriledebirou cumecanism mecanicnu sunt instrumente demasurare avitezei.\n9.Propozitia \"Detinatorii de diploma de licenta sunt absolventi de facultate.\" este un tip de\npropozitie categorica:\na. particulara negativa\nc. particulara afirmativa\nb.universalanegativa\nd.universala afirmativa\n10. Propozitiei categorice ,Unele plante sunt flori.\"fi corespunde formula:\na.SaP\nc.SeP\nd. SoP\nb.SiP\n20 de puncte\nProba scrisa la logica, argumentare si comunicare\nSimulare\nPagina 1 din 2"
+}

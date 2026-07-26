@@ -1,0 +1,333 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2022_v1",
+  "examId": "bac_logica_2022_v1",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor – BAC Logică 2022 Varianta 1",
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "correctAnswer": "d",
+      "points": 2,
+      "officialPrompt": "În situația în care demonstrația este logic corectă, procesul de demonstrare va trebui să fie format numai din raționamente:",
+      "explanation": "Răspuns corect conform baremului: 1-d."
+    },
+    {
+      "itemId": "I_A_2",
+      "correctAnswer": "c",
+      "points": 2,
+      "officialPrompt": "Raționamentul „Orice melancolic este introvertit; așadar, unii introvertiți sunt melancolici” este:",
+      "explanation": "Răspuns corect conform baremului: 2-c."
+    },
+    {
+      "itemId": "I_A_3",
+      "correctAnswer": "a",
+      "points": 2,
+      "officialPrompt": "Se stabilește un raport de contrarietate între termenii:",
+      "explanation": "Răspuns corect conform baremului: 3-a."
+    },
+    {
+      "itemId": "I_A_4",
+      "correctAnswer": "b",
+      "points": 2,
+      "officialPrompt": "Cuantorul propoziției „Nicio depășire a termenului limită nu este acceptată” este:",
+      "explanation": "Răspuns corect conform baremului: 4-b."
+    },
+    {
+      "itemId": "I_A_5",
+      "correctAnswer": "a",
+      "points": 2,
+      "officialPrompt": "Clasificarea elevilor participanți la un concurs național de dezbateri în fete, elevi din mediul urban, elevi din mediul rural și băieți:",
+      "explanation": "Răspuns corect conform baremului: 5-a."
+    },
+    {
+      "itemId": "I_A_6",
+      "correctAnswer": "d",
+      "points": 2,
+      "officialPrompt": "Alegeți termenul care este simultan absolut și general:",
+      "explanation": "Răspuns corect conform baremului: 6-d."
+    },
+    {
+      "itemId": "I_A_7",
+      "correctAnswer": "b",
+      "points": 2,
+      "officialPrompt": "Se caracterizează prin probabilitate și caracter amplificator concluzia:",
+      "explanation": "Răspuns corect conform baremului: 7-b."
+    },
+    {
+      "itemId": "I_A_8",
+      "correctAnswer": "c",
+      "points": 2,
+      "officialPrompt": "Inducția completă produce din premise adevărate o concluzie:",
+      "explanation": "Răspuns corect conform baremului: 8-c."
+    },
+    {
+      "itemId": "I_A_9",
+      "correctAnswer": "a",
+      "points": 2,
+      "officialPrompt": "Dacă termenului proiect european i se elimină însușirea european, atunci:",
+      "explanation": "Răspuns corect conform baremului: 9-a."
+    },
+    {
+      "itemId": "I_A_10",
+      "correctAnswer": "d",
+      "points": 2,
+      "officialPrompt": "Propoziția „Orice persoană își dorește să fie împlinită” este:",
+      "explanation": "Răspuns corect conform baremului: 10-d."
+    },
+    {
+      "itemId": "I_B_diagram",
+      "correctAnswer": "diagramă Euler conform relațiilor din enunț",
+      "points": 2,
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "explanation": "Se reprezintă A și E ca specii contrare ale lui D; B este identic cu D; C intersectează B, D și E și este în opoziție cu A."
+    },
+    {
+      "itemId": "I_B_a",
+      "correctAnswer": "A",
+      "points": 1,
+      "officialPrompt": "Niciun A nu este C."
+    },
+    {
+      "itemId": "I_B_b",
+      "correctAnswer": "A",
+      "points": 1,
+      "officialPrompt": "Toți A sunt B."
+    },
+    {
+      "itemId": "I_B_c",
+      "correctAnswer": "A",
+      "points": 1,
+      "officialPrompt": "Unii E nu sunt C."
+    },
+    {
+      "itemId": "I_B_d",
+      "correctAnswer": "F",
+      "points": 1,
+      "officialPrompt": "Unii C sunt A."
+    },
+    {
+      "itemId": "I_B_e",
+      "correctAnswer": "F",
+      "points": 1,
+      "officialPrompt": "Toți D sunt A."
+    },
+    {
+      "itemId": "I_B_f",
+      "correctAnswer": "A",
+      "points": 1,
+      "officialPrompt": "Unii C sunt E."
+    },
+    {
+      "itemId": "I_B_g",
+      "correctAnswer": "F",
+      "points": 1,
+      "officialPrompt": "Niciun B nu este E."
+    },
+    {
+      "itemId": "I_B_h",
+      "correctAnswer": "A",
+      "points": 1,
+      "officialPrompt": "Unii D nu sunt A."
+    },
+    {
+      "itemId": "II_A_1",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unele sportive cu rezultate bune la olimpiadă sunt persoane motivate."
+      },
+      "points": 2,
+      "explanation": "Subalterna propoziției SaP este SiP."
+    },
+    {
+      "itemId": "II_A_2",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unele tratate nefilosofice ale lui Aristotel nu sunt traduse integral în limba română."
+      },
+      "points": 2,
+      "explanation": "Subcontrara propoziției SiP este SoP."
+    },
+    {
+      "itemId": "II_A_3",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate guvernările militare sunt favorabile libertății presei."
+      },
+      "points": 2,
+      "explanation": "Contrara propoziției SeP este SaP."
+    },
+    {
+      "itemId": "II_A_4",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate articolele din revista de psihologie sunt articole despre inteligența emoțională."
+      },
+      "points": 2,
+      "explanation": "Contradictoria propoziției SoP este SaP."
+    },
+    {
+      "itemId": "II_B_p1",
+      "correctAnswer": {
+        "converse_formal": "PiS",
+        "converse_natural": "Unele persoane motivate sunt sportive cu rezultate bune la olimpiadă.",
+        "obverse_formal": "Se¬P",
+        "obverse_natural": "Nicio sportivă cu rezultate bune la olimpiadă nu este persoană nemotivată."
+      },
+      "points": 4,
+      "explanation": "Pentru SaP, conversa prin accident este PiS, iar obversa este Se¬P."
+    },
+    {
+      "itemId": "II_B_p2",
+      "correctAnswer": {
+        "converse_formal": "PiS",
+        "converse_natural": "Unele lucruri traduse integral în limba română sunt tratate nefilosofice ale lui Aristotel.",
+        "obverse_formal": "So¬P",
+        "obverse_natural": "Unele tratate nefilosofice ale lui Aristotel nu sunt netraduse integral în limba română."
+      },
+      "points": 4,
+      "explanation": "Pentru SiP, conversa este PiS, iar obversa este So¬P."
+    },
+    {
+      "itemId": "II_C_1",
+      "correctAnswer": {
+        "formal": "PaS",
+        "natural": "Toate lucrurile favorabile libertății presei sunt guvernări militare."
+      },
+      "points": 3,
+      "explanation": "Contradictoria lui SeP este SiP, conversa este PiS, iar supraalterna este PaS."
+    },
+    {
+      "itemId": "II_C_2",
+      "correctAnswer": {
+        "formal": "PeS / PoS",
+        "natural": "Niciun articol despre inteligența emoțională nu este articol din revista de psihologie / Unele articole despre inteligența emoțională nu sunt articole din revista de psihologie."
+      },
+      "points": 3,
+      "explanation": "Supraalterna lui SoP este SeP, iar conversa ei este PeS; baremul acceptă PeS/PoS."
+    },
+    {
+      "itemId": "II_D_X",
+      "correctAnswer": {
+        "formal": "SaP→PaS",
+        "validity": "incorect",
+        "explanation": "Conversiunea este nevalidă; se încalcă legea distribuirii termenilor, deoarece termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+      },
+      "points": 4,
+      "explanation": "Raționament incorect."
+    },
+    {
+      "itemId": "II_D_Y",
+      "correctAnswer": {
+        "formal": "SiP→So¬P",
+        "validity": "corect"
+      },
+      "points": 2,
+      "explanation": "Obversiune validă; raționament corect."
+    },
+    {
+      "itemId": "III_A_1_aoo2",
+      "correctAnswer": {
+        "major": "PaM",
+        "minor": "SoM",
+        "conclusion": "SoP"
+      },
+      "points": 2,
+      "explanation": "Schema modului aoo-2."
+    },
+    {
+      "itemId": "III_A_1_eae3",
+      "correctAnswer": {
+        "major": "MeP",
+        "minor": "MaS",
+        "conclusion": "SeP"
+      },
+      "points": 2,
+      "explanation": "Schema modului eae-3."
+    },
+    {
+      "itemId": "III_A_2_natural",
+      "correctAnswer": "Exemplu pentru aoo-2: Toți P sunt M. Unii S nu sunt M. Deci unii S nu sunt P.",
+      "points": 4,
+      "explanation": "Se acordă punctaj pentru orice silogism natural corespunzător uneia dintre scheme."
+    },
+    {
+      "itemId": "III_A_3_venn_aoo2",
+      "correctAnswer": {
+        "validity": "valid"
+      },
+      "points": 3,
+      "explanation": "aoo-2 este mod silogistic valid.",
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_aoo2_venn",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_A_4_venn_eae3",
+      "correctAnswer": {
+        "validity": "nevalid"
+      },
+      "points": 3,
+      "explanation": "eae-3 este mod silogistic nevalid.",
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_eae3_venn",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_B_formal",
+      "correctAnswer": {
+        "major": "MeP",
+        "minor": "SiM",
+        "conclusion": "SoP"
+      },
+      "points": 3,
+      "explanation": "Exemplu valid de tip EIO-1."
+    },
+    {
+      "itemId": "III_B_natural",
+      "correctAnswer": "Niciun aliment recomandat persoanelor cu intoleranță la gluten nu este gustos. Unele alimente fără gluten sunt alimente recomandate persoanelor cu intoleranță la gluten. Prin urmare, unele alimente fără gluten nu sunt gustoase.",
+      "points": 3,
+      "explanation": "Premisele sunt plauzibile și justifică propoziția cerută."
+    },
+    {
+      "itemId": "III_C_1",
+      "correctAnswer": "A",
+      "points": 1,
+      "explanation": "Termenul minor este nedistribuit în premisă."
+    },
+    {
+      "itemId": "III_C_2",
+      "correctAnswer": "F",
+      "points": 1,
+      "explanation": "Subiectul concluziei este „comportamente acceptate social”, nu „empatic”."
+    },
+    {
+      "itemId": "III_C_3",
+      "correctAnswer": "F",
+      "points": 1,
+      "explanation": "Concluzia este particular afirmativă."
+    },
+    {
+      "itemId": "III_C_4",
+      "correctAnswer": "A",
+      "points": 1,
+      "explanation": "Predicatul unei propoziții I este nedistribuit."
+    },
+    {
+      "itemId": "III_D_1",
+      "correctAnswer": "Circularitatea definiției",
+      "points": 2,
+      "explanation": "Definiția explică termenul printr-un derivat al său: politica / politician."
+    },
+    {
+      "itemId": "III_D_2",
+      "correctAnswer": "Exemplu: regula clarității și preciziei; „Politica este arta misterioasă a puterii.”",
+      "points": 4,
+      "explanation": "Se acceptă orice altă regulă corectă și o definiție care o încalcă."
+    }
+  ]
+}

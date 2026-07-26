@@ -1,0 +1,67 @@
+{
+  "flashcards_section": {
+    "title": "Flashcards",
+    "description": "Flashcarduri de materie organizate pe module, submodule si niveluri de dificultate.",
+    "rules": {
+      "content_type": "materie_logica",
+      "exam_content_allowed": false,
+      "difficulty_levels": [
+        "basic",
+        "mediu",
+        "avansat"
+      ],
+      "cards_per_level": 25,
+      "total_cards_per_submodule": 75
+    },
+    "modules": [
+      {
+        "id": "mod_1",
+        "title": "Fundamentele logicii",
+        "submodules": [
+          {
+            "id": "sub_1_1",
+            "title": "Ce este logica",
+            "difficulty_groups": [
+              {
+                "level": "basic",
+                "target_count": 25,
+                "cards": []
+              },
+              {
+                "level": "mediu",
+                "target_count": 25,
+                "cards": []
+              },
+              {
+                "level": "avansat",
+                "target_count": 25,
+                "cards": []
+              }
+            ]
+          },
+          {
+            "id": "sub_1_2",
+            "title": "Principiile logicii",
+            "difficulty_groups": [
+              {
+                "level": "basic",
+                "target_count": 25,
+                "cards": []
+              },
+              {
+                "level": "mediu",
+                "target_count": 25,
+                "cards": []
+              },
+              {
+                "level": "avansat",
+                "target_count": 25,
+                "cards": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,940 @@
+{
+  "examId": "bac_logica_2020_v5",
+  "title": "BAC Logică 2020 - Varianta 5",
+  "mode": "student_exam",
+  "visibility": "student",
+  "sourceDocuments": {
+    "subject": "Examenul de bacalaureat național 2020_V5.pdf",
+    "barem": "hidden_teacher_only"
+  },
+  "rules": {
+    "studentCannotSeeSolutions": true,
+    "teacherSolutionSeparate": true,
+    "finalizeTestButton": true,
+    "generateStudentPdf": true,
+    "enablePreview": true,
+    "enableEmailSend": true,
+    "includeInAdminReport": true
+  },
+  "sections": [
+    {
+      "id": "I_A",
+      "title": "Subiectul I.A - Itemi cu alegere unică",
+      "points": 20,
+      "officialPrompt": "Scrieți litera corespunzătoare răspunsului corect. Este corectă o singură variantă de răspuns.",
+      "items": [
+        {
+          "id": "I_A_1",
+          "title": "Item 1",
+          "points": 2,
+          "officialPrompt": "Fundamentul unei demonstrații este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "o propoziție concretă pe care o propunem și pe care urmează să o argumentăm"
+              },
+              {
+                "value": "b",
+                "label": "o propoziție probabilă pe care urmează să o argumentăm"
+              },
+              {
+                "value": "c",
+                "label": "un ansamblu de premise din care urmează să conchidem teza"
+              },
+              {
+                "value": "d",
+                "label": "teza pe care urmează să o demonstrăm sau să o dovedim"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_2",
+          "title": "Item 2",
+          "points": 2,
+          "officialPrompt": "Raționamentul „Deoarece toate teoremele sunt demonstrabile, rezultă că nicio teoremă nu este nedemonstrabilă” este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "o conversiune simplă"
+              },
+              {
+                "value": "b",
+                "label": "o conversiune prin accident"
+              },
+              {
+                "value": "c",
+                "label": "un silogism"
+              },
+              {
+                "value": "d",
+                "label": "o obversiune"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_3",
+          "title": "Item 3",
+          "points": 2,
+          "officialPrompt": "Termenii „stejar” și „brad” se află în raport de:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "ordonare"
+              },
+              {
+                "value": "b",
+                "label": "contrarietate"
+              },
+              {
+                "value": "c",
+                "label": "încrucișare"
+              },
+              {
+                "value": "d",
+                "label": "identitate"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_4",
+          "title": "Item 4",
+          "points": 2,
+          "officialPrompt": "Predicatul logic al propoziției „Stelele sunt corpuri cerești cu lumină proprie” este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "corpuri cerești cu lumină proprie"
+              },
+              {
+                "value": "b",
+                "label": "sunt corpuri"
+              },
+              {
+                "value": "c",
+                "label": "sunt corpuri cerești"
+              },
+              {
+                "value": "d",
+                "label": "sunt corpuri cerești cu lumină proprie"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_5",
+          "title": "Item 5",
+          "points": 2,
+          "officialPrompt": "Una dintre regulile de corectitudine ale operației de clasificare este regula raportului de:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "identitate între clase"
+              },
+              {
+                "value": "b",
+                "label": "încrucișare între clase"
+              },
+              {
+                "value": "c",
+                "label": "ordonare între clase"
+              },
+              {
+                "value": "d",
+                "label": "opoziție între clase"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_6",
+          "title": "Item 6",
+          "points": 2,
+          "officialPrompt": "Termenul „văr primar” este din punct de vedere intensional:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "absolut, concret, negativ, compus"
+              },
+              {
+                "value": "b",
+                "label": "absolut, abstract, negativ, simplu"
+              },
+              {
+                "value": "c",
+                "label": "relativ, concret, pozitiv, compus"
+              },
+              {
+                "value": "d",
+                "label": "relativ, abstract, pozitiv, simplu"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_7",
+          "title": "Item 7",
+          "points": 2,
+          "officialPrompt": "Inducția incompletă este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "o generalizare, pornind de la o parte din obiectele unei clase"
+              },
+              {
+                "value": "b",
+                "label": "o particularizare, pornind de la o parte din obiectele unei clase"
+              },
+              {
+                "value": "c",
+                "label": "o generalizare, pornind de la toate obiectele unei clase"
+              },
+              {
+                "value": "d",
+                "label": "o particularizare, pornind de la toate obiectele unei clase"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_8",
+          "title": "Item 8",
+          "points": 2,
+          "officialPrompt": "În cazul unei clase cu număr mic, finit de elemente se poate deriva o concluzie certă dacă se cercetează:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "unele elemente ale clasei, prin inducție incompletă"
+              },
+              {
+                "value": "b",
+                "label": "elementele reprezentative ale clasei, prin inducție completă"
+              },
+              {
+                "value": "c",
+                "label": "toate elementele clasei, prin inducție completă"
+              },
+              {
+                "value": "d",
+                "label": "toate elementele reprezentative, prin inducție incompletă"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_9",
+          "title": "Item 9",
+          "points": 2,
+          "officialPrompt": "Dacă termenului „examen de bacalaureat” i se elimină proprietatea „de bacalaureat”, atunci:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "intensiunea scade, extensiunea scade"
+              },
+              {
+                "value": "b",
+                "label": "intensiunea crește, extensiunea crește"
+              },
+              {
+                "value": "c",
+                "label": "intensiunea scade, extensiunea crește"
+              },
+              {
+                "value": "d",
+                "label": "intensiunea crește, extensiunea scade"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        },
+        {
+          "id": "I_A_10",
+          "title": "Item 10",
+          "points": 2,
+          "officialPrompt": "Propoziția „Unele erori de argumentare nu sunt erori formale” este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "particulară afirmativă"
+              },
+              {
+                "value": "b",
+                "label": "universală afirmativă"
+              },
+              {
+                "value": "c",
+                "label": "universală negativă"
+              },
+              {
+                "value": "d",
+                "label": "particulară negativă"
+              }
+            ],
+            "studentVisible": true,
+            "teacherSolutionVisible": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "I_B",
+      "title": "Subiectul I.B - Raporturi între termeni",
+      "points": 10,
+      "officialPrompt": "Reprezentați prin metoda diagramelor Euler raporturile dintre cei cinci termeni și stabiliți valoarea de adevăr a propozițiilor date.",
+      "contextBlock": {
+        "terms": "A, B, C, D, E",
+        "text": "A este supraordonat termenului B. C este în raport de încrucișare cu A, dar în opoziție cu B. D este specie a lui A, dar se află în încrucișare atât cu B, cât și cu C. E este specie a lui C, dar se află în încrucișare atât cu A, cât și cu D."
+      },
+      "items": [
+        {
+          "id": "I_B_1",
+          "title": "Diagrama Euler",
+          "points": 2,
+          "studentTask": "Desenează diagrama comună pentru termenii A, B, C, D, E.",
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_I_B_euler_2020_v5",
+            "diagramType": "euler",
+            "studentVisible": true,
+            "teacherSolutionVisible": false,
+            "inputConfig": {
+              "label": "Diagrama Euler",
+              "helperText": "Desenează raporturile dintre A, B, C, D și E. Poți desena direct sau poți încărca o imagine.",
+              "canvas": {
+                "enabled": true,
+                "width": 720,
+                "height": 420,
+                "tools": [
+                  "pen",
+                  "eraser",
+                  "undo",
+                  "clear",
+                  "save"
+                ],
+                "allowTextLabels": true,
+                "defaultLabels": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "saveFormat": [
+                  "strokes_json",
+                  "png_export"
+                ]
+              },
+              "upload": {
+                "enabled": true,
+                "acceptedTypes": [
+                  "image/png",
+                  "image/jpeg",
+                  "image/webp",
+                  "application/pdf"
+                ],
+                "maxFileSizeMb": 10
+              }
+            }
+          }
+        },
+        {
+          "id": "I_B_2",
+          "title": "Adevărat / Fals",
+          "points": 8,
+          "officialPrompt": "Stabiliți care propoziții sunt adevărate și care sunt false.",
+          "answerInput": {
+            "inputType": "true_false_group",
+            "studentVisible": true,
+            "teacherSolutionVisible": false,
+            "statements": [
+              {
+                "fieldId": "a",
+                "text": "Toți D sunt A."
+              },
+              {
+                "fieldId": "b",
+                "text": "Unii B sunt C."
+              },
+              {
+                "fieldId": "c",
+                "text": "Unii D sunt B."
+              },
+              {
+                "fieldId": "d",
+                "text": "Unii E sunt D."
+              },
+              {
+                "fieldId": "e",
+                "text": "Niciun A nu este C."
+              },
+              {
+                "fieldId": "f",
+                "text": "Unii D nu sunt C."
+              },
+              {
+                "fieldId": "g",
+                "text": "Toți E sunt B."
+              },
+              {
+                "fieldId": "h",
+                "text": "Unii B nu sunt A."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Se dau următoarele propoziții:",
+        "items": [
+          {
+            "number": 1,
+            "text": "Toate acțiunile responsabile sunt rezultate ale educației."
+          },
+          {
+            "number": 2,
+            "text": "Unele alergii sunt reacții sezoniere."
+          },
+          {
+            "number": 3,
+            "text": "Niciun scriitor de succes nu este persoană lipsită de imaginație."
+          },
+          {
+            "number": 4,
+            "text": "Unele vertebrate nu sunt păsări."
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "II_A",
+          "title": "A. Operații în pătratul logic",
+          "points": 8,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, contrara propoziției 1, contradictoria propoziției 2, subalterna propoziției 3 și subcontrara propoziției 4.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "short_text",
+                "label": "Contrara propoziției 1 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie forma logică. Exemplu: SeP"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Contrara propoziției 1 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă în limbaj natural."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Contradictoria propoziției 2 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie forma logică. Exemplu: SeP"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Contradictoria propoziției 2 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă în limbaj natural."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Subalterna propoziției 3 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie forma logică. Exemplu: SoP"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Subalterna propoziției 3 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă în limbaj natural."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Subcontrara propoziției 4 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie forma logică. Exemplu: SiP"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Subcontrara propoziției 4 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă în limbaj natural."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 2 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "short_text",
+                "label": "Conversa propoziției 2 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: PiS"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Conversa propoziției 2 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Obversa propoziției 2 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: So~P"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Obversa propoziției 2 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Conversa propoziției 3 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: PeS"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Conversa propoziției 3 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Obversa propoziției 3 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: Sa~P"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Obversa propoziției 3 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei subcontrarei propoziției 4, respectiv obversa contrarei propoziției 1.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "short_text",
+                "label": "Operația compusă pentru propoziția 4 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie lanțul sau forma finală. Exemplu: Po~S"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Operația compusă pentru propoziția 4 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Operația compusă pentru propoziția 1 - formal",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie forma finală. Exemplu: Sa~P"
+                }
+              },
+              {
+                "inputType": "structured_text",
+                "label": "Operația compusă pentru propoziția 1 - limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie propoziția completă."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_D",
+          "title": "D. Opiniile elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X și Y, opinează astfel. Pornind de la această situație: scrieți în limbaj formal opiniile, precizați corectitudinea/incorectitudinea logică și explicați corectitudinea/incorectitudinea logică a raționamentului elevului X.",
+          "contextBlock": {
+            "X": "Dacă toate cărțile de filosofie sunt valori culturale, atunci toate valorile culturale sunt cărți de filosofie.",
+            "Y": "Dacă unele soluții propuse sunt corecte, atunci unele soluții propuse nu sunt incorecte."
+          },
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "short_text",
+                "label": "Formalizare X",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: SaP→PaS"
+                }
+              },
+              {
+                "inputType": "short_text",
+                "label": "Formalizare Y",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Exemplu de format: SiP→So~P"
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Corectitudine/incorectitudine",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Precizează pentru fiecare raționament dacă este corect sau incorect."
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Explicație pentru X",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Explică pe scurt legea/regula respectată sau încălcată."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice: eae-3, iai-4",
+          "points": 14,
+          "officialPrompt": "Scrieți schemele de inferență, construiți un silogism corespunzător uneia dintre scheme și verificați explicit, prin diagrame Venn, validitatea fiecărui mod.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "syllogism_schema",
+                "label": "Schema eae-3",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "helperText": "Completează premisa majoră, premisa minoră și concluzia."
+                }
+              },
+              {
+                "inputType": "syllogism_schema",
+                "label": "Schema iai-4",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "helperText": "Completează premisa majoră, premisa minoră și concluzia."
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Silogism în limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie un silogism care corespunde uneia dintre scheme."
+                }
+              },
+              {
+                "inputType": "hybrid_diagram",
+                "label": "Diagrama Venn eae-3",
+                "diagramId": "diagram_III_A_eae3_2020_v5",
+                "requiresDiagram": true,
+                "inputConfig": {
+                  "helperText": "Desenează verificarea Venn pentru eae-3.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "defaultLabels": [
+                      "S",
+                      "P",
+                      "M"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              },
+              {
+                "inputType": "hybrid_diagram",
+                "label": "Diagrama Venn iai-4",
+                "diagramId": "diagram_III_A_iai4_2020_v5",
+                "requiresDiagram": true,
+                "inputConfig": {
+                  "helperText": "Desenează verificarea Venn pentru iai-4.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "defaultLabels": [
+                      "S",
+                      "P",
+                      "M"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Decizia de validitate",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Precizează pentru fiecare mod dacă este valid sau nevalid."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid, prin care să justificați propoziția: „Unii italieni sunt pictori talentați”.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "syllogism_schema",
+                "label": "Schema formală",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Completează premisa majoră, premisa minoră și concluzia."
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Silogism în limbaj natural",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie silogismul complet în limbaj natural."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Stabiliți care dintre enunțuri sunt adevărate și care sunt false.",
+          "contextBlock": {
+            "syllogism": "Întrucât niciun elev premiant nu este leneș, iar toți oamenii nemulțumiți sunt leneși, rezultă că niciun elev premiant nu este om nemulțumit."
+          },
+          "answerInput": {
+            "inputType": "true_false_group",
+            "statements": [
+              {
+                "fieldId": "1",
+                "text": "Termenul mediu este distribuit în premisa minoră."
+              },
+              {
+                "fieldId": "2",
+                "text": "Predicatul logic al concluziei este reprezentat de termenul „elev premiant”."
+              },
+              {
+                "fieldId": "3",
+                "text": "Concluzia silogismului este o propoziție universală afirmativă."
+              },
+              {
+                "fieldId": "4",
+                "text": "Subiectul logic al concluziei este distribuit atât în premisă, cât și în concluzie."
+              }
+            ]
+          }
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiție",
+          "points": 6,
+          "officialPrompt": "Fie următoarea definiție: „Omul este minunea universului”. Menționați o regulă de corectitudine încălcată, apoi precizați o altă regulă și construiți o definiție care să o încalce, având ca definit termenul „om”.",
+          "answerInput": {
+            "inputType": "multi_field",
+            "fields": [
+              {
+                "inputType": "long_text",
+                "label": "Regula încălcată",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Menționează regula de corectitudine încălcată de definiția dată."
+                }
+              },
+              {
+                "inputType": "long_text",
+                "label": "Altă regulă + definiție greșită",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "placeholder": "Scrie o altă regulă și construiește o definiție care să o încalce."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

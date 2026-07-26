@@ -1,0 +1,144 @@
+{
+  "module": "De ce functioneaza?",
+  "description": "Explicatii cauzale si mecanice pentru regulile de logica.",
+  "ui_rules": {
+    "placement": [
+      "learning2.0_main_module",
+      "inside_lessons",
+      "inside_games_as_expandable_panel"
+    ],
+    "interaction": [
+      "click_to_expand",
+      "one_card_open_or_multiple_collapsible"
+    ],
+    "card_structure": [
+      "rule",
+      "why",
+      "example",
+      "counterexample",
+      "trap"
+    ]
+  },
+  "items": [
+    {
+      "id": "why_001",
+      "topic": "patrat_logic",
+      "rule": "A -> I",
+      "why": "Daca toti S sunt P, atunci clasa S intra in P si poti cobori sigur la un caz particular de tip I.",
+      "example": "Toti elevii sunt silitori -> Unii elevi sunt silitori.",
+      "counterexample": "Nu poti avea simultan adevarat \"Toti elevii sunt silitori\" si fals \"Unii elevi sunt silitori\".",
+      "trap": "Elevul memoreaza sagetile, dar uita ca subalternarea coboara de la universal la particular.",
+      "tags": ["A", "I", "subalternare", "patrat_logic", "lectia_2", "lectia_3"]
+    },
+    {
+      "id": "why_002",
+      "topic": "patrat_logic",
+      "rule": "E -> O",
+      "why": "Daca niciun S nu este P, atunci ai sigur si cazuri de tipul \"unii S nu sunt P\" atunci cand clasa S este luata ca existenta in exercitiu.",
+      "example": "Niciun elev nu este silitor -> Unii elevi nu sunt silitori.",
+      "counterexample": "Nu poti propaga valoarea catre I, pentru ca E si I sunt contradictorii, nu compatibile.",
+      "trap": "Unii elevi confunda relatia E-O cu o simpla negare, fara sa vada transmiterea spre particulara negativa.",
+      "tags": ["E", "O", "subalternare", "patrat_logic", "lectia_2", "lectia_3"]
+    },
+    {
+      "id": "why_003",
+      "topic": "patrat_logic",
+      "rule": "A si O sunt contradictorii",
+      "why": "A spune ca toti S sunt P; O spune ca exista cel putin un S care nu este P. Un singur contraexemplu rupe universalul.",
+      "example": "\"Toti elevii sunt silitori\" intra in conflict direct cu \"Unii elevi nu sunt silitori\".",
+      "counterexample": "Daca apare un elev nesilitor, A cade imediat; daca nu apare niciunul, O cade imediat.",
+      "trap": "Elevii trateaza perechea A-O ca pe o opozitie slaba, desi este contradictie stricta.",
+      "tags": ["A", "O", "contradictie", "patrat_logic", "lectia_2", "lectia_3", "patratul-logic"]
+    },
+    {
+      "id": "why_004",
+      "topic": "patrat_logic",
+      "rule": "A si E sunt contrare",
+      "why": "Cele doua universale nu pot fi ambele adevarate, pentru ca una include total S in P, iar cealalta exclude total S din P.",
+      "example": "\"Toti elevii sunt silitori\" si \"Niciun elev nu este silitor\" nu pot fi ambele adevarate.",
+      "counterexample": "Pot fi totusi ambele false daca unii elevi sunt silitori si altii nu sunt.",
+      "trap": "Capcana este sa tratezi contrarietatea ca si cum ar forta mereu o valoare exacta in sens invers.",
+      "tags": ["A", "E", "contrarietate", "patrat_logic", "lectia_2", "lectia_3", "patratul-logic"]
+    },
+    {
+      "id": "why_005",
+      "topic": "categorice",
+      "rule": "A = SaP",
+      "why": "Forma A spune despre intreaga clasa S ca este inclusa in P. De aceea simbolul corect este SaP.",
+      "example": "Toti elevii sunt silitori = SaP.",
+      "counterexample": "\"Unii elevi sunt silitori\" nu mai este A, pentru ca nu vorbeste despre intreaga clasa.",
+      "trap": "Capcana clasica este sa citesti doar relatia dintre termeni si sa ignori cuantorul.",
+      "tags": ["A", "SaP", "categorice", "lectia_2", "forme-categorice"]
+    },
+    {
+      "id": "why_006",
+      "topic": "categorice",
+      "rule": "I = SiP",
+      "why": "Forma I exprima existenta: exista cel putin un S care este P. De aceea folosesti particulara afirmativa SiP.",
+      "example": "Unii elevi sunt silitori = SiP.",
+      "counterexample": "\"Toti elevii sunt silitori\" nu este SiP, chiar daca implica existenta unor elevi silitori.",
+      "trap": "Elevii confunda uneori efectul din patratul logic cu forma initiala a propozitiei.",
+      "tags": ["I", "SiP", "categorice", "lectia_2", "forme-categorice"]
+    },
+    {
+      "id": "why_007",
+      "topic": "categorice",
+      "rule": "O = SoP",
+      "why": "Forma O spune ca exista cel putin un S care nu apartine lui P. Negatia nu cade pe cuantor, ci pe raportul S-P.",
+      "example": "Unii elevi nu sunt silitori = SoP.",
+      "counterexample": "\"Niciun elev nu este silitor\" este E, nu O, pentru ca neaga universal.",
+      "trap": "Multi elevi vad doar negatia si muta automat propozitia in E, desi cuantorul ramane particular.",
+      "tags": ["O", "SoP", "categorice", "lectia_2", "forme-categorice"]
+    },
+    {
+      "id": "why_008",
+      "topic": "silogism",
+      "rule": "Termenul mediu trebuie distribuit",
+      "why": "Daca M nu acopera intreaga clasa relevanta in cel putin o premisa, nu poate face legatura sigura dintre S si P.",
+      "example": "Toti elevii sunt silitori. Unii sportivi sunt silitori. Nu rezulta ca unii sportivi sunt elevi.",
+      "counterexample": "Aparitia aceluiasi termen in ambele premise nu este suficienta daca el ramane nedistribuit.",
+      "trap": "Capcana este sa crezi ca repetarea lui M in ambele premise garanteaza automat concluzia.",
+      "tags": ["silogism", "termen_mediu", "distribuire", "lectia_3"]
+    },
+    {
+      "id": "why_009",
+      "topic": "propozitional",
+      "rule": "p -> q este falsa doar la T/F",
+      "why": "Implicatia promite ca adevarul lui p nu apare fara adevarul lui q. Cand p este adevarat si q fals, promisiunea se rupe.",
+      "example": "Daca elevul invata, atunci promoveaza. Daca a invatat, dar nu a promovat, formula devine falsa.",
+      "counterexample": "Daca p este fals, implicatia nu este incalcata, chiar daca q este fals.",
+      "trap": "Capcana frecventa este sa marchezi fals si cazul F/F, desi regula nu este incalcata acolo.",
+      "tags": ["implicatie", "p_q", "tabel_adevar", "lectia_4", "tabel-adevar"]
+    },
+    {
+      "id": "why_010",
+      "topic": "propozitional",
+      "rule": "Modus Ponens",
+      "why": "Daca regula p -> q este acceptata si p este confirmata, atunci q trebuie sa urmeze pentru a pastra consistenta argumentului.",
+      "example": "Daca elevul invata, atunci promoveaza. Elevul invata. Deci promoveaza.",
+      "counterexample": "Nu inversa schema: din q nu rezulta automat p.",
+      "trap": "Elevii o confunda adesea cu afirmarea consecventului, care seamana vizual, dar este nevalida.",
+      "tags": ["modus_ponens", "validitate", "propozitional", "lectia_4"]
+    },
+    {
+      "id": "why_011",
+      "topic": "propozitional",
+      "rule": "Modus Tollens",
+      "why": "Daca p duce la q, iar q nu apare, atunci p nu poate fi adevarat fara sa incalce regula initiala.",
+      "example": "Daca elevul invata, atunci promoveaza. Nu a promovat. Deci nu a invatat.",
+      "counterexample": "Nu transforma schema in \"nu p, deci nu q\"; aceea este negarea antecedentului si nu este valida.",
+      "trap": "Capcana este sa confunzi absenta consecventului cu absenta unei cauze oarecare, nu a antecedentului dat.",
+      "tags": ["modus_tollens", "validitate", "propozitional", "lectia_4"]
+    },
+    {
+      "id": "why_012",
+      "topic": "propozitional",
+      "rule": "Echivalenta p <-> q",
+      "why": "Echivalenta cere dubla legatura: din p urmeaza q si din q urmeaza p. De aceea ambele componente trebuie sa aiba aceeasi valoare.",
+      "example": "Elevul promoveaza daca si numai daca indeplineste toate conditiile cerute.",
+      "counterexample": "O singura implicatie p -> q nu este suficienta pentru a avea echivalenta completa.",
+      "trap": "Capcana este sa citesti \"daca si numai daca\" ca pe un simplu \"daca\".",
+      "tags": ["echivalenta", "p_q", "lectia_4", "tabel-adevar"]
+    }
+  ]
+}

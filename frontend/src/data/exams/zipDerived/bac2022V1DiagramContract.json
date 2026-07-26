@@ -1,0 +1,58 @@
+{
+  "examId": "bac_logica_2022_v1",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler_relations",
+      "studentInput": "hybrid_canvas_upload",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A și E sunt contrare, specii ale lui D",
+        "B este identic cu D",
+        "C se încrucișează cu B, D și E",
+        "C este în opoziție cu A"
+      ],
+      "teacherRendering": "A și E în interiorul lui D/B, separate; C intersectează D/B și E, dar nu intersectează A."
+    },
+    {
+      "diagramId": "diagram_III_A_aoo2_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aoo-2",
+      "schema": [
+        "PaM",
+        "SoM",
+        "SoP"
+      ],
+      "validity": "valid",
+      "studentInput": "hybrid_canvas_upload"
+    },
+    {
+      "diagramId": "diagram_III_A_eae3_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eae-3",
+      "schema": [
+        "MeP",
+        "MaS",
+        "SeP"
+      ],
+      "validity": "nevalid",
+      "studentInput": "hybrid_canvas_upload"
+    }
+  ]
+}

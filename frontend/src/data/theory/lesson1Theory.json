@@ -1,0 +1,697 @@
+{
+  "lessonId": 1,
+  "title": "Lectia 1 - Raport Sintetic: Fundamentele Gândirii Logice și Analiza Termenilor",
+  "intro": "Logica tradițională fixează cadrul în care gândirea devine clară, coerentă și verificabilă. Lecția 1 pornește de la obiectul logicii și ajunge la analiza termenilor și a raporturilor dintre ei.",
+  "pageTitle": "Fundamentele gândirii logice",
+  "hero": {
+    "title": "Fundamentele gândirii logice",
+    "subtitle": "Cum transformă logica haosul ideilor în ordine clară",
+    "paragraph": "Logica nu este doar o materie de examen. Ea este instrumentul prin care învățăm să gândim clar, să evităm confuziile și să construim idei corecte.",
+    "chaosLabel": "Haos / intuiție",
+    "orderLabel": "Ordine / logică",
+    "navLabel": "Lecția 1"
+  },
+  "chaosToOrder": {
+    "kicker": "Pasul 1",
+    "title": "Din reacție rapidă în gândire verificabilă",
+    "description": "În minte apar multe impresii simultan. Logica le ordonează, le separă și le leagă prin reguli clare.",
+    "buttonLabel": "Organizează gândirea",
+    "leftLabel": "Haos / intuiție",
+    "rightLabel": "Ordine / logică",
+    "footer": "Logica organizează conceptele și relațiile dintre ele. Ea transformă reacția intuitivă într-un proces clar și verificabil."
+  },
+  "formsSection": {
+    "kicker": "Pasul 2",
+    "title": "Cele 3 forme fundamentale",
+    "description": "Orice exercițiu de logică pornește de la aceste trei niveluri. Mai întâi numești ceva, apoi spui ceva despre acel lucru, iar la final legi mai multe propoziții pentru a obține o concluzie.",
+    "forms": [
+      {
+        "id": "termen",
+        "title": "Termenul",
+        "shortLabel": "1",
+        "definition": "Unitatea de bază a gândirii. Exprimă un concept.",
+        "example": "„om”",
+        "importance": "Fără termeni exacți, orice argument pornește deja confuz."
+      },
+      {
+        "id": "propozitia",
+        "title": "Propoziția",
+        "shortLabel": "2",
+        "definition": "Afirmația sau negația despre ceva.",
+        "example": "„Omul este muritor.”",
+        "importance": "Propoziția este forma prin care evaluăm adevărul sau falsul."
+      },
+      {
+        "id": "rationamentul",
+        "title": "Raționamentul",
+        "shortLabel": "3",
+        "definition": "Legarea propozițiilor pentru a obține o concluzie.",
+        "example": "„Toți oamenii sunt muritori. Socrate este om. Deci Socrate este muritor.”",
+        "importance": "Aici se vede dacă gândirea ta produce o concluzie validă."
+      }
+    ]
+  },
+  "principlesSection": {
+    "kicker": "Pasul 3",
+    "title": "Cele 4 principii ale gândirii corecte",
+    "description": "Dacă le înțelegi bine, recunoști rapid unde apare eroarea într-un argument. Ele sunt fundația logicii clasice.",
+    "roofLabel": "Validitate",
+    "principles": [
+      {
+        "id": "identitate",
+        "title": "Principiul identității",
+        "formula": "A = A",
+        "simpleText": "Un lucru trebuie să rămână același cu el însuși.",
+        "formalText": "Orice obiect este identic numai cu sine însuși, în același timp și sub același raport.",
+        "example": "„bancă” poate însemna instituție financiară sau obiect de mobilier. Dacă schimbi sensul în argument, gândirea devine incorectă.",
+        "demo": {
+          "buttonLabel": "Schimbă sensul",
+          "baseLabel": "bancă = instituție financiară",
+          "swappedLabel": "bancă = obiect de mobilier",
+          "warning": "Dacă schimbi sensul termenului în timpul argumentului, apare confuzia."
+        }
+      },
+      {
+        "id": "non-contradictie",
+        "title": "Principiul non-contradicției",
+        "formula": "¬(A ∧ ¬A)",
+        "simpleText": "Nu poți spune că același lucru este și nu este în același timp.",
+        "formalText": "Este imposibil ca același predicat să aparțină și să nu aparțină aceluiași subiect, în același timp și sub același raport.",
+        "example": "Același elev nu poate fi prezent și absent în același timp la aceeași oră.",
+        "demo": {
+          "toggleA": "Este alb",
+          "toggleB": "Nu este alb",
+          "warning": "Contradicție logică"
+        }
+      },
+      {
+        "id": "tert-exclus",
+        "title": "Principiul terțului exclus",
+        "formula": "A sau non-A",
+        "simpleText": "Între A și non-A nu există o a treia variantă.",
+        "formalText": "Pentru un enunț determinat, într-un sistem logic bivalent, orice alternativă este ori afirmarea, ori negarea lui.",
+        "example": "Un enunț este fie adevărat, fie fals în sistemul logic clasic.",
+        "demo": {
+          "options": ["Adevărat", "Fals", "A treia cale"],
+          "warning": "A treia cale este exclusă în logica bivalentă."
+        }
+      },
+      {
+        "id": "ratiune-suficienta",
+        "title": "Principiul rațiunii suficiente",
+        "formula": "Nicio concluzie fără temei",
+        "simpleText": "Nu acceptăm o afirmație fără motiv.",
+        "formalText": "Pentru a admite un enunț drept adevărat, trebuie să existe un motiv sau un temei suficient care să îl justifice.",
+        "example": "O concluzie bună nu se sprijină pe impresii, ci pe legături justificabile.",
+        "demo": {
+          "claim": "Această concluzie este corectă.",
+          "focus": "Pentru o susținere solidă, zona ideală este „necesar și suficient”.",
+          "matrix": [
+            {
+              "id": "necessary-sufficient",
+              "row": "Necesar",
+              "column": "Suficient",
+              "title": "Necesar și suficient",
+              "example": "Triunghiul echilateral → are toate unghiurile egale"
+            },
+            {
+              "id": "necessary-not-sufficient",
+              "row": "Necesar",
+              "column": "Nu suficient",
+              "title": "Necesar, dar nu suficient",
+              "example": "Eminescu și Creangă au fost contemporani → Eminescu l-a îndemnat pe Creangă să scrie"
+            },
+            {
+              "id": "not-necessary-sufficient",
+              "row": "Nu necesar",
+              "column": "Suficient",
+              "title": "Suficient, dar nu necesar",
+              "example": "Triunghiul isoscel → are unghiurile de la bază congruente"
+            },
+            {
+              "id": "not-necessary-not-sufficient",
+              "row": "Nu necesar",
+              "column": "Nu suficient",
+              "title": "Nici necesar, nici suficient",
+              "example": "Afară plouă → Ion și Adrian sunt prieteni"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "termAnatomy": {
+    "kicker": "Pasul 4",
+    "title": "Anatomia termenului",
+    "description": "Un termen funcționează corect doar când vezi legătura dintre expresia lui, conceptul din minte și obiectul din realitate.",
+    "centerLabel": "Unitatea logică",
+    "exampleTitle": "Exemplu ghid",
+    "exampleName": "câine",
+    "nodes": [
+      {
+        "id": "cuvant",
+        "label": "Cuvânt",
+        "explanation": "Forma lingvistică prin care exprimăm termenul",
+        "example": "„câine”"
+      },
+      {
+        "id": "notiune",
+        "label": "Noțiune",
+        "explanation": "Înțelesul mental, conceptul",
+        "example": "animal domestic mamifer"
+      },
+      {
+        "id": "obiect",
+        "label": "Obiect",
+        "explanation": "Realitatea sau clasa de obiecte la care se referă termenul",
+        "example": "câinele real sau clasa câinilor"
+      }
+    ]
+  },
+  "intensionExtension": {
+    "kicker": "Pasul 5",
+    "title": "Intensiune vs extensiune",
+    "description": "Legea de bază este variația inversă: când un termen câștigă proprietăți, se aplică unui număr mai mic de obiecte.",
+    "sliderLabel": "General ⟷ Specific",
+    "footer": "Cu cât un termen devine mai bogat în proprietăți, cu atât se aplică unui număr mai mic de obiecte.",
+    "steps": [
+      {
+        "term": "Vertebrat",
+        "extensionSize": 16,
+        "intensionSize": 3,
+        "extensionLabel": "extensiune mare",
+        "intensionLabel": "intensiune mică",
+        "properties": ["coloană vertebrală", "organism animal", "schelet intern"]
+      },
+      {
+        "term": "Mamifer",
+        "extensionSize": 11,
+        "intensionSize": 5,
+        "extensionLabel": "extensiune mai mică",
+        "intensionLabel": "intensiune mai mare",
+        "properties": ["coloană vertebrală", "naște pui vii", "alăptează", "sânge cald", "organism animal"]
+      },
+      {
+        "term": "Carnivor",
+        "extensionSize": 8,
+        "intensionSize": 6,
+        "extensionLabel": "extensiune în scădere",
+        "intensionLabel": "intensiune în creștere",
+        "properties": ["mamifer", "dentitie adaptată", "se hrănește cu carne", "mobilitate ridicată", "prădător", "sânge cald"]
+      },
+      {
+        "term": "Câine",
+        "extensionSize": 5,
+        "intensionSize": 7,
+        "extensionLabel": "extensiune restrânsă",
+        "intensionLabel": "intensiune bogată",
+        "properties": ["mamifer", "carnivor", "animal domestic", "latră", "are bot", "canid", "sânge cald"]
+      }
+    ]
+  },
+  "classification": {
+    "kicker": "Pasul 6",
+    "title": "Clasificarea termenilor",
+    "description": "În BAC și admitere trebuie să recunoști rapid după ce criteriu este clasificat un termen. Aici exersezi vizual, prin potrivire și plasare.",
+    "tabs": [
+      {
+        "id": "intension",
+        "label": "După intensiune",
+        "boards": [
+          {
+            "id": "absoluti-relativi",
+            "title": "Absoluți vs relativi",
+            "description": "Termenul absolut are sens de sine stătător, cel relativ trimite la altceva.",
+            "leftLabel": "Absoluți",
+            "rightLabel": "Relativi",
+            "items": [
+              { "id": "zapada", "label": "zăpadă", "answer": "left", "hint": "Are sens fără raportare la alt termen." },
+              { "id": "sot", "label": "soț", "answer": "right", "hint": "Presupune raportare la „soție”." },
+              { "id": "munte", "label": "munte", "answer": "left", "hint": "Poate fi înțeles independent." },
+              { "id": "vecin", "label": "vecin", "answer": "right", "hint": "Există doar în raport cu cineva." }
+            ]
+          },
+          {
+            "id": "abstracti-concreti",
+            "title": "Abstracti vs concreți",
+            "description": "Termenul abstract exprimă o însușire, cel concret trimite la un obiect sau ființă.",
+            "leftLabel": "Abstracti",
+            "rightLabel": "Concreți",
+            "items": [
+              { "id": "frumusete", "label": "frumusețe", "answer": "left", "hint": "Este o însușire, nu un obiect." },
+              { "id": "om", "label": "om", "answer": "right", "hint": "Desemnează o ființă." },
+              { "id": "curaj", "label": "curaj", "answer": "left", "hint": "Este calitate abstractă." },
+              { "id": "copac", "label": "copac", "answer": "right", "hint": "Este entitate concretă." }
+            ]
+          },
+          {
+            "id": "pozitivi-negativi",
+            "title": "Pozitivi vs negativi",
+            "description": "Termenii negativi exprimă absența unei însușiri.",
+            "leftLabel": "Pozitivi",
+            "rightLabel": "Negativi",
+            "items": [
+              { "id": "prietenos", "label": "prietenos", "answer": "left", "hint": "Afirmă prezența unei însușiri." },
+              { "id": "imoral", "label": "imoral", "answer": "right", "hint": "Semnalează lipsa moralității." },
+              { "id": "legal", "label": "legal", "answer": "left", "hint": "Afirmă o calitate." },
+              { "id": "inutil", "label": "inutil", "answer": "right", "hint": "Exprimă lipsa utilității." }
+            ]
+          },
+          {
+            "id": "simpli-compusi",
+            "title": "Simpli vs compuși",
+            "description": "Termenii compuși sunt construiți din mai multe cuvinte care funcționează ca o singură unitate logică.",
+            "leftLabel": "Simpli",
+            "rightLabel": "Compuși",
+            "items": [
+              { "id": "punct", "label": "punct", "answer": "left", "hint": "Este un singur termen lexical." },
+              { "id": "autoturism", "label": "autoturism de teren", "answer": "right", "hint": "Conține mai multe cuvinte." },
+              { "id": "oras", "label": "oraș", "answer": "left", "hint": "Este termen simplu." },
+              { "id": "floare", "label": "floare de colț", "answer": "right", "hint": "Funcționează ca expresie unică." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "extension",
+        "label": "După extensiune",
+        "boards": [
+          {
+            "id": "vizi-nevizi",
+            "title": "Vizi vs nevizi",
+            "description": "Termenii vizi au extensiune nulă, termenii nevizi au obiecte reale sau posibile în extensiune.",
+            "leftLabel": "Vizi",
+            "rightLabel": "Nevizi",
+            "items": [
+              { "id": "patrat-rotund", "label": "pătrat rotund", "answer": "left", "hint": "Reunește note incompatibile." },
+              { "id": "caiet", "label": "caiet", "answer": "right", "hint": "Există obiecte reale în extensiune." },
+              { "id": "cerc-patrat", "label": "cerc pătrat", "answer": "left", "hint": "Nu poate exista logic." },
+              { "id": "oras", "label": "oraș", "answer": "right", "hint": "Desemnează o clasă reală." }
+            ]
+          },
+          {
+            "id": "singulari-generali",
+            "title": "Singulari vs generali",
+            "description": "Termenul singular desemnează un singur obiect determinat, termenul general o clasă de obiecte.",
+            "leftLabel": "Singulari",
+            "rightLabel": "Generali",
+            "items": [
+              { "id": "eminescu", "label": "Mihai Eminescu", "answer": "left", "hint": "Indică o individualitate precisă." },
+              { "id": "oras-general", "label": "oraș", "answer": "right", "hint": "Se aplică unei clase întregi." },
+              { "id": "bucuresti", "label": "București", "answer": "left", "hint": "Este un singur oraș determinat." },
+              { "id": "elev", "label": "elev", "answer": "right", "hint": "Include mai multe obiecte în extensiune." }
+            ]
+          },
+          {
+            "id": "colectivi-distributivi",
+            "title": "Colectivi vs distributivi",
+            "description": "Termenul colectiv se aplică ansamblului, cel distributiv fiecărui element în parte.",
+            "leftLabel": "Colectivi",
+            "rightLabel": "Distributivi",
+            "items": [
+              { "id": "padure", "label": "pădure", "answer": "left", "hint": "Desemnează colectivitatea ca întreg." },
+              { "id": "pom", "label": "pom", "answer": "right", "hint": "Se aplică fiecărui exemplar." },
+              { "id": "echipa", "label": "echipă", "answer": "left", "hint": "Este un grup luat ca unitate." },
+              { "id": "student", "label": "student", "answer": "right", "hint": "Se aplică individual." }
+            ]
+          },
+          {
+            "id": "precisi-vagi",
+            "title": "Preciși vs vagi",
+            "description": "Un termen precis are limite clare, unul vag permite granițe incerte.",
+            "leftLabel": "Preciși",
+            "rightLabel": "Vagi",
+            "items": [
+              { "id": "patrat", "label": "pătrat", "answer": "left", "hint": "Are criterii exacte." },
+              { "id": "tanar", "label": "tânăr", "answer": "right", "hint": "Nu are limită fixă pentru toate situațiile." },
+              { "id": "triunghi", "label": "triunghi", "answer": "left", "hint": "Este definit riguros." },
+              { "id": "inalt", "label": "înalt", "answer": "right", "hint": "Depinde de context și comparație." }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "eulerExplorer": {
+    "kicker": "Pasul 7",
+    "title": "Diagrame Euler și relațiile dintre termeni",
+    "description": "Aici vezi în spațiu ceea ce, la examen, trebuie să recunoști instantaneu. Treci prin fiecare raport și schimbă exemplele până când imaginea devine naturală.",
+    "relations": [
+      {
+        "id": "identitate",
+        "title": "Identitate",
+        "shortExplanation": "Două termene au aceeași extensiune.",
+        "question": "Poate exista o a treia variantă?",
+        "allowsThirdOption": false,
+        "feedbackYes": "Nu. Dacă A și B coincid perfect, nu introduci o a treia clasă între ele.",
+        "feedbackNo": "Corect. În raportul de identitate, extensiunile coincid complet.",
+        "examples": [
+          {
+            "title": "Om = ființă rațională",
+            "aLabel": "Om",
+            "bLabel": "Ființă rațională",
+            "description": "Cele două expresii trimit la aceeași clasă."
+          },
+          {
+            "title": "Burlac = bărbat necăsătorit",
+            "aLabel": "Burlac",
+            "bLabel": "Bărbat necăsătorit",
+            "description": "Formulări diferite, aceeași extensiune."
+          }
+        ]
+      },
+      {
+        "id": "incluziune",
+        "title": "Incluziune / ordonare",
+        "shortExplanation": "Termenul mai restrâns este inclus în termenul mai larg.",
+        "question": "Poate exista o a treia variantă?",
+        "allowsThirdOption": true,
+        "feedbackYes": "Corect. În clasa mare pot exista și alte elemente decât cele din clasa mică.",
+        "feedbackNo": "Nu chiar. În afara clasei mici rămân alte obiecte din clasa mare.",
+        "examples": [
+          {
+            "title": "Triunghi inclus în poligon",
+            "aLabel": "Triunghi",
+            "bLabel": "Poligon",
+            "description": "Toate triunghiurile sunt poligoane, dar nu toate poligoanele sunt triunghiuri."
+          },
+          {
+            "title": "Mamifer inclus în animal",
+            "aLabel": "Mamifer",
+            "bLabel": "Animal",
+            "description": "Un termen este specie, celălalt gen."
+          }
+        ]
+      },
+      {
+        "id": "intersectare",
+        "title": "Intersectare / încrucișare",
+        "shortExplanation": "Cele două extensiuni au o zonă comună, dar și zone proprii.",
+        "question": "Poate exista o a treia variantă?",
+        "allowsThirdOption": true,
+        "feedbackYes": "Corect. Există elevi care nu sunt sportivi și sportivi care nu sunt elevi.",
+        "feedbackNo": "Nu. Intersectarea lasă mereu și zone în afara suprapunerii.",
+        "examples": [
+          {
+            "title": "Elev și sportiv",
+            "aLabel": "Elev",
+            "bLabel": "Sportiv",
+            "description": "Unii sunt și elevi, și sportivi, dar nu toți."
+          },
+          {
+            "title": "Cititor și voluntar",
+            "aLabel": "Cititor",
+            "bLabel": "Voluntar",
+            "description": "Clasele se întâlnesc doar parțial."
+          }
+        ]
+      },
+      {
+        "id": "contrarietate",
+        "title": "Contrarietate",
+        "shortExplanation": "Se exclud, dar permit a treia variantă.",
+        "question": "Poate exista o a treia variantă?",
+        "allowsThirdOption": true,
+        "feedbackYes": "Corect. Contrarietatea lasă loc unei alte variante între cele două extreme.",
+        "feedbackNo": "Nu. Aici nu e contradicție; poate exista o soluție intermediară.",
+        "examples": [
+          {
+            "title": "Alb și negru",
+            "aLabel": "Alb",
+            "bLabel": "Negru",
+            "description": "Se exclud, dar un obiect poate fi și gri, albastru sau roșu."
+          },
+          {
+            "title": "Curajos și laș",
+            "aLabel": "Curajos",
+            "bLabel": "Laș",
+            "description": "Între ele pot exista nuanțe intermediare."
+          }
+        ]
+      },
+      {
+        "id": "contradictie",
+        "title": "Contradicție",
+        "shortExplanation": "A și non-A epuizează universul. Nu există a treia variantă.",
+        "question": "Poate exista o a treia variantă?",
+        "allowsThirdOption": false,
+        "feedbackYes": "Nu. În contradicție, universul se împarte complet între A și non-A.",
+        "feedbackNo": "Corect. Contradicția nu lasă loc pentru o a treia posibilitate.",
+        "examples": [
+          {
+            "title": "Legal și ilegal",
+            "aLabel": "Legal",
+            "bLabel": "Ilegal",
+            "description": "Împreună acoperă întregul univers relevant."
+          },
+          {
+            "title": "Prezent și neprezent",
+            "aLabel": "Prezent",
+            "bLabel": "Non-prezent",
+            "description": "Nu poți introduce o a treia stare în logica bivalentă clasică."
+          }
+        ]
+      }
+    ]
+  },
+  "recap": {
+    "title": "De la teorie la strategie",
+    "description": "Dacă stăpânești aceste idei, începi să vezi imediat unde se rupe sau se întărește un argument.",
+    "bullets": [
+      {
+        "label": "Validarea termenilor și a definițiilor",
+        "detail": "Mai întâi clarifici sensul termenilor, apoi verifici dacă rămân stabili în argument."
+      },
+      {
+        "label": "Evitarea sofismelor de confuzie",
+        "detail": "Principiile gândirii te ajută să depistezi ambiguitatea, contradicția și concluziile fără temei."
+      },
+      {
+        "label": "Vizualizarea spațială a relațiilor logice",
+        "detail": "Diagramele Euler transformă o relație abstractă într-o imagine pe care o recunoști mai rapid la examen."
+      }
+    ],
+    "next": "Urmează: Logica propozițiilor și silogismul"
+  },
+  "checkpoints": {
+    "kicker": "Pasul 10",
+    "title": "Checkpoint-uri rapide",
+    "description": "Verifică imediat dacă noțiunile-cheie au rămas clare. Aici nu memorezi, ci alegi rapid și justificat.",
+    "items": [
+      {
+        "id": "cp1",
+        "question": "„Libertate” este termen abstract sau concret?",
+        "options": ["Abstract", "Concret"],
+        "correct": "Abstract",
+        "explanation": "„Libertate” desemnează o idee sau o însușire, nu un obiect material."
+      },
+      {
+        "id": "cp2",
+        "question": "„Mamifer” și „animal” sunt în raport de incluziune sau contradicție?",
+        "options": ["Incluziune", "Contradicție"],
+        "correct": "Incluziune",
+        "explanation": "Mamiferul este inclus în clasa animalelor."
+      },
+      {
+        "id": "cp3",
+        "question": "Între „legal” și „ilegal” există a treia variantă?",
+        "options": ["Da", "Nu"],
+        "correct": "Nu",
+        "explanation": "În logica clasică, ele formează o contradicție: A și non-A."
+      },
+      {
+        "id": "cp4",
+        "question": "Dacă adaugi proprietăți, crește sau scade extensiunea?",
+        "options": ["Crește", "Scade"],
+        "correct": "Scade",
+        "explanation": "Cu mai multe proprietăți, termenul se aplică la mai puține obiecte."
+      },
+      {
+        "id": "cp5",
+        "question": "„Soț” este termen absolut sau relativ?",
+        "options": ["Absolut", "Relativ"],
+        "correct": "Relativ",
+        "explanation": "Există numai prin raportare la alt termen: „soție”."
+      },
+      {
+        "id": "cp6",
+        "question": "„Elev” și „sportiv” se intersectează sau se exclud?",
+        "options": ["Se intersectează", "Se exclud"],
+        "correct": "Se intersectează",
+        "explanation": "Unele persoane sunt simultan elevi și sportivi."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "obiectul-logicii",
+      "title": "Introducere în logica tradițională și obiectul de studiu",
+      "intro": "Secțiunea fixează ce studiază logica și de ce este indispensabilă pentru claritatea discursului.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Logica este definită, în accepțiunea sa riguroasă, drept „știința legilor gândirii”, reprezentând studiul formelor și legilor generale ale raționării corecte. Într-un mediu profesional definit prin complexitate și necesitatea deciziei rapide, stăpânirea principiilor logice constituie o competență strategică indispensabilă."
+        },
+        {
+          "type": "paragraph",
+          "text": "Logica generală (clasică), de tradiție aristotelică, analizează mecanismele gândirii prin prisma a trei forme fundamentale: termenul, propoziția și raționamentul. Integritatea oricărei construcții logice depinde de respectarea legilor fundamentale de raționalitate."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Termenul este unitatea de bază a gândirii.",
+            "Propoziția afirmă sau neagă ceva despre un obiect sau o clasă.",
+            "Raționamentul derivă concluzii din propoziții deja admise."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "title": "Idee-cheie",
+          "text": "Logica nu organizează doar limbajul, ci și transferul corect al adevărului între premise și concluzii."
+        }
+      ]
+    },
+    {
+      "id": "principii-fundamentale",
+      "title": "Pilonii gândirii logice: cele patru principii fundamentale",
+      "intro": "Principiile nu sunt recomandări pedagogice, ci legi necesare ale gândirii coerente.",
+      "blocks": [
+        {
+          "type": "formula",
+          "label": "Identitatea",
+          "expression": "A ≡ A",
+          "explanation": "Termenii trebuie să își păstreze sensul constant; altfel apare sofismul echivocației."
+        },
+        {
+          "type": "formula",
+          "label": "Non-contradicția",
+          "expression": "¬(A ∧ ¬A)",
+          "explanation": "Nu poți accepta simultan două propoziții contradictorii despre același obiect, în același timp și sub același raport."
+        },
+        {
+          "type": "formula",
+          "label": "Terțul exclus",
+          "expression": "A sau non-A",
+          "explanation": "În logica bivalentă, o propoziție este fie admisă, fie respinsă; a treia posibilitate este exclusă."
+        },
+        {
+          "type": "formula",
+          "label": "Rațiunea suficientă",
+          "expression": "Nicio concluzie fără temei",
+          "explanation": "Acceptarea sau respingerea unei afirmații cere un motiv satisfăcător și verificabil."
+        },
+        {
+          "type": "table",
+          "columns": ["Tip de temei", "Exemplu din curs"],
+          "rows": [
+            ["Nici necesar, nici suficient", "„Afară plouă” pentru propoziția „Ion și Adrian sunt prieteni”."],
+            ["Necesar, dar nu suficient", "„Eminescu și Creangă au fost contemporani” pentru faptul că Eminescu l-a îndemnat pe Creangă să scrie."],
+            ["Suficient, dar nu necesar", "„Triunghiul ABC este isoscel” pentru propoziția „Triunghiul ABC are unghiurile de la bază congruente”."],
+            ["Necesar și suficient", "„Triunghiul ABC este echilateral” pentru propoziția „Triunghiul ABC are toate unghiurile egale”."]
+          ],
+          "footnote": "Aceste patru tipuri de temei apar în analizarea concretă a rațiunii suficiente."
+        }
+      ]
+    },
+    {
+      "id": "termen-intensiune-extensiune",
+      "title": "Termenul ca unitate structurală: intensiune și extensiune",
+      "intro": "Analiza termenului cere simultan limbaj, concept și referință la obiect.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "În analiza conceptuală, termenul este privit ca o unitate tripartită: componenta lingvistică (cuvântul), componenta cognitivă (noțiunea) și componenta ontologică (obiectul sau clasa de obiecte)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esența logicii termenilor rezidă în raportul dintre intensiune, adică totalitatea proprietăților obiectelor, și extensiune, adică totalitatea obiectelor care posedă acele proprietăți."
+        },
+        {
+          "type": "example",
+          "title": "Legea variației inverse",
+          "text": "Dacă termenului „vertebrat” îi adaugi proprietatea „mamifer”, intensiunea crește, dar extensiunea se restrânge. O definiție mai bogată în proprietăți reduce aria obiectelor la care termenul se aplică."
+        },
+        {
+          "type": "callout",
+          "tone": "accent",
+          "title": "Utilizare strategică",
+          "text": "În redactarea tehnică sau juridică, o definiție mai precisă limitează incertitudinea, dar reduce și numărul de cazuri acoperite de termen."
+        }
+      ]
+    },
+    {
+      "id": "tipologia-termenilor",
+      "title": "Tipologia și clasificarea termenilor",
+      "intro": "Clasificarea termenilor face posibilă folosirea riguroasă a limbajului în probleme și în argumentare.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["Criteriu", "Categorii", "Definiție și exemplu"],
+          "rows": [
+            ["După intensiune", "Absoluți vs. relativi", "Absoluți: au sens de sine stătător (zăpadă, obiect). Relativi: exprimă o relație (sinonim, soț-soție)."],
+            ["După intensiune", "Abstracți vs. concreți", "Abstracți: însușiri izolate (frumusețe, claritate). Concreți: obiecte sau proprietăți ca entități distincte (om, roșu)."],
+            ["După intensiune", "Pozitivi vs. negativi", "Pozitivi: indică prezența unei însușiri (prietenos, moral). Negativi: indică absența ei (imoral, orb)."],
+            ["După intensiune", "Simpli vs. compuși", "Simpli: noțiuni primare (punct, manual). Compuși: derivați din noțiuni primare (autoturism de teren, manual de logică)."],
+            ["După extensiune", "Vizi vs. nevizi", "Vizi: sfera nu conține obiecte (pătrat rotund). Nevizi: conțin cel puțin un obiect (caiet, satelit)."],
+            ["După extensiune", "Singulari vs. generali", "Singulari: un singur obiect (Mihai Eminescu, Franța). Generali: cel puțin două obiecte (oraș, carte)."],
+            ["După extensiune", "Colectivi vs. distributivi", "Colectivi: proprietatea revine întregului (pădure, armată). Distributivi: proprietatea se aplică fiecărui membru (pom, mamifer)."],
+            ["După extensiune", "Preciși vs. vagi", "Preciși: apartenența la sferă este certă (pătrat, fotografie). Vagi: au zonă de incertitudine (tânăr, frumos)."]
+          ],
+          "footnote": "Criteriile de clasificare trebuie recunoscute rapid, mai ales în itemii de admitere."
+        }
+      ]
+    },
+    {
+      "id": "raporturi-logice",
+      "title": "Analiza raporturilor logice între termeni",
+      "intro": "Diagramele Euler vizualizează relațiile de sferă și transformă abstracția într-o imagine ușor de controlat.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Identitate: extensiunile coincid complet, ca în „om” și „ființă rațională”.",
+            "Ordonare (subordonare): un termen este inclus complet în altul, ca „triunghi” în „poligon”.",
+            "Încrucișare: două clase au o parte comună și părți proprii, ca „elev” și „sportiv”.",
+            "Contrarietate: termenii se exclud, dar permit o a treia variantă, ca „alb” și „negru”.",
+            "Contradicție: termenii epuizează universul de discurs, ca „legal” și „ilegal”."
+          ]
+        },
+        {
+          "type": "image",
+          "asset": "lesson-1/euler-guide.jpeg",
+          "alt": "Ghid vizual pentru diagrame Euler și relațiile dintre termeni și propoziții categorice",
+          "caption": "Imagine extrasă local din curs: relațiile dintre termeni și formele propozițiilor categorice pot fi înțelese vizual.",
+          "interactiveTitle": "Explorează diagrama Euler din curs",
+          "helpText": "Marcajele evidențiază zonele care fixează raporturile dintre termeni și legătura lor cu propozițiile categorice.",
+          "hotspots": [
+            {
+              "label": "Raporturi între termeni",
+              "x": 28,
+              "y": 28,
+              "text": "Partea stângă sintetizează identitatea, subordonarea, încrucișarea, contrarietatea și contradicția. Aici vezi exact ce tip de raport trebuie recunoscut între două noțiuni."
+            },
+            {
+              "label": "Formele A, E, I, O",
+              "x": 74,
+              "y": 29,
+              "text": "Partea dreaptă traduce vizual propozițiile categorice: incluziune pentru A, separare pentru E, intersecție pentru I și excludere parțială pentru O."
+            },
+            {
+              "label": "Aplicația practică",
+              "x": 74,
+              "y": 78,
+              "text": "Zona de jos explică de ce diagrama Euler este utilă: simplifică abstracțiile și ajută la verificarea rapidă a validității."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "title": "Trecerea spre lecțiile următoare",
+          "text": "Stăpânirea acestor fundamente reprezintă premisa obligatorie pentru studiul propozițiilor categorice, al silogismului și al logicii propoziționale."
+        }
+      ]
+    }
+  ]
+}

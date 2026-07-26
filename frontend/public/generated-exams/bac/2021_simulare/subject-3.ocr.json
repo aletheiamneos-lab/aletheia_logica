@@ -1,0 +1,344 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1614.289794921875,
+      "y": 230.78680419921875,
+      "score": 0.991325980424881,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1236.477294921875,
+      "y": 291.7994079589844,
+      "score": 0.9721372520669977,
+      "page_number": 3
+    },
+    {
+      "text": "Y: Daca unele speci pe cale de disparitie sunt protejate de lege, atunci unele specii pe cale de",
+      "x": 451.789794921875,
+      "y": 371.3810729980469,
+      "score": 0.9517930348714193,
+      "page_number": 3
+    },
+    {
+      "text": "disparitienusuntneprotejatedelege.",
+      "x": 369.8863830566406,
+      "y": 456.2681579589844,
+      "score": 0.9940330877023584,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind dela aceasta situatie:",
+      "x": 425.36932373046875,
+      "y": 530.5443725585938,
+      "score": 0.9514706710974375,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 538.977294921875,
+      "y": 612.7787475585938,
+      "score": 0.9908583186707407,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 2996.07958984375,
+      "y": 612.7787475585938,
+      "score": 0.9965938031673431,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelorformalizate; 2puncte",
+      "x": 536.3352661132812,
+      "y": 689.7077026367188,
+      "score": 0.9768184132196687,
+      "page_number": 3
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.2 puncte",
+      "x": 536.3352661132812,
+      "y": 769.2893676757812,
+      "score": 0.982220823791894,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.6022644042969,
+      "y": 997.4234008789062,
+      "score": 0.8965538574589623,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2887.755615234375,
+      "y": 994.7706909179688,
+      "score": 0.9783337201390948,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele doua moduri silogistice: eio-3, iai-4.",
+      "x": 364.6022644042969,
+      "y": 1079.6578369140625,
+      "score": 0.968237175473145,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.789794921875,
+      "y": 1159.239501953125,
+      "score": 0.9888050653364348,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 454.43182373046875,
+      "y": 1238.8211669921875,
+      "score": 0.9884866663943166,
+      "page_number": 3
+    },
+    {
+      "text": "scheme de inferenta.",
+      "x": 454.43182373046875,
+      "y": 1315.75,
+      "score": 0.9828843802213669,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3043.636474609375,
+      "y": 1323.708251953125,
+      "score": 0.9805614501237869,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.1477355957031,
+      "y": 1392.678955078125,
+      "score": 0.990645367689807,
+      "page_number": 3
+    },
+    {
+      "text": "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+      "x": 454.43182373046875,
+      "y": 1474.913330078125,
+      "score": 0.992111150784926,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3040.994384765625,
+      "y": 1477.5660400390625,
+      "score": 0.9980603009462357,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, cu premise adevarate,",
+      "x": 364.6022644042969,
+      "y": 1549.1895751953125,
+      "score": 0.9859121719610344,
+      "page_number": 3
+    },
+    {
+      "text": "prin care sa justificati propozitia “Unele programe informatice sunt utilizate fara licenta\"",
+      "x": 451.789794921875,
+      "y": 1631.4239501953125,
+      "score": 0.9733882462200911,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3051.5625,
+      "y": 1711.005615234375,
+      "score": 0.9887899160385132,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Niciun sportiv de performanta nu este lenes, pentru ca niciun om lenes",
+      "x": 367.24432373046875,
+      "y": 1782.629150390625,
+      "score": 0.9695564072156689,
+      "page_number": 3
+    },
+    {
+      "text": "nu participa la antrenamente sustinute,in timp ce toti sportivii de performanta participa la",
+      "x": 454.43182373046875,
+      "y": 1864.863525390625,
+      "score": 0.944659574524216,
+      "page_number": 3
+    },
+    {
+      "text": "antrenamentesustinute.",
+      "x": 454.43182373046875,
+      "y": 1944.4451904296875,
+      "score": 0.99638986045664,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 361.9602355957031,
+      "y": 2018.7213134765625,
+      "score": 0.9864093873760488,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 359.31817626953125,
+      "y": 2095.650390625,
+      "score": 0.9719776727613949,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenulmediuestedistribuitinambelepremise.",
+      "x": 449.1477355957031,
+      "y": 2177.884765625,
+      "score": 0.988994468583001,
+      "page_number": 3
+    },
+    {
+      "text": "2. Predicatul logic al concluziei este reprezentat de termenul ,sportiv de performanta \"",
+      "x": 451.789794921875,
+      "y": 2257.46630859375,
+      "score": 0.9891399822451852,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala negativa.",
+      "x": 451.789794921875,
+      "y": 2337.048095703125,
+      "score": 0.9871213994920254,
+      "page_number": 3
+    },
+    {
+      "text": "4.Subiectul logic al concluzieieste distribuit si inpremisasi in concluzie.",
+      "x": 451.789794921875,
+      "y": 2413.976806640625,
+      "score": 0.9598983184496561,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3035.710205078125,
+      "y": 2413.976806640625,
+      "score": 0.9815422967076302,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fieurmatoarea definitie:",
+      "x": 364.6022644042969,
+      "y": 2490.90576171875,
+      "score": 0.9871784563247974,
+      "page_number": 3
+    },
+    {
+      "text": "Creionulesteuninstrumentdescris.",
+      "x": 457.0738830566406,
+      "y": 2570.487548828125,
+      "score": 0.9857462476938963,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.",
+      "x": 454.43182373046875,
+      "y": 2652.721923828125,
+      "score": 0.9870284786147456,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3051.5625,
+      "y": 2650.069091796875,
+      "score": 0.9439306855201721,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 449.1477355957031,
+      "y": 2726.998046875,
+      "score": 0.9697141778469086,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,creion\".",
+      "x": 583.8920288085938,
+      "y": 2809.232421875,
+      "score": 0.9761686891317367,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3019.85791015625,
+      "y": 2806.579833984375,
+      "score": 0.9993261247873306,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 361.9602355957031,
+      "y": 4957.93701171875,
+      "score": 0.9806681129397178,
+      "page_number": 3
+    },
+    {
+      "text": "Simulare",
+      "x": 3107.04541015625,
+      "y": 4965.8955078125,
+      "score": 0.9985899776220322,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1680.3409423828125,
+      "y": 5026.908203125,
+      "score": 0.9542840719223022,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "Y: Daca unele speci pe cale de disparitie sunt protejate de lege, atunci unele specii pe cale de",
+    "disparitienusuntneprotejatedelege.",
+    "Pornind dela aceasta situatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelorformalizate; 2puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30 de puncte)",
+    "A.Fie urmatoarele doua moduri silogistice: eio-3, iai-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme de inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, cu premise adevarate,",
+    "prin care sa justificati propozitia “Unele programe informatice sunt utilizate fara licenta\"",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Niciun sportiv de performanta nu este lenes, pentru ca niciun om lenes",
+    "nu participa la antrenamente sustinute,in timp ce toti sportivii de performanta participa la",
+    "antrenamentesustinute.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenulmediuestedistribuitinambelepremise.",
+    "2. Predicatul logic al concluziei este reprezentat de termenul ,sportiv de performanta \"",
+    "3. Concluzia silogismului este o propozitie universala negativa.",
+    "4.Subiectul logic al concluzieieste distribuit si inpremisasi in concluzie.",
+    "4 puncte",
+    "D.Fieurmatoarea definitie:",
+    "Creionulesteuninstrumentdescris.",
+    "a.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.",
+    "2 puncte",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,creion\".",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Simulare",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nY: Daca unele speci pe cale de disparitie sunt protejate de lege, atunci unele specii pe cale de\ndisparitienusuntneprotejatedelege.\nPornind dela aceasta situatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelorformalizate; 2puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.2 puncte\nSUBIECTULalIII-lea\n(30 de puncte)\nA.Fie urmatoarele doua moduri silogistice: eio-3, iai-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme de inferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogisticedate,precizandtotodatadecizialacareatiajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, cu premise adevarate,\nprin care sa justificati propozitia “Unele programe informatice sunt utilizate fara licenta\"\n6 puncte\nC. Fie urmatorul silogism: Niciun sportiv de performanta nu este lenes, pentru ca niciun om lenes\nnu participa la antrenamente sustinute,in timp ce toti sportivii de performanta participa la\nantrenamentesustinute.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenulmediuestedistribuitinambelepremise.\n2. Predicatul logic al concluziei este reprezentat de termenul ,sportiv de performanta \"\n3. Concluzia silogismului este o propozitie universala negativa.\n4.Subiectul logic al concluzieieste distribuit si inpremisasi in concluzie.\n4 puncte\nD.Fieurmatoarea definitie:\nCreionulesteuninstrumentdescris.\na.Mentionatioreguladecorectitudinepecareoincalcadefinitiadata.\n2 puncte\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,creion\".\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nSimulare\nPagina 3 din 3"
+}

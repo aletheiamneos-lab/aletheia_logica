@@ -1,0 +1,357 @@
+{
+  "test_name": "Test Logica Set 7",
+  "subject": "Logica",
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții respectă regula genului proxim și a diferenței specifice?",
+      "options": {
+        "A": "Dreptul este ceea ce este just",
+        "B": "Dreptul este un sistem de norme juridice coercitive",
+        "C": "Dreptul este legea",
+        "D": "Dreptul este ceea ce face statul",
+        "E": "Dreptul este ordinea"
+      },
+      "correct_answer": "B",
+      "justification": "Gen proxim + diferență specifică."
+    },
+    {
+      "id": 2,
+      "category": "Definitii",
+      "question": "Definiția „Profesorul este o persoană care predă în școală elevilor din clasele primare” este:",
+      "options": {
+        "A": "corectă",
+        "B": "prea largă",
+        "C": "prea restrânsă",
+        "D": "circulară",
+        "E": "metaforică"
+      },
+      "correct_answer": "C",
+      "justification": "Exclude alte niveluri."
+    },
+    {
+      "id": 3,
+      "category": "Definitii",
+      "question": "Care definiție încalcă regula non-metaforică?",
+      "options": {
+        "A": "Contractul este acord juridic",
+        "B": "Statul este instituție politică",
+        "C": "Justiția este balanța societății",
+        "D": "Legea este normă juridică",
+        "E": "Dreptul este sistem normativ"
+      },
+      "correct_answer": "C",
+      "justification": "Metaforică."
+    },
+    {
+      "id": 4,
+      "category": "Definitii",
+      "question": "Definiția „Avocatul este jurist” este:",
+      "options": {
+        "A": "corectă",
+        "B": "prea largă",
+        "C": "prea restrânsă",
+        "D": "circulară",
+        "E": "exactă"
+      },
+      "correct_answer": "B",
+      "justification": "Nu diferențiază."
+    },
+    {
+      "id": 5,
+      "category": "Definitii",
+      "question": "O definiție este validă doar dacă:",
+      "options": {
+        "A": "este scurtă",
+        "B": "este afirmativă",
+        "C": "este echivalentă ca extensiune",
+        "D": "este abstractă",
+        "E": "este negativă"
+      },
+      "correct_answer": "C",
+      "justification": "Regula adecvării."
+    },
+    {
+      "id": 6,
+      "category": "Clasificare",
+      "question": "Clasificarea „contracte: civile, comerciale și valabile” este:",
+      "options": {
+        "A": "corectă",
+        "B": "completă",
+        "C": "invalidă",
+        "D": "abstractă",
+        "E": "logică"
+      },
+      "correct_answer": "C",
+      "justification": "Criterii diferite."
+    },
+    {
+      "id": 7,
+      "category": "Clasificare",
+      "question": "Clasificarea „numere: naturale, întregi, raționale” este:",
+      "options": {
+        "A": "corectă",
+        "B": "incompletă",
+        "C": "cu suprapunere",
+        "D": "circulară",
+        "E": "contradictorie"
+      },
+      "correct_answer": "C",
+      "justification": "Suprapunere."
+    },
+    {
+      "id": 8,
+      "category": "Clasificare",
+      "question": "O clasificare este validă dacă:",
+      "options": {
+        "A": "clasele sunt independente",
+        "B": "clasele sunt exhaustive și disjuncte",
+        "C": "clasele sunt multe",
+        "D": "clasele sunt abstracte",
+        "E": "clasele sunt negative"
+      },
+      "correct_answer": "B",
+      "justification": "Regulă logică."
+    },
+    {
+      "id": 9,
+      "category": "Clasificare",
+      "question": "Clasificarea „persoane: minori / majori / pensionari” este:",
+      "options": {
+        "A": "corectă",
+        "B": "incompletă",
+        "C": "cu suprapunere",
+        "D": "contradictorie",
+        "E": "circulară"
+      },
+      "correct_answer": "C",
+      "justification": "Suprapunere."
+    },
+    {
+      "id": 10,
+      "category": "Clasificare",
+      "question": "Clasificarea „legi: organice și neconstituționale” este:",
+      "options": {
+        "A": "corectă",
+        "B": "incompletă",
+        "C": "invalidă",
+        "D": "completă",
+        "E": "corectă formal"
+      },
+      "correct_answer": "C",
+      "justification": "Criterii diferite."
+    },
+    {
+      "id": 11,
+      "category": "Propozitii",
+      "question": "Care este obversa propoziției „Toți studenții sunt promovați”?",
+      "options": {
+        "A": "Niciun student nu este promovat",
+        "B": "Niciun student nu este nepromovat",
+        "C": "Unii studenți nu sunt promovați",
+        "D": "Toți studenții nu sunt promovați",
+        "E": "Unii studenți sunt nepromovați"
+      },
+      "correct_answer": "B",
+      "justification": "Obversiune corectă."
+    },
+    {
+      "id": 12,
+      "category": "Propozitii",
+      "question": "Care este conversa corectă a propoziției „Niciun medic nu este avocat”?",
+      "options": {
+        "A": "Toți avocații sunt non-medici",
+        "B": "Niciun avocat nu este medic",
+        "C": "Unii avocați nu sunt medici",
+        "D": "Toți medicii nu sunt avocați",
+        "E": "Unii medici nu sunt avocați"
+      },
+      "correct_answer": "B",
+      "justification": "Conversiune simplă."
+    },
+    {
+      "id": 13,
+      "category": "Propozitii",
+      "question": "Contrapozitiva propoziției „Toți S sunt P” este:",
+      "options": {
+        "A": "Toți non-S sunt non-P",
+        "B": "Toți non-P sunt non-S",
+        "C": "Niciun P nu este S",
+        "D": "Unii non-P nu sunt non-S",
+        "E": "Toți P sunt S"
+      },
+      "correct_answer": "B",
+      "justification": "Contrapozitivă."
+    },
+    {
+      "id": 14,
+      "category": "Propozitii",
+      "question": "În propoziția „Unii S nu sunt P”, termenul distribuit este:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "ambele",
+        "D": "niciunul",
+        "E": "variabil"
+      },
+      "correct_answer": "B",
+      "justification": "P distribuit."
+    },
+    {
+      "id": 15,
+      "category": "Propozitii",
+      "question": "Dacă propoziția E este adevărată, atunci propoziția A este:",
+      "options": {
+        "A": "adevărată",
+        "B": "falsă",
+        "C": "nedeterminată",
+        "D": "contradictorie",
+        "E": "posibilă"
+      },
+      "correct_answer": "B",
+      "justification": "Contrare."
+    },
+    {
+      "id": 16,
+      "category": "Silogisme",
+      "question": "Care dintre următoarele este un silogism valid?",
+      "options": {
+        "A": "MaP, SaM ⇒ SaP",
+        "B": "MeP, SaM ⇒ SiP",
+        "C": "MaP, MeS ⇒ SoP",
+        "D": "MeP, SaM ⇒ SoP",
+        "E": "MiP, SaM ⇒ SiP"
+      },
+      "correct_answer": "D",
+      "justification": "EIO valid."
+    },
+    {
+      "id": 17,
+      "category": "Silogisme",
+      "question": "Eroarea în silogismul dat este:",
+      "options": {
+        "A": "generalizare",
+        "B": "echivocație",
+        "C": "termen mediu nedistribuit",
+        "D": "contradicție",
+        "E": "inducție"
+      },
+      "correct_answer": "C",
+      "justification": "M nedistribuit."
+    },
+    {
+      "id": 18,
+      "category": "Silogisme",
+      "question": "Dacă o premisă este negativă, concluzia:",
+      "options": {
+        "A": "afirmativă",
+        "B": "negativă",
+        "C": "universală",
+        "D": "nu există",
+        "E": "particulară"
+      },
+      "correct_answer": "B",
+      "justification": "Regulă."
+    },
+    {
+      "id": 19,
+      "category": "Silogisme",
+      "question": "Dacă termenul mediu nu este distribuit:",
+      "options": {
+        "A": "valid",
+        "B": "invalid",
+        "C": "universal",
+        "D": "negativ",
+        "E": "nu contează"
+      },
+      "correct_answer": "B",
+      "justification": "Eroare."
+    },
+    {
+      "id": 20,
+      "category": "Silogisme",
+      "question": "În pătratul logic, relația dintre I și O este:",
+      "options": {
+        "A": "contrare",
+        "B": "contradictorii",
+        "C": "subcontrare",
+        "D": "subalterne",
+        "E": "identice"
+      },
+      "correct_answer": "C",
+      "justification": "Subcontrare."
+    },
+    {
+      "id": 21,
+      "category": "Erori",
+      "question": "„Ai promovat, deci ai învățat” este:",
+      "options": {
+        "A": "deducție validă",
+        "B": "afirmarea consecinței",
+        "C": "negarea antecedentului",
+        "D": "analogie",
+        "E": "inducție"
+      },
+      "correct_answer": "B",
+      "justification": "Fallacy."
+    },
+    {
+      "id": 22,
+      "category": "Erori",
+      "question": "„Strada e udă, deci a plouat” este:",
+      "options": {
+        "A": "analogie",
+        "B": "afirmarea consecinței",
+        "C": "negarea antecedentului",
+        "D": "inducție",
+        "E": "echivocație"
+      },
+      "correct_answer": "B",
+      "justification": "Fallacy."
+    },
+    {
+      "id": 23,
+      "category": "Erori",
+      "question": "„Nu plouă, deci strada nu e udă” este:",
+      "options": {
+        "A": "afirmarea consecinței",
+        "B": "negarea antecedentului",
+        "C": "analogie",
+        "D": "deducție",
+        "E": "inducție"
+      },
+      "correct_answer": "B",
+      "justification": "Fallacy."
+    },
+    {
+      "id": 24,
+      "category": "Erori",
+      "question": "Echivocația apare când:",
+      "options": {
+        "A": "sensuri diferite",
+        "B": "sens unic",
+        "C": "abstract",
+        "D": "concret",
+        "E": "logic"
+      },
+      "correct_answer": "A",
+      "justification": "Ambiguitate."
+    },
+    {
+      "id": 25,
+      "category": "Erori",
+      "question": "Distribuirea ilegală apare când:",
+      "options": {
+        "A": "termen distribuit în premise",
+        "B": "termen distribuit doar în concluzie",
+        "C": "termen singular",
+        "D": "termen abstract",
+        "E": "termen corect"
+      },
+      "correct_answer": "B",
+      "justification": "Extindere ilegală."
+    }
+  ]
+}

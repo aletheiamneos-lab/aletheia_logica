@@ -1,0 +1,382 @@
+{
+  "id": "bac_logica_2016_v10",
+  "title": "BAC Logică 2016 - Varianta 10",
+  "year": 2016,
+  "variant": "Varianta 10",
+  "mode": "exam",
+  "student_visible": true,
+  "teacher_solution_visibility": "teacher_only",
+  "source_files": {
+    "subject_pdf": "Examenul de bacalaureat național 2016_V10.pdf",
+    "barem_pdf": "Examenul de bacalaureat național 2016_V10_BAREM.pdf"
+  },
+  "scoring": {
+    "total": 100,
+    "oficiu": 10,
+    "exam_points": 90
+  },
+  "notes": [
+    "Examenul elevului nu conține răspunsuri sau explicații de barem.",
+    "Răspunsurile profesorului sunt separate în teacher_solution_BACKEND.json.",
+    "Itemii cu desen/diagramă au diagramId pentru randare sau upload ulterior."
+  ],
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "I.1",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Procesul de demonstrare reprezintă:",
+          "options": {
+            "a": "teza din care conchidem fundamentul demonstrației",
+            "b": "propoziția pe care urmează să o argumentăm",
+            "c": "definițiile termenilor din componența demonstrației",
+            "d": "raționamentul prin care deducem teza din premise"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.2",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "După numărul premiselor din care se obține concluzia, inferențele deductive pot fi:",
+          "options": {
+            "a": "deductive și inductive",
+            "b": "valide și nevalide",
+            "c": "mediate și imediate",
+            "d": "generale și particulare"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.3",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenii Asia și Europa ca specii ale genului continent se află în raport de:",
+          "options": {
+            "a": "încrucișare",
+            "b": "contrarietate",
+            "c": "contradicție",
+            "d": "ordonare"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.4",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Predicatul logic al propoziției «Toți infractorii sunt pedepsiți de lege» este:",
+          "options": {
+            "a": "sunt",
+            "b": "sunt pedepsiți",
+            "c": "pedepsiți de lege",
+            "d": "lege"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.5",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Erorile formale se produc atunci când:",
+          "options": {
+            "a": "argumentul este ambiguu din punct de vedere sintactic",
+            "b": "întemeierea concluziei se face prin apel la forță",
+            "c": "se încalcă regulile de validitate ale inferențelor deductive",
+            "d": "se argumentează că propoziția este adevărată pentru că este adevărată"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.6",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenul generos este din punct de vedere intensional:",
+          "options": {
+            "a": "general, vid, compus, pozitiv",
+            "b": "simplu, relativ, pozitiv, concret",
+            "c": "nevid, general, simplu, absolut",
+            "d": "pozitiv, concret, absolut, simplu"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.7",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Trecerea de la un număr determinat de cazuri la toate cazurile este definitorie pentru:",
+          "options": {
+            "a": "raționamentul deductiv imediat",
+            "b": "raționamentul deductiv mediat",
+            "c": "inducția incompletă",
+            "d": "silogism"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.8",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Concluzia inducției complete, din punct de vedere al valorii de adevăr, este:",
+          "options": {
+            "a": "certă",
+            "b": "probabilă",
+            "c": "incertă",
+            "d": "abstractă"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.9",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Dacă termenului gest spontan i se elimină proprietatea spontan, atunci:",
+          "options": {
+            "a": "crește intensiunea termenului și extensiunea scade",
+            "b": "intensiunea termenului scade și extensiunea crește",
+            "c": "crește atât extensiunea termenului cât și intensiunea acestuia",
+            "d": "intensiunea și extensiunea termenului scad"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.10",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Propoziția «Unele fotografii nu sunt prelucrate pe calculator» este:",
+          "options": {
+            "a": "universală afirmativă",
+            "b": "particulară negativă",
+            "c": "particulară afirmativă",
+            "d": "universală negativă"
+          },
+          "answer_visible_to_student": false
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "intro": "Se dau următoarele propoziții: 1. Unele situații de viață sunt provocatoare. 2. Unele greșeli nu sunt intenționate. 3. Niciun om cinstit nu este mincinos. 4. Toți judecătorii sunt persoane responsabile.",
+      "items": [
+        {
+          "id": "II.A",
+          "type": "text_input",
+          "points": 2,
+          "prompt": "Precizați formula propoziției 4.",
+          "placeholder": "Exemplu de structură: SaP / SeP / SiP / SoP, în funcție de cantitate și calitate."
+        },
+        {
+          "id": "II.B",
+          "type": "structured_text_inputs",
+          "points": 6,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subcontrara propoziției 1 și supraalterna propoziției 2.",
+          "fields": [
+            {
+              "key": "formal_subcontrara_p1",
+              "label": "Subcontrara propoziției 1 - limbaj formal",
+              "placeholder": "Exemplu: SoP"
+            },
+            {
+              "key": "natural_subcontrara_p1",
+              "label": "Subcontrara propoziției 1 - limbaj natural",
+              "placeholder": "Exemplu: Unele S nu sunt P."
+            },
+            {
+              "key": "formal_supraalterna_p2",
+              "label": "Supraalterna propoziției 2 - limbaj formal",
+              "placeholder": "Exemplu: SeP"
+            },
+            {
+              "key": "natural_supraalterna_p2",
+              "label": "Supraalterna propoziției 2 - limbaj natural",
+              "placeholder": "Exemplu: Niciun S nu este P."
+            }
+          ]
+        },
+        {
+          "id": "II.C",
+          "type": "structured_text_inputs",
+          "points": 10,
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+          "fields": [
+            {
+              "key": "conv_p1_formal",
+              "label": "Conversa propoziției 1 - formal",
+              "placeholder": "Exemplu: PiS"
+            },
+            {
+              "key": "conv_p1_natural",
+              "label": "Conversa propoziției 1 - natural",
+              "placeholder": "Exemplu: Unele P sunt S."
+            },
+            {
+              "key": "obv_p1_formal",
+              "label": "Obversa propoziției 1 - formal",
+              "placeholder": "Exemplu: So~P"
+            },
+            {
+              "key": "obv_p1_natural",
+              "label": "Obversa propoziției 1 - natural",
+              "placeholder": "Exemplu: Unele S nu sunt non-P."
+            },
+            {
+              "key": "conv_p4_formal",
+              "label": "Conversa propoziției 4 - formal",
+              "placeholder": "Exemplu: PiS, prin conversiune prin accident"
+            },
+            {
+              "key": "conv_p4_natural",
+              "label": "Conversa propoziției 4 - natural",
+              "placeholder": "Exemplu: Unele P sunt S."
+            },
+            {
+              "key": "obv_p4_formal",
+              "label": "Obversa propoziției 4 - formal",
+              "placeholder": "Exemplu: Se~P"
+            },
+            {
+              "key": "obv_p4_natural",
+              "label": "Obversa propoziției 4 - natural",
+              "placeholder": "Exemplu: Niciun S nu este non-P."
+            }
+          ]
+        },
+        {
+          "id": "II.D",
+          "type": "diagram_euler",
+          "points": 4,
+          "prompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3: «Niciun om cinstit nu este mincinos».",
+          "diagramId": "euler_II_D_2016_v10",
+          "student_tools": [
+            "draw_canvas",
+            "upload_image"
+          ],
+          "placeholder": "Desenează două cercuri separate: S = oameni cinstiți, P = mincinoși."
+        },
+        {
+          "id": "II.E",
+          "type": "structured_text_inputs",
+          "points": 8,
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă unii conducători auto nu sunt femei, atunci unele femei nu sunt conducători auto. Y: Dacă toate balenele sunt mamifere, atunci unele mamifere sunt balene. Pornind de la această situație, scrieți în limbaj formal opiniile celor doi elevi și explicați corectitudinea raționamentelor formalizate.",
+          "fields": [
+            {
+              "key": "x_formal",
+              "label": "Opinia elevului X - formal",
+              "placeholder": "Exemplu: SoP → PoS"
+            },
+            {
+              "key": "x_explanation",
+              "label": "Explicație X",
+              "placeholder": "Exemplu: Conversiune validă/nevalidă și motivul logic."
+            },
+            {
+              "key": "y_formal",
+              "label": "Opinia elevului Y - formal",
+              "placeholder": "Exemplu: SaP → PiS"
+            },
+            {
+              "key": "y_explanation",
+              "label": "Explicație Y",
+              "placeholder": "Exemplu: Conversiune validă/nevalidă și motivul logic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III.A",
+          "type": "structured_text_inputs_with_venn",
+          "points": 16,
+          "prompt": "Fie următoarele două moduri silogistice: eae-2, aai-1. Scrieți schema de inferență corespunzătoare fiecăruia, construiți în limbaj natural un silogism pentru una dintre scheme și verificați prin diagrame Venn validitatea oricărui mod.",
+          "diagramIds": [
+            "venn_III_A_eae2_2016_v10",
+            "venn_III_A_aai1_2016_v10"
+          ],
+          "fields": [
+            {
+              "key": "schema_eae2",
+              "label": "Schema eae-2",
+              "placeholder": "Exemplu: PeM / SaM / SeP"
+            },
+            {
+              "key": "schema_aai1",
+              "label": "Schema aai-1",
+              "placeholder": "Exemplu: MaP / SaM / SiP"
+            },
+            {
+              "key": "natural_syllogism",
+              "label": "Silogism în limbaj natural",
+              "placeholder": "Scrie două premise și concluzia, respectând una dintre scheme."
+            },
+            {
+              "key": "venn_decision",
+              "label": "Decizia pe baza diagramei Venn",
+              "placeholder": "Exemplu: mod valid / mod nevalid + motiv scurt."
+            }
+          ]
+        },
+        {
+          "id": "III.B",
+          "type": "structured_text_inputs",
+          "points": 8,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția «Toate faptele bune sunt admirate»."
+        },
+        {
+          "id": "III.C",
+          "type": "structured_text_inputs",
+          "points": 12,
+          "prompt": "Fie următoarea definiție: «Istoria este știința care studiază evenimentele istorice». Menționați o regulă de corectitudine pe care o încalcă definiția, apoi enunțați două reguli diferite de cea identificată și construiți, pentru fiecare, câte o definiție care să le încalce.",
+          "fields": [
+            {
+              "key": "violated_rule",
+              "label": "Regula încălcată de definiția dată",
+              "placeholder": "Exemplu: definiția este circulară / folosește termenul definit."
+            },
+            {
+              "key": "rule_1",
+              "label": "Altă regulă de corectitudine 1",
+              "placeholder": "Exemplu: definiția trebuie să fie adecvată, nu prea largă/prea îngustă."
+            },
+            {
+              "key": "bad_definition_1",
+              "label": "Definiție care încalcă regula 1",
+              "placeholder": "Exemplu: Istoria este o disciplină foarte importantă."
+            },
+            {
+              "key": "rule_2",
+              "label": "Altă regulă de corectitudine 2",
+              "placeholder": "Exemplu: definiția nu trebuie să fie negativă, dacă poate fi afirmativă."
+            },
+            {
+              "key": "bad_definition_2",
+              "label": "Definiție care încalcă regula 2",
+              "placeholder": "Exemplu: Istoria nu este matematică."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "finalization": {
+    "button": "Finalizează testul",
+    "on_submit": [
+      "lock_answers",
+      "calculate_score_where_auto_gradable",
+      "generate_student_pdf",
+      "show_preview",
+      "allow_email_send",
+      "write_admin_report"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "slot": 2,
+  "nivel": "mediu",
+  "title": "Slot 2 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_2_mediu_card_1",
+      "front": "Dă un exemplu de termen absolut.",
+      "back": "„Zăpadă” este termen absolut, deoarece are sens de sine stătător."
+    },
+    {
+      "id": "slot_2_mediu_card_2",
+      "front": "Dă un exemplu de termen relativ.",
+      "back": "„Soț” este termen relativ, deoarece presupune relația cu altă persoană."
+    },
+    {
+      "id": "slot_2_mediu_card_3",
+      "front": "De ce „frumusețe” este termen abstract?",
+      "back": "Pentru că desemnează o însușire separată de obiectele frumoase."
+    },
+    {
+      "id": "slot_2_mediu_card_4",
+      "front": "De ce „om” este termen concret?",
+      "back": "Pentru că desemnează o realitate considerată ca obiect sau clasă de obiecte."
+    },
+    {
+      "id": "slot_2_mediu_card_5",
+      "front": "De ce „moral” este termen pozitiv?",
+      "back": "Pentru că indică prezența unei însușiri."
+    },
+    {
+      "id": "slot_2_mediu_card_6",
+      "front": "De ce „imoral” este termen negativ?",
+      "back": "Pentru că indică absența sau negarea unei însușiri."
+    },
+    {
+      "id": "slot_2_mediu_card_7",
+      "front": "De ce „manual de logică” este termen compus?",
+      "back": "Pentru că este alcătuit din mai multe elemente conceptuale."
+    },
+    {
+      "id": "slot_2_mediu_card_8",
+      "front": "De ce „pătrat rotund” este termen vid logic?",
+      "back": "Pentru că reunește proprietăți incompatibile logic."
+    },
+    {
+      "id": "slot_2_mediu_card_9",
+      "front": "De ce „balaur” este termen vid factual?",
+      "back": "Pentru că nu are obiecte reale, deși nu este contradictoriu logic."
+    },
+    {
+      "id": "slot_2_mediu_card_10",
+      "front": "De ce „Mihai Eminescu” este termen singular?",
+      "back": "Pentru că se referă la un singur obiect individual."
+    },
+    {
+      "id": "slot_2_mediu_card_11",
+      "front": "De ce „oraș” este termen general?",
+      "back": "Pentru că se aplică unei clase cu mai multe obiecte."
+    },
+    {
+      "id": "slot_2_mediu_card_12",
+      "front": "De ce „pădure” este termen colectiv?",
+      "back": "Pentru că desemnează ansamblul copacilor ca întreg."
+    },
+    {
+      "id": "slot_2_mediu_card_13",
+      "front": "De ce „pom” este termen distributiv?",
+      "back": "Pentru că proprietatea se aplică fiecărui membru al clasei."
+    },
+    {
+      "id": "slot_2_mediu_card_14",
+      "front": "De ce „pătrat” este termen precis?",
+      "back": "Pentru că are condiții clare de apartenență."
+    },
+    {
+      "id": "slot_2_mediu_card_15",
+      "front": "De ce „tânăr” este termen vag?",
+      "back": "Pentru că limitele aplicării sale nu sunt strict determinate."
+    },
+    {
+      "id": "slot_2_mediu_card_16",
+      "front": "Care este diferența dintre clasificare și diviziune?",
+      "back": "Clasificarea grupează obiecte, diviziunea descompune un gen în specii."
+    },
+    {
+      "id": "slot_2_mediu_card_17",
+      "front": "Care sunt elementele clasificării?",
+      "back": "Domeniul, criteriul și clasele rezultate."
+    },
+    {
+      "id": "slot_2_mediu_card_18",
+      "front": "Ce înseamnă omogenitatea clasificării?",
+      "back": "Elementele unei clase au asemănări relevante."
+    },
+    {
+      "id": "slot_2_mediu_card_19",
+      "front": "Care este diferența dintre calitate și cantitate?",
+      "back": "Calitatea: afirmativ/negativ; cantitatea: universal/particular."
+    },
+    {
+      "id": "slot_2_mediu_card_20",
+      "front": "De ce propoziția A este universal afirmativă?",
+      "back": "Se referă la toți S și afirmă includerea lor în P."
+    },
+    {
+      "id": "slot_2_mediu_card_21",
+      "front": "De ce propoziția E este universal negativă?",
+      "back": "Se referă la toți S și neagă raportul cu P."
+    },
+    {
+      "id": "slot_2_mediu_card_22",
+      "front": "De ce propoziția I este particular afirmativă?",
+      "back": "Afirmă că unii S sunt P."
+    },
+    {
+      "id": "slot_2_mediu_card_23",
+      "front": "De ce propoziția O este particular negativă?",
+      "back": "Afirmă că unii S nu sunt P."
+    },
+    {
+      "id": "slot_2_mediu_card_24",
+      "front": "Pentru ce propoziții este valabilă conversiunea simplă?",
+      "back": "Pentru E și I."
+    },
+    {
+      "id": "slot_2_mediu_card_25",
+      "front": "Ce este conversiunea prin accident?",
+      "back": "Transformă o universală într-o particulară pentru a păstra validitatea."
+    }
+  ]
+}

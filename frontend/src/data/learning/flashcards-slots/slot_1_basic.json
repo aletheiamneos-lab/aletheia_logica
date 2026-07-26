@@ -1,0 +1,134 @@
+{
+  "slot": 1,
+  "nivel": "basic",
+  "title": "Slot 1 - Basic",
+  "description": "Set complet de 25 flashcarduri pentru nivelul basic, strict pe materia de logică.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_1_basic_card_1",
+      "front": "Ce este logica?",
+      "back": "Logica este disciplina care studiază formele și regulile gândirii corecte."
+    },
+    {
+      "id": "slot_1_basic_card_2",
+      "front": "Care sunt formele fundamentale ale gândirii?",
+      "back": "Termenul, propoziția și raționamentul."
+    },
+    {
+      "id": "slot_1_basic_card_3",
+      "front": "Ce este termenul logic?",
+      "back": "Unitatea de bază a gândirii care exprimă o noțiune."
+    },
+    {
+      "id": "slot_1_basic_card_4",
+      "front": "Ce este propoziția logică?",
+      "back": "Un enunț care poate fi apreciat ca adevărat sau fals."
+    },
+    {
+      "id": "slot_1_basic_card_5",
+      "front": "Ce este raționamentul?",
+      "back": "Procesul logic prin care se obține o concluzie din una sau mai multe premise."
+    },
+    {
+      "id": "slot_1_basic_card_6",
+      "front": "Ce este principiul identității?",
+      "back": "Orice lucru este identic cu sine însuși, în același timp și sub același raport."
+    },
+    {
+      "id": "slot_1_basic_card_7",
+      "front": "Ce este principiul non-contradicției?",
+      "back": "O propoziție nu poate fi și adevărată, și falsă în același timp și sub același raport."
+    },
+    {
+      "id": "slot_1_basic_card_8",
+      "front": "Ce este principiul terțului exclus?",
+      "back": "O propoziție este fie adevărată, fie falsă, fără a treia posibilitate."
+    },
+    {
+      "id": "slot_1_basic_card_9",
+      "front": "Ce este principiul rațiunii suficiente?",
+      "back": "Orice afirmație trebuie să aibă un temei suficient."
+    },
+    {
+      "id": "slot_1_basic_card_10",
+      "front": "Ce este intensiunea unui termen?",
+      "back": "Totalitatea proprietăților sau notelor caracteristice ale unui termen."
+    },
+    {
+      "id": "slot_1_basic_card_11",
+      "front": "Ce este extensiunea unui termen?",
+      "back": "Totalitatea obiectelor la care se aplică un termen."
+    },
+    {
+      "id": "slot_1_basic_card_12",
+      "front": "Ce este definiția?",
+      "back": "Operația logică prin care se stabilește sensul exact al unei noțiuni."
+    },
+    {
+      "id": "slot_1_basic_card_13",
+      "front": "Ce este definitul?",
+      "back": "Termenul care urmează să fie explicat într-o definiție."
+    },
+    {
+      "id": "slot_1_basic_card_14",
+      "front": "Ce este definitorul?",
+      "back": "Expresia prin care se explică sensul termenului definit."
+    },
+    {
+      "id": "slot_1_basic_card_15",
+      "front": "Ce este clasificarea?",
+      "back": "Operația logică prin care o mulțime este împărțită în clase după un criteriu."
+    },
+    {
+      "id": "slot_1_basic_card_16",
+      "front": "Ce este criteriul clasificării?",
+      "back": "Proprietatea după care se face împărțirea în clase."
+    },
+    {
+      "id": "slot_1_basic_card_17",
+      "front": "Ce este o propoziție categorică?",
+      "back": "O propoziție care exprimă un raport între subiectul logic și predicatul logic."
+    },
+    {
+      "id": "slot_1_basic_card_18",
+      "front": "Care sunt elementele propoziției categorice?",
+      "back": "Cuantorul, subiectul, copula și predicatul."
+    },
+    {
+      "id": "slot_1_basic_card_19",
+      "front": "Ce înseamnă propoziția A?",
+      "back": "Universal afirmativă: Toți S sunt P."
+    },
+    {
+      "id": "slot_1_basic_card_20",
+      "front": "Ce înseamnă propoziția E?",
+      "back": "Universal negativă: Niciun S nu este P."
+    },
+    {
+      "id": "slot_1_basic_card_21",
+      "front": "Ce înseamnă propoziția I?",
+      "back": "Particular afirmativă: Unii S sunt P."
+    },
+    {
+      "id": "slot_1_basic_card_22",
+      "front": "Ce înseamnă propoziția O?",
+      "back": "Particular negativă: Unii S nu sunt P."
+    },
+    {
+      "id": "slot_1_basic_card_23",
+      "front": "Ce este distribuirea unui termen?",
+      "back": "Un termen este distribuit când se referă la toți membrii clasei sale."
+    },
+    {
+      "id": "slot_1_basic_card_24",
+      "front": "Ce este silogismul?",
+      "back": "Un raționament deductiv format din două premise și o concluzie."
+    },
+    {
+      "id": "slot_1_basic_card_25",
+      "front": "Ce este termenul mediu?",
+      "back": "Termenul care apare în premise, dar nu apare în concluzie."
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2023_v7",
+  "examId": "bac_logica_2023_v7",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2023 - Varianta 7",
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "answers": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "a",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "a",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Diagramă Euler și A/F",
+          "answers": [
+            {
+              "itemId": "I_B_1",
+              "correctAnswer": "Reprezentare Euler corectă conform raporturilor dintre M, N, O, P și Q.",
+              "points": 2,
+              "diagramSolution": {
+                "diagramId": "diagram_I_B_euler_terms_2023_v7",
+                "renderFromContract": true
+              },
+              "explanation": "Se respectă relațiile: M în opoziție cu N; O în opoziție cu M și încrucișat cu N; P supraordonat lui M, încrucișat cu N și în opoziție cu O; Q specie a lui N și încrucișat cu O și P."
+            },
+            {
+              "itemId": "I_B_2_a",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_b",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_c",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_d",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_e",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_f",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_g",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_B_2_h",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Răspuns conform baremului oficial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Pătratul logic",
+          "answers": [
+            {
+              "itemId": "II_A_1",
+              "correctAnswer": {
+                "formal": "SeP",
+                "natural": "Nicio acțiune admirabilă nu este faptă morală."
+              },
+              "points": 2,
+              "explanation": "Contrara propoziției SaP este SeP."
+            },
+            {
+              "itemId": "II_A_2",
+              "correctAnswer": {
+                "formal": "SoP",
+                "natural": "Unele poeme epice nu sunt scrieri scurte."
+              },
+              "points": 2,
+              "explanation": "Subalterna propoziției SeP este SoP."
+            },
+            {
+              "itemId": "II_A_3",
+              "correctAnswer": {
+                "formal": "SeP",
+                "natural": "Niciun filosof faimos nu este persoană inteligentă."
+              },
+              "points": 2,
+              "explanation": "Contradictoria propoziției SiP este SeP."
+            },
+            {
+              "itemId": "II_A_4",
+              "correctAnswer": {
+                "formal": "SiP",
+                "natural": "Unele evenimente sportive sunt experiențe memorabile."
+              },
+              "points": 2,
+              "explanation": "Subcontrara propoziției SoP este SiP."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "answers": [
+            {
+              "itemId": "II_B_prop2",
+              "correctAnswer": {
+                "conversaFormal": "PeS",
+                "conversaNatural": "Nicio scriere scurtă nu este poem epic.",
+                "obversaFormal": "Sa¬P",
+                "obversaNatural": "Toate poemele epice sunt non-scrieri scurte."
+              },
+              "points": 4,
+              "explanation": "Propoziția 2 este SeP; conversiunea simplă dă PeS, obversiunea dă Sa¬P."
+            },
+            {
+              "itemId": "II_B_prop3",
+              "correctAnswer": {
+                "conversaFormal": "PiS",
+                "conversaNatural": "Unele persoane inteligente sunt filosofi faimoși.",
+                "obversaFormal": "So¬P",
+                "obversaNatural": "Unii filosofi faimoși nu sunt persoane neinteligente."
+              },
+              "points": 4,
+              "explanation": "Propoziția 3 este SiP; conversiunea simplă dă PiS, obversiunea dă So¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "answers": [
+            {
+              "itemId": "II_C_1",
+              "correctAnswer": {
+                "formal": "¬PiS",
+                "natural": "Unele experiențe nememorabile sunt evenimente sportive."
+              },
+              "points": 3,
+              "explanation": "Din propoziția 4 SoP se construiește supraalterna SeP; obversa este Sa¬P, iar conversa prin accident este ¬PiS."
+            },
+            {
+              "itemId": "II_C_2",
+              "correctAnswer": {
+                "formal": "Si¬P",
+                "natural": "Unele acțiuni admirabile sunt non-fapte morale."
+              },
+              "points": 3,
+              "explanation": "Contradictoria lui SaP este SoP; obversa acesteia este Si¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "answers": [
+            {
+              "itemId": "II_D_X",
+              "correctAnswer": {
+                "formal": "SaP→PaS",
+                "verdict": "raționament incorect / conversiune nevalidă",
+                "explanation": "Conversiunea propoziției A nu permite trecerea directă de la SaP la PaS; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+              },
+              "points": 4
+            },
+            {
+              "itemId": "II_D_Y",
+              "correctAnswer": {
+                "formal": "SoP→Si¬P",
+                "verdict": "raționament corect / obversiune validă"
+              },
+              "points": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Silogisme și Venn",
+          "answers": [
+            {
+              "itemId": "III_A_aai4_schema",
+              "correctAnswer": {
+                "majorPremise": "PaM",
+                "minorPremise": "MaS",
+                "conclusion": "SiP"
+              },
+              "points": 2
+            },
+            {
+              "itemId": "III_A_oao2_schema",
+              "correctAnswer": {
+                "majorPremise": "PoM",
+                "minorPremise": "MaS",
+                "conclusion": "SoP"
+              },
+              "points": 2
+            },
+            {
+              "itemId": "III_A_natural",
+              "correctAnswer": "Exemplu pentru aai-4: Toți poeții sunt artiști. Toți artiștii sunt oameni creativi. Prin urmare, unii oameni creativi sunt poeți.",
+              "points": 4
+            },
+            {
+              "itemId": "III_A_aai4_venn",
+              "correctAnswer": {
+                "validityDecision": "valid",
+                "explanation": "Modul aai-4 este valid conform baremului."
+              },
+              "diagramSolution": {
+                "diagramId": "diagram_III_A_aai4_venn_2023_v7",
+                "renderFromContract": true
+              },
+              "points": 4
+            },
+            {
+              "itemId": "III_A_oao2_venn",
+              "correctAnswer": {
+                "validityDecision": "invalid",
+                "explanation": "Modul oao-2 este nevalid conform baremului."
+              },
+              "diagramSolution": {
+                "diagramId": "diagram_III_A_oao2_venn_2023_v7",
+                "renderFromContract": true
+              },
+              "points": 4
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid construit",
+          "answers": [
+            {
+              "itemId": "III_B_formal",
+              "correctAnswer": {
+                "majorPremise": "MeP",
+                "minorPremise": "SaM",
+                "conclusion": "SeP"
+              },
+              "points": 3,
+              "explanation": "Exemplu de mod valid eae-1."
+            },
+            {
+              "itemId": "III_B_natural",
+              "correctAnswer": "Nicio persoană extravertită nu este introvertită. Toate persoanele cu temperament coleric sunt persoane extravertite. Prin urmare, nicio persoană cu temperament coleric nu este introvertită.",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. A/F",
+          "answers": [
+            {
+              "itemId": "III_C_1",
+              "correctAnswer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "III_C_2",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "III_C_3",
+              "correctAnswer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "III_C_4",
+              "correctAnswer": "F",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "answers": [
+            {
+              "itemId": "III_D_a",
+              "correctAnswer": "Definiția încalcă regula clarității și preciziei / evitarea limbajului figurat, deoarece folosește expresia metaforică „uimitoarea doctorie a naturii”.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_b",
+              "correctAnswer": "Exemplu de altă regulă: evitarea circularității / adecvarea definiției / forma afirmativă.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_c",
+              "correctAnswer": "Exemplu care încalcă circularitatea: „Ghimbirul este planta numită ghimbir.”",
+              "points": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "slot": 7,
+  "nivel": "basic",
+  "title": "Slot 7 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic, pe argumentare și sofisme.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_7_basic_card_1",
+      "front": "Ce este argumentarea?",
+      "back": "Argumentarea este procesul prin care o teză este susținută prin temeiuri și raționamente."
+    },
+    {
+      "id": "slot_7_basic_card_2",
+      "front": "Ce este teza într-un argument?",
+      "back": "Teza este ideea principală care trebuie susținută sau demonstrată."
+    },
+    {
+      "id": "slot_7_basic_card_3",
+      "front": "Ce este premisa într-un argument?",
+      "back": "Premisa este o afirmație folosită ca sprijin pentru concluzie."
+    },
+    {
+      "id": "slot_7_basic_card_4",
+      "front": "Ce este concluzia într-un argument?",
+      "back": "Concluzia este afirmația susținută de premise."
+    },
+    {
+      "id": "slot_7_basic_card_5",
+      "front": "Ce este susținerea logică?",
+      "back": "Susținerea logică este legătura prin care premisele oferă temei pentru concluzie."
+    },
+    {
+      "id": "slot_7_basic_card_6",
+      "front": "Ce este un argument valid?",
+      "back": "Un argument valid are o formă în care concluzia rezultă corect din premise."
+    },
+    {
+      "id": "slot_7_basic_card_7",
+      "front": "Ce este un argument nevalid?",
+      "back": "Un argument nevalid are o formă în care concluzia nu rezultă corect din premise."
+    },
+    {
+      "id": "slot_7_basic_card_8",
+      "front": "Ce este un argument solid?",
+      "back": "Un argument solid este valid și are premise adevărate."
+    },
+    {
+      "id": "slot_7_basic_card_9",
+      "front": "Ce este un argument slab?",
+      "back": "Un argument slab susține concluzia insuficient sau defectuos."
+    },
+    {
+      "id": "slot_7_basic_card_10",
+      "front": "Ce este demonstrația?",
+      "back": "Demonstrația este o formă de argumentare prin care o teză este dovedită riguros."
+    },
+    {
+      "id": "slot_7_basic_card_11",
+      "front": "Ce este demonstrația directă?",
+      "back": "Demonstrația directă pornește de la premise acceptate și ajunge la concluzie prin pași expliciți."
+    },
+    {
+      "id": "slot_7_basic_card_12",
+      "front": "Ce este demonstrația indirectă?",
+      "back": "Demonstrația indirectă arată că negarea tezei duce la contradicție."
+    },
+    {
+      "id": "slot_7_basic_card_13",
+      "front": "Ce este reducerea la absurd?",
+      "back": "Reducerea la absurd este o demonstrație indirectă bazată pe consecințele contradictorii ale ipotezei opuse."
+    },
+    {
+      "id": "slot_7_basic_card_14",
+      "front": "Ce este entimema?",
+      "back": "Entimema este un raționament în care una dintre premise sau concluzia este subînțeleasă."
+    },
+    {
+      "id": "slot_7_basic_card_15",
+      "front": "Ce este soritul?",
+      "back": "Soritul este un lanț de silogisme în care concluziile intermediare sunt omise."
+    },
+    {
+      "id": "slot_7_basic_card_16",
+      "front": "Ce este polisilogismul?",
+      "back": "Polisilogismul este o succesiune de silogisme legate între ele."
+    },
+    {
+      "id": "slot_7_basic_card_17",
+      "front": "Ce este epicherema?",
+      "back": "Epicherema este un silogism în care una sau ambele premise sunt însoțite de justificări."
+    },
+    {
+      "id": "slot_7_basic_card_18",
+      "front": "Ce este dilema logică?",
+      "back": "Dilema este un argument care pornește de la alternative și arată consecințele fiecăreia."
+    },
+    {
+      "id": "slot_7_basic_card_19",
+      "front": "Ce este falsa dilemă?",
+      "back": "Falsa dilemă limitează nejustificat opțiunile la două variante."
+    },
+    {
+      "id": "slot_7_basic_card_20",
+      "front": "Ce este sofismul?",
+      "back": "Sofismul este o eroare de raționare care pare convingătoare."
+    },
+    {
+      "id": "slot_7_basic_card_21",
+      "front": "Ce este paralogismul?",
+      "back": "Paralogismul este o eroare de raționare făcută fără intenția de a înșela."
+    },
+    {
+      "id": "slot_7_basic_card_22",
+      "front": "Ce este sofismul de limbaj?",
+      "back": "Sofismul de limbaj apare din ambiguitatea sau folosirea incorectă a expresiilor."
+    },
+    {
+      "id": "slot_7_basic_card_23",
+      "front": "Ce este sofismul de relevanță?",
+      "back": "Sofismul de relevanță apare când argumentul nu susține de fapt teza discutată."
+    },
+    {
+      "id": "slot_7_basic_card_24",
+      "front": "Ce este sofismul de supoziție?",
+      "back": "Sofismul de supoziție apare când argumentul se sprijină pe o presupunere nejustificată."
+    },
+    {
+      "id": "slot_7_basic_card_25",
+      "front": "Ce este concluzia intermediară?",
+      "back": "Concluzia intermediară este o concluzie folosită apoi ca premisă într-un raționament mai amplu."
+    }
+  ]
+}

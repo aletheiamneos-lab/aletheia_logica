@@ -1,0 +1,772 @@
+{
+  "schemaVersion": "3.0",
+  "documentType": "bac_explained_resolution",
+  "examId": "bac_logica_2014_v10",
+  "title": "Modulul 4 - BAC 2014, Varianta 10 - Rezolvare explicata",
+  "purpose": "Pagina de rezolvare explicata, nu test. Elevul vede cerinta oficiala, contextul, raspunsul final, explicatia scurta si poate deschide pasii, baremul sau diagrama.",
+  "displayModes": [
+    {
+      "id": "step_by_step",
+      "label": "Rezolvare pas cu pas"
+    },
+    {
+      "id": "barem_explained",
+      "label": "Barem explicat"
+    }
+  ],
+  "uiGuidelines": {
+    "notATest": true,
+    "noInputFields": true,
+    "hideTechnicalLabels": true,
+    "layout": "Carduri aerisite, expandabile, grupate pe Subiectul I, II, III.",
+    "defaultOpenGroup": "I_A",
+    "showOfficialOptions": true,
+    "showMiniDiagramsWhenAvailable": true
+  },
+  "scoringSummary": {
+    "totalWithOfficePoints": 100,
+    "officePoints": 10,
+    "examPoints": 90,
+    "sections": {
+      "I": 30,
+      "II": 30,
+      "III": 30
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 18,
+          "cards": [
+            {
+              "id": "I_A_1",
+              "title": "1. Item grila",
+              "points": "3p",
+              "officialPrompt": "Daca termenului tort i se adauga proprietatea de ciocolata, atunci:",
+              "options": {
+                "a": "intensiunea termenului scade",
+                "b": "extensiunea termenului scade",
+                "c": "extensiunea termenului creste",
+                "d": "extensiunea termenului ramane neschimbata"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "b"
+              },
+              "shortResolution": "Raspuns corect: b. extensiunea termenului scade",
+              "finalAnswer": {
+                "letter": "b",
+                "text": "extensiunea termenului scade"
+              },
+              "shortExplanation": "Baremul indica varianta b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este b."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: extensiunea termenului scade."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta b.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_2",
+              "title": "2. Item grila",
+              "points": "3p",
+              "officialPrompt": "Termenul pisica este, dupa intensiune:",
+              "options": {
+                "a": "nevid",
+                "b": "general",
+                "c": "pozitiv",
+                "d": "sigur"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "c"
+              },
+              "shortResolution": "Raspuns corect: c. pozitiv",
+              "finalAnswer": {
+                "letter": "c",
+                "text": "pozitiv"
+              },
+              "shortExplanation": "Baremul indica varianta c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este c."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: pozitiv."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta c.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_3",
+              "title": "3. Item grila",
+              "points": "3p",
+              "officialPrompt": "Termenii stilou si creion sunt in raport de:",
+              "options": {
+                "a": "contrarietate",
+                "b": "ordonare",
+                "c": "contradictie",
+                "d": "identitate"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "a"
+              },
+              "shortResolution": "Raspuns corect: a. contrarietate",
+              "finalAnswer": {
+                "letter": "a",
+                "text": "contrarietate"
+              },
+              "shortExplanation": "Baremul indica varianta a.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este a."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: contrarietate."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta a.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_4",
+              "title": "4. Item grila",
+              "points": "3p",
+              "officialPrompt": "Propozitia 'Unele actiuni sunt corect apreciate' este:",
+              "options": {
+                "a": "universala afirmativa",
+                "b": "universala negativa",
+                "c": "particulara afirmativa",
+                "d": "particulara negativa"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "c"
+              },
+              "shortResolution": "Raspuns corect: c. particulara afirmativa",
+              "finalAnswer": {
+                "letter": "c",
+                "text": "particulara afirmativa"
+              },
+              "shortExplanation": "Baremul indica varianta c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este c."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: particulara afirmativa."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta c.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_5",
+              "title": "5. Item grila",
+              "points": "3p",
+              "officialPrompt": "Predicatul logic al propozitiei 'Unii oameni nu sunt optimisti din fire' este:",
+              "options": {
+                "a": "nu sunt optimisti din fire",
+                "b": "sunt optimisti din fire",
+                "c": "optimisti din fire",
+                "d": "optimisti"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "c"
+              },
+              "shortResolution": "Raspuns corect: c. optimisti din fire",
+              "finalAnswer": {
+                "letter": "c",
+                "text": "optimisti din fire"
+              },
+              "shortExplanation": "Baremul indica varianta c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este c."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: optimisti din fire."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta c.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_6",
+              "title": "6. Item grila",
+              "points": "3p",
+              "officialPrompt": "Propozitiile 'Toti elevii sunt inteligenti' si 'Unii elevi sunt inteligenti' se afla in raport de:",
+              "options": {
+                "a": "contradictie",
+                "b": "contrarietate",
+                "c": "subcontrarietate",
+                "d": "subalternare"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "d"
+              },
+              "shortResolution": "Raspuns corect: d. subalternare",
+              "finalAnswer": {
+                "letter": "d",
+                "text": "subalternare"
+              },
+              "shortExplanation": "Baremul indica varianta d.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este d."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: subalternare."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta d.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Scheme silogistice si diagrame Venn",
+          "points": 12,
+          "cards": [
+            {
+              "id": "I_B",
+              "title": "B. Scheme pentru aoo-2 si eao-4",
+              "points": "12p",
+              "officialPrompt": "Fie urmatoarele doua moduri silogistice: aoo-2, eao-4. Scrie schema de inferenta si verifica validitatea prin diagrame Venn.",
+              "context": [],
+              "notationBox": {
+                "type": "syllogism_schema",
+                "schema": {
+                  "aoo-2": "PaM / SoM / SoP",
+                  "eao-4": "PeM / MaS / SoP"
+                },
+                "mode": "aoo-2; eao-4"
+              },
+              "shortResolution": "Schemele corecte sunt PaM / SoM / SoP pentru aoo-2 si PeM / MaS / SoP pentru eao-4; ambele sunt valide.",
+              "finalAnswer": {
+                "answers": {
+                  "aoo-2": "PaM / SoM / SoP - valid",
+                  "eao-4": "PeM / MaS / SoP - valid"
+                },
+                "verdict": "aoo-2 valid; eao-4 valid"
+              },
+              "shortExplanation": "Schemele corecte sunt PaM / SoM / SoP pentru aoo-2 si PeM / MaS / SoP pentru eao-4; ambele sunt valide.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "aoo-2: PaM / SoM / SoP - valid. Schema corespunde modului aoo in figura a II-a; diagrama Venn confirma concluzia SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "eao-4: PeM / MaS / SoP - valid. Schema corespunde modului eao in figura a IV-a; diagrama Venn confirma concluzia SoP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Venn aoo-2: PaM / SoM / SoP - valid."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Venn eao-4: PeM / MaS / SoP - valid."
+                }
+              ],
+              "baremExplained": "Barem: schema de inferenta si verificarea validitatii prin diagrame Venn.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "venn_three_terms",
+                "caption": "Verificare Venn pentru modurile aoo-2 si eao-4.",
+                "xRegions": [
+                  "SoP"
+                ]
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul II",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "contextBlock": {
+        "title": "Propozitii date",
+        "items": [
+          "1. Unele rationamente nu sunt valide.",
+          "2. Toti producatorii sunt agenti economici.",
+          "3. Unii colegi sunt prieteni.",
+          "4. Nicio planeta nu este stea."
+        ]
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Formula propozitiei 3",
+          "points": 4,
+          "cards": [
+            {
+              "id": "II_A",
+              "title": "A. Formula propozitiei 3",
+              "points": "4p",
+              "officialPrompt": "Precizati formula propozitiei 3.",
+              "context": [],
+              "notationBox": {
+                "type": "categorical_formula",
+                "formal": "SiP"
+              },
+              "shortResolution": "Propozitia 3: 'Unii colegi sunt prieteni' este particulara afirmativa.",
+              "finalAnswer": {
+                "formal": "SiP"
+              },
+              "shortExplanation": "Propozitia 3: 'Unii colegi sunt prieteni' este particulara afirmativa.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 3: 'Unii colegi sunt prieteni' este particulara afirmativa."
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Subcontrara si contrara",
+          "points": 6,
+          "cards": [
+            {
+              "id": "II_B",
+              "title": "B. Subcontrara propozitiei 1 si contrara propozitiei 2",
+              "points": "6p",
+              "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 2.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Subcontrara propozitiei 1: SiP; Contrara propozitiei 2: SeP; Unele rationamente sunt valide.; Niciun producator nu este agent economic.",
+              "finalAnswer": {
+                "answers": {
+                  "formal": "Subcontrara propozitiei 1: SiP; Contrara propozitiei 2: SeP",
+                  "natural": "Unele rationamente sunt valide.; Niciun producator nu este agent economic."
+                }
+              },
+              "shortExplanation": "Subcontrara propozitiei 1: SiP; Contrara propozitiei 2: SeP; Unele rationamente sunt valide.; Niciun producator nu este agent economic.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Subcontrara propozitiei 1: SiP"
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Contrara propozitiei 2: SeP"
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Unele rationamente sunt valide."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Niciun producator nu este agent economic."
+                }
+              ],
+              "baremExplained": "Barem: 6p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune si obversiune",
+          "points": 10,
+          "cards": [
+            {
+              "id": "II_C",
+              "title": "C. Conversa si obversa propozitiilor 2 si 4",
+              "points": "10p",
+              "officialPrompt": "Aplicati conversiunea si obversiunea pentru propozitiile 2 si 4, in limbaj formal si natural.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Pentru propozitia 2 se aplica conversiunea si obversiunea; pentru propozitia 4 se aplica aceleasi operatii conform baremului.",
+              "finalAnswer": {
+                "answers": {
+                  "Propozitia 2": "conversa: PiS - Unii agenti economici sunt producatori.; obversa: Se non-P - Niciun producator nu este non-agent economic.",
+                  "Propozitia 4": "conversa: PeS - Nicio stea nu este planeta.; obversa: Sa non-P - Toate planetele sunt non-stele."
+                }
+              },
+              "shortExplanation": "Pentru propozitia 2 se aplica conversiunea si obversiunea; pentru propozitia 4 se aplica aceleasi operatii conform baremului.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 2 (SaP): PiS - Unii agenti economici sunt producatori.."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Propozitia 2 (SaP): Se non-P - Niciun producator nu este non-agent economic.."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Propozitia 4 (SeP): PeS - Nicio stea nu este planeta.."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Propozitia 4 (SeP): Sa non-P - Toate planetele sunt non-stele.."
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "operation_chain",
+                "nodes": [
+                  "propozitie data",
+                  "conversa",
+                  "obversa"
+                ],
+                "caption": "Cerintele aplica operatiile in limbaj formal si natural."
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Conversiune nevalida",
+          "points": 6,
+          "cards": [
+            {
+              "id": "II_D",
+              "title": "D. De ce propozitia 1 nu se converteste corect",
+              "points": "6p",
+              "officialPrompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa.",
+              "finalAnswer": {
+                "explanation": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa."
+              },
+              "shortExplanation": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa."
+                }
+              ],
+              "baremExplained": "Barem: 6p conform raspunsului indicat.",
+              "commonMistake": "A trata propozitia de tip O ca si cum ar avea conversiune valida.",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_E",
+          "title": "E. Diagrama Euler",
+          "points": 4,
+          "cards": [
+            {
+              "id": "II_E",
+              "title": "E. Reprezentarea Euler a propozitiei 4",
+              "points": "4p",
+              "officialPrompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 4.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea.",
+              "finalAnswer": {
+                "explanation": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea."
+              },
+              "shortExplanation": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "S = planete; P = stele."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Relatie: disjoint_circles."
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "venn2",
+                "labels": [
+                  "S",
+                  "P"
+                ],
+                "caption": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea."
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul III",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "groups": [
+        {
+          "id": "III_1",
+          "title": "1. Rationament valid",
+          "points": 4,
+          "cards": [
+            {
+              "id": "III_1",
+              "title": "1. Definitia rationamentului valid",
+              "points": "4p",
+              "officialPrompt": "Definiti conceptul de rationament valid.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa.",
+              "finalAnswer": {
+                "text": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa."
+              },
+              "shortExplanation": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa."
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_2",
+          "title": "2. Indicatori de concluzie",
+          "points": 6,
+          "cards": [
+            {
+              "id": "III_2",
+              "title": "2. Doi indicatori de concluzie",
+              "points": "6p",
+              "officialPrompt": "Mentionati doi indicatori de concluzie.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "asadar; deci",
+              "finalAnswer": {
+                "answers": [
+                  "asadar",
+                  "deci"
+                ]
+              },
+              "shortExplanation": "asadar; deci",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "asadar"
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "deci"
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Se accepta si: prin urmare, in concluzie, rezulta ca."
+                }
+              ],
+              "baremExplained": "Barem: doi indicatori corecti. Se accepta si: prin urmare, in concluzie, rezulta ca.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_3",
+          "title": "3. Argument valid cu doua premise",
+          "points": 10,
+          "cards": [
+            {
+              "id": "III_3",
+              "title": "3. Argument pentru concluzia data",
+              "points": "10p",
+              "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia 'Toti elevii care invata promoveaza examenul de bacalaureat'.",
+              "context": [],
+              "notationBox": {
+                "type": "syllogism_schema",
+                "schema": "SaM / MaP / SaP",
+                "verdict": "argument valid de tip AAA-1"
+              },
+              "shortResolution": "SaM; MaP; SaP; argument valid de tip AAA-1.",
+              "finalAnswer": {
+                "formal": "SaM; MaP; SaP",
+                "natural": "Toti elevii care invata sunt elevi pregatiti.; Toti elevii pregatiti promoveaza examenul de bacalaureat.; Deci, toti elevii care invata promoveaza examenul de bacalaureat.",
+                "verdict": "argument valid de tip AAA-1"
+              },
+              "shortExplanation": "SaM; MaP; SaP; argument valid de tip AAA-1.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "SaM"
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "MaP"
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "SaP"
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Toti elevii care invata sunt elevi pregatiti."
+                },
+                {
+                  "label": "Pasul 5",
+                  "text": "Toti elevii pregatiti promoveaza examenul de bacalaureat."
+                },
+                {
+                  "label": "Pasul 6",
+                  "text": "Deci, toti elevii care invata promoveaza examenul de bacalaureat."
+                },
+                {
+                  "label": "Pasul 7",
+                  "text": "argument valid de tip AAA-1"
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "syllogism_figure",
+                "pattern": "SaM/MaP/SaP",
+                "caption": "argument valid de tip AAA-1"
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_4",
+          "title": "4. Reguli de corectitudine a definirii",
+          "points": 10,
+          "cards": [
+            {
+              "id": "III_4",
+              "title": "4. Analiza definitiei date",
+              "points": "10p",
+              "officialPrompt": "Analizati definitia: 'Romanul este o oglinda pe care o plimbam de-a lungul unui drum.' Mentionati regula incalcata si doua alte reguli de corectitudine a definirii, cu exemple de definitii care le incalca.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman.",
+              "finalAnswer": {
+                "explanation": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman.",
+                "answers": {
+                  "Definitia nu trebuie sa fie circulara.": "Romanul este o scriere romanesca.",
+                  "Definitia trebuie sa fie adecvata, nici prea larga, nici prea ingusta.": "Romanul este o carte."
+                }
+              },
+              "shortExplanation": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Definitia nu trebuie sa fie circulara.: Romanul este o scriere romanesca."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Definitia trebuie sa fie adecvata, nici prea larga, nici prea ingusta.: Romanul este o carte."
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

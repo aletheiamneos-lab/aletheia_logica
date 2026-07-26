@@ -1,0 +1,43 @@
+[
+  {
+    "slug": "bac",
+    "title": "BAC",
+    "eyebrow": "Exemple si exercitii",
+    "categories": [
+      {
+        "id": "example",
+        "title": "Exemple",
+        "description": "Modele complete rezolvate, utile ca reper de lucru pentru varianta intreaga.",
+        "emptyTitle": "Nu exista inca exemple BAC",
+        "emptyText": "Primul exemplu complet apare aici imediat ce este integrat in proiect."
+      },
+      {
+        "id": "exercise",
+        "title": "Exercitii",
+        "description": "Seturi de lucru separate de modelele complete, gandite pentru antrenament punctual.",
+        "emptyTitle": "Nu exista inca exercitii BAC",
+        "emptyText": "Zona este pregatita pentru exercitii derivate din modele si grupe scurte de antrenament."
+      }
+    ],
+    "emptyTitle": "Nu exista inca modele BAC",
+    "emptyText": "Primul model apare aici imediat ce este integrat in proiect."
+  },
+  {
+    "slug": "admitere",
+    "title": "Admitere - Logica",
+    "eyebrow": "Teste integrate",
+    "description": "Seturile din pachetul de admitere sunt integrate ca teste interactive, cu corectare completa dupa finalizare si suport pentru itemul cu raspuns multiplu.",
+    "categories": [
+      {
+        "id": "test",
+        "title": "Teste",
+        "ctaLabel": "Deschide testul",
+        "description": "Toate seturile din JSON-ul de admitere sunt disponibile aici, fiecare pe pagina lui dedicata, cu rezultat final si feedback pe item.",
+        "emptyTitle": "Nu exista inca teste de admitere",
+        "emptyText": "Adauga pachetul de admitere si seturile vor aparea imediat in aceasta lista."
+      }
+    ],
+    "emptyTitle": "Nu exista inca teste de admitere",
+    "emptyText": "Zona este pregatita pentru seturile din JSON-ul de admitere."
+  }
+]

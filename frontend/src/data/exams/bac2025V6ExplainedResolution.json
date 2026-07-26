@@ -1,0 +1,2559 @@
+{
+  "schemaVersion": "3.0",
+  "documentType": "BAC_EXPLAINED_RESOLUTION_V3_DISPLAY_PRIORITY",
+  "examId": "bac_logica_2025_v6_rezolvare",
+  "title": "Examenul național de bacalaureat 2025 – Logică, argumentare și comunicare – Varianta 6",
+  "purpose": "Rezolvare explicată BAC Logică 2025 Varianta 6, cu afișare optimizată: cerința oficială și răspunsul final sunt vizibile implicit, iar pașii, baremul și diagramele sunt controlate prin accordion.",
+  "displayModes": [
+    {
+      "id": "step_by_step",
+      "label": "Rezolvare pas cu pas"
+    },
+    {
+      "id": "barem_explained",
+      "label": "Barem explicat"
+    }
+  ],
+  "uiGuidelines": {
+    "notATest": true,
+    "noInputFields": true,
+    "hideTechnicalLabels": true,
+    "layout": "Carduri aerisite, expandabile, grupate pe Subiectul I, II, III.",
+    "defaultOpenGroup": "I_A",
+    "visualRules": [
+      "Nu afișa etichete tehnice precum answerType, SINGLE_CHOICE, FORMAL_AND_NATURAL.",
+      "Fiecare card afișează: cerința oficială, contextul necesar, pașii, răspunsul final, punctajul.",
+      "Rezolvările nu se afișează toate deschise simultan.",
+      "Păstrează stilul vizual actual al aplicației: carduri, fonturi, spațieri, butoane."
+    ],
+    "version2Goal": "Completarea cerințelor lipsă, afișarea contextului oficial și introducerea de simboluri/mini-diagrame explicative.",
+    "requiredCardOrder": [
+      "CERINȚĂ OFICIALĂ",
+      "CONTEXT",
+      "NOTAȚIE / SCHEMĂ",
+      "REZOLVARE PE SCURT",
+      "VEZI PAȘII",
+      "RĂSPUNS FINAL",
+      "PUNCTAJ",
+      "BAREM EXPLICAT",
+      "GREȘEALĂ FRECVENTĂ"
+    ],
+    "defaultCardMode": "barem_explained_short",
+    "expandedContent": "Pașii detaliați se afișează doar la click pe „Vezi pașii”.",
+    "showOfficialOptions": true,
+    "showMiniDiagramsWhenAvailable": true,
+    "doNotShowInternalKeys": [
+      "answerType",
+      "FORMAL_AND_NATURAL",
+      "SYLLOGISM_SCHEMA",
+      "TRUE_FALSE",
+      "LONG_TEXT",
+      "miniDiagram.type as raw label"
+    ]
+  },
+  "scoringSummary": {
+    "totalWithOfficePoints": 100,
+    "officePoints": 10,
+    "examPoints": 90,
+    "sections": {
+      "I": 30,
+      "II": 30,
+      "III": 30
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "cards": [
+            {
+              "id": "I_A_1",
+              "title": "1. Demonstrația",
+              "officialPrompt": "Dacă termenului problemă i se adaugă proprietatea controversată atunci:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Demonstrația derivă o propoziție din propoziții considerate adevărate."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Varianta corectă este cea care arată derivarea unei propoziții adevărate din propoziții adevărate."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "b",
+                "text": "o propoziție adevărată este derivată din propoziții adevărate"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: b.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Demonstrația derivă o propoziție din propoziții considerate adevărate."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Varianta corectă este cea care arată derivarea unei propoziții adevărate din propoziții adevărate."
+                }
+              ],
+              "options": {
+                "a": "o propoziție falsă este derivată din propoziții adevărate",
+                "b": "o propoziție adevărată este derivată din propoziții adevărate",
+                "c": "o propoziție adevărată este derivată din propoziții probabile",
+                "d": "o propoziție falsă este derivată din propoziții false"
+              },
+              "correctLetter": "b",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "b"
+              }
+            },
+            {
+              "id": "I_A_2",
+              "title": "2. Tipul inferenței",
+              "officialPrompt": "Raționamentul „Unele programe fără învățare automată nu sunt tehnologii utilizate în dezvoltarea AI fiindcă nicio tehnologie utilizată în dezvoltarea AI nu este program fără învățare automată.” este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisa este universal negativă."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia este o particulară negativă obținută prin transformarea propoziției inițiale."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Baremul indică varianta d."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "d",
+                "text": "o conversiune prin accident"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: d.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: d.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisa este universal negativă."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia este o particulară negativă obținută prin transformarea propoziției inițiale."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Baremul indică varianta d."
+                }
+              ],
+              "options": {
+                "a": "o conversiune simplă",
+                "b": "o obversiune",
+                "c": "un silogism",
+                "d": "o conversiune prin accident"
+              },
+              "correctLetter": "d",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "d"
+              }
+            },
+            {
+              "id": "I_A_3",
+              "title": "3. Raport de ordonare",
+              "officialPrompt": "Se află în raport de ordonare termenii:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Căutăm relația gen–specie."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea simplă este un tip de raționament deductiv imediat."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "b",
+                "text": "conversiune simplă – raționament deductiv imediat"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: b.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Căutăm relația gen–specie."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea simplă este un tip de raționament deductiv imediat."
+                }
+              ],
+              "options": {
+                "a": "conversiune simplă validă – conversiune simplă nevalidă",
+                "b": "conversiune simplă – raționament deductiv imediat",
+                "c": "silogism de figura I – silogism de figura a II-a",
+                "d": "obversiune – inducție incompletă"
+              },
+              "correctLetter": "b",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "b"
+              }
+            },
+            {
+              "id": "I_A_4",
+              "title": "4. Cuantorul",
+              "officialPrompt": "Cuantorul propoziției „Niciun mamifer acvatic nu este dotat cu branhii.” este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Niciun» arată că propoziția se referă la toată clasa subiectului."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Prin urmare, cuantorul este universal."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "c",
+                "text": "universal"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: c.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Niciun» arată că propoziția se referă la toată clasa subiectului."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Prin urmare, cuantorul este universal."
+                }
+              ],
+              "options": {
+                "a": "particular",
+                "b": "afirmativ",
+                "c": "universal",
+                "d": "negativ"
+              },
+              "correctLetter": "c",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "c"
+              }
+            },
+            {
+              "id": "I_A_5",
+              "title": "5. Clasificarea animalelor",
+              "officialPrompt": "Clasificarea animalelor în clasele domestice, sălbatice, patrupede și bipede este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se folosesc criterii diferite: domestic/sălbatic și patruped/biped."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "O clasificare corectă trebuie să aibă criteriu unic."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "d",
+                "text": "incorectă"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: d.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: d.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se folosesc criterii diferite: domestic/sălbatic și patruped/biped."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "O clasificare corectă trebuie să aibă criteriu unic."
+                }
+              ],
+              "options": {
+                "a": "inadecvată",
+                "b": "corectă",
+                "c": "completă",
+                "d": "incorectă"
+              },
+              "correctLetter": "d",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "d"
+              }
+            },
+            {
+              "id": "I_A_6",
+              "title": "6. Termenul „rezolvare incompletă”",
+              "officialPrompt": "Din punct de vedere extensional, termenul rezolvare incompletă este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Termenul poate avea obiecte în sfera sa, deci este nevid."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Poate desemna mai multe rezolvări incomplete, deci este general."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "c",
+                "text": "nevid, general"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: c.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Termenul poate avea obiecte în sfera sa, deci este nevid."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Poate desemna mai multe rezolvări incomplete, deci este general."
+                }
+              ],
+              "options": {
+                "a": "precis, relativ",
+                "b": "negativ, compus",
+                "c": "nevid, general",
+                "d": "vid, absolut"
+              },
+              "correctLetter": "c",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "c"
+              }
+            },
+            {
+              "id": "I_A_7",
+              "title": "7. Predicatul logic",
+              "officialPrompt": "Predicatul logic al propoziției „Unele lalele sunt albe” este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Subiectul logic este «lalele»."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Ceea ce se afirmă despre ele este că sunt «albe»."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "d",
+                "text": "albe"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: d.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: d.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Subiectul logic este «lalele»."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Ceea ce se afirmă despre ele este că sunt «albe»."
+                }
+              ],
+              "options": {
+                "a": "unele",
+                "b": "multe lalele",
+                "c": "sunt albe",
+                "d": "albe"
+              },
+              "correctLetter": "d",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "d"
+              }
+            },
+            {
+              "id": "I_A_8",
+              "title": "8. Tipul propoziției",
+              "officialPrompt": "Propoziția „Majoritatea informațiilor nu este ușor de verificat.” este un exemplu de propoziție:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Majoritatea» se tratează ca particular, nu ca universal strict."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "«Nu este» indică o propoziție negativă."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "b",
+                "text": "particulară negativă"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: b.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Majoritatea» se tratează ca particular, nu ca universal strict."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "«Nu este» indică o propoziție negativă."
+                }
+              ],
+              "options": {
+                "a": "universală afirmativă",
+                "b": "particulară negativă",
+                "c": "universală negativă",
+                "d": "particulară afirmativă"
+              },
+              "correctLetter": "b",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "b"
+              }
+            },
+            {
+              "id": "I_A_9",
+              "title": "9. Intensiunea termenului",
+              "officialPrompt": "Intensiunea termenului stilou este:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Intensiunea înseamnă conținutul noțiunii: proprietățile definitorii."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Varianta corectă definește obiectul, nu enumeră toate obiectele din extensiune."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "b",
+                "text": "instrument de scris cu cerneală și peniță"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: b.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Intensiunea înseamnă conținutul noțiunii: proprietățile definitorii."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Varianta corectă definește obiectul, nu enumeră toate obiectele din extensiune."
+                }
+              ],
+              "options": {
+                "a": "totalitatea stilourilor",
+                "b": "instrument de scris cu cerneală și peniță",
+                "c": "totalitatea instrumentelor de scris",
+                "d": "unealtă de diferite culori, dimensiuni"
+              },
+              "correctLetter": "b",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "b"
+              }
+            },
+            {
+              "id": "I_A_10",
+              "title": "10. Formula propoziției",
+              "officialPrompt": "Propoziției categorice „Multe nuvele istorice sunt preferate de către elevii de gimnaziu.” îi corespunde formula:",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Multe» indică particularitate."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Copula este afirmativă: «sunt»."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Forma este particular afirmativă: SiP."
+                }
+              ],
+              "finalAnswer": {
+                "letter": "b",
+                "text": "SiP"
+              },
+              "points": "2p",
+              "baremExplained": "Răspuns corect: b.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspuns corect: b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "«Multe» indică particularitate."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Copula este afirmativă: «sunt»."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Forma este particular afirmativă: SiP."
+                }
+              ],
+              "options": {
+                "a": "SaP",
+                "b": "SiP",
+                "c": "SeP",
+                "d": "SoP"
+              },
+              "correctLetter": "b",
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Variantă corectă",
+                "value": "b"
+              }
+            }
+          ],
+          "officialPrompt": "Pentru fiecare dintre următorii itemi, scrieți doar cifra corespunzătoare și notați litera asociată răspunsului corect. Este corectă o singură variantă de răspuns.",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Instrucțiune oficială",
+            "items": [
+              "Pentru fiecare dintre următorii itemi, scrieți doar cifra corespunzătoare și notați litera asociată răspunsului corect. Este corectă o singură variantă de răspuns."
+            ],
+            "alwaysVisible": true
+          }
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "cards": [
+            {
+              "id": "I_B_1",
+              "title": "B.1. Diagrama Euler",
+              "officialPrompt": "Reprezentați, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei cinci termeni.",
+              "context": [
+                "A și B sunt în raport de contradicție.",
+                "C este încrucișat cu A și B și în opoziție cu D.",
+                "D este încrucișat cu A, B și E.",
+                "E este încrucișat cu B și D și în opoziție cu A și C."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se trasează o diagramă comună pentru A, B, C, D, E."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "A și B sunt în contradicție."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "C se încrucișează cu A și B, dar este în opoziție cu D."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "D se încrucișează cu A, B și E."
+                },
+                {
+                  "label": "Pasul 5",
+                  "text": "E se încrucișează cu B și D, dar este în opoziție cu A și C."
+                }
+              ],
+              "finalAnswer": {
+                "text": "Diagrama este corectă dacă respectă simultan toate raporturile din enunț."
+              },
+              "points": "2p",
+              "baremExplained": "Se acordă 2 puncte pentru reprezentarea corectă pe o diagramă comună.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Se acordă 2 puncte pentru reprezentarea corectă pe o diagramă comună.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se trasează o diagramă comună pentru A, B, C, D, E."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "A și B sunt în contradicție."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "C se încrucișează cu A și B, dar este în opoziție cu D."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "D se încrucișează cu A, B și E."
+                },
+                {
+                  "label": "Pasul 5",
+                  "text": "E se încrucișează cu B și D, dar este în opoziție cu A și C."
+                }
+              ]
+            },
+            {
+              "id": "I_B_2",
+              "title": "B.2. Propoziții A/F",
+              "officialPrompt": "Stabiliți care propoziții sunt adevărate și care sunt false.",
+              "context": [
+                "a) Unii E sunt C.",
+                "b) Toți C sunt B.",
+                "c) Niciun B nu este C.",
+                "d) Unii D nu sunt E.",
+                "e) Niciun A nu este D.",
+                "f) Unii A nu sunt E.",
+                "g) Toți E sunt B.",
+                "h) Unii C sunt A."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se folosește diagrama Euler de la punctul anterior."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Fiecare enunț se verifică prin raporturile deja reprezentate."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Pentru «unii» se verifică existența unei intersecții; pentru «toți» se verifică incluziunea totală; pentru «niciun» se verifică opoziția."
+                }
+              ],
+              "finalAnswer": {
+                "answers": {
+                  "a": "F",
+                  "b": "F",
+                  "c": "F",
+                  "d": "A",
+                  "e": "F",
+                  "f": "A",
+                  "g": "F",
+                  "h": "A"
+                }
+              },
+              "points": "8p",
+              "baremExplained": "Răspunsuri: a-F, b-F, c-F, d-A, e-F, f-A, g-F, h-A.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Răspunsuri: a-F, b-F, c-F, d-A, e-F, f-A, g-F, h-A.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Se folosește diagrama Euler de la punctul anterior."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Fiecare enunț se verifică prin raporturile deja reprezentate."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Pentru «unii» se verifică existența unei intersecții; pentru «toți» se verifică incluziunea totală; pentru «niciun» se verifică opoziția."
+                }
+              ]
+            }
+          ],
+          "officialPrompt": "Se dau termenii A, B, C, D și E. Reprezentați prin metoda diagramelor Euler raporturile dintre cei cinci termeni și stabiliți valoarea de adevăr a propozițiilor a–h.",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Context oficial – raporturile dintre termenii A, B, C, D, E",
+            "items": [
+              "Termenii A și B se află în raport de contradicție.",
+              "Termenul C este încrucișat simultan cu termenii A și B și se află în raport de opoziție cu termenul D.",
+              "Termenul D este în raport de încrucișare cu termenii A, B și E.",
+              "Termenul E este în raport de încrucișare cu termenii B și D și de opoziție cu termenii A și C."
+            ],
+            "alwaysVisible": true
+          },
+          "miniDiagram": {
+            "type": "euler_relation_map",
+            "title": "Mini-schemă Euler – raporturi cerute",
+            "renderHint": "Folosește cercuri/ovale simple sau hartă de relații. Nu afișa ca diagramă Venn standard cu 5 cercuri egale.",
+            "nodes": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ],
+            "relations": [
+              {
+                "from": "A",
+                "to": "B",
+                "relation": "contradicție"
+              },
+              {
+                "from": "C",
+                "to": "A",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "C",
+                "to": "B",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "C",
+                "to": "D",
+                "relation": "opoziție"
+              },
+              {
+                "from": "D",
+                "to": "A",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "D",
+                "to": "B",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "D",
+                "to": "E",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "E",
+                "to": "B",
+                "relation": "încrucișare"
+              },
+              {
+                "from": "E",
+                "to": "A",
+                "relation": "opoziție"
+              },
+              {
+                "from": "E",
+                "to": "C",
+                "relation": "opoziție"
+              }
+            ],
+            "caption": "Diagrama trebuie folosită pentru a verifica propozițiile a–h."
+          }
+        }
+      ],
+      "displayMode": "official_grouped_resolution"
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Context oficial – propozițiile 1–4",
+        "items": [
+          "1. Toate mamiferele acvatice sunt vivipare.",
+          "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+          "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+          "4. Unele activități școlare nu sunt obligatorii."
+        ],
+        "alwaysVisible": true
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "cards": [
+            {
+              "id": "II_A_1",
+              "title": "A.1. Subalterna propoziției 1",
+              "officialPrompt": "Construiți subalterna propoziției 1, în limbaj formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 1 este de forma SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Subalterna lui SaP este SiP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "În limbaj natural se schimbă «toate» în «unele»."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SiP",
+                "natural": "Unele mamifere acvatice sunt vivipare."
+              },
+              "points": "2p",
+              "baremExplained": "1p pentru SiP și 1p pentru limbaj natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "1p pentru SiP și 1p pentru limbaj natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 1 este de forma SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Subalterna lui SaP este SiP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "În limbaj natural se schimbă «toate» în «unele»."
+                }
+              ],
+              "notationBox": {
+                "type": "square_relation",
+                "formalNotation": "SaP → SiP",
+                "symbolicNotation": "Pătratul logic A/E/I/O"
+              },
+              "miniDiagram": {
+                "type": "square_of_opposition",
+                "highlight": "SaP → SiP",
+                "caption": "Relația cerută se citește pe pătratul logic."
+              }
+            },
+            {
+              "id": "II_A_2",
+              "title": "A.2. Contradictoria propoziției 2",
+              "officialPrompt": "Construiți contradictoria propoziției 2, în limbaj formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este de forma SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Contradictoria lui SiP este SeP."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SeP",
+                "natural": "Nicio persoană pasionată de poezie nu este interesată de filosofie."
+              },
+              "points": "2p",
+              "baremExplained": "1p pentru SeP și 1p pentru limbaj natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "1p pentru SeP și 1p pentru limbaj natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este de forma SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Contradictoria lui SiP este SeP."
+                }
+              ],
+              "notationBox": {
+                "type": "square_relation",
+                "formalNotation": "SiP ↔ SeP",
+                "symbolicNotation": "Pătratul logic A/E/I/O"
+              },
+              "miniDiagram": {
+                "type": "square_of_opposition",
+                "highlight": "SiP ↔ SeP",
+                "caption": "Relația cerută se citește pe pătratul logic."
+              }
+            },
+            {
+              "id": "II_A_3",
+              "title": "A.3. Contrara propoziției 3",
+              "officialPrompt": "Construiți contrara propoziției 3, în limbaj formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 3 este de forma SeP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Contrara lui SeP este SaP."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SaP",
+                "natural": "Toate elementele chimice din grupa a VI-a sunt halogeni."
+              },
+              "points": "2p",
+              "baremExplained": "1p pentru SaP și 1p pentru limbaj natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "1p pentru SaP și 1p pentru limbaj natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 3 este de forma SeP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Contrara lui SeP este SaP."
+                }
+              ],
+              "notationBox": {
+                "type": "square_relation",
+                "formalNotation": "SeP ↔ SaP",
+                "symbolicNotation": "Pătratul logic A/E/I/O"
+              },
+              "miniDiagram": {
+                "type": "square_of_opposition",
+                "highlight": "SeP ↔ SaP",
+                "caption": "Relația cerută se citește pe pătratul logic."
+              }
+            },
+            {
+              "id": "II_A_4",
+              "title": "A.4. Subcontrara propoziției 4",
+              "officialPrompt": "Construiți subcontrara propoziției 4, în limbaj formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 4 este de forma SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Subcontrara lui SoP este SiP."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SiP",
+                "natural": "Unele activități școlare sunt obligatorii."
+              },
+              "points": "2p",
+              "baremExplained": "1p pentru SiP și 1p pentru limbaj natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "1p pentru SiP și 1p pentru limbaj natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 4 este de forma SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Subcontrara lui SoP este SiP."
+                }
+              ],
+              "notationBox": {
+                "type": "square_relation",
+                "formalNotation": "SoP ↔ SiP",
+                "symbolicNotation": "Pătratul logic A/E/I/O"
+              },
+              "miniDiagram": {
+                "type": "square_of_opposition",
+                "highlight": "SoP ↔ SiP",
+                "caption": "Relația cerută se citește pe pătratul logic."
+              }
+            }
+          ],
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subalterna propoziției 1, contradictoria propoziției 2, contrara propoziției 3 și subcontrara propoziției 4.",
+          "displayMode": "accordion_group_with_context",
+          "miniDiagram": {
+            "type": "square_of_opposition",
+            "highlightedRelations": [
+              "SaP→SiP",
+              "SiP↔SeP",
+              "SeP↔SaP",
+              "SoP↔SiP"
+            ],
+            "nodes": {
+              "A": "SaP",
+              "E": "SeP",
+              "I": "SiP",
+              "O": "SoP"
+            },
+            "caption": "Se folosește pătratul logic: contradicție, contrarietate, subcontrarietate, subalternare."
+          }
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "cards": [
+            {
+              "id": "II_B_1",
+              "title": "B.1. Conversa și obversa propoziției 1",
+              "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru propoziția 1.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 1 este SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea propoziției A se face prin accident: SaP → PiS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversiunea schimbă calitatea și neagă predicatul: SaP → Se¬P."
+                }
+              ],
+              "finalAnswer": {
+                "converseFormal": "PiS",
+                "converseNatural": "Unele ființe vivipare sunt mamifere acvatice.",
+                "obverseFormal": "Se¬P",
+                "obverseNatural": "Niciun mamifer acvatic nu este non-vivipar."
+              },
+              "points": "4p",
+              "baremExplained": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 1 este SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea propoziției A se face prin accident: SaP → PiS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversiunea schimbă calitatea și neagă predicatul: SaP → Se¬P."
+                }
+              ],
+              "notationBox": {
+                "type": "operation_rules",
+                "rules": [
+                  "Conversiune: se inversează S și P.",
+                  "Obversiune: se schimbă calitatea și se neagă predicatul."
+                ]
+              },
+              "miniDiagram": {
+                "type": "operation_chain",
+                "caption": "Se urmăresc separat conversa și obversa propoziției."
+              }
+            },
+            {
+              "id": "II_B_2",
+              "title": "B.2. Conversa și obversa propoziției 2",
+              "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru propoziția 2.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea lui SiP este PiS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversiunea lui SiP este So¬P."
+                }
+              ],
+              "finalAnswer": {
+                "converseFormal": "PiS",
+                "converseNatural": "Unele persoane interesate de filosofie sunt pasionate de poezie.",
+                "obverseFormal": "So¬P",
+                "obverseNatural": "Unele persoane pasionate de poezie nu sunt neinteresate de filosofie."
+              },
+              "points": "4p",
+              "baremExplained": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Conversiunea lui SiP este PiS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversiunea lui SiP este So¬P."
+                }
+              ],
+              "notationBox": {
+                "type": "operation_rules",
+                "rules": [
+                  "Conversiune: se inversează S și P.",
+                  "Obversiune: se schimbă calitatea și se neagă predicatul."
+                ]
+              },
+              "miniDiagram": {
+                "type": "operation_chain",
+                "caption": "Se urmăresc separat conversa și obversa propoziției."
+              }
+            }
+          ],
+          "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 2, atât în limbaj formal, cât și în limbaj natural.",
+          "displayMode": "accordion_group_with_context"
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "cards": [
+            {
+              "id": "II_C_1",
+              "title": "C.1. Conversa obversei supraalternei propoziției 4",
+              "officialPrompt": "Construiți conversa obversei supraalternei propoziției 4, formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 4 este SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Supraalterna lui SoP este SeP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversa lui SeP este Sa¬P."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Conversa prin accident a lui Sa¬P este ¬PiS."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "¬PiS",
+                "natural": "Unele lucruri neobligatorii sunt activități școlare."
+              },
+              "points": "3p",
+              "baremExplained": "Barem: ¬PiS și limbaj natural corespunzător.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: ¬PiS și limbaj natural corespunzător.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 4 este SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Supraalterna lui SoP este SeP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversa lui SeP este Sa¬P."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Conversa prin accident a lui Sa¬P este ¬PiS."
+                }
+              ],
+              "notationBox": {
+                "type": "operation_chain",
+                "chain": [
+                  "SoP",
+                  "SeP",
+                  "Sa¬P",
+                  "¬PiS"
+                ]
+              },
+              "miniDiagram": {
+                "type": "operation_chain",
+                "nodes": [
+                  "SoP",
+                  "SeP",
+                  "Sa¬P",
+                  "¬PiS"
+                ],
+                "caption": "Operația compusă se verifică pas cu pas, de la propoziția inițială la rezultat."
+              }
+            },
+            {
+              "id": "II_C_2",
+              "title": "C.2. Obversa supraalternei propoziției 2",
+              "officialPrompt": "Construiți obversa supraalternei propoziției 2, formal și natural.",
+              "context": [
+                "1. Toate mamiferele acvatice sunt vivipare.",
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie.",
+                "3. Niciun element chimic din grupa a VI-a nu este halogen.",
+                "4. Unele activități școlare nu sunt obligatorii."
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Supraalterna lui SiP este SaP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversa lui SaP este Se¬P."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "Se¬P",
+                "natural": "Nicio persoană pasionată de poezie nu este neinteresată de filosofie."
+              },
+              "points": "3p",
+              "baremExplained": "Barem: Se¬P și limbaj natural corespunzător.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: Se¬P și limbaj natural corespunzător.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propoziția 2 este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Supraalterna lui SiP este SaP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Obversa lui SaP este Se¬P."
+                }
+              ],
+              "notationBox": {
+                "type": "operation_chain",
+                "chain": [
+                  "SiP",
+                  "SaP",
+                  "Se¬P"
+                ]
+              },
+              "miniDiagram": {
+                "type": "operation_chain",
+                "nodes": [
+                  "SiP",
+                  "SaP",
+                  "Se¬P"
+                ],
+                "caption": "Operația compusă se verifică pas cu pas, de la propoziția inițială la rezultat."
+              }
+            }
+          ],
+          "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, conversa obversei supraalternei propoziției 4, respectiv obversa supraalternei propoziției 2.",
+          "displayMode": "accordion_group_with_context"
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "cards": [
+            {
+              "id": "II_D_1",
+              "title": "D.1. Opinia elevului X",
+              "officialPrompt": "X: «De vreme ce perfecțiunea este un ideal, conchidem că perfecțiunea nu este un non-ideal.»",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Formalizăm premisa ca SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Formalizăm concluzia ca Se¬P."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "SaP → Se¬P este obversiune validă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Raționamentul este corect."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SaP → Se¬P",
+                "verdict": "corect / valid",
+                "explanation": "Este o obversiune validă: se schimbă calitatea și se neagă predicatul."
+              },
+              "points": "4p",
+              "baremExplained": "2p formalizare, 1p verdict, 1p explicație.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "2p formalizare, 1p verdict, 1p explicație.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Formalizăm premisa ca SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Formalizăm concluzia ca Se¬P."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "SaP → Se¬P este obversiune validă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Raționamentul este corect."
+                }
+              ]
+            },
+            {
+              "id": "II_D_2",
+              "title": "D.2. Opinia elevului Y",
+              "officialPrompt": "Y: «Toți oamenii pasionați de munca lor sunt pianiști, decurge din faptul că toți pianiștii sunt oameni pasionați de munca lor.»",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisa se formalizează SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia inversează termenii: PaS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Se încearcă o conversiune simplă a propoziției A."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Conversiunea simplă a lui A este nevalidă; este admisă doar conversiunea prin accident SaP → PiS."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "SaP → PaS",
+                "verdict": "incorect / nevalid",
+                "explanation": "Conversiunea universal afirmativei este nevalidă. Termenul P ajunge distribuit în concluzie, deși nu era distribuit în premisă."
+              },
+              "points": "4p",
+              "baremExplained": "2p formalizare, 1p verdict, 1p explicație.",
+              "commonMistake": "A nu se tratează «Toți S sunt P» ca echivalent cu «Toți P sunt S».",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "2p formalizare, 1p verdict, 1p explicație.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisa se formalizează SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia inversează termenii: PaS."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Se încearcă o conversiune simplă a propoziției A."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Conversiunea simplă a lui A este nevalidă; este admisă doar conversiunea prin accident SaP → PiS."
+                }
+              ]
+            }
+          ],
+          "officialPrompt": "Doi elevi, X și Y, opinează. Scrieți formalizarea opiniilor, precizați corectitudinea/incorectitudinea logică și explicați raționamentul elevului Y.",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Context oficial – opiniile elevilor",
+            "items": [
+              "X: De vreme ce perfecțiunea este un ideal, conchidem că perfecțiunea nu este un non-ideal.",
+              "Y: Toți oamenii pasionați de munca lor sunt pianişti, deoarece din faptul că toți pianiștii sunt oameni pasionați de munca lor."
+            ],
+            "alwaysVisible": true
+          }
+        }
+      ],
+      "displayMode": "official_grouped_resolution"
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "cards": [
+            {
+              "id": "III_A_1",
+              "title": "A.a. Schema eio-2",
+              "officialPrompt": "Scrieți schema de inferență pentru modul eio-2.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Figura II are poziția P–M / S–M / S–P."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Modul eio înseamnă E, I, O."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Rezultă: PeM / SiM // SoP."
+                }
+              ],
+              "finalAnswer": {
+                "majorPremise": "PeM",
+                "minorPremise": "SiM",
+                "conclusion": "SoP"
+              },
+              "points": "2p",
+              "baremExplained": "Barem: PeM / SiM / SoP.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: PeM / SiM / SoP.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Figura II are poziția P–M / S–M / S–P."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Modul eio înseamnă E, I, O."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Rezultă: PeM / SiM // SoP."
+                }
+              ],
+              "notationBox": {
+                "type": "syllogism_figure",
+                "mode": "eio-2",
+                "figure": "II",
+                "schema": "PeM / SiM ∴ SoP",
+                "figurePattern": "P–M / S–M ∴ S–P"
+              },
+              "miniDiagram": {
+                "type": "syllogism_figure",
+                "labels": [
+                  "S",
+                  "P",
+                  "M"
+                ],
+                "pattern": "P-M / S-M / S-P",
+                "caption": "În figura a II-a, termenul mediu este predicat în ambele premise."
+              }
+            },
+            {
+              "id": "III_A_2",
+              "title": "A.a. Schema aaa-4",
+              "officialPrompt": "Scrieți schema de inferență pentru modul aaa-4.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Figura IV are poziția P–M / M–S / S–P."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Modul aaa înseamnă trei propoziții universale afirmative."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Rezultă: PaM / MaS // SaP."
+                }
+              ],
+              "finalAnswer": {
+                "majorPremise": "PaM",
+                "minorPremise": "MaS",
+                "conclusion": "SaP"
+              },
+              "points": "2p",
+              "baremExplained": "Barem: PaM / MaS / SaP.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: PaM / MaS / SaP.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Figura IV are poziția P–M / M–S / S–P."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Modul aaa înseamnă trei propoziții universale afirmative."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Rezultă: PaM / MaS // SaP."
+                }
+              ],
+              "notationBox": {
+                "type": "syllogism_figure",
+                "mode": "aaa-4",
+                "figure": "IV",
+                "schema": "PaM / MaS ∴ SaP",
+                "figurePattern": "P–M / M–S ∴ S–P"
+              },
+              "miniDiagram": {
+                "type": "syllogism_figure",
+                "labels": [
+                  "S",
+                  "P",
+                  "M"
+                ],
+                "pattern": "P-M / M-S / S-P",
+                "caption": "În figura a IV-a, termenul mediu este predicat în premisa majoră și subiect în premisa minoră."
+              }
+            },
+            {
+              "id": "III_A_3",
+              "title": "A.b. Silogism în limbaj natural",
+              "officialPrompt": "Construiți un silogism în limbaj natural pentru una dintre scheme.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Alegem schema eio-2."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Alegem S=studenți, P=medici, M=juriști."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Construim propoziții care respectă schema PeM / SiM // SoP."
+                }
+              ],
+              "finalAnswer": {
+                "natural": "Niciun medic nu este jurist. Unii studenți sunt juriști. Prin urmare, unii studenți nu sunt medici."
+              },
+              "points": "2p",
+              "baremExplained": "Se acceptă orice silogism care respectă una dintre scheme.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Se acceptă orice silogism care respectă una dintre scheme.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Alegem schema eio-2."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Alegem S=studenți, P=medici, M=juriști."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Construim propoziții care respectă schema PeM / SiM // SoP."
+                }
+              ]
+            },
+            {
+              "id": "III_A_4",
+              "title": "A.c. Validitatea eio-2",
+              "officialPrompt": "Verificați prin Venn validitatea modului eio-2.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "PeM hașurează intersecția P∩M."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "SiM introduce un x în S∩M."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "După reprezentarea premiselor, concluzia SoP devine vizibilă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Modul este valid."
+                }
+              ],
+              "finalAnswer": {
+                "verdict": "valid",
+                "explanation": "Premisele PeM și SiM fac vizibilă concluzia SoP."
+              },
+              "points": "4p",
+              "baremExplained": "Barem: eio-2 este mod silogistic valid.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: eio-2 este mod silogistic valid.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "PeM hașurează intersecția P∩M."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "SiM introduce un x în S∩M."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "După reprezentarea premiselor, concluzia SoP devine vizibilă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Modul este valid."
+                }
+              ],
+              "notationBox": {
+                "type": "venn_check",
+                "schema": "PeM / SiM ∴ SoP",
+                "verdict": "valid"
+              },
+              "miniDiagram": {
+                "type": "venn_three_terms",
+                "labels": [
+                  "S",
+                  "P",
+                  "M"
+                ],
+                "shadedRegions": [
+                  "P∩M"
+                ],
+                "xRegions": [
+                  "S∩M∩¬P"
+                ],
+                "caption": "După hașurarea lui P∩M, X-ul din S∩M rămâne în afara lui P; concluzia SoP este vizibilă."
+              }
+            },
+            {
+              "id": "III_A_5",
+              "title": "A.c. Validitatea aaa-4",
+              "officialPrompt": "Verificați prin Venn validitatea modului aaa-4.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisele PaM și MaS nu impun concluzia SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia universală SaP nu rezultă obligatoriu din diagramă."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Modul este nevalid."
+                }
+              ],
+              "finalAnswer": {
+                "verdict": "nevalid",
+                "explanation": "Reprezentarea grafică nu impune concluzia SaP."
+              },
+              "points": "4p",
+              "baremExplained": "Barem: aaa-4 este mod silogistic nevalid.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: aaa-4 este mod silogistic nevalid.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Premisele PaM și MaS nu impun concluzia SaP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Concluzia universală SaP nu rezultă obligatoriu din diagramă."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Modul este nevalid."
+                }
+              ],
+              "notationBox": {
+                "type": "venn_check",
+                "schema": "PaM / MaS ∴ SaP",
+                "verdict": "nevalid"
+              },
+              "miniDiagram": {
+                "type": "venn_three_terms",
+                "labels": [
+                  "S",
+                  "P",
+                  "M"
+                ],
+                "shadedRegions": [
+                  "P∩¬M",
+                  "M∩¬S"
+                ],
+                "missingConclusion": "S⊆P",
+                "caption": "Reprezentarea premiselor nu obligă toate elementele lui S să fie în P; concluzia SaP nu rezultă."
+              }
+            }
+          ],
+          "officialPrompt": "Se dau următoarele moduri silogistice: eio-2, aaa-4. Scrieți schemele de inferență, construiți un silogism în limbaj natural și verificați validitatea prin metoda diagramelor Venn.",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Context oficial – moduri silogistice",
+            "items": [
+              "eio-2",
+              "aaa-4"
+            ],
+            "alwaysVisible": true
+          }
+        },
+        {
+          "id": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "cards": [
+            {
+              "id": "III_B_1",
+              "title": "B. Construirea unui silogism valid",
+              "officialPrompt": "Construiți un silogism valid care justifică: «Unii băieți care merg pe bicicletă sunt echipați cu cască de protecție.»",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Concluzia este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "S = băieți care merg pe bicicletă; P = persoane echipate cu cască de protecție."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Alegem M = participanți la cursul de ciclism."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Folosim schema validă MaP / SiM // SiP."
+                }
+              ],
+              "finalAnswer": {
+                "formal": "MaP / SiM // SiP",
+                "natural": "Toți participanții la cursul de ciclism sunt echipați cu cască de protecție. Unii băieți care merg pe bicicletă sunt participanți la cursul de ciclism. Prin urmare, unii băieți care merg pe bicicletă sunt echipați cu cască de protecție."
+              },
+              "points": "6p",
+              "baremExplained": "3p formal, 3p natural cu premise adevărate/plauzibile.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "3p formal, 3p natural cu premise adevărate/plauzibile.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Concluzia este SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "S = băieți care merg pe bicicletă; P = persoane echipate cu cască de protecție."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Alegem M = participanți la cursul de ciclism."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Folosim schema validă MaP / SiM // SiP."
+                }
+              ],
+              "notationBox": {
+                "type": "syllogism_builder",
+                "schema": "MaP / SiM ∴ SiP",
+                "terms": {
+                  "S": "băieți care merg pe bicicletă",
+                  "P": "persoane echipate cu cască de protecție",
+                  "M": "participanți la cursul de ciclism"
+                }
+              }
+            }
+          ],
+          "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, un silogism valid, prin care să justificați propoziția „Unii băieți care merg pe bicicletă sunt echipați cu cască de protecție.”",
+          "displayMode": "accordion_group_with_context"
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "cards": [
+            {
+              "id": "III_C_1",
+              "title": "C. Analiza silogismului dat",
+              "officialPrompt": "Analizați enunțurile despre silogismul dat.",
+              "context": [
+                "Silogism: «Întrucât unii voluntari sunt elevi de liceu, iar persoanele implicate în activități extrașcolare sunt voluntari, este evident că unii elevi de liceu nu sunt implicați în activități extrașcolare.»"
+              ],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Concluzia este: «Unii elevi de liceu nu sunt implicați în activități extrașcolare», deci SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "S=elevi de liceu; P=persoane implicate în activități extrașcolare; M=voluntari."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Premisa majoră conține P și M și este universal afirmativă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Termenul mediu este nedistribuit în ambele premise."
+                }
+              ],
+              "finalAnswer": {
+                "answers": {
+                  "1": "A",
+                  "2": "F",
+                  "3": "A",
+                  "4": "F"
+                }
+              },
+              "points": "4p",
+              "baremExplained": "Barem: 1-A, 2-F, 3-A, 4-F.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Barem: 1-A, 2-F, 3-A, 4-F.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Concluzia este: «Unii elevi de liceu nu sunt implicați în activități extrașcolare», deci SoP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "S=elevi de liceu; P=persoane implicate în activități extrașcolare; M=voluntari."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Premisa majoră conține P și M și este universal afirmativă."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Termenul mediu este nedistribuit în ambele premise."
+                }
+              ],
+              "notationBox": {
+                "type": "syllogism_analysis",
+                "terms": {
+                  "S": "elevi de liceu",
+                  "P": "persoane implicate în activități extrașcolare",
+                  "M": "voluntari"
+                },
+                "conclusion": "SoP"
+              }
+            }
+          ],
+          "officialPrompt": "Pe baza silogismului dat, stabiliți valoarea de adevăr a enunțurilor 1–4.",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Context oficial – silogismul dat",
+            "items": [
+              "Întrucât unii voluntari sunt elevi de liceu, iar persoanele implicate în activități extrașcolare sunt voluntari, este evident că unii elevi de liceu nu sunt implicați în activități extrașcolare."
+            ],
+            "alwaysVisible": true
+          }
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "cards": [
+            {
+              "id": "III_D_1",
+              "title": "D.a. Regula încălcată",
+              "officialPrompt": "Definiția: «Satul e locul unde s-a născut veșnicia.» Menționați o regulă încălcată.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Definiția este poetică/metaforică."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "O definiție logică trebuie să fie clară și precisă."
+                }
+              ],
+              "finalAnswer": {
+                "text": "Regula clarității și preciziei / regula evitării limbajului figurat."
+              },
+              "points": "2p",
+              "baremExplained": "2p pentru o regulă corect identificată.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "2p pentru o regulă corect identificată.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Definiția este poetică/metaforică."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "O definiție logică trebuie să fie clară și precisă."
+                }
+              ],
+              "notationBox": {
+                "type": "definition_rules",
+                "rules": [
+                  "adecvare",
+                  "evitarea circularității",
+                  "claritate și precizie",
+                  "formă afirmativă",
+                  "fără limbaj figurat"
+                ]
+              }
+            },
+            {
+              "id": "III_D_2",
+              "title": "D.b. Altă regulă",
+              "officialPrompt": "Precizați o altă regulă de corectitudine a definirii.",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Alegem o regulă diferită de cea de la punctul a)."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Exemplu acceptabil: evitarea circularității."
+                }
+              ],
+              "finalAnswer": {
+                "text": "Regula evitării circularității."
+              },
+              "points": "2p",
+              "baremExplained": "Se acceptă orice altă regulă corectă.",
+              "commonMistake": "",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Se acceptă orice altă regulă corectă.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Alegem o regulă diferită de cea de la punctul a)."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Exemplu acceptabil: evitarea circularității."
+                }
+              ],
+              "notationBox": {
+                "type": "definition_rules",
+                "rules": [
+                  "adecvare",
+                  "evitarea circularității",
+                  "claritate și precizie",
+                  "formă afirmativă",
+                  "fără limbaj figurat"
+                ]
+              }
+            },
+            {
+              "id": "III_D_3",
+              "title": "D.c. Definiție care încalcă regula aleasă",
+              "officialPrompt": "Construiți o definiție a termenului «sat» care să încalce regula precizată la b).",
+              "context": [],
+              "stepByStep": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Dacă la b) am ales evitarea circularității, construim o definiție circulară."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Cerința cere intenționat o definiție greșită."
+                }
+              ],
+              "finalAnswer": {
+                "text": "Satul este o așezare sătească în care trăiesc săteni."
+              },
+              "points": "2p",
+              "baremExplained": "Se acordă punctaj dacă definiția încalcă regula aleasă.",
+              "commonMistake": "Greșeala frecventă: elevul scrie o definiție corectă, deși cerința cere o definiție greșită.",
+              "displayTemplate": "explained_resolution_card_v2",
+              "visibleSections": [
+                "officialPrompt",
+                "context",
+                "notationBox",
+                "shortResolution",
+                "expandedSteps",
+                "finalAnswer",
+                "points",
+                "baremExplained",
+                "commonMistake"
+              ],
+              "shortResolution": "Se acordă punctaj dacă definiția încalcă regula aleasă.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Dacă la b) am ales evitarea circularității, construim o definiție circulară."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Cerința cere intenționat o definiție greșită."
+                }
+              ],
+              "notationBox": {
+                "type": "definition_rules",
+                "rules": [
+                  "adecvare",
+                  "evitarea circularității",
+                  "claritate și precizie",
+                  "formă afirmativă",
+                  "fără limbaj figurat"
+                ]
+              }
+            }
+          ],
+          "officialPrompt": "Se dă următoarea definiție: „Satul e locul unde s-a născut veșnicia.” Rezolvați cerințele a), b), c).",
+          "displayMode": "accordion_group_with_context",
+          "contextBlock": {
+            "title": "Context oficial – definiția dată",
+            "items": [
+              "„Satul e locul unde s-a născut veșnicia.”"
+            ],
+            "alwaysVisible": true
+          }
+        }
+      ],
+      "displayMode": "official_grouped_resolution"
+    }
+  ],
+  "sources": {
+    "subjectPdf": "Examenul național de bacalaureat 2025_V6.pdf",
+    "markingSchemePdf": "Examenul național de bacalaureat 2025_V6_BAREM.pdf",
+    "note": "Conținutul urmează subiectul oficial și baremul oficial încărcate în proiect."
+  },
+  "rendererContract": {
+    "cardSections": {
+      "officialPrompt": "Textul oficial complet al cerinței sau itemului.",
+      "contextBlock": "Textul comun necesar rezolvării. Dacă există la nivel de grup, se afișează o singură dată deasupra cardurilor.",
+      "notationBox": "Formule logice, simboluri, scheme de inferență.",
+      "miniDiagram": "Diagrama mică SVG/HTML, neinteractivă, folosită doar pentru explicație.",
+      "shortResolution": "Rezolvarea scurtă vizibilă implicit.",
+      "expandedSteps": "Pașii detaliați ascunși implicit.",
+      "finalAnswer": "Răspunsul final scris ca în barem.",
+      "scoring": "Punctajul pe item/subitem.",
+      "baremExplained": "Explicația pe baza baremului.",
+      "commonMistake": "Capcana frecventă, dacă există."
+    },
+    "miniDiagramTypes": {
+      "square_of_opposition": "Pătratul logic A/E/I/O cu relația relevantă evidențiată.",
+      "euler_relation_map": "Hartă/diagramă Euler simplificată pentru raporturi între termeni.",
+      "venn_three_terms": "Trei cercuri S, P, M cu regiuni hașurate și/sau X.",
+      "syllogism_figure": "Schema poziției termenului mediu într-o figură silogistică.",
+      "operation_chain": "Lanț de transformări logice."
+    },
+    "symbolStyle": {
+      "useUnicodeArrows": true,
+      "useNegation": "¬P sau non-P, dar afișează preferabil ¬P în formule și non-P în limbaj natural.",
+      "examples": [
+        "SaP → SiP",
+        "SeP → Sa¬P",
+        "PeM / SiM ∴ SoP"
+      ]
+    }
+  },
+  "implementationNotesForAI": [
+    "Folosește acest JSON ca sursă de conținut. Nu afișa cheile interne.",
+    "Dacă există group.contextBlock, acesta se afișează o singură dată înaintea cardurilor din grup.",
+    "Dacă există card.miniDiagram, randarea trebuie să creeze o schemă mică în SVG/HTML. Nu este nevoie de interactivitate.",
+    "Pentru Subiectul I.A afișează enunțul complet și variantele a–d înainte de răspunsul final.",
+    "Pentru Subiectul II afișează propozițiile 1–4 la nivel de secțiune sau grup, nu repetate obositor în fiecare card.",
+    "Pentru Subiectul III.C afișează silogismul dat înainte de enunțurile A/F.",
+    "Pentru Subiectul III.D afișează definiția dată înainte de a), b), c).",
+    "Implicit afișează răspunsul final și baremul explicat. Pașii detaliați se deschid la click pe „Vezi pașii”.",
+    "V3: În UI, cerința oficială, contextul și răspunsul final trebuie să fie vizibile implicit. Pașii, baremul și diagrama se afișează în accordion. Nu afișa chei tehnice din JSON."
+  ],
+  "displayPolicy": {
+    "principle": "cerinta_si_raspunsul_la_suprafata_detaliile_in_accordion",
+    "showOfficialPromptByDefault": true,
+    "showContextByDefault": true,
+    "showFinalAnswerByDefault": true,
+    "showShortExplanationByDefault": true,
+    "collapseStepsByDefault": true,
+    "collapseScoringByDefault": true,
+    "collapseDiagramByDefault": true,
+    "collapseCommonMistakesByDefault": true,
+    "hideTechnicalKeysInUI": true,
+    "maxDefaultVisibleBlocksPerItem": [
+      "title",
+      "points",
+      "officialPrompt",
+      "contextBlock",
+      "finalAnswer",
+      "shortExplanation"
+    ],
+    "accordionBlocks": [
+      "expandedSteps",
+      "scoring",
+      "baremExplained",
+      "miniDiagram",
+      "commonMistakes",
+      "ruleUsed"
+    ],
+    "firstItemInGroupMayOpenSteps": true,
+    "allOtherItemsCollapsed": true
+  },
+  "visualHierarchy": {
+    "officialPrompt": {
+      "label": "CERINȚĂ OFICIALĂ",
+      "role": "primary_reference",
+      "defaultState": "visible",
+      "styleIntent": "neutru, lizibil, primul bloc din card"
+    },
+    "contextBlock": {
+      "label": "CONTEXT",
+      "role": "supporting_reference",
+      "defaultState": "visible_when_available",
+      "styleIntent": "fundal discret, separat de cerință"
+    },
+    "finalAnswer": {
+      "label": "RĂSPUNS FINAL",
+      "role": "main_output",
+      "defaultState": "visible",
+      "styleIntent": "accent vizual clar, fără culori agresive"
+    },
+    "shortExplanation": {
+      "label": "EXPLICAȚIE SCURTĂ",
+      "role": "minimal_reasoning",
+      "defaultState": "visible",
+      "styleIntent": "text scurt, 1-3 rânduri"
+    },
+    "expandedSteps": {
+      "label": "VEZI PAȘII",
+      "role": "detailed_reasoning",
+      "defaultState": "collapsed",
+      "styleIntent": "numerotare clară Pasul 1 / Pasul 2 / Pasul 3"
+    },
+    "miniDiagram": {
+      "label": "VEZI DIAGRAMA",
+      "role": "visual_support",
+      "defaultState": "collapsed_unless_group_essential",
+      "styleIntent": "mică, curată, SVG; nu canvas interactiv în această secțiune"
+    },
+    "scoring": {
+      "label": "VEZI BAREMUL",
+      "role": "scoring_support",
+      "defaultState": "collapsed",
+      "styleIntent": "jos în card, fără să încarce explicația"
+    }
+  },
+  "groupDisplayPolicy": {
+    "showContextOncePerGroup": true,
+    "showSharedDiagramOncePerGroup": true,
+    "doNotRepeatGroupDiagramInEveryItem": true,
+    "useStickyOrTopContextForLongGroups": true,
+    "groupLevelDiagrams": {
+      "I_B": "Euler la nivel de grup, nu pe fiecare afirmație a-h",
+      "II_A": "Pătratul logic la nivel de grup, nu pe fiecare transformare",
+      "III_A": "Figura silogistică și Venn doar unde se discută validitatea",
+      "III_C": "Silogismul complet vizibil înainte de afirmațiile A/F",
+      "III_D": "Definiția dată vizibilă înainte de a), b), c)"
+    }
+  },
+  "uiCopy": {
+    "buttons": {
+      "showSteps": "Vezi pașii",
+      "hideSteps": "Ascunde pașii",
+      "showBarem": "Vezi baremul",
+      "showDiagram": "Vezi diagrama",
+      "showRule": "Vezi regula folosită"
+    },
+    "doNotShowLabels": [
+      "answerType",
+      "renderer",
+      "miniDiagram.type",
+      "field.key",
+      "schemaVersion",
+      "documentType",
+      "rendererContract"
+    ]
+  }
+}

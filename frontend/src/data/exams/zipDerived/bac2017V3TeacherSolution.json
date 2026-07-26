@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "id": "teacher-solution-bac-logica-2017-v3",
+    "title": "BAC Logică 2017 - Varianta 3 - Rezolvare profesor",
+    "visibility": "teacher_only",
+    "source": "official_barem_then_expanded_solution"
+  },
+  "official_keys": {
+    "S1A": [
+      "1-d",
+      "2-b",
+      "3-d",
+      "4-b",
+      "5-a",
+      "6-c",
+      "7-d",
+      "8-b",
+      "9-a",
+      "10-d"
+    ],
+    "S1B": [
+      "a-F",
+      "b-A",
+      "c-F",
+      "d-F",
+      "e-A",
+      "f-F"
+    ],
+    "S3A_validity": [
+      "aaa-2 invalid",
+      "aee-4 valid"
+    ]
+  },
+  "solutions": [
+    {
+      "id": "S1A",
+      "answer": "1-d, 2-b, 3-d, 4-b, 5-a, 6-c, 7-d, 8-b, 9-a, 10-d",
+      "points": "10 x 2p = 20p",
+      "explanation": "Răspunsurile sunt preluate din baremul oficial."
+    },
+    {
+      "id": "S1B",
+      "answer": "a-F, b-A, c-F, d-F, e-A, f-F",
+      "points": "6 x 1p = 6p + 4p diagrama Euler",
+      "explanation": "A și B sunt în încrucișare; C se încrucișează atât cu A, cât și cu B; D este supraordonat termenilor A, B și C. Diagrama Euler trebuie să redea aceste raporturi."
+    },
+    {
+      "id": "S2A",
+      "answer": "1-SaP; 4-SoP",
+      "points": "2p",
+      "explanation": "Propoziția 1 este universal afirmativă; propoziția 4 este particular negativă."
+    },
+    {
+      "id": "S2B",
+      "answer": "Contradictoria prop. 1: SoP - Unele insecte nu sunt animale nevertebrate. Contrara prop. 2: SaP - Toate științele sunt activități iraționale. Supraalterna prop. 3: SaP - Toate automobilele de epocă sunt bunuri de colecție. Subcontrara prop. 4: SiP - Unele texte de filosofie sunt ușor de înțeles.",
+      "points": "8p",
+      "explanation": "Se aplică raporturile din pătratul opoziției: A are contradictorie O; E are contrară A; I are supraalternă A; O are subcontrară I."
+    },
+    {
+      "id": "S2C",
+      "answer": "Prop. 1 SaP: conversa prin accident PiS - Unele animale nevertebrate sunt insecte; obversa Se~P - Nicio insectă nu este non-animal nevertebrat. Prop. 3 SiP: conversa PiS - Unele bunuri de colecție sunt automobile de epocă; obversa So~P - Unele automobile de epocă nu sunt non-bunuri de colecție.",
+      "points": "8p",
+      "explanation": "A se convertește prin accident, I se convertește simplu. Obversiunea schimbă calitatea și înlocuiește predicatul cu contradictoriul său."
+    },
+    {
+      "id": "S2D",
+      "answer": "Conversa propoziției 2: PeS - Nicio activitate irațională nu este știință. Obversa conversei: Pa~S - Toate activitățile iraționale sunt non-științe. Baremul acceptă și Pi~S ca formulare derivată.",
+      "points": "4p",
+      "explanation": "Propoziția E se convertește simplu; obversa schimbă calitatea și neagă predicatul."
+    },
+    {
+      "id": "S2E",
+      "answer": "X: SaP -> PiS, conversiune validă. Y: SaP -> PaS, conversiune nevalidă.",
+      "points": "8p",
+      "explanation": "X este conversiune prin accident validă. Y inversează nepermis o propoziție universal afirmativă; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+    },
+    {
+      "id": "S3A",
+      "answer": "aaa-2: PaM / SaM / SaP - invalid. aee-4: PaM / MeS / SeP - valid.",
+      "points": "14p",
+      "explanation": "Schemele și deciziile de validitate sunt cele indicate în barem; validitatea trebuie verificată prin diagrame Venn."
+    },
+    {
+      "id": "S3B",
+      "answer": "Exemplu valid: Nicio decizie impusă fără consultarea copiilor nu este agreată de copii. Unele decizii ale părinților sunt decizii impuse fără consultarea copiilor. Deci, unele decizii ale părinților nu sunt agreate de copii. Formal: MeP; SiM; SoP.",
+      "points": "6p",
+      "explanation": "Silogismul este de tip eio-1 și justifică propoziția particular negativă dată."
+    },
+    {
+      "id": "S3C",
+      "answer": "Termen major: P = nerăbdători să ajungă studenți. Premisa minoră: Toți liceenii sunt elevi.",
+      "points": "4p",
+      "explanation": "Termenul major este predicatul concluziei; premisa minoră conține termenul minor al concluziei."
+    },
+    {
+      "id": "S3D",
+      "answer": "Definiția încalcă regula clarității și preciziei, deoarece folosește o formulare metaforică: „îngerul păzitor din intersecție”. Altă regulă: definiția nu trebuie să fie prea largă. Exemplu greșit: Polițistul este orice angajat al statului.",
+      "points": "6p",
+      "explanation": "Prima definiție nu este clară și literală; exemplul construit este prea larg, deoarece include și persoane care nu sunt polițiști."
+    }
+  ]
+}

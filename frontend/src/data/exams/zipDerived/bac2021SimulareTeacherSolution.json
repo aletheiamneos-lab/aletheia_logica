@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "BAC_LOGICA_TEACHER_SOLUTION_V2",
+  "examId": "bac_logica_2021_simulare",
+  "title": "BAC Logică 2021 - Simulare - rezolvare profesor",
+  "visibility": "teacher_only",
+  "sourceFiles": {
+    "subject": "Examenul național de bacalaureat 2021_Simulare.pdf",
+    "barem": "Examenul național de bacalaureat 2021_Simulare_BAREM.pdf"
+  },
+  "answers": {
+    "I_A": {
+      "1": "c",
+      "2": "c",
+      "3": "d",
+      "4": "b",
+      "5": "b",
+      "6": "a",
+      "7": "a",
+      "8": "b",
+      "9": "b",
+      "10": "c"
+    },
+    "I_B": {
+      "diagramId": "diagram_I_B_euler",
+      "truthValues": {
+        "a": "F",
+        "b": "F",
+        "c": "A",
+        "d": "A",
+        "e": "A",
+        "f": "F",
+        "g": "F",
+        "h": "A"
+      }
+    },
+    "II_A": {
+      "p1_subalterna": {
+        "formal": "SiP",
+        "natural": "Unele țări democratice sunt state liberale."
+      },
+      "p2_contradictoria": {
+        "formal": "SeP",
+        "natural": "Niciun triunghi dreptunghic nu este isoscel."
+      },
+      "p3_contrara": {
+        "formal": "SaP",
+        "natural": "Toate pietrele prețioase sunt ieftine."
+      },
+      "p4_subcontrara": {
+        "formal": "SiP",
+        "natural": "Unele teorii din fizica cuantică sunt ușor de explicat."
+      }
+    },
+    "II_B": {
+      "p1": {
+        "initial": "SaP",
+        "converse": {
+          "formal": "PiS",
+          "natural": "Unele state liberale sunt țări democratice."
+        },
+        "obverse": {
+          "formal": "Se¬P",
+          "natural": "Nicio țară democratică nu este stat neliberal."
+        }
+      },
+      "p2": {
+        "initial": "SiP",
+        "converse": {
+          "formal": "PiS",
+          "natural": "Unele triunghiuri isoscele sunt triunghiuri dreptunghice."
+        },
+        "obverse": {
+          "formal": "So¬P",
+          "natural": "Unele triunghiuri dreptunghice nu sunt neisoscele."
+        }
+      }
+    },
+    "II_C": {
+      "p3_obv_conv_contrad": {
+        "formal": "Po¬S",
+        "natural": "Unele lucruri ieftine nu sunt non-pietre prețioase."
+      },
+      "p4_super_subcontr": {
+        "formal": "SaP",
+        "natural": "Toate teoriile din fizica cuantică sunt ușor de explicat."
+      }
+    },
+    "II_D": {
+      "X": {
+        "formal": "SeP -> PeS",
+        "decision": "corect",
+        "explanation": "Conversiune validă pentru propoziția universal negativă; se respectă distribuirea termenilor."
+      },
+      "Y": {
+        "formal": "SiP -> So¬P",
+        "decision": "corect",
+        "explanation": "Obversiune validă pentru propoziția particular afirmativă."
+      }
+    },
+    "III_A": {
+      "modes": {
+        "eio-3": {
+          "schema": [
+            "MeP",
+            "MiS",
+            "SoP"
+          ],
+          "validity": "valid"
+        },
+        "iai-4": {
+          "schema": [
+            "PiM",
+            "MaS",
+            "SiP"
+          ],
+          "validity": "valid"
+        }
+      },
+      "naturalExample": "Niciun mamifer acvatic nu este plantă. Unele mamifere acvatice sunt balene. Prin urmare, unele balene nu sunt plante."
+    },
+    "III_B": {
+      "formal": [
+        "MaP",
+        "SiM",
+        "SiP"
+      ],
+      "natural": "Toate programele piratate sunt utilizate fără licență. Unele programe informatice sunt programe piratate. Prin urmare, unele programe informatice sunt utilizate fără licență."
+    },
+    "III_C": {
+      "1": "F",
+      "2": "F",
+      "3": "A",
+      "4": "A"
+    },
+    "III_D": {
+      "a": "Definiția încalcă regula adecvării: este prea largă, deoarece nu orice instrument de scris este creion.",
+      "b": "Altă regulă: evitarea circularității. Exemplu de definiție greșită: Creionul este un creion folosit pentru scris."
+    }
+  },
+  "scoring": {
+    "I": 30,
+    "II": 30,
+    "III": 30,
+    "office": 10
+  },
+  "notes": "Rezolvarea este conformă cu baremul oficial al simulării BAC 2021 la logică."
+}

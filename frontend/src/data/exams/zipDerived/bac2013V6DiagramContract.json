@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "examId": "bac_logica_2013_v6",
+    "year": 2013,
+    "variant": "Varianta 6",
+    "discipline": "Logica, argumentare si comunicare",
+    "mode": "exam",
+    "points": {
+      "subject_I": 30,
+      "subject_II": 30,
+      "subject_III": 30,
+      "oficiu": 10,
+      "total": 100
+    },
+    "sourceFiles": {
+      "subject": "Examenul de bacalaureat naţional 2013_V6.pdf",
+      "barem": "Examenul de bacalaureat naţional 2013_V6_BAREM.pdf"
+    },
+    "studentVisibility": "exam_only_no_solutions",
+    "teacherVisibility": "teacher_only_solution"
+  },
+  "diagrams": [
+    {
+      "diagramId": "venn_I_B_aai1_or_eae2",
+      "type": "venn_3_terms",
+      "studentEditable": true,
+      "teacherTemplate": {
+        "aai-1": [
+          "M subset P",
+          "S intersects M",
+          "therefore S intersects P"
+        ],
+        "eae-2": [
+          "P disjoint M",
+          "S subset M",
+          "therefore S disjoint P"
+        ]
+      }
+    },
+    {
+      "diagramId": "euler_II_E_prop3",
+      "type": "euler_2_terms",
+      "statement": "Niciun tigru nu este animal domestic.",
+      "formula": "SeP",
+      "teacherTemplate": [
+        "circle S labeled tigru",
+        "circle P labeled animal domestic",
+        "circles disjoint/no overlap"
+      ]
+    }
+  ]
+}

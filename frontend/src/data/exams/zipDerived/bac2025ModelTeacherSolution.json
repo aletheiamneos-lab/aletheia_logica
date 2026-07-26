@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "2.1-teacher-solution-backend",
+  "solutionId": "teacher_solution_bac_logica_2025_model",
+  "examId": "bac_logica_2025_model",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logica 2025 - Model",
+  "security": {
+    "neverExposeToStudent": true,
+    "serverSideOnly": true
+  },
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_2",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_3",
+      "correctAnswer": {
+        "variant": "a"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_4",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_5",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_6",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_7",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_8",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_9",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_A_10",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Raspuns conform baremului oficial."
+    },
+    {
+      "itemId": "I_B_2_a",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "D si C sunt contrare, deci niciun C nu este D; rezulta ca unii C nu sunt D."
+    },
+    {
+      "itemId": "I_B_2_b",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "A este specie a termenului C, deci A este inclus in C."
+    },
+    {
+      "itemId": "I_B_2_c",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "A este in contrarietate cu E, deci niciun A nu este E; rezulta ca unii A nu sunt E."
+    },
+    {
+      "itemId": "I_B_2_d",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "E este in raport de incrucisare cu D, deci exista elemente comune D-E."
+    },
+    {
+      "itemId": "I_B_2_e",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "C este gen pentru B, deci toti B sunt C."
+    },
+    {
+      "itemId": "I_B_2_f",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "B este inclus in C, iar C este contrar cu D; deci niciun B nu este D."
+    },
+    {
+      "itemId": "I_B_2_g",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "A este in contrarietate cu E, deci unii E sunt A este fals."
+    },
+    {
+      "itemId": "I_B_2_h",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "A este specie a lui C, deci exista C care sunt A."
+    },
+    {
+      "itemId": "I_B_1",
+      "correctAnswer": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Reprezentarea trebuie sa respecte raporturile: A si B incluse in C; D contrar cu C; A contrar cu B, D si E; E se incruciseaza cu D."
+    },
+    {
+      "itemId": "II_A_1",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unele descoperiri stiintifice nu sunt realizari intemeiate pe eforturi sistematice."
+      },
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p forma logica",
+          "1p limbaj natural"
+        ]
+      },
+      "explanation": "Contradictoria lui SaP este SoP."
+    },
+    {
+      "itemId": "II_A_2",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unele inferente nedeductive nu sunt folosite in testarea ipotezelor stiintifice."
+      },
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p forma logica",
+          "1p limbaj natural"
+        ]
+      },
+      "explanation": "Subcontrara lui SiP este SoP."
+    },
+    {
+      "itemId": "II_A_3",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate numerele impare sunt divizibile cu 2."
+      },
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p forma logica",
+          "1p limbaj natural"
+        ]
+      },
+      "explanation": "Contrara lui SeP este SaP."
+    },
+    {
+      "itemId": "II_A_4",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Niciun articol de papetarie nu este realizat din materiale ecologice."
+      },
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p forma logica",
+          "1p limbaj natural"
+        ]
+      },
+      "explanation": "Supraalterna lui SoP este SeP."
+    },
+    {
+      "itemId": "II_B_prop1",
+      "correctAnswer": {
+        "conversionFormal": "PiS",
+        "conversionNatural": "Unele realizari intemeiate pe eforturi sistematice sunt descoperiri stiintifice.",
+        "obversionFormal": "Se¬P",
+        "obversionNatural": "Nicio descoperire stiintifica nu este realizare neintemeiata pe eforturi sistematice."
+      },
+      "scoring": {
+        "points": 4
+      },
+      "explanation": "SaP se converteste prin accident in PiS si se obverseaza in Se¬P."
+    },
+    {
+      "itemId": "II_B_prop3",
+      "correctAnswer": {
+        "conversionFormal": "PeS",
+        "conversionNatural": "Niciun lucru divizibil cu 2 nu este numar impar.",
+        "obversionFormal": "Sa¬P",
+        "obversionNatural": "Toate numerele impare sunt nedivizibile cu 2."
+      },
+      "scoring": {
+        "points": 4
+      },
+      "explanation": "SeP se converteste simplu in PeS si se obverseaza in Sa¬P."
+    },
+    {
+      "itemId": "II_C_1",
+      "correctAnswer": {
+        "formal": "Po¬S",
+        "natural": "Unele lucruri realizate din materiale ecologice nu sunt non-articole de papetarie."
+      },
+      "scoring": {
+        "points": 3,
+        "criteria": [
+          "1p forma logica",
+          "2p limbaj natural"
+        ]
+      },
+      "explanation": "SoP -> subcontrara SiP -> conversa PiS -> obversa Po¬S."
+    },
+    {
+      "itemId": "II_C_2",
+      "correctAnswer": {
+        "formal": "¬PiS",
+        "natural": "Unele realizari neintemeiate pe eforturi sistematice sunt descoperiri stiintifice."
+      },
+      "scoring": {
+        "points": 3,
+        "criteria": [
+          "1p forma logica",
+          "2p limbaj natural"
+        ]
+      },
+      "explanation": "SaP -> contrara SeP -> obversa Sa¬P -> conversa prin accident ¬PiS."
+    },
+    {
+      "itemId": "II_D_X",
+      "correctAnswer": {
+        "formalization": "SaP -> PaS",
+        "validity": "incorrect",
+        "explanation": "Conversiunea universalei afirmative ca PaS este nevalida; termenul P devine distribuit in concluzie, desi nu este distribuit in premisa SaP."
+      },
+      "scoring": {
+        "points": 4
+      },
+      "explanation": "Rationamentul elevului X este incorect."
+    },
+    {
+      "itemId": "II_D_Y",
+      "correctAnswer": {
+        "formalization": "SiP -> So¬P",
+        "validity": "correct",
+        "explanation": "Este obversiune valida: se schimba calitatea si se neaga predicatul."
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Rationamentul elevului Y este corect."
+    },
+    {
+      "itemId": "III_A_schema_eio_2",
+      "correctAnswer": {
+        "majorPremise": "PeM",
+        "minorPremise": "SiM",
+        "conclusion": "SoP"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Schema pentru eio-2: PeM / SiM // SoP."
+    },
+    {
+      "itemId": "III_A_schema_aaa_3",
+      "correctAnswer": {
+        "majorPremise": "MaP",
+        "minorPremise": "MaS",
+        "conclusion": "SaP"
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Schema ceruta de barem pentru aaa-3: MaP / MaS // SaP."
+    },
+    {
+      "itemId": "III_A_b_natural_syllogism",
+      "correctAnswer": {
+        "example": "Niciun erou nu este om lipsit de curaj. Unii salvatori sunt oameni lipsiti de curaj. Prin urmare, unii salvatori nu sunt eroi."
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Se acorda punctaj pentru orice silogism in limbaj natural care corespunde uneia dintre schemele de la subpunctul a), independent de adevarul propozitiilor."
+    },
+    {
+      "itemId": "III_A_c_venn_eio_2",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "diagramId": "diagram_III_A_c_eio_2_venn",
+        "renderFromContract": true,
+        "explanation": "Modul eio-2 este valid; dupa reprezentarea premiselor, concluzia SoP se citeste din diagrama."
+      },
+      "scoring": {
+        "points": 4
+      },
+      "explanation": "Baremul considera eio-2 valid."
+    },
+    {
+      "itemId": "III_A_c_venn_aaa_3",
+      "correctAnswer": {
+        "validityDecision": "invalid",
+        "diagramId": "diagram_III_A_c_aaa_3_venn",
+        "renderFromContract": true,
+        "explanation": "Modul aaa-3 este nevalid in forma ceruta; concluzia SaP nu rezulta din premise."
+      },
+      "scoring": {
+        "points": 4
+      },
+      "explanation": "Baremul considera aaa-3 nevalid."
+    },
+    {
+      "itemId": "III_B_valid_syllogism",
+      "correctAnswer": {
+        "formalSchema": "MaP / SiM // SiP",
+        "naturalSyllogism": "Toti medicii care salveaza vieti sunt adevarati eroi. Unii profesionisti sunt medici care salveaza vieti. Prin urmare, unii profesionisti sunt adevarati eroi."
+      },
+      "scoring": {
+        "points": 6,
+        "criteria": [
+          "3p formal",
+          "3p natural"
+        ]
+      },
+      "explanation": "Darii-1 este un mod valid si justifica particulara afirmativa ceruta."
+    },
+    {
+      "itemId": "III_C_1",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "Termenul mediu «lenes» este distribuit in premisa minora negativa."
+    },
+    {
+      "itemId": "III_C_2",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "Predicatul concluziei este «om nemultumit», nu «elev premiant»."
+    },
+    {
+      "itemId": "III_C_3",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "Concluzia «Niciun elev premiant nu este om nemultumit» este universala negativa."
+    },
+    {
+      "itemId": "III_C_4",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      },
+      "explanation": "Subiectul «elev premiant» este distribuit in propozitia E, atat in premisa, cat si in concluzie."
+    },
+    {
+      "itemId": "III_D_a",
+      "correctAnswer": {
+        "example": "Definitia incalca regula claritatii si preciziei / evita limbajul figurat, deoarece «examenul maturitatii» este o formula metaforica."
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Orice regula corecta mentionata si justificata poate fi acceptata conform baremului."
+    },
+    {
+      "itemId": "III_D_b",
+      "correctAnswer": {
+        "example": "O alta regula: definitia nu trebuie sa fie circulara."
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Se poate mentiona orice alta regula de corectitudine a definitiei."
+    },
+    {
+      "itemId": "III_D_c",
+      "correctAnswer": {
+        "example": "Bacalaureatul este examenul de bacalaureat."
+      },
+      "scoring": {
+        "points": 2
+      },
+      "explanation": "Exemplul incalca regula evitarii circularitatii."
+    }
+  ]
+}

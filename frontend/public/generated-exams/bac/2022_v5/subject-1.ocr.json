@@ -1,0 +1,720 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1679.2955322265625,
+      "y": 214.60986328125,
+      "score": 0.9846245378255845,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul National dePoliticisi EvaluareinEducatie",
+      "x": 1325.497314453125,
+      "y": 274.5010070800781,
+      "score": 0.9656203153232733,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2022",
+      "x": 1318.022705078125,
+      "y": 396.7787170410156,
+      "score": 0.9974873029824459,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1731.6177978515625,
+      "y": 459.1653137207031,
+      "score": 0.9888978167013689,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1367.853515625,
+      "y": 534.0292358398438,
+      "score": 0.9939975864959486,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta5",
+      "x": 2972.40283203125,
+      "y": 606.3976440429688,
+      "score": 0.9971434871355692,
+      "page_number": 1
+    },
+    {
+      "text": "Profilulumanistdinfilierateoretica,profilulserviciidinfilieratehnologicasitoateprofilurile",
+      "x": 513.2564697265625,
+      "y": 761.1163940429688,
+      "score": 0.9642718172735638,
+      "page_number": 1
+    },
+    {
+      "text": "sispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar",
+      "x": 505.7818908691406,
+      "y": 838.4757690429688,
+      "score": 0.9869424654887273,
+      "page_number": 1
+    },
+    {
+      "text": "Toatesubiectelesuntobligatori.Se acordazecepunctedinoficiu.",
+      "x": 523.22265625,
+      "y": 983.212646484375,
+      "score": 0.9842427605289524,
+      "page_number": 1
+    },
+    {
+      "text": "Timpul de lucru efectiv este de trei ore.",
+      "x": 570.5618286132812,
+      "y": 1063.0675048828125,
+      "score": 0.9535342207769069,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 505.7818908691406,
+      "y": 1212.7952880859375,
+      "score": 0.9900648653507232,
+      "page_number": 1
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2847.826171875,
+      "y": 1212.7952880859375,
+      "score": 0.9693447599808375,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+      "x": 505.7818908691406,
+      "y": 1285.163818359375,
+      "score": 0.9861362773053189,
+      "page_number": 1
+    },
+    {
+      "text": "enunturiledemaijos.Estecorectaosinguravariantaderaspuns.",
+      "x": 505.7818908691406,
+      "y": 1362.5230712890625,
+      "score": 0.9915581845811435,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 503.29034423828125,
+      "y": 1489.791748046875,
+      "score": 0.9987578094005585,
+      "page_number": 1
+    },
+    {
+      "text": "Demonstratia este un proces logic prin care o propozitie:",
+      "x": 665.240234375,
+      "y": 1484.8009033203125,
+      "score": 0.9789166523699175,
+      "page_number": 1
+    },
+    {
+      "text": "evidentfalsa esteconchisa dinpropoziti adevarate",
+      "x": 662.7486572265625,
+      "y": 1559.664794921875,
+      "score": 0.9658815898001194,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 548.1380004882812,
+      "y": 1572.14208984375,
+      "score": 0.9976416230201721,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 553.12109375,
+      "y": 1637.024169921875,
+      "score": 0.9986675679683685,
+      "page_number": 1
+    },
+    {
+      "text": "infirmataesteconchisadinpropozitifalse",
+      "x": 662.7486572265625,
+      "y": 1634.5286865234375,
+      "score": 0.9973135794463911,
+      "page_number": 1
+    },
+    {
+      "text": "dataesteconchisadinpropozitiadevarate",
+      "x": 665.240234375,
+      "y": 1709.392578125,
+      "score": 0.9974232847626144,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 555.6126098632812,
+      "y": 1719.3743896484375,
+      "score": 0.9439080357551575,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 1786.751953125,
+      "score": 0.9984217286109924,
+      "page_number": 1
+    },
+    {
+      "text": "dataeste conchisadinpropozitifalse",
+      "x": 662.7486572265625,
+      "y": 1784.2564697265625,
+      "score": 0.9717343817738926,
+      "page_number": 1
+    },
+    {
+      "text": "Rationamentul Dacauni elevi de clasa aIX-a sunt sportivi, atunci uni sportivi sunt",
+      "x": 672.71484375,
+      "y": 1909.0296630859375,
+      "score": 0.9368079370114861,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 503.29034423828125,
+      "y": 1914.0206298828125,
+      "score": 0.9939327538013458,
+      "page_number": 1
+    },
+    {
+      "text": "adolescentideoarece toti eleviideclasaaIX-asunt adolescenti esteunexemplude",
+      "x": 675.2063598632812,
+      "y": 1978.902587890625,
+      "score": 0.9688201785087586,
+      "page_number": 1
+    },
+    {
+      "text": "rationament:",
+      "x": 670.2232666015625,
+      "y": 2051.27099609375,
+      "score": 0.9993036140998205,
+      "page_number": 1
+    },
+    {
+      "text": "inductivtare",
+      "x": 662.7486572265625,
+      "y": 2128.63037109375,
+      "score": 0.9989041884740194,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 550.6295166015625,
+      "y": 2138.6123046875,
+      "score": 0.9982528984546661,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 2208.4853515625,
+      "score": 0.9988952279090881,
+      "page_number": 1
+    },
+    {
+      "text": "inductivslab",
+      "x": 607.9348754882812,
+      "y": 2205.98974609375,
+      "score": 0.9973164747158686,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 553.12109375,
+      "y": 2283.34912109375,
+      "score": 0.7656930983066559,
+      "page_number": 1
+    },
+    {
+      "text": "deductivimediat",
+      "x": 660.2571411132812,
+      "y": 2278.358154296875,
+      "score": 0.9984902818997701,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 2353.22216796875,
+      "score": 0.9983156621456146,
+      "page_number": 1
+    },
+    {
+      "text": "deductivmediat",
+      "x": 660.2571411132812,
+      "y": 2350.726806640625,
+      "score": 0.9972923099994659,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 500.7987976074219,
+      "y": 2477.995361328125,
+      "score": 0.996003121137619,
+      "page_number": 1
+    },
+    {
+      "text": "intre termeni constantean si elev se stabileste un raport logic de:",
+      "x": 662.7486572265625,
+      "y": 2468.013427734375,
+      "score": 0.9671388517564802,
+      "page_number": 1
+    },
+    {
+      "text": "identitate",
+      "x": 660.2571411132812,
+      "y": 2547.868408203125,
+      "score": 0.9976751565933227,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 545.646484375,
+      "y": 2560.345703125,
+      "score": 0.9869927763938904,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 548.1380004882812,
+      "y": 2622.732177734375,
+      "score": 0.997861236333847,
+      "page_number": 1
+    },
+    {
+      "text": "ordonare",
+      "x": 657.765625,
+      "y": 2622.732177734375,
+      "score": 0.9985025227069855,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 553.12109375,
+      "y": 2705.08251953125,
+      "score": 0.9223601222038269,
+      "page_number": 1
+    },
+    {
+      "text": "incrucisare",
+      "x": 657.765625,
+      "y": 2695.1005859375,
+      "score": 0.9935098778117787,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 550.6295166015625,
+      "y": 2764.9736328125,
+      "score": 0.9934580326080322,
+      "page_number": 1
+    },
+    {
+      "text": "contrarietate",
+      "x": 660.2571411132812,
+      "y": 2774.95556640625,
+      "score": 0.9989027564342206,
+      "page_number": 1
+    },
+    {
+      "text": "Predicatul logic al propozitiei Toti alpinisti sunt oameni curajosi este:",
+      "x": 667.7317504882812,
+      "y": 2897.233154296875,
+      "score": 0.9715419183038685,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 503.29034423828125,
+      "y": 2899.728759765625,
+      "score": 0.9958913922309875,
+      "page_number": 1
+    },
+    {
+      "text": "sunt oameni curajosi",
+      "x": 662.7486572265625,
+      "y": 2974.592529296875,
+      "score": 0.9814987242221832,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 550.6295166015625,
+      "y": 2984.574462890625,
+      "score": 0.9983724653720856,
+      "page_number": 1
+    },
+    {
+      "text": "b.（",
+      "x": 545.646484375,
+      "y": 3044.465576171875,
+      "score": 0.7755816678206126,
+      "page_number": 1
+    },
+    {
+      "text": "oameni curajosi",
+      "x": 657.765625,
+      "y": 3044.465576171875,
+      "score": 0.9968737244606019,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 548.1380004882812,
+      "y": 3126.81591796875,
+      "score": 0.9129950702190399,
+      "page_number": 1
+    },
+    {
+      "text": "oameni",
+      "x": 657.765625,
+      "y": 3126.81591796875,
+      "score": 0.9979159533977509,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 548.1380004882812,
+      "y": 3194.193359375,
+      "score": 0.9886192679405212,
+      "page_number": 1
+    },
+    {
+      "text": "sunt",
+      "x": 662.7486572265625,
+      "y": 3199.184326171875,
+      "score": 0.9973101019859314,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 505.7818908691406,
+      "y": 3343.921142578125,
+      "score": 0.9981119632720947,
+      "page_number": 1
+    },
+    {
+      "text": "Unadintrereguliledecorectitudineaoperatieideclasificareesteregula:",
+      "x": 665.240234375,
+      "y": 3343.921142578125,
+      "score": 0.9924762556047151,
+      "page_number": 1
+    },
+    {
+      "text": "raportuluideordonareintreclase",
+      "x": 662.7486572265625,
+      "y": 3421.280517578125,
+      "score": 0.9927707056204478,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 555.6126098632812,
+      "y": 3431.262451171875,
+      "score": 0.9969326853752136,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 3491.153564453125,
+      "score": 0.9978205263614655,
+      "page_number": 1
+    },
+    {
+      "text": "eterogenitatiiclaselor",
+      "x": 662.7486572265625,
+      "y": 3493.649169921875,
+      "score": 0.9961357306350361,
+      "page_number": 1
+    },
+    {
+      "text": "raportului de opozitieintre clase",
+      "x": 657.765625,
+      "y": 3566.017578125,
+      "score": 0.963925712036364,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 553.12109375,
+      "y": 3575.999267578125,
+      "score": 0.8162331581115723,
+      "page_number": 1
+    },
+    {
+      "text": "d.（",
+      "x": 548.1380004882812,
+      "y": 3638.385986328125,
+      "score": 0.7381678422292074,
+      "page_number": 1
+    },
+    {
+      "text": "criteriului multiplu",
+      "x": 655.2740478515625,
+      "y": 3643.376953125,
+      "score": 0.9854090332984924,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 503.29034423828125,
+      "y": 3768.150146484375,
+      "score": 0.9978798627853394,
+      "page_number": 1
+    },
+    {
+      "text": "Din punct de vedere intensional, termenul nevazatoreste:",
+      "x": 670.2232666015625,
+      "y": 3763.1591796875,
+      "score": 0.9820459591490882,
+      "page_number": 1
+    },
+    {
+      "text": "negativ, concret",
+      "x": 667.7317504882812,
+      "y": 3845.509521484375,
+      "score": 0.9756603762507439,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 545.646484375,
+      "y": 3848.0048828125,
+      "score": 0.9942488372325897,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 3915.38232421875,
+      "score": 0.9994320571422577,
+      "page_number": 1
+    },
+    {
+      "text": "nevid, general",
+      "x": 660.2571411132812,
+      "y": 3915.38232421875,
+      "score": 0.9900931545666286,
+      "page_number": 1
+    },
+    {
+      "text": "colectiv, vag",
+      "x": 662.7486572265625,
+      "y": 3980.264404296875,
+      "score": 0.9937843084335327,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 550.6295166015625,
+      "y": 3995.2373046875,
+      "score": 0.8484268188476562,
+      "page_number": 1
+    },
+    {
+      "text": "relativ, compus",
+      "x": 657.765625,
+      "y": 4060.119384765625,
+      "score": 0.9915128946304321,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 550.6295166015625,
+      "y": 4062.61474609375,
+      "score": 0.9967895150184631,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 503.29034423828125,
+      "y": 4187.3876953125,
+      "score": 0.998396247625351,
+      "page_number": 1
+    },
+    {
+      "text": "Concluzia inductiei incomplete este intotdeauna:",
+      "x": 667.7317504882812,
+      "y": 4182.39697265625,
+      "score": 0.9773184942702452,
+      "page_number": 1
+    },
+    {
+      "text": "probabila",
+      "x": 662.7486572265625,
+      "y": 4264.7470703125,
+      "score": 0.9799082610342238,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 550.6295166015625,
+      "y": 4269.73828125,
+      "score": 0.9964305460453033,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 4337.11572265625,
+      "score": 0.9995633065700531,
+      "page_number": 1
+    },
+    {
+      "text": "falsa",
+      "x": 660.2571411132812,
+      "y": 4334.6201171875,
+      "score": 0.9911173105239868,
+      "page_number": 1
+    },
+    {
+      "text": "adevarata",
+      "x": 662.7486572265625,
+      "y": 4409.484375,
+      "score": 0.9941790435049269,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 548.1380004882812,
+      "y": 4411.9794921875,
+      "score": 0.9098186790943146,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 545.646484375,
+      "y": 4479.357421875,
+      "score": 0.9472194015979767,
+      "page_number": 1
+    },
+    {
+      "text": "certa",
+      "x": 660.2571411132812,
+      "y": 4481.8525390625,
+      "score": 0.993757712841034,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 500.7987976074219,
+      "y": 4688.97607421875,
+      "score": 0.9802380700906118,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 5",
+      "x": 2907.623046875,
+      "y": 4693.96728515625,
+      "score": 0.9617653131484986,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1739.0924072265625,
+      "y": 4753.8583984375,
+      "score": 0.9876449533871242,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul National dePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2022",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Varianta5",
+    "Profilulumanistdinfilierateoretica,profilulserviciidinfilieratehnologicasitoateprofilurile",
+    "sispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar",
+    "Toatesubiectelesuntobligatori.Se acordazecepunctedinoficiu.",
+    "Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULI",
+    "(30depuncte)",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+    "enunturiledemaijos.Estecorectaosinguravariantaderaspuns.",
+    "1.",
+    "Demonstratia este un proces logic prin care o propozitie:",
+    "evidentfalsa esteconchisa dinpropoziti adevarate",
+    "a.",
+    "b.",
+    "infirmataesteconchisadinpropozitifalse",
+    "dataesteconchisadinpropozitiadevarate",
+    "C.",
+    "d.",
+    "dataeste conchisadinpropozitifalse",
+    "Rationamentul Dacauni elevi de clasa aIX-a sunt sportivi, atunci uni sportivi sunt",
+    "2.",
+    "adolescentideoarece toti eleviideclasaaIX-asunt adolescenti esteunexemplude",
+    "rationament:",
+    "inductivtare",
+    "a.",
+    "b.",
+    "inductivslab",
+    "C.",
+    "deductivimediat",
+    "d.",
+    "deductivmediat",
+    "3.",
+    "intre termeni constantean si elev se stabileste un raport logic de:",
+    "identitate",
+    "a.",
+    "b.",
+    "ordonare",
+    "C.",
+    "incrucisare",
+    "d.",
+    "contrarietate",
+    "Predicatul logic al propozitiei Toti alpinisti sunt oameni curajosi este:",
+    "4.",
+    "sunt oameni curajosi",
+    "a.",
+    "b.（",
+    "oameni curajosi",
+    "C.",
+    "oameni",
+    "d.",
+    "sunt",
+    "5.",
+    "Unadintrereguliledecorectitudineaoperatieideclasificareesteregula:",
+    "raportuluideordonareintreclase",
+    "a.",
+    "b.",
+    "eterogenitatiiclaselor",
+    "raportului de opozitieintre clase",
+    "C.",
+    "d.（",
+    "criteriului multiplu",
+    "6.",
+    "Din punct de vedere intensional, termenul nevazatoreste:",
+    "negativ, concret",
+    "a.",
+    "b.",
+    "nevid, general",
+    "colectiv, vag",
+    "C.",
+    "relativ, compus",
+    "d.",
+    "7.",
+    "Concluzia inductiei incomplete este intotdeauna:",
+    "probabila",
+    "a.",
+    "b.",
+    "falsa",
+    "adevarata",
+    "C.",
+    "d.",
+    "certa",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 5",
+    "Pagina 1 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul National dePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2022\nProba E. d)\nLogica, argumentare si comunicare\nVarianta5\nProfilulumanistdinfilierateoretica,profilulserviciidinfilieratehnologicasitoateprofilurile\nsispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar\nToatesubiectelesuntobligatori.Se acordazecepunctedinoficiu.\nTimpul de lucru efectiv este de trei ore.\nSUBIECTULI\n(30depuncte)\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre\nenunturiledemaijos.Estecorectaosinguravariantaderaspuns.\n1.\nDemonstratia este un proces logic prin care o propozitie:\nevidentfalsa esteconchisa dinpropoziti adevarate\na.\nb.\ninfirmataesteconchisadinpropozitifalse\ndataesteconchisadinpropozitiadevarate\nC.\nd.\ndataeste conchisadinpropozitifalse\nRationamentul Dacauni elevi de clasa aIX-a sunt sportivi, atunci uni sportivi sunt\n2.\nadolescentideoarece toti eleviideclasaaIX-asunt adolescenti esteunexemplude\nrationament:\ninductivtare\na.\nb.\ninductivslab\nC.\ndeductivimediat\nd.\ndeductivmediat\n3.\nintre termeni constantean si elev se stabileste un raport logic de:\nidentitate\na.\nb.\nordonare\nC.\nincrucisare\nd.\ncontrarietate\nPredicatul logic al propozitiei Toti alpinisti sunt oameni curajosi este:\n4.\nsunt oameni curajosi\na.\nb.（\noameni curajosi\nC.\noameni\nd.\nsunt\n5.\nUnadintrereguliledecorectitudineaoperatieideclasificareesteregula:\nraportuluideordonareintreclase\na.\nb.\neterogenitatiiclaselor\nraportului de opozitieintre clase\nC.\nd.（\ncriteriului multiplu\n6.\nDin punct de vedere intensional, termenul nevazatoreste:\nnegativ, concret\na.\nb.\nnevid, general\ncolectiv, vag\nC.\nrelativ, compus\nd.\n7.\nConcluzia inductiei incomplete este intotdeauna:\nprobabila\na.\nb.\nfalsa\nadevarata\nC.\nd.\ncerta\nProba scrisa la logica,argumentare si comunicare\nVarianta 5\nPagina 1 din 3"
+}

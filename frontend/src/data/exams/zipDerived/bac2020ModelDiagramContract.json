@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "DIAGRAM_CONTRACT_V2",
+  "examId": "bac_logica_2020_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_2020_model",
+      "diagramType": "euler",
+      "studentCanvas": true,
+      "teacherModel": {
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "relations": [
+          "A intersects B",
+          "A opposite D",
+          "B superset D",
+          "C subset A",
+          "C subset B",
+          "E opposite C",
+          "E opposite D",
+          "E intersects A",
+          "E intersects B"
+        ]
+      },
+      "renderingNote": "Elevul vede canvas/upload; profesorul poate randa o diagramă model din relații."
+    },
+    {
+      "diagramId": "diagram_III_A_venn_2020_model",
+      "diagramType": "venn_three_terms",
+      "studentCanvas": true,
+      "teacherModel": {
+        "modes": [
+          "aii-1",
+          "aai-4"
+        ],
+        "labels": [
+          "S",
+          "P",
+          "M"
+        ],
+        "validity": {
+          "aii-1": "valid",
+          "aai-4": "valid"
+        },
+        "premises": {
+          "aii-1": [
+            "MaP",
+            "SiM"
+          ],
+          "aai-4": [
+            "PaM",
+            "MaS"
+          ]
+        },
+        "conclusions": {
+          "aii-1": "SiP",
+          "aai-4": "SiP"
+        }
+      },
+      "renderingNote": "Se folosesc trei cercuri S, P, M, hașurare pentru universale și x pentru particulare."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "slot": 7,
+  "nivel": "mediu",
+  "title": "Slot 7 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu, pe argumentare și sofisme.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_7_mediu_card_1",
+      "front": "Care este diferența dintre teză și concluzie?",
+      "back": "Teza este ideea de susținut, iar concluzia este rezultatul logic al premiselor; în multe argumente ele coincid."
+    },
+    {
+      "id": "slot_7_mediu_card_2",
+      "front": "Care este diferența dintre premisă și temei?",
+      "back": "Premisa este enunțul folosit în argument, iar temeiul este rolul ei de sprijin pentru concluzie."
+    },
+    {
+      "id": "slot_7_mediu_card_3",
+      "front": "De ce un argument poate avea concluzie adevărată, dar formă nevalidă?",
+      "back": "Pentru că adevărul concluziei nu dovedește că ea rezultă logic din premise."
+    },
+    {
+      "id": "slot_7_mediu_card_4",
+      "front": "De ce un argument valid poate avea concluzie falsă?",
+      "back": "Pentru că validitatea garantează concluzia doar dacă premisele sunt adevărate."
+    },
+    {
+      "id": "slot_7_mediu_card_5",
+      "front": "Ce condiții are un argument solid?",
+      "back": "Trebuie să fie valid și să aibă premise adevărate."
+    },
+    {
+      "id": "slot_7_mediu_card_6",
+      "front": "Cum recunoști o demonstrație directă?",
+      "back": "Prin faptul că trece explicit de la premise acceptate la concluzie."
+    },
+    {
+      "id": "slot_7_mediu_card_7",
+      "front": "Cum recunoști o demonstrație indirectă?",
+      "back": "Prin presupunerea contrariului și obținerea unei contradicții."
+    },
+    {
+      "id": "slot_7_mediu_card_8",
+      "front": "De ce reducerea la absurd este eficientă?",
+      "back": "Pentru că arată că alternativa la teză nu poate fi menținută coerent."
+    },
+    {
+      "id": "slot_7_mediu_card_9",
+      "front": "Cum recunoști o entimemă?",
+      "back": "Prin faptul că lipsește o premisă evidentă sau concluzia este lăsată implicită."
+    },
+    {
+      "id": "slot_7_mediu_card_10",
+      "front": "De ce entimema poate fi riscantă?",
+      "back": "Pentru că premisa ascunsă poate fi falsă, ambiguă sau discutabilă."
+    },
+    {
+      "id": "slot_7_mediu_card_11",
+      "front": "Cum recunoști un sorit?",
+      "back": "Prin lanțul de relații logice care duc treptat la o concluzie finală."
+    },
+    {
+      "id": "slot_7_mediu_card_12",
+      "front": "De ce soritul cere atenție?",
+      "back": "Pentru că o eroare într-o verigă afectează întreaga concluzie."
+    },
+    {
+      "id": "slot_7_mediu_card_13",
+      "front": "Care este diferența dintre polisilogism și sorit?",
+      "back": "Polisilogismul exprimă silogismele succesive, iar soritul comprimă lanțul prin omiterea concluziilor intermediare."
+    },
+    {
+      "id": "slot_7_mediu_card_14",
+      "front": "Cum funcționează o dilemă constructivă?",
+      "back": "Arată că, indiferent care alternativă este acceptată, rezultă o anumită concluzie."
+    },
+    {
+      "id": "slot_7_mediu_card_15",
+      "front": "Cum funcționează o dilemă distructivă?",
+      "back": "Respinge alternativele prin consecințele lor inacceptabile sau false."
+    },
+    {
+      "id": "slot_7_mediu_card_16",
+      "front": "Cum recunoști falsa dilemă?",
+      "back": "Prin faptul că prezintă doar două opțiuni, deși există mai multe posibilități reale."
+    },
+    {
+      "id": "slot_7_mediu_card_17",
+      "front": "Care este problema sofismelor de limbaj?",
+      "back": "Ele folosesc ambiguități pentru a crea aparența unui raționament corect."
+    },
+    {
+      "id": "slot_7_mediu_card_18",
+      "front": "Care este problema sofismelor de relevanță?",
+      "back": "Ele abat atenția de la teza care trebuie demonstrată."
+    },
+    {
+      "id": "slot_7_mediu_card_19",
+      "front": "Care este problema sofismelor de supoziție?",
+      "back": "Ele presupun ceea ce ar trebui demonstrat sau acceptă premise nejustificate."
+    },
+    {
+      "id": "slot_7_mediu_card_20",
+      "front": "Ce este echivocația într-un argument?",
+      "back": "Folosirea aceluiași termen cu sensuri diferite în același raționament."
+    },
+    {
+      "id": "slot_7_mediu_card_21",
+      "front": "Ce este amfibolia într-un argument?",
+      "back": "Ambiguitatea produsă de structura gramaticală a enunțului."
+    },
+    {
+      "id": "slot_7_mediu_card_22",
+      "front": "Ce este apelul la persoană?",
+      "back": "Atacul la persoană în locul criticării argumentului."
+    },
+    {
+      "id": "slot_7_mediu_card_23",
+      "front": "Ce este apelul la milă?",
+      "back": "Încercarea de a obține acceptarea concluziei prin compasiune, nu prin temeiuri."
+    },
+    {
+      "id": "slot_7_mediu_card_24",
+      "front": "Ce este apelul la forță?",
+      "back": "Încercarea de a impune concluzia prin amenințare sau presiune."
+    },
+    {
+      "id": "slot_7_mediu_card_25",
+      "front": "Ce este abaterea de la subiect?",
+      "back": "Schimbarea temei discuției pentru a evita demonstrarea tezei inițiale."
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul EducatieiNationale",
+      "x": 1492.7557373046875,
+      "y": 193.64869689941406,
+      "score": 0.9811497556752172,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.51708984375,
+      "y": 262.6194763183594,
+      "score": 0.9936021135913001,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULaII-lea",
+      "x": 364.6022644042969,
+      "y": 450.96270751953125,
+      "score": 0.9399271588772535,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2890.397705078125,
+      "y": 450.96270751953125,
+      "score": 0.9858468572298685,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele douamoduri silogistice:oao-3,aia-2.",
+      "x": 364.6022644042969,
+      "y": 527.8916625976562,
+      "score": 0.9651326525886104,
+      "page_number": 3
+    },
+    {
+      "text": "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele douamoduri silogistice",
+      "x": 451.789794921875,
+      "y": 610.1260375976562,
+      "score": 0.9720292713907029,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.789794921875,
+      "y": 687.0549926757812,
+      "score": 0.9865407140358634,
+      "page_number": 3
+    },
+    {
+      "text": "scheme deinferenta.",
+      "x": 454.43182373046875,
+      "y": 769.2893676757812,
+      "score": 0.9611140426836515,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3035.710205078125,
+      "y": 763.98388671875,
+      "score": 0.9975672215223312,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.1477355957031,
+      "y": 843.5655517578125,
+      "score": 0.9724945739062145,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 449.1477355957031,
+      "y": 920.4945068359375,
+      "score": 0.985883767642672,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3035.710205078125,
+      "y": 920.4945068359375,
+      "score": 0.9478571340441704,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 364.6022644042969,
+      "y": 997.4234008789062,
+      "score": 0.9839452049642239,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Uneleplanetesunt lipsitedeviata”",
+      "x": 454.43182373046875,
+      "y": 1082.310546875,
+      "score": 0.9630585423735685,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3051.5625,
+      "y": 1082.310546875,
+      "score": 0.9666619151830673,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Nicio pasare nu este mamifer, deci liliecii nu sunt pasari, deoarece lilieci",
+      "x": 367.24432373046875,
+      "y": 1159.239501953125,
+      "score": 0.9698896182393565,
+      "page_number": 3
+    },
+    {
+      "text": "suntmamifere.",
+      "x": 451.789794921875,
+      "y": 1241.473876953125,
+      "score": 0.9980757603278527,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 361.9602355957031,
+      "y": 1315.75,
+      "score": 0.9737422183008477,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 361.9602355957031,
+      "y": 1395.3316650390625,
+      "score": 0.9764380093131747,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenul mediuestedistribuitin ambelepremise.",
+      "x": 451.789794921875,
+      "y": 1472.2606201171875,
+      "score": 0.9795803605241978,
+      "page_number": 3
+    },
+    {
+      "text": "2. Predicatul logic al concluziei este reprezentat de termenul ,pasare\"",
+      "x": 449.1477355957031,
+      "y": 1546.536865234375,
+      "score": 0.9940553945554814,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala negativa.",
+      "x": 449.1477355957031,
+      "y": 1626.1185302734375,
+      "score": 0.9821024620905519,
+      "page_number": 3
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.",
+      "x": 449.1477355957031,
+      "y": 1705.7001953125,
+      "score": 0.9899592443058888,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.92041015625,
+      "y": 1782.629150390625,
+      "score": 0.9726935774087906,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 367.24432373046875,
+      "y": 1859.5579833984375,
+      "score": 0.9607526372980189,
+      "page_number": 3
+    },
+    {
+      "text": "Cerculestefigurageometricaplanacarenuesteniciromb,nicidreptunghi.",
+      "x": 457.0738830566406,
+      "y": 1944.4451904296875,
+      "score": 0.9815368276375991,
+      "page_number": 3
+    },
+    {
+      "text": "1. Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 446.50567626953125,
+      "y": 2016.068603515625,
+      "score": 0.9616515987539944,
+      "page_number": 3
+    },
+    {
+      "text": "2 punct",
+      "x": 3046.278564453125,
+      "y": 2016.068603515625,
+      "score": 0.9978815828050885,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 443.8636474609375,
+      "y": 2095.650390625,
+      "score": 0.9835559141635895,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3040.994384765625,
+      "y": 2175.23193359375,
+      "score": 0.9984294772148132,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,cerc\".",
+      "x": 578.6079711914062,
+      "y": 2180.537353515625,
+      "score": 0.988196985079692,
+      "page_number": 3
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresi comunicare",
+      "x": 364.6022644042969,
+      "y": 4947.326171875,
+      "score": 0.9699478230693124,
+      "page_number": 3
+    },
+    {
+      "text": "Model",
+      "x": 3149.318115234375,
+      "y": 4947.326171875,
+      "score": 0.9992486000061035,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.9205322265625,
+      "y": 5024.25537109375,
+      "score": 0.9745771544320243,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul EducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "SUBIECTULaII-lea",
+    "(30depuncte)",
+    "A.Fie urmatoarele douamoduri silogistice:oao-3,aia-2.",
+    "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele douamoduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme deinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Uneleplanetesunt lipsitedeviata”",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Nicio pasare nu este mamifer, deci liliecii nu sunt pasari, deoarece lilieci",
+    "suntmamifere.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenul mediuestedistribuitin ambelepremise.",
+    "2. Predicatul logic al concluziei este reprezentat de termenul ,pasare\"",
+    "3. Concluzia silogismului este o propozitie universala negativa.",
+    "4. Subiectul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.",
+    "4 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Cerculestefigurageometricaplanacarenuesteniciromb,nicidreptunghi.",
+    "1. Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 punct",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "4 puncte",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,cerc\".",
+    "Probascrisalalogica,argumentaresi comunicare",
+    "Model",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul EducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\nSUBIECTULaII-lea\n(30depuncte)\nA.Fie urmatoarele douamoduri silogistice:oao-3,aia-2.\n1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele douamoduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme deinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Uneleplanetesunt lipsitedeviata”\n6 puncte\nC. Fie urmatorul silogism: Nicio pasare nu este mamifer, deci liliecii nu sunt pasari, deoarece lilieci\nsuntmamifere.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenul mediuestedistribuitin ambelepremise.\n2. Predicatul logic al concluziei este reprezentat de termenul ,pasare\"\n3. Concluzia silogismului este o propozitie universala negativa.\n4. Subiectul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.\n4 puncte\nD.Fie urmatoarea definitie:\nCerculestefigurageometricaplanacarenuesteniciromb,nicidreptunghi.\n1. Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 punct\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\n4 puncte\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,cerc\".\nProbascrisalalogica,argumentaresi comunicare\nModel\nPagina 3 din 3"
+}

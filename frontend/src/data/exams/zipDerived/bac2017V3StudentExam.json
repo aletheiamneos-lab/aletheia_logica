@@ -1,0 +1,307 @@
+{
+  "meta": {
+    "id": "bac-logica-2017-v3",
+    "title": "BAC Logică 2017 - Varianta 3",
+    "type": "bac_exam_student",
+    "year": 2017,
+    "variant": "Varianta 3",
+    "discipline": "Logică, argumentare și comunicare",
+    "student_visible": true,
+    "teacher_solution_visible": false,
+    "official_subject_file": "Examenul de bacalaureat național 2017_V3.pdf",
+    "official_barem_file": "Examenul de bacalaureat național 2017_V3_BAREM.pdf",
+    "scoring": {
+      "total": 100,
+      "official_bonus": 10,
+      "exam_points": 90
+    },
+    "rules": [
+      "Elevul vede doar cerințele, itemii și câmpurile de completare.",
+      "Nu se afișează răspunsurile oficiale în interfața elevului.",
+      "Câmpurile de completare afișează doar placeholder structural, nu rezolvarea.",
+      "La finalizare se generează PDF-ul cu răspunsurile elevului, preview, email și raport administrator."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S1A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "type": "single_choice_group",
+          "items": [
+            {
+              "id": "S1A_1",
+              "prompt": "Nu este o regulă a demonstrației:",
+              "options": {
+                "a": "teza de demonstrat trebuie să fie clar și precis formulată",
+                "b": "teza de demonstrat trebuie să fie cel puțin o propoziție probabilă",
+                "c": "teza de demonstrat trebuie să rămână aceeași pe tot parcursul demonstrației",
+                "d": "teza de demonstrat trebuie să fie o propoziție infirmată"
+              }
+            },
+            {
+              "id": "S1A_2",
+              "prompt": "Raționamentul «Niciun pește nu este mamifer, deci niciun mamifer nu este pește» este:",
+              "options": {
+                "a": "inductiv, mediat",
+                "b": "deductiv, imediat",
+                "c": "inductiv, imediat",
+                "d": "deductiv, mediat"
+              }
+            },
+            {
+              "id": "S1A_3",
+              "prompt": "Raportul de contrarietate se stabilește între termenii:",
+              "options": {
+                "a": "carte - carte de logică",
+                "b": "elev - român",
+                "c": "urs - mamifer",
+                "d": "pisică - câine"
+              }
+            },
+            {
+              "id": "S1A_4",
+              "prompt": "Subiectul logic al propoziției «Nicio lecție extraordinară de filosofie nu este utilă ignoranților» este:",
+              "options": {
+                "a": "nu este utilă ignoranților",
+                "b": "lecție extraordinară de filosofie",
+                "c": "nicio lecție extraordinară",
+                "d": "nicio lecție extraordinară de filosofie"
+              }
+            },
+            {
+              "id": "S1A_5",
+              "prompt": "Printre regulile de corectitudine ale operației de clasificare se regăsesc:",
+              "options": {
+                "a": "regula completitudinii, regula omogenității, regula criteriului unic",
+                "b": "regula opoziției între clase, regula consistenței, regula omogenității",
+                "c": "regula circularității, regula clarității și preciziei, regula criteriului unic",
+                "d": "regula concordanței între clase, regula circularității, regula omogenității"
+              }
+            },
+            {
+              "id": "S1A_6",
+              "prompt": "Din punct de vedere extensional, termenul echipă de fotbal este:",
+              "options": {
+                "a": "absolut, general, distributiv, precis",
+                "b": "abstract, singular, compus, vag",
+                "c": "nevid, general, colectiv, precis",
+                "d": "compus, general, colectiv, vag"
+              }
+            },
+            {
+              "id": "S1A_7",
+              "prompt": "Raționamentul «Unii funcționari publici sunt coruptibili, deci toți funcționarii publici sunt coruptibili» este un exemplu de inducție:",
+              "options": {
+                "a": "neomogenă",
+                "b": "negativă",
+                "c": "imorală",
+                "d": "incompletă"
+              }
+            },
+            {
+              "id": "S1A_8",
+              "prompt": "Raționamentul «Fiecare cetățean educat este responsabil pentru faptele sale, deci toți cetățenii educați sunt responsabili pentru faptele lor» este un exemplu de:",
+              "options": {
+                "a": "deducție completă",
+                "b": "inducție completă",
+                "c": "deducție incompletă",
+                "d": "inducție incompletă"
+              }
+            },
+            {
+              "id": "S1A_9",
+              "prompt": "Extensiunea termenului prăjitură este formată din:",
+              "options": {
+                "a": "totalitatea prăjiturilor",
+                "b": "savarine, amandine",
+                "c": "zahăr, făină, ouă, rom",
+                "d": "totalitatea consumatorilor"
+              }
+            },
+            {
+              "id": "S1A_10",
+              "prompt": "Propoziția «Toate examenele sunt de dificultate medie» este:",
+              "options": {
+                "a": "particulară negativă",
+                "b": "particulară afirmativă",
+                "c": "universală negativă",
+                "d": "universală afirmativă"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1B",
+          "title": "B. Diagramă Euler și propoziții A/F",
+          "points": 10,
+          "type": "euler_and_true_false",
+          "term_relations": "Termenii A și B se află în raport de încrucișare; termenul C se află în raport de încrucișare cu A și cu B; D este termen supraordonat celor trei termeni.",
+          "diagram": {
+            "diagramId": "euler_2017_v3_S1B",
+            "mode": "canvas_or_upload",
+            "student_task": "Reprezintă, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei patru termeni.",
+            "points": 4
+          },
+          "items": [
+            {
+              "label": "a",
+              "text": "Niciun C nu este A."
+            },
+            {
+              "label": "b",
+              "text": "Toți A sunt D."
+            },
+            {
+              "label": "c",
+              "text": "Unii B nu sunt D."
+            },
+            {
+              "label": "d",
+              "text": "Toți A sunt B."
+            },
+            {
+              "label": "e",
+              "text": "Unii C sunt B."
+            },
+            {
+              "label": "f",
+              "text": "Niciun D nu este C."
+            }
+          ],
+          "answer_input": {
+            "type": "true_false_grid",
+            "placeholder": "Exemplu de completare: a-A, b-F, c-F ..."
+          }
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "given_propositions": [
+        "1. Toate insectele sunt animale nevertebrate.",
+        "2. Nicio știință nu este activitate irațională.",
+        "3. Unele automobile de epocă sunt bunuri de colecție.",
+        "4. Unele texte de filosofie nu sunt ușor de înțeles."
+      ],
+      "parts": [
+        {
+          "id": "S2A",
+          "title": "A. Formule logice",
+          "points": 2,
+          "prompt": "Precizați formulele logice corespunzătoare propozițiilor 1 și 4.",
+          "input": {
+            "type": "text",
+            "placeholder": "Exemplu structură: 1-SaP; 4-SoP"
+          }
+        },
+        {
+          "id": "S2B",
+          "title": "B. Raporturi în pătratul opoziției",
+          "points": 8,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, contradictoria propoziției 1, contrara propoziției 2, supraalterna propoziției 3 și subcontrara propoziției 4.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Scrie pentru fiecare: operația cerută + formula + propoziția în limbaj natural."
+          }
+        },
+        {
+          "id": "S2C",
+          "title": "C. Conversiune și obversiune",
+          "points": 8,
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: Prop. 1: conversa ...; obversa ... / Prop. 3: conversa ...; obversa ..."
+          }
+        },
+        {
+          "id": "S2D",
+          "title": "D. Obversa conversei",
+          "points": 4,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei propoziției 2.",
+          "input": {
+            "type": "text",
+            "placeholder": "Scrie întâi conversa propoziției, apoi obversa acesteia."
+          }
+        },
+        {
+          "id": "S2E",
+          "title": "E. Opiniile elevilor X și Y",
+          "points": 8,
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă toate lebedele sunt păsări migratoare, înseamnă că unele păsări migratoare sunt lebede. Y: Dacă toți elefanții sunt animale de mari dimensiuni, reiese că toate animalele de mari dimensiuni sunt elefanți. Pornind de la această situație: a) scrieți, în limbaj formal, opiniile celor doi elevi; b) explicați corectitudinea raționamentelor formalizate.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: X: [formă] - valid/nevalid; Y: [formă] - valid/nevalid; regulă aplicată."
+          }
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S3A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "prompt": "Fie următoarele două moduri silogistice: aaa-2, aee-4. Scrieți schema de inferență pentru fiecare, construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență și verificați explicit, prin diagrame Venn, validitatea fiecăruia.",
+          "diagrams": [
+            {
+              "diagramId": "venn_2017_v3_aaa2",
+              "mode": "canvas_or_upload",
+              "figure": "aaa-2"
+            },
+            {
+              "diagramId": "venn_2017_v3_aee4",
+              "mode": "canvas_or_upload",
+              "figure": "aee-4"
+            }
+          ],
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Scrie schema: premisa majoră / premisa minoră / concluzie; apoi decizia de validitate pentru fiecare mod."
+          }
+        },
+        {
+          "id": "S3B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid, prin care să justificați propoziția «Unele decizii ale părinților nu sunt agreate de copii».",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Scrie două premise adevărate + concluzia dată; apoi forma formală."
+          }
+        },
+        {
+          "id": "S3C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "prompt": "Fie următorul silogism: Dacă unii elevi sunt nerăbdători să ajungă studenți, atunci unii liceeni sunt nerăbdători să ajungă studenți, având în vedere că toți liceenii sunt elevi. Precizați termenul major al silogismului dat și menționați, în limbaj natural, premisa minoră a silogismului dat.",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: Termen major: ...; Premisa minoră: ..."
+          }
+        },
+        {
+          "id": "S3D",
+          "title": "D. Definiție",
+          "points": 6,
+          "prompt": "Fie următoarea definiție: Polițistul este îngerul păzitor din intersecție. Menționați o regulă de corectitudine pe care o încalcă definiția dată. Precizați o altă regulă de corectitudine a definirii, diferită de regula identificată la punctul a, și construiți o definiție care să o încalce, având ca definit termenul «polițist».",
+          "input": {
+            "type": "multi_text",
+            "placeholder": "Exemplu structură: regula încălcată + explicație; altă regulă + definiție greșită construită."
+          }
+        }
+      ]
+    }
+  ]
+}

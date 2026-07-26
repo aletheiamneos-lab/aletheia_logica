@@ -1,0 +1,134 @@
+{
+  "slot": 2,
+  "nivel": "avansat",
+  "title": "Slot 2 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_2_avansat_card_1",
+      "front": "Clasifică termenul „soț-soție”.",
+      "back": "Termen relativ."
+    },
+    {
+      "id": "slot_2_avansat_card_2",
+      "front": "Clasifică termenul „claritate”.",
+      "back": "Termen abstract."
+    },
+    {
+      "id": "slot_2_avansat_card_3",
+      "front": "Clasifică termenul „manual de logică”.",
+      "back": "Termen compus."
+    },
+    {
+      "id": "slot_2_avansat_card_4",
+      "front": "Clasifică termenul „Franța”.",
+      "back": "Termen singular."
+    },
+    {
+      "id": "slot_2_avansat_card_5",
+      "front": "Clasifică termenul „carte”.",
+      "back": "Termen general și nevid."
+    },
+    {
+      "id": "slot_2_avansat_card_6",
+      "front": "Clasifică termenul „pătrat rotund”.",
+      "back": "Termen vid logic."
+    },
+    {
+      "id": "slot_2_avansat_card_7",
+      "front": "Clasifică termenul „armată”.",
+      "back": "Termen colectiv."
+    },
+    {
+      "id": "slot_2_avansat_card_8",
+      "front": "Clasifică termenul „mamifer”.",
+      "back": "Termen distributiv și general."
+    },
+    {
+      "id": "slot_2_avansat_card_9",
+      "front": "Clasifică termenul „frumos”.",
+      "back": "Termen vag."
+    },
+    {
+      "id": "slot_2_avansat_card_10",
+      "front": "Identifică regula încălcată: „vehicule: rapide, electrice, mari”.",
+      "back": "Încălcarea criteriului unic."
+    },
+    {
+      "id": "slot_2_avansat_card_11",
+      "front": "Identifică regula încălcată: „zilele sunt lucrătoare și luni”.",
+      "back": "Amestec de niveluri și lipsă de excludere reciprocă."
+    },
+    {
+      "id": "slot_2_avansat_card_12",
+      "front": "Ce tip de clasificare este tabelul periodic?",
+      "back": "Clasificare naturală."
+    },
+    {
+      "id": "slot_2_avansat_card_13",
+      "front": "Ce tip de clasificare este ordonarea alfabetică?",
+      "back": "Clasificare artificială."
+    },
+    {
+      "id": "slot_2_avansat_card_14",
+      "front": "Transformă prin conversiune simplă: „Niciun S nu este P”.",
+      "back": "„Niciun P nu este S”."
+    },
+    {
+      "id": "slot_2_avansat_card_15",
+      "front": "Transformă prin conversiune simplă: „Unii S sunt P”.",
+      "back": "„Unii P sunt S”."
+    },
+    {
+      "id": "slot_2_avansat_card_16",
+      "front": "Transformă prin conversiune prin accident: „Toți S sunt P”.",
+      "back": "„Unii P sunt S” (cu presupunerea existenței)."
+    },
+    {
+      "id": "slot_2_avansat_card_17",
+      "front": "De ce propoziția O nu se convertește valid?",
+      "back": "Ar distribui nejustificat un termen."
+    },
+    {
+      "id": "slot_2_avansat_card_18",
+      "front": "Ce raport există între A și O?",
+      "back": "Contradicție."
+    },
+    {
+      "id": "slot_2_avansat_card_19",
+      "front": "Ce raport există între E și I?",
+      "back": "Contradicție."
+    },
+    {
+      "id": "slot_2_avansat_card_20",
+      "front": "Ce raport există între A și E?",
+      "back": "Contrarietate."
+    },
+    {
+      "id": "slot_2_avansat_card_21",
+      "front": "Ce raport există între I și O?",
+      "back": "Subcontrarietate."
+    },
+    {
+      "id": "slot_2_avansat_card_22",
+      "front": "Ce raport există între A și I?",
+      "back": "Subalternare."
+    },
+    {
+      "id": "slot_2_avansat_card_23",
+      "front": "Ce raport există între E și O?",
+      "back": "Subalternare."
+    },
+    {
+      "id": "slot_2_avansat_card_24",
+      "front": "Dacă SaP este falsă, ce rezultă pentru SoP?",
+      "back": "SoP este adevărată."
+    },
+    {
+      "id": "slot_2_avansat_card_25",
+      "front": "Dacă SeP este falsă, ce rezultă pentru SiP?",
+      "back": "SiP este adevărată."
+    }
+  ]
+}

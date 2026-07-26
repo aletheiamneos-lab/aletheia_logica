@@ -1,0 +1,568 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "MinisterulEducatiei",
+      "x": 1617.8011474609375,
+      "y": 199.0297393798828,
+      "score": 0.9943891669574537,
+      "page_number": 1
+    },
+    {
+      "text": "CentrulNational dePoliticisiEvaluareinEducatie",
+      "x": 1237.14208984375,
+      "y": 254.75807189941406,
+      "score": 0.9756212169709413,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2023",
+      "x": 1234.4986572265625,
+      "y": 376.82965087890625,
+      "score": 0.997415871331186,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1673.31396484375,
+      "y": 440.5191650390625,
+      "score": 0.9706832712346857,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1292.6549072265625,
+      "y": 525.4385375976562,
+      "score": 0.9936747749646505,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3153.655029296875,
+      "y": 687.3160400390625,
+      "score": 0.997949767112732,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 367.4417724609375,
+      "y": 820.0025634765625,
+      "score": 0.9677746398108346,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 370.0852355957031,
+      "y": 910.2293701171875,
+      "score": 0.966423101084573,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+      "x": 370.0852355957031,
+      "y": 1042.9158935546875,
+      "score": 0.9762890071108721,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpul de lucru efectiv este de trei ore.",
+      "x": 364.7983093261719,
+      "y": 1119.8740234375,
+      "score": 0.9753071140675318,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 370.0852355957031,
+      "y": 1260.521728515625,
+      "score": 0.9769293904304505,
+      "page_number": 1
+    },
+    {
+      "text": "(30 depuncte)",
+      "x": 2865.51708984375,
+      "y": 1260.521728515625,
+      "score": 0.949481514784006,
+      "page_number": 1
+    },
+    {
+      "text": "AScrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre",
+      "x": 367.4417724609375,
+      "y": 1340.1336669921875,
+      "score": 0.958122289442754,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 370.0852355957031,
+      "y": 1425.052978515625,
+      "score": 0.9703897427428853,
+      "page_number": 1
+    },
+    {
+      "text": "1. in situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie",
+      "x": 449.38922119140625,
+      "y": 1536.5096435546875,
+      "score": 0.9810210093855858,
+      "page_number": 1
+    },
+    {
+      "text": "format numai din rationamente:",
+      "x": 454.6761474609375,
+      "y": 1634.6976318359375,
+      "score": 0.9599924604098002,
+      "page_number": 1
+    },
+    {
+      "text": "a.inductivevalide",
+      "x": 370.0852355957031,
+      "y": 1714.3095703125,
+      "score": 0.9982308044153101,
+      "page_number": 1
+    },
+    {
+      "text": "b. deductive tari",
+      "x": 1128.760009765625,
+      "y": 1714.3095703125,
+      "score": 0.9767083490596098,
+      "page_number": 1
+    },
+    {
+      "text": "c. inductive tari",
+      "x": 1895.3651123046875,
+      "y": 1714.3095703125,
+      "score": 0.9980587503489327,
+      "page_number": 1
+    },
+    {
+      "text": "d.deductive valide",
+      "x": 2656.683349609375,
+      "y": 1711.65576171875,
+      "score": 0.9717036551899381,
+      "page_number": 1
+    },
+    {
+      "text": "2. Rationamentul a carui concluzie nu spune mai mult decat premisele din care a fost obtinuta",
+      "x": 449.38922119140625,
+      "y": 1839.0347900390625,
+      "score": 0.9967534433129013,
+      "page_number": 1
+    },
+    {
+      "text": "se numeste:",
+      "x": 459.96307373046875,
+      "y": 1937.2227783203125,
+      "score": 0.9918872984972867,
+      "page_number": 1
+    },
+    {
+      "text": "a. rationament inductiv incomplet",
+      "x": 364.7983093261719,
+      "y": 1998.2586669921875,
+      "score": 0.9956610004107157,
+      "page_number": 1
+    },
+    {
+      "text": "c.rationamentdeductiv",
+      "x": 1945.5909423828125,
+      "y": 2006.2198486328125,
+      "score": 0.9961029461451939,
+      "page_number": 1
+    },
+    {
+      "text": "b. analogie",
+      "x": 364.7983093261719,
+      "y": 2077.87060546875,
+      "score": 0.9966165152463046,
+      "page_number": 1
+    },
+    {
+      "text": "d. rationament inductiv prin simpla enumerare",
+      "x": 1942.947509765625,
+      "y": 2077.87060546875,
+      "score": 0.9963291764259339,
+      "page_number": 1
+    },
+    {
+      "text": "3. intre termeni constantean si elev se stabileste un raport logic de:",
+      "x": 444.102294921875,
+      "y": 2199.942138671875,
+      "score": 0.9866605051926204,
+      "page_number": 1
+    },
+    {
+      "text": "a. identitate",
+      "x": 364.7983093261719,
+      "y": 2279.553955078125,
+      "score": 0.9800743598204392,
+      "page_number": 1
+    },
+    {
+      "text": "c. incrucisare",
+      "x": 1937.6605224609375,
+      "y": 2287.51513671875,
+      "score": 0.9983848375933511,
+      "page_number": 1
+    },
+    {
+      "text": "b. ordonare",
+      "x": 364.7983093261719,
+      "y": 2364.473388671875,
+      "score": 0.9962607351216403,
+      "page_number": 1
+    },
+    {
+      "text": "d. contrarietate",
+      "x": 1940.3040771484375,
+      "y": 2375.08837890625,
+      "score": 0.9792915396392345,
+      "page_number": 1
+    },
+    {
+      "text": "4. Cuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\" este:",
+      "x": 454.6761474609375,
+      "y": 2502.46728515625,
+      "score": 0.9735251896521624,
+      "page_number": 1
+    },
+    {
+      "text": "a.,nicio depasire”",
+      "x": 367.4417724609375,
+      "y": 2590.040283203125,
+      "score": 0.952489842971166,
+      "page_number": 1
+    },
+    {
+      "text": "C. ,nicio depasire a termenului”",
+      "x": 1937.6605224609375,
+      "y": 2590.040283203125,
+      "score": 0.9188914895057678,
+      "page_number": 1
+    },
+    {
+      "text": "b. ,nicio\"",
+      "x": 364.7983093261719,
+      "y": 2666.99853515625,
+      "score": 0.9469670116901397,
+      "page_number": 1
+    },
+    {
+      "text": "d. ,nicio depasire a termenului limita\"",
+      "x": 1942.947509765625,
+      "y": 2664.3447265625,
+      "score": 0.9728548572613642,
+      "page_number": 1
+    },
+    {
+      "text": "5. in structura unei clasificari nu putem regasi:",
+      "x": 452.0326843261719,
+      "y": 2789.070068359375,
+      "score": 0.9808583247418307,
+      "page_number": 1
+    },
+    {
+      "text": "a.procesul de clasificare",
+      "x": 364.7983093261719,
+      "y": 2881.95068359375,
+      "score": 0.9670128655433655,
+      "page_number": 1
+    },
+    {
+      "text": "b.elementele clasificariic.clasele",
+      "x": 1303.228759765625,
+      "y": 2879.296875,
+      "score": 0.9804608681622673,
+      "page_number": 1
+    },
+    {
+      "text": "d. criteriul clasificarii",
+      "x": 2730.700439453125,
+      "y": 2879.296875,
+      "score": 0.9659161400794983,
+      "page_number": 1
+    },
+    {
+      "text": "6. Din punct de vedere intensional, termenul nevazator este:",
+      "x": 454.6761474609375,
+      "y": 3011.9833984375,
+      "score": 0.9737013737360637,
+      "page_number": 1
+    },
+    {
+      "text": "c. colectiv, vag",
+      "x": 1890.0782470703125,
+      "y": 3086.287841796875,
+      "score": 0.9971614591777325,
+      "page_number": 1
+    },
+    {
+      "text": "a.negativ, concret",
+      "x": 372.72869873046875,
+      "y": 3094.2490234375,
+      "score": 0.9767047299279107,
+      "page_number": 1
+    },
+    {
+      "text": "b.nevid, general",
+      "x": 1131.4034423828125,
+      "y": 3096.90283203125,
+      "score": 0.9874850809574127,
+      "page_number": 1
+    },
+    {
+      "text": "d. relativ, compus",
+      "x": 2659.326904296875,
+      "y": 3091.595458984375,
+      "score": 0.9967986279063754,
+      "page_number": 1
+    },
+    {
+      "text": "7. Se caracterizeaza prin probabilitate si caracter amplificator concluzia:",
+      "x": 446.7457580566406,
+      "y": 3218.974365234375,
+      "score": 0.99102081934611,
+      "page_number": 1
+    },
+    {
+      "text": "a.uneiinductiicomplete",
+      "x": 372.72869873046875,
+      "y": 3309.201171875,
+      "score": 0.9952761720527302,
+      "page_number": 1
+    },
+    {
+      "text": "c. unui silogism valid",
+      "x": 1940.3040771484375,
+      "y": 3309.201171875,
+      "score": 0.9713993072509766,
+      "page_number": 1
+    },
+    {
+      "text": "b. unei inducti incomplete",
+      "x": 367.4417724609375,
+      "y": 3386.159423828125,
+      "score": 0.9527918627628913,
+      "page_number": 1
+    },
+    {
+      "text": "d. unei conversiuni valide",
+      "x": 1942.947509765625,
+      "y": 3388.81298828125,
+      "score": 0.961652391231977,
+      "page_number": 1
+    },
+    {
+      "text": "8. in cazul inductiei complete putem concluziona ca intreaga clasa de obiecte poseda o anumita",
+      "x": 449.38922119140625,
+      "y": 3508.23095703125,
+      "score": 0.9805882953582926,
+      "page_number": 1
+    },
+    {
+      "text": "proprietate daca:",
+      "x": 454.6761474609375,
+      "y": 3611.726318359375,
+      "score": 0.9956782670582042,
+      "page_number": 1
+    },
+    {
+      "text": "a. majoritatea obiectelor poseda respectiva proprietate",
+      "x": 364.7983093261719,
+      "y": 3683.377197265625,
+      "score": 0.9750154126774181,
+      "page_number": 1
+    },
+    {
+      "text": "b. un numar mare de obiecte poseda respectiva proprietate",
+      "x": 370.0852355957031,
+      "y": 3757.681640625,
+      "score": 0.9721620448848658,
+      "page_number": 1
+    },
+    {
+      "text": "c.cateva obiecte poseda respectiva proprietate",
+      "x": 370.0852355957031,
+      "y": 3842.600830078125,
+      "score": 0.9682834109534388,
+      "page_number": 1
+    },
+    {
+      "text": "d. fiecare obiect poseda respectiva proprietate",
+      "x": 367.4417724609375,
+      "y": 3914.251708984375,
+      "score": 0.9808740387571618,
+      "page_number": 1
+    },
+    {
+      "text": "9.Termenul trandafir, comparativ cu termenul floare, are:",
+      "x": 454.6761474609375,
+      "y": 4044.284423828125,
+      "score": 0.9692358552363881,
+      "page_number": 1
+    },
+    {
+      "text": "a. intensiunea mai mare, dar extensiunea egala",
+      "x": 367.4417724609375,
+      "y": 4129.20361328125,
+      "score": 0.9967838992243228,
+      "page_number": 1
+    },
+    {
+      "text": "b. intensiunea mai mare, dar extensiunea mai mica",
+      "x": 364.7983093261719,
+      "y": 4203.50830078125,
+      "score": 0.995077341186757,
+      "page_number": 1
+    },
+    {
+      "text": "c.intensiuneamai mica,darextensiuneamai mare",
+      "x": 370.0852355957031,
+      "y": 4291.0810546875,
+      "score": 0.9840409620241686,
+      "page_number": 1
+    },
+    {
+      "text": "d. intensiunea mai mica, dar extensiunea egala",
+      "x": 364.7983093261719,
+      "y": 4362.73193359375,
+      "score": 0.9876893136812293,
+      "page_number": 1
+    },
+    {
+      "text": "10. Propozitia ,Orice persoana isi doreste sa fie implinita.\" este:",
+      "x": 457.3196105957031,
+      "y": 4492.7646484375,
+      "score": 0.9871845476662935,
+      "page_number": 1
+    },
+    {
+      "text": "a. particulara afirmativa",
+      "x": 370.0852355957031,
+      "y": 4580.337890625,
+      "score": 0.9697959327697754,
+      "page_number": 1
+    },
+    {
+      "text": "c. particular afirmativa",
+      "x": 1940.3040771484375,
+      "y": 4580.337890625,
+      "score": 0.989576076467832,
+      "page_number": 1
+    },
+    {
+      "text": "b. universal negativa",
+      "x": 364.7983093261719,
+      "y": 4651.98876953125,
+      "score": 0.9991981784502665,
+      "page_number": 1
+    },
+    {
+      "text": "d.universal afirmativa",
+      "x": 1942.947509765625,
+      "y": 4657.2958984375,
+      "score": 0.9949644153768366,
+      "page_number": 1
+    },
+    {
+      "text": "20 de puncte",
+      "x": 2934.247314453125,
+      "y": 4731.6005859375,
+      "score": 0.9583285550276438,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica,argumentaresi comunicare",
+      "x": 364.7983093261719,
+      "y": 4983.70458984375,
+      "score": 0.9522850259821466,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3172.1591796875,
+      "y": 4991.666015625,
+      "score": 0.9989549160003662,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 2",
+      "x": 1683.8878173828125,
+      "y": 5058.00927734375,
+      "score": 0.982077841247831,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "MinisterulEducatiei",
+    "CentrulNational dePoliticisiEvaluareinEducatie",
+    "Examenulnationaldebacalaureat2023",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Model",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+    "·Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULI",
+    "(30 depuncte)",
+    "AScrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "1. in situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie",
+    "format numai din rationamente:",
+    "a.inductivevalide",
+    "b. deductive tari",
+    "c. inductive tari",
+    "d.deductive valide",
+    "2. Rationamentul a carui concluzie nu spune mai mult decat premisele din care a fost obtinuta",
+    "se numeste:",
+    "a. rationament inductiv incomplet",
+    "c.rationamentdeductiv",
+    "b. analogie",
+    "d. rationament inductiv prin simpla enumerare",
+    "3. intre termeni constantean si elev se stabileste un raport logic de:",
+    "a. identitate",
+    "c. incrucisare",
+    "b. ordonare",
+    "d. contrarietate",
+    "4. Cuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\" este:",
+    "a.,nicio depasire”",
+    "C. ,nicio depasire a termenului”",
+    "b. ,nicio\"",
+    "d. ,nicio depasire a termenului limita\"",
+    "5. in structura unei clasificari nu putem regasi:",
+    "a.procesul de clasificare",
+    "b.elementele clasificariic.clasele",
+    "d. criteriul clasificarii",
+    "6. Din punct de vedere intensional, termenul nevazator este:",
+    "c. colectiv, vag",
+    "a.negativ, concret",
+    "b.nevid, general",
+    "d. relativ, compus",
+    "7. Se caracterizeaza prin probabilitate si caracter amplificator concluzia:",
+    "a.uneiinductiicomplete",
+    "c. unui silogism valid",
+    "b. unei inducti incomplete",
+    "d. unei conversiuni valide",
+    "8. in cazul inductiei complete putem concluziona ca intreaga clasa de obiecte poseda o anumita",
+    "proprietate daca:",
+    "a. majoritatea obiectelor poseda respectiva proprietate",
+    "b. un numar mare de obiecte poseda respectiva proprietate",
+    "c.cateva obiecte poseda respectiva proprietate",
+    "d. fiecare obiect poseda respectiva proprietate",
+    "9.Termenul trandafir, comparativ cu termenul floare, are:",
+    "a. intensiunea mai mare, dar extensiunea egala",
+    "b. intensiunea mai mare, dar extensiunea mai mica",
+    "c.intensiuneamai mica,darextensiuneamai mare",
+    "d. intensiunea mai mica, dar extensiunea egala",
+    "10. Propozitia ,Orice persoana isi doreste sa fie implinita.\" este:",
+    "a. particulara afirmativa",
+    "c. particular afirmativa",
+    "b. universal negativa",
+    "d.universal afirmativa",
+    "20 de puncte",
+    "Proba scrisa la logica,argumentaresi comunicare",
+    "Model",
+    "Pagina 1 din 2"
+  ],
+  "text": "MinisterulEducatiei\nCentrulNational dePoliticisiEvaluareinEducatie\nExamenulnationaldebacalaureat2023\nProba E. d)\nLogica, argumentare si comunicare\nModel\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.\n·Timpul de lucru efectiv este de trei ore.\nSUBIECTULI\n(30 depuncte)\nAScrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\n1. in situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie\nformat numai din rationamente:\na.inductivevalide\nb. deductive tari\nc. inductive tari\nd.deductive valide\n2. Rationamentul a carui concluzie nu spune mai mult decat premisele din care a fost obtinuta\nse numeste:\na. rationament inductiv incomplet\nc.rationamentdeductiv\nb. analogie\nd. rationament inductiv prin simpla enumerare\n3. intre termeni constantean si elev se stabileste un raport logic de:\na. identitate\nc. incrucisare\nb. ordonare\nd. contrarietate\n4. Cuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\" este:\na.,nicio depasire”\nC. ,nicio depasire a termenului”\nb. ,nicio\"\nd. ,nicio depasire a termenului limita\"\n5. in structura unei clasificari nu putem regasi:\na.procesul de clasificare\nb.elementele clasificariic.clasele\nd. criteriul clasificarii\n6. Din punct de vedere intensional, termenul nevazator este:\nc. colectiv, vag\na.negativ, concret\nb.nevid, general\nd. relativ, compus\n7. Se caracterizeaza prin probabilitate si caracter amplificator concluzia:\na.uneiinductiicomplete\nc. unui silogism valid\nb. unei inducti incomplete\nd. unei conversiuni valide\n8. in cazul inductiei complete putem concluziona ca intreaga clasa de obiecte poseda o anumita\nproprietate daca:\na. majoritatea obiectelor poseda respectiva proprietate\nb. un numar mare de obiecte poseda respectiva proprietate\nc.cateva obiecte poseda respectiva proprietate\nd. fiecare obiect poseda respectiva proprietate\n9.Termenul trandafir, comparativ cu termenul floare, are:\na. intensiunea mai mare, dar extensiunea egala\nb. intensiunea mai mare, dar extensiunea mai mica\nc.intensiuneamai mica,darextensiuneamai mare\nd. intensiunea mai mica, dar extensiunea egala\n10. Propozitia ,Orice persoana isi doreste sa fie implinita.\" este:\na. particulara afirmativa\nc. particular afirmativa\nb. universal negativa\nd.universal afirmativa\n20 de puncte\nProba scrisa la logica,argumentaresi comunicare\nModel\nPagina 1 din 2"
+}

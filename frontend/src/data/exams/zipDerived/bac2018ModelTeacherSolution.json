@@ -1,0 +1,128 @@
+{
+  "teacherOnly": true,
+  "examId": "bac_logica_2018_model",
+  "title": "Rezolvare profesor - BAC Logică 2018 Model",
+  "officialSource": "Barem oficial 2018 Model",
+  "answers": {
+    "S1A": {
+      "1": "c",
+      "2": "c",
+      "3": "c",
+      "4": "d",
+      "5": "b",
+      "6": "b",
+      "7": "d",
+      "8": "c",
+      "9": "a",
+      "10": "d"
+    },
+    "S1B": {
+      "a": "F",
+      "b": "F",
+      "c": "A",
+      "d": "A",
+      "e": "A",
+      "f": "F"
+    },
+    "S2A": {
+      "1": "SaP",
+      "2": "SoP"
+    },
+    "S2B": {
+      "subalterna_1": {
+        "formal": "SiP",
+        "natural": "Unele fapte bune sunt apreciate."
+      },
+      "contradictoria_2": {
+        "formal": "SaP",
+        "natural": "Toate teoriile științifice sunt ușor de înțeles."
+      },
+      "contrara_3": {
+        "formal": "SaP",
+        "natural": "Toate animalele domestice sunt agresive."
+      },
+      "subcontrara_4": {
+        "formal": "SoP",
+        "natural": "Unele instrumente de scris nu sunt fabricate manual."
+      }
+    },
+    "S2C": {
+      "prop1_conversa": {
+        "formal": "PiS",
+        "natural": "Unele lucruri apreciate sunt fapte bune."
+      },
+      "prop1_obversa": {
+        "formal": "Se~P",
+        "natural": "Nicio faptă bună nu este lucru neapreciat."
+      },
+      "prop3_conversa": {
+        "formal": "PeS",
+        "natural": "Niciun lucru agresiv nu este animal domestic."
+      },
+      "prop3_obversa": {
+        "formal": "Sa~P",
+        "natural": "Toate animalele domestice sunt lucruri neagresive."
+      }
+    },
+    "S2D": {
+      "formal": "Po~S",
+      "natural": "Unele lucruri apreciate nu sunt lucruri care nu sunt fapte bune."
+    },
+    "S2E": {
+      "X": {
+        "formal": "SeP -> Sa~P",
+        "decision": "corect / obversiune validă"
+      },
+      "Y": {
+        "formal": "SaP -> PaS",
+        "decision": "incorect / conversiune nevalidă",
+        "explanation": "În conversiunea unei propoziții universale afirmative SaP nu se poate obține PaS, deoarece termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+      }
+    },
+    "S3A": {
+      "aai-3": {
+        "scheme": [
+          "MaP",
+          "MaS",
+          "SiP"
+        ],
+        "decision": "valid"
+      },
+      "eae-2": {
+        "scheme": [
+          "PeM",
+          "SaM",
+          "SeP"
+        ],
+        "decision": "valid"
+      }
+    },
+    "S3B": {
+      "formal": "MiP / MaS / SiP",
+      "natural": [
+        "Unele propoziții universale afirmative sunt adevărate.",
+        "Toate propozițiile universale afirmative sunt propoziții afirmative.",
+        "Prin urmare, unele propoziții afirmative sunt adevărate."
+      ],
+      "note": "Orice silogism valid care justifică propoziția dată se punctează conform baremului."
+    },
+    "S3C": {
+      "minorTerm": "eschimos / eschimoși",
+      "majorPremise": "Toate persoanele care apreciază mierea sunt apicultori."
+    },
+    "S3D": {
+      "violatedRule": "Definiția încalcă regula evitării circularității / regula de a nu folosi definitul în definitor.",
+      "alternativeRule": "Regula clarității și preciziei.",
+      "wrongDefinitionExample": "Logica este o materie foarte frumoasă și interesantă."
+    }
+  },
+  "pointsCheck": {
+    "totalOfficialPoints": 90,
+    "officePoints": 10
+  },
+  "visibilityRules": {
+    "studentCanAccess": false,
+    "teacherCanDownloadPdf": true,
+    "teacherCanPreviewPdf": true
+  }
+}

@@ -1,0 +1,387 @@
+.logic-map-page {
+  display: grid;
+  gap: 1rem;
+  min-height: calc(100vh - 80px);
+  color: var(--text);
+}
+
+.logic-map-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.95rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--workspace-line, var(--border-soft)) 72%, transparent);
+}
+
+.logic-map-title {
+  margin: 0.24rem 0 0;
+  color: var(--text);
+  font-family: var(--font-ui-premium);
+  font-size: clamp(1.95rem, 2.55vw, 3rem);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+.logic-map-copy {
+  margin: 0.45rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.logic-map-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--workspace-line, var(--border-soft)) 62%, transparent);
+}
+
+.logic-map-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logic-map-tab {
+  min-height: 38px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 34%, transparent);
+  color: var(--text-muted);
+  padding: 0 1.05rem;
+  font-family: var(--font-ui-premium);
+  font-size: 0.8rem;
+  font-weight: 740;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.logic-map-tab:hover {
+  border-color: color-mix(in srgb, var(--accent) 44%, transparent);
+  background: color-mix(in srgb, var(--accent-mist) 64%, transparent);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.logic-map-tab.is-active {
+  border-color: color-mix(in srgb, var(--accent) 62%, transparent);
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+  color: white;
+}
+
+.logic-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+  gap: clamp(1rem, 1.7vw, 1.45rem);
+  align-items: stretch;
+}
+
+.logic-map-canvas-shell,
+.logic-map-details-shell {
+  min-width: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.logic-map-canvas-shell {
+  height: min(74vh, 780px);
+  min-height: 620px;
+}
+
+.logic-map-details-shell {
+  height: min(74vh, 780px);
+  min-height: 620px;
+  border-left: 1px solid color-mix(in srgb, var(--workspace-line, var(--border-soft)) 70%, transparent);
+}
+
+.logic-map-flow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 52% 48%, color-mix(in srgb, var(--accent-mist) 34%, transparent), transparent 0, transparent 34%),
+    linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 16%, transparent));
+  cursor: grab;
+}
+
+.logic-map-flow:active {
+  cursor: grabbing;
+}
+
+.logic-map-flow .react-flow__pane {
+  transition: background 180ms ease;
+}
+
+.logic-map-flow .react-flow__node {
+  transition:
+    opacity 180ms ease,
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.logic-map-flow .react-flow__node:hover {
+  filter: saturate(1.04);
+}
+
+.logic-map-flow .react-flow__edge-path {
+  transition:
+    stroke 180ms ease,
+    stroke-width 180ms ease,
+    opacity 180ms ease;
+}
+
+.logic-map-flow .react-flow__controls {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.logic-map-flow .react-flow__controls-button {
+  width: 34px;
+  height: 34px;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 12%, transparent);
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.logic-map-flow .react-flow__controls-button:hover {
+  background: color-mix(in srgb, var(--accent-mist) 70%, transparent);
+  color: var(--accent-strong);
+}
+
+.logic-map-node {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--accent-glow) 44%, transparent), transparent 0, transparent 34%),
+    color-mix(in srgb, var(--surface) 78%, white);
+  color: var(--text);
+  box-shadow:
+    0 18px 34px rgba(15, 23, 42, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  font-family: var(--font-ui-premium);
+  font-size: 14px;
+  font-weight: 740;
+  line-height: 1.22;
+  text-align: center;
+  white-space: normal;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease;
+}
+
+.logic-map-node.is-root {
+  width: 220px;
+  min-height: 150px;
+  padding: 22px 24px;
+  border-color: color-mix(in srgb, var(--accent) 46%, transparent);
+  background:
+    radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--accent-glow) 58%, transparent), transparent 0, transparent 38%),
+    color-mix(in srgb, var(--surface-muted) 62%, white);
+  font-size: 18px;
+}
+
+.logic-map-node.is-level-1 {
+  width: 260px;
+  min-height: 70px;
+  padding: 16px 20px;
+}
+
+.logic-map-node.is-level-2 {
+  width: 220px;
+  min-height: 44px;
+  padding: 12px 16px;
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--surface) 82%, white);
+  font-size: 13px;
+  font-weight: 680;
+}
+
+.logic-map-node:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 48%, transparent);
+  background:
+    radial-gradient(circle at 92% 12%, color-mix(in srgb, var(--accent-glow) 58%, transparent), transparent 0, transparent 36%),
+    color-mix(in srgb, var(--surface-muted) 52%, white);
+}
+
+.logic-map-node.is-selected {
+  border-color: var(--accent-strong);
+  color: var(--text);
+  box-shadow:
+    0 18px 36px color-mix(in srgb, var(--accent-mist) 86%, transparent),
+    0 0 0 5px color-mix(in srgb, var(--accent-mist) 76%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.68);
+}
+
+.logic-map-node.is-expandable::before {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-mist) 62%, transparent);
+}
+
+.logic-map-node-label {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.logic-map-node-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  color: var(--text-muted);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.logic-map-details {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0.2rem 0 0.2rem clamp(1rem, 1.7vw, 1.45rem);
+  background: transparent;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--accent) 30%, transparent) transparent;
+}
+
+.logic-map-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logic-map-details::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
+.logic-map-details::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.logic-map-details-label,
+.logic-map-section-label {
+  color: var(--text-muted);
+  font-family: var(--font-ui-premium);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.logic-map-details-title {
+  margin: 0.48rem 0 0.9rem;
+  color: var(--text);
+  font-family: var(--font-ui-premium);
+  font-size: clamp(1.45rem, 1.8vw, 2rem);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.12;
+}
+
+.logic-map-details-summary {
+  margin: 0;
+}
+
+.logic-map-section {
+  padding: 0.9rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--workspace-line, var(--border-soft)) 68%, transparent);
+}
+
+.logic-map-section-content {
+  margin-top: 0.62rem;
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.logic-map-section-content p {
+  margin: 0;
+}
+
+.logic-map-section-list {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.logic-map-example-claim {
+  margin-bottom: 0.38rem;
+  color: var(--text);
+  font-weight: 760;
+}
+
+.logic-map-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logic-map-chip {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-mist) 62%, transparent);
+  color: var(--accent-strong);
+  padding: 0 0.72rem;
+  font-family: var(--font-ui-premium);
+  font-size: 0.76rem;
+  font-weight: 740;
+}
+
+@media (max-width: 1180px) {
+  .logic-map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .logic-map-details-shell {
+    height: auto;
+    min-height: 0;
+    border-left: 0;
+    border-top: 1px solid color-mix(in srgb, var(--workspace-line, var(--border-soft)) 70%, transparent);
+    padding-top: 1rem;
+  }
+
+  .logic-map-details {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .logic-map-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .logic-map-canvas-shell {
+    min-height: 540px;
+  }
+}

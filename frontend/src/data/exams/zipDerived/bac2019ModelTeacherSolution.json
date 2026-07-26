@@ -1,0 +1,108 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2019_model",
+  "examId": "bac_logica_2019_model",
+  "visibility": "teacher_only",
+  "year": 2019,
+  "variant": "Model",
+  "sourceControl": {
+    "subject": "Examenul de bacalaureat național 2019_Model.pdf",
+    "barem": "Examenul de bacalaureat național 2019_Model_BAREM.pdf",
+    "noMixingWithPreviousFiles": true
+  },
+  "answers": {
+    "I_A": {
+      "1": "b",
+      "2": "c",
+      "3": "a",
+      "4": "c",
+      "5": "b",
+      "6": "d",
+      "7": "d",
+      "8": "d",
+      "9": "c",
+      "10": "a"
+    },
+    "I_B": {
+      "diagramId": "diagram_I_B_euler_terms",
+      "statements": {
+        "a": "F",
+        "b": "F",
+        "c": "A",
+        "d": "A",
+        "e": "A",
+        "f": "A"
+      }
+    },
+    "II_A": {
+      "prop2": "SeP",
+      "prop4": "SoP"
+    },
+    "II_B": {
+      "formal": [
+        "supraalterna propoziției 1: SaP",
+        "contradictoria propoziției 2: SiP",
+        "contrara propoziției 3: SeP",
+        "subcontrara propoziției 4: SiP"
+      ],
+      "natural": "Se acceptă formulări echivalente corecte în limbaj natural, cu păstrarea termenilor propozițiilor inițiale."
+    },
+    "II_C": {
+      "requirements": "Conversiune și obversiune pentru propozițiile 2 și 3, formal și natural.",
+      "scoring": "2x2x1p formal; 2x1p conversa natural; 2x1p obversa natural."
+    },
+    "II_D": {
+      "formal": "~PiS",
+      "natural": "Conversa obversei propoziției 4, formulată corect în limbaj natural."
+    },
+    "II_E": {
+      "X": {
+        "formal": "SoP -> PoS",
+        "validity": "nevalid / conversiune nevalidă"
+      },
+      "Y": {
+        "formal": "SaP -> PiS",
+        "validity": "valid / se respectă legea distribuirii termenilor"
+      }
+    },
+    "III_A": {
+      "oao-3": {
+        "schema": [
+          "MoP",
+          "MaS",
+          "SoP"
+        ],
+        "validity": "valid",
+        "diagramId": "diagram_III_A_oao_3_venn"
+      },
+      "iai-2": {
+        "schema": [
+          "PaM",
+          "SiM",
+          "SaP"
+        ],
+        "validity": "nevalid",
+        "diagramId": "diagram_III_A_iai_2_venn"
+      }
+    },
+    "III_B": {
+      "requirement": "Silogism valid, în limbaj formal și natural, pentru propoziția „Unele planete sunt lipsite de viață”."
+    },
+    "III_C": {
+      "1": "F",
+      "2": "A",
+      "3": "A",
+      "4": "F"
+    },
+    "III_D": {
+      "definitionTerm": "cerc",
+      "ruleViolated": "oricare regulă de corectitudine încălcată de definiția dată",
+      "anotherRule": "oricare altă regulă de corectitudine a definirii, diferită de prima",
+      "constructDefinition": "Se construiește o definiție a termenului „cerc” care încalcă regula indicată."
+    }
+  },
+  "scoring": {
+    "total": 90,
+    "officePoints": 10,
+    "finalCalculation": "Nota finală se calculează prin împărțirea punctajului total la 10."
+  }
+}

@@ -1,0 +1,680 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1616.931884765625,
+      "y": 230.78680419921875,
+      "score": 0.9835749119520187,
+      "page_number": 2
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1239.119384765625,
+      "y": 297.1048583984375,
+      "score": 0.9621505458304223,
+      "page_number": 2
+    },
+    {
+      "text": "8.",
+      "x": 396.30682373046875,
+      "y": 458.9208984375,
+      "score": 0.997306764125824,
+      "page_number": 2
+    },
+    {
+      "text": "Inductia completasecaracterizeazaprin:",
+      "x": 578.6079711914062,
+      "y": 453.6154479980469,
+      "score": 0.985600073086588,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 449.1477355957031,
+      "y": 535.8497924804688,
+      "score": 0.9893597364425659,
+      "page_number": 2
+    },
+    {
+      "text": "examinareafiecaruielementalclaseisupusecercetarii",
+      "x": 578.6079711914062,
+      "y": 535.8497924804688,
+      "score": 0.9911327739151157,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 615.4314575195312,
+      "score": 0.9979208707809448,
+      "page_number": 2
+    },
+    {
+      "text": "probabilitateaconcluzieiinraportcupremisele",
+      "x": 578.6079711914062,
+      "y": 615.4314575195312,
+      "score": 0.9819787387237993,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 697.6658325195312,
+      "score": 0.9631338119506836,
+      "page_number": 2
+    },
+    {
+      "text": "numarinfinitdecazuriexaminateinpremise",
+      "x": 573.3238525390625,
+      "y": 692.3604125976562,
+      "score": 0.9947927939264398,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 769.2893676757812,
+      "score": 0.9987899959087372,
+      "page_number": 2
+    },
+    {
+      "text": "examinareaunei parti a unui numarfinitdecazuri",
+      "x": 578.6079711914062,
+      "y": 771.9420776367188,
+      "score": 0.9517614012179167,
+      "page_number": 2
+    },
+    {
+      "text": "9.",
+      "x": 396.30682373046875,
+      "y": 923.147216796875,
+      "score": 0.9995151460170746,
+      "page_number": 2
+    },
+    {
+      "text": "Seriadetermenicorectordonatidescrescatordinpunctdevedereintensionaleste:",
+      "x": 581.25,
+      "y": 925.7999267578125,
+      "score": 0.994938371082147,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 1010.68701171875,
+      "score": 0.9985297322273254,
+      "page_number": 2
+    },
+    {
+      "text": "definitie circulara, definitie incorecta, definitie, operatie logica",
+      "x": 575.9659423828125,
+      "y": 1005.381591796875,
+      "score": 0.9802224548423991,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 1084.9632568359375,
+      "score": 0.999229907989502,
+      "page_number": 2
+    },
+    {
+      "text": "definitie, definitie incorecta, definitie circulara, operatie logica",
+      "x": 581.25,
+      "y": 1082.310546875,
+      "score": 0.9800486222786062,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 449.1477355957031,
+      "y": 1169.850341796875,
+      "score": 0.9208236038684845,
+      "page_number": 2
+    },
+    {
+      "text": "operatielogica,definitie,definitieincorecta,definitie circulara",
+      "x": 581.25,
+      "y": 1164.544921875,
+      "score": 0.9784992469681634,
+      "page_number": 2
+    },
+    {
+      "text": "operatie logica, definitie, definitie circulara, definitie incorecta",
+      "x": 581.25,
+      "y": 1241.473876953125,
+      "score": 0.9806039236924228,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 451.789794921875,
+      "y": 1244.1265869140625,
+      "score": 0.9979698359966278,
+      "page_number": 2
+    },
+    {
+      "text": "Este o propozitie particulara negativa propozitia:",
+      "x": 578.6079711914062,
+      "y": 1397.984375,
+      "score": 0.9893784940242767,
+      "page_number": 2
+    },
+    {
+      "text": "10.",
+      "x": 401.5909118652344,
+      "y": 1405.942626953125,
+      "score": 0.9990913470586141,
+      "page_number": 2
+    },
+    {
+      "text": "Majoritateacolegilorauparticipatlaactivitateadinparc.",
+      "x": 581.25,
+      "y": 1480.21875,
+      "score": 0.9960642063392783,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 454.43182373046875,
+      "y": 1490.8297119140625,
+      "score": 0.9979276955127716,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 1562.4532470703125,
+      "score": 0.9990269243717194,
+      "page_number": 2
+    },
+    {
+      "text": "Multecarticumistereauelementeplictisitoare.",
+      "x": 575.9659423828125,
+      "y": 1557.147705078125,
+      "score": 0.9960682267366454,
+      "page_number": 2
+    },
+    {
+      "text": "Anul2022s-aincheiat.",
+      "x": 575.9659423828125,
+      "y": 1636.7293701171875,
+      "score": 0.9855238884687424,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 1644.6876220703125,
+      "score": 0.9504233598709106,
+      "page_number": 2
+    },
+    {
+      "text": "d.C",
+      "x": 451.789794921875,
+      "y": 1718.9637451171875,
+      "score": 0.7700273891290029,
+      "page_number": 2
+    },
+    {
+      "text": "Catevaproblemenu au rezolvareusoara.",
+      "x": 573.3238525390625,
+      "y": 1716.31103515625,
+      "score": 0.9898899578385882,
+      "page_number": 2
+    },
+    {
+      "text": "20depuncte",
+      "x": 2937.95458984375,
+      "y": 1870.1689453125,
+      "score": 0.9988562822341919,
+      "page_number": 2
+    },
+    {
+      "text": "B. Fie termenii A, B, C, D, si E astfel incat termenul A se afla in raport de identitate cu termenul B,",
+      "x": 420.0852355957031,
+      "y": 1947.097900390625,
+      "score": 0.9591810277943472,
+      "page_number": 2
+    },
+    {
+      "text": "termenulCesteinraportdeidentitatecutermenulB,termenulDesteinraportdeincrucisarecu",
+      "x": 420.0852355957031,
+      "y": 2029.332275390625,
+      "score": 0.9727105454162315,
+      "page_number": 2
+    },
+    {
+      "text": "termenulA,iartermenulEestesubordonattermenilorBsiD.",
+      "x": 422.727294921875,
+      "y": 2114.21923828125,
+      "score": 0.9908626909349479,
+      "page_number": 2
+    },
+    {
+      "text": "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+      "x": 422.727294921875,
+      "y": 2185.8427734375,
+      "score": 0.9843331186394942,
+      "page_number": 2
+    },
+    {
+      "text": "cei cinci termeni.",
+      "x": 533.6931762695312,
+      "y": 2265.424560546875,
+      "score": 0.9640748765733507,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.92041015625,
+      "y": 2265.424560546875,
+      "score": 0.9832532107830048,
+      "page_number": 2
+    },
+    {
+      "text": "2. Stabiliti, pe baza raporturilor existente intre termenii A, B, C, D, E care dintre urmatoarele",
+      "x": 414.8011474609375,
+      "y": 2342.353515625,
+      "score": 0.9701430797576904,
+      "page_number": 2
+    },
+    {
+      "text": "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar",
+      "x": 531.0511474609375,
+      "y": 2421.93505859375,
+      "score": 0.9701554715633393,
+      "page_number": 2
+    },
+    {
+      "text": "propozitilefalsecu literaF):",
+      "x": 536.3352661132812,
+      "y": 2504.16943359375,
+      "score": 0.9644390791654587,
+      "page_number": 2
+    },
+    {
+      "text": "a.Unii D nu sunt A.",
+      "x": 636.7329711914062,
+      "y": 2581.098388671875,
+      "score": 0.9689934222321761,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 642.0170288085938,
+      "y": 2658.02734375,
+      "score": 0.9993383586406708,
+      "page_number": 2
+    },
+    {
+      "text": "Toti A sunt D.",
+      "x": 739.7727661132812,
+      "y": 2658.02734375,
+      "score": 0.9935489680085864,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 642.0170288085938,
+      "y": 2740.26171875,
+      "score": 0.9795659184455872,
+      "page_number": 2
+    },
+    {
+      "text": "Unii E nu sunt D.",
+      "x": 745.0568237304688,
+      "y": 2732.303466796875,
+      "score": 0.9520594442591948,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 639.375,
+      "y": 2817.190673828125,
+      "score": 0.9879498481750488,
+      "page_number": 2
+    },
+    {
+      "text": "Unii C sunt E.",
+      "x": 739.7727661132812,
+      "y": 2817.190673828125,
+      "score": 0.984955621617181,
+      "page_number": 2
+    },
+    {
+      "text": "e.",
+      "x": 639.375,
+      "y": 2896.772216796875,
+      "score": 0.9831641018390656,
+      "page_number": 2
+    },
+    {
+      "text": "Unii C nu sunt B.",
+      "x": 742.414794921875,
+      "y": 2894.11962890625,
+      "score": 0.9865546296624577,
+      "page_number": 2
+    },
+    {
+      "text": "Niciun C nu este A.",
+      "x": 747.6988525390625,
+      "y": 2968.395751953125,
+      "score": 0.9842254990025571,
+      "page_number": 2
+    },
+    {
+      "text": "f.",
+      "x": 636.7329711914062,
+      "y": 2973.701171875,
+      "score": 0.9567270576953888,
+      "page_number": 2
+    },
+    {
+      "text": "Toti E sunt B.",
+      "x": 737.1306762695312,
+      "y": 3045.32470703125,
+      "score": 0.9733043781348637,
+      "page_number": 2
+    },
+    {
+      "text": "g.",
+      "x": 644.6591186523438,
+      "y": 3061.240966796875,
+      "score": 0.9893061220645905,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3067.414794921875,
+      "y": 3122.253662109375,
+      "score": 0.9459544867277145,
+      "page_number": 2
+    },
+    {
+      "text": "h.",
+      "x": 644.6591186523438,
+      "y": 3135.517333984375,
+      "score": 0.9989253878593445,
+      "page_number": 2
+    },
+    {
+      "text": ".Toti B sunt A.",
+      "x": 686.9318237304688,
+      "y": 3127.55908203125,
+      "score": 0.9202651977539062,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 367.24432373046875,
+      "y": 3284.069580078125,
+      "score": 0.933866963667028,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2861.335205078125,
+      "y": 3284.069580078125,
+      "score": 0.9808073128972735,
+      "page_number": 2
+    },
+    {
+      "text": "Se dau urmatoarele propoziti:",
+      "x": 364.6022644042969,
+      "y": 3435.27490234375,
+      "score": 0.9601637967701616,
+      "page_number": 2
+    },
+    {
+      "text": "1.Toateexperientelepersonalepozitivesuntamintirifrumoase.",
+      "x": 478.2102355957031,
+      "y": 3520.161865234375,
+      "score": 0.9953490955787793,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 480.852294921875,
+      "y": 3602.396240234375,
+      "score": 0.9965232610702515,
+      "page_number": 2
+    },
+    {
+      "text": "Unelecompetitiscolaresuntconcursuricugradsporitdedificultate.",
+      "x": 583.8920288085938,
+      "y": 3594.438232421875,
+      "score": 0.988499527094794,
+      "page_number": 2
+    },
+    {
+      "text": "Niciocalatoriebineorganizatanuesteneplacuta.",
+      "x": 583.8920288085938,
+      "y": 3676.672607421875,
+      "score": 0.9855024381117388,
+      "page_number": 2
+    },
+    {
+      "text": "3.",
+      "x": 480.852294921875,
+      "y": 3681.97802734375,
+      "score": 0.9925620853900909,
+      "page_number": 2
+    },
+    {
+      "text": "4.Uneleactiunireprobabilenusuntevaluatedinpunctdevederemoral.",
+      "x": 472.9261474609375,
+      "y": 3753.6015625,
+      "score": 0.9973856152081099,
+      "page_number": 2
+    },
+    {
+      "text": "A. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara",
+      "x": 364.6022644042969,
+      "y": 3907.459228515625,
+      "score": 0.9877237029946767,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2, contrara propozitiei 3 si supraalterna propozitiei 4.",
+      "x": 475.56817626953125,
+      "y": 3989.693603515625,
+      "score": 0.9838591393302468,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3051.5625,
+      "y": 3989.693603515625,
+      "score": 0.9639648497104645,
+      "page_number": 2
+    },
+    {
+      "text": "B.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa",
+      "x": 367.24432373046875,
+      "y": 4071.927978515625,
+      "score": 0.9913563642157129,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 1 si 3, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 472.9261474609375,
+      "y": 4146.2041015625,
+      "score": 0.9837271823096521,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3051.5625,
+      "y": 4225.7861328125,
+      "score": 0.9881945550441742,
+      "page_number": 2
+    },
+    {
+      "text": "C. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei subalternei propozitiei",
+      "x": 367.24432373046875,
+      "y": 4297.40966796875,
+      "score": 0.9740407208983715,
+      "page_number": 2
+    },
+    {
+      "text": "3, respectiv, obversa subcontrarei propozitiei 4.",
+      "x": 470.2840881347656,
+      "y": 4382.29638671875,
+      "score": 0.9974799265666884,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3051.5625,
+      "y": 4382.29638671875,
+      "score": 0.9970085769891739,
+      "page_number": 2
+    },
+    {
+      "text": "D. Doi elevi, X si Y, opineaza astfel:",
+      "x": 361.9602355957031,
+      "y": 4453.919921875,
+      "score": 0.9649561086767598,
+      "page_number": 2
+    },
+    {
+      "text": "X: Toate fintele posesoare de limbaj articulat sunt finte rationale deoarece unele finte rationale",
+      "x": 443.8636474609375,
+      "y": 4530.84912109375,
+      "score": 0.9799180036904861,
+      "page_number": 2
+    },
+    {
+      "text": "suntposesoaredelimbajarticulat.",
+      "x": 369.8863830566406,
+      "y": 4621.04150390625,
+      "score": 0.9920467330563453,
+      "page_number": 2
+    },
+    {
+      "text": "Y:Dacaunele institute de cercetare sunt unitati arondate universitatilor,atunci uneleunitati",
+      "x": 446.50567626953125,
+      "y": 4690.01220703125,
+      "score": 0.9584422532631003,
+      "page_number": 2
+    },
+    {
+      "text": "arondateuniversitatilorsuntinstitutedecercetare.",
+      "x": 372.5284118652344,
+      "y": 4780.20458984375,
+      "score": 0.9950302814443907,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 364.6022644042969,
+      "y": 4960.58984375,
+      "score": 0.961018726533773,
+      "page_number": 2
+    },
+    {
+      "text": "Simulare",
+      "x": 3104.403564453125,
+      "y": 4965.8955078125,
+      "score": 0.9991787001490593,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 3",
+      "x": 1677.6988525390625,
+      "y": 5029.560546875,
+      "score": 0.9836967374597277,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "8.",
+    "Inductia completasecaracterizeazaprin:",
+    "a.",
+    "examinareafiecaruielementalclaseisupusecercetarii",
+    "b.",
+    "probabilitateaconcluzieiinraportcupremisele",
+    "C.",
+    "numarinfinitdecazuriexaminateinpremise",
+    "d.",
+    "examinareaunei parti a unui numarfinitdecazuri",
+    "9.",
+    "Seriadetermenicorectordonatidescrescatordinpunctdevedereintensionaleste:",
+    "a.",
+    "definitie circulara, definitie incorecta, definitie, operatie logica",
+    "b.",
+    "definitie, definitie incorecta, definitie circulara, operatie logica",
+    "C.",
+    "operatielogica,definitie,definitieincorecta,definitie circulara",
+    "operatie logica, definitie, definitie circulara, definitie incorecta",
+    "d.",
+    "Este o propozitie particulara negativa propozitia:",
+    "10.",
+    "Majoritateacolegilorauparticipatlaactivitateadinparc.",
+    "a.",
+    "b.",
+    "Multecarticumistereauelementeplictisitoare.",
+    "Anul2022s-aincheiat.",
+    "C.",
+    "d.C",
+    "Catevaproblemenu au rezolvareusoara.",
+    "20depuncte",
+    "B. Fie termenii A, B, C, D, si E astfel incat termenul A se afla in raport de identitate cu termenul B,",
+    "termenulCesteinraportdeidentitatecutermenulB,termenulDesteinraportdeincrucisarecu",
+    "termenulA,iartermenulEestesubordonattermenilorBsiD.",
+    "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+    "cei cinci termeni.",
+    "2 puncte",
+    "2. Stabiliti, pe baza raporturilor existente intre termenii A, B, C, D, E care dintre urmatoarele",
+    "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar",
+    "propozitilefalsecu literaF):",
+    "a.Unii D nu sunt A.",
+    "b.",
+    "Toti A sunt D.",
+    "C.",
+    "Unii E nu sunt D.",
+    "d.",
+    "Unii C sunt E.",
+    "e.",
+    "Unii C nu sunt B.",
+    "Niciun C nu este A.",
+    "f.",
+    "Toti E sunt B.",
+    "g.",
+    "8 puncte",
+    "h.",
+    ".Toti B sunt A.",
+    "SUBIECTULalII-lea",
+    "(30 de puncte)",
+    "Se dau urmatoarele propoziti:",
+    "1.Toateexperientelepersonalepozitivesuntamintirifrumoase.",
+    "2.",
+    "Unelecompetitiscolaresuntconcursuricugradsporitdedificultate.",
+    "Niciocalatoriebineorganizatanuesteneplacuta.",
+    "3.",
+    "4.Uneleactiunireprobabilenusuntevaluatedinpunctdevederemoral.",
+    "A. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara",
+    "propozitiei 2, contrara propozitiei 3 si supraalterna propozitiei 4.",
+    "8 puncte",
+    "B.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa",
+    "corecte ale fiecareia dintre propozitile 1 si 3, atat in limbaj formal, cat si in limbaj natural.",
+    "8 puncte",
+    "C. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei subalternei propozitiei",
+    "3, respectiv, obversa subcontrarei propozitiei 4.",
+    "6 puncte",
+    "D. Doi elevi, X si Y, opineaza astfel:",
+    "X: Toate fintele posesoare de limbaj articulat sunt finte rationale deoarece unele finte rationale",
+    "suntposesoaredelimbajarticulat.",
+    "Y:Dacaunele institute de cercetare sunt unitati arondate universitatilor,atunci uneleunitati",
+    "arondateuniversitatilorsuntinstitutedecercetare.",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Simulare",
+    "Pagina 2 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\n8.\nInductia completasecaracterizeazaprin:\na.\nexaminareafiecaruielementalclaseisupusecercetarii\nb.\nprobabilitateaconcluzieiinraportcupremisele\nC.\nnumarinfinitdecazuriexaminateinpremise\nd.\nexaminareaunei parti a unui numarfinitdecazuri\n9.\nSeriadetermenicorectordonatidescrescatordinpunctdevedereintensionaleste:\na.\ndefinitie circulara, definitie incorecta, definitie, operatie logica\nb.\ndefinitie, definitie incorecta, definitie circulara, operatie logica\nC.\noperatielogica,definitie,definitieincorecta,definitie circulara\noperatie logica, definitie, definitie circulara, definitie incorecta\nd.\nEste o propozitie particulara negativa propozitia:\n10.\nMajoritateacolegilorauparticipatlaactivitateadinparc.\na.\nb.\nMultecarticumistereauelementeplictisitoare.\nAnul2022s-aincheiat.\nC.\nd.C\nCatevaproblemenu au rezolvareusoara.\n20depuncte\nB. Fie termenii A, B, C, D, si E astfel incat termenul A se afla in raport de identitate cu termenul B,\ntermenulCesteinraportdeidentitatecutermenulB,termenulDesteinraportdeincrucisarecu\ntermenulA,iartermenulEestesubordonattermenilorBsiD.\n1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre\ncei cinci termeni.\n2 puncte\n2. Stabiliti, pe baza raporturilor existente intre termenii A, B, C, D, E care dintre urmatoarele\npropoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar\npropozitilefalsecu literaF):\na.Unii D nu sunt A.\nb.\nToti A sunt D.\nC.\nUnii E nu sunt D.\nd.\nUnii C sunt E.\ne.\nUnii C nu sunt B.\nNiciun C nu este A.\nf.\nToti E sunt B.\ng.\n8 puncte\nh.\n.Toti B sunt A.\nSUBIECTULalII-lea\n(30 de puncte)\nSe dau urmatoarele propoziti:\n1.Toateexperientelepersonalepozitivesuntamintirifrumoase.\n2.\nUnelecompetitiscolaresuntconcursuricugradsporitdedificultate.\nNiciocalatoriebineorganizatanuesteneplacuta.\n3.\n4.Uneleactiunireprobabilenusuntevaluatedinpunctdevederemoral.\nA. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara\npropozitiei 2, contrara propozitiei 3 si supraalterna propozitiei 4.\n8 puncte\nB.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa\ncorecte ale fiecareia dintre propozitile 1 si 3, atat in limbaj formal, cat si in limbaj natural.\n8 puncte\nC. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei subalternei propozitiei\n3, respectiv, obversa subcontrarei propozitiei 4.\n6 puncte\nD. Doi elevi, X si Y, opineaza astfel:\nX: Toate fintele posesoare de limbaj articulat sunt finte rationale deoarece unele finte rationale\nsuntposesoaredelimbajarticulat.\nY:Dacaunele institute de cercetare sunt unitati arondate universitatilor,atunci uneleunitati\narondateuniversitatilorsuntinstitutedecercetare.\nProba scrisa la logica, argumentare si comunicare\nSimulare\nPagina 2 din 3"
+}

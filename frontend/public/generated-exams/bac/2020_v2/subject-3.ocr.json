@@ -1,0 +1,320 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatieisi Cercetari",
+      "x": 1463.2996826171875,
+      "y": 148.55242919921875,
+      "score": 0.9725637510418892,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul National dePoliticisi EvaluareinEducatie",
+      "x": 1241.4276123046875,
+      "y": 214.87046813964844,
+      "score": 0.9666234652201334,
+      "page_number": 3
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 480.7230224609375,
+      "y": 445.65728759765625,
+      "score": 0.9754182188599198,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3019.046142578125,
+      "y": 519.9334716796875,
+      "score": 0.9465439766645432,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti,inlimbaj formal,opinilecelordoielevi;",
+      "x": 589.0177612304688,
+      "y": 525.2389526367188,
+      "score": 0.9752720607087967,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+      "x": 578.452392578125,
+      "y": 599.51513671875,
+      "score": 0.9914212710327572,
+      "page_number": 3
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+      "x": 578.452392578125,
+      "y": 684.4022216796875,
+      "score": 0.9845507964491844,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.5042724609375,
+      "y": 856.8291625976562,
+      "score": 0.8945449209875531,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2886.9794921875,
+      "y": 859.4818725585938,
+      "score": 0.9892522643009821,
+      "page_number": 3
+    },
+    {
+      "text": "A. Fie urmatoarele doua moduri silogistice: eio-2, aee-4.",
+      "x": 412.0483093261719,
+      "y": 944.3690185546875,
+      "score": 0.9658042066975644,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri",
+      "x": 496.5710144042969,
+      "y": 1018.6452026367188,
+      "score": 0.9448111794888974,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia",
+      "x": 501.85369873046875,
+      "y": 1100.879638671875,
+      "score": 0.9735862708639824,
+      "page_number": 3
+    },
+    {
+      "text": "dintreceledouaschemedeinferenta.",
+      "x": 499.2123718261719,
+      "y": 1177.8084716796875,
+      "score": 0.9892605487257242,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3069.2314453125,
+      "y": 1180.461181640625,
+      "score": 0.9899399951100349,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua",
+      "x": 496.5710144042969,
+      "y": 1254.7374267578125,
+      "score": 0.9727989176045293,
+      "page_number": 3
+    },
+    {
+      "text": "moduri silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 496.5710144042969,
+      "y": 1334.319091796875,
+      "score": 0.9792162614209311,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.100830078125,
+      "y": 1334.319091796875,
+      "score": 0.9970866218209267,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa",
+      "x": 412.0483093261719,
+      "y": 1413.9007568359375,
+      "score": 0.9802072828120374,
+      "page_number": 3
+    },
+    {
+      "text": "justificati propozitia,Unele mamifere sunt carnivore\".",
+      "x": 493.9296875,
+      "y": 1490.8297119140625,
+      "score": 0.9566831964033621,
+      "page_number": 3
+    },
+    {
+      "text": "6puncte",
+      "x": 3048.100830078125,
+      "y": 1496.1351318359375,
+      "score": 0.9976452418736049,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorul silogism:,Dacaunele compromisuri sunt fapte inadmisibile，atunci unele",
+      "x": 412.0483093261719,
+      "y": 1570.411376953125,
+      "score": 0.9607351876440502,
+      "page_number": 3
+    },
+    {
+      "text": "compromisurinusuntacceptate,avandinvederecaniciunfaptinadmisibilnuesteacceptat\".",
+      "x": 501.85369873046875,
+      "y": 1652.645751953125,
+      "score": 0.9812063209712505,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 364.5042724609375,
+      "y": 1729.57470703125,
+      "score": 0.9540358480840626,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 361.8629150390625,
+      "y": 1806.503662109375,
+      "score": 0.9828141452301116,
+      "page_number": 3
+    },
+    {
+      "text": "1. Termenul major este distribuit atat in premisa, cat si in concluzie.",
+      "x": 454.3096618652344,
+      "y": 1880.77978515625,
+      "score": 0.9962361278668256,
+      "page_number": 3
+    },
+    {
+      "text": "2. Concluzia silogismului este o propozitie universala negativa.",
+      "x": 451.6683349609375,
+      "y": 1963.01416015625,
+      "score": 0.9879457587376237,
+      "page_number": 3
+    },
+    {
+      "text": "3.Predicatul logic al concluziei este reprezentat de termenul ,compromisuri\".",
+      "x": 451.6683349609375,
+      "y": 2042.5958251953125,
+      "score": 0.964646412954702,
+      "page_number": 3
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+      "x": 451.6683349609375,
+      "y": 2119.52490234375,
+      "score": 0.9948117103088986,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.100830078125,
+      "y": 2193.801025390625,
+      "score": 0.9614564254879951,
+      "page_number": 3
+    },
+    {
+      "text": "D. Fie urmatoarea definitie:",
+      "x": 412.0483093261719,
+      "y": 2276.035400390625,
+      "score": 0.9888893983193806,
+      "page_number": 3
+    },
+    {
+      "text": ",Inductiaincompletaesteunrationamentinductiv\"",
+      "x": 493.9296875,
+      "y": 2358.269775390625,
+      "score": 0.968242143260108,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 2429.893310546875,
+      "score": 0.9976119473576546,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionati oregula de corectitudinepecareoincalcadefinitiadata.",
+      "x": 493.9296875,
+      "y": 2435.19873046875,
+      "score": 0.9705959237538851,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul",
+      "x": 488.64703369140625,
+      "y": 2506.822265625,
+      "score": 0.9645748654591668,
+      "page_number": 3
+    },
+    {
+      "text": "a. si construiti o definitie care sa o incalce, avand ca definit termenul ,inductie incompleta\"",
+      "x": 623.3551025390625,
+      "y": 2591.709228515625,
+      "score": 0.9617275024715223,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3050.7421875,
+      "y": 2671.291015625,
+      "score": 0.9965138882398605,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4851.828125,
+      "score": 0.9650003642452006,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta2",
+      "x": 3037.53564453125,
+      "y": 4859.78662109375,
+      "score": 0.9990147948265076,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.475830078125,
+      "y": 4928.75732421875,
+      "score": 0.9922256299427578,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatieisi Cercetari",
+    "Centrul National dePoliticisi EvaluareinEducatie",
+    "Porninddelaaceastasituatie:",
+    "4 puncte",
+    "a.scrieti,inlimbaj formal,opinilecelordoielevi;",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30depuncte)",
+    "A. Fie urmatoarele doua moduri silogistice: eio-2, aee-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri",
+    "silogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia",
+    "dintreceledouaschemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua",
+    "moduri silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa",
+    "justificati propozitia,Unele mamifere sunt carnivore\".",
+    "6puncte",
+    "C.Fieurmatorul silogism:,Dacaunele compromisuri sunt fapte inadmisibile，atunci unele",
+    "compromisurinusuntacceptate,avandinvederecaniciunfaptinadmisibilnuesteacceptat\".",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1. Termenul major este distribuit atat in premisa, cat si in concluzie.",
+    "2. Concluzia silogismului este o propozitie universala negativa.",
+    "3.Predicatul logic al concluziei este reprezentat de termenul ,compromisuri\".",
+    "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+    "4 puncte",
+    "D. Fie urmatoarea definitie:",
+    ",Inductiaincompletaesteunrationamentinductiv\"",
+    "2 puncte",
+    "a.Mentionati oregula de corectitudinepecareoincalcadefinitiadata.",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul",
+    "a. si construiti o definitie care sa o incalce, avand ca definit termenul ,inductie incompleta\"",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta2",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatieisi Cercetari\nCentrul National dePoliticisi EvaluareinEducatie\nPorninddelaaceastasituatie:\n4 puncte\na.scrieti,inlimbaj formal,opinilecelordoielevi;\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte\nSUBIECTULalIII-lea\n(30depuncte)\nA. Fie urmatoarele doua moduri silogistice: eio-2, aee-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri\nsilogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia\ndintreceledouaschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua\nmoduri silogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa\njustificati propozitia,Unele mamifere sunt carnivore\".\n6puncte\nC.Fieurmatorul silogism:,Dacaunele compromisuri sunt fapte inadmisibile，atunci unele\ncompromisurinusuntacceptate,avandinvederecaniciunfaptinadmisibilnuesteacceptat\".\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1. Termenul major este distribuit atat in premisa, cat si in concluzie.\n2. Concluzia silogismului este o propozitie universala negativa.\n3.Predicatul logic al concluziei este reprezentat de termenul ,compromisuri\".\n4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.\n4 puncte\nD. Fie urmatoarea definitie:\n,Inductiaincompletaesteunrationamentinductiv\"\n2 puncte\na.Mentionati oregula de corectitudinepecareoincalcadefinitiadata.\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul\na. si construiti o definitie care sa o incalce, avand ca definit termenul ,inductie incompleta\"\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nVarianta2\nPagina 3 din 3"
+}

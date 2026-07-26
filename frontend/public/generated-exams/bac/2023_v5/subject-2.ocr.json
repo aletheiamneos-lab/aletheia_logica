@@ -1,0 +1,648 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1619.5738525390625,
+      "y": 196.30142211914062,
+      "score": 0.9927464932203293,
+      "page_number": 2
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1239.119384765625,
+      "y": 259.96673583984375,
+      "score": 0.9658096889232067,
+      "page_number": 2
+    },
+    {
+      "text": "B.Sedau termeni M,N,O,Psi Q astfel incat termenul Mesteinraport decontradictiecutermenul",
+      "x": 364.6022644042969,
+      "y": 376.6864929199219,
+      "score": 0.9450113979930227,
+      "page_number": 2
+    },
+    {
+      "text": "N;termenul OestesupraordonattermenilorM,N,Psi Q;termenulPesteinraportdeincrucisare",
+      "x": 367.24432373046875,
+      "y": 456.2681579589844,
+      "score": 0.9758379553876272,
+      "page_number": 2
+    },
+    {
+      "text": "cu termeni M si N, dar este supraordonat lui Q; termenul Q este in raport de incrucisare cu termeni",
+      "x": 364.6022644042969,
+      "y": 533.1970825195312,
+      "score": 0.9706683285308607,
+      "page_number": 2
+    },
+    {
+      "text": "M si N, find o specie a lui P.",
+      "x": 364.6022644042969,
+      "y": 612.7787475585938,
+      "score": 0.9806048452854157,
+      "page_number": 2
+    },
+    {
+      "text": "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+      "x": 449.1477355957031,
+      "y": 689.7077026367188,
+      "score": 0.9892844438552857,
+      "page_number": 2
+    },
+    {
+      "text": "cei cinci termeni.",
+      "x": 457.0738830566406,
+      "y": 771.9420776367188,
+      "score": 0.9633519285255008,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3062.130615234375,
+      "y": 777.2474975585938,
+      "score": 0.992460124194622,
+      "page_number": 2
+    },
+    {
+      "text": "2. Stabiliti, pe baza raporturilor existente intre termenii M, N, O, P si Q, care dintre urmatoarele",
+      "x": 454.43182373046875,
+      "y": 846.21826171875,
+      "score": 0.9787593114376069,
+      "page_number": 2
+    },
+    {
+      "text": "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar propozitile",
+      "x": 457.0738830566406,
+      "y": 925.7999267578125,
+      "score": 0.9693951536627377,
+      "page_number": 2
+    },
+    {
+      "text": "false cu litera F):",
+      "x": 449.1477355957031,
+      "y": 997.4234008789062,
+      "score": 0.9952496666657297,
+      "page_number": 2
+    },
+    {
+      "text": "a) Toti P sunt M.",
+      "x": 454.43182373046875,
+      "y": 1164.544921875,
+      "score": 0.9583902288885677,
+      "page_number": 2
+    },
+    {
+      "text": "c)Niciun M nu este Q.",
+      "x": 1188.9205322265625,
+      "y": 1164.544921875,
+      "score": 0.968192131746383,
+      "page_number": 2
+    },
+    {
+      "text": "e)Niciun Onu este Q.9",
+      "x": 1981.5341796875,
+      "y": 1167.1976318359375,
+      "score": 0.9235100178491502,
+      "page_number": 2
+    },
+    {
+      "text": "g) Toti M sunt Q.",
+      "x": 2729.23291015625,
+      "y": 1164.544921875,
+      "score": 0.9655368573525372,
+      "page_number": 2
+    },
+    {
+      "text": "d) Toti M sunt N.",
+      "x": 1186.2784423828125,
+      "y": 1236.16845703125,
+      "score": 0.9974952305064482,
+      "page_number": 2
+    },
+    {
+      "text": "f) Niciun P nu este O.  h) Uni O sunt M.",
+      "x": 1976.25,
+      "y": 1238.8211669921875,
+      "score": 0.9442270696163177,
+      "page_number": 2
+    },
+    {
+      "text": "b) Unii Q nu sunt O.",
+      "x": 457.0738830566406,
+      "y": 1244.1265869140625,
+      "score": 0.978109723329544,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3056.8466796875,
+      "y": 1321.0555419921875,
+      "score": 0.9805868417024612,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2858.693115234375,
+      "y": 1416.553466796875,
+      "score": 0.9932772772652763,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULaIII-lea",
+      "x": 369.8863830566406,
+      "y": 1427.1644287109375,
+      "score": 0.9082520884626052,
+      "page_number": 2
+    },
+    {
+      "text": "Se dau urmatoarele propoziti:",
+      "x": 367.24432373046875,
+      "y": 1504.09326171875,
+      "score": 0.9641882982747308,
+      "page_number": 2
+    },
+    {
+      "text": "1.Niciuncantecpopularnuestelipsitdevaloarestilistica.",
+      "x": 472.9261474609375,
+      "y": 1581.022216796875,
+      "score": 0.9959565727215893,
+      "page_number": 2
+    },
+    {
+      "text": "2.Unele dimineti de vara sunt racoroase.",
+      "x": 465.0,
+      "y": 1652.645751953125,
+      "score": 0.9738876387476921,
+      "page_number": 2
+    },
+    {
+      "text": "3.",
+      "x": 475.56817626953125,
+      "y": 1745.490966796875,
+      "score": 0.9984115958213806,
+      "page_number": 2
+    },
+    {
+      "text": "Totipictoriromanicontemporanisuntrecunoscutiindiasporaromana.",
+      "x": 578.6079711914062,
+      "y": 1742.8382568359375,
+      "score": 0.9856487766641086,
+      "page_number": 2
+    },
+    {
+      "text": "4.Unelesocietaticonservatoarenusuntstatemoderne.",
+      "x": 470.2840881347656,
+      "y": 1817.114501953125,
+      "score": 0.9978616485993067,
+      "page_number": 2
+    },
+    {
+      "text": "A. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara",
+      "x": 364.6022644042969,
+      "y": 1925.8760986328125,
+      "score": 0.9845069927664903,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2, subalterna propozitiei 3 si supraalterna propozitiei 4.",
+      "x": 475.56817626953125,
+      "y": 2005.457763671875,
+      "score": 0.9903224502290998,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3062.130615234375,
+      "y": 2008.1104736328125,
+      "score": 0.9912581443786621,
+      "page_number": 2
+    },
+    {
+      "text": "B.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+      "x": 367.24432373046875,
+      "y": 2082.38671875,
+      "score": 0.9837775757438258,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 1 si 2, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 475.56817626953125,
+      "y": 2164.62109375,
+      "score": 0.9942560060737059,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3056.8466796875,
+      "y": 2241.550048828125,
+      "score": 0.9453885406255722,
+      "page_number": 2
+    },
+    {
+      "text": "C. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria conversei supraalternei",
+      "x": 367.24432373046875,
+      "y": 2315.826171875,
+      "score": 0.9941377958448807,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3054.20458984375,
+      "y": 2392.755126953125,
+      "score": 0.9939809218049049,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 4, respectiv, conversa subalternei propozitiei 3.",
+      "x": 478.2102355957031,
+      "y": 2398.060546875,
+      "score": 0.9845985008067772,
+      "page_number": 2
+    },
+    {
+      "text": "D. Doi elevi, X si Y, opineaza astfel:",
+      "x": 364.6022644042969,
+      "y": 2472.3369140625,
+      "score": 0.971311845277485,
+      "page_number": 2
+    },
+    {
+      "text": "X:Dacaniciunfluturemonarhnuesteadaptatmediuluiacvatic,atuncitotifluturimonarhsunt",
+      "x": 449.1477355957031,
+      "y": 2551.91845703125,
+      "score": 0.9913347311961798,
+      "page_number": 2
+    },
+    {
+      "text": "neadaptatimediuluiacvatic.",
+      "x": 369.8863830566406,
+      "y": 2634.15283203125,
+      "score": 0.992520809173584,
+      "page_number": 2
+    },
+    {
+      "text": "Y:Sepoatespunecaunelelegendeistoricenu sunt marturi atestatedocumentar,dacanebazam",
+      "x": 449.1477355957031,
+      "y": 2703.12353515625,
+      "score": 0.9720167372284866,
+      "page_number": 2
+    },
+    {
+      "text": "pefaptulcaunelemarturiatestatedocumentarnusuntlegendeistorice.",
+      "x": 364.6022644042969,
+      "y": 2788.0107421875,
+      "score": 0.9914546147469552,
+      "page_number": 2
+    },
+    {
+      "text": "Pornind dela aceasta situatie:",
+      "x": 428.0113830566406,
+      "y": 2864.939697265625,
+      "score": 0.9490944782892863,
+      "page_number": 2
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 538.977294921875,
+      "y": 2984.31201171875,
+      "score": 0.9862442511432575,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3059.48876953125,
+      "y": 2984.31201171875,
+      "score": 0.972572036087513,
+      "page_number": 2
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2puncte",
+      "x": 536.3352661132812,
+      "y": 3058.58837890625,
+      "score": 0.9748172793876041,
+      "page_number": 2
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.?",
+      "x": 538.977294921875,
+      "y": 3140.82275390625,
+      "score": 0.9746389664985515,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.92041015625,
+      "y": 3140.82275390625,
+      "score": 0.992857500910759,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.6022644042969,
+      "y": 3238.973388671875,
+      "score": 0.8957650247547362,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2861.335205078125,
+      "y": 3246.931640625,
+      "score": 0.9866345013890948,
+      "page_number": 2
+    },
+    {
+      "text": "A.Se dau urmatoarele douamoduri silogistice:aee-2,oao-4.",
+      "x": 364.6022644042969,
+      "y": 3323.860595703125,
+      "score": 0.9779255166649818,
+      "page_number": 2
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice date",
+      "x": 449.1477355957031,
+      "y": 3400.78955078125,
+      "score": 0.9726717422917946,
+      "page_number": 2
+    },
+    {
+      "text": "si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua scheme de",
+      "x": 451.789794921875,
+      "y": 3480.37109375,
+      "score": 0.9684142974234119,
+      "page_number": 2
+    },
+    {
+      "text": "inferenta.",
+      "x": 454.43182373046875,
+      "y": 3559.952880859375,
+      "score": 0.9896911025047302,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3059.48876953125,
+      "y": 3565.25830078125,
+      "score": 0.9842867478728294,
+      "page_number": 2
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.1477355957031,
+      "y": 3636.881591796875,
+      "score": 0.9871145420604281,
+      "page_number": 2
+    },
+    {
+      "text": "silogistice date,precizand totodata decizia la care ati ajuns.",
+      "x": 454.43182373046875,
+      "y": 3716.46337890625,
+      "score": 0.970369468773565,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3059.48876953125,
+      "y": 3721.768798828125,
+      "score": 0.99319738894701,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 364.6022644042969,
+      "y": 3796.044921875,
+      "score": 0.9893396811665229,
+      "page_number": 2
+    },
+    {
+      "text": "propozitia,Unelepoezii contemporanenusuntcititedecatreliceeni\"",
+      "x": 451.789794921875,
+      "y": 3878.279296875,
+      "score": 0.9769592765838869,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3062.130615234375,
+      "y": 3880.93212890625,
+      "score": 0.9947766587138176,
+      "page_number": 2
+    },
+    {
+      "text": "C. Se da urmatorul silogism:Nicio felina nu este erbivora,deci unele mamifere terestre nu sunt",
+      "x": 364.6022644042969,
+      "y": 3947.250244140625,
+      "score": 0.9650394929216263,
+      "page_number": 2
+    },
+    {
+      "text": "erbivore,deoareceunelemamifereterestresuntfeline.",
+      "x": 459.7159118652344,
+      "y": 4034.7900390625,
+      "score": 0.9866829830773023,
+      "page_number": 2
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 364.6022644042969,
+      "y": 4109.06640625,
+      "score": 0.974720563628886,
+      "page_number": 2
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 359.31817626953125,
+      "y": 4183.34228515625,
+      "score": 0.9823164602830297,
+      "page_number": 2
+    },
+    {
+      "text": "1. Termenul mediu este distribuit doar in premisa minora.",
+      "x": 451.789794921875,
+      "y": 4262.923828125,
+      "score": 0.9595207822950262,
+      "page_number": 2
+    },
+    {
+      "text": "2. Predicatul logic al concluziei este reprezentat de termenul ,felina\"",
+      "x": 451.789794921875,
+      "y": 4342.505859375,
+      "score": 0.9812662861716579,
+      "page_number": 2
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie particulara negativa.",
+      "x": 449.1477355957031,
+      "y": 4422.08740234375,
+      "score": 0.9913429700411283,
+      "page_number": 2
+    },
+    {
+      "text": "4. Predicatul logic al concluziei este distribuit in premisa si in concluzie.",
+      "x": 449.1477355957031,
+      "y": 4493.7109375,
+      "score": 0.9713865797241013,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3054.20458984375,
+      "y": 4496.36376953125,
+      "score": 0.9538930505514145,
+      "page_number": 2
+    },
+    {
+      "text": "D.Se da urmatoarea definitie:",
+      "x": 364.6022644042969,
+      "y": 4573.29248046875,
+      "score": 0.9711351846826488,
+      "page_number": 2
+    },
+    {
+      "text": "Clorulesteunelementchimic.",
+      "x": 457.0738830566406,
+      "y": 4655.52685546875,
+      "score": 0.9963349264401656,
+      "page_number": 2
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 446.50567626953125,
+      "y": 4732.4560546875,
+      "score": 0.9712249967787001,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3059.48876953125,
+      "y": 4737.76123046875,
+      "score": 0.9974107295274734,
+      "page_number": 2
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 446.50567626953125,
+      "y": 4812.03759765625,
+      "score": 0.9731698703765869,
+      "page_number": 2
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,clor\"",
+      "x": 581.25,
+      "y": 4896.9248046875,
+      "score": 0.9316495711153204,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3054.20458984375,
+      "y": 4896.9248046875,
+      "score": 0.9939101412892342,
+      "page_number": 2
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresi comunicare",
+      "x": 364.6022644042969,
+      "y": 4987.1171875,
+      "score": 0.9711748984726992,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta 5",
+      "x": 2922.102294921875,
+      "y": 4995.0751953125,
+      "score": 0.9606006383895874,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1680.3409423828125,
+      "y": 5056.087890625,
+      "score": 0.9838425985404423,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "B.Sedau termeni M,N,O,Psi Q astfel incat termenul Mesteinraport decontradictiecutermenul",
+    "N;termenul OestesupraordonattermenilorM,N,Psi Q;termenulPesteinraportdeincrucisare",
+    "cu termeni M si N, dar este supraordonat lui Q; termenul Q este in raport de incrucisare cu termeni",
+    "M si N, find o specie a lui P.",
+    "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+    "cei cinci termeni.",
+    "2 puncte",
+    "2. Stabiliti, pe baza raporturilor existente intre termenii M, N, O, P si Q, care dintre urmatoarele",
+    "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar propozitile",
+    "false cu litera F):",
+    "a) Toti P sunt M.",
+    "c)Niciun M nu este Q.",
+    "e)Niciun Onu este Q.9",
+    "g) Toti M sunt Q.",
+    "d) Toti M sunt N.",
+    "f) Niciun P nu este O.  h) Uni O sunt M.",
+    "b) Unii Q nu sunt O.",
+    "8 puncte",
+    "(30 de puncte)",
+    "SUBIECTULaIII-lea",
+    "Se dau urmatoarele propoziti:",
+    "1.Niciuncantecpopularnuestelipsitdevaloarestilistica.",
+    "2.Unele dimineti de vara sunt racoroase.",
+    "3.",
+    "Totipictoriromanicontemporanisuntrecunoscutiindiasporaromana.",
+    "4.Unelesocietaticonservatoarenusuntstatemoderne.",
+    "A. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara",
+    "propozitiei 2, subalterna propozitiei 3 si supraalterna propozitiei 4.",
+    "8 puncte",
+    "B.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+    "corecte ale fiecareia dintre propozitile 1 si 2, atat in limbaj formal, cat si in limbaj natural.",
+    "8 puncte",
+    "C. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria conversei supraalternei",
+    "6 puncte",
+    "propozitiei 4, respectiv, conversa subalternei propozitiei 3.",
+    "D. Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacaniciunfluturemonarhnuesteadaptatmediuluiacvatic,atuncitotifluturimonarhsunt",
+    "neadaptatimediuluiacvatic.",
+    "Y:Sepoatespunecaunelelegendeistoricenu sunt marturi atestatedocumentar,dacanebazam",
+    "pefaptulcaunelemarturiatestatedocumentarnusuntlegendeistorice.",
+    "Pornind dela aceasta situatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.?",
+    "2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30 de puncte)",
+    "A.Se dau urmatoarele douamoduri silogistice:aee-2,oao-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice date",
+    "si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua scheme de",
+    "inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date,precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia,Unelepoezii contemporanenusuntcititedecatreliceeni\"",
+    "6 puncte",
+    "C. Se da urmatorul silogism:Nicio felina nu este erbivora,deci unele mamifere terestre nu sunt",
+    "erbivore,deoareceunelemamifereterestresuntfeline.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1. Termenul mediu este distribuit doar in premisa minora.",
+    "2. Predicatul logic al concluziei este reprezentat de termenul ,felina\"",
+    "3. Concluzia silogismului este o propozitie particulara negativa.",
+    "4. Predicatul logic al concluziei este distribuit in premisa si in concluzie.",
+    "4 puncte",
+    "D.Se da urmatoarea definitie:",
+    "Clorulesteunelementchimic.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,clor\"",
+    "4 puncte",
+    "Probascrisalalogica,argumentaresi comunicare",
+    "Varianta 5",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nB.Sedau termeni M,N,O,Psi Q astfel incat termenul Mesteinraport decontradictiecutermenul\nN;termenul OestesupraordonattermenilorM,N,Psi Q;termenulPesteinraportdeincrucisare\ncu termeni M si N, dar este supraordonat lui Q; termenul Q este in raport de incrucisare cu termeni\nM si N, find o specie a lui P.\n1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre\ncei cinci termeni.\n2 puncte\n2. Stabiliti, pe baza raporturilor existente intre termenii M, N, O, P si Q, care dintre urmatoarele\npropoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar propozitile\nfalse cu litera F):\na) Toti P sunt M.\nc)Niciun M nu este Q.\ne)Niciun Onu este Q.9\ng) Toti M sunt Q.\nd) Toti M sunt N.\nf) Niciun P nu este O.  h) Uni O sunt M.\nb) Unii Q nu sunt O.\n8 puncte\n(30 de puncte)\nSUBIECTULaIII-lea\nSe dau urmatoarele propoziti:\n1.Niciuncantecpopularnuestelipsitdevaloarestilistica.\n2.Unele dimineti de vara sunt racoroase.\n3.\nTotipictoriromanicontemporanisuntrecunoscutiindiasporaromana.\n4.Unelesocietaticonservatoarenusuntstatemoderne.\nA. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara\npropozitiei 2, subalterna propozitiei 3 si supraalterna propozitiei 4.\n8 puncte\nB.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa\ncorecte ale fiecareia dintre propozitile 1 si 2, atat in limbaj formal, cat si in limbaj natural.\n8 puncte\nC. Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria conversei supraalternei\n6 puncte\npropozitiei 4, respectiv, conversa subalternei propozitiei 3.\nD. Doi elevi, X si Y, opineaza astfel:\nX:Dacaniciunfluturemonarhnuesteadaptatmediuluiacvatic,atuncitotifluturimonarhsunt\nneadaptatimediuluiacvatic.\nY:Sepoatespunecaunelelegendeistoricenu sunt marturi atestatedocumentar,dacanebazam\npefaptulcaunelemarturiatestatedocumentarnusuntlegendeistorice.\nPornind dela aceasta situatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.?\n2 puncte\nSUBIECTULalIII-lea\n(30 de puncte)\nA.Se dau urmatoarele douamoduri silogistice:aee-2,oao-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice date\nsi construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua scheme de\ninferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date,precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia,Unelepoezii contemporanenusuntcititedecatreliceeni\"\n6 puncte\nC. Se da urmatorul silogism:Nicio felina nu este erbivora,deci unele mamifere terestre nu sunt\nerbivore,deoareceunelemamifereterestresuntfeline.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1. Termenul mediu este distribuit doar in premisa minora.\n2. Predicatul logic al concluziei este reprezentat de termenul ,felina\"\n3. Concluzia silogismului este o propozitie particulara negativa.\n4. Predicatul logic al concluziei este distribuit in premisa si in concluzie.\n4 puncte\nD.Se da urmatoarea definitie:\nClorulesteunelementchimic.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,clor\"\n4 puncte\nProbascrisalalogica,argumentaresi comunicare\nVarianta 5\nPagina 2 din 2"
+}

@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "id": "diagram-contract-bac-logica-2017-v4",
+    "exam": "BAC Logică 2017 - Varianta 4"
+  },
+  "diagrams": [
+    {
+      "diagramId": "euler_2017_v4_S1B",
+      "type": "Euler",
+      "required_for": "S1B",
+      "student_can": "draw_or_upload",
+      "teacher_expected": "A subordonat lui C; D opus lui A și încrucișat cu C; B subordonat lui D și încrucișat cu C."
+    },
+    {
+      "diagramId": "venn_2017_v4_aee2",
+      "type": "Venn",
+      "required_for": "S3A",
+      "mode": "aee-2",
+      "validity": "valid"
+    },
+    {
+      "diagramId": "venn_2017_v4_aii1",
+      "type": "Venn",
+      "required_for": "S3A",
+      "mode": "aii-1",
+      "validity": "valid"
+    }
+  ],
+  "rendering_rules": [
+    "Diagrama trebuie să fie editabilă sau înlocuibilă prin upload.",
+    "În raportul profesorului, diagramId trebuie păstrat pentru randare ulterioară.",
+    "Nu afișa elevului soluția grafică înainte de finalizare."
+  ]
+}

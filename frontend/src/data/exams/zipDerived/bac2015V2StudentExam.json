@@ -1,0 +1,253 @@
+{
+  "id": "bac_logica_2015_v2",
+  "title": "BAC Logică 2015 - Varianta 2",
+  "year": 2015,
+  "variant": "Varianta 2",
+  "mode": "exam",
+  "student_visible": true,
+  "teacher_solution_visibility": "teacher_only",
+  "source_files": {
+    "subject_pdf": "Examenul de bacalaureat național 2015_V2.pdf",
+    "barem_pdf": "Examenul de bacalaureat național 2015_V2_BAREM.pdf"
+  },
+  "scoring": {
+    "total": 100,
+    "oficiu": 10,
+    "exam_points": 90
+  },
+  "notes": [
+    "Examenul elevului nu conține răspunsuri sau explicații de barem.",
+    "Răspunsurile profesorului sunt separate în teacher_solution_BACKEND.json.",
+    "Itemii cu desen/diagramă au diagramId pentru randare sau upload ulterior."
+  ],
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "I.1",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Extensiunea termenului număr natural înseamnă:",
+          "options": {
+            "a": "sintagma număr natural",
+            "b": "un număr întreg mai mare decât zero",
+            "c": "totalitatea numerelor naturale",
+            "d": "cifre, adunare, scădere etc."
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.2",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenul religiozitate este:",
+          "options": {
+            "a": "concret, absolut, nevid, vag",
+            "b": "negativ, compus, general, vid",
+            "c": "abstract, simplu, nevid, general",
+            "d": "relativ, pozitiv, distributiv, vid"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.3",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenii bacalaureat și examen se află în raport de:",
+          "options": {
+            "a": "ordonare",
+            "b": "identitate",
+            "c": "încrucișare",
+            "d": "contrarietate"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.4",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Predicatul logic al propoziției „Unele animale vânate în mod necontrolat sunt pe cale de dispariție” este:",
+          "options": {
+            "a": "pe cale de dispariție",
+            "b": "pe cale",
+            "c": "sunt pe cale",
+            "d": "sunt"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.5",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Reprezintă o propoziție particulară afirmativă:",
+          "options": {
+            "a": "Aproape toți elevii nu și-au făcut tema.",
+            "b": "Doar unii elevi și-au făcut tema.",
+            "c": "Prea mulți elevi nu și-au făcut tema.",
+            "d": "Niciun elev nu și-a făcut tema."
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.6",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Raționamentul deductiv în care, din premise adevărate se obțin numai concluzii adevărate, este:",
+          "options": {
+            "a": "complet",
+            "b": "nemijlocit",
+            "c": "valid",
+            "d": "tare"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.7",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Nu se află printre elementele demonstrației:",
+          "options": {
+            "a": "fundamentul demonstrației",
+            "b": "regulile demonstrației",
+            "c": "teza de demonstrat",
+            "d": "procedeul de demonstrare"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.8",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Raționamentul „Dacă fiecare elev din clasa a IX-a B este bun la chimie, atunci toți elevii din clasa a IX-a B sunt buni la chimie” este un exemplu de:",
+          "options": {
+            "a": "obversiune",
+            "b": "conversiune",
+            "c": "inducție incompletă",
+            "d": "inducție completă"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.9",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Inducția incompletă este:",
+          "options": {
+            "a": "o particularizare, pornind de la toate obiectele unei clase",
+            "b": "o particularizare, pornind de la o parte din obiectele unei clase",
+            "c": "o generalizare, pornind de la toate obiectele unei clase",
+            "d": "o generalizare, pornind de la o parte din obiectele unei clase"
+          },
+          "answer_visible_to_student": false
+        },
+        {
+          "id": "I.10",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Pe aceeași treaptă a unei clasificări corecte, între clasele obținute trebuie să existe numai raporturi de:",
+          "options": {
+            "a": "contrarietate",
+            "b": "opoziție",
+            "c": "concordanță",
+            "d": "ordonare"
+          },
+          "answer_visible_to_student": false
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "II.intro",
+          "type": "statement_list",
+          "points": 0,
+          "prompt": "Se dau următoarele propoziții:",
+          "statements": [
+            "1. Unele forme de guvernământ sunt monarhii.",
+            "2. Toate costumele scumpe sunt haine elegante.",
+            "3. Unii profesori nu sunt vorbitori de limba franceză.",
+            "4. Nicio prăjitură cu ciocolată nu este aliment dietetic."
+          ]
+        },
+        {
+          "id": "II.A",
+          "type": "text_input",
+          "points": 2,
+          "prompt": "Precizați formula propoziției 4.",
+          "placeholder": "Exemplu de structură: SaP / SeP / SiP / SoP, în funcție de tipul propoziției."
+        },
+        {
+          "id": "II.B",
+          "type": "text_area",
+          "points": 6,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subcontrara propoziției 3 și supraalterna propoziției 1.",
+          "placeholder": "Scrie separat: subcontrara propoziției 3 - formal + natural; supraalterna propoziției 1 - formal + natural."
+        },
+        {
+          "id": "II.C",
+          "type": "text_area",
+          "points": 10,
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 2 și 4, atât în limbaj formal, cât și în limbaj natural.",
+          "placeholder": "Pentru fiecare propoziție: conversa = ...; obversa = ...; apoi formularea în limbaj natural."
+        },
+        {
+          "id": "II.D",
+          "type": "diagram_input",
+          "points": 4,
+          "prompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+          "diagramId": "euler_II_D_2015_v2",
+          "student_input_modes": [
+            "draw_canvas",
+            "upload_image"
+          ],
+          "placeholder": "Desenează relația dintre „profesori” și „vorbitori de limba franceză” pentru propoziția de tip O."
+        },
+        {
+          "id": "II.E",
+          "type": "text_area",
+          "points": 8,
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă unii oameni nu sunt profesori, atunci unii profesori nu sunt oameni. Y: Dacă nicio faptă morală nu este acțiune interesată, atunci nicio acțiune interesată nu este faptă morală. Pornind de la această situație: a) formalizați demersul logic specific celor două raționamente; b) explicați corectitudinea raționamentelor formalizate.",
+          "placeholder": "Pentru fiecare elev: forma inițială -> forma obținută; apoi scrie dacă raționamentul este valid/nevalid și de ce."
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III.A",
+          "type": "mixed_diagram_text",
+          "points": 12,
+          "prompt": "Fie următoarele două moduri silogistice: aaa-1, eao-3. Scrieți schema de inferență corespunzătoare fiecăruia dintre cele două moduri silogistice date și construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență. Verificați explicit, prin metoda diagramelor Venn, validitatea oricăruia dintre cele două moduri silogistice date, precizând totodată decizia la care ați ajuns.",
+          "diagramIds": [
+            "venn_III_A_aaa1_2015_v2",
+            "venn_III_A_eao3_2015_v2"
+          ],
+          "placeholder": "Scrie schema cu M, P, S pe trei rânduri. La Venn marchează zonele și apoi notează decizia: valid/nevalid."
+        },
+        {
+          "id": "III.B",
+          "type": "text_area",
+          "points": 8,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unele acte umane sunt imorale”.",
+          "placeholder": "Exemplu de structură: premisa majoră + premisa minoră + concluzie; apoi formula silogistică."
+        },
+        {
+          "id": "III.C",
+          "type": "text_area",
+          "points": 10,
+          "prompt": "Fie următoarea definiție: „Medicul este persoana care practică medicina.” a) Precizați o regulă de corectitudine pe care o încalcă definiția dată. b) Menționați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți, pentru fiecare dintre acestea, câte o definiție care să le încalce.",
+          "placeholder": "Scrie: regula încălcată de definiția dată; apoi două reguli diferite și câte un exemplu de definiție greșită pentru fiecare."
+        }
+      ]
+    }
+  ]
+}

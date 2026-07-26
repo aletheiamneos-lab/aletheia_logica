@@ -1,0 +1,132 @@
+{
+  "solutionId": "bac_logica_2020_v2_teacher_solution",
+  "examId": "bac_logica_2020_v2",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2020 Varianta 2",
+  "answers": {
+    "I_A": {
+      "1": "b",
+      "2": "a",
+      "3": "d",
+      "4": "c",
+      "5": "b",
+      "6": "d",
+      "7": "a",
+      "8": "b",
+      "9": "c",
+      "10": "b"
+    },
+    "I_B": {
+      "a": "A",
+      "b": "A",
+      "c": "F",
+      "d": "A",
+      "e": "F",
+      "f": "A",
+      "g": "F",
+      "h": "F"
+    },
+    "II_A": {
+      "1": {
+        "formal": "SoP",
+        "natural": "Unii arbori nu sunt conifere."
+      },
+      "2": {
+        "formal": "SaP",
+        "natural": "Toate axiomele sunt adevăruri demonstrabile."
+      },
+      "3": {
+        "formal": "SeP",
+        "natural": "Niciun șarpe nu este veninos."
+      },
+      "4": {
+        "formal": "SiP",
+        "natural": "Unele meduze sunt animale nevertebrate."
+      }
+    },
+    "II_B": {
+      "prop2_converse": {
+        "formal": "PeS",
+        "natural": "Niciun adevăr demonstrabil nu este axiomă."
+      },
+      "prop2_obverse": {
+        "formal": "Sa~P",
+        "natural": "Toate axiomele sunt non-adevăruri demonstrabile."
+      },
+      "prop4_converse": {
+        "formal": "PiS",
+        "natural": "Unele animale nevertebrate sunt meduze."
+      },
+      "prop4_obverse": {
+        "formal": "Se~P",
+        "natural": "Nicio meduză nu este animal non-nevertebrat."
+      }
+    },
+    "II_C": {
+      "1": {
+        "formal": "~PiS",
+        "natural": "Unele non-conifere sunt arbori."
+      },
+      "2": {
+        "formal": "PiS",
+        "natural": "Unii veninoși sunt șerpi."
+      }
+    },
+    "II_D": {
+      "X": {
+        "formal": "SiP -> PiS",
+        "verdict": "corect; conversiune validă"
+      },
+      "Y": {
+        "formal": "SoP -> PoS",
+        "verdict": "incorect; conversiune nevalidă; se încalcă legea distribuirii termenilor, termenul S apare distribuit în concluzie, dar nu este distribuit în premisă"
+      }
+    },
+    "III_A": {
+      "eio-2": {
+        "schema": [
+          "PeM",
+          "SiM",
+          "SoP"
+        ],
+        "validity": "valid"
+      },
+      "aee-4": {
+        "schema": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "validity": "invalid"
+      }
+    },
+    "III_B": {
+      "formal": [
+        "MaP",
+        "SiM",
+        "SiP"
+      ],
+      "natural": [
+        "Toate pisicile sunt carnivore.",
+        "Unele mamifere sunt pisici.",
+        "Unele mamifere sunt carnivore."
+      ]
+    },
+    "III_C": {
+      "1": "A",
+      "2": "F",
+      "3": "F",
+      "4": "A"
+    },
+    "III_D": {
+      "rule1": "Definiția este prea largă / nu respectă regula adecvării, deoarece nu indică diferența specifică a inducției incomplete.",
+      "rule2": "Regula evitării circularității.",
+      "badDefinition": "Inducția incompletă este inducția care nu este completă."
+    }
+  },
+  "scoring": {
+    "totalWithoutOffice": 90,
+    "officePoints": 10,
+    "finalGradeRule": "Nota finală se calculează prin împărțirea la 10 a punctajului total acordat pentru lucrare."
+  }
+}

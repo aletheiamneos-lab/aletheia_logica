@@ -1,0 +1,400 @@
+{
+  "schemaVersion": "BAC_LOGICA_EXAM_V2",
+  "examId": "bac_logica_2020_model",
+  "title": "BAC Logică 2020 - Model",
+  "mode": "student_exam",
+  "visibility": "student",
+  "sourceFiles": {
+    "subject": "Examenul de bacalaureat național 2020_Model.pdf",
+    "barem": "Examenul de bacalaureat național 2020_Model_BAREM.pdf"
+  },
+  "rules": {
+    "showSolutionsToStudent": false,
+    "teacherSolutionOnly": true,
+    "finalizeButton": true,
+    "generateStudentPdfAfterFinalize": true,
+    "allowPreviewBeforeEmail": true,
+    "allowSendByEmail": true,
+    "includeInAdminReport": true
+  },
+  "studentResponseStorage": {
+    "saveFields": [
+      "examId",
+      "studentId",
+      "itemId",
+      "fieldId",
+      "inputType",
+      "value",
+      "diagramData",
+      "uploadedFileUrl",
+      "timestamp",
+      "completionStatus"
+    ],
+    "diagramSaveFormat": [
+      "strokes_json",
+      "png_export"
+    ]
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "officialPrompt": "Scrieți pe foaia de examen litera corespunzătoare răspunsului corect, pentru fiecare dintre enunțurile de mai jos. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "points": 2,
+              "question": "Într-o demonstrație logic corectă, teza de demonstrat trebuie:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "să fie cel puțin o propoziție probabilă",
+                "b": "să conțină termeni cu semnificație multiplă",
+                "c": "să fie o propoziție infirmată anterior",
+                "d": "să fie înlocuită pe parcursul demonstrației cu altă teză"
+              }
+            },
+            {
+              "id": "I_A_2",
+              "points": 2,
+              "question": "Raționamentul „Dacă unele produse de uz casnic sunt poluante, atunci unele produse poluante sunt de uz casnic” este un exemplu de argument:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "inductiv complet",
+                "b": "silogistic",
+                "c": "deductiv imediat",
+                "d": "deductiv mediat"
+              }
+            },
+            {
+              "id": "I_A_3",
+              "points": 2,
+              "question": "Termenii suliță și sabie, ca specii ale termenului armă, se află în raport de:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "identitate",
+                "b": "contrarietate",
+                "c": "ordonare",
+                "d": "contradicție"
+              }
+            },
+            {
+              "id": "I_A_4",
+              "points": 2,
+              "question": "Subiectul logic al propoziției „Unele strategii de rezolvare a problemelor sunt procedee euristice” este:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "unele strategii",
+                "b": "strategii de rezolvare",
+                "c": "rezolvarea a problemelor",
+                "d": "strategii de rezolvare a problemelor"
+              }
+            },
+            {
+              "id": "I_A_5",
+              "points": 2,
+              "question": "Una dintre regulile de corectitudine ale operației de clasificare este aceea conform căreia, pe aceeași treaptă a clasificării, între clasele obținute trebuie să existe numai raporturi logice de:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "identitate",
+                "b": "opoziție",
+                "c": "ordonare",
+                "d": "încrucișare"
+              }
+            },
+            {
+              "id": "I_A_6",
+              "points": 2,
+              "question": "Din punct de vedere intensional, termenul sportiv de performanță este un termen:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "precis",
+                "b": "simplu",
+                "c": "concret",
+                "d": "abstract"
+              }
+            },
+            {
+              "id": "I_A_7",
+              "points": 2,
+              "question": "Un raționament inductiv incomplet nu se caracterizează prin:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "caracterul amplificator al concluziei",
+                "b": "concluzie probabilă",
+                "c": "concluzie certă",
+                "d": "concluzie mai generală decât premisele"
+              }
+            },
+            {
+              "id": "I_A_8",
+              "points": 2,
+              "question": "Un raționament inductiv complet presupune:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "obținerea unei concluzii cu un caracter probabil",
+                "b": "o clasă cu un număr infinit de elemente",
+                "c": "o generalizare în cadrul unei clase cu un număr finit de elemente",
+                "d": "o particularizare"
+              }
+            },
+            {
+              "id": "I_A_9",
+              "points": 2,
+              "question": "Dacă termenului familie tradițională i se elimină proprietatea tradițională atunci:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "extensiunea scade, iar intensiunea crește",
+                "b": "intensiunea nu se modifică",
+                "c": "extensiunea rămâne constantă",
+                "d": "extensiunea crește, iar intensiunea scade"
+              }
+            },
+            {
+              "id": "I_A_10",
+              "points": 2,
+              "question": "Propoziția „Toate firmele de exercițiu sunt ateliere de gândire creativă” este:",
+              "inputType": "single_choice",
+              "options": {
+                "a": "universală afirmativă",
+                "b": "universală negativă",
+                "c": "particulară afirmativă",
+                "d": "particulară negativă"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni și diagramă Euler",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C, D și E, astfel încât termenul A se află în raport de încrucișare cu termenul B și în opoziție cu termenul D. Termenul B este supraordonat termenului D. Termenul C este specie atât pentru A cât și pentru B, iar termenul E se află în raport de opoziție cu termenii C și D, dar în raport de încrucișare cu termenii A și B.",
+          "items": [
+            {
+              "id": "I_B_1",
+              "points": 2,
+              "question": "Reprezentați, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei cinci termeni.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_I_B_euler_2020_model",
+                "diagramType": "euler",
+                "inputConfig": {
+                  "label": "Diagrama Euler",
+                  "helperText": "Desenează raporturile dintre termenii A, B, C, D și E.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "A",
+                      "B",
+                      "C",
+                      "D",
+                      "E"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            },
+            {
+              "id": "I_B_2",
+              "points": 8,
+              "question": "Stabiliți, pe baza raporturilor existente între termenii A, B, C, D, E, care propoziții sunt adevărate și care sunt false.",
+              "inputType": "true_false_set",
+              "statements": {
+                "a": "Unii C nu sunt A.",
+                "b": "Toți B sunt D.",
+                "c": "Niciun C nu este D.",
+                "d": "Unii A sunt B.",
+                "e": "Toți D sunt A.",
+                "f": "Unii A sunt C.",
+                "g": "Niciun E nu este A.",
+                "h": "Toți B sunt E."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Se dau următoarele propoziții:",
+        "items": [
+          "1. Toate realizările umane sunt acțiuni bazate pe eforturi consecvente.",
+          "2. Unele indicatoare rutiere sunt importante în timpul traficului nocturn.",
+          "3. Nicio idee radicală nu este acceptată în absența argumentelor.",
+          "4. Unele articole vestimentare nu sunt comode."
+        ]
+      },
+      "items": [
+        {
+          "id": "II_A",
+          "points": 8,
+          "title": "Operații pe propoziții categorice",
+          "question": "Construiți, atât în limbaj formal cât și în limbaj natural, subalterna propoziției 1, contradictoria propoziției 2, contrara propoziției 3 și subcontrara propoziției 4.",
+          "answerInput": {
+            "inputType": "structured_text",
+            "inputConfig": {
+              "placeholder": "Completează forma logică și propoziția în limbaj natural pentru fiecare cerință."
+            }
+          }
+        },
+        {
+          "id": "II_B",
+          "points": 8,
+          "title": "Conversiune și obversiune",
+          "question": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "answerInput": {
+            "inputType": "structured_text",
+            "inputConfig": {
+              "placeholder": "Exemplu de format: SaP -> SiP / propoziția în limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "II_C",
+          "points": 6,
+          "title": "Operații compuse",
+          "question": "Construiți, atât în limbaj formal cât și în limbaj natural, conversa obversei supraalternii propoziției 4, respectiv conversa subalternei propoziției 1.",
+          "answerInput": {
+            "inputType": "structured_text",
+            "inputConfig": {
+              "placeholder": "Scrie lanțul formal și apoi propoziția rezultată în limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "II_D",
+          "points": 8,
+          "title": "Formalizarea opiniilor și verificarea corectitudinii",
+          "contextBlock": {
+            "items": [
+              "X: Dacă toate persoanele oneste sunt respectate în societate, atunci toate persoanele respectate în societate sunt oneste.",
+              "Y: Dacă unii tineri sunt responsabili, atunci unii tineri nu sunt iresponsabili."
+            ]
+          },
+          "answerInput": {
+            "inputType": "long_text",
+            "inputConfig": {
+              "placeholder": "Scrie forma logică, stabilește corectitudinea și justifică pe scurt."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III_A",
+          "points": 14,
+          "title": "Moduri silogistice: aii-1 și aai-4",
+          "question": "Scrieți schema de inferență corespunzătoare fiecăruia dintre cele două moduri silogistice date și construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență. Verificați explicit, prin metoda diagramelor Venn, validitatea fiecăruia dintre cele două moduri silogistice date, precizând totodată decizia la care ați ajuns.",
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_III_A_venn_2020_model",
+            "diagramType": "venn_three_terms",
+            "inputConfig": {
+              "helperText": "Completează schemele și desenează Venn pentru fiecare mod."
+            }
+          }
+        },
+        {
+          "id": "III_B",
+          "points": 6,
+          "title": "Construirea unui silogism valid",
+          "question": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid prin care să justificați propoziția „Unele dezbateri pe teme sociale nu sunt generatoare de conflict”.",
+          "answerInput": {
+            "inputType": "syllogism_schema",
+            "inputConfig": {
+              "fields": [
+                {
+                  "fieldId": "majorPremise",
+                  "label": "Premisa majoră",
+                  "placeholder": "Exemplu de format: PeM"
+                },
+                {
+                  "fieldId": "minorPremise",
+                  "label": "Premisa minoră",
+                  "placeholder": "Exemplu de format: SiM"
+                },
+                {
+                  "fieldId": "conclusion",
+                  "label": "Concluzia",
+                  "placeholder": "Exemplu de format: SoP"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "III_C",
+          "points": 4,
+          "title": "Analiza unui silogism dat",
+          "contextBlock": {
+            "items": [
+              "Dacă unele evenimente sportive sunt partide de șah, rezultă că unele partide de șah sunt urmărite cu interes, deoarece toate evenimentele sportive sunt urmărite cu interes."
+            ]
+          },
+          "inputType": "true_false_set",
+          "statements": {
+            "1": "Termenul mediu este nedistribuit în ambele premise.",
+            "2": "Subiectul logic al concluziei este reprezentat de termenul „partide de șah”.",
+            "3": "Concluzia silogismului este o propoziție particulară afirmativă.",
+            "4": "Predicatul logic al concluziei este distribuit în premisă, dar este nedistribuit în concluzie."
+          }
+        },
+        {
+          "id": "III_D",
+          "points": 6,
+          "title": "Definiție",
+          "contextBlock": {
+            "items": [
+              "Acizii sunt compuși chimici care nu sunt nici baze, nici săruri."
+            ]
+          },
+          "answerInput": {
+            "inputType": "long_text",
+            "inputConfig": {
+              "placeholder": "Menționează regula încălcată, o altă regulă diferită și construiește o definiție care să o încalce pentru termenul „acizi”."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

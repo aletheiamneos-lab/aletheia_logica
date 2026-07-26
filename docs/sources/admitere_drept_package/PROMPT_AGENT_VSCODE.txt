@@ -1,0 +1,79 @@
+Am nevoie să creezi de la zero secțiunea „Admitere – Logică” în aplicație, folosind EXCLUSIV fișierul tests_logica_admitere_drept_v2.json ca sursă pentru întrebări și răspunsuri.
+
+OBIECTIV
+Construiește o secțiune completă de testare pentru admiterea la Drept, clară, simplă și ușor de folosit de elevi.
+
+FIȘIER OBLIGATORIU
+Folosește fișierul:
+- tests_logica_admitere_drept_v2.json
+
+NU modifica manual întrebările, variantele sau răspunsurile corecte din JSON.
+
+CE TREBUIE SĂ FACĂ SECȚIUNEA
+1. Să existe o pagină principală „Admitere – Logică”.
+2. În această pagină să se vadă toate seturile de teste din JSON.
+3. Fiecare set să poată fi deschis separat.
+4. Când elevul intră într-un set:
+   - vede toate întrebările din acel set;
+   - fiecare întrebare are 4 variante de răspuns: a, b, c, d;
+   - elevul poate selecta răspunsul sau răspunsurile necesare.
+5. În timpul rezolvării NU se afișează răspunsul corect.
+6. Doar după apăsarea butonului „Finalizează testul”:
+   - se calculează scorul total;
+   - se afișează procentajul;
+   - se arată clar pentru fiecare întrebare dacă este corectă sau greșită;
+   - se afișează răspunsul corect;
+   - răspunsurile corecte să fie marcate cu verde;
+   - răspunsurile greșite să fie marcate cu roșu.
+7. La final trebuie să existe un rezumat de tip:
+   - X din Y corecte
+   - procentaj
+
+REGULI DE DATE
+1. JSON-ul are structura principală:
+   - tests[]
+   - fiecare test are id, title, questions[]
+2. Fiecare întrebare are:
+   - id
+   - number
+   - text
+   - options.a
+   - options.b
+   - options.c
+   - options.d
+   - correctAnswer
+   - answerType
+3. Dacă answerType = "single", elevul poate bifa o singură variantă.
+4. Dacă answerType = "multiple", elevul poate bifa mai multe variante.
+5. Corectarea trebuie să țină cont exact de answerType.
+
+REGULI DE INTERFAȚĂ
+1. Interfață curată, aerisită, clară.
+2. Textele să fie mari și ușor de citit.
+3. Întrebările să fie separate vizual în carduri sau blocuri clare.
+4. Butonul „Finalizează testul” să fie foarte vizibil.
+5. Să existe și un buton de întoarcere la lista testelor.
+6. Nu înghesui elementele pe pagină.
+7. Dacă este posibil, fiecare test să se deschidă pe o pagină dedicată, nu toate într-un singur ecran aglomerat.
+
+REGULI DE IMPLEMENTARE
+1. Creează codul astfel încât să pot adăuga ușor alte seturi în viitor doar prin actualizarea JSON-ului.
+2. Nu hardcoda întrebările în componente.
+3. Citește totul din JSON.
+4. Separă partea de date de partea de UI.
+5. Dacă există o întrebare cu answerType = "multiple", trateaz-o corect.
+6. Dacă un elev nu răspunde la o întrebare, aceasta să fie considerată greșită la final.
+
+REZULTATUL DORIT
+Vreau cod complet, gata de integrat, pentru:
+- pagina cu lista testelor;
+- pagina unui test;
+- pagina sau secțiunea de rezultat final;
+- logica de calcul a scorului.
+
+IMPORTANT
+- Nu schimba JSON-ul.
+- Nu rescrie întrebările.
+- Nu simplifica răspunsurile.
+- Folosește exact datele existente.
+- Scopul este ca secțiunea de admitere să funcționeze imediat după integrarea JSON-ului.

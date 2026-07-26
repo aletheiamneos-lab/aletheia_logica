@@ -1,0 +1,320 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatieisi Cercetarii",
+      "x": 1460.658447265625,
+      "y": 190.9959716796875,
+      "score": 0.9760232495539116,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldePoliticisiEvaluareinEducatie",
+      "x": 1241.4276123046875,
+      "y": 262.6194763183594,
+      "score": 0.9735280646218194,
+      "page_number": 3
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 430.53765869140625,
+      "y": 374.0337829589844,
+      "score": 0.9857409088699906,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 536.1910400390625,
+      "y": 456.2681579589844,
+      "score": 0.9623815226105025,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 450.96270751953125,
+      "score": 0.9989691749215126,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+      "x": 536.1910400390625,
+      "y": 530.5443725585938,
+      "score": 0.9773516184753842,
+      "page_number": 3
+    },
+    {
+      "text": "c.  explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.  2 puncte",
+      "x": 536.1910400390625,
+      "y": 610.1260375976562,
+      "score": 0.9662747341005699,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.5042724609375,
+      "y": 838.2601318359375,
+      "score": 0.8929174426529143,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2889.620849609375,
+      "y": 835.607421875,
+      "score": 0.9733648640768868,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele doua moduri silogistice:eae-3,iai-4.",
+      "x": 364.5042724609375,
+      "y": 920.4945068359375,
+      "score": 0.9758632481098175,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.6683349609375,
+      "y": 1002.7288818359375,
+      "score": 0.9707210770119792,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 454.3096618652344,
+      "y": 1079.6578369140625,
+      "score": 0.9921845638233683,
+      "page_number": 3
+    },
+    {
+      "text": "scheme de inferenta.",
+      "x": 454.3096618652344,
+      "y": 1159.239501953125,
+      "score": 0.953238794207573,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3040.1767578125,
+      "y": 1164.544921875,
+      "score": 0.9898676648736,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.0269775390625,
+      "y": 1236.16845703125,
+      "score": 0.9892626121790722,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 451.6683349609375,
+      "y": 1313.0972900390625,
+      "score": 0.9719145733212667,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.894287109375,
+      "y": 1318.40283203125,
+      "score": 0.9860024079680443,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.1455993652344,
+      "y": 1395.3316650390625,
+      "score": 0.9764792266881691,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia\"Uni italieni sunt pictori talentati\".",
+      "x": 451.6683349609375,
+      "y": 1472.2606201171875,
+      "score": 0.9274140056222677,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3050.7421875,
+      "y": 1474.913330078125,
+      "score": 0.9938464239239693,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fie urmatorul silogism: fntrucat niciun elev premiant nu este lenes, iar toti oamenii nemultumiti",
+      "x": 364.5042724609375,
+      "y": 1546.536865234375,
+      "score": 0.9655356632940697,
+      "page_number": 3
+    },
+    {
+      "text": "suntlenesi,rezultacaniciunelevpremiantnuesteomnemultumit.",
+      "x": 456.95098876953125,
+      "y": 1634.07666015625,
+      "score": 0.9842025930421394,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 364.5042724609375,
+      "y": 1705.7001953125,
+      "score": 0.9755345246579388,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 361.8629150390625,
+      "y": 1782.629150390625,
+      "score": 0.9810536702473959,
+      "page_number": 3
+    },
+    {
+      "text": "1. Termenul mediu este distribuit in premisa minora.",
+      "x": 451.6683349609375,
+      "y": 1862.2108154296875,
+      "score": 0.9664593648452026,
+      "page_number": 3
+    },
+    {
+      "text": "2. Predicatul logic al concluziei este reprezentat de termenul,elev premiant\"",
+      "x": 449.0269775390625,
+      "y": 1941.7923583984375,
+      "score": 0.9778948054685221,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala afirmativa.",
+      "x": 449.0269775390625,
+      "y": 2021.3740234375,
+      "score": 0.9866980413595835,
+      "page_number": 3
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.",
+      "x": 446.3856506347656,
+      "y": 2095.650390625,
+      "score": 0.9806243458459544,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.100830078125,
+      "y": 2095.650390625,
+      "score": 0.9563172981142998,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 364.5042724609375,
+      "y": 2175.23193359375,
+      "score": 0.979794751714777,
+      "page_number": 3
+    },
+    {
+      "text": "Omulesteminuneauniversului.",
+      "x": 456.95098876953125,
+      "y": 2260.119140625,
+      "score": 0.9953920112715827,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 446.3856506347656,
+      "y": 2329.08984375,
+      "score": 0.969037387933996,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3053.383544921875,
+      "y": 2334.395263671875,
+      "score": 0.985090360045433,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 449.0269775390625,
+      "y": 2411.32421875,
+      "score": 0.9633076983690262,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa oincalce, avand ca definit termenul,om\"",
+      "x": 583.735107421875,
+      "y": 2496.211181640625,
+      "score": 0.9456796376672509,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 2490.90576171875,
+      "score": 0.9978130757808685,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica,argumentaresi comunicare",
+      "x": 364.5042724609375,
+      "y": 4875.70263671875,
+      "score": 0.9628580821321365,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta5",
+      "x": 3032.2529296875,
+      "y": 4878.35546875,
+      "score": 0.9980514711803861,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1658.758544921875,
+      "y": 5021.6025390625,
+      "score": 0.9239957971232278,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatieisi Cercetarii",
+    "CentrulNationaldePoliticisiEvaluareinEducatie",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+    "c.  explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.  2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30 de puncte)",
+    "A.Fie urmatoarele doua moduri silogistice:eae-3,iai-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme de inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia\"Uni italieni sunt pictori talentati\".",
+    "6 puncte",
+    "C.Fie urmatorul silogism: fntrucat niciun elev premiant nu este lenes, iar toti oamenii nemultumiti",
+    "suntlenesi,rezultacaniciunelevpremiantnuesteomnemultumit.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1. Termenul mediu este distribuit in premisa minora.",
+    "2. Predicatul logic al concluziei este reprezentat de termenul,elev premiant\"",
+    "3. Concluzia silogismului este o propozitie universala afirmativa.",
+    "4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.",
+    "4 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Omulesteminuneauniversului.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa oincalce, avand ca definit termenul,om\"",
+    "4 puncte",
+    "Proba scrisa la logica,argumentaresi comunicare",
+    "Varianta5",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatieisi Cercetarii\nCentrulNationaldePoliticisiEvaluareinEducatie\nPorninddelaaceastasituatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte\nc.  explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.  2 puncte\nSUBIECTULalIII-lea\n(30 de puncte)\nA.Fie urmatoarele doua moduri silogistice:eae-3,iai-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme de inferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia\"Uni italieni sunt pictori talentati\".\n6 puncte\nC.Fie urmatorul silogism: fntrucat niciun elev premiant nu este lenes, iar toti oamenii nemultumiti\nsuntlenesi,rezultacaniciunelevpremiantnuesteomnemultumit.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1. Termenul mediu este distribuit in premisa minora.\n2. Predicatul logic al concluziei este reprezentat de termenul,elev premiant\"\n3. Concluzia silogismului este o propozitie universala afirmativa.\n4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.\n4 puncte\nD.Fie urmatoarea definitie:\nOmulesteminuneauniversului.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa oincalce, avand ca definit termenul,om\"\n4 puncte\nProba scrisa la logica,argumentaresi comunicare\nVarianta5\nPagina 3 din 3"
+}

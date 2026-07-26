@@ -1,0 +1,375 @@
+{
+  "examMeta": {
+    "id": "bac_logica_2018_model",
+    "title": "BAC Logică 2018 - Model",
+    "year": 2018,
+    "variant": "Model",
+    "discipline": "Logică, argumentare și comunicare",
+    "studentVisible": true,
+    "teacherSolutionVisible": false,
+    "points": {
+      "official": 90,
+      "bonus": 10,
+      "total": 100
+    },
+    "sourceFiles": [
+      "original_subiect_BAC_LOGICA_2018_MODEL.pdf",
+      "original_barem_BAC_LOGICA_2018_MODEL.pdf"
+    ]
+  },
+  "renderingRules": {
+    "doNotShowCorrectAnswersToStudent": true,
+    "keepExistingRadioButtonsStyle": true,
+    "completionFieldsUsePlaceholdersOnly": true,
+    "diagramTasksUseCanvasOrUpload": true,
+    "finalizeButtonRequired": true,
+    "generateStudentPdfAfterSubmit": true,
+    "studentPdfCanBePreviewedAndEmailed": true,
+    "adminReportMustReceiveAttempt": true
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S1A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "type": "singleChoice",
+          "instructions": "Scrie litera corespunzătoare răspunsului corect. Este corectă o singură variantă.",
+          "items": [
+            {
+              "id": "S1A_1",
+              "points": 2,
+              "prompt": "Orice demonstrație se compune din:",
+              "options": {
+                "a": "criteriu, reguli, obiecte",
+                "b": "definire, clasificare, inferență",
+                "c": "teză, fundament, proces",
+                "d": "termeni, propoziții, reguli"
+              }
+            },
+            {
+              "id": "S1A_2",
+              "points": 2,
+              "prompt": "Raționamentul «Dacă toți oamenii sunt iubitori ai naturii și toți agricultorii sunt oameni, atunci unii agricultori sunt iubitori ai naturii» este un exemplu concret de raționament:",
+              "options": {
+                "a": "deductiv imediat",
+                "b": "inductiv tare",
+                "c": "deductiv mediat",
+                "d": "inductiv slab"
+              }
+            },
+            {
+              "id": "S1A_3",
+              "points": 2,
+              "prompt": "Raportul de contradicție se stabilește între termenii:",
+              "options": {
+                "a": "copil - elev",
+                "b": "zăpadă - omăt",
+                "c": "legal - ilegal",
+                "d": "nuvelă - roman"
+              }
+            },
+            {
+              "id": "S1A_4",
+              "points": 2,
+              "prompt": "Predicatul logic al propoziției «Toate examenele importante sunt experiențe de viață utile» este:",
+              "options": {
+                "a": "sunt",
+                "b": "sunt experiențe",
+                "c": "sunt experiențe de viață",
+                "d": "experiențe de viață utile"
+              }
+            },
+            {
+              "id": "S1A_5",
+              "points": 2,
+              "prompt": "Una din regulile de corectitudine ale operației de clasificare este aceea conform căreia:",
+              "options": {
+                "a": "criteriul clasificării trebuie să fie util într-o operație",
+                "b": "pe aceeași treaptă a clasificării, criteriul trebuie să fie unic",
+                "c": "criteriul clasificării trebuie să fie alcătuit numai din termeni singulari",
+                "d": "criteriul clasificării trebuie să fie alcătuit numai din termeni simpli"
+              }
+            },
+            {
+              "id": "S1A_6",
+              "points": 2,
+              "prompt": "Din punct de vedere extensional, termenul trandafir este:",
+              "options": {
+                "a": "vid, singular, colectiv, precis",
+                "b": "nevid, general, distributiv, precis",
+                "c": "singular, nevid, colectiv, vag",
+                "d": "general, vid, distributiv, vag"
+              }
+            },
+            {
+              "id": "S1A_7",
+              "points": 2,
+              "prompt": "Un exemplu de inducție incompletă este următorul raționament:",
+              "options": {
+                "a": "Dacă unii elevi de liceu sunt sportivi, atunci unii sportivi sunt elevi de liceu",
+                "b": "Dacă unii elevi de liceu sunt sportivi, atunci alți elevi de liceu nu sunt sportivi",
+                "c": "Dacă toți elevii de liceu sunt sportivi, atunci unii elevi de liceu sunt sportivi",
+                "d": "Dacă unii elevi de liceu sunt sportivi, atunci toți elevii de liceu sunt sportivi"
+              }
+            },
+            {
+              "id": "S1A_8",
+              "points": 2,
+              "prompt": "Un exemplu de inducție completă este următorul raționament:",
+              "options": {
+                "a": "Dacă toți filosofii sunt oameni cumpătați, atunci unii oameni cumpătați sunt filosofi",
+                "b": "Dacă unii filosofi sunt oameni cumpătați, atunci toți filosofii sunt oameni cumpătați",
+                "c": "Dacă fiecare filosof este om cumpătat, atunci toți filosofii sunt oameni cumpătați",
+                "d": "Dacă unii filosofi sunt oameni cumpătați, atunci alți filosofi nu sunt oameni cumpătați"
+              }
+            },
+            {
+              "id": "S1A_9",
+              "points": 2,
+              "prompt": "Dacă termenului pisică neagră i se elimină proprietatea neagră, atunci:",
+              "options": {
+                "a": "intensiunea scade, extensiunea crește",
+                "b": "intensiunea crește, extensiunea scade",
+                "c": "intensiunea crește, extensiunea crește",
+                "d": "intensiunea scade, extensiunea scade"
+              }
+            },
+            {
+              "id": "S1A_10",
+              "points": 2,
+              "prompt": "Propoziția «Unele zile de toamnă sunt călduroase» este:",
+              "options": {
+                "a": "universală negativă",
+                "b": "particulară negativă",
+                "c": "universală afirmativă",
+                "d": "particulară afirmativă"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1B",
+          "title": "B. Raporturi logice între termeni",
+          "points": 10,
+          "type": "diagramAndTruthValues",
+          "prompt": "Fie termenii A, B, C și D, astfel încât termenul A se află în raport de contradicție cu termenul B, termenul C este o specie a lui B, iar termenul A este gen pentru termenul D.",
+          "diagram": {
+            "diagramId": "DIA_S1B_EULER_2018_MODEL",
+            "type": "euler",
+            "studentInput": "canvas_or_upload",
+            "placeholder": "Desenează o diagramă Euler: A opus lui B; C inclus în B; D inclus în A."
+          },
+          "items": [
+            {
+              "id": "S1B_a",
+              "text": "Unii A sunt B.",
+              "input": "trueFalse"
+            },
+            {
+              "id": "S1B_b",
+              "text": "Toți D sunt C.",
+              "input": "trueFalse"
+            },
+            {
+              "id": "S1B_c",
+              "text": "Unii B sunt C.",
+              "input": "trueFalse"
+            },
+            {
+              "id": "S1B_d",
+              "text": "Niciun A nu este C.",
+              "input": "trueFalse"
+            },
+            {
+              "id": "S1B_e",
+              "text": "Unii B nu sunt C.",
+              "input": "trueFalse"
+            },
+            {
+              "id": "S1B_f",
+              "text": "Toți A sunt D.",
+              "input": "trueFalse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "propositions": [
+        {
+          "nr": 1,
+          "text": "Toate faptele bune sunt apreciate."
+        },
+        {
+          "nr": 2,
+          "text": "Unele teorii științifice nu sunt ușor de înțeles."
+        },
+        {
+          "nr": 3,
+          "text": "Niciun animal domestic nu este agresiv."
+        },
+        {
+          "nr": 4,
+          "text": "Unele instrumente de scris sunt fabricate manual."
+        }
+      ],
+      "parts": [
+        {
+          "id": "S2A",
+          "points": 2,
+          "type": "completion",
+          "prompt": "Precizați formulele logice corespunzătoare propozițiilor 1 și 2.",
+          "fields": [
+            {
+              "id": "S2A_1",
+              "placeholder": "Exemplu de completare: 1-SaP"
+            },
+            {
+              "id": "S2A_2",
+              "placeholder": "Exemplu de completare: 2-SoP"
+            }
+          ]
+        },
+        {
+          "id": "S2B",
+          "points": 8,
+          "type": "completion",
+          "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, subalterna propoziției 1, contradictoria propoziției 2, contrara propoziției 3 și subcontrara propoziției 4.",
+          "fields": [
+            {
+              "id": "S2B_1",
+              "placeholder": "Formal: SiP; Natural: Unele S sunt P."
+            },
+            {
+              "id": "S2B_2",
+              "placeholder": "Formal: SaP; Natural: Toate S sunt P."
+            },
+            {
+              "id": "S2B_3",
+              "placeholder": "Formal: SaP; Natural: Toate S sunt P."
+            },
+            {
+              "id": "S2B_4",
+              "placeholder": "Formal: SoP; Natural: Unele S nu sunt P."
+            }
+          ]
+        },
+        {
+          "id": "S2C",
+          "points": 8,
+          "type": "completion",
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "fields": [
+            {
+              "id": "S2C_p1_conv",
+              "placeholder": "Conversa prop. 1: PiS / Unele P sunt S."
+            },
+            {
+              "id": "S2C_p1_obv",
+              "placeholder": "Obversa prop. 1: Se~P / Niciun S nu este non-P."
+            },
+            {
+              "id": "S2C_p3_conv",
+              "placeholder": "Conversa prop. 3: PeS / Niciun P nu este S."
+            },
+            {
+              "id": "S2C_p3_obv",
+              "placeholder": "Obversa prop. 3: Sa~P / Toate S sunt non-P."
+            }
+          ]
+        },
+        {
+          "id": "S2D",
+          "points": 4,
+          "type": "completion",
+          "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, obversa conversei propoziției 1.",
+          "fields": [
+            {
+              "id": "S2D_1",
+              "placeholder": "Exemplu structură: întâi conversa, apoi obversa rezultatului. Formal: Po~S."
+            }
+          ]
+        },
+        {
+          "id": "S2E",
+          "points": 8,
+          "type": "completion",
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă niciun automobil nou nu este perfect, atunci toate automobilele noi sunt imperfecte. Y: Dacă toți intelectualii sunt oameni, atunci toți oamenii sunt intelectuali. Pornind de la această situație: scrieți opiniile în limbaj formal, precizați corectitudinea/incorectitudinea raționamentelor formalizate și explicați corectitudinea/incorectitudinea raționamentului elevului Y.",
+          "fields": [
+            {
+              "id": "S2E_X_formal",
+              "placeholder": "X: SeP -> Sa~P"
+            },
+            {
+              "id": "S2E_Y_formal",
+              "placeholder": "Y: SaP -> PaS"
+            },
+            {
+              "id": "S2E_validity",
+              "placeholder": "Exemplu: X valid/nevalid; Y valid/nevalid; justificare pe legea distribuirii termenilor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S3A",
+          "points": 14,
+          "type": "syllogismModes",
+          "prompt": "Fie următoarele două moduri silogistice: aai-3, eae-2. Scrieți schemele de inferență și verificați validitatea prin diagrame Venn.",
+          "modes": [
+            "aai-3",
+            "eae-2"
+          ],
+          "diagram": {
+            "diagramId": "DIA_S3A_VENN_2018_MODEL",
+            "type": "venn_syllogism",
+            "studentInput": "canvas_or_upload",
+            "placeholder": "Desenează sau încarcă diagrame Venn pentru cele două moduri."
+          }
+        },
+        {
+          "id": "S3B",
+          "points": 6,
+          "type": "completion",
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid, prin care să justificați propoziția «Unele propoziții afirmative sunt adevărate»."
+        },
+        {
+          "id": "S3C",
+          "points": 4,
+          "type": "completion",
+          "prompt": "Fie următorul silogism: «Niciun eschimos nu este apicultor, pentru că eschimoșii nu apreciază mierea iar toate persoanele care apreciază mierea sunt apicultori.» Precizați termenul minor și menționați, în limbaj natural, premisa majoră.",
+          "fields": [
+            {
+              "id": "S3C_minor",
+              "placeholder": "Termen minor: subiectul concluziei."
+            },
+            {
+              "id": "S3C_major_premise",
+              "placeholder": "Premisa majoră: propoziția care conține termenul major și termenul mediu."
+            }
+          ]
+        },
+        {
+          "id": "S3D",
+          "points": 6,
+          "type": "completion",
+          "prompt": "Fie definiția: «Logica este știința gândirii logice.» Menționați o regulă de corectitudine încălcată și construiți o altă definiție care să încalce o altă regulă, având ca definit termenul «logică»."
+        }
+      ]
+    }
+  ]
+}

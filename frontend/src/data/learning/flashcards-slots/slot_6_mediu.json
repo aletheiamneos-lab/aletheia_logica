@@ -1,0 +1,134 @@
+{
+  "slot": 6,
+  "nivel": "mediu",
+  "title": "Slot 6 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_6_mediu_card_1",
+      "front": "De ce inducția incompletă nu oferă certitudine?",
+      "back": "Pentru că nu verifică toate cazurile posibile."
+    },
+    {
+      "id": "slot_6_mediu_card_2",
+      "front": "Când este acceptabilă o generalizare?",
+      "back": "Când are cazuri suficiente, relevante și reprezentative."
+    },
+    {
+      "id": "slot_6_mediu_card_3",
+      "front": "De ce contează eșantionul?",
+      "back": "Pentru că un eșantion prost ales produce concluzii distorsionate."
+    },
+    {
+      "id": "slot_6_mediu_card_4",
+      "front": "Care este diferența dintre cauză necesară și suficientă?",
+      "back": "Cauza necesară este indispensabilă; cauza suficientă garantează efectul."
+    },
+    {
+      "id": "slot_6_mediu_card_5",
+      "front": "Ce este o condiție necesară?",
+      "back": "Condiția fără de care efectul nu poate apărea."
+    },
+    {
+      "id": "slot_6_mediu_card_6",
+      "front": "Ce este o condiție suficientă?",
+      "back": "Condiția care produce efectul dacă este prezentă."
+    },
+    {
+      "id": "slot_6_mediu_card_7",
+      "front": "Poate o cauză să fie necesară, dar nu suficientă?",
+      "back": "Da, poate fi indispensabilă fără să producă singură efectul."
+    },
+    {
+      "id": "slot_6_mediu_card_8",
+      "front": "Poate o cauză să fie suficientă, dar nu necesară?",
+      "back": "Da, poate produce efectul, deși efectul poate apărea și altfel."
+    },
+    {
+      "id": "slot_6_mediu_card_9",
+      "front": "De ce corelația nu dovedește cauzalitate?",
+      "back": "Pentru că poate exista o cauză comună sau o coincidență."
+    },
+    {
+      "id": "slot_6_mediu_card_10",
+      "front": "Ce este o cauză comună?",
+      "back": "Un factor care produce simultan două fenomene aparent legate."
+    },
+    {
+      "id": "slot_6_mediu_card_11",
+      "front": "Ce verifică metoda concordanței?",
+      "back": "Factorul comun tuturor cazurilor cu același efect."
+    },
+    {
+      "id": "slot_6_mediu_card_12",
+      "front": "Ce verifică metoda diferenței?",
+      "back": "Factorul prezent când apare efectul și absent când efectul lipsește."
+    },
+    {
+      "id": "slot_6_mediu_card_13",
+      "front": "Când este utilă metoda variațiilor concomitente?",
+      "back": "Când efectul se schimbă gradual odată cu un factor posibil cauzal."
+    },
+    {
+      "id": "slot_6_mediu_card_14",
+      "front": "Când este utilă metoda reziduurilor?",
+      "back": "Când trebuie explicată partea rămasă după eliminarea cauzelor cunoscute."
+    },
+    {
+      "id": "slot_6_mediu_card_15",
+      "front": "Ce face o ipoteză bună?",
+      "back": "Claritatea, verificabilitatea, coerența și compatibilitatea cu datele."
+    },
+    {
+      "id": "slot_6_mediu_card_16",
+      "front": "Ce slăbește o ipoteză?",
+      "back": "Datele contrare, ambiguitatea sau imposibilitatea verificării."
+    },
+    {
+      "id": "slot_6_mediu_card_17",
+      "front": "Ce întărește o analogie?",
+      "back": "Asemănările relevante și absența diferențelor decisive."
+    },
+    {
+      "id": "slot_6_mediu_card_18",
+      "front": "Ce slăbește o analogie?",
+      "back": "Diferențele relevante sau asemănările superficiale."
+    },
+    {
+      "id": "slot_6_mediu_card_19",
+      "front": "Care este diferența dintre inducție și analogie?",
+      "back": "Inducția generalizează; analogia transferă o trăsătură între cazuri asemănătoare."
+    },
+    {
+      "id": "slot_6_mediu_card_20",
+      "front": "Care este diferența dintre deducție și inducție?",
+      "back": "Deducția oferă necesitate; inducția oferă probabilitate."
+    },
+    {
+      "id": "slot_6_mediu_card_21",
+      "front": "De ce un singur exemplu nu e suficient?",
+      "back": "Pentru că poate fi un caz izolat."
+    },
+    {
+      "id": "slot_6_mediu_card_22",
+      "front": "De ce contează contraexemplul?",
+      "back": "Pentru că poate limita sau respinge generalizarea."
+    },
+    {
+      "id": "slot_6_mediu_card_23",
+      "front": "Ce este explicația alternativă?",
+      "back": "O altă cauză posibilă pentru același efect."
+    },
+    {
+      "id": "slot_6_mediu_card_24",
+      "front": "De ce eliminăm explicațiile alternative?",
+      "back": "Pentru a verifica dacă ipoteza aleasă este cea mai bună."
+    },
+    {
+      "id": "slot_6_mediu_card_25",
+      "front": "Ce este raționamentul abductiv?",
+      "back": "Alegerea celei mai bune explicații disponibile pentru faptele observate."
+    }
+  ]
+}

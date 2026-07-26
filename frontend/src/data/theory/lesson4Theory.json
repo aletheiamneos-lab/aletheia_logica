@@ -1,0 +1,559 @@
+{
+  "lessonId": 4,
+  "title": "Lectia 4 - Raport de Expertiză: Logica Propozițională și Arhitectura Argumentării Structurate",
+  "intro": "Lecția 4 mută analiza de pe termenii categorici pe propozițiile simple și compuse, pe conectorii logici, tabelele de adevăr și schemele standard de argumentare.",
+  "sections": [
+    {
+      "id": "unitati-baza",
+      "title": "Unitățile de bază și conectorii logici",
+      "intro": "În logica propozițională, elementul central este propoziția evaluabilă ca adevărată sau falsă.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O propoziție este un enunț care poate fi evaluat ca adevărat (1) sau fals (0). Comenzile și întrebările nu intră în această categorie. Propozițiile simple se notează prin p, q, r, s, iar propozițiile compuse se formează din ele prin conectori logici."
+        },
+        {
+          "type": "pq_relation",
+          "operators": [
+            {
+              "id": "conjunction",
+              "symbol": "p ∧ q",
+              "label": "Conjuncție",
+              "pRole": "prima propoziție care trebuie să fie adevărată",
+              "qRole": "a doua propoziție care trebuie să fie adevărată",
+              "relationText": "În conjuncție, p și q lucrează împreună. Formula este adevărată doar dacă ambele propoziții sunt adevărate simultan.",
+              "fastRule": "Un singur fals strică toată conjuncția.",
+              "rowExplanations": {
+                "tt": "Aici p și q sunt ambele adevărate, deci și conjuncția este adevărată.",
+                "tf": "p este adevărată, dar q este falsă. Pentru conjuncție, asta este suficient ca formula să devină falsă.",
+                "ft": "q este adevărată, dar p este falsă. Din nou, un singur fals face conjuncția falsă.",
+                "ff": "Ambele sunt false, deci conjuncția rămâne falsă."
+              }
+            },
+            {
+              "id": "disjunction",
+              "symbol": "p ∨ q",
+              "label": "Disjuncție inclusivă",
+              "pRole": "o posibilitate de adevăr",
+              "qRole": "a doua posibilitate de adevăr",
+              "relationText": "În disjuncția inclusivă, este suficient ca una dintre propoziții să fie adevărată pentru ca formula să fie adevărată.",
+              "fastRule": "Formula este falsă doar când p și q sunt ambele false.",
+              "rowExplanations": {
+                "tt": "Ambele sunt adevărate, deci și disjuncția este adevărată.",
+                "tf": "p este adevărată, iar asta este suficient pentru ca p ∨ q să fie adevărată.",
+                "ft": "q este adevărată, iar asta este suficient pentru ca p ∨ q să fie adevărată.",
+                "ff": "Acesta este singurul caz în care nici p, nici q nu susțin formula, deci disjuncția este falsă."
+              },
+              "linkedSchemes": [
+                {
+                  "name": "Modus Tollendo-Ponens",
+                  "note": "Din p ∨ q, daca elimini p prin ¬p, ramane q."
+                },
+                {
+                  "name": "Modus Ponendo-Tollens",
+                  "note": "Functioneaza doar pentru disjunctia exclusiva: daca p este adevarat, q trebuie exclus."
+                }
+              ]
+            },
+            {
+              "id": "implication",
+              "symbol": "p → q",
+              "label": "Implicație",
+              "pRole": "antecedentul, adică condiția suficientă",
+              "qRole": "consecventul, adică ceea ce trebuie să urmeze",
+              "relationText": "În implicație, p promite că dacă este adevărată, atunci și q trebuie să fie adevărată. Relația critică este: din p adevărat nu ai voie să ajungi la q fals.",
+              "fastRule": "Implicația este falsă doar în cazul p = adevărat și q = fals.",
+              "rowExplanations": {
+                "tt": "Promisiunea este respectată: dacă p are loc și q are loc, implicația este adevărată.",
+                "tf": "Aici apare singurul eșec logic: p este adevărată, dar q nu urmează. De aceea implicația devine falsă.",
+                "ft": "Când p este falsă, implicația nu este încălcată. Formula rămâne adevărată.",
+                "ff": "Și aici p este falsă, deci nu există încălcarea relației «dacă p, atunci q». Implicația rămâne adevărată."
+              },
+              "linkedSchemes": [
+                {
+                  "name": "Modus Ponens",
+                  "note": "Activezi antecedentul p, iar regula obliga q."
+                },
+                {
+                  "name": "Modus Tollens",
+                  "note": "Daca q cade, cade si p, pentru ca p nu are voie sa duca la q fals."
+                },
+                {
+                  "name": "Afirmarea consecventului",
+                  "note": "Este capcana clasica: q adevarat nu garanteaza ca p a fost cauza."
+                },
+                {
+                  "name": "Negarea antecedentului",
+                  "note": "Este capcana clasica: ¬p nu obliga ¬q, fiindca q poate veni si din alta parte."
+                }
+              ]
+            },
+            {
+              "id": "equivalence",
+              "symbol": "p ↔ q",
+              "label": "Echivalență",
+              "pRole": "prima propoziție care trebuie comparată",
+              "qRole": "a doua propoziție care trebuie comparată",
+              "relationText": "În echivalență, p și q trebuie să aibă aceeași valoare de adevăr. Formula verifică dacă ele merg împreună.",
+              "fastRule": "Echivalența este adevărată când p și q au aceeași valoare.",
+              "rowExplanations": {
+                "tt": "Ambele sunt adevărate, deci au aceeași valoare și echivalența este adevărată.",
+                "tf": "Valorile diferă, deci echivalența este falsă.",
+                "ft": "Valorile diferă, deci echivalența este falsă.",
+                "ff": "Ambele sunt false, deci au aceeași valoare și echivalența este adevărată."
+              },
+              "linkedSchemes": [
+                {
+                  "name": "Doua implicatii lipite",
+                  "note": "Echivalenta se intelege mai usor daca o vezi ca p → q si q → p in acelasi timp."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Simbol",
+            "Denumire",
+            "Expresie naturală",
+            "Condiție de adevăr"
+          ],
+          "rows": [
+            [
+              "¬",
+              "Negație",
+              "„nu…”, „nu este cazul că…”",
+              "Are valoarea inversă propoziției inițiale."
+            ],
+            [
+              "∧",
+              "Conjuncție",
+              "„și”, „dar”, „iar”",
+              "Este adevărată doar când ambele componente sunt adevărate."
+            ],
+            [
+              "∨",
+              "Disjuncție inclusivă",
+              "„sau”, „ori”",
+              "Este falsă doar când ambele componente sunt false."
+            ],
+            [
+              "⊻",
+              "Disjuncție exclusivă",
+              "„fie… fie…”, „dar nu ambele”",
+              "Este adevărată când exact una dintre componente este adevărată."
+            ],
+            [
+              "→",
+              "Implicație",
+              "„dacă… atunci…”",
+              "Este falsă doar când antecedentul este adevărat și consecventul este fals."
+            ],
+            [
+              "↔",
+              "Echivalență",
+              "„dacă și numai dacă…”",
+              "Este adevărată când ambele componente au aceeași valoare."
+            ]
+          ],
+          "footnote": "În itemii de examen, identificarea corectă a conectorului face diferența între o traducere corectă și una greșită."
+        }
+      ]
+    },
+    {
+      "id": "tabele-adevar",
+      "title": "Tabelele de adevăr",
+      "intro": "Tabelul de adevăr este instrumentul de verificare sigură pentru formule și argumente scurte.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Folosești tabelul de adevăr când ai 2-3 variabile și vrei certitudine rapidă.",
+            "Tabelul de adevăr stabilește dacă o formulă este tautologie, contradicție sau contingentă.",
+            "Tabelul este util și când vrei să verifici validitatea unui argument pe care nu îl recunoști ca schemă standard."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Notezi variabilele p, q, r…",
+            "Scrii toate combinațiile de valori: 2^n rânduri.",
+            "Calculezi coloanele intermediare înaintea conectorilor principali → și ↔.",
+            "Calculezi formula finală și interpretezi rezultatul."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Tip de formulă",
+            "Criteriu"
+          ],
+          "rows": [
+            [
+              "Tautologie",
+              "Are valoarea 1 pe toate rândurile."
+            ],
+            [
+              "Contradicție",
+              "Are valoarea 0 pe toate rândurile."
+            ],
+            [
+              "Contingentă",
+              "Are atât valori 1, cât și valori 0."
+            ]
+          ],
+          "footnote": "Această clasificare apare frecvent în grilele cu formule compuse."
+        }
+      ]
+    },
+    {
+      "id": "echivalente-aur",
+      "title": "Echivalențele de aur",
+      "intro": "Aceste transformări trebuie recunoscute și folosite automat în simplificare și în rezolvarea grilelor.",
+      "blocks": [
+        {
+          "type": "formula",
+          "label": "Implicația",
+          "expression": "p → q ≡ ¬p ∨ q",
+          "explanation": "„Dacă p atunci q” este echivalent cu „nu p sau q”."
+        },
+        {
+          "type": "formula",
+          "label": "Echivalența",
+          "expression": "p ↔ q ≡ (p → q) ∧ (q → p)",
+          "explanation": "Echivalența se descompune în două implicații reciproce."
+        },
+        {
+          "type": "formula",
+          "label": "Legile lui De Morgan",
+          "expression": "¬(p ∧ q) ≡ ¬p ∨ ¬q; ¬(p ∨ q) ≡ ¬p ∧ ¬q",
+          "explanation": "Negarea unei conjuncții devine disjuncția negațiilor, iar negarea unei disjuncții devine conjuncția negațiilor."
+        },
+        {
+          "type": "formula",
+          "label": "Dublă negație",
+          "expression": "¬(¬p) ≡ p",
+          "explanation": "Două negații succesive se anulează."
+        },
+        {
+          "type": "formula",
+          "label": "Distribuții utile",
+          "expression": "p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r); p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)",
+          "explanation": "Aceste distribuții ajută la simplificarea formulelor și la transformări rapide."
+        }
+      ]
+    },
+    {
+      "id": "traducere",
+      "title": "Traducerea din limbaj natural în formulă",
+      "intro": "Traducerea corectă cere identificarea propozițiilor simple și a markerilor de limbaj.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "„nu” se traduce prin ¬.",
+            "„și / dar / iar” se traduc prin ∧.",
+            "„sau” se traduce prin ∨ dacă nu este indicată explicit exclusivitatea.",
+            "„dacă… atunci…” se traduce prin →.",
+            "„doar dacă / numai dacă” se traduce tot prin →.",
+            "„dacă și numai dacă” se traduce prin ↔."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Capcana clasică",
+          "text": "„Treci examenul numai dacă înveți.” Dacă p = „treci examenul” și q = „înveți”, formula este p → q."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Formulare",
+            "Relația dintre p și q",
+            "Formulă"
+          ],
+          "rows": [
+            [
+              "Dacă p, atunci q",
+              "p este condiția care duce la q",
+              "p → q"
+            ],
+            [
+              "p numai dacă q",
+              "dacă apare p, q trebuie să fie deja îndeplinită",
+              "p → q"
+            ],
+            [
+              "p dacă și numai dacă q",
+              "p și q merg împreună în ambele sensuri",
+              "p ↔ q"
+            ]
+          ],
+          "footnote": "Ideea-cheie: în „p numai dacă q”, accentul cade pe faptul că p nu poate fi adevărată fără q."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Atenție",
+          "text": "În limbajul de examen, „dacă p atunci q” și „p doar dacă q” au același sens logic: p → q."
+        }
+      ]
+    },
+    {
+      "id": "argumente-fractii",
+      "title": "Argumente: adevăr, validitate și „fracțiile” clasice",
+      "intro": "Validitatea este proprietatea formei, nu a conținutului factual al propozițiilor.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Un argument este valid dacă este imposibil ca premisele să fie adevărate iar concluzia falsă. În practică, multe itemi se rezolvă prin recunoașterea imediată a schemelor standard de inferență."
+        },
+        {
+          "type": "argument_schemes",
+          "families": [
+            {
+              "id": "implication",
+              "label": "Implicatie",
+              "formula": "p → q",
+              "description": "Aici legi o conditie de un rezultat. Schemele valide pastreaza directia acestei legaturi; capcanele o inverseaza sau o rup."
+            },
+            {
+              "id": "disjunction",
+              "label": "Disjunctie",
+              "formula": "p ∨ q / p ⊻ q",
+              "description": "Aici lucrezi cu optiuni. Ori elimini una si ramane cealalta, ori alegi una intr-o disjunctie exclusiva si o blochezi pe cealalta."
+            }
+          ],
+          "schemes": [
+            {
+              "id": "modus-ponens",
+              "familyId": "implication",
+              "name": "Modus Ponens",
+              "verdict": "valid",
+              "premises": [
+                "p → q",
+                "p"
+              ],
+              "conclusion": "q",
+              "natural": "Daca p atunci q. p. Deci q.",
+              "intuition": "Pornesti de la regula si apoi activezi exact conditia p. Nu mai ramane loc sa pierzi pe q.",
+              "supportHint": "Ambele premise sunt adevarate si concluzia ramane adevarata, exact cum cere regula implicatiei.",
+              "counterexampleHint": "Nu exista un contraexemplu real pentru aceasta schema."
+            },
+            {
+              "id": "modus-tollens",
+              "familyId": "implication",
+              "name": "Modus Tollens",
+              "verdict": "valid",
+              "premises": [
+                "p → q",
+                "¬q"
+              ],
+              "conclusion": "¬p",
+              "natural": "Daca p atunci q. Nu q. Deci nu p.",
+              "intuition": "Daca regula spune ca p l-ar forta pe q, iar q lipseste, inseamna ca p nu a avut loc.",
+              "supportHint": "Cand q este fals si implicatia ramane adevarata, p nu poate fi adevarat.",
+              "counterexampleHint": "Nu exista un rand cu premise adevarate si concluzie falsa pentru aceasta schema."
+            },
+            {
+              "id": "affirming-the-consequent",
+              "familyId": "implication",
+              "name": "Afirmarea consecventului",
+              "verdict": "invalid",
+              "premises": [
+                "p → q",
+                "q"
+              ],
+              "conclusion": "p",
+              "natural": "Daca p atunci q. q. Deci p.",
+              "intuition": "Faptul ca q este adevarat nu spune din ce cauza a aparut. q poate fi adevarat si fara p.",
+              "supportHint": "Unele randuri par sa confirme schema, dar asta nu este suficient pentru validitate.",
+              "counterexampleHint": "Randul selectat arata capcana: regula si q sunt adevarate, dar p poate lipsi."
+            },
+            {
+              "id": "denying-the-antecedent",
+              "familyId": "implication",
+              "name": "Negarea antecedentului",
+              "verdict": "invalid",
+              "premises": [
+                "p → q",
+                "¬p"
+              ],
+              "conclusion": "¬q",
+              "natural": "Daca p atunci q. Nu p. Deci nu q.",
+              "intuition": "Din faptul ca p nu apare nu rezulta ca q dispare; q poate avea o alta sursa.",
+              "supportHint": "Unele randuri lasa impresia ca merge, dar validitatea cere sa mearga pe toate randurile relevante.",
+              "counterexampleHint": "Aici vezi ruptura: implicatia ramane adevarata si ¬p este adevarat, dar q poate fi totusi adevarat."
+            },
+            {
+              "id": "modus-tollendo-ponens",
+              "familyId": "disjunction",
+              "name": "Modus Tollendo-Ponens",
+              "verdict": "valid",
+              "premises": [
+                "p ∨ q",
+                "¬p"
+              ],
+              "conclusion": "q",
+              "natural": "p sau q. Nu p. Deci q.",
+              "intuition": "Disjunctia lasa doua usi deschise. A doua premisa inchide usa lui p, deci ramai cu q.",
+              "supportHint": "Cand p este eliminat, singura varianta care mai poate sustine disjunctia este q.",
+              "counterexampleHint": "Nu exista un contraexemplu pentru aceasta schema in disjunctia inclusiva."
+            },
+            {
+              "id": "modus-ponendo-tollens",
+              "familyId": "disjunction",
+              "name": "Modus Ponendo-Tollens",
+              "verdict": "valid",
+              "premises": [
+                "p ⊻ q",
+                "p"
+              ],
+              "conclusion": "¬q",
+              "natural": "Fie p, fie q, dar nu ambele. p. Deci nu q.",
+              "intuition": "Merge doar daca prima premisa este disjunctie exclusiva: alegerea lui p il exclude automat pe q.",
+              "supportHint": "Exact asta inseamna disjunctia exclusiva: una intra, cealalta iese.",
+              "counterexampleHint": "Daca ai avea doar p ∨ q, schema nu ar mai fi sigura; de aceea exclusivitatea este esentiala."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dileme-verificare",
+      "title": "Dileme și metoda rapidă de verificare a validității",
+      "intro": "Când schema nu este evidentă, verificarea se face prin căutarea unui contraexemplu.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Dilema constructivă simplă: (p → q), (r → q), (p ∨ r) ⟹ q.",
+            "Dilema constructivă complexă: (p → q), (r → s), (p ∨ r) ⟹ (q ∨ s).",
+            "Dilema distructivă simplă: (p → q), (p → r), (¬q ∨ ¬r) ⟹ ¬p.",
+            "Dilema distructivă complexă: (p → q), (r → s), (¬q ∨ ¬s) ⟹ (¬p ∨ ¬r)."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Presupui că argumentul este nevalid: premisele = 1, concluzia = 0.",
+            "Deduci valorile variabilelor din concluzie spre premise.",
+            "Dacă apare contradicție, argumentul este valid.",
+            "Dacă nu apare contradicție, există contraexemplu și argumentul este nevalid."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Modele gata de grilă",
+          "text": "„Dacă p atunci q. p. Deci q.” este Modus Ponens. „Dacă p atunci q. Nu q. Deci nu p.” este Modus Tollens. „Dacă p atunci q. q. Deci p.” este capcana afirmării consecventului."
+        }
+      ]
+    },
+    {
+      "id": "demonstratie-argumentare-speciala",
+      "title": "Teoria demonstrației și forme speciale de argumentare",
+      "intro": "Demonstrația stabilește adevărul unei teze pe baza unui fundament și a unui raționament corect.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Element",
+            "Denumire",
+            "Rol în demonstrație"
+          ],
+          "rows": [
+            [
+              "1",
+              "Teză (demonstrandum)",
+              "Propoziția care trebuie demonstrată."
+            ],
+            [
+              "2",
+              "Fundament (principia demonstrandi)",
+              "Propoziții adevărate pe baza cărora se demonstrează teza."
+            ],
+            [
+              "3",
+              "Proces (raționamentul)",
+              "Succesiunea inferențelor logice prin care teza este dedusă din fundament."
+            ]
+          ],
+          "footnote": "Aceste componente apar în toate modelele de demonstrație."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Componentă",
+            "Reguli"
+          ],
+          "rows": [
+            [
+              "Teza",
+              "Clar formulată; rămâne aceeași; este o propoziție demonstrabilă."
+            ],
+            [
+              "Fundamentul",
+              "Este adevărat; suficient; independent de teză."
+            ]
+          ],
+          "footnote": "Regulile tezei și ale fundamentului sunt esențiale în recunoașterea erorilor de demonstrație."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Tip de demonstrație",
+            "Schemă"
+          ],
+          "rows": [
+            [
+              "Directă",
+              "Fundament adevărat ⟹ Teză adevărată"
+            ],
+            [
+              "Indirectă",
+              "¬Teză ⟹ contradicție ⟹ Teză"
+            ]
+          ],
+          "footnote": "Demonstrația indirectă este cunoscută și ca reducere la absurd."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Entimema este un silogism cu o premisă omisă, considerată implicit cunoscută.",
+            "Soritul este un lanț de silogisme în care concluzia unuia devine premisă pentru următorul.",
+            "Epicherema este un silogism în care premisele sunt însoțite de justificări."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Reconstrucția unei entimeme",
+          "text": "„Este judecător, deci este jurist.” Premisa majoră omisă este: „Toți judecătorii sunt juriști.”"
+        }
+      ]
+    },
+    {
+      "id": "sofisme-supozitie",
+      "title": "Sofisme de supoziție neîntemeiată",
+      "intro": "Unele erori de argumentare apar din asumarea nejustificată a unor alternative sau premise incompatibile.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Falsa dilemă reduce artificial situația la două opțiuni și ignoră alternative reale.",
+            "Inconsistența premiselor apare când premisele se contrazic între ele; din premise inconsistente poate fi derivată orice concluzie."
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Exemplu de falsă dilemă",
+          "text": "„Ori susții această lege, ori ești împotriva statului. Nu o susții, deci ești împotriva statului.” Eroarea constă în ignorarea opțiunilor intermediare."
+        },
+        {
+          "type": "example",
+          "title": "Exemplu de inconsistență",
+          "text": "„Toți judecătorii sunt imparțiali. Unii judecători nu sunt imparțiali. Deci sistemul este corect.” Premisele se exclud reciproc, iar concluzia nu mai este controlabilă logic."
+        }
+      ]
+    }
+  ]
+}

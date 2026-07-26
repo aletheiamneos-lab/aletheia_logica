@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0",
+  "examId": "bac_logica_2024_v8",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms_v8",
+      "type": "euler_relation_map",
+      "studentUsage": "hybrid_canvas_upload",
+      "teacherUsage": "model_render",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        {
+          "relation": "C_is_genus_of_A_and_B",
+          "description": "A și B sunt incluse în C, fără suprapunere între A și B."
+        },
+        {
+          "relation": "C_contrary_D",
+          "description": "C și D sunt disjuncte în același univers."
+        },
+        {
+          "relation": "A_contrary_B_D_E",
+          "description": "A nu se intersectează cu B, D sau E."
+        },
+        {
+          "relation": "E_intersects_D",
+          "description": "E și D se încrucișează."
+        }
+      ],
+      "renderHints": {
+        "placeCAsLargeCircle": true,
+        "placeAandBInsideC": true,
+        "placeDOutsideC": true,
+        "placeEIntersectingDOnly": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_c_aee2_venn_v8",
+      "type": "venn_three_terms",
+      "studentUsage": "hybrid_canvas_upload",
+      "teacherUsage": "model_render",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "PaM",
+        "SeM"
+      ],
+      "conclusion": "SeP",
+      "validity": "valid",
+      "renderHints": {
+        "shade": [
+          "P_not_M",
+          "S_and_M"
+        ],
+        "showConclusion": "S_and_P_empty"
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_c_iai4_venn_v8",
+      "type": "venn_three_terms",
+      "studentUsage": "hybrid_canvas_upload",
+      "teacherUsage": "model_render",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "PiM",
+        "MaS"
+      ],
+      "conclusion": "SiP",
+      "validity": "valid",
+      "renderHints": {
+        "existencePoints": [
+          "P_and_M_inside_S"
+        ],
+        "showConclusion": "S_and_P_has_x"
+      }
+    }
+  ]
+}

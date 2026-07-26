@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "slug": "fundamente-gandire-termeni",
+    "title": "Lectia 1 - Fundamentele gandirii logice si analiza termenilor",
+    "shortText": "Fundamentele logicii traditionale, principiile gandirii corecte, analiza termenilor si raporturile dintre termeni.",
+    "formalText": "Logica generala analizeaza termenul, propozitia si rationamentul, iar stabilitatea intregii constructii depinde de respectarea principiilor identitatii, non-contradictiei, tertului exclus si ratiunii suficiente.",
+    "exampleText": "Exemplu: \"mamifer\" este inclus in \"animal\", iar \"legal\" si \"ilegal\" se afla in raport de contradictie.",
+    "practiceStatus": "available",
+    "practiceSummary": "Exersezi termenii, clasificarile si raporturile logice, plus o diagrama Venn interactiva pentru relatiile dintre clase.",
+    "theoryFile": "lesson1Theory",
+    "topic": "fundamente-gandire-termeni"
+  },
+  {
+    "id": 2,
+    "slug": "forme-definitorii-propozitii-categorice",
+    "title": "Lectia 2 - Definitia, clasificarea si propozitiile categorice",
+    "shortText": "Definitia logica, clasificarea, propozitiile categorice si relatiile din Patratul opozitiei.",
+    "formalText": "Determinarea riguroasa a termenilor si articularea judecatilor sustin precizia logica, iar operatiile de definire si clasificare fixeaza intensiunea si extensiunea cerute de propozitiile categorice.",
+    "exampleText": "Exemplu: \"Omul este animalul rational\" urmeaza modelul prin gen proxim si diferenta specifica.",
+    "practiceStatus": "available",
+    "practiceSummary": "Lucrezi pe definitii, clasificari, formele A E I O, opozitii si diagrame Venn.",
+    "theoryFile": "lesson2Theory",
+    "topic": "forme-definitorii-propozitii-categorice"
+  },
+  {
+    "id": 3,
+    "slug": "deductie-silogistica",
+    "title": "Lectia 3 - Deductie, inferente imediate si analiza silogistica",
+    "shortText": "Deductie, Patratul logic, inferente imediate, silogism si verificarea validitatii prin diagrame Venn.",
+    "formalText": "Deductia garanteaza concluzia atunci cand premisele sunt adevarate si forma este valida, iar analiza silogistica transpune aceasta exigenta in reguli de distribuire, figuri si proceduri standard de verificare.",
+    "exampleText": "Exemplu: \"Toti judecatorii sunt juristi. Niciun medic nu este judecator. Deci niciun medic nu este jurist.\"",
+    "practiceStatus": "available",
+    "practiceSummary": "Set complet despre deductie, Patratul opozitiei, conversiune, obversiune, silogism si validitate prin Venn.",
+    "theoryFile": "lesson3Theory",
+    "topic": "deductie-silogistica"
+  },
+  {
+    "id": 4,
+    "slug": "logica-propozitionala-argumentare",
+    "title": "Lectia 4 - Logica propozitionala si arhitectura argumentarii",
+    "shortText": "Conectori logici, tabele de adevar, echivalente, scheme de inferenta si teoria demonstratiei.",
+    "formalText": "Logica propozitionala traduce enunturile in formule controlabile, iar validitatea argumentelor se verifica prin scheme, contraexemple si demonstratii corecte.",
+    "exampleText": "Exemplu: \"Daca invata, atunci trece. Nu a trecut. Deci nu a invatat.\" este o instanta de Modus Tollens.",
+    "practiceStatus": "available",
+    "practiceSummary": "Set complet despre conectori, echivalente, traducere, validitate, scheme de inferenta, entimema si demonstratie.",
+    "theoryFile": "lesson4Theory",
+    "topic": "logica-propozitionala-argumentare"
+  },
+  {
+    "id": 5,
+    "slug": "rationamente-nedeductive-erori",
+    "title": "Lectia 5 - Analiza rationamentelor nedeductive si a erorilor de gandire",
+    "shortText": "Analogie, inductie, metode cauzale, sofisme, paralogisme si erori de relevanta sau de limbaj.",
+    "formalText": "Rationamentele nedeductive amplifica cunoasterea prin concluzii probabile, iar controlul sofismelor protejeaza validitatea argumentarii in contexte profesionale si juridice.",
+    "exampleText": "Exemplu: o analogie devine slaba daca asemanarile invocate nu sunt esentiale pentru proprietatea transferata.",
+    "practiceStatus": "available",
+    "practiceSummary": "Set complet despre analogie, inductie, metode cauzale si identificarea sofismelor frecvente.",
+    "theoryFile": "lesson5Theory",
+    "topic": "rationamente-nedeductive-erori"
+  }
+]

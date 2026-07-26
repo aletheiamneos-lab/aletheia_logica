@@ -1,0 +1,134 @@
+{
+  "slot": 1,
+  "nivel": "avansat",
+  "title": "Slot 1 - Avansat",
+  "description": "Set complet de 25 flashcarduri pentru nivelul avansat, strict pe materia de logică.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_1_avansat_card_1",
+      "front": "Identifică eroarea: „Legea este ceea ce este legal.”",
+      "back": "Definiție circulară."
+    },
+    {
+      "id": "slot_1_avansat_card_2",
+      "front": "Identifică eroarea: „Câinele este un animal.”",
+      "back": "Definiție prea largă."
+    },
+    {
+      "id": "slot_1_avansat_card_3",
+      "front": "Identifică eroarea: „Câinele este un animal de talie mică.”",
+      "back": "Definiție prea restrânsă."
+    },
+    {
+      "id": "slot_1_avansat_card_4",
+      "front": "Identifică eroarea: „Contractul este o înțelegere frumoasă între părți.”",
+      "back": "Definiție neclară, cu termen vag."
+    },
+    {
+      "id": "slot_1_avansat_card_5",
+      "front": "Identifică eroarea: „Inima este motorul vieții.”",
+      "back": "Definiție metaforică."
+    },
+    {
+      "id": "slot_1_avansat_card_6",
+      "front": "Identifică eroarea: „Studenții sunt tineri, la drept și la medicină.”",
+      "back": "Amestec de criterii."
+    },
+    {
+      "id": "slot_1_avansat_card_7",
+      "front": "Identifică eroarea: „Zilele săptămânii sunt luni, marți și miercuri.”",
+      "back": "Clasificare incompletă."
+    },
+    {
+      "id": "slot_1_avansat_card_8",
+      "front": "Identifică eroarea: „Persoanele sunt elevi și minori.”",
+      "back": "Suprapunere de clase."
+    },
+    {
+      "id": "slot_1_avansat_card_9",
+      "front": "Ce raport există între „elev” și „sportiv”?",
+      "back": "Raport de încrucișare."
+    },
+    {
+      "id": "slot_1_avansat_card_10",
+      "front": "Ce raport există între „triunghi” și „poligon”?",
+      "back": "Raport de ordonare."
+    },
+    {
+      "id": "slot_1_avansat_card_11",
+      "front": "Ce raport există între „legal” și „ilegal”?",
+      "back": "Raport de contradicție."
+    },
+    {
+      "id": "slot_1_avansat_card_12",
+      "front": "Ce raport există între „alb” și „negru”?",
+      "back": "Raport de contrarietate."
+    },
+    {
+      "id": "slot_1_avansat_card_13",
+      "front": "Identifică tipul: „Toți elevii sunt prezenți.”",
+      "back": "Propoziție A."
+    },
+    {
+      "id": "slot_1_avansat_card_14",
+      "front": "Identifică tipul: „Niciun elev nu este absent.”",
+      "back": "Propoziție E."
+    },
+    {
+      "id": "slot_1_avansat_card_15",
+      "front": "Identifică tipul: „Unii elevi sunt sportivi.”",
+      "back": "Propoziție I."
+    },
+    {
+      "id": "slot_1_avansat_card_16",
+      "front": "Identifică tipul: „Unii elevi nu sunt sportivi.”",
+      "back": "Propoziție O."
+    },
+    {
+      "id": "slot_1_avansat_card_17",
+      "front": "Dacă A este adevărată, ce valoare are O?",
+      "back": "O este falsă, deoarece A și O sunt contradictorii."
+    },
+    {
+      "id": "slot_1_avansat_card_18",
+      "front": "Dacă E este adevărată, ce valoare are I?",
+      "back": "I este falsă, deoarece E și I sunt contradictorii."
+    },
+    {
+      "id": "slot_1_avansat_card_19",
+      "front": "De ce două premise negative nu produc concluzie validă?",
+      "back": "Pentru că nu există o legătură pozitivă între termeni."
+    },
+    {
+      "id": "slot_1_avansat_card_20",
+      "front": "De ce două premise particulare nu produc concluzie validă?",
+      "back": "Pentru că informația este insuficientă pentru o concluzie necesară."
+    },
+    {
+      "id": "slot_1_avansat_card_21",
+      "front": "De ce termenul mediu trebuie distribuit cel puțin o dată?",
+      "back": "Pentru că doar astfel poate lega termenii extremi."
+    },
+    {
+      "id": "slot_1_avansat_card_22",
+      "front": "Identifică eroarea: Toți avocații sunt juriști. Toți judecătorii sunt juriști. Deci toți judecătorii sunt avocați.",
+      "back": "Termen mediu nedistribuit."
+    },
+    {
+      "id": "slot_1_avansat_card_23",
+      "front": "Identifică termenul mediu: Toți oamenii sunt muritori. Socrate este om. Deci Socrate este muritor.",
+      "back": "Termenul mediu este „om”."
+    },
+    {
+      "id": "slot_1_avansat_card_24",
+      "front": "De ce concluzia trebuie să fie negativă dacă o premisă este negativă?",
+      "back": "Pentru păstrarea coerenței semnului logic."
+    },
+    {
+      "id": "slot_1_avansat_card_25",
+      "front": "De ce concluzia trebuie să fie particulară dacă o premisă este particulară?",
+      "back": "Pentru că din informație parțială nu rezultă valid o concluzie universală."
+    }
+  ]
+}

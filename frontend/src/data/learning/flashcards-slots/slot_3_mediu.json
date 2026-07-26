@@ -1,0 +1,184 @@
+{
+  "slot": 3,
+  "nivel": "mediu",
+  "title": "Slot 3 - Mediu",
+  "description": "Set complet de 35 flashcarduri pentru nivelul mediu.",
+  "card_count": 35,
+  "cards": [
+    {
+      "id": "slot_3_mediu_card_1",
+      "front": "Care este diferența dintre validitate și adevăr?",
+      "back": "Validitatea privește forma raționamentului, adevărul privește propozițiile."
+    },
+    {
+      "id": "slot_3_mediu_card_2",
+      "front": "De ce o deducție validă garantează concluzia?",
+      "back": "Pentru că, dacă premisele sunt adevărate și forma este validă, concluzia nu poate fi falsă."
+    },
+    {
+      "id": "slot_3_mediu_card_3",
+      "front": "De ce inducția nu oferă certitudine absolută?",
+      "back": "Pentru că generalizează din cazuri particulare."
+    },
+    {
+      "id": "slot_3_mediu_card_4",
+      "front": "Când este puternică o analogie?",
+      "back": "Când asemănările relevante depășesc diferențele relevante."
+    },
+    {
+      "id": "slot_3_mediu_card_5",
+      "front": "Când este slabă o analogie?",
+      "back": "Când se bazează pe asemănări superficiale."
+    },
+    {
+      "id": "slot_3_mediu_card_6",
+      "front": "Cum funcționează negația?",
+      "back": "Dacă p este adevărată, non-p este falsă; dacă p este falsă, non-p este adevărată."
+    },
+    {
+      "id": "slot_3_mediu_card_7",
+      "front": "Când este adevărată conjuncția?",
+      "back": "Conjuncția este adevărată numai când ambele propoziții sunt adevărate."
+    },
+    {
+      "id": "slot_3_mediu_card_8",
+      "front": "Când este falsă disjuncția inclusivă?",
+      "back": "Este falsă numai când ambele propoziții sunt false."
+    },
+    {
+      "id": "slot_3_mediu_card_9",
+      "front": "Când este falsă implicația?",
+      "back": "Este falsă doar când antecedentul este adevărat și consecventul fals."
+    },
+    {
+      "id": "slot_3_mediu_card_10",
+      "front": "Când este adevărată echivalența?",
+      "back": "Este adevărată când cele două propoziții au aceeași valoare de adevăr."
+    },
+    {
+      "id": "slot_3_mediu_card_11",
+      "front": "Ce este contrara implicației?",
+      "back": "Contrara lui dacă p, atunci q este dacă non-p, atunci non-q."
+    },
+    {
+      "id": "slot_3_mediu_card_12",
+      "front": "Ce este inversa implicației?",
+      "back": "Inversa este dacă q, atunci p."
+    },
+    {
+      "id": "slot_3_mediu_card_13",
+      "front": "Ce este contrapusa implicației?",
+      "back": "Contrapusa este dacă non-q, atunci non-p."
+    },
+    {
+      "id": "slot_3_mediu_card_14",
+      "front": "De ce contrapusa este echivalentă cu implicația inițială?",
+      "back": "Pentru că are aceeași valoare de adevăr în toate cazurile."
+    },
+    {
+      "id": "slot_3_mediu_card_15",
+      "front": "De ce inversa nu este echivalentă automat cu implicația?",
+      "back": "Pentru că schimbarea ordinii poate modifica raportul logic."
+    },
+    {
+      "id": "slot_3_mediu_card_16",
+      "front": "Ce rol are tabelul de adevăr?",
+      "back": "Verifică sistematic valoarea unei formule compuse."
+    },
+    {
+      "id": "slot_3_mediu_card_17",
+      "front": "Ce înseamnă consistența premiselor?",
+      "back": "Premisele pot fi adevărate simultan."
+    },
+    {
+      "id": "slot_3_mediu_card_18",
+      "front": "Ce înseamnă inconsistența premiselor?",
+      "back": "Premisele nu pot fi adevărate simultan."
+    },
+    {
+      "id": "slot_3_mediu_card_19",
+      "front": "Ce este argumentarea structurată?",
+      "back": "Organizarea tezei, premiselor, inferenței și concluziei."
+    },
+    {
+      "id": "slot_3_mediu_card_20",
+      "front": "Ce diferențiază demonstrația de opinie?",
+      "back": "Demonstrația oferă temeiuri și legături logice."
+    },
+    {
+      "id": "slot_3_mediu_card_21",
+      "front": "Cum se recunoaște falsa dilemă?",
+      "back": "Sunt prezentate doar două opțiuni, deși există și altele."
+    },
+    {
+      "id": "slot_3_mediu_card_22",
+      "front": "Cum se recunoaște ad hominem?",
+      "back": "Este atacată persoana, nu argumentul."
+    },
+    {
+      "id": "slot_3_mediu_card_23",
+      "front": "Cum se recunoaște ad misericordiam?",
+      "back": "Apare apelul la milă în locul justificării."
+    },
+    {
+      "id": "slot_3_mediu_card_24",
+      "front": "Cum se recunoaște echivocația?",
+      "back": "Același termen își schimbă sensul."
+    },
+    {
+      "id": "slot_3_mediu_card_25",
+      "front": "Cum se recunoaște amfibolia?",
+      "back": "Enunțul are ambiguitate sintactică."
+    },
+    {
+      "id": "slot_3_mediu_card_26",
+      "front": "Ce este argumentul circular?",
+      "back": "Concluzia este folosită ca premisă."
+    },
+    {
+      "id": "slot_3_mediu_card_27",
+      "front": "Ce este generalizarea pripită?",
+      "back": "Concluzia generală este trasă din prea puține cazuri."
+    },
+    {
+      "id": "slot_3_mediu_card_28",
+      "front": "Ce este cauza falsă?",
+      "back": "Un fapt este considerat greșit cauza altui fapt."
+    },
+    {
+      "id": "slot_3_mediu_card_29",
+      "front": "Ce este apelul la autoritate?",
+      "back": "O teză este susținută doar prin autoritatea unei persoane."
+    },
+    {
+      "id": "slot_3_mediu_card_30",
+      "front": "Când e problematic apelul la autoritate?",
+      "back": "Când autoritatea nu este relevantă sau nu aduce argumente."
+    },
+    {
+      "id": "slot_3_mediu_card_31",
+      "front": "Ce este apelul la majoritate?",
+      "back": "Se susține că ceva este adevărat fiindcă mulți cred acel lucru."
+    },
+    {
+      "id": "slot_3_mediu_card_32",
+      "front": "De ce popularitatea nu garantează adevărul?",
+      "back": "Pentru că numărul susținătorilor nu este criteriu logic."
+    },
+    {
+      "id": "slot_3_mediu_card_33",
+      "front": "Ce este omul de paie?",
+      "back": "Poziția adversarului este deformată pentru a fi combătută ușor."
+    },
+    {
+      "id": "slot_3_mediu_card_34",
+      "front": "Ce este ignoratio elenchi?",
+      "back": "Abaterea de la teza care trebuia demonstrată."
+    },
+    {
+      "id": "slot_3_mediu_card_35",
+      "front": "Ce este petiția de principiu?",
+      "back": "Eroarea în care concluzia este presupusă în premise."
+    }
+  ]
+}

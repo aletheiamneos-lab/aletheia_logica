@@ -1,0 +1,172 @@
+{
+  "lessonId": 5,
+  "title": "Lectia 5 - Raport Tehnic: Analiza Raționamentelor Nedeductive și a Erorilor de Gândire în Discursul Profesional",
+  "intro": "Lecția 5 urmărește logica probabilității și a erorilor de gândire: analogia, inducția și principalele sofisme care distorsionează argumentarea.",
+  "sections": [
+    {
+      "id": "analogie-inductie",
+      "title": "Fundamentele raționamentelor nedeductive",
+      "intro": "Raționamentele nedeductive amplifică informația, dar nu oferă certitudinea deducției.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Raționamentele nedeductive permit depășirea informației strict conținute în premise. Spre deosebire de deducție, concluzia este mai generală decât datele inițiale și păstrează un caracter ipotetic sau probabil."
+        },
+        {
+          "type": "example",
+          "title": "Schema analogiei",
+          "text": "Obiectul a posedă proprietățile F, G, H. Obiectul b posedă proprietățile F, G, H și proprietatea P. Prin urmare, probabil și obiectul a posedă proprietatea P."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Numărul asemănărilor dintre obiecte crește plauzibilitatea analogiei.",
+            "Importanța asemănărilor este decisivă: trăsăturile comune trebuie să fie esențiale, nu accidentale.",
+            "Varietatea trăsăturilor comune întărește consistența analogiei.",
+            "Modestia concluziei crește probabilitatea: o concluzie prea ambițioasă slăbește analogia.",
+            "Relevanța asemănărilor față de proprietatea transferată este condiția critică."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Inducția completă se aplică unei clase finite și integral examinate și oferă o concluzie certă, dar cu valoare informativă redusă. Inducția incompletă trece de la un număr limitat de cazuri la întreaga clasă și oferă doar probabilitate, în grade diferite."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "Consecință practică",
+          "text": "O strategie juridică bazată pe o analogie slabă sau pe o inducție incompletă precar susținută produce generalizări pripite și vulnerabilizează argumentul."
+        },
+        {
+          "type": "table",
+          "columns": ["Metodă", "Ideea centrală", "Schemă logică"],
+          "rows": [
+            ["Concordanței", "Factorul comun este cauza", "Situații diferite → același efect → factor comun"],
+            ["Diferenței", "Diferența explică efectul", "Situații identice ± factor → efect apare/dispare"],
+            ["Reziduurilor", "Ce rămâne explică ce rămâne", "Efect total − efecte cunoscute = cauză reziduală"],
+            ["Variațiilor concomitente", "Modificările corelate indică legătură cauzală", "Crește/scade A ↔ crește/scade B"]
+          ],
+          "footnote": "Metodele clasice de inducție urmăresc identificarea relațiilor cauzale."
+        }
+      ]
+    },
+    {
+      "id": "taxonomie-erori",
+      "title": "Taxonomia erorilor de argumentare",
+      "intro": "Nu toate erorile sunt deliberate; diferența dintre sofism și paralogism este și una etică, nu doar tehnică.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Erorile logice sunt încălcări ale regulilor de validitate. Sofismele sunt erori intenționate, construite pentru a induce în eroare, în timp ce paralogismele sunt erori neintenționate, rezultate din lipsa de rigoare sau cunoaștere insuficientă."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Sofismul are aparență de validitate și urmărește manipularea receptorului.",
+            "Paralogismul produce aceeași invaliditate, dar fără intenție de înșelare."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "title": "Dimensiunea profesională",
+          "text": "Identificarea sofismului nu înseamnă doar corectarea unei greșeli, ci și demascarea unei poziții formulate cu rea-credință."
+        }
+      ]
+    },
+    {
+      "id": "sofisme-limbaj",
+      "title": "Sofismele de limbaj și circularitatea",
+      "intro": "Limbajul imprecis transformă logica într-un mecanism de decepție și blochează evaluarea corectă a argumentului.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Echivocația: același termen este folosit cu sensuri diferite în același raționament.",
+            "Amfibolia: structura sintactică permite interpretări contradictorii.",
+            "Sofismul accentului: schimbarea accentului modifică nelegitim înțelesul enunțului.",
+            "Diviziunea: se transferă nejustificat o proprietate de la întreg la părți.",
+            "Compoziția: se transferă nejustificat o proprietate de la părți la întreg."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Petitio principii apare când teza de demonstrat este deja inclusă în premise, uneori mascată prin sinonime. Argumentul circular nu adaugă informație nouă și nu poate întemeia o concluzie."
+        },
+        {
+          "type": "callout",
+          "tone": "warning",
+          "title": "So what?",
+          "text": "Presupunerile ascunse și circularitatea subminează claritatea contractelor, rapoartelor și pledoariilor, înlocuind demonstrația cu o tautologie sofisticată."
+        }
+      ]
+    },
+    {
+      "id": "sofisme-relevanta",
+      "title": "Sofismele de relevanță",
+      "intro": "Aceste erori mută discuția de la teza reală la aspecte colaterale sau emoționale.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Ad hominem: atacul persoanei în locul ideii.",
+            "Ad ignorantiam: o propoziție este declarată adevărată doar pentru că nu s-a dovedit contrariul.",
+            "Ad misericordiam: se apelează la compasiune pentru a devia de la criteriile logice.",
+            "Ad baculum: se impune concluzia prin amenințare sau forță, nu prin argument."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Semnal ad hominem: discuția trece de la „ce se spune” la „cine spune”.",
+            "Semnal ad ignorantiam: apare formula „nu s-a demonstrat că este fals, deci este adevărat”.",
+            "Semnal ad misericordiam: evaluarea probelor este înlocuită de limbaj emoțional."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "accent",
+          "title": "Efectul asupra deliberării",
+          "text": "Erorile de relevanță deturnează analiza și degradează calitatea argumentării profesionale, chiar când discursul pare convingător."
+        }
+      ]
+    },
+    {
+      "id": "sinteza-aplicata",
+      "title": "Sinteza aplicată: identificarea și eliminarea erorilor",
+      "intro": "Detectarea sofismelor transformă logica într-un instrument de putere analitică și de igienă discursivă.",
+      "blocks": [
+        {
+          "type": "example",
+          "title": "Scenariul 1: analogie slabă",
+          "text": "„În Cauza X s-a admis proba Y, deci în Cauza Z trebuie admisă proba Y.” Eroarea apare dacă situațiile nu împart condițiile esențiale care justifică proba."
+        },
+        {
+          "type": "example",
+          "title": "Scenariul 2: circularitate mascată",
+          "text": "„Acuzatul este vinovat de malversațiuni deoarece a comis acte de corupție financiară.” Argumentul reia aceeași idee prin sinonime și nu aduce temei nou."
+        },
+        {
+          "type": "example",
+          "title": "Scenariul 3: ad ignorantiam",
+          "text": "„Apărarea nu a putut produce un alibi incontestabil, deci prezența la locul faptei este confirmată.” Absența alibiului nu dovedește automat prezența."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Verifică identitatea termenilor: sensurile rămân constante sau se schimbă prin echivocație?",
+            "În inducția incompletă, probele sunt suficiente și reprezentative pentru o inducție tare?",
+            "Concluzia analogică este proporțională cu asemănările demonstrate?",
+            "Concluzia se sprijină pe dovezi externe sau doar reformulează premisele?",
+            "Au fost eliminate elementele emoționale de tip ad misericordiam sau atacurile ad hominem?",
+            "Există premise ascunse care, odată formulate, ar slăbi argumentul?"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Trecerea de la intuiția argumentativă la rigoarea analitică se realizează prin stăpânirea legilor logice, prin înțelegerea caracterului amplificator al inducției și printr-un inventar critic al sofismelor. Logica devine astfel scutul împotriva manipulării."
+        }
+      ]
+    }
+  ]
+}

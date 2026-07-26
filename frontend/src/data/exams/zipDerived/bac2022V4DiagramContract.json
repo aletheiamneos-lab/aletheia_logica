@@ -1,0 +1,65 @@
+{
+  "examId": "bac_logica_2022_v4",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_ABCDE",
+      "diagramType": "euler",
+      "studentInput": "hybrid_canvas_upload",
+      "teacherModel": {
+        "relations": [
+          "A = B",
+          "C intersects B",
+          "C contrary to D",
+          "D subset of A/B",
+          "E subset of B and C"
+        ],
+        "note": "Se va reda o diagramă comună cu A și B identice; D inclus în A/B și separat de C; C intersectează A/B; E în intersecția B-C."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_eio_1_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "studentInput": "hybrid_canvas_upload",
+      "teacherModel": {
+        "scheme": [
+          "MeP",
+          "SiM",
+          "SoP"
+        ],
+        "validity": "valid",
+        "instructions": [
+          "Hașurează intersecția M-P pentru MeP.",
+          "Marchează x în S∩M pentru SiM.",
+          "Concluzia SoP rezultă din diagramă."
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aeo_4_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "studentInput": "hybrid_canvas_upload",
+      "teacherModel": {
+        "scheme": [
+          "PaM",
+          "MeS",
+          "SoP"
+        ],
+        "validity": "invalid",
+        "instructions": [
+          "Reprezintă PaM și MeS.",
+          "Concluzia SoP nu rezultă obligatoriu din diagramă."
+        ]
+      }
+    }
+  ]
+}

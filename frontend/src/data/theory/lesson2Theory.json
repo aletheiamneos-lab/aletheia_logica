@@ -1,0 +1,310 @@
+{
+  "lessonId": 2,
+  "title": "Lectia 2 - Raport Tehnic: Arhitectura Formelor Definitorii și Structura Propozițiilor Categorice",
+  "intro": "Lecția 2 mută accentul de la termen la definirea și clasificarea lui, apoi la propoziția categorică și la raporturile dintre formele A, E, I și O.",
+  "sections": [
+    {
+      "id": "definire",
+      "title": "Operația logică de definire",
+      "intro": "Definiția fixează esența conceptului și limitele lui de utilizare.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Definiția nu este o simplă descriere, ci operația logică de determinare a limitelor unui concept prin precizarea proprietăților sale esențiale. Ea reprezintă fundamentul demonstrației și al oricărei utilizări riguroase a termenilor."
+        },
+        {
+          "type": "formula",
+          "label": "Structura formală",
+          "expression": "A =df B",
+          "explanation": "A este definitul, noțiunea analizată, iar B este definitorul, expresia care îi relevă înțelesul sau extensiunea."
+        },
+        {
+          "type": "formula",
+          "label": "Modelul boethian",
+          "expression": "A = G.p. + d.s.",
+          "explanation": "Noțiunea este plasată în genul proxim și este desprinsă prin diferența specifică."
+        },
+        {
+          "type": "example",
+          "title": "Exemplu clasic",
+          "text": "„Omul este animalul înzestrat cu rațiune.” Genul este „animal”, iar diferența specifică este „înzestrat cu rațiune”."
+        }
+      ]
+    },
+    {
+      "id": "reguli-definitie",
+      "title": "Regulile de corectitudine și erorile definiției",
+      "intro": "O definiție validă trebuie să păstreze echivalența dintre definit și definitor.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Regula adecvării: definitorul și definitul trebuie să fie echivalente.",
+            "Evitarea circularității: definitorul nu se poate sprijini pe definit.",
+            "Caracterul afirmativ: definiția precizează ce este obiectul, nu doar ce nu este.",
+            "Claritatea și precizia: se evită limbajul metaforic sau obscur.",
+            "Consistența: definiția nu trebuie să intre în contradicție cu restul sistemului de cunoaștere."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Eroare",
+            "Cum apare",
+            "Exemplu"
+          ],
+          "rows": [
+            [
+              "Definiție prea largă",
+              "Definitorul este supraordonat definitului.",
+              "„Văzul este facultatea de a distinge corpurile”."
+            ],
+            [
+              "Definiție prea îngustă",
+              "Definitorul este subordonat definitului.",
+              "„Mamiferul este animalul vertebrat care naște pui vii”."
+            ],
+            [
+              "Definiție întretăiată",
+              "Definitul și definitorul se intersectează fără să coincidă.",
+              "„Ziaristul este omul care publică în gazetă”."
+            ],
+            [
+              "Definiție circulară",
+              "Termenul se explică prin el însuși.",
+              "„Agricultura este activitatea agricultorului”."
+            ]
+          ],
+          "footnote": "La examen, aceste erori apar frecvent sub formă de itemi de identificare."
+        }
+      ]
+    },
+    {
+      "id": "clasificare",
+      "title": "Clasificarea logică: sistematizare și organizare",
+      "intro": "Clasificarea transformă un domeniu eterogen într-un sistem coerent de clase și subsumpții.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Clasificarea este procesul de abstractizare prin care o multitudine de obiecte sunt grupate în clase pe baza unui criteriu comun. Ea trebuie distinsă de diviziune, care este operația descendentă de descompunere a unui gen în speciile sale."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Completitudinea: niciun obiect din domeniu nu trebuie să rămână în afara claselor.",
+            "Excluziunea reciprocă: pe același nivel, clasele trebuie să se excludă logic.",
+            "Unicitatea criteriului: pe aceeași treaptă se folosește un singur fundament de clasificare.",
+            "Omogenitatea: asemănările din interiorul clasei trebuie să fie mai relevante decât diferențele."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Tip de clasificare",
+            "Criteriu",
+            "Exemplu"
+          ],
+          "rows": [
+            [
+              "Naturală",
+              "Se bazează pe caractere esențiale.",
+              "Tabelul lui Mendeleev, organizat după numărul atomic."
+            ],
+            [
+              "Artificială / pragmatică",
+              "Se bazează pe utilitate sau convenție.",
+              "Ordonarea alfabetică a elevilor în catalog."
+            ]
+          ],
+          "footnote": "O clasificare corectă păstrează mereu același criteriu pe aceeași treaptă."
+        }
+      ]
+    },
+    {
+      "id": "propozitii-categorice",
+      "title": "Analiza propozițiilor categorice",
+      "intro": "Propoziția categorică exprimă un raport între doi termeni: subiectul logic și predicatul logic.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Structura formală a propoziției categorice este dată de cuantor, subiect logic, copulă și predicat logic. Din combinarea calității și cantității rezultă cele patru forme fundamentale A, E, I și O."
+        },
+        {
+          "type": "categorical_forms",
+          "forms": [
+            {
+              "symbol": "A",
+              "formula": "SaP",
+              "reading": "Universală afirmativă",
+              "quality": "Afirmativă",
+              "quantity": "Universală",
+              "visual": "inclusion",
+              "visualExplanation": "Toată sfera lui S intră în sfera lui P.",
+              "explanation": "Forma A spune că fiecare element din S aparține lui P.",
+              "examNote": "La examen, citești direct: „Toți S sunt P”."
+            },
+            {
+              "symbol": "E",
+              "formula": "SeP",
+              "reading": "Universală negativă",
+              "quality": "Negativă",
+              "quantity": "Universală",
+              "visual": "disjoint",
+              "visualExplanation": "Sferele lui S și P nu au niciun element comun.",
+              "explanation": "Forma E spune că niciun element din S nu intră în P.",
+              "examNote": "La examen, citești direct: „Niciun S nu este P”."
+            },
+            {
+              "symbol": "I",
+              "formula": "SiP",
+              "reading": "Particulară afirmativă",
+              "quality": "Afirmativă",
+              "quantity": "Particulară",
+              "visual": "overlap",
+              "visualExplanation": "Cele două sfere se întâlnesc parțial într-o zonă comună.",
+              "explanation": "Forma I spune că există cel puțin un S care este și P.",
+              "examNote": "La examen, citești direct: „Unii S sunt P”."
+            },
+            {
+              "symbol": "O",
+              "formula": "SoP",
+              "reading": "Particulară negativă",
+              "quality": "Negativă",
+              "quantity": "Particulară",
+              "visual": "partial-exclusion",
+              "visualExplanation": "Există cel puțin o zonă din S care rămâne în afara lui P.",
+              "explanation": "Forma O spune că există cel puțin un S care nu este P.",
+              "examNote": "La examen, citești direct: „Unii S nu sunt P”."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Tip",
+            "Simbol",
+            "Formulă",
+            "Citire standard",
+            "Calitate / cantitate"
+          ],
+          "rows": [
+            [
+              "Universală afirmativă",
+              "A",
+              "SaP",
+              "Toți S sunt P",
+              "Afirmativă universală"
+            ],
+            [
+              "Universală negativă",
+              "E",
+              "SeP",
+              "Niciun S nu este P",
+              "Negativă universală"
+            ],
+            [
+              "Particulară afirmativă",
+              "I",
+              "SiP",
+              "Unii S sunt P",
+              "Afirmativă particulară"
+            ],
+            [
+              "Particulară negativă",
+              "O",
+              "SoP",
+              "Unii S nu sunt P",
+              "Negativă particulară"
+            ]
+          ],
+          "footnote": "Aceste forme trebuie recunoscute și traduse instant în itemii de examen."
+        },
+        {
+          "type": "table",
+          "columns": [
+            "Formulare în limbaj natural",
+            "Formă logică",
+            "Observație"
+          ],
+          "rows": [
+            [
+              "Numai S sunt P",
+              "PaS",
+              "Predicatul este distribuit."
+            ],
+            [
+              "Doar S sunt P",
+              "PaS",
+              "Capcană frecventă de traducere."
+            ],
+            [
+              "Toți P sunt S",
+              "PaS",
+              "Echivalent logic cu „Numai S sunt P”."
+            ],
+            [
+              "Nimeni în afară de S nu este P",
+              "Pe¬S",
+              "Formă exceptivă."
+            ],
+            [
+              "Toți, în afară de S, nu sunt P",
+              "Pe¬S",
+              "Negare colectivă."
+            ]
+          ],
+          "footnote": "Formulele exclusive și exceptive cer traducere atentă pentru a nu altera valoarea de adevăr."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "„Numai S sunt P” se traduce prin PaS, adică „Toți P sunt S”.",
+            "„Numai S nu sunt P” se traduce prin PeS, adică „Niciun P nu este S”.",
+            "„Numai unii S sunt P” implică simultan SiP și SoP.",
+            "„Toți în afară de S sunt P” se traduce prin SeP."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reprezentare-grafica",
+      "title": "Reprezentarea grafică: metodele Euler și Venn",
+      "intro": "Propozițiile categorice devin mai ușor de controlat atunci când sunt vizualizate ca raporturi de extensiune.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "În SaP, sfera lui S este inclusă în sfera lui P.",
+            "În SeP, sferele lui S și P sunt separate complet.",
+            "În SiP, sferele se intersectează și au cel puțin un element comun.",
+            "În metoda Venn, regiunile vide se hașurează, iar regiunile ne-vide primesc un „x”."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Pentru SaP, în Venn se hașurează porțiunea din S care este în afara lui P. Pentru SeP, se hașurează intersecția S-P, semnalând că nu există obiecte comune."
+        }
+      ]
+    },
+    {
+      "id": "patratul-opozitiei",
+      "title": "Sinteză: corelația logică și Pătratul lui Boethius",
+      "intro": "Relațiile dintre A, E, I și O fixează modul în care valoarea de adevăr se transmite sau se blochează între propoziții.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "O eroare în definirea intensiunii unui termen alterează extensiunea lui, ceea ce compromite direct valoarea de adevăr a propozițiilor în care termenul apare. Pătratul Logic sintetizează aceste dependențe și permite deducții imediate."
+        },
+        {
+          "type": "opposition_square"
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "title": "Concluzie de etapă",
+          "text": "Rigoarea definițiilor și a clasificării susține direct coerența propozițiilor categorice și pregătește terenul pentru silogismele din lecția următoare."
+        }
+      ]
+    }
+  ]
+}

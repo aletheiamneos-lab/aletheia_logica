@@ -1,0 +1,66 @@
+{
+  "id": "teacher_solution_bac_logica_2016_v9",
+  "exam_id": "bac_logica_2016_v9",
+  "visibility": "teacher_only",
+  "source": "Barem oficial 2016 Varianta 9",
+  "answers": {
+    "I": {
+      "I.1": "b",
+      "I.2": "a",
+      "I.3": "d",
+      "I.4": "c",
+      "I.5": "b",
+      "I.6": "b",
+      "I.7": "a",
+      "I.8": "d",
+      "I.9": "b",
+      "I.10": "c"
+    },
+    "II.A": {
+      "formal": "SaP",
+      "explanation": "Propoziția 4 este universală afirmativă: Toți S sunt P."
+    },
+    "II.B": {
+      "subcontrara_p1_formal": "SoP",
+      "subcontrara_p1_natural": "Unele ipoteze științifice nu sunt confirmate.",
+      "supraalterna_p2_formal": "SeP",
+      "supraalterna_p2_natural": "Nicio piesă de mobilier nu este recondiționabilă."
+    },
+    "II.C": {
+      "p1_conversa": "PiS - Unele lucruri confirmate sunt ipoteze științifice.",
+      "p1_obversa": "So~P - Unele ipoteze științifice nu sunt neconfirmate.",
+      "p4_conversa": "PiS - Unele substanțe corozive sunt acizi.",
+      "p4_obversa": "Se~P - Niciun acid nu este substanță necorozivă."
+    },
+    "II.D": {
+      "diagram": "Euler: două clase disjuncte, S=infractori și P=nevinovați, fără intersecție."
+    },
+    "II.E": {
+      "X": "SoP → PoS. Raționament incorect; conversiunea propoziției de tip O este nevalidă.",
+      "Y": "SaP → PiS. Raționament corect; conversiune prin accident validă, cu respectarea legii distribuirii termenilor."
+    },
+    "III.A": {
+      "eio-1": "MeP / SiM / SoP - mod valid.",
+      "aee-2": "PaM / SeM / SeP - mod valid.",
+      "natural_example_eio1": "Niciun mamifer nu este pasăre. Unele balene sunt mamifere. Deci unele balene nu sunt păsări.",
+      "natural_example_aee2": "Toate pisicile sunt mamifere. Niciun pește nu este mamifer. Deci niciun pește nu este pisică."
+    },
+    "III.B": {
+      "formal": "MaP / SiM / SiP",
+      "natural": "Toate mamiferele sunt vertebrate. Unele animale terestre sunt mamifere. Deci unele animale terestre sunt vertebrate."
+    },
+    "III.C": {
+      "given_definition_error": "Definiția încalcă regula adecvării: este prea largă, deoarece nu doar pisicile sunt animale domestice.",
+      "rule_1": "Definiția nu trebuie să fie circulară.",
+      "bad_definition_1": "Pisica este un animal pisicesc. Definiția este circulară/neinformativă.",
+      "rule_2": "Definiția trebuie să fie clară și precisă.",
+      "bad_definition_2": "Pisica este o vietate cumva specială. Definiția este neclară și imprecisă."
+    }
+  },
+  "verification_checklist": [
+    "Răspunsurile Subiectului I au fost preluate din barem: 1-b, 2-a, 3-d, 4-c, 5-b, 6-b, 7-a, 8-d, 9-b, 10-c.",
+    "Subiectul II.A-E este construit pe cerințele oficiale și pe formele indicate în barem.",
+    "Subiectul III.A folosește schemele eio-1 și aee-2 din barem.",
+    "JSON-ul elevului nu conține soluții; soluțiile sunt doar în acest fișier teacher-only."
+  ]
+}

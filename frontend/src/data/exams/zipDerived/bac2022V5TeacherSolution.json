@@ -1,0 +1,405 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2022_v5",
+  "visibility": "teacher_only",
+  "examId": "bac_logica_2022_v5",
+  "title": "Rezolvare profesor - BAC Logică 2022 Varianta 5",
+  "source": "Barem oficial 2022 V5",
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_2",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_3",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_4",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_5",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_6",
+      "correctAnswer": {
+        "variant": "a"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_7",
+      "correctAnswer": {
+        "variant": "a"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_8",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_9",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_A_10",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_B_1",
+      "correctAnswer": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "text": "Diagrama Euler comună conform relațiilor: A și B în contrarietate; C supraordonat față de A și B; D inclus în E și intersectat cu C; E intersectat cu C, în opoziție cu A și B."
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "I_B_2_a",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_b",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_c",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_d",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_e",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_f",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_g",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "I_B_2_h",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "II_A_1",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toți oamenii de știință sunt superstițioși."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_A_2",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unele sucuri de fructe sunt băuturi răcoritoare dulci."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_A_3",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Nicio operă de artă nu este bun vândut la licitație."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_A_4",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unii profesori universitari sunt parlamentari."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_B_P2",
+      "correctAnswer": {
+        "converse_formal": "PiS",
+        "converse_natural": "Unele băuturi răcoritoare dulci sunt sucuri de fructe.",
+        "obverse_formal": "Se¬P",
+        "obverse_natural": "Niciun suc de fructe nu este non-băutură răcoritoare dulce."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_B_P3",
+      "correctAnswer": {
+        "converse_formal": "PiS",
+        "converse_natural": "Unele bunuri vândute la licitație sunt opere de artă.",
+        "obverse_formal": "So¬P",
+        "obverse_natural": "Unele opere de artă nu sunt non-bunuri vândute la licitație."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_C_1",
+      "correctAnswer": {
+        "formal": "Po¬S",
+        "natural": "Unii parlamentari nu sunt non-profesori universitari."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_C_2",
+      "correctAnswer": {
+        "formal": "Si¬P",
+        "natural": "Unii oameni de știință sunt non-superstițioși."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_D_X",
+      "correctAnswer": {
+        "formal": "SoP→PoS",
+        "decision": "incorrect",
+        "explanation": "Conversiunea propoziției O este nevalidă; se încalcă legea distribuirii termenilor, deoarece termenul S apare distribuit în concluzie, dar nu este distribuit în premisă."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "II_D_Y",
+      "correctAnswer": {
+        "formal": "SaP→Se¬P",
+        "decision": "correct",
+        "explanation": "Raționamentul este o obversiune validă."
+      },
+      "scoring": {
+        "points": "conform baremului"
+      }
+    },
+    {
+      "itemId": "III_A_1_oao_3",
+      "correctAnswer": {
+        "majorPremise": "MoP",
+        "minorPremise": "MaS",
+        "conclusion": "SoP"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "III_A_1_eee_4",
+      "correctAnswer": {
+        "majorPremise": "PeM",
+        "minorPremise": "MeS",
+        "conclusion": "SeP"
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "III_A_2_natural",
+      "correctAnswer": {
+        "example": "Unii artiști nu sunt pictori. Toți artiștii sunt creatori. Prin urmare, unii creatori nu sunt pictori."
+      },
+      "scoring": {
+        "points": 4
+      }
+    },
+    {
+      "itemId": "III_A_3_oao_3_venn",
+      "correctAnswer": {
+        "validityDecision": "invalid",
+        "diagramId": "diagram_III_A_oao_3_venn",
+        "explanation": "Modul oao-3 este nevalid; concluzia nu rezultă din reprezentarea premiselor."
+      },
+      "scoring": {
+        "points": 3
+      }
+    },
+    {
+      "itemId": "III_A_3_eee_4_venn",
+      "correctAnswer": {
+        "validityDecision": "invalid",
+        "diagramId": "diagram_III_A_eee_4_venn",
+        "explanation": "Modul eee-4 este nevalid; concluzia nu rezultă din reprezentarea premiselor."
+      },
+      "scoring": {
+        "points": 3
+      }
+    },
+    {
+      "itemId": "III_B",
+      "correctAnswer": {
+        "formal": "MeP / SaM // SeP",
+        "natural": "Nicio persoană bine pregătită nu este îngrijorată în legătură cu promovarea examenului de bacalaureat. Toți elevii conștiincioși sunt persoane bine pregătite. Prin urmare, niciun elev conștiincios nu este îngrijorat în legătură cu promovarea examenului de bacalaureat."
+      },
+      "scoring": {
+        "points": 6
+      }
+    },
+    {
+      "itemId": "III_C_1",
+      "correctAnswer": {
+        "value": "F"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "III_C_2",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "III_C_3",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "III_C_4",
+      "correctAnswer": {
+        "value": "A"
+      },
+      "scoring": {
+        "points": 1
+      }
+    },
+    {
+      "itemId": "III_D_1",
+      "correctAnswer": {
+        "rule": "Definiția încalcă regula evitării circularității, deoarece explică filosofia prin concepții filosofice."
+      },
+      "scoring": {
+        "points": 2
+      }
+    },
+    {
+      "itemId": "III_D_2",
+      "correctAnswer": {
+        "otherRule": "Regula clarității și preciziei / evitarea limbajului figurat.",
+        "badDefinition": "Filosofia este lumina adâncă a gândirii omenești."
+      },
+      "scoring": {
+        "points": 4
+      }
+    }
+  ]
+}

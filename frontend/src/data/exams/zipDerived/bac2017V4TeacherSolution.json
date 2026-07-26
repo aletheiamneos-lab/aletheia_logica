@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "id": "teacher-solution-bac-logica-2017-v4",
+    "title": "BAC Logică 2017 - Varianta 4 - Rezolvare profesor",
+    "visibility": "teacher_only",
+    "source": "official_barem_then_expanded_solution"
+  },
+  "official_keys": {
+    "S1A": [
+      "1-a",
+      "2-d",
+      "3-c",
+      "4-b",
+      "5-c",
+      "6-d",
+      "7-c",
+      "8-d",
+      "9-b",
+      "10-c"
+    ],
+    "S1B": [
+      "a-A",
+      "b-F",
+      "c-F",
+      "d-A",
+      "e-F",
+      "f-A"
+    ],
+    "S3A_validity": [
+      "aee-2 valid",
+      "aii-1 valid"
+    ]
+  },
+  "solutions": [
+    {
+      "id": "S1A",
+      "answer": "1-a, 2-d, 3-c, 4-b, 5-c, 6-d, 7-c, 8-d, 9-b, 10-c",
+      "points": "10 x 2p = 20p",
+      "explanation": "Răspunsurile sunt preluate din baremul oficial."
+    },
+    {
+      "id": "S1B",
+      "answer": "a-A, b-F, c-F, d-A, e-F, f-A",
+      "points": "6 x 1p = 6p + 4p diagrama Euler",
+      "explanation": "A este inclus în C. D este în opoziție cu A, dar se intersectează cu C. B este inclus în D și se intersectează cu C. Diagrama Euler trebuie să reflecte aceste raporturi."
+    },
+    {
+      "id": "S2A",
+      "answer": "1-SaP; 2-SoP",
+      "points": "2p",
+      "explanation": "Propoziția 1 este universal afirmativă; propoziția 2 este particular negativă."
+    },
+    {
+      "id": "S2B",
+      "answer": "Subalterna prop. 1: SiP - Unele pisici negre sunt domestice. Contradictoria prop. 2: SaP - Toate poeziile sunt apreciate de critici. Contrara prop. 3: SaP - Toate articolele științifice sunt ușor de citit. Subcontrara prop. 4: SoP - Unele piese de mobilier nu sunt vândute la licitație.",
+      "points": "8p",
+      "explanation": "Se aplică raporturile din pătratul opoziției: A are subalternă I; O are contradictorie A; E are contrară A; I are subcontrară O."
+    },
+    {
+      "id": "S2C",
+      "answer": "Prop. 1 SaP: conversa prin accident PiS - Unele domestice sunt pisici negre; obversa Se~P - Nicio pisică neagră nu este non-domestică. Prop. 3 SeP: conversa PeS - Niciun lucru ușor de citit nu este articol științific; obversa Sa~P - Toate articolele științifice sunt lucruri non-ușor-de-citit.",
+      "points": "8p",
+      "explanation": "A se convertește prin accident, E se convertește simplu. Obversiunea schimbă calitatea și înlocuiește predicatul cu contradictoriul său."
+    },
+    {
+      "id": "S2D",
+      "answer": "Obversa conversei propoziției 1: Po~S - Unele domestice nu sunt non-pisici negre.",
+      "points": "4p",
+      "explanation": "Din SaP se obține conversa prin accident PiS; obversa lui PiS este Po~S."
+    },
+    {
+      "id": "S2E",
+      "answer": "X: SeP -> Sa~P, obversiune validă. Y: SiP -> So~P, obversiune validă.",
+      "points": "8p",
+      "explanation": "Ambele raționamente sunt obversiuni valide, conform baremului."
+    },
+    {
+      "id": "S3A",
+      "answer": "aee-2: PaM / SeM / SeP - valid. aii-1: MaP / SiM / SiP - valid.",
+      "points": "14p",
+      "explanation": "Schemele și deciziile de validitate sunt cele indicate în barem; validitatea trebuie confirmată prin diagrame Venn."
+    },
+    {
+      "id": "S3B",
+      "answer": "Exemplu valid: Unele vertebrate sunt pești. Toți peștii sunt animale acvatice. Deci, unele vertebrate sunt animale acvatice. Formal: SiM; MaP; SiP.",
+      "points": "6p",
+      "explanation": "Silogismul justifică propoziția particular afirmativă dată și respectă forma validă corespunzătoare."
+    },
+    {
+      "id": "S3C",
+      "answer": "Termen minor: S = iphone 6. Premisa majoră: Toate lucrurile originale sunt scumpe.",
+      "points": "4p",
+      "explanation": "Termenul minor este subiectul concluziei; premisa majoră conține termenul major al concluziei."
+    },
+    {
+      "id": "S3D",
+      "answer": "Definiția încalcă regula definirii afirmative, deoarece definește prin negații/excluderi. Altă regulă posibilă: definiția nu trebuie să fie prea largă, prea îngustă, circulară sau metaforică. Exemplu de definiție greșită: Dealul este o formă de relief frumoasă.",
+      "points": "6p",
+      "explanation": "Baremul acceptă menționarea oricărei reguli încălcate de definiția dată și construirea unei definiții care încalcă o altă regulă de corectitudine."
+    }
+  ]
+}

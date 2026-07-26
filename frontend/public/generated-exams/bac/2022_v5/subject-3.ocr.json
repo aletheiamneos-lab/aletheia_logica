@@ -1,0 +1,344 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1679.2955322265625,
+      "y": 214.60986328125,
+      "score": 0.9794964641332626,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1327.9888916015625,
+      "y": 279.4919128417969,
+      "score": 0.9674627793596146,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind dela aceastasituatie:",
+      "x": 568.0703125,
+      "y": 394.28326416015625,
+      "score": 0.9669334189645176,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 667.7317504882812,
+      "y": 504.0836486816406,
+      "score": 0.9825514791146764,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3029.708251953125,
+      "y": 504.0836486816406,
+      "score": 0.9967182278633118,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+      "x": 662.7486572265625,
+      "y": 573.9566040039062,
+      "score": 0.9815233972635162,
+      "page_number": 3
+    },
+    {
+      "text": "2puncte",
+      "x": 2877.724609375,
+      "y": 653.8114624023438,
+      "score": 0.998311630317143,
+      "page_number": 3
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+      "x": 667.7317504882812,
+      "y": 656.3069458007812,
+      "score": 0.9750967442989349,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 503.29034423828125,
+      "y": 788.5665283203125,
+      "score": 0.8920155564943949,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2852.80908203125,
+      "y": 801.0438232421875,
+      "score": 0.9840113719304403,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fieurmatoareledouamodurisilogistice:oao-3,eee-4.",
+      "x": 505.7818908691406,
+      "y": 873.4122924804688,
+      "score": 0.9909928631782532,
+      "page_number": 3
+    },
+    {
+      "text": "1.Scrieti schema deinferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 585.5110473632812,
+      "y": 948.2761840820312,
+      "score": 0.9688621401786804,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 588.0025634765625,
+      "y": 1023.1400756835938,
+      "score": 0.9760690435119297,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 590.494140625,
+      "y": 1098.0040283203125,
+      "score": 0.9862747887770335,
+      "page_number": 3
+    },
+    {
+      "text": "8puncte",
+      "x": 3014.759033203125,
+      "y": 1098.0040283203125,
+      "score": 0.9986768024308341,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 583.01953125,
+      "y": 1167.876953125,
+      "score": 0.9865134629336271,
+      "page_number": 3
+    },
+    {
+      "text": "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+      "x": 590.494140625,
+      "y": 1247.7318115234375,
+      "score": 0.9870753905989907,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3017.25048828125,
+      "y": 1242.7408447265625,
+      "score": 0.967828743159771,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+      "x": 505.7818908691406,
+      "y": 1312.6138916015625,
+      "score": 0.9864480410303388,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia “Niciun elev constincios nu este ingrijorat in legatura cu promovarea examenului de",
+      "x": 583.01953125,
+      "y": 1387.477783203125,
+      "score": 0.9684645952062404,
+      "page_number": 3
+    },
+    {
+      "text": "bacalaureat\"",
+      "x": 590.494140625,
+      "y": 1464.837158203125,
+      "score": 0.9863914300998052,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3042.166015625,
+      "y": 1467.3326416015625,
+      "score": 0.9968368262052536,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fie urmatorul silogism:Niciun automobil electric nu este poluant,intrucat niciun automobil",
+      "x": 503.29034423828125,
+      "y": 1532.214599609375,
+      "score": 0.9649366814157238,
+      "page_number": 3
+    },
+    {
+      "text": "electricnuestevehiculgeneratordegazenocive,iartoatevehiculelegeneratoaredegaze",
+      "x": 588.0025634765625,
+      "y": 1609.573974609375,
+      "score": 0.9936311512421339,
+      "page_number": 3
+    },
+    {
+      "text": "nocivesuntpoluante.",
+      "x": 590.494140625,
+      "y": 1689.4288330078125,
+      "score": 0.9958431752104508,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 508.2734069824219,
+      "y": 1759.3018798828125,
+      "score": 0.9549052620878314,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 500.7987976074219,
+      "y": 1829.1748046875,
+      "score": 0.9742784670421055,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenul majoreste distribuit in premisa majora.",
+      "x": 588.0025634765625,
+      "y": 1906.5341796875,
+      "score": 0.961819304227829,
+      "page_number": 3
+    },
+    {
+      "text": "2. Subiectul logic al concluziei este reprezentat de termenul ,automobil electric\"",
+      "x": 585.5110473632812,
+      "y": 1978.902587890625,
+      "score": 0.9827765749721993,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala negativa.",
+      "x": 583.01953125,
+      "y": 2051.27099609375,
+      "score": 0.9826866229996085,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3029.708251953125,
+      "y": 2116.153076171875,
+      "score": 0.9973934814333916,
+      "page_number": 3
+    },
+    {
+      "text": "4.Termenul mediu este distribuit inpremisa minora.",
+      "x": 585.5110473632812,
+      "y": 2126.135009765625,
+      "score": 0.9774311816692353,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 505.7818908691406,
+      "y": 2198.50341796875,
+      "score": 0.9805140980967769,
+      "page_number": 3
+    },
+    {
+      "text": "Filosofiaestedisciplinacarestudiazaconceptilefilosofice.",
+      "x": 590.494140625,
+      "y": 2270.871826171875,
+      "score": 0.9944230828966413,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 580.5279541015625,
+      "y": 2343.240234375,
+      "score": 0.9723628643486235,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3029.708251953125,
+      "y": 2345.73583984375,
+      "score": 0.9886711463332176,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 580.5279541015625,
+      "y": 2415.60888671875,
+      "score": 0.9776260298490524,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,filosofie\"",
+      "x": 707.5963134765625,
+      "y": 2497.958984375,
+      "score": 0.9560930132865906,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3022.233642578125,
+      "y": 2492.96826171875,
+      "score": 0.9920933619141579,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 503.29034423828125,
+      "y": 4693.96728515625,
+      "score": 0.9634518225987753,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 5",
+      "x": 2907.623046875,
+      "y": 4693.96728515625,
+      "score": 0.9631604969501495,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1741.583984375,
+      "y": 4753.8583984375,
+      "score": 0.9859960121767861,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "Pornind dela aceastasituatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+    "2puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+    "SUBIECTULalIII-lea",
+    "(30depuncte)",
+    "A.Fieurmatoareledouamodurisilogistice:oao-3,eee-4.",
+    "1.Scrieti schema deinferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+    "propozitia “Niciun elev constincios nu este ingrijorat in legatura cu promovarea examenului de",
+    "bacalaureat\"",
+    "6 puncte",
+    "C.Fie urmatorul silogism:Niciun automobil electric nu este poluant,intrucat niciun automobil",
+    "electricnuestevehiculgeneratordegazenocive,iartoatevehiculelegeneratoaredegaze",
+    "nocivesuntpoluante.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenul majoreste distribuit in premisa majora.",
+    "2. Subiectul logic al concluziei este reprezentat de termenul ,automobil electric\"",
+    "3. Concluzia silogismului este o propozitie universala negativa.",
+    "4 puncte",
+    "4.Termenul mediu este distribuit inpremisa minora.",
+    "D.Fie urmatoarea definitie:",
+    "Filosofiaestedisciplinacarestudiazaconceptilefilosofice.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,filosofie\"",
+    "4 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 5",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nPornind dela aceastasituatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte\n2puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.\nSUBIECTULalIII-lea\n(30depuncte)\nA.Fieurmatoareledouamodurisilogistice:oao-3,eee-4.\n1.Scrieti schema deinferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogisticedate,precizandtotodatadecizialacareatiajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati\npropozitia “Niciun elev constincios nu este ingrijorat in legatura cu promovarea examenului de\nbacalaureat\"\n6 puncte\nC.Fie urmatorul silogism:Niciun automobil electric nu este poluant,intrucat niciun automobil\nelectricnuestevehiculgeneratordegazenocive,iartoatevehiculelegeneratoaredegaze\nnocivesuntpoluante.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenul majoreste distribuit in premisa majora.\n2. Subiectul logic al concluziei este reprezentat de termenul ,automobil electric\"\n3. Concluzia silogismului este o propozitie universala negativa.\n4 puncte\n4.Termenul mediu este distribuit inpremisa minora.\nD.Fie urmatoarea definitie:\nFilosofiaestedisciplinacarestudiazaconceptilefilosofice.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,filosofie\"\n4 puncte\nProba scrisa la logica,argumentare si comunicare\nVarianta 5\nPagina 3 din 3"
+}

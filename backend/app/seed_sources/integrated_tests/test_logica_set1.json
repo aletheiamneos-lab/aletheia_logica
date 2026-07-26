@@ -1,0 +1,787 @@
+{
+  "schema_version": "1.0",
+  "test_id": "logica_25_structura_standard_v1",
+  "title": "Test de logică - 25 întrebări",
+  "description": "Set standardizat pentru aplicație educațională. Include justificări, metadate pentru evaluare și câmpuri pregătite pentru generarea ulterioară a rapoartelor PDF.",
+  "language": "ro",
+  "subject": "Logica",
+  "intended_use": [
+    "antrenament",
+    "evaluare",
+    "raportare PDF"
+  ],
+  "scoring": {
+    "correct_points": 1,
+    "incorrect_points": 0,
+    "unanswered_points": 0,
+    "max_score": 25,
+    "passing_threshold_suggestion": 15
+  },
+  "report_template_fields": {
+    "student_id": null,
+    "student_name": null,
+    "class_name": null,
+    "test_started_at": null,
+    "test_finished_at": null,
+    "duration_seconds": null,
+    "score": null,
+    "max_score": 25,
+    "percentage": null,
+    "category_breakdown": [],
+    "answers": []
+  },
+  "categories": [
+    {
+      "name": "Definiții",
+      "question_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Clasificare",
+      "question_ids": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "name": "Propoziții categorice și distribuire",
+      "question_ids": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "name": "Raționamente și silogisme",
+      "question_ids": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "name": "Erori de raționament",
+      "question_ids": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definiții",
+      "question": "Care dintre următoarele definiții este corectă din punct de vedere logic?",
+      "options": {
+        "A": "Omul este o ființă.",
+        "B": "Omul este o ființă rațională.",
+        "C": "Omul este ceea ce gândește.",
+        "D": "Omul este un animal sau plantă.",
+        "E": "Omul nu este animal."
+      },
+      "correct_answer": "B",
+      "justification": "Definiția este corectă deoarece respectă modelul clasic gen proxim + diferență specifică: „ființă” indică genul, iar „rațională” indică nota distinctivă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 2,
+      "category": "Definiții",
+      "question": "Care dintre următoarele definiții este circulară?",
+      "options": {
+        "A": "Legea este o normă juridică.",
+        "B": "Contractul este un acord de voință.",
+        "C": "Legea este ceea ce este legal.",
+        "D": "Omul este un animal rațional.",
+        "E": "Dreptul este un sistem de norme."
+      },
+      "correct_answer": "C",
+      "justification": "Este circulară deoarece termenul „lege” este explicat prin „legal”, adică printr-un termen derivat din aceeași rădăcină conceptuală, fără informație nouă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 3,
+      "category": "Definiții",
+      "question": "Ce eroare conține definiția „Câinele este un animal”?",
+      "options": {
+        "A": "Circularitate",
+        "B": "Prea restrânsă",
+        "C": "Prea largă",
+        "D": "Metaforică",
+        "E": "Contradictorie"
+      },
+      "correct_answer": "C",
+      "justification": "Definiția este prea largă deoarece extensiunea lui „animal” este mult mai mare decât extensiunea noțiunii „câine”.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 4,
+      "category": "Definiții",
+      "question": "Care dintre următoarele definiții este prea restrânsă?",
+      "options": {
+        "A": "Triunghiul este un poligon.",
+        "B": "Triunghiul este un poligon cu trei laturi.",
+        "C": "Câinele este un animal mic.",
+        "D": "Omul este o ființă rațională.",
+        "E": "Contractul este un acord juridic."
+      },
+      "correct_answer": "C",
+      "justification": "Definiția este prea restrânsă deoarece exclude câinii de talie medie sau mare, deci nu acoperă întreaga clasă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 5,
+      "category": "Definiții",
+      "question": "Ce regulă NU este respectată în enunțul „Inima este motorul vieții”?",
+      "options": {
+        "A": "Adecvarea",
+        "B": "Claritatea logică",
+        "C": "Evitarea circularității",
+        "D": "Evitarea limbajului figurat",
+        "E": "Consistența formală"
+      },
+      "correct_answer": "D",
+      "justification": "Enunțul este metaforic. O definiție logică trebuie să evite limbajul figurat și să fixeze sensul în mod precis.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 6,
+      "category": "Clasificare",
+      "question": "Care dintre următoarele clasificări este corectă?",
+      "options": {
+        "A": "Studenții se clasifică în tineri, la drept și inteligenți.",
+        "B": "Vehiculele se clasifică în rapide, electrice și mari.",
+        "C": "Persoanele se clasifică în minori și majori.",
+        "D": "Animalele se clasifică în domestice și carnivore.",
+        "E": "Elevii se clasifică în buni și înalți."
+      },
+      "correct_answer": "C",
+      "justification": "Clasificarea este corectă deoarece folosește un criteriu unic, este reciproc exclusivă și acoperă complet domeniul juridic vizat.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 7,
+      "category": "Clasificare",
+      "question": "Ce eroare apare în clasificarea „Animalele sunt domestice, sălbatice și carnivore”?",
+      "options": {
+        "A": "Incompletitudine",
+        "B": "Suprapunere totală",
+        "C": "Folosirea mai multor criterii",
+        "D": "Circularitate",
+        "E": "Contradicție formală"
+      },
+      "correct_answer": "C",
+      "justification": "Se amestecă două criterii diferite: mediul/raportarea la om (domestice, sălbatice) și hrana (carnivore).",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 8,
+      "category": "Clasificare",
+      "question": "O clasificare este incompletă atunci când:",
+      "options": {
+        "A": "are prea multe clase",
+        "B": "nu folosește niciun criteriu explicit",
+        "C": "nu include toate elementele domeniului",
+        "D": "clasele sunt prea mari",
+        "E": "clasele sunt abstracte"
+      },
+      "correct_answer": "C",
+      "justification": "Completitudinea cere ca toate elementele domeniului să poată fi încadrate într-o clasă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 9,
+      "category": "Clasificare",
+      "question": "Care este criteriul de clasificare în expresia „vehicule cu motor / vehicule fără motor”?",
+      "options": {
+        "A": "Dimensiunea",
+        "B": "Utilitatea",
+        "C": "Modul de propulsie",
+        "D": "Forma exterioară",
+        "E": "Viteza maximă"
+      },
+      "correct_answer": "C",
+      "justification": "Clasele sunt construite în funcție de existența sau absența motorului, deci după modul de propulsie.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 10,
+      "category": "Clasificare",
+      "question": "Care clasificare încalcă regula excluderii reciproce?",
+      "options": {
+        "A": "Elevii: gimnaziu / liceu",
+        "B": "Persoanele: minori / majori",
+        "C": "Studenții: bursieri / sportivi",
+        "D": "Animalele: vertebrate / nevertebrate",
+        "E": "Numerele: pare / impare"
+      },
+      "correct_answer": "C",
+      "justification": "Aceleași persoane pot fi și bursieri, și sportivi, deci clasele se suprapun.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 11,
+      "category": "Propoziții categorice și distribuire",
+      "question": "Propoziția „Toți elevii sunt inteligenți” este de tip:",
+      "options": {
+        "A": "E",
+        "B": "I",
+        "C": "O",
+        "D": "A",
+        "E": "Propoziție singulară"
+      },
+      "correct_answer": "D",
+      "justification": "Are forma „Toți S sunt P”, adică universală afirmativă, notată A.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 12,
+      "category": "Propoziții categorice și distribuire",
+      "question": "Propoziția „Unii elevi nu sunt sportivi” este de tip:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "Universală negativă"
+      },
+      "correct_answer": "D",
+      "justification": "Are forma „Unii S nu sunt P”, adică particulară negativă, notată O.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 13,
+      "category": "Propoziții categorice și distribuire",
+      "question": "În propoziția de tip A (SaP), termenul distribuit este:",
+      "options": {
+        "A": "Predicatul P",
+        "B": "Niciun termen",
+        "C": "Subiectul S",
+        "D": "Ambii termeni",
+        "E": "Depinde de context"
+      },
+      "correct_answer": "C",
+      "justification": "În universal afirmativă, subiectul este luat în întreaga extensiune, iar predicatul rămâne nedistribuit.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 14,
+      "category": "Propoziții categorice și distribuire",
+      "question": "Care tip de propoziție are ambii termeni distribuiți?",
+      "options": {
+        "A": "A",
+        "B": "I",
+        "C": "O",
+        "D": "E",
+        "E": "Niciuna"
+      },
+      "correct_answer": "D",
+      "justification": "În propoziția E („Niciun S nu este P”), atât subiectul, cât și predicatul sunt distribuiți.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 15,
+      "category": "Propoziții categorice și distribuire",
+      "question": "Enunțul „Numai elevii sunt sportivi” se traduce logic prin:",
+      "options": {
+        "A": "SaP",
+        "B": "PaS",
+        "C": "SiP",
+        "D": "SoP",
+        "E": "SeP"
+      },
+      "correct_answer": "B",
+      "justification": "Formulele cu „numai” se traduc prin inversarea relației aparente: „Numai S sunt P” devine „Toți P sunt S” (PaS).",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 16,
+      "category": "Raționamente și silogisme",
+      "question": "Ce tip de raționament garantează adevărul concluziei dacă premisele sunt adevărate și forma este validă?",
+      "options": {
+        "A": "Inductiv",
+        "B": "Analogic",
+        "C": "Deductiv",
+        "D": "Probabil",
+        "E": "Sofistic"
+      },
+      "correct_answer": "C",
+      "justification": "Doar raționamentul deductiv conferă concluziei necesitate logică, nu doar probabilitate.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 17,
+      "category": "Raționamente și silogisme",
+      "question": "În silogism, termenul mediu:",
+      "options": {
+        "A": "apare în concluzie",
+        "B": "nu apare în premise",
+        "C": "apare numai în premise",
+        "D": "este identic cu termenul major",
+        "E": "este opțional"
+      },
+      "correct_answer": "C",
+      "justification": "Termenul mediu are rol de legătură între termenii extremi și, tocmai de aceea, nu apare în concluzie.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 18,
+      "category": "Raționamente și silogisme",
+      "question": "Un silogism categoric standard are:",
+      "options": {
+        "A": "o singură premisă",
+        "B": "două premise și o concluzie",
+        "C": "trei premise și o concluzie",
+        "D": "două concluzii și o premisă",
+        "E": "un număr variabil de premise"
+      },
+      "correct_answer": "B",
+      "justification": "Structura standard a silogismului este: premisă majoră, premisă minoră, concluzie.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 19,
+      "category": "Raționamente și silogisme",
+      "question": "Dacă una dintre premisele silogismului este negativă, concluzia trebuie să fie:",
+      "options": {
+        "A": "Afirmativă",
+        "B": "Universală",
+        "C": "Negativă",
+        "D": "Singulară",
+        "E": "Nedeterminată"
+      },
+      "correct_answer": "C",
+      "justification": "Aceasta este una dintre legile clasice ale silogismului: o premisă negativă impune o concluzie negativă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 20,
+      "category": "Raționamente și silogisme",
+      "question": "Din două premise particulare:",
+      "options": {
+        "A": "rezultă o concluzie universală",
+        "B": "rezultă o concluzie particulară",
+        "C": "nu rezultă concluzie validă",
+        "D": "rezultă orice concluzie dacă termenii coincid",
+        "E": "rezultă concluzie negativă"
+      },
+      "correct_answer": "C",
+      "justification": "Două premise particulare nu oferă informație suficientă pentru a susține o concluzie validă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 21,
+      "category": "Erori de raționament",
+      "question": "Ce problemă logică apare atunci când termenul mediu nu este distribuit în nicio premisă?",
+      "options": {
+        "A": "Contradicție formală",
+        "B": "Lipsa legăturii logice dintre termenii extremi",
+        "C": "Circularitate",
+        "D": "Echivocație semantică",
+        "E": "Generalizare corectă"
+      },
+      "correct_answer": "B",
+      "justification": "Dacă termenul mediu nu este distribuit, el nu leagă efectiv termenul major de termenul minor; concluzia rămâne nejustificată.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 22,
+      "category": "Erori de raționament",
+      "question": "Ce eroare apare când un termen este distribuit în concluzie fără să fi fost distribuit în premisă?",
+      "options": {
+        "A": "Distribuire ilegală",
+        "B": "Amfibolie",
+        "C": "Contradicție",
+        "D": "Falsă cauză",
+        "E": "Sofism afectiv"
+      },
+      "correct_answer": "A",
+      "justification": "Este vorba despre ilicita distribuire a termenului, adică extinderea nejustificată a sferei sale în concluzie.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 23,
+      "category": "Erori de raționament",
+      "question": "Sofismul echivocației apare atunci când:",
+      "options": {
+        "A": "se folosesc termeni inexistenți",
+        "B": "același termen este folosit cu sensuri diferite",
+        "C": "concluzia este prea scurtă",
+        "D": "premisele sunt prea multe",
+        "E": "termenii sunt toți concreți"
+      },
+      "correct_answer": "B",
+      "justification": "Echivocația constă în schimbarea sensului unui termen pe parcursul argumentării, ceea ce rupe identitatea semantică.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 24,
+      "category": "Erori de raționament",
+      "question": "Din două premise negative:",
+      "options": {
+        "A": "rezultă o concluzie negativă",
+        "B": "nu rezultă concluzie validă",
+        "C": "rezultă o concluzie afirmativă",
+        "D": "rezultă o concluzie probabilă",
+        "E": "rezultă o tautologie"
+      },
+      "correct_answer": "B",
+      "justification": "Două premise negative nu creează punte logică între termenii extremi, deci nu susțin o concluzie validă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    },
+    {
+      "id": 25,
+      "category": "Erori de raționament",
+      "question": "Care este eroarea în inferența „Unii oameni sunt bogați, deci toți oamenii sunt bogați”?",
+      "options": {
+        "A": "Deducție validă",
+        "B": "Generalizare nejustificată",
+        "C": "Analogie perfectă",
+        "D": "Contradicție directă",
+        "E": "Distribuire corectă"
+      },
+      "correct_answer": "B",
+      "justification": "Se trece nelegitim de la o afirmație particulară la una universală. Aceasta este o generalizare abuzivă.",
+      "points": 1,
+      "option_order": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "reporting": {
+        "student_answer": null,
+        "is_correct": null,
+        "earned_points": 0,
+        "feedback_short": null
+      }
+    }
+  ]
+}

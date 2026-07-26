@@ -1,0 +1,312 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1619.5738525390625,
+      "y": 151.2051544189453,
+      "score": 0.9776044547557831,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul National dePolitici si EvaluareinEducatie",
+      "x": 1241.7613525390625,
+      "y": 214.87046813964844,
+      "score": 0.9709362776911988,
+      "page_number": 3
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 478.2102355957031,
+      "y": 363.42291259765625,
+      "score": 0.9733352142351644,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti,inlimbaj formal,opinile celor doielevi;",
+      "x": 589.1761474609375,
+      "y": 448.30999755859375,
+      "score": 0.9709598458543116,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3019.85791015625,
+      "y": 445.65728759765625,
+      "score": 0.9439964517951012,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+      "x": 578.6079711914062,
+      "y": 522.586181640625,
+      "score": 0.9930699725945791,
+      "page_number": 3
+    },
+    {
+      "text": "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+      "x": 581.25,
+      "y": 607.4733276367188,
+      "score": 0.9784948460080407,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2890.397705078125,
+      "y": 785.2056884765625,
+      "score": 0.993636816740036,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.6022644042969,
+      "y": 787.8583984375,
+      "score": 0.9133508404095968,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele doua modurisilogistice:aii-3,eae-2.",
+      "x": 409.5170593261719,
+      "y": 864.787353515625,
+      "score": 0.9686574081204972,
+      "page_number": 3
+    },
+    {
+      "text": "1.Scrietischemade inferentä corespunzatoarefiecaruia dintre cele doua moduri",
+      "x": 499.3465881347656,
+      "y": 944.3690185546875,
+      "score": 0.9521963388512009,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia",
+      "x": 501.9886474609375,
+      "y": 1023.9506225585938,
+      "score": 0.9798082503779181,
+      "page_number": 3
+    },
+    {
+      "text": "dintreceledouaschemedeinferenta.",
+      "x": 501.9886474609375,
+      "y": 1103.5323486328125,
+      "score": 0.9922234136611223,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3070.056884765625,
+      "y": 1103.5323486328125,
+      "score": 0.9946727752685547,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua",
+      "x": 494.0625,
+      "y": 1177.8084716796875,
+      "score": 0.9798995969088181,
+      "page_number": 3
+    },
+    {
+      "text": "moduri silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 494.0625,
+      "y": 1257.39013671875,
+      "score": 0.9791384049824305,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.92041015625,
+      "y": 1257.39013671875,
+      "score": 0.9989662244915962,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+      "x": 412.1590881347656,
+      "y": 1334.319091796875,
+      "score": 0.9894620185806637,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia,Unelesilogismenusuntrationamentevalide\"",
+      "x": 499.3465881347656,
+      "y": 1419.2061767578125,
+      "score": 0.9855852329730987,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.92041015625,
+      "y": 1421.85888671875,
+      "score": 0.990721307694912,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorul silogism:,Dacaunele actiuni umane sunt intentionate,atunci unele actiuni",
+      "x": 414.8011474609375,
+      "y": 1490.8297119140625,
+      "score": 0.9577816615159485,
+      "page_number": 3
+    },
+    {
+      "text": "umanesuntvoluntare,avandinvederecatoateactiunileintentionatesuntvoluntare\"",
+      "x": 499.3465881347656,
+      "y": 1575.716796875,
+      "score": 0.980615580404127,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 361.9602355957031,
+      "y": 1649.9930419921875,
+      "score": 0.9662801030248699,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 359.31817626953125,
+      "y": 1726.9219970703125,
+      "score": 0.9679219176371893,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenulmediuestedistribuitinambelepremise.",
+      "x": 449.1477355957031,
+      "y": 1806.503662109375,
+      "score": 0.9949286593331231,
+      "page_number": 3
+    },
+    {
+      "text": "2. Concluzia silogismului este o propozitie particulara afirmativa.",
+      "x": 446.50567626953125,
+      "y": 1880.77978515625,
+      "score": 0.9737235200938894,
+      "page_number": 3
+    },
+    {
+      "text": "3.Predicatul logic al concluzieiestereprezentat determenul,actiuni intentionate\"",
+      "x": 454.43182373046875,
+      "y": 1963.01416015625,
+      "score": 0.9792015507817269,
+      "page_number": 3
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+      "x": 451.789794921875,
+      "y": 2039.943115234375,
+      "score": 0.9933549795638431,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3051.5625,
+      "y": 2116.8720703125,
+      "score": 0.9803894385695457,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 412.1590881347656,
+      "y": 2196.45361328125,
+      "score": 0.9809558237040484,
+      "page_number": 3
+    },
+    {
+      "text": "\"Silogismulesteformaidealaarationamentului\"",
+      "x": 499.3465881347656,
+      "y": 2281.3408203125,
+      "score": 0.9823042778081672,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionatioregulade corectitudine pe careoincalca definitia data.",
+      "x": 496.7045593261719,
+      "y": 2358.269775390625,
+      "score": 0.964668166281572,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3051.5625,
+      "y": 2358.269775390625,
+      "score": 0.9866723343729973,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul",
+      "x": 494.0625,
+      "y": 2432.5458984375,
+      "score": 0.9785570686625451,
+      "page_number": 3
+    },
+    {
+      "text": "a. si construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\". 4 puncte",
+      "x": 626.164794921875,
+      "y": 2514.7802734375,
+      "score": 0.9701773372102291,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 364.6022644042969,
+      "y": 4939.3681640625,
+      "score": 0.9868963883847607,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta1",
+      "x": 3038.352294921875,
+      "y": 4942.02099609375,
+      "score": 0.9981035590171814,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina3din3",
+      "x": 1659.20458984375,
+      "y": 5013.64453125,
+      "score": 0.9993052807721224,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul National dePolitici si EvaluareinEducatie",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti,inlimbaj formal,opinile celor doielevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte",
+    "c.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+    "(30depuncte)",
+    "SUBIECTULalIII-lea",
+    "A.Fie urmatoarele doua modurisilogistice:aii-3,eae-2.",
+    "1.Scrietischemade inferentä corespunzatoarefiecaruia dintre cele doua moduri",
+    "silogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia",
+    "dintreceledouaschemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua",
+    "moduri silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+    "propozitia,Unelesilogismenusuntrationamentevalide\"",
+    "6 puncte",
+    "C.Fieurmatorul silogism:,Dacaunele actiuni umane sunt intentionate,atunci unele actiuni",
+    "umanesuntvoluntare,avandinvederecatoateactiunileintentionatesuntvoluntare\"",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenulmediuestedistribuitinambelepremise.",
+    "2. Concluzia silogismului este o propozitie particulara afirmativa.",
+    "3.Predicatul logic al concluzieiestereprezentat determenul,actiuni intentionate\"",
+    "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+    "4 puncte",
+    "D.Fie urmatoarea definitie:",
+    "\"Silogismulesteformaidealaarationamentului\"",
+    "a.Mentionatioregulade corectitudine pe careoincalca definitia data.",
+    "2 puncte",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul",
+    "a. si construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\". 4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta1",
+    "Pagina3din3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul National dePolitici si EvaluareinEducatie\nPorninddelaaceastasituatie:\na.scrieti,inlimbaj formal,opinile celor doielevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate; 2 puncte\nc.explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte\n(30depuncte)\nSUBIECTULalIII-lea\nA.Fie urmatoarele doua modurisilogistice:aii-3,eae-2.\n1.Scrietischemade inferentä corespunzatoarefiecaruia dintre cele doua moduri\nsilogistice date si construiti, in limbaj natural, un silogism care sa corespunda uneia\ndintreceledouaschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua\nmoduri silogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati\npropozitia,Unelesilogismenusuntrationamentevalide\"\n6 puncte\nC.Fieurmatorul silogism:,Dacaunele actiuni umane sunt intentionate,atunci unele actiuni\numanesuntvoluntare,avandinvederecatoateactiunileintentionatesuntvoluntare\"\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenulmediuestedistribuitinambelepremise.\n2. Concluzia silogismului este o propozitie particulara afirmativa.\n3.Predicatul logic al concluzieiestereprezentat determenul,actiuni intentionate\"\n4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.\n4 puncte\nD.Fie urmatoarea definitie:\n\"Silogismulesteformaidealaarationamentului\"\na.Mentionatioregulade corectitudine pe careoincalca definitia data.\n2 puncte\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul\na. si construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\". 4 puncte\nProba scrisa la logica, argumentare si comunicare\nVarianta1\nPagina3din3"
+}

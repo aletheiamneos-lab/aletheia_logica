@@ -1,0 +1,59 @@
+{
+  "examId": "bac_logica_2024_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms_2024_model",
+      "diagramType": "euler_relation_map",
+      "studentMode": "hybrid_canvas_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A and B are identical",
+        "C is included in A and B",
+        "D is included in B and intersects C",
+        "E intersects A and is opposed to C and D"
+      ],
+      "teacherExplanation": "A și B au aceeași sferă. C este inclus în A/B. D este inclus în B și se încrucișează cu C. E se încrucișează cu A/B, dar este în contrarietate cu C și D."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eio_2_venn_2024_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eio-2",
+      "schema": [
+        "PeM",
+        "SiM",
+        "SoP"
+      ],
+      "validity": "valid",
+      "teacherExplanation": "Se reprezintă premisa universal negativă PeM, apoi premisa particular afirmativă SiM; rezultă zona S în afara lui P, deci SoP."
+    },
+    {
+      "diagramId": "diagram_III_A_c_aai_4_venn_2024_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aai-4",
+      "schema": [
+        "PaM",
+        "MaS",
+        "SiP"
+      ],
+      "validity": "valid",
+      "teacherExplanation": "După reprezentarea premiselor, rezultă existența unei zone comune S-P; concluzia SiP este citibilă din diagramă."
+    }
+  ]
+}

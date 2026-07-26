@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "examType": "BAC_LOGICA",
+    "year": 2014,
+    "variant": "Varianta 10",
+    "mode": "student_exam",
+    "title": "BAC Logica 2014 - Varianta 10",
+    "studentVisible": true,
+    "teacherOnly": false,
+    "sourceFiles": [
+      "Examenul de bacalaureat național 2014_V10.pdf",
+      "Examenul de bacalaureat național 2014_V10_BAREM.pdf"
+    ],
+    "officialStructure": "Subiectul I: 30p; Subiectul II: 30p; Subiectul III: 30p; 10p din oficiu"
+  },
+  "studentRules": {
+    "hideSolutions": true,
+    "showPlaceholdersOnly": true,
+    "preserveExistingRadioStyle": true,
+    "finalizeButtonRequired": true,
+    "generateStudentPdfOnSubmit": true,
+    "sendEmailAndAdminReport": true
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "S1_A",
+          "type": "single_choice_group",
+          "points": 18,
+          "instruction": "Scrie pe foaia de examen litera corespunzatoare raspunsului corect. Este corecta o singura varianta de raspuns.",
+          "questions": [
+            {
+              "id": "S1_A_1",
+              "text": "Daca termenului tort i se adauga proprietatea de ciocolata, atunci:",
+              "options": {
+                "a": "intensiunea termenului scade",
+                "b": "extensiunea termenului scade",
+                "c": "extensiunea termenului creste",
+                "d": "extensiunea termenului ramane neschimbata"
+              }
+            },
+            {
+              "id": "S1_A_2",
+              "text": "Termenul pisica este, dupa intensiune:",
+              "options": {
+                "a": "nevid",
+                "b": "general",
+                "c": "pozitiv",
+                "d": "sigur"
+              }
+            },
+            {
+              "id": "S1_A_3",
+              "text": "Termenii stilou si creion sunt in raport de:",
+              "options": {
+                "a": "contrarietate",
+                "b": "ordonare",
+                "c": "contradictie",
+                "d": "identitate"
+              }
+            },
+            {
+              "id": "S1_A_4",
+              "text": "Propozitia 'Unele actiuni sunt corect apreciate' este:",
+              "options": {
+                "a": "universala afirmativa",
+                "b": "universala negativa",
+                "c": "particulara afirmativa",
+                "d": "particulara negativa"
+              }
+            },
+            {
+              "id": "S1_A_5",
+              "text": "Predicatul logic al propozitiei 'Unii oameni nu sunt optimisti din fire' este:",
+              "options": {
+                "a": "nu sunt optimisti din fire",
+                "b": "sunt optimisti din fire",
+                "c": "optimisti din fire",
+                "d": "optimisti"
+              }
+            },
+            {
+              "id": "S1_A_6",
+              "text": "Propozitiile 'Toti elevii sunt inteligenti' si 'Unii elevi sunt inteligenti' se afla in raport de:",
+              "options": {
+                "a": "contradictie",
+                "b": "contrarietate",
+                "c": "subcontrarietate",
+                "d": "subalternare"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1_B",
+          "type": "syllogism_and_venn_work_area",
+          "points": 12,
+          "instruction": "Fie urmatoarele doua moduri silogistice: aoo-2, eao-4. Scrie schema de inferenta si verifica validitatea prin diagrame Venn.",
+          "responseFields": [
+            {
+              "id": "S1_B_1",
+              "label": "Schema pentru aoo-2",
+              "inputType": "structured_text",
+              "placeholder": "Exemplu de structura: MaP / SiM / SiP. Completeaza schema corespunzatoare modului cerut."
+            },
+            {
+              "id": "S1_B_2",
+              "label": "Schema pentru eao-4",
+              "inputType": "structured_text",
+              "placeholder": "Scrie cele doua premise si concluzia, folosind termenii S, P, M."
+            },
+            {
+              "id": "S1_B_3",
+              "label": "Decizia de validitate",
+              "inputType": "text_area",
+              "placeholder": "Exemplu: Modul este valid/nevalid, deoarece diagrama Venn confirma/nu confirma concluzia."
+            },
+            {
+              "id": "diagram_S1_B",
+              "inputType": "venn_canvas",
+              "diagramContractId": "VENN_S1_B_aoo2_eao4",
+              "placeholder": "Deseneaza/completeaza diagrama Venn pentru fiecare mod silogistic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul II",
+      "points": 30,
+      "givenPropositions": [
+        "1. Unele rationamente nu sunt valide.",
+        "2. Toti producatorii sunt agenti economici.",
+        "3. Unii colegi sunt prieteni.",
+        "4. Nicio planeta nu este stea."
+      ],
+      "items": [
+        {
+          "id": "S2_A",
+          "type": "text_input",
+          "points": 4,
+          "prompt": "Precizati formula propozitiei 3.",
+          "placeholder": "Exemplu: SaP / SeP / SiP / SoP, in functie de cuantor si calitate."
+        },
+        {
+          "id": "S2_B",
+          "type": "structured_text",
+          "points": 6,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 2.",
+          "placeholder": "Scrie pentru fiecare: formula + formulare in limbaj natural."
+        },
+        {
+          "id": "S2_C",
+          "type": "structured_text",
+          "points": 10,
+          "prompt": "Aplicati conversiunea si obversiunea pentru propozitiile 2 si 4, in limbaj formal si natural.",
+          "placeholder": "Pentru fiecare propozitie: Conversa: ... / Obversa: ..."
+        },
+        {
+          "id": "S2_D",
+          "type": "text_area",
+          "points": 6,
+          "prompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+          "placeholder": "Explica regula: ce tip de propozitie este, ce conversiune ar rezulta si de ce nu este valida."
+        },
+        {
+          "id": "S2_E",
+          "type": "euler_canvas",
+          "points": 4,
+          "prompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 4.",
+          "diagramContractId": "EULER_S2_E_SeP",
+          "placeholder": "Deseneaza doua cercuri fara intersectie: S = planete, P = stele."
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul III",
+      "points": 30,
+      "items": [
+        {
+          "id": "S3_1",
+          "type": "text_area",
+          "points": 4,
+          "prompt": "Definiti conceptul de rationament valid.",
+          "placeholder": "Exemplu de structura: Un rationament valid este acel rationament in care..."
+        },
+        {
+          "id": "S3_2",
+          "type": "text_input",
+          "points": 6,
+          "prompt": "Mentionati doi indicatori de concluzie.",
+          "placeholder": "Exemplu: asadar, deci, prin urmare, in concluzie."
+        },
+        {
+          "id": "S3_3",
+          "type": "structured_text",
+          "points": 10,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia 'Toti elevii care invata promoveaza examenul de bacalaureat'.",
+          "placeholder": "Scrie doua premise si concluzia. Exemplu de forma: Toti S sunt M. Toti M sunt P. Deci, toti S sunt P."
+        },
+        {
+          "id": "S3_4",
+          "type": "structured_text",
+          "points": 10,
+          "prompt": "Analizati definitia: 'Romanul este o oglinda pe care o plimbam de-a lungul unui drum.' Mentionati regula incalcata si doua alte reguli de corectitudine a definirii, cu exemple de definitii care le incalca.",
+          "placeholder": "1. Regula incalcata: ... 2. Alte doua reguli + cate o definitie gresita pentru fiecare."
+        }
+      ]
+    }
+  ]
+}

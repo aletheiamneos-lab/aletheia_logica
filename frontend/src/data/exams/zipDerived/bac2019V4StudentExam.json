@@ -1,0 +1,580 @@
+{
+  "examId": "bac_logica_2019_v4",
+  "year": 2019,
+  "variant": "Varianta 4",
+  "title": "Examenul de bacalaureat national 2019 - Logica, argumentare si comunicare - Varianta 4",
+  "mode": "student_exam",
+  "visibility": "student",
+  "points": {
+    "subjectPoints": 90,
+    "officePoints": 10,
+    "total": 100
+  },
+  "sourceFiles": [
+    "Examenul de bacalaureat national 2019_V4.pdf",
+    "Examenul de bacalaureat national 2019_v4_BAREM.pdf"
+  ],
+  "studentRules": {
+    "showSolutions": false,
+    "showTeacherFeedback": false,
+    "finalizeButton": true,
+    "generateStudentPdfOnFinalize": true,
+    "emailStudentPdf": true,
+    "adminReport": true
+  },
+  "sections": [
+    {
+      "id": "I_A",
+      "title": "Subiectul I.A - Itemi cu alegere unica",
+      "points": 20,
+      "officialPrompt": "Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "items": [
+        {
+          "id": "I_A_1",
+          "type": "single_choice",
+          "prompt": "Teza de demonstrat:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "poate fi o propozitie infirmata"
+            },
+            {
+              "value": "b",
+              "label": "poate fi inlocuita pe parcursul demonstratiei"
+            },
+            {
+              "value": "c",
+              "label": "trebuie sa fie clar si precis formulata"
+            },
+            {
+              "value": "d",
+              "label": "trebuie sa contribuie la demonstrarea fundamentului"
+            }
+          ]
+        },
+        {
+          "id": "I_A_2",
+          "type": "single_choice",
+          "prompt": "Rationamentul \"Daca toti elevii sunt sportivi, atunci unii sportivi sunt elevi\" este:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "deductiv imediat"
+            },
+            {
+              "value": "b",
+              "label": "deductiv mediat"
+            },
+            {
+              "value": "c",
+              "label": "inductiv imediat"
+            },
+            {
+              "value": "d",
+              "label": "inductiv mediat"
+            }
+          ]
+        },
+        {
+          "id": "I_A_3",
+          "type": "single_choice",
+          "prompt": "Termenii fructe si caise se afla in raport logic de:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "identitate"
+            },
+            {
+              "value": "b",
+              "label": "ordonare"
+            },
+            {
+              "value": "c",
+              "label": "contrarietate"
+            },
+            {
+              "value": "d",
+              "label": "incrucisare"
+            }
+          ]
+        },
+        {
+          "id": "I_A_4",
+          "type": "single_choice",
+          "prompt": "Subiectul logic al propozitiei \"Unele flori de primavara sunt albe\" este:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "unele flori de primavara"
+            },
+            {
+              "value": "b",
+              "label": "flori de primavara"
+            },
+            {
+              "value": "c",
+              "label": "unele flori"
+            },
+            {
+              "value": "d",
+              "label": "flori"
+            }
+          ]
+        },
+        {
+          "id": "I_A_5",
+          "type": "single_choice",
+          "prompt": "Pe aceeasi treapta a unei clasificari corecte, intre clasele obtinute trebuie sa existe numai raporturi logice de:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "opozitie"
+            },
+            {
+              "value": "b",
+              "label": "ordonare"
+            },
+            {
+              "value": "c",
+              "label": "identitate"
+            },
+            {
+              "value": "d",
+              "label": "incrucisare"
+            }
+          ]
+        },
+        {
+          "id": "I_A_6",
+          "type": "single_choice",
+          "prompt": "Termenul pisica alba este, din punct de vedere intensional:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "nevid, general, distributiv, precis"
+            },
+            {
+              "value": "b",
+              "label": "relativ, abstract, simplu, negativ"
+            },
+            {
+              "value": "c",
+              "label": "vid, singular, colectiv, vag"
+            },
+            {
+              "value": "d",
+              "label": "absolut, concret, compus, pozitiv"
+            }
+          ]
+        },
+        {
+          "id": "I_A_7",
+          "type": "single_choice",
+          "prompt": "In cazul unei inductii incomplete, concluzia este:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "probabila"
+            },
+            {
+              "value": "b",
+              "label": "mai putin generala decat premisele"
+            },
+            {
+              "value": "c",
+              "label": "intotdeauna falsa"
+            },
+            {
+              "value": "d",
+              "label": "intotdeauna adevarata"
+            }
+          ]
+        },
+        {
+          "id": "I_A_8",
+          "type": "single_choice",
+          "prompt": "Inductia completa este:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "o generalizare intr-o clasa infinita de obiecte"
+            },
+            {
+              "value": "b",
+              "label": "o generalizare intr-o clasa finita de obiecte"
+            },
+            {
+              "value": "c",
+              "label": "o particularizare intr-o clasa infinita de obiecte"
+            },
+            {
+              "value": "d",
+              "label": "o particularizare intr-o clasa finita de obiecte"
+            }
+          ]
+        },
+        {
+          "id": "I_A_9",
+          "type": "single_choice",
+          "prompt": "Daca termenului casa de vacanta i se elimina insusirea de vacanta, atunci:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "intensiunea si extensiunea scad simultan"
+            },
+            {
+              "value": "b",
+              "label": "intensiunea si extensiunea cresc simultan"
+            },
+            {
+              "value": "c",
+              "label": "intensiunea creste, extensiunea scade"
+            },
+            {
+              "value": "d",
+              "label": "extensiunea creste, intensiunea scade"
+            }
+          ]
+        },
+        {
+          "id": "I_A_10",
+          "type": "single_choice",
+          "prompt": "Un sofism este un rationament:",
+          "points": 2,
+          "options": [
+            {
+              "value": "a",
+              "label": "eronat, facut cu intentie"
+            },
+            {
+              "value": "b",
+              "label": "eronat, facut fara intentie"
+            },
+            {
+              "value": "c",
+              "label": "corect, facut cu intentie"
+            },
+            {
+              "value": "d",
+              "label": "corect, facut fara intentie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I_B",
+      "title": "Subiectul I.B - Diagrame Euler si A/F",
+      "points": 10,
+      "officialPrompt": "Fie termenii A, B, C si D, astfel incat termenul A este in raport de contradictie cu termenul B, termenul C este subordonat termenului A si, totodata, se afla in raport de contrarietate cu termenul D. Termenul D este o specie a termenului A si se afla in opozitie cu termenul B.",
+      "items": [
+        {
+          "id": "I_B_1",
+          "type": "hybrid_diagram",
+          "points": 4,
+          "prompt": "Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre cei patru termeni.",
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_I_B_euler_2019_v4",
+            "diagramType": "euler",
+            "inputConfig": {
+              "label": "Diagrama Euler",
+              "helperText": "Deseneaza aici raporturile dintre termenii A, B, C si D.",
+              "canvas": {
+                "enabled": true,
+                "width": 720,
+                "height": 420,
+                "tools": [
+                  "pen",
+                  "eraser",
+                  "undo",
+                  "clear",
+                  "save"
+                ],
+                "allowTextLabels": true,
+                "defaultLabels": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "saveFormat": [
+                  "strokes_json",
+                  "png_export"
+                ]
+              },
+              "upload": {
+                "enabled": true,
+                "acceptedTypes": [
+                  "image/png",
+                  "image/jpeg",
+                  "image/webp",
+                  "application/pdf"
+                ],
+                "maxFileSizeMb": 10
+              }
+            }
+          }
+        },
+        {
+          "id": "I_B_2",
+          "type": "true_false_group",
+          "points": 6,
+          "prompt": "Stabiliti, pe baza raporturilor existente intre termenii A, B, C, D, care dintre urmatoarele propozitii sunt adevarate si care sunt false.",
+          "statements": [
+            [
+              "a",
+              "Niciun D nu este C."
+            ],
+            [
+              "b",
+              "Unii C nu sunt A."
+            ],
+            [
+              "c",
+              "Toti B sunt D."
+            ],
+            [
+              "d",
+              "Unii D sunt C."
+            ],
+            [
+              "e",
+              "Unii A sunt C."
+            ],
+            [
+              "f",
+              "Niciun A nu este B."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "context": {
+        "propositions": [
+          {
+            "number": 1,
+            "text": "Niciun lider de opinie nu este timid."
+          },
+          {
+            "number": 2,
+            "text": "Unele resurse naturale nu sunt regenerabile."
+          },
+          {
+            "number": 3,
+            "text": "Unii studenti sunt antreprenori de succes."
+          },
+          {
+            "number": 4,
+            "text": "Toate cosmeticele sunt produse perisabile."
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "II_A",
+          "type": "short_text_group",
+          "points": 2,
+          "prompt": "Precizati formulele logice corespunzatoare propozitiilor 2 si 4.",
+          "fields": [
+            {
+              "fieldId": "p2",
+              "label": "Propozitia 2",
+              "placeholder": "Scrie forma logica. Exemplu: SoP"
+            },
+            {
+              "fieldId": "p4",
+              "label": "Propozitia 4",
+              "placeholder": "Scrie forma logica. Exemplu: SaP"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "type": "structured_text_group",
+          "points": 8,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, contradictoria propozitiei 1, subcontrara propozitiei 2, supraalterna propozitiei 3 si subalterna propozitiei 4.",
+          "fields": [
+            {
+              "fieldId": "contradictory_p1",
+              "label": "Contradictoria propozitiei 1",
+              "placeholder": "Forma logica + propozitia in limbaj natural."
+            },
+            {
+              "fieldId": "subcontrary_p2",
+              "label": "Subcontrara propozitiei 2",
+              "placeholder": "Forma logica + propozitia in limbaj natural."
+            },
+            {
+              "fieldId": "superaltern_p3",
+              "label": "Supraalterna propozitiei 3",
+              "placeholder": "Forma logica + propozitia in limbaj natural."
+            },
+            {
+              "fieldId": "subaltern_p4",
+              "label": "Subalterna propozitiei 4",
+              "placeholder": "Forma logica + propozitia in limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "type": "structured_text_group",
+          "points": 8,
+          "prompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 1 si 4, atat in limbaj formal, cat si in limbaj natural.",
+          "fields": [
+            {
+              "fieldId": "p1_converse",
+              "label": "Conversa propozitiei 1",
+              "placeholder": "Scrie forma logica si varianta in limbaj natural."
+            },
+            {
+              "fieldId": "p1_obverse",
+              "label": "Obversa propozitiei 1",
+              "placeholder": "Scrie forma logica si varianta in limbaj natural."
+            },
+            {
+              "fieldId": "p4_converse",
+              "label": "Conversa propozitiei 4",
+              "placeholder": "Scrie forma logica si varianta in limbaj natural."
+            },
+            {
+              "fieldId": "p4_obverse",
+              "label": "Obversa propozitiei 4",
+              "placeholder": "Scrie forma logica si varianta in limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "type": "structured_text",
+          "points": 4,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, obversa conversei propozitiei 3.",
+          "answerInput": {
+            "inputType": "structured_text",
+            "inputConfig": {
+              "label": "Obversa conversei",
+              "placeholder": "Scrie lantul formal si propozitia rezultata in limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "II_E",
+          "type": "long_text_group",
+          "points": 8,
+          "prompt": "Doi elevi, X si Y, opineaza astfel: X: Daca unele fapte nu sunt morale, atunci unele fapte sunt imorale. Y: Daca toate legumele sunt alimente sanatoase, atunci toate alimentele sanatoase sunt legume. Pornind de la aceasta situatie, scrieti opiniile in limbaj formal, precizati corectitudinea/incorectitudinea rationamentelor formalizate si explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.",
+          "fields": [
+            {
+              "fieldId": "formal_opinions",
+              "label": "Opinii in limbaj formal",
+              "placeholder": "Scrie formalizarea pentru X si Y."
+            },
+            {
+              "fieldId": "correctness",
+              "label": "Corectitudine/incorectitudine",
+              "placeholder": "Precizeaza pentru fiecare rationament daca este corect sau incorect."
+            },
+            {
+              "fieldId": "explanation_y",
+              "label": "Explicatia pentru rationamentul elevului Y",
+              "placeholder": "Explica pe scurt legea logica respectata sau incalcata."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III_A",
+          "type": "syllogism_modes",
+          "points": 14,
+          "prompt": "Fie urmatoarele doua moduri silogistice: aae-2, iai-3. Scrieti schema de inferenta corespunzatoare fiecareia si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre scheme. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecarui mod.",
+          "modes": [
+            "aae-2",
+            "iai-3"
+          ],
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramIds": [
+              "diagram_III_A_aae_2_2019_v4",
+              "diagram_III_A_iai_3_2019_v4"
+            ]
+          }
+        },
+        {
+          "id": "III_B",
+          "type": "long_text",
+          "points": 6,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati propozitia: \"Nicio propozitie clara nu este interpretabila\".",
+          "answerInput": {
+            "inputType": "long_text",
+            "inputConfig": {
+              "placeholder": "Scrie schema silogismului si apoi silogismul in limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "III_C",
+          "type": "true_false_group",
+          "points": 4,
+          "prompt": "Fie urmatorul silogism: Unele carti ce contin termeni complicati nu sunt carti usor de citit pentru ca nicio carte de filosofie nu este usor de citit, iar toate cartile de filosofie sunt carti ce contin termeni complicati. Stabiliti care propozitii sunt adevarate si care sunt false.",
+          "statements": [
+            [
+              "1",
+              "Termenul mediu este distribuit in ambele premise."
+            ],
+            [
+              "2",
+              "Predicatul logic al concluziei este reprezentat de termenul \"carti ce contin termeni complicati\"."
+            ],
+            [
+              "3",
+              "Concluzia silogismului este o propozitie particulara negativa."
+            ],
+            [
+              "4",
+              "Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie."
+            ]
+          ]
+        },
+        {
+          "id": "III_D",
+          "type": "long_text_group",
+          "points": 6,
+          "prompt": "Fie urmatoarea definitie: Geografia este stiinta care studiaza muntii si campiile. Mentionati o regula de corectitudine pe care o incalca definitia data. Precizati o alta regula de corectitudine a definirii, diferita de regula identificata la punctul a, si construiti o definitie care sa o incalce, avand ca definit termenul \"geografie\".",
+          "fields": [
+            {
+              "fieldId": "rule_violated",
+              "label": "Regula incalcata",
+              "placeholder": "Mentioneaza regula incalcata de definitia data."
+            },
+            {
+              "fieldId": "other_rule_and_definition",
+              "label": "Alta regula si definitie incorecta",
+              "placeholder": "Precizeaza alta regula si construieste o definitie care o incalca."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

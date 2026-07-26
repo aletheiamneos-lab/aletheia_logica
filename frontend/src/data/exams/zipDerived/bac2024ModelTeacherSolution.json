@@ -1,0 +1,415 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2024_model",
+  "examId": "bac_logica_2024_model",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2024 - Model",
+  "sections": [
+    {
+      "id": "I",
+      "title": "SUBIECTUL I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "answers": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "a",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "c",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "d",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "a",
+              "points": 2,
+              "explanation": "Răspuns conform baremului oficial."
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni",
+          "context": "Se dau termenii A, B, C, D și E astfel încât termenii A și B se află în raport de identitate; termenul C este o specie a termenului A, termenul D este o specie a termenului B aflată în raport de încrucișare cu termenul C; iar termenul E se află, în raport de încrucișare cu termenul A și de contrarietate cu termenii C și D.",
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler_terms_2024_model",
+            "renderFromContract": true
+          },
+          "answers": [
+            {
+              "itemId": "I_B_2_a",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_b",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_c",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_d",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_e",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_f",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_g",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            },
+            {
+              "itemId": "I_B_2_h",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Valoare de adevăr conform raporturilor dintre termenii A, B, C, D și E."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "SUBIECTUL al II-lea",
+      "points": 30,
+      "context": [
+        "1. Niciun cântec popular nu este lipsit de valoare stilistică.",
+        "2. Unele dimineți de vară sunt răcoroase.",
+        "3. Toți pictorii români contemporani sunt recunoscuți în diaspora română.",
+        "4. Unele societăți conservatoare nu sunt state moderne."
+      ],
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "answers": [
+            {
+              "itemId": "II_A_1",
+              "correctAnswer": {
+                "formal": "SiP",
+                "natural": "Unele cântece populare sunt lipsite de valoare stilistică."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Contradictoria propoziției SeP este SiP."
+            },
+            {
+              "itemId": "II_A_2",
+              "correctAnswer": {
+                "formal": "SoP",
+                "natural": "Unele dimineți de vară nu sunt răcoroase."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Subcontrara propoziției SiP este SoP."
+            },
+            {
+              "itemId": "II_A_3",
+              "correctAnswer": {
+                "formal": "SiP",
+                "natural": "Unii pictori români contemporani sunt recunoscuți în diaspora română."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Subalterna propoziției SaP este SiP."
+            },
+            {
+              "itemId": "II_A_4",
+              "correctAnswer": {
+                "formal": "SeP",
+                "natural": "Nicio societate conservatoare nu este stat modern."
+              },
+              "points": 2,
+              "scoring": "1p formal + 1p natural",
+              "explanation": "Supraalterna propoziției SoP este SeP."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "answers": [
+            {
+              "itemId": "II_B_1_conv",
+              "correctAnswer": {
+                "formal": "PeS",
+                "natural": "Nicio entitate lipsită de valoare stilistică nu este cântec popular."
+              },
+              "points": 2,
+              "explanation": "Conversa simplă a propoziției E schimbă locul termenilor."
+            },
+            {
+              "itemId": "II_B_1_obv",
+              "correctAnswer": {
+                "formal": "Sa¬P",
+                "natural": "Toate cântecele populare sunt nelipsite de valoare stilistică."
+              },
+              "points": 2,
+              "explanation": "Obversa lui SeP este Sa¬P."
+            },
+            {
+              "itemId": "II_B_2_conv",
+              "correctAnswer": {
+                "formal": "PiS",
+                "natural": "Unele lucruri răcoroase sunt dimineți de vară."
+              },
+              "points": 2,
+              "explanation": "Conversa simplă a propoziției I este validă."
+            },
+            {
+              "itemId": "II_B_2_obv",
+              "correctAnswer": {
+                "formal": "So¬P",
+                "natural": "Unele dimineți de vară nu sunt nerăcoroase."
+              },
+              "points": 2,
+              "explanation": "Obversa lui SiP este So¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "answers": [
+            {
+              "itemId": "II_C_1",
+              "correctAnswer": {
+                "formal": "PiS",
+                "natural": "Unele state moderne sunt societăți conservatoare."
+              },
+              "points": 3,
+              "explanation": "Prop. 4 SoP -> supraalterna SeP -> conversa PeS -> contradictoria PiS."
+            },
+            {
+              "itemId": "II_C_2",
+              "correctAnswer": {
+                "formal": "Po¬S",
+                "natural": "Unele entități recunoscute în diaspora română nu sunt non-pictori români contemporani."
+              },
+              "points": 3,
+              "explanation": "Prop. 3 SaP -> conversa PiS -> obversa Po¬S."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "answers": [
+            {
+              "itemId": "II_D_X",
+              "correctAnswer": {
+                "formal": "SeP→Sa¬P",
+                "validity": "corect"
+              },
+              "points": 4,
+              "explanation": "Raționamentul elevului X este o obversiune validă."
+            },
+            {
+              "itemId": "II_D_Y",
+              "correctAnswer": {
+                "formal": "SoP→PoS",
+                "validity": "incorect",
+                "explanation": "Conversiunea propoziției O este nevalidă; se încalcă legea distribuirii termenilor, deoarece S apare distribuit în concluzie, dar nu este distribuit în premisă."
+              },
+              "points": 4,
+              "explanation": "Raționamentul elevului Y este o conversiune nevalidă."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "SUBIECTUL al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "answers": [
+            {
+              "itemId": "III_A_a_eio_2",
+              "correctAnswer": {
+                "majorPremise": "PeM",
+                "minorPremise": "SiM",
+                "conclusion": "SoP"
+              },
+              "points": 2,
+              "explanation": "Schema corespunde modului eio-2."
+            },
+            {
+              "itemId": "III_A_a_aai_4",
+              "correctAnswer": {
+                "majorPremise": "PaM",
+                "minorPremise": "MaS",
+                "conclusion": "SiP"
+              },
+              "points": 2,
+              "explanation": "Schema corespunde modului aai-4."
+            },
+            {
+              "itemId": "III_A_b",
+              "correctAnswer": {
+                "example": "Exemplu pentru eio-2: Niciun P nu este M. Unii S sunt M. Prin urmare, unii S nu sunt P."
+              },
+              "points": 4,
+              "explanation": "Baremul acordă punctaj pentru construirea în limbaj natural a oricărui silogism care corespunde uneia dintre schemele date."
+            },
+            {
+              "itemId": "III_A_c_eio_2",
+              "correctAnswer": {
+                "validityDecision": "valid",
+                "diagramId": "diagram_III_A_c_eio_2_venn_2024_model"
+              },
+              "points": 4,
+              "explanation": "eio-2 este mod silogistic valid, conform baremului."
+            },
+            {
+              "itemId": "III_A_c_aai_4",
+              "correctAnswer": {
+                "validityDecision": "valid",
+                "diagramId": "diagram_III_A_c_aai_4_venn_2024_model"
+              },
+              "points": 4,
+              "explanation": "aai-4 este mod silogistic valid, conform baremului."
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid construit",
+          "answers": [
+            {
+              "itemId": "III_B_1",
+              "correctAnswer": {
+                "formalSchema": "MaP / MiS / SiP",
+                "naturalSyllogism": "Toate comunitățile rurale tradiționale sunt tradiționaliste. Unele comunități rurale tradiționale sunt comunități culturale. Prin urmare, unele comunități culturale sunt tradiționaliste."
+              },
+              "points": 6,
+              "explanation": "Exemplu valid care justifică propoziția dată. Baremul permite orice silogism valid construit corect."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "answers": [
+            {
+              "itemId": "III_C_1",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Conform baremului oficial."
+            },
+            {
+              "itemId": "III_C_2",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Concluzia este particular negativă, nu particular afirmativă."
+            },
+            {
+              "itemId": "III_C_3",
+              "correctAnswer": "F",
+              "points": 1,
+              "explanation": "Există termen extrem distribuit în concluzie."
+            },
+            {
+              "itemId": "III_C_4",
+              "correctAnswer": "A",
+              "points": 1,
+              "explanation": "Termenul major este distribuit în premisă și în concluzie."
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "answers": [
+            {
+              "itemId": "III_D_a",
+              "correctAnswer": "Regula adecvării / definiția nu trebuie să fie prea largă sau prea îngustă.",
+              "points": 2,
+              "explanation": "Definiția «Doina este un cântec popular extrem de apreciat de etnografi» nu stabilește o echivalență exactă între definit și definitor."
+            },
+            {
+              "itemId": "III_D_b",
+              "correctAnswer": {
+                "otherRule": "Evitarea circularității.",
+                "constructedDefinition": "Doina este o doină cântată popular."
+              },
+              "points": 4,
+              "explanation": "Exemplu de definiție care încalcă regula circularității. Se acceptă orice altă regulă corect precizată și o definiție care o încalcă."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

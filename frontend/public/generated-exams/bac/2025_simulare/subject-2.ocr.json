@@ -1,0 +1,672 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatieisi Cercetari",
+      "x": 1461.0511474609375,
+      "y": 103.4561538696289,
+      "score": 0.9860141053795815,
+      "page_number": 2
+    },
+    {
+      "text": "CentrulNationaldePoliticisiEvaluareinEducatie",
+      "x": 1244.4034423828125,
+      "y": 180.3850860595703,
+      "score": 0.993539137310452,
+      "page_number": 2
+    },
+    {
+      "text": "B.Sedau termenii A,B,C,D si Eastfel incat termenulA este genal termenului B.Termenul C",
+      "x": 364.6022644042969,
+      "y": 289.1466979980469,
+      "score": 0.9424315933571306,
+      "page_number": 2
+    },
+    {
+      "text": "esteincrucisatcu termenul B,find,totodata,inraport de subordonarecutermenulA.Termenul D",
+      "x": 367.24432373046875,
+      "y": 371.3810729980469,
+      "score": 0.9583256316596064,
+      "page_number": 2
+    },
+    {
+      "text": "estesupraordonattermenuluiE,find,totodata,specieatermenuluiA,inraportdeincrucisarecu",
+      "x": 372.5284118652344,
+      "y": 450.96270751953125,
+      "score": 0.9645960277744702,
+      "page_number": 2
+    },
+    {
+      "text": "termenul B si in opozitie cu termenul C. Termenul E se afla in raport de incrucisare cu termenul B.",
+      "x": 361.9602355957031,
+      "y": 522.586181640625,
+      "score": 0.9776753247386277,
+      "page_number": 2
+    },
+    {
+      "text": "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+      "x": 367.24432373046875,
+      "y": 604.8206176757812,
+      "score": 0.9785826112094679,
+      "page_number": 2
+    },
+    {
+      "text": "cei cinci termeni.",
+      "x": 369.8863830566406,
+      "y": 681.74951171875,
+      "score": 0.9823226696915097,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3054.20458984375,
+      "y": 681.74951171875,
+      "score": 0.989639088511467,
+      "page_number": 2
+    },
+    {
+      "text": "2.Stabiliti,pebazaraporturilorexistenteintre termeniA,B,C,D,E,care dintreurmatoarelepropoziti",
+      "x": 367.24432373046875,
+      "y": 761.3311767578125,
+      "score": 0.9577866401723636,
+      "page_number": 2
+    },
+    {
+      "text": "sunt adevarate si care sunt false, scrind, pe foaia de examen, doar litera corespunzatoare fiecarei",
+      "x": 364.6022644042969,
+      "y": 838.2601318359375,
+      "score": 0.9605552849143443,
+      "page_number": 2
+    },
+    {
+      "text": "propoziti date si notand in dreptul ei doar litera A, daca apreciati ca propozitia este adevarata, sau",
+      "x": 367.24432373046875,
+      "y": 917.841796875,
+      "score": 0.9858586531059415,
+      "page_number": 2
+    },
+    {
+      "text": "doar litera F, daca apreciati ca propozitia este falsa.",
+      "x": 361.9602355957031,
+      "y": 992.1179809570312,
+      "score": 0.9951850533485412,
+      "page_number": 2
+    },
+    {
+      "text": "a) Uni E sunt D.",
+      "x": 454.43182373046875,
+      "y": 1077.005126953125,
+      "score": 0.9905509352684021,
+      "page_number": 2
+    },
+    {
+      "text": "c)Niciun B nu este C.",
+      "x": 1146.647705078125,
+      "y": 1079.6578369140625,
+      "score": 0.9433438181877136,
+      "page_number": 2
+    },
+    {
+      "text": "e) Niciun C nu este D. g) Toti E sunt B.",
+      "x": 1931.335205078125,
+      "y": 1074.3524169921875,
+      "score": 0.9754579350352287,
+      "page_number": 2
+    },
+    {
+      "text": "b) Toti C sunt A",
+      "x": 449.1477355957031,
+      "y": 1148.6285400390625,
+      "score": 0.9855170585215092,
+      "page_number": 2
+    },
+    {
+      "text": "d) Unii D nu sunt A",
+      "x": 1149.289794921875,
+      "y": 1156.5867919921875,
+      "score": 0.947500583372618,
+      "page_number": 2
+    },
+    {
+      "text": "f) Unii E nu sunt A.",
+      "x": 1933.977294921875,
+      "y": 1156.5867919921875,
+      "score": 0.9630063444375991,
+      "page_number": 2
+    },
+    {
+      "text": "h) Unii C sunt A.",
+      "x": 2679.0341796875,
+      "y": 1153.9339599609375,
+      "score": 0.9969107719028697,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3056.8466796875,
+      "y": 1233.515625,
+      "score": 0.9439997971057892,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalIl-lea",
+      "x": 372.5284118652344,
+      "y": 1371.4571533203125,
+      "score": 0.8936752694494584,
+      "page_number": 2
+    },
+    {
+      "text": "(30 depuncte)",
+      "x": 2882.4716796875,
+      "y": 1366.1517333984375,
+      "score": 0.9581821239911593,
+      "page_number": 2
+    },
+    {
+      "text": "Sedauurmatoarelepropoziti:",
+      "x": 367.24432373046875,
+      "y": 1443.0806884765625,
+      "score": 0.9953427085509667,
+      "page_number": 2
+    },
+    {
+      "text": "1.Niciunsuplimentalimentarnuesteeliberatcuprescriptiemedicala.",
+      "x": 586.5341186523438,
+      "y": 1522.662353515625,
+      "score": 0.9890435482225111,
+      "page_number": 2
+    },
+    {
+      "text": "2.Unelerationamentesuntincorecte.",
+      "x": 581.25,
+      "y": 1602.2440185546875,
+      "score": 0.9962425177747553,
+      "page_number": 2
+    },
+    {
+      "text": "3.Totiscritoricontemporanisuntafectatideevolutiainteligenteiartificiale.",
+      "x": 578.6079711914062,
+      "y": 1676.520263671875,
+      "score": 0.9803750606046783,
+      "page_number": 2
+    },
+    {
+      "text": "4.Unelevietuitoare acvaticenu suntpesti.",
+      "x": 578.6079711914062,
+      "y": 1753.44921875,
+      "score": 0.9742507383227348,
+      "page_number": 2
+    },
+    {
+      "text": "A. Construiti, atat in limbaj formal cat si in limbaj natural, subalterna propozitiei 1, subcontrara",
+      "x": 364.6022644042969,
+      "y": 1833.03076171875,
+      "score": 0.9864396005868912,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2, contrara propozitiei 3 si contradictoria propozitiei 4.",
+      "x": 367.24432373046875,
+      "y": 1917.91796875,
+      "score": 0.982051739522389,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3054.20458984375,
+      "y": 1917.91796875,
+      "score": 0.9536844342947006,
+      "page_number": 2
+    },
+    {
+      "text": "B.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa",
+      "x": 369.8863830566406,
+      "y": 1997.4996337890625,
+      "score": 0.9899651408195496,
+      "page_number": 2
+    },
+    {
+      "text": "corectealefiecareiadintrepropozitile2si 3,atatinlimbajformal,catsi inlimbaj natural.8puncte",
+      "x": 367.24432373046875,
+      "y": 2074.428466796875,
+      "score": 0.9731763902601305,
+      "page_number": 2
+    },
+    {
+      "text": "C. Construiti, atat in limbaj formal, cat si in limbaj natural, supraalterna conversei subcontrarei",
+      "x": 367.24432373046875,
+      "y": 2148.704833984375,
+      "score": 0.9933148441892682,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 4, respectiv, obversa conversei propozitiei 2.",
+      "x": 367.24432373046875,
+      "y": 2230.939208984375,
+      "score": 0.9782938022038032,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3056.8466796875,
+      "y": 2233.591796875,
+      "score": 0.9979382827877998,
+      "page_number": 2
+    },
+    {
+      "text": "D. Doi elevi, X si Y, opineaza astfel:",
+      "x": 367.24432373046875,
+      "y": 2305.21533203125,
+      "score": 0.9706117761762518,
+      "page_number": 2
+    },
+    {
+      "text": "X:Dacaniciuncampion olimpicnu estefumator,atunci toti campionii olimpici suntnefumatori.",
+      "x": 449.1477355957031,
+      "y": 2382.144287109375,
+      "score": 0.9699215828017755,
+      "page_number": 2
+    },
+    {
+      "text": "Y:Putemsustinecaunelecalamitatinaturalenusuntevenimentepredictibile,dacanebazam",
+      "x": 457.0738830566406,
+      "y": 2467.03125,
+      "score": 0.9855707174615015,
+      "page_number": 2
+    },
+    {
+      "text": "pefaptulcauneleevenimentepredictibilenusuntcalamitatinaturale.",
+      "x": 367.24432373046875,
+      "y": 2543.960205078125,
+      "score": 0.9900543824318917,
+      "page_number": 2
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 367.24432373046875,
+      "y": 2623.5419921875,
+      "score": 0.9825490911801656,
+      "page_number": 2
+    },
+    {
+      "text": "a.scrieti,tnlimbajformal,opinilecelordoielevi;",
+      "x": 369.8863830566406,
+      "y": 2703.12353515625,
+      "score": 0.9539002290238505,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3056.8466796875,
+      "y": 2700.470947265625,
+      "score": 0.9523210972547531,
+      "page_number": 2
+    },
+    {
+      "text": "b.precizaticorectitudinea/incorectitudinealogicaarationamentelorformalizate;",
+      "x": 364.6022644042969,
+      "y": 2777.39990234375,
+      "score": 0.9939601625266828,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3056.8466796875,
+      "y": 2780.052490234375,
+      "score": 0.9987083673477173,
+      "page_number": 2
+    },
+    {
+      "text": "c. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.",
+      "x": 364.6022644042969,
+      "y": 2856.9814453125,
+      "score": 0.9745999927873965,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3054.20458984375,
+      "y": 2859.63427734375,
+      "score": 0.9948893636465073,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.6022644042969,
+      "y": 2989.61767578125,
+      "score": 0.9102458440595202,
+      "page_number": 2
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2879.82958984375,
+      "y": 2989.61767578125,
+      "score": 0.9701508631308874,
+      "page_number": 2
+    },
+    {
+      "text": "A. Se dau urmatoarele moduri silogistice: eae-1, ai-3.",
+      "x": 361.9602355957031,
+      "y": 3063.893798828125,
+      "score": 0.9954590477325298,
+      "page_number": 2
+    },
+    {
+      "text": "a) Scrieti schemele de inferenta corespunzatoare modurilor silogistice date.",
+      "x": 364.6022644042969,
+      "y": 3148.78076171875,
+      "score": 0.9778174169753727,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3059.48876953125,
+      "y": 3148.78076171875,
+      "score": 0.9599149003624916,
+      "page_number": 2
+    },
+    {
+      "text": "b) Construiti, in limbaj natural, un silogism care sa corespunda uneia dintre schemele de inferenta",
+      "x": 361.9602355957031,
+      "y": 3225.709716796875,
+      "score": 0.9765529427865539,
+      "page_number": 2
+    },
+    {
+      "text": "scrise la subpunctul a).",
+      "x": 364.6022644042969,
+      "y": 3305.29150390625,
+      "score": 0.9927322765191396,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3056.8466796875,
+      "y": 3310.596923828125,
+      "score": 0.9971890673041344,
+      "page_number": 2
+    },
+    {
+      "text": "c) Verificati explicit, prin metoda diagramelor Venn, validitatea modurilor silogistice date, precizand",
+      "x": 364.6022644042969,
+      "y": 3382.220458984375,
+      "score": 0.9925329436376257,
+      "page_number": 2
+    },
+    {
+      "text": "totodata decizia rezultata din reprezentarea grafica (de exemplu: mod silogistic valid/mod silogistic",
+      "x": 359.31817626953125,
+      "y": 3456.49658203125,
+      "score": 0.9935535605591123,
+      "page_number": 2
+    },
+    {
+      "text": "nevalid).",
+      "x": 364.6022644042969,
+      "y": 3541.3837890625,
+      "score": 0.9985075328085158,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3048.92041015625,
+      "y": 3538.73095703125,
+      "score": 0.9869672432541847,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+      "x": 361.9602355957031,
+      "y": 3613.00732421875,
+      "score": 0.9809766076859974,
+      "page_number": 2
+    },
+    {
+      "text": "propozitia“Unelepisici persane nu sunt un companion docil.\"",
+      "x": 367.24432373046875,
+      "y": 3697.894287109375,
+      "score": 0.9637346752619339,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3059.48876953125,
+      "y": 3703.19970703125,
+      "score": 0.9980516284704208,
+      "page_number": 2
+    },
+    {
+      "text": "C.Sedaurmatorulsilogism:Unelecaracteristiciapreciatedeceilaltisuntvirtuti,findcatoate",
+      "x": 367.24432373046875,
+      "y": 3772.17041015625,
+      "score": 0.984745820129619,
+      "page_number": 2
+    },
+    {
+      "text": "calitatiledezirabilesuntcaracteristiciapreciatedeceilalti,iarvirtutilesuntcalitatidezirabile.",
+      "x": 367.24432373046875,
+      "y": 3851.752197265625,
+      "score": 0.9840768242395053,
+      "page_number": 2
+    },
+    {
+      "text": "Pe baza silogismului dat, pentru fiecare dintre urmatoarele enunturi scrieti, pe foaia de examen, doar",
+      "x": 361.9602355957031,
+      "y": 3926.0283203125,
+      "score": 0.965428916554825,
+      "page_number": 2
+    },
+    {
+      "text": "cifra corespunzatoare si notati in dreptul ei doar litera A, daca apreciati ca enuntul este adevarat, sau",
+      "x": 367.24432373046875,
+      "y": 4005.610107421875,
+      "score": 0.9702340466635567,
+      "page_number": 2
+    },
+    {
+      "text": "doarliteraF,dacaapreciaticaenuntulestefals:",
+      "x": 367.24432373046875,
+      "y": 4087.844482421875,
+      "score": 0.98957152006238,
+      "page_number": 2
+    },
+    {
+      "text": "1. Termenul major este distribuit in premisa majora.",
+      "x": 367.24432373046875,
+      "y": 4162.12060546875,
+      "score": 0.9824816745061141,
+      "page_number": 2
+    },
+    {
+      "text": "2. Concluzia este o propozitie universala afirmativa.",
+      "x": 361.9602355957031,
+      "y": 4244.35498046875,
+      "score": 0.9827462052399257,
+      "page_number": 2
+    },
+    {
+      "text": "3.Termenulminorestedistribuitinconcluzie.",
+      "x": 361.9602355957031,
+      "y": 4321.2841796875,
+      "score": 0.990182002870048,
+      "page_number": 2
+    },
+    {
+      "text": "4. Termenul major este calitati dezirabile.",
+      "x": 359.31817626953125,
+      "y": 4395.56005859375,
+      "score": 0.9920698820158492,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3054.20458984375,
+      "y": 4395.56005859375,
+      "score": 0.9870158582925797,
+      "page_number": 2
+    },
+    {
+      "text": "D. Se da urmatoarea definitie: Parfumul este secretul elegantei.",
+      "x": 361.9602355957031,
+      "y": 4475.1416015625,
+      "score": 0.9661438688635826,
+      "page_number": 2
+    },
+    {
+      "text": "a)Mentionatioreguladecorectitudinepecareotncalcadefinitiadata.",
+      "x": 369.8863830566406,
+      "y": 4562.681640625,
+      "score": 0.9791465882332094,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3051.5625,
+      "y": 4560.02880859375,
+      "score": 0.9764153808355331,
+      "page_number": 2
+    },
+    {
+      "text": "b)Precizatioreguladecorectitudineadefiniri,altadecatceamentionatalasubpunctula)2",
+      "x": 367.24432373046875,
+      "y": 4639.6103515625,
+      "score": 0.9855788663029671,
+      "page_number": 2
+    },
+    {
+      "text": "2puncte",
+      "x": 3040.994384765625,
+      "y": 4642.26318359375,
+      "score": 0.9987196837152753,
+      "page_number": 2
+    },
+    {
+      "text": "c)Construitiodefinitie,avandcadefinittermenul,parfum\"caresaincalceregulaprecizatala",
+      "x": 367.24432373046875,
+      "y": 4719.1923828125,
+      "score": 0.978666049888335,
+      "page_number": 2
+    },
+    {
+      "text": "subpunctul b).",
+      "x": 369.8863830566406,
+      "y": 4798.77392578125,
+      "score": 0.9992127971989768,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3056.8466796875,
+      "y": 4798.77392578125,
+      "score": 0.9984759762883186,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 364.6022644042969,
+      "y": 5032.21337890625,
+      "score": 0.9774233587086201,
+      "page_number": 2
+    },
+    {
+      "text": "Simulare",
+      "x": 3099.119384765625,
+      "y": 5034.8662109375,
+      "score": 0.9994139820337296,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1680.3409423828125,
+      "y": 5101.18408203125,
+      "score": 0.982837757893971,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatieisi Cercetari",
+    "CentrulNationaldePoliticisiEvaluareinEducatie",
+    "B.Sedau termenii A,B,C,D si Eastfel incat termenulA este genal termenului B.Termenul C",
+    "esteincrucisatcu termenul B,find,totodata,inraport de subordonarecutermenulA.Termenul D",
+    "estesupraordonattermenuluiE,find,totodata,specieatermenuluiA,inraportdeincrucisarecu",
+    "termenul B si in opozitie cu termenul C. Termenul E se afla in raport de incrucisare cu termenul B.",
+    "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre",
+    "cei cinci termeni.",
+    "2 puncte",
+    "2.Stabiliti,pebazaraporturilorexistenteintre termeniA,B,C,D,E,care dintreurmatoarelepropoziti",
+    "sunt adevarate si care sunt false, scrind, pe foaia de examen, doar litera corespunzatoare fiecarei",
+    "propoziti date si notand in dreptul ei doar litera A, daca apreciati ca propozitia este adevarata, sau",
+    "doar litera F, daca apreciati ca propozitia este falsa.",
+    "a) Uni E sunt D.",
+    "c)Niciun B nu este C.",
+    "e) Niciun C nu este D. g) Toti E sunt B.",
+    "b) Toti C sunt A",
+    "d) Unii D nu sunt A",
+    "f) Unii E nu sunt A.",
+    "h) Unii C sunt A.",
+    "8 puncte",
+    "SUBIECTULalIl-lea",
+    "(30 depuncte)",
+    "Sedauurmatoarelepropoziti:",
+    "1.Niciunsuplimentalimentarnuesteeliberatcuprescriptiemedicala.",
+    "2.Unelerationamentesuntincorecte.",
+    "3.Totiscritoricontemporanisuntafectatideevolutiainteligenteiartificiale.",
+    "4.Unelevietuitoare acvaticenu suntpesti.",
+    "A. Construiti, atat in limbaj formal cat si in limbaj natural, subalterna propozitiei 1, subcontrara",
+    "propozitiei 2, contrara propozitiei 3 si contradictoria propozitiei 4.",
+    "8 puncte",
+    "B.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa",
+    "corectealefiecareiadintrepropozitile2si 3,atatinlimbajformal,catsi inlimbaj natural.8puncte",
+    "C. Construiti, atat in limbaj formal, cat si in limbaj natural, supraalterna conversei subcontrarei",
+    "propozitiei 4, respectiv, obversa conversei propozitiei 2.",
+    "6 puncte",
+    "D. Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacaniciuncampion olimpicnu estefumator,atunci toti campionii olimpici suntnefumatori.",
+    "Y:Putemsustinecaunelecalamitatinaturalenusuntevenimentepredictibile,dacanebazam",
+    "pefaptulcauneleevenimentepredictibilenusuntcalamitatinaturale.",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti,tnlimbajformal,opinilecelordoielevi;",
+    "4 puncte",
+    "b.precizaticorectitudinea/incorectitudinealogicaarationamentelorformalizate;",
+    "2 puncte",
+    "c. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.",
+    "2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30depuncte)",
+    "A. Se dau urmatoarele moduri silogistice: eae-1, ai-3.",
+    "a) Scrieti schemele de inferenta corespunzatoare modurilor silogistice date.",
+    "4 puncte",
+    "b) Construiti, in limbaj natural, un silogism care sa corespunda uneia dintre schemele de inferenta",
+    "scrise la subpunctul a).",
+    "2 puncte",
+    "c) Verificati explicit, prin metoda diagramelor Venn, validitatea modurilor silogistice date, precizand",
+    "totodata decizia rezultata din reprezentarea grafica (de exemplu: mod silogistic valid/mod silogistic",
+    "nevalid).",
+    "8 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+    "propozitia“Unelepisici persane nu sunt un companion docil.\"",
+    "6 puncte",
+    "C.Sedaurmatorulsilogism:Unelecaracteristiciapreciatedeceilaltisuntvirtuti,findcatoate",
+    "calitatiledezirabilesuntcaracteristiciapreciatedeceilalti,iarvirtutilesuntcalitatidezirabile.",
+    "Pe baza silogismului dat, pentru fiecare dintre urmatoarele enunturi scrieti, pe foaia de examen, doar",
+    "cifra corespunzatoare si notati in dreptul ei doar litera A, daca apreciati ca enuntul este adevarat, sau",
+    "doarliteraF,dacaapreciaticaenuntulestefals:",
+    "1. Termenul major este distribuit in premisa majora.",
+    "2. Concluzia este o propozitie universala afirmativa.",
+    "3.Termenulminorestedistribuitinconcluzie.",
+    "4. Termenul major este calitati dezirabile.",
+    "4 puncte",
+    "D. Se da urmatoarea definitie: Parfumul este secretul elegantei.",
+    "a)Mentionatioreguladecorectitudinepecareotncalcadefinitiadata.",
+    "2 puncte",
+    "b)Precizatioreguladecorectitudineadefiniri,altadecatceamentionatalasubpunctula)2",
+    "2puncte",
+    "c)Construitiodefinitie,avandcadefinittermenul,parfum\"caresaincalceregulaprecizatala",
+    "subpunctul b).",
+    "2 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Simulare",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatieisi Cercetari\nCentrulNationaldePoliticisiEvaluareinEducatie\nB.Sedau termenii A,B,C,D si Eastfel incat termenulA este genal termenului B.Termenul C\nesteincrucisatcu termenul B,find,totodata,inraport de subordonarecutermenulA.Termenul D\nestesupraordonattermenuluiE,find,totodata,specieatermenuluiA,inraportdeincrucisarecu\ntermenul B si in opozitie cu termenul C. Termenul E se afla in raport de incrucisare cu termenul B.\n1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice dintre\ncei cinci termeni.\n2 puncte\n2.Stabiliti,pebazaraporturilorexistenteintre termeniA,B,C,D,E,care dintreurmatoarelepropoziti\nsunt adevarate si care sunt false, scrind, pe foaia de examen, doar litera corespunzatoare fiecarei\npropoziti date si notand in dreptul ei doar litera A, daca apreciati ca propozitia este adevarata, sau\ndoar litera F, daca apreciati ca propozitia este falsa.\na) Uni E sunt D.\nc)Niciun B nu este C.\ne) Niciun C nu este D. g) Toti E sunt B.\nb) Toti C sunt A\nd) Unii D nu sunt A\nf) Unii E nu sunt A.\nh) Unii C sunt A.\n8 puncte\nSUBIECTULalIl-lea\n(30 depuncte)\nSedauurmatoarelepropoziti:\n1.Niciunsuplimentalimentarnuesteeliberatcuprescriptiemedicala.\n2.Unelerationamentesuntincorecte.\n3.Totiscritoricontemporanisuntafectatideevolutiainteligenteiartificiale.\n4.Unelevietuitoare acvaticenu suntpesti.\nA. Construiti, atat in limbaj formal cat si in limbaj natural, subalterna propozitiei 1, subcontrara\npropozitiei 2, contrara propozitiei 3 si contradictoria propozitiei 4.\n8 puncte\nB.Aplicatiexplicitoperatiledeconversiunesiobversiune,pentruaderivaconversasiobversa\ncorectealefiecareiadintrepropozitile2si 3,atatinlimbajformal,catsi inlimbaj natural.8puncte\nC. Construiti, atat in limbaj formal, cat si in limbaj natural, supraalterna conversei subcontrarei\npropozitiei 4, respectiv, obversa conversei propozitiei 2.\n6 puncte\nD. Doi elevi, X si Y, opineaza astfel:\nX:Dacaniciuncampion olimpicnu estefumator,atunci toti campionii olimpici suntnefumatori.\nY:Putemsustinecaunelecalamitatinaturalenusuntevenimentepredictibile,dacanebazam\npefaptulcauneleevenimentepredictibilenusuntcalamitatinaturale.\nPorninddelaaceastasituatie:\na.scrieti,tnlimbajformal,opinilecelordoielevi;\n4 puncte\nb.precizaticorectitudinea/incorectitudinealogicaarationamentelorformalizate;\n2 puncte\nc. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.\n2 puncte\nSUBIECTULalIII-lea\n(30depuncte)\nA. Se dau urmatoarele moduri silogistice: eae-1, ai-3.\na) Scrieti schemele de inferenta corespunzatoare modurilor silogistice date.\n4 puncte\nb) Construiti, in limbaj natural, un silogism care sa corespunda uneia dintre schemele de inferenta\nscrise la subpunctul a).\n2 puncte\nc) Verificati explicit, prin metoda diagramelor Venn, validitatea modurilor silogistice date, precizand\ntotodata decizia rezultata din reprezentarea grafica (de exemplu: mod silogistic valid/mod silogistic\nnevalid).\n8 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati\npropozitia“Unelepisici persane nu sunt un companion docil.\"\n6 puncte\nC.Sedaurmatorulsilogism:Unelecaracteristiciapreciatedeceilaltisuntvirtuti,findcatoate\ncalitatiledezirabilesuntcaracteristiciapreciatedeceilalti,iarvirtutilesuntcalitatidezirabile.\nPe baza silogismului dat, pentru fiecare dintre urmatoarele enunturi scrieti, pe foaia de examen, doar\ncifra corespunzatoare si notati in dreptul ei doar litera A, daca apreciati ca enuntul este adevarat, sau\ndoarliteraF,dacaapreciaticaenuntulestefals:\n1. Termenul major este distribuit in premisa majora.\n2. Concluzia este o propozitie universala afirmativa.\n3.Termenulminorestedistribuitinconcluzie.\n4. Termenul major este calitati dezirabile.\n4 puncte\nD. Se da urmatoarea definitie: Parfumul este secretul elegantei.\na)Mentionatioreguladecorectitudinepecareotncalcadefinitiadata.\n2 puncte\nb)Precizatioreguladecorectitudineadefiniri,altadecatceamentionatalasubpunctula)2\n2puncte\nc)Construitiodefinitie,avandcadefinittermenul,parfum\"caresaincalceregulaprecizatala\nsubpunctul b).\n2 puncte\nProba scrisa la logica,argumentare si comunicare\nSimulare\nPagina 2 din 2"
+}

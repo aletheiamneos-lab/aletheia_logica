@@ -1,0 +1,82 @@
+[
+  {
+    "file": "learning-2.png",
+    "route": "/learning",
+    "path": "/learning",
+    "h1": "Hub de invatare",
+    "title": "Logica",
+    "primary": [
+      "Modul 1",
+      "Deschide direct",
+      "Deschide modulul",
+      "Deschide modulul"
+    ],
+    "secondary": [
+      "Logout",
+      "Modul 2",
+      "Modul 3"
+    ],
+    "accessGate": false,
+    "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "file": "profil-rapoarte-2.png",
+    "route": "/profil",
+    "path": "/profil",
+    "h1": "Control local, distribuire si monitorizare intr-un cadru sobru.",
+    "title": "Logica",
+    "primary": [
+      "Distribuie"
+    ],
+    "secondary": [
+      "Logout",
+      "Setari acces",
+      "Copiaza linkul public",
+      "Copiaza",
+      "Deschide"
+    ],
+    "accessGate": false,
+    "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "file": "teste-integrate-2.png",
+    "route": "/teste-integrate",
+    "path": "/teste-integrate",
+    "h1": "Teste integrate",
+    "title": "Logica",
+    "primary": [
+      "Creeaza test nou"
+    ],
+    "secondary": [
+      "Logout",
+      "Export centralizat"
+    ],
+    "accessGate": false,
+    "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "file": "flashcards-slot-2.png",
+    "route": "/learning/module/flash-cards/basic/slot_1",
+    "path": "/learning/module/flash-cards/basic/slot_1",
+    "h1": "Basic - Slot 1",
+    "title": "Logica",
+    "primary": [
+      "Arata raspunsul",
+      "Card urmator"
+    ],
+    "secondary": [
+      "Logout",
+      "Inapoi la deckuri",
+      "Card anterior"
+    ],
+    "accessGate": false,
+    "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+    "file": "mindmaps.png",
+    "route": "/learning/module/mind-maps/item/logic-mindmap",
+    "path": "/learning/module/mind-maps/item/logic-mindmap",
+    "h1": "Mind map-uri",
+    "accessGate": false
+  }
+]

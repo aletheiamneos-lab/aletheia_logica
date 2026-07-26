@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "BAC_LOGICA_TEACHER_SOLUTION_V2",
+  "solutionId": "teacher_solution_bac_logica_2021_v1",
+  "examId": "bac_logica_2021_v1",
+  "visibility": "teacher_only",
+  "access": [
+    "teacher",
+    "admin"
+  ],
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_2",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_3",
+      "correctAnswer": {
+        "variant": "c"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_4",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_5",
+      "correctAnswer": {
+        "variant": "a"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_6",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_7",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_8",
+      "correctAnswer": {
+        "variant": "b"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_9",
+      "correctAnswer": {
+        "variant": "a"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_A_10",
+      "correctAnswer": {
+        "variant": "d"
+      },
+      "points": 2,
+      "explanation": "Răspuns conform baremului oficial.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "I_B_diagram",
+      "correctAnswer": {
+        "diagram": "Reprezentare Euler corectă a raporturilor dintre A, B, C, D, E."
+      },
+      "points": 2,
+      "explanation": "Diagrama trebuie să respecte toate raporturile enunțate.",
+      "criteria": [],
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_2021_v1",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "I_B_tf",
+      "correctAnswer": {
+        "a": "F",
+        "b": "F",
+        "c": "A",
+        "d": "A",
+        "e": "A",
+        "f": "F",
+        "g": "F",
+        "h": "A"
+      },
+      "points": 8,
+      "explanation": "Răspunsuri A/F conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_A_1",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unele persoane sociabile sunt respectate."
+      },
+      "points": 2,
+      "explanation": "Forma logică și transpunerea în limbaj natural sunt conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_A_2",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate condițiile sunt favorabile."
+      },
+      "points": 2,
+      "explanation": "Forma logică și transpunerea în limbaj natural sunt conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_A_3",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toți oamenii cumpătați sunt risipitori."
+      },
+      "points": 2,
+      "explanation": "Forma logică și transpunerea în limbaj natural sunt conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_A_4",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unii mari pictori nu sunt impresioniști."
+      },
+      "points": 2,
+      "explanation": "Forma logică și transpunerea în limbaj natural sunt conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_B_p1_conversa",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele persoane respectate sunt persoane sociabile."
+      },
+      "points": 2,
+      "explanation": "Conversiune/obversiune aplicată conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_B_p1_obversa",
+      "correctAnswer": {
+        "formal": "Se¬P",
+        "natural": "Nicio persoană sociabilă nu este nerespectată."
+      },
+      "points": 2,
+      "explanation": "Conversiune/obversiune aplicată conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_B_p3_conversa",
+      "correctAnswer": {
+        "formal": "PeS",
+        "natural": "Niciun risipitor nu este om cumpătat."
+      },
+      "points": 2,
+      "explanation": "Conversiune/obversiune aplicată conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_B_p3_obversa",
+      "correctAnswer": {
+        "formal": "Sa¬P",
+        "natural": "Toți oamenii cumpătați sunt nerisipitori."
+      },
+      "points": 2,
+      "explanation": "Conversiune/obversiune aplicată conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_C_1",
+      "correctAnswer": {
+        "formal": "Po¬S",
+        "natural": "Unii risipitori nu sunt oameni necumpătați."
+      },
+      "points": 3,
+      "explanation": "Rezultă prin: contrara propoziției 3, conversa acesteia, apoi obversa conversei.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_C_2",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele persoane respectate sunt persoane sociabile."
+      },
+      "points": 3,
+      "explanation": "Rezultă prin subalternarea propoziției 1, urmată de conversiune.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_D_a",
+      "correctAnswer": {
+        "X": "SeP → Sa¬P",
+        "Y": "SaP → PaS"
+      },
+      "points": 4,
+      "explanation": "Formalizări conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_D_b",
+      "correctAnswer": {
+        "X": "corect",
+        "Y": "incorect"
+      },
+      "points": 2,
+      "explanation": "X este obversiune validă; Y este conversiune nevalidă.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "II_D_c",
+      "correctAnswer": {
+        "explanation": "Raționamentul elevului Y este incorect deoarece conversiunea propoziției de tip A nu este validă în forma SaP → PaS; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+      },
+      "points": 2,
+      "explanation": "Explicația trebuie să indice conversiunea nevalidă și încălcarea distribuirii termenilor.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_A_schema_aii3",
+      "correctAnswer": {
+        "majorPremise": "MaP",
+        "minorPremise": "MiS",
+        "conclusion": "SiP"
+      },
+      "points": 2,
+      "explanation": "Schema pentru aii-3 conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_A_schema_eae2",
+      "correctAnswer": {
+        "majorPremise": "PeM",
+        "minorPremise": "SaM",
+        "conclusion": "SeP"
+      },
+      "points": 2,
+      "explanation": "Schema pentru eae-2 conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_A_natural",
+      "correctAnswer": {
+        "example": "Toate mamiferele sunt vertebrate. Unele animale acvatice sunt mamifere. Prin urmare, unele animale acvatice sunt vertebrate."
+      },
+      "points": 4,
+      "explanation": "Exemplu valid corespunzător schemei aii-3.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_A_venn_aii3",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "explanation": "Modul aii-3 este valid; concluzia rezultă din reprezentarea premiselor."
+      },
+      "points": 3,
+      "explanation": "Validitate conform baremului.",
+      "criteria": [],
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_aii3_venn_2021_v1",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_A_venn_eae2",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "explanation": "Modul eae-2 este valid; concluzia rezultă din reprezentarea premiselor."
+      },
+      "points": 3,
+      "explanation": "Validitate conform baremului.",
+      "criteria": [],
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_eae2_venn_2021_v1",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_B_formal",
+      "correctAnswer": {
+        "majorPremise": "MeP",
+        "minorPremise": "SiM",
+        "conclusion": "SoP"
+      },
+      "points": 3,
+      "explanation": "Silogism valid de tip eio-1, justificând propoziția dată.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_B_natural",
+      "correctAnswer": {
+        "example": "Niciun raționament care încalcă regulile logicii nu este raționament valid. Unele silogisme sunt raționamente care încalcă regulile logicii. Prin urmare, unele silogisme nu sunt raționamente valide."
+      },
+      "points": 3,
+      "explanation": "Premisele trebuie să fie adevărate/plauzibile și să conducă valid la concluzie.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_C_tf",
+      "correctAnswer": {
+        "1": "F",
+        "2": "A",
+        "3": "F",
+        "4": "A"
+      },
+      "points": 4,
+      "explanation": "Răspunsuri A/F conform baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_D_1",
+      "correctAnswer": {
+        "rule": "Definiția încalcă regula clarității și preciziei, deoarece folosește o formulare evaluativă/metaforică: „forma ideală”."
+      },
+      "points": 2,
+      "explanation": "Se acceptă orice regulă corect identificată potrivit baremului.",
+      "criteria": [],
+      "diagramSolution": null
+    },
+    {
+      "itemId": "III_D_2",
+      "correctAnswer": {
+        "otherRule": "Regula evitării circularității.",
+        "badDefinition": "Silogismul este un raționament silogistic."
+      },
+      "points": 4,
+      "explanation": "Definiția construită trebuie să încalce regula menționată, având ca definit termenul „silogism”.",
+      "criteria": [],
+      "diagramSolution": null
+    }
+  ]
+}

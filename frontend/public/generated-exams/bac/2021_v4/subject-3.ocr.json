@@ -1,0 +1,280 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1679.2955322265625,
+      "y": 214.60986328125,
+      "score": 0.9837255924940109,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldePoliticisi EvaluareinEducatie",
+      "x": 1330.48046875,
+      "y": 276.9964599609375,
+      "score": 0.9851213317850361,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 503.29034423828125,
+      "y": 461.6607666015625,
+      "score": 0.9102779577175776,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2845.33447265625,
+      "y": 459.1653137207031,
+      "score": 0.9641427525452205,
+      "page_number": 3
+    },
+    {
+      "text": "A. Fie urmatoarele doua moduri silogistice: eao-1, aaa-2.",
+      "x": 505.7818908691406,
+      "y": 536.524658203125,
+      "score": 0.9757631661599142,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 588.0025634765625,
+      "y": 613.884033203125,
+      "score": 0.9851435092480286,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 588.0025634765625,
+      "y": 688.7479858398438,
+      "score": 0.978175731456798,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 590.494140625,
+      "y": 763.6118774414062,
+      "score": 0.9967967404259576,
+      "page_number": 3
+    },
+    {
+      "text": "8puncte",
+      "x": 3017.25048828125,
+      "y": 763.6118774414062,
+      "score": 0.9987351468631199,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 585.5110473632812,
+      "y": 835.9802856445312,
+      "score": 0.9705550429796932,
+      "page_number": 3
+    },
+    {
+      "text": "silogisticedate,precizand totodatadecizialacareatiajuns.",
+      "x": 588.0025634765625,
+      "y": 915.8351440429688,
+      "score": 0.9879982141511781,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3017.25048828125,
+      "y": 913.3396606445312,
+      "score": 0.9715703949332237,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+      "x": 508.2734069824219,
+      "y": 983.212646484375,
+      "score": 0.9794292557807196,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Totieleviipremiantisuntbeneficiariaiburselordemerit”",
+      "x": 588.0025634765625,
+      "y": 1058.0765380859375,
+      "score": 0.9816857273616488,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3029.708251953125,
+      "y": 1055.5810546875,
+      "score": 0.9967239648103714,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorulsilogism:Dacaoricefaptäbunaesteobinefacere,atunciuneleactiuniumane",
+      "x": 508.2734069824219,
+      "y": 1130.445068359375,
+      "score": 0.9824974223971367,
+      "page_number": 3
+    },
+    {
+      "text": "suntfaptebune,intrucatmulteactiuniumanesuntbinefaceri.",
+      "x": 592.9856567382812,
+      "y": 1207.804443359375,
+      "score": 0.9787099471798649,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care",
+      "x": 555.6126098632812,
+      "y": 1275.181884765625,
+      "score": 0.9841979866226515,
+      "page_number": 3
+    },
+    {
+      "text": "sunt false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 560.595703125,
+      "y": 1355.0367431640625,
+      "score": 0.9511994886934088,
+      "page_number": 3
+    },
+    {
+      "text": "1.Subiectul logic al silogismuluieste termenul\"actiuniumane\".",
+      "x": 588.0025634765625,
+      "y": 1429.900634765625,
+      "score": 0.9692558450777022,
+      "page_number": 3
+    },
+    {
+      "text": "2.Termenul mediu estenedistribuitdoarinpremisaminora.",
+      "x": 585.5110473632812,
+      "y": 1499.773681640625,
+      "score": 0.9797018114125954,
+      "page_number": 3
+    },
+    {
+      "text": "3.Termenii extremi sunt nedistribuiti in concluzie.",
+      "x": 583.01953125,
+      "y": 1572.14208984375,
+      "score": 0.9675794746361527,
+      "page_number": 3
+    },
+    {
+      "text": "4. Predicatul logic al silogismului este termenul ,binefacere\"",
+      "x": 585.5110473632812,
+      "y": 1644.510498046875,
+      "score": 0.9863455228267177,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3029.708251953125,
+      "y": 1639.51953125,
+      "score": 0.9968412443995476,
+      "page_number": 3
+    },
+    {
+      "text": "D. Fie urmatoarea definitie:",
+      "x": 505.7818908691406,
+      "y": 1714.383544921875,
+      "score": 0.9718933424779347,
+      "page_number": 3
+    },
+    {
+      "text": "Tigrulesteunanimalcarnivor.",
+      "x": 592.9856567382812,
+      "y": 1791.742919921875,
+      "score": 0.9948598676257663,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regulade corectitudinepe care o incalca definitia data.",
+      "x": 583.01953125,
+      "y": 1866.6068115234375,
+      "score": 0.9290678015777043,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3032.19970703125,
+      "y": 1866.6068115234375,
+      "score": 0.9391777366399765,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 580.5279541015625,
+      "y": 1936.479736328125,
+      "score": 0.9743123334646225,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,tigru\"",
+      "x": 707.5963134765625,
+      "y": 2018.830078125,
+      "score": 0.9534340791213207,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3039.67431640625,
+      "y": 2016.3345947265625,
+      "score": 0.9986458048224449,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 500.7987976074219,
+      "y": 4688.97607421875,
+      "score": 0.9709705101946989,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 4",
+      "x": 2907.623046875,
+      "y": 4693.96728515625,
+      "score": 0.9762520730495453,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina3 din 3",
+      "x": 1744.075439453125,
+      "y": 4756.353515625,
+      "score": 0.9435507150796744,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "CentrulNationaldePoliticisi EvaluareinEducatie",
+    "SUBIECTULaIIII-lea",
+    "(30 de puncte)",
+    "A. Fie urmatoarele doua moduri silogistice: eao-1, aaa-2.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogisticedate,precizand totodatadecizialacareatiajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati",
+    "propozitia“Totieleviipremiantisuntbeneficiariaiburselordemerit”",
+    "6 puncte",
+    "C.Fieurmatorulsilogism:Dacaoricefaptäbunaesteobinefacere,atunciuneleactiuniumane",
+    "suntfaptebune,intrucatmulteactiuniumanesuntbinefaceri.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care",
+    "sunt false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Subiectul logic al silogismuluieste termenul\"actiuniumane\".",
+    "2.Termenul mediu estenedistribuitdoarinpremisaminora.",
+    "3.Termenii extremi sunt nedistribuiti in concluzie.",
+    "4. Predicatul logic al silogismului este termenul ,binefacere\"",
+    "4 puncte",
+    "D. Fie urmatoarea definitie:",
+    "Tigrulesteunanimalcarnivor.",
+    "1.Mentionati o regulade corectitudinepe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,tigru\"",
+    "4 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 4",
+    "Pagina3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrulNationaldePoliticisi EvaluareinEducatie\nSUBIECTULaIIII-lea\n(30 de puncte)\nA. Fie urmatoarele doua moduri silogistice: eao-1, aaa-2.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogisticedate,precizand totodatadecizialacareatiajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid prin care sa justificati\npropozitia“Totieleviipremiantisuntbeneficiariaiburselordemerit”\n6 puncte\nC.Fieurmatorulsilogism:Dacaoricefaptäbunaesteobinefacere,atunciuneleactiuniumane\nsuntfaptebune,intrucatmulteactiuniumanesuntbinefaceri.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care\nsunt false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Subiectul logic al silogismuluieste termenul\"actiuniumane\".\n2.Termenul mediu estenedistribuitdoarinpremisaminora.\n3.Termenii extremi sunt nedistribuiti in concluzie.\n4. Predicatul logic al silogismului este termenul ,binefacere\"\n4 puncte\nD. Fie urmatoarea definitie:\nTigrulesteunanimalcarnivor.\n1.Mentionati o regulade corectitudinepe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,tigru\"\n4 puncte\nProba scrisa la logica,argumentare si comunicare\nVarianta 4\nPagina3 din 3"
+}

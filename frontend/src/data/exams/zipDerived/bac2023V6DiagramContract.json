@@ -1,0 +1,63 @@
+{
+  "examId": "bac_logica_2023_v6",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_MNOPQ",
+      "diagramType": "euler_relation_map",
+      "studentMode": "hybrid_canvas_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q"
+      ],
+      "relations": [
+        "P și Q se încrucișează",
+        "M este subordonat lui P",
+        "M se încrucișează cu Q",
+        "M este în opoziție cu N",
+        "N este specie a lui Q",
+        "N se încrucișează cu P",
+        "O se încrucișează cu P și Q",
+        "O este în opoziție cu M și N"
+      ],
+      "renderNotes": "Afișează o diagramă Euler schematică; pentru profesor este suficientă reprezentarea relațiilor, nu poziționarea geometrică rigidă."
+    },
+    {
+      "diagramId": "diagram_III_A_eao_1_venn",
+      "diagramType": "venn_three_terms",
+      "mode": "eao-1",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "MeP",
+        "SaM"
+      ],
+      "conclusion": "SoP",
+      "validity": "valid",
+      "renderNotes": "Hașurează intersecția M∩P pentru MeP și zona S din afara M pentru SaM. Concluzia SoP se citește din diagramă."
+    },
+    {
+      "diagramId": "diagram_III_A_aai_3_venn",
+      "diagramType": "venn_three_terms",
+      "mode": "aai-3",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "MaP",
+        "MaS"
+      ],
+      "conclusion": "SiP",
+      "validity": "valid",
+      "renderNotes": "Hașurează M în afara lui P și M în afara lui S. Concluzia particulară SiP este acceptată conform baremului pentru modul aai-3."
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2025_v6",
+  "examId": "bac_logica_2025_v6",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - Examenul de bacalaureat national 2025 - Varianta 6 - Logica, argumentare si comunicare",
+  "source": "Derivat local din bac2025V6ExplainedResolution.json si OCR/PDF-ul din proiect",
+  "items": {
+    "I_A": {
+      "correctAnswers": {
+        "1": "b",
+        "2": "d",
+        "3": "b",
+        "4": "c",
+        "5": "d",
+        "6": "c",
+        "7": "d",
+        "8": "b",
+        "9": "b",
+        "10": "b"
+      }
+    },
+    "I_B": {
+      "correctAnswers": {
+        "a": "F",
+        "b": "F",
+        "c": "F",
+        "d": "A",
+        "e": "F",
+        "f": "A",
+        "g": "F",
+        "h": "A"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler",
+        "renderFromContract": true
+      }
+    },
+    "III_C": {
+      "correctAnswers": {
+        "1": "A",
+        "2": "F",
+        "3": "A",
+        "4": "F"
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "groupId": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "items": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Dacă termenului problemă i se adaugă proprietatea controversată atunci:",
+              "answer": "b) o propoziție adevărată este derivată din propoziții adevărate",
+              "explanation": "Răspuns corect: b."
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "Raționamentul „Unele programe fără învățare automată nu sunt tehnologii utilizate în dezvoltarea AI fiindcă nicio tehnologie utilizată în dezvoltarea AI nu este program fără învățare automată.” este:",
+              "answer": "d) o conversiune prin accident",
+              "explanation": "Răspuns corect: d."
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Se află în raport de ordonare termenii:",
+              "answer": "b) conversiune simplă – raționament deductiv imediat",
+              "explanation": "Răspuns corect: b."
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "c",
+              "correctLetter": "c",
+              "points": 2,
+              "officialPrompt": "Cuantorul propoziției „Niciun mamifer acvatic nu este dotat cu branhii.” este:",
+              "answer": "c) universal",
+              "explanation": "Răspuns corect: c."
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "Clasificarea animalelor în clasele domestice, sălbatice, patrupede și bipede este:",
+              "answer": "d) incorectă",
+              "explanation": "Răspuns corect: d."
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "c",
+              "correctLetter": "c",
+              "points": 2,
+              "officialPrompt": "Din punct de vedere extensional, termenul rezolvare incompletă este:",
+              "answer": "c) nevid, general",
+              "explanation": "Răspuns corect: c."
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "Predicatul logic al propoziției „Unele lalele sunt albe” este:",
+              "answer": "d) albe",
+              "explanation": "Răspuns corect: d."
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Propoziția „Majoritatea informațiilor nu este ușor de verificat.” este un exemplu de propoziție:",
+              "answer": "b) particulară negativă",
+              "explanation": "Răspuns corect: b."
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Intensiunea termenului stilou este:",
+              "answer": "b) instrument de scris cu cerneală și peniță",
+              "explanation": "Răspuns corect: b."
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Propoziției categorice „Multe nuvele istorice sunt preferate de către elevii de gimnaziu.” îi corespunde formula:",
+              "answer": "b) SiP",
+              "explanation": "Răspuns corect: b."
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "groupId": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler",
+            "renderFromContract": true
+          },
+          "items": [
+            {
+              "itemId": "I_B_DIAGRAM",
+              "points": 2,
+              "diagramRef": "diagram_I_B_euler",
+              "answer": "Diagrama Euler conform raporturilor din enun?."
+            },
+            {
+              "itemId": "I_B_AF",
+              "points": 8,
+              "answers": {
+                "a": "F",
+                "b": "F",
+                "c": "F",
+                "d": "A",
+                "e": "F",
+                "f": "A",
+                "g": "F",
+                "h": "A"
+              },
+              "correctAnswers": {
+                "a": "F",
+                "b": "F",
+                "c": "F",
+                "d": "A",
+                "e": "F",
+                "f": "A",
+                "g": "F",
+                "h": "A"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "II_A",
+          "groupId": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_A_1",
+              "points": 2,
+              "officialPrompt": "Construiți subalterna propoziției 1, în limbaj formal și natural.",
+              "answer": "Unele mamifere acvatice sunt vivipare.",
+              "explanation": "1p pentru SiP și 1p pentru limbaj natural."
+            },
+            {
+              "itemId": "II_A_2",
+              "points": 2,
+              "officialPrompt": "Construiți contradictoria propoziției 2, în limbaj formal și natural.",
+              "answer": "Nicio persoană pasionată de poezie nu este interesată de filosofie.",
+              "explanation": "1p pentru SeP și 1p pentru limbaj natural."
+            },
+            {
+              "itemId": "II_A_3",
+              "points": 2,
+              "officialPrompt": "Construiți contrara propoziției 3, în limbaj formal și natural.",
+              "answer": "Toate elementele chimice din grupa a VI-a sunt halogeni.",
+              "explanation": "1p pentru SaP și 1p pentru limbaj natural."
+            },
+            {
+              "itemId": "II_A_4",
+              "points": 2,
+              "officialPrompt": "Construiți subcontrara propoziției 4, în limbaj formal și natural.",
+              "answer": "Unele activități școlare sunt obligatorii.",
+              "explanation": "1p pentru SiP și 1p pentru limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "groupId": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_B_1",
+              "points": 4,
+              "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru propoziția 1.",
+              "answer": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "explanation": "Punctaj pentru conversa și obversa corecte, formal și natural."
+            },
+            {
+              "itemId": "II_B_2",
+              "points": 4,
+              "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru propoziția 2.",
+              "answer": "Punctaj pentru conversa și obversa corecte, formal și natural.",
+              "explanation": "Punctaj pentru conversa și obversa corecte, formal și natural."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "groupId": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "II_C_1",
+              "points": 3,
+              "officialPrompt": "Construiți conversa obversei supraalternei propoziției 4, formal și natural.",
+              "answer": "Unele lucruri neobligatorii sunt activități școlare.",
+              "explanation": "Barem: ¬PiS și limbaj natural corespunzător."
+            },
+            {
+              "itemId": "II_C_2",
+              "points": 3,
+              "officialPrompt": "Construiți obversa supraalternei propoziției 2, formal și natural.",
+              "answer": "Nicio persoană pasionată de poezie nu este neinteresată de filosofie.",
+              "explanation": "Barem: Se¬P și limbaj natural corespunzător."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "groupId": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_D_1",
+              "points": 4,
+              "officialPrompt": "X: «De vreme ce perfecțiunea este un ideal, conchidem că perfecțiunea nu este un non-ideal.»",
+              "answer": "SaP → Se¬P",
+              "explanation": "2p formalizare, 1p verdict, 1p explicație."
+            },
+            {
+              "itemId": "II_D_2",
+              "points": 4,
+              "officialPrompt": "Y: «Toți oamenii pasionați de munca lor sunt pianiști, decurge din faptul că toți pianiștii sunt oameni pasionați de munca lor.»",
+              "answer": "SaP → PaS",
+              "explanation": "2p formalizare, 1p verdict, 1p explicație."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "groupId": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "items": [
+            {
+              "itemId": "III_A_1",
+              "points": 2,
+              "officialPrompt": "Scrieți schema de inferență pentru modul eio-2.",
+              "answer": {
+                "formal": "PeM / SiM / SoP",
+                "explanation": ""
+              },
+              "explanation": "Barem: PeM / SiM / SoP."
+            },
+            {
+              "itemId": "III_A_2",
+              "points": 2,
+              "officialPrompt": "Scrieți schema de inferență pentru modul aaa-4.",
+              "answer": {
+                "formal": "PaM / MaS / SaP",
+                "explanation": ""
+              },
+              "explanation": "Barem: PaM / MaS / SaP."
+            },
+            {
+              "itemId": "III_A_3",
+              "points": 2,
+              "officialPrompt": "Construiți un silogism în limbaj natural pentru una dintre scheme.",
+              "answer": "Niciun medic nu este jurist. Unii studenți sunt juriști. Prin urmare, unii studenți nu sunt medici.",
+              "explanation": "Se acceptă orice silogism care respectă una dintre scheme."
+            },
+            {
+              "itemId": "III_A_4",
+              "points": 4,
+              "officialPrompt": "Verificați prin Venn validitatea modului eio-2.",
+              "answer": {
+                "verdict": "valid",
+                "explanation": "Premisele PeM și SiM fac vizibilă concluzia SoP."
+              },
+              "explanation": "Barem: eio-2 este mod silogistic valid.",
+              "diagramRef": "diagram_III_A_4"
+            },
+            {
+              "itemId": "III_A_5",
+              "points": 4,
+              "officialPrompt": "Verificați prin Venn validitatea modului aaa-4.",
+              "answer": {
+                "verdict": "nevalid",
+                "explanation": "Reprezentarea grafică nu impune concluzia SaP."
+              },
+              "explanation": "Barem: aaa-4 este mod silogistic nevalid.",
+              "diagramRef": "diagram_III_A_5"
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "groupId": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "III_B_1",
+              "points": 6,
+              "officialPrompt": "Construiți un silogism valid care justifică: «Unii băieți care merg pe bicicletă sunt echipați cu cască de protecție.»",
+              "answer": "Toți participanții la cursul de ciclism sunt echipați cu cască de protecție. Unii băieți care merg pe bicicletă sunt participanți la cursul de ciclism. Prin urmare, unii băieți care merg pe bicicletă sunt echipați cu cască de protecție.",
+              "explanation": "3p formal, 3p natural cu premise adevărate/plauzibile."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "groupId": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "III_C",
+              "points": 4,
+              "answers": {
+                "1": "A",
+                "2": "F",
+                "3": "A",
+                "4": "F"
+              },
+              "correctAnswers": {
+                "1": "A",
+                "2": "F",
+                "3": "A",
+                "4": "F"
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "groupId": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "III_D_1",
+              "points": 2,
+              "officialPrompt": "Definiția: «Satul e locul unde s-a născut veșnicia.» Menționați o regulă încălcată.",
+              "answer": "Regula clarității și preciziei / regula evitării limbajului figurat.",
+              "explanation": "2p pentru o regulă corect identificată."
+            },
+            {
+              "itemId": "III_D_2",
+              "points": 2,
+              "officialPrompt": "Precizați o altă regulă de corectitudine a definirii.",
+              "answer": "Regula evitării circularității.",
+              "explanation": "Se acceptă orice altă regulă corectă."
+            },
+            {
+              "itemId": "III_D_3",
+              "points": 2,
+              "officialPrompt": "Construiți o definiție a termenului «sat» care să încalce regula precizată la b).",
+              "answer": "Satul este o așezare sătească în care trăiesc săteni.",
+              "explanation": "Se acordă punctaj dacă definiția încalcă regula aleasă."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

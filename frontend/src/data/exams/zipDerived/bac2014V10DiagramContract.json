@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "exam": "BAC Logica 2014 V10",
+    "purpose": "canvas contract for Euler/Venn rendering and later template editing"
+  },
+  "diagrams": [
+    {
+      "diagramId": "VENN_S1_B_aoo2_eao4",
+      "type": "venn_3_terms",
+      "studentEditable": true,
+      "teacherOnlySolution": true,
+      "tasks": [
+        {
+          "mode": "aoo-2",
+          "scheme": [
+            "PaM",
+            "SoM",
+            "SoP"
+          ],
+          "expectedValidity": "valid"
+        },
+        {
+          "mode": "eao-4",
+          "scheme": [
+            "PeM",
+            "MaS",
+            "SoP"
+          ],
+          "expectedValidity": "valid"
+        }
+      ]
+    },
+    {
+      "diagramId": "EULER_S2_E_SeP",
+      "type": "euler_2_terms_disjoint",
+      "studentEditable": true,
+      "terms": {
+        "S": "planete",
+        "P": "stele"
+      },
+      "proposition": "Nicio planeta nu este stea",
+      "expectedRelation": "disjoint_circles"
+    }
+  ]
+}

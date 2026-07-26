@@ -1,0 +1,746 @@
+{
+  "schemaVersion": "2.0",
+  "solutionId": "teacher_solution_bac_logica_2024_v8",
+  "examId": "bac_logica_2024_v8",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2024 Varianta 8",
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "section": "I.A",
+      "officialPrompt": "Dacă termenului situație i se adaugă proprietatea excepțională atunci:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "extensiunea termenului scade în timp ce intensiunea crește"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_2",
+      "section": "I.A",
+      "officialPrompt": "Inferența «Unii juriști sunt economiști, prin urmare unii economiști sunt juriști.» este o:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "deducție imediată validă"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_3",
+      "section": "I.A",
+      "officialPrompt": "Raportul de contrarietate se stabilește între propozițiile categorice:",
+      "correctAnswer": {
+        "variant": "a",
+        "text": "SaP și SeP"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_4",
+      "section": "I.A",
+      "officialPrompt": "Predicatul logic al propoziției «Unele flori sunt plante ofilite.» este:",
+      "correctAnswer": {
+        "variant": "d",
+        "text": "plante ofilite"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_5",
+      "section": "I.A",
+      "officialPrompt": "Regula criteriului unic este o regulă a corectitudinii:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "clasificării"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_6",
+      "section": "I.A",
+      "officialPrompt": "Din punct de vedere intensional, termenul echipă de fotbal este:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "compus"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_7",
+      "section": "I.A",
+      "officialPrompt": "Raționamentul «Unele probleme sociale sunt rezolvate, deci unele probleme sociale nu sunt nerezolvate.» este:",
+      "correctAnswer": {
+        "variant": "d",
+        "text": "obversiune"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_8",
+      "section": "I.A",
+      "officialPrompt": "Propoziția «Unii elevi nu sunt olimpici.» este un exemplu de propoziție:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "particulară negativă"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_9",
+      "section": "I.A",
+      "officialPrompt": "O inferență deductivă imediată presupune existența:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "unei singure premise"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_A_10",
+      "section": "I.A",
+      "officialPrompt": "Propoziției categorice «Toate stelele sunt corpuri cerești.» îi corespunde formula:",
+      "correctAnswer": {
+        "variant": "d",
+        "text": "SaP"
+      },
+      "points": 2,
+      "shortExplanation": "Răspuns conform baremului oficial.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru varianta corectă"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_1_euler",
+      "section": "I.B",
+      "officialPrompt": "Reprezentarea raporturilor logice prin diagramă Euler comună.",
+      "correctAnswer": "Diagrama trebuie să respecte raporturile: C este gen pentru A și B; A este specie a lui C; D și C sunt contrare; A este contrar cu B, D și E; E se încrucișează cu D.",
+      "points": 2,
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms_v8",
+        "renderFromContract": true
+      },
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru reprezentarea corectă a raporturilor logice dintre termenii A, B, C, D, E"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_a",
+      "section": "I.B",
+      "officialPrompt": "Unii C nu sunt D.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_b",
+      "section": "I.B",
+      "officialPrompt": "Niciun A nu este C.",
+      "correctAnswer": "F",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_c",
+      "section": "I.B",
+      "officialPrompt": "Unii A nu sunt E.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_d",
+      "section": "I.B",
+      "officialPrompt": "Unii D sunt E.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_e",
+      "section": "I.B",
+      "officialPrompt": "Toți B sunt C.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_f",
+      "section": "I.B",
+      "officialPrompt": "Niciun B nu este D.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_g",
+      "section": "I.B",
+      "officialPrompt": "Unii E sunt A.",
+      "correctAnswer": "F",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "I_B_2_h",
+      "section": "I.B",
+      "officialPrompt": "Unii C sunt A.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Răspuns conform raporturilor dintre termenii din diagrama Euler.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_A_1",
+      "section": "II.A",
+      "officialPrompt": "Contrara propoziției 1",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Nicio decorațiune de Crăciun nu este obiect care ne reamintește de vremea copilăriei."
+      },
+      "points": 2,
+      "shortExplanation": "Contrara lui SaP este SeP.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_A_2",
+      "section": "II.A",
+      "officialPrompt": "Supraalterna propoziției 2",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate paltoanele sunt articole confecționate din fibre naturale."
+      },
+      "points": 2,
+      "shortExplanation": "Supraalterna lui SiP este SaP.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_A_3",
+      "section": "II.A",
+      "officialPrompt": "Contradictoria propoziției 3",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unele corpuri cerești sunt ignorate de către astronomi."
+      },
+      "points": 2,
+      "shortExplanation": "Contradictoria lui SeP este SiP.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_A_4",
+      "section": "II.A",
+      "officialPrompt": "Subcontrara propoziției 4",
+      "correctAnswer": {
+        "formal": "SiP",
+        "natural": "Unele lucruri frumoase sunt utile."
+      },
+      "points": 2,
+      "shortExplanation": "Subcontrara lui SoP este SiP.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_B_1_conv",
+      "section": "II.B",
+      "officialPrompt": "Conversa propoziției 1",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele obiecte care ne reamintesc de vremea copilăriei sunt decorațiuni de Crăciun."
+      },
+      "points": 2,
+      "shortExplanation": "Conversa lui SaP este PiS prin accident.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_B_1_obv",
+      "section": "II.B",
+      "officialPrompt": "Obversa propoziției 1",
+      "correctAnswer": {
+        "formal": "Se¬P",
+        "natural": "Nicio decorațiune de Crăciun nu este obiect care nu ne reamintește de vremea copilăriei."
+      },
+      "points": 2,
+      "shortExplanation": "Obversa lui SaP este Se¬P.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_B_3_conv",
+      "section": "II.B",
+      "officialPrompt": "Conversa propoziției 3",
+      "correctAnswer": {
+        "formal": "PeS",
+        "natural": "Niciun obiect ignorat de către astronomi nu este corp ceresc."
+      },
+      "points": 2,
+      "shortExplanation": "Conversa lui SeP este PeS.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_B_3_obv",
+      "section": "II.B",
+      "officialPrompt": "Obversa propoziției 3",
+      "correctAnswer": {
+        "formal": "Sa¬P",
+        "natural": "Toate corpurile cerești sunt obiecte neignorate de către astronomi."
+      },
+      "points": 2,
+      "shortExplanation": "Obversa lui SeP este Sa¬P.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru forma logică corectă",
+          "1p pentru limbaj natural corect"
+        ]
+      }
+    },
+    {
+      "itemId": "II_C_1",
+      "section": "II.C",
+      "officialPrompt": "Contradictoria obversei supraalternei propoziției 4",
+      "correctAnswer": {
+        "formal": "So¬P",
+        "natural": "Unele lucruri frumoase nu sunt inutile."
+      },
+      "points": 3,
+      "shortExplanation": "Lanț: SoP -> supraalternă SeP -> obversă Sa¬P -> contradictorie So¬P.",
+      "scoring": {
+        "points": 3,
+        "criteria": [
+          "punctaj conform baremului pentru formalizare și limbaj natural"
+        ]
+      }
+    },
+    {
+      "itemId": "II_C_2",
+      "section": "II.C",
+      "officialPrompt": "Conversa obversei propoziției 1",
+      "correctAnswer": {
+        "formal": "¬PeS",
+        "natural": "Niciun obiect care nu ne reamintește de vremea copilăriei nu este decorațiune de Crăciun."
+      },
+      "points": 3,
+      "shortExplanation": "Lanț: SaP -> obversă Se¬P -> conversa ¬PeS.",
+      "scoring": {
+        "points": 3,
+        "criteria": [
+          "punctaj conform baremului pentru formalizare și limbaj natural"
+        ]
+      }
+    },
+    {
+      "itemId": "II_D_a",
+      "section": "II.D",
+      "officialPrompt": "Scrierea formală a opiniilor elevilor X și Y.",
+      "correctAnswer": {
+        "X": "SaP→PaS",
+        "Y": "SaP→Se¬P"
+      },
+      "points": 4,
+      "shortExplanation": "X inversează termenii unei universale afirmative; Y aplică obversiunea universalei afirmative.",
+      "scoring": {
+        "points": 4,
+        "criteria": [
+          "2p pentru formalizarea lui X",
+          "2p pentru formalizarea lui Y"
+        ]
+      }
+    },
+    {
+      "itemId": "II_D_b",
+      "section": "II.D",
+      "officialPrompt": "Corectitudinea raționamentelor formalizate.",
+      "correctAnswer": {
+        "X": "incorect",
+        "Y": "corect"
+      },
+      "points": 2,
+      "shortExplanation": "X folosește conversiune nevalidă; Y folosește obversiune validă.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "1p pentru X",
+          "1p pentru Y"
+        ]
+      }
+    },
+    {
+      "itemId": "II_D_c",
+      "section": "II.D",
+      "officialPrompt": "Explicarea raționamentului elevului X.",
+      "correctAnswer": "Raționamentul elevului X este incorect deoarece conversiunea lui SaP în PaS nu este validă. Se încalcă legea distribuirii termenilor: termenul P apare distribuit în concluzie, dar nu este distribuit în premisă.",
+      "points": 2,
+      "shortExplanation": "Explicația cerută de barem indică o conversiune nevalidă și încălcarea distribuirii termenilor.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru explicația completă; 1p dacă se menționează doar legea distribuirii termenilor"
+        ]
+      }
+    },
+    {
+      "itemId": "III_A_a_aee2",
+      "section": "III.A",
+      "officialPrompt": "Schema pentru aee-2.",
+      "correctAnswer": {
+        "major": "PaM",
+        "minor": "SeM",
+        "conclusion": "SeP"
+      },
+      "points": 2,
+      "shortExplanation": "Figura 2 plasează termenul mediu ca predicat în ambele premise.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru schema completă"
+        ]
+      }
+    },
+    {
+      "itemId": "III_A_a_iai4",
+      "section": "III.A",
+      "officialPrompt": "Schema pentru iai-4.",
+      "correctAnswer": {
+        "major": "PiM",
+        "minor": "MaS",
+        "conclusion": "SiP"
+      },
+      "points": 2,
+      "shortExplanation": "Figura 4 are M ca predicat în premisa majoră și ca subiect în premisa minoră.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru schema completă"
+        ]
+      }
+    },
+    {
+      "itemId": "III_A_b",
+      "section": "III.A",
+      "officialPrompt": "Silogism natural pentru una dintre scheme.",
+      "correctAnswer": "Exemplu pentru aee-2: Toate pisicile sunt mamifere. Niciun pește nu este mamifer. Prin urmare, niciun pește nu este pisică.",
+      "points": 2,
+      "shortExplanation": "Orice silogism natural care respectă una dintre schemele de la a) este acceptabil, independent de adevărul propozițiilor.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru silogism natural corespunzător unei scheme"
+        ]
+      }
+    },
+    {
+      "itemId": "III_A_c_aee2",
+      "section": "III.A",
+      "officialPrompt": "Verificare Venn pentru aee-2.",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "explanation": "Modul aee-2 este valid; concluzia SeP rezultă din reprezentarea premiselor PaM și SeM."
+      },
+      "points": 4,
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_c_aee2_venn_v8",
+        "renderFromContract": true
+      },
+      "shortExplanation": "Baremul indică aee-2 ca mod silogistic valid.",
+      "scoring": {
+        "points": 4,
+        "criteria": [
+          "3p pentru verificarea grafică",
+          "1p pentru decizia de validitate"
+        ]
+      }
+    },
+    {
+      "itemId": "III_A_c_iai4",
+      "section": "III.A",
+      "officialPrompt": "Verificare Venn pentru iai-4.",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "explanation": "Modul iai-4 este valid; concluzia SiP rezultă după reprezentarea premiselor PiM și MaS."
+      },
+      "points": 4,
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_c_iai4_venn_v8",
+        "renderFromContract": true
+      },
+      "shortExplanation": "Baremul indică iai-4 ca mod silogistic valid.",
+      "scoring": {
+        "points": 4,
+        "criteria": [
+          "3p pentru verificarea grafică",
+          "1p pentru decizia de validitate"
+        ]
+      }
+    },
+    {
+      "itemId": "III_B_1",
+      "section": "III.B",
+      "officialPrompt": "Silogism valid pentru «Unele romane cu detectivi sunt lecturi palpitante.»",
+      "correctAnswer": {
+        "formal": "MaP / SiM // SiP",
+        "natural": "Toate romanele cu suspans sunt lecturi palpitante. Unele romane cu detectivi sunt romane cu suspans. Prin urmare, unele romane cu detectivi sunt lecturi palpitante."
+      },
+      "points": 6,
+      "shortExplanation": "Exemplu valid de tip Darii-1. Sunt acceptabile și alte silogisme valide care justifică propoziția dată.",
+      "scoring": {
+        "points": 6,
+        "criteria": [
+          "3p pentru formalizare validă",
+          "3p pentru limbaj natural cu premise adevărate/plauzibile"
+        ]
+      }
+    },
+    {
+      "itemId": "III_C_1",
+      "section": "III.C",
+      "officialPrompt": "Termenul mediu este nedistribuit în ambele premise.",
+      "correctAnswer": "F",
+      "points": 1,
+      "shortExplanation": "Termenul mediu este distribuit în premisa majoră PeM.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "III_C_2",
+      "section": "III.C",
+      "officialPrompt": "Concluzia silogismului este o propoziție particulară negativă.",
+      "correctAnswer": "A",
+      "points": 1,
+      "shortExplanation": "Concluzia «Unele locuri de muncă nu sunt dorite de toată lumea» este SoP, particulară negativă.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "III_C_3",
+      "section": "III.C",
+      "officialPrompt": "Termenul minor este ușor de obținut.",
+      "correctAnswer": "F",
+      "points": 1,
+      "shortExplanation": "Termenul minor este «locuri de muncă», nu «ușor de obținut».",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "III_C_4",
+      "section": "III.C",
+      "officialPrompt": "Termenul major este distribuit în premisa majoră și nedistribuit în concluzie.",
+      "correctAnswer": "F",
+      "points": 1,
+      "shortExplanation": "Termenul major este distribuit și în premisa majoră, și în concluzia de tip O.",
+      "scoring": {
+        "points": 1,
+        "criteria": [
+          "1p pentru A/F corect"
+        ]
+      }
+    },
+    {
+      "itemId": "III_D_a",
+      "section": "III.D",
+      "officialPrompt": "Regula încălcată de definiția «Dreptatea este calitatea unui stat de drept.»",
+      "correctAnswer": "Evitarea circularității / regula definiției necirculară.",
+      "points": 2,
+      "shortExplanation": "Definiția folosește familia lexicală a termenului definit: dreptate - stat de drept.",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru menționarea unei reguli încălcate corecte"
+        ]
+      }
+    },
+    {
+      "itemId": "III_D_b",
+      "section": "III.D",
+      "officialPrompt": "Altă regulă de corectitudine a definirii.",
+      "correctAnswer": "Exemplu: claritatea și precizia definiției / adecvarea definiției / evitarea limbajului figurat.",
+      "points": 2,
+      "shortExplanation": "Este acceptată orice altă regulă corectă, diferită de cea menționată la a).",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru precizarea altei reguli corecte"
+        ]
+      }
+    },
+    {
+      "itemId": "III_D_c",
+      "section": "III.D",
+      "officialPrompt": "Construirea unei definiții care încalcă regula de la b).",
+      "correctAnswer": "Dacă la b) se alege claritatea și precizia, un exemplu posibil este: «Dreptatea este lumina frumoasă a societății.» Aceasta încalcă regula clarității prin limbaj metaforic.",
+      "points": 2,
+      "shortExplanation": "Definiția trebuie să aibă definitul «dreptate» și să încalce regula indicată la b).",
+      "scoring": {
+        "points": 2,
+        "criteria": [
+          "2p pentru definiția construită conform cerinței"
+        ]
+      }
+    }
+  ]
+}

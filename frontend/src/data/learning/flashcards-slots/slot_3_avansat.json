@@ -1,0 +1,184 @@
+{
+  "slot": 3,
+  "nivel": "avansat",
+  "title": "Slot 3 - Avansat",
+  "description": "Set complet de 35 flashcarduri pentru nivelul avansat.",
+  "card_count": 35,
+  "cards": [
+    {
+      "id": "slot_3_avansat_card_1",
+      "front": "Analizează: „Dacă învăț, promovez. Am promovat. Deci am învățat.”",
+      "back": "Nevalid: afirmarea consecventului."
+    },
+    {
+      "id": "slot_3_avansat_card_2",
+      "front": "Analizează: „Dacă învăț, promovez. Nu am învățat. Deci nu promovez.”",
+      "back": "Nevalid: negarea antecedentului."
+    },
+    {
+      "id": "slot_3_avansat_card_3",
+      "front": "Analizează: „Dacă plouă, strada e udă. Strada nu e udă. Deci nu plouă.”",
+      "back": "Valid: modus tollens."
+    },
+    {
+      "id": "slot_3_avansat_card_4",
+      "front": "Analizează: „Dacă plouă, strada e udă. Plouă. Deci strada e udă.”",
+      "back": "Valid: modus ponens."
+    },
+    {
+      "id": "slot_3_avansat_card_5",
+      "front": "Transformă contrapusa: „Dacă p, atunci q”.",
+      "back": "Dacă non-q, atunci non-p."
+    },
+    {
+      "id": "slot_3_avansat_card_6",
+      "front": "Transformă inversa: „Dacă p, atunci q”.",
+      "back": "Dacă q, atunci p."
+    },
+    {
+      "id": "slot_3_avansat_card_7",
+      "front": "Transformă contrara: „Dacă p, atunci q”.",
+      "back": "Dacă non-p, atunci non-q."
+    },
+    {
+      "id": "slot_3_avansat_card_8",
+      "front": "Evaluează: p și q este adevărată când p=1 și q=0.",
+      "back": "Fals."
+    },
+    {
+      "id": "slot_3_avansat_card_9",
+      "front": "Evaluează: p sau q este falsă când p=0 și q=0.",
+      "back": "Adevărat."
+    },
+    {
+      "id": "slot_3_avansat_card_10",
+      "front": "Evaluează: dacă p, atunci q este falsă când p=1 și q=0.",
+      "back": "Adevărat."
+    },
+    {
+      "id": "slot_3_avansat_card_11",
+      "front": "Evaluează: p dacă și numai dacă q este adevărată când p=1 și q=1.",
+      "back": "Adevărat."
+    },
+    {
+      "id": "slot_3_avansat_card_12",
+      "front": "Evaluează: p dacă și numai dacă q este adevărată când p=1 și q=0.",
+      "back": "Fals."
+    },
+    {
+      "id": "slot_3_avansat_card_13",
+      "front": "Identifică eroarea: „Nu ai dreptate despre logică, pentru că ești leneș.”",
+      "back": "Argument ad hominem."
+    },
+    {
+      "id": "slot_3_avansat_card_14",
+      "front": "Identifică eroarea: „Trebuie să-mi dai dreptate, altfel mă supăr.”",
+      "back": "Apel emoțional nerelevant / ad misericordiam."
+    },
+    {
+      "id": "slot_3_avansat_card_15",
+      "front": "Identifică eroarea: „Ori accepți ideea mea, ori ești împotriva adevărului.”",
+      "back": "Falsă dilemă."
+    },
+    {
+      "id": "slot_3_avansat_card_16",
+      "front": "Identifică eroarea: „Toți spun asta, deci este adevărat.”",
+      "back": "Apel la majoritate."
+    },
+    {
+      "id": "slot_3_avansat_card_17",
+      "front": "Identifică eroarea: „Profesorul X a spus, deci sigur e adevărat.”",
+      "back": "Apel problematic la autoritate."
+    },
+    {
+      "id": "slot_3_avansat_card_18",
+      "front": "Identifică eroarea: „Această lege e bună pentru că este o lege bună.”",
+      "back": "Petiție de principiu."
+    },
+    {
+      "id": "slot_3_avansat_card_19",
+      "front": "Identifică eroarea: „După A a apărut B; deci A a cauzat B.”",
+      "back": "Cauză falsă."
+    },
+    {
+      "id": "slot_3_avansat_card_20",
+      "front": "Identifică eroarea: „Am văzut doi elevi nepregătiți; elevii sunt nepregătiți.”",
+      "back": "Generalizare pripită."
+    },
+    {
+      "id": "slot_3_avansat_card_21",
+      "front": "Identifică eroarea: „Susții reguli clare, deci vrei să controlezi totul.”",
+      "back": "Om de paie."
+    },
+    {
+      "id": "slot_3_avansat_card_22",
+      "front": "Identifică eroarea: „Discutăm despre validitate, dar problema reală este că oamenii nu mai citesc.”",
+      "back": "Ignoratio elenchi."
+    },
+    {
+      "id": "slot_3_avansat_card_23",
+      "front": "Construiește concluzia: Dacă p atunci q; p.",
+      "back": "q."
+    },
+    {
+      "id": "slot_3_avansat_card_24",
+      "front": "Construiește concluzia: Dacă p atunci q; non-q.",
+      "back": "non-p."
+    },
+    {
+      "id": "slot_3_avansat_card_25",
+      "front": "Ce se poate concluziona: Dacă p atunci q; q.",
+      "back": "Nu se poate concluziona valid p."
+    },
+    {
+      "id": "slot_3_avansat_card_26",
+      "front": "Ce se poate concluziona: Dacă p atunci q; non-p.",
+      "back": "Nu se poate concluziona valid non-q."
+    },
+    {
+      "id": "slot_3_avansat_card_27",
+      "front": "Dacă o formulă este tautologică, ce valoare are mereu?",
+      "back": "Adevărată."
+    },
+    {
+      "id": "slot_3_avansat_card_28",
+      "front": "Dacă o formulă este contradictorie, ce valoare are mereu?",
+      "back": "Falsă."
+    },
+    {
+      "id": "slot_3_avansat_card_29",
+      "front": "Dacă premisele sunt inconsistente, ce problemă apare?",
+      "back": "Sistemul argumentativ devine logic instabil."
+    },
+    {
+      "id": "slot_3_avansat_card_30",
+      "front": "De ce o concluzie adevărată nu garantează validitatea?",
+      "back": "Pentru că poate fi obținută printr-o formă greșită."
+    },
+    {
+      "id": "slot_3_avansat_card_31",
+      "front": "De ce premisele adevărate nu sunt suficiente fără formă validă?",
+      "back": "Pentru că legătura cu concluzia poate fi incorectă."
+    },
+    {
+      "id": "slot_3_avansat_card_32",
+      "front": "De ce forma validă nu garantează adevărul concluziei dacă premisele sunt false?",
+      "back": "Pentru că validitatea transmite adevărul doar din premise adevărate."
+    },
+    {
+      "id": "slot_3_avansat_card_33",
+      "front": "Analizează: „Dacă nu plouă, mergem afară. Nu mergem afară. Deci plouă.”",
+      "back": "Valid prin modus tollens."
+    },
+    {
+      "id": "slot_3_avansat_card_34",
+      "front": "Analizează: „Dacă citesc, înțeleg. Înțeleg. Deci citesc.”",
+      "back": "Nevalid: afirmarea consecventului."
+    },
+    {
+      "id": "slot_3_avansat_card_35",
+      "front": "Analizează: „Dacă citesc, înțeleg. Nu citesc. Deci nu înțeleg.”",
+      "back": "Nevalid: negarea antecedentului."
+    }
+  ]
+}

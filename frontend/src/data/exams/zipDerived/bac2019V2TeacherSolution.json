@@ -1,0 +1,162 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2019_v2",
+  "examId": "bac_logica_2019_v2",
+  "visibility": "teacher_only",
+  "source": "Barem oficial 2019 - Varianta 2",
+  "items": {
+    "I_A": {
+      "correctAnswers": {
+        "1": "c",
+        "2": "d",
+        "3": "b",
+        "4": "b",
+        "5": "d",
+        "6": "c",
+        "7": "b",
+        "8": "d",
+        "9": "d",
+        "10": "b"
+      },
+      "points": 20
+    },
+    "I_B": {
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_A_B_C_D",
+        "renderFromContract": true
+      },
+      "correctAnswers": {
+        "a": "A",
+        "b": "A",
+        "c": "F",
+        "d": "A",
+        "e": "F",
+        "f": "F"
+      },
+      "points": 10
+    },
+    "II_A": {
+      "correctAnswer": {
+        "prop2_formula": "SaP",
+        "prop3_formula": "SoP"
+      },
+      "points": 2
+    },
+    "II_B": {
+      "correctAnswer": [
+        {
+          "task": "subcontrara propoziției 1",
+          "formal": "SoP",
+          "natural": "Unele numere pare nu sunt numere prime."
+        },
+        {
+          "task": "subalterna propoziției 2",
+          "formal": "SiP",
+          "natural": "Unele războaie de agresiune sunt acte nedrepte."
+        },
+        {
+          "task": "supraalterna propoziției 3",
+          "formal": "SeP",
+          "natural": "Niciun silogism nu este raționament valid."
+        },
+        {
+          "task": "contrara propoziției 4",
+          "formal": "SaP",
+          "natural": "Toate minciunile sunt corecte."
+        }
+      ],
+      "points": 8
+    },
+    "II_C": {
+      "correctAnswer": [
+        {
+          "task": "conversa propoziției 1",
+          "formal": "PiS",
+          "natural": "Unele numere prime sunt numere pare."
+        },
+        {
+          "task": "obversa propoziției 1",
+          "formal": "So~P",
+          "natural": "Unele numere pare nu sunt numere neprimate / non-prime."
+        },
+        {
+          "task": "conversa propoziției 4",
+          "formal": "PeS",
+          "natural": "Nimic corect nu este minciună."
+        },
+        {
+          "task": "obversa propoziției 4",
+          "formal": "Sa~P",
+          "natural": "Toate minciunile sunt lucruri/corectitudini necorecte."
+        }
+      ],
+      "points": 8
+    },
+    "II_D": {
+      "correctAnswer": {
+        "formal": "~PiS",
+        "natural": "Unele raționamente nevalide sunt silogisme."
+      },
+      "points": 4
+    },
+    "II_E": {
+      "correctAnswer": {
+        "X_formal": "SoP→Si~P",
+        "Y_formal": "SaP→PaS",
+        "X_correctness": "corect / obversiune validă",
+        "Y_correctness": "incorect / conversiune nevalidă",
+        "X_explanation": "Raționamentul elevului X aplică obversiunea unei propoziții de tip O; distribuirea termenilor este respectată."
+      },
+      "points": 8
+    },
+    "III_A": {
+      "schemes": {
+        "aee-2": [
+          "PeM",
+          "SaM",
+          "SeP"
+        ],
+        "aai-4": [
+          "PaM",
+          "MaS",
+          "SiP"
+        ]
+      },
+      "validity": {
+        "aee-2": "valid",
+        "aai-4": "valid"
+      },
+      "diagramSolutions": [
+        {
+          "diagramId": "diagram_III_A_aee_2_venn",
+          "renderFromContract": true
+        },
+        {
+          "diagramId": "diagram_III_A_aai_4_venn",
+          "renderFromContract": true
+        }
+      ],
+      "points": 14
+    },
+    "III_B": {
+      "correctAnswer": "Orice animal terestru este animal care trăiește pe uscat. Niciun pește nu este animal care trăiește pe uscat. Deci niciun pește nu este animal terestru. Acceptabilă orice schemă validă care justifică propoziția dată.",
+      "points": 6
+    },
+    "III_C": {
+      "correctAnswers": {
+        "1": "F",
+        "2": "A",
+        "3": "F",
+        "4": "A"
+      },
+      "points": 4
+    },
+    "III_D": {
+      "correctAnswer": {
+        "violated_rule": "Definiția este prea îngustă / nu este adecvată, deoarece limitează mamiferele la animale terestre.",
+        "other_rule_example": "Regula evitării circularității.",
+        "bad_definition_example": "Mamiferul este un animal mamifer."
+      },
+      "points": 6
+    }
+  }
+}

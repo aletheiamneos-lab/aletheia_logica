@@ -1,0 +1,134 @@
+{
+  "slot": 14,
+  "nivel": "avansat",
+  "title": "Slot 14 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat, importate din documentul Word pentru slotul 14.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_14_avansat_card_1",
+      "front": "În enunțul „Toți triunghiurile sunt poligoane”, propoziția este de tip ____, iar subiectul este ____.",
+      "back": "Răspuns: A; distribuit. Explicație: Forma „Toți S sunt P” este universal afirmativă. Subiectul este distribuit pentru că propoziția se referă la toți membrii clasei S. Exemplu: Predicatul „poligoane” rămâne nedistribuit."
+    },
+    {
+      "id": "slot_14_avansat_card_2",
+      "front": "În enunțul „Niciun triunghi nu este poligon”, propoziția este de tip ____, iar ambii termeni sunt ____.",
+      "back": "Răspuns: E; distribuiți. Explicație: Forma E exclude complet intersecția dintre S și P, deci se referă la întreaga sferă a ambilor termeni. Exemplu: Este cea mai puternică propoziție negativă categorică."
+    },
+    {
+      "id": "slot_14_avansat_card_3",
+      "front": "În enunțul „Unii triunghiurile sunt poligoane”, propoziția este de tip ____, iar termenii sunt ____.",
+      "back": "Răspuns: I; nedistribuiți. Explicație: Propoziția I afirmă doar existența unor elemente comune, fără a vorbi despre întreaga clasă S sau P. Exemplu: Ea exprimă intersecție parțială."
+    },
+    {
+      "id": "slot_14_avansat_card_4",
+      "front": "În enunțul „Unii triunghiurile nu sunt poligoane”, propoziția este de tip ____, iar predicatul este ____.",
+      "back": "Răspuns: O; distribuit. Explicație: Propoziția O exclude unii S din întreaga clasă P, deci predicatul este distribuit. Exemplu: Subiectul rămâne nedistribuit."
+    },
+    {
+      "id": "slot_14_avansat_card_5",
+      "front": "Obversa propoziției „Toți triunghiurile sunt poligoane” este „Niciun triunghi nu este ____”.",
+      "back": "Răspuns: non-poligon. Explicație: Obversiunea schimbă afirmația în negație și înlocuiește predicatul cu contradictoriul său. Exemplu: Valoarea de adevăr se păstrează."
+    },
+    {
+      "id": "slot_14_avansat_card_6",
+      "front": "Conversa propoziției „Niciun triunghi nu este poligon” este „Niciun ____ nu este ____”.",
+      "back": "Răspuns: poligon; triunghi. Explicație: Propoziția E se convertește simplu, prin inversarea subiectului cu predicatul. Exemplu: Conversiunea este validă deoarece ambii termeni sunt distribuiți."
+    },
+    {
+      "id": "slot_14_avansat_card_7",
+      "front": "Conversa propoziției „Unii triunghiurile sunt poligoane” este „Unii ____ sunt ____”.",
+      "back": "Răspuns: poligoane; triunghiurile. Explicație: Propoziția I se convertește simplu, deoarece niciun termen nu devine distribuit nejustificat. Exemplu: Se păstrează sensul existențial al intersecției."
+    },
+    {
+      "id": "slot_14_avansat_card_8",
+      "front": "Din „Toți triunghiurile sunt poligoane” rezultă prin conversiune prin accident: „Unii ____ sunt ____”.",
+      "back": "Răspuns: poligoane; triunghiurile. Explicație: Propoziția A nu se convertește simplu; ea poate trece valid la o particulară. Exemplu: Se acceptă existența clasei S."
+    },
+    {
+      "id": "slot_14_avansat_card_9",
+      "front": "Dacă propoziția „Toți triunghiurile sunt poligoane” este adevărată, propoziția „Unii triunghiurile nu sunt poligoane” este ____.",
+      "back": "Răspuns: falsă. Explicație: A și O sunt contradictorii. Dacă universala afirmativă este adevărată, particulara negativă nu poate fi adevărată. Exemplu: Nu pot fi simultan adevărate."
+    },
+    {
+      "id": "slot_14_avansat_card_10",
+      "front": "Dacă propoziția „Niciun triunghi nu este poligon” este adevărată, propoziția „Unii triunghiurile sunt poligoane” este ____.",
+      "back": "Răspuns: falsă. Explicație: E și I sunt contradictorii. Adevărul uneia impune falsitatea celeilalte. Exemplu: Este o relație centrală în pătratul opoziției."
+    },
+    {
+      "id": "slot_14_avansat_card_11",
+      "front": "Silogismul „Toți M sunt P; Toți S sunt M; deci Toți S sunt P” este ____.",
+      "back": "Răspuns: valid. Explicație: Termenul mediu este distribuit în premisa majoră, iar concluzia respectă legătura dintre S și P. Exemplu: Acesta este modelul Barbara, figura I."
+    },
+    {
+      "id": "slot_14_avansat_card_12",
+      "front": "Silogismul „Toți P sunt M; Toți S sunt M; deci Toți S sunt P” este nevalid deoarece termenul ____ nu este distribuit.",
+      "back": "Răspuns: mediu. Explicație: M apare ca predicat în două propoziții afirmative universale, unde predicatul este nedistribuit. Exemplu: Aceasta este eroarea termenului mediu nedistribuit."
+    },
+    {
+      "id": "slot_14_avansat_card_13",
+      "front": "Silogismul „Niciun M nu este P; Niciun S nu este M; deci Niciun S nu este P” încalcă regula celor două premise ____.",
+      "back": "Răspuns: negative. Explicație: Din două premise negative nu se poate obține concluzie validă, deoarece nu apare o legătură afirmativă între termenii extremi. Exemplu: Este o eroare silogistică standard."
+    },
+    {
+      "id": "slot_14_avansat_card_14",
+      "front": "Silogismul „Unii M sunt P; Unii S sunt M; deci Unii S sunt P” încalcă regula celor două premise ____.",
+      "back": "Răspuns: particulare. Explicație: Două premise particulare nu oferă suficientă informație pentru o concluzie necesară. Exemplu: Concluzia poate părea plauzibilă, dar nu este garantată logic."
+    },
+    {
+      "id": "slot_14_avansat_card_15",
+      "front": "Într-un silogism, dacă o premisă este negativă, concluzia trebuie să fie ____.",
+      "back": "Răspuns: negativă. Explicație: Concluzia trebuie să păstreze caracterul negativ al relației stabilite de una dintre premise. Exemplu: O concluzie afirmativă ar încălca regula semnului."
+    },
+    {
+      "id": "slot_14_avansat_card_16",
+      "front": "Într-un silogism, dacă o premisă este particulară, concluzia trebuie să fie ____.",
+      "back": "Răspuns: particulară. Explicație: Informația parțială nu permite o concluzie universală. Exemplu: Regula previne extinderea nejustificată a concluziei."
+    },
+    {
+      "id": "slot_14_avansat_card_17",
+      "front": "În logica propozițională, schema „Dacă p atunci q; p; deci q” se numește ____.",
+      "back": "Răspuns: modus ponens. Explicație: Este o schemă validă: afirmarea antecedentului permite afirmarea consecventului. Exemplu: Dacă regula se aplică și condiția apare, rezultatul urmează."
+    },
+    {
+      "id": "slot_14_avansat_card_18",
+      "front": "Schema „Dacă p atunci q; non-q; deci non-p” se numește ____.",
+      "back": "Răspuns: modus tollens. Explicație: Este o schemă validă: negarea consecventului permite negarea antecedentului. Exemplu: Dacă efectul necesar lipsește, cauza condițională nu a fost prezentă."
+    },
+    {
+      "id": "slot_14_avansat_card_19",
+      "front": "Schema „Dacă p atunci q; q; deci p” comite eroarea numită ____.",
+      "back": "Răspuns: afirmarea consecventului. Explicație: Consecventul poate avea și alte cauze; de aceea p nu rezultă necesar. Exemplu: Faptul că strada este udă nu dovedește singur că a plouat."
+    },
+    {
+      "id": "slot_14_avansat_card_20",
+      "front": "Schema „Dacă p atunci q; non-p; deci non-q” comite eroarea numită ____.",
+      "back": "Răspuns: negarea antecedentului. Explicație: Lipsa antecedentului nu exclude posibilitatea ca q să apară din alt motiv. Exemplu: Un efect poate avea mai multe condiții suficiente."
+    },
+    {
+      "id": "slot_14_avansat_card_21",
+      "front": "Enunțul „După ce am schimbat pixul, am luat notă mare; pixul a cauzat nota” conține sofismul numit ____.",
+      "back": "Răspuns: cauză falsă. Explicație: Este acest sofism deoarece succesiunea temporală nu dovedește cauzalitatea. Exemplu: Răspunsul corect se stabilește analizând funcția argumentului, nu impresia produsă de formulare."
+    },
+    {
+      "id": "slot_14_avansat_card_22",
+      "front": "O generalizare făcută pe baza a prea puține cazuri se numește ____.",
+      "back": "Răspuns: generalizare pripită. Explicație: Concluzia depășește baza de observație disponibilă. Exemplu: Pentru o inducție bună sunt necesare cazuri suficiente și reprezentative."
+    },
+    {
+      "id": "slot_14_avansat_card_23",
+      "front": "Confundarea faptului că două fenomene apar împreună cu ideea că unul îl cauzează pe celălalt se numește eroarea ____.",
+      "back": "Răspuns: corelație-cauzalitate. Explicație: Corelația nu dovedește cauzalitatea; poate exista o cauză comună sau o coincidență. Exemplu: Este una dintre cele mai frecvente erori în argumentarea empirică."
+    },
+    {
+      "id": "slot_14_avansat_card_24",
+      "front": "Într-o analogie bună, asemănările trebuie să fie ____ pentru concluzia trasă.",
+      "back": "Răspuns: relevante. Explicație: Nu orice asemănare susține o analogie; contează asemănările legate de proprietatea transferată. Exemplu: Asemănările superficiale duc la analogii slabe."
+    },
+    {
+      "id": "slot_14_avansat_card_25",
+      "front": "Într-un argument complex, premisa neexprimată, dar necesară pentru concluzie, se numește premisă ____.",
+      "back": "Răspuns: implicită. Explicație: Ea nu apare direct în enunț, dar argumentul depinde de ea. Exemplu: Entimema funcționează frecvent prin premise implicite."
+    }
+  ]
+}

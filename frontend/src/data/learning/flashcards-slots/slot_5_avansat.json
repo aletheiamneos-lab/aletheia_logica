@@ -1,0 +1,134 @@
+{
+  "slot": 5,
+  "nivel": "avansat",
+  "title": "Slot 5 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat, formulate didactic și aplicat.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_5_avansat_card_1",
+      "front": "Identifică termenul mediu: Toți juriștii sunt absolvenți. Toți avocații sunt juriști. Deci toți avocații sunt absolvenți.",
+      "back": "Termenul mediu este „juriștii”, deoarece apare în ambele premise și nu apare în concluzie."
+    },
+    {
+      "id": "slot_5_avansat_card_2",
+      "front": "Identifică termenul major: Toți juriștii sunt absolvenți. Toți avocații sunt juriști. Deci toți avocații sunt absolvenți.",
+      "back": "Termenul major este „absolvenți”, deoarece este predicatul concluziei."
+    },
+    {
+      "id": "slot_5_avansat_card_3",
+      "front": "Identifică termenul minor: Toți juriștii sunt absolvenți. Toți avocații sunt juriști. Deci toți avocații sunt absolvenți.",
+      "back": "Termenul minor este „avocații”, deoarece este subiectul concluziei."
+    },
+    {
+      "id": "slot_5_avansat_card_4",
+      "front": "Verifică: Toți M sunt P. Toți S sunt M. Deci toți S sunt P.",
+      "back": "Silogism valid: termenul mediu este distribuit și concluzia respectă distribuirea."
+    },
+    {
+      "id": "slot_5_avansat_card_5",
+      "front": "Verifică: Toți P sunt M. Toți S sunt M. Deci toți S sunt P.",
+      "back": "Silogism nevalid: termenul mediu M nu este distribuit în nicio premisă."
+    },
+    {
+      "id": "slot_5_avansat_card_6",
+      "front": "Verifică: Niciun M nu este P. Toți S sunt M. Deci niciun S nu este P.",
+      "back": "Silogism valid: premisa negativă produce concluzie negativă, iar M este distribuit."
+    },
+    {
+      "id": "slot_5_avansat_card_7",
+      "front": "Verifică: Niciun M nu este P. Niciun S nu este M. Deci niciun S nu este P.",
+      "back": "Silogism nevalid: din două premise negative nu rezultă concluzie validă."
+    },
+    {
+      "id": "slot_5_avansat_card_8",
+      "front": "Verifică: Unii M sunt P. Unii S sunt M. Deci unii S sunt P.",
+      "back": "Silogism nevalid: din două premise particulare nu rezultă concluzie validă."
+    },
+    {
+      "id": "slot_5_avansat_card_9",
+      "front": "Verifică: Toți M sunt P. Unii S sunt M. Deci unii S sunt P.",
+      "back": "Silogism valid: concluzia este particulară și respectă premisele."
+    },
+    {
+      "id": "slot_5_avansat_card_10",
+      "front": "Verifică: Toți M sunt P. Unii S sunt M. Deci toți S sunt P.",
+      "back": "Silogism nevalid: concluzia universală nu poate rezulta din premisă particulară."
+    },
+    {
+      "id": "slot_5_avansat_card_11",
+      "front": "Identifică eroarea: termenul major este distribuit în concluzie, dar nu în premisa majoră.",
+      "back": "Eroarea este ilicit major."
+    },
+    {
+      "id": "slot_5_avansat_card_12",
+      "front": "Identifică eroarea: termenul minor este distribuit în concluzie, dar nu în premisa minoră.",
+      "back": "Eroarea este ilicit minor."
+    },
+    {
+      "id": "slot_5_avansat_card_13",
+      "front": "Identifică eroarea: termenul mediu nu este distribuit în nicio premisă.",
+      "back": "Eroarea este termen mediu nedistribuit."
+    },
+    {
+      "id": "slot_5_avansat_card_14",
+      "front": "Identifică eroarea: silogismul folosește patru termeni diferiți.",
+      "back": "Eroarea este eroarea celor patru termeni."
+    },
+    {
+      "id": "slot_5_avansat_card_15",
+      "front": "Ce regulă este încălcată dacă premisele sunt ambele negative?",
+      "back": "Este încălcată regula conform căreia din două premise negative nu rezultă concluzie."
+    },
+    {
+      "id": "slot_5_avansat_card_16",
+      "front": "Ce regulă este încălcată dacă premisele sunt ambele particulare?",
+      "back": "Este încălcată regula conform căreia din două premise particulare nu rezultă concluzie."
+    },
+    {
+      "id": "slot_5_avansat_card_17",
+      "front": "Ce concluzie trebuie să aibă un silogism cu o premisă negativă?",
+      "back": "Trebuie să aibă concluzie negativă."
+    },
+    {
+      "id": "slot_5_avansat_card_18",
+      "front": "Ce concluzie trebuie să aibă un silogism cu o premisă particulară?",
+      "back": "Trebuie să aibă concluzie particulară."
+    },
+    {
+      "id": "slot_5_avansat_card_19",
+      "front": "Formalizează: Toți avocații sunt juriști.",
+      "back": "Forma este universal afirmativă: AaJ sau, în notație abstractă, SaP, în funcție de rolul termenilor."
+    },
+    {
+      "id": "slot_5_avansat_card_20",
+      "front": "Formalizează: Niciun medic nu este judecător.",
+      "back": "Forma este universal negativă: SeP, dacă S = medici și P = judecători."
+    },
+    {
+      "id": "slot_5_avansat_card_21",
+      "front": "Formalizează: Unii studenți sunt juriști.",
+      "back": "Forma este particular afirmativă: SiP, dacă S = studenți și P = juriști."
+    },
+    {
+      "id": "slot_5_avansat_card_22",
+      "front": "Formalizează: Unii oameni nu sunt corecți.",
+      "back": "Forma este particular negativă: SoP, dacă S = oameni și P = corecți."
+    },
+    {
+      "id": "slot_5_avansat_card_23",
+      "front": "De ce figura silogistică depinde de termenul mediu?",
+      "back": "Pentru că poziția termenului mediu în premise stabilește figura."
+    },
+    {
+      "id": "slot_5_avansat_card_24",
+      "front": "Când este concluzia citibilă în diagrama Venn?",
+      "back": "Când apare deja după reprezentarea premiselor, fără să fie desenată separat."
+    },
+    {
+      "id": "slot_5_avansat_card_25",
+      "front": "De ce nu trebuie desenată concluzia în testul Venn?",
+      "back": "Pentru că scopul testului este să verifice dacă ea rezultă din premise, nu să fie adăugată artificial."
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "id": "bac-2013-v6",
+  "track": "bac",
+  "slug": "modulul-3-bac-2013-varianta-6",
+  "title": "Modulul 3 - BAC 2013, Varianta 6",
+  "subtitle": "Exemplu complet construit pe pachetul oficial 2013 V6, cu subiectul si baremul variantei corecte.",
+  "intro": "Pagina pastreaza impartirea pe Subiectul I, Subiectul II si Subiectul III, iar cardurile folosesc raspunsurile din JSON-ul teacher al pachetului 2013 V6.",
+  "officialPaper": {
+    "subjectPages": [
+      {
+        "title": "Subiectul oficial - pagina 1",
+        "src": "/generated-exams/bac/2013_v6/subject-1.jpg"
+      },
+      {
+        "title": "Subiectul oficial - pagina 2",
+        "src": "/generated-exams/bac/2013_v6/subject-2.jpg"
+      }
+    ],
+    "baremPages": [
+      {
+        "title": "Baremul oficial - pagina 1",
+        "src": "/generated-exams/bac/2013_v6/barem-1.jpg"
+      },
+      {
+        "title": "Baremul oficial - pagina 2",
+        "src": "/generated-exams/bac/2013_v6/barem-2.jpg"
+      }
+    ],
+    "subjectDownload": {
+      "href": "/generated-exams/bac/2013_v6/subject.pdf",
+      "fileName": "Examenul de bacalaureat naţional 2013_V6.pdf",
+      "label": "Descarca subiectul PDF"
+    },
+    "baremDownload": {
+      "href": "/generated-exams/bac/2013_v6/barem.pdf",
+      "fileName": "Examenul de bacalaureat naţional 2013_V6_BAREM.pdf",
+      "label": "Descarca baremul PDF"
+    }
+  },
+  "strategyBullets": [],
+  "sections": [
+    {
+      "id": "subiect-i",
+      "title": "Subiectul I",
+      "points": "30 de puncte",
+      "overview": "Cerintele sunt pastrate in ordinea oficiala din varianta.",
+      "cards": [
+        {
+          "kind": "choice",
+          "reference": "I.A.1",
+          "marks": "3 puncte",
+          "title": "Itemul 1",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Extensiunea termenului elev este alcatuita din:\na) toti elevii\nb) elevii din ciclul liceal\nc) elevii din ciclul gimnazial\nd) elevii din ciclul primar",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) toti elevii"
+            },
+            {
+              "value": "b",
+              "label": "b) elevii din ciclul liceal"
+            },
+            {
+              "value": "c",
+              "label": "c) elevii din ciclul gimnazial"
+            },
+            {
+              "value": "d",
+              "label": "d) elevii din ciclul primar"
+            }
+          ],
+          "correctAnswer": "a",
+          "correctAnswerLabel": "a) toti elevii",
+          "correctExplanation": "Raspunsul corect pentru I.A.1 este a) toti elevii.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.1 este a) toti elevii.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.2",
+          "marks": "3 puncte",
+          "title": "Itemul 2",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Termenul bicicleta este, dupa intensiune:\na) nevid\nb) distributiv\nc) pozitiv\nd) vag",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) nevid"
+            },
+            {
+              "value": "b",
+              "label": "b) distributiv"
+            },
+            {
+              "value": "c",
+              "label": "c) pozitiv"
+            },
+            {
+              "value": "d",
+              "label": "d) vag"
+            }
+          ],
+          "correctAnswer": "c",
+          "correctAnswerLabel": "c) pozitiv",
+          "correctExplanation": "Raspunsul corect pentru I.A.2 este c) pozitiv.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.2 este c) pozitiv.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.3",
+          "marks": "3 puncte",
+          "title": "Itemul 3",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Termenii roman si profesor sunt in raport de:\na) contrarietate\nb) incrucisare\nc) ordonare\nd) contradictie",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) contrarietate"
+            },
+            {
+              "value": "b",
+              "label": "b) incrucisare"
+            },
+            {
+              "value": "c",
+              "label": "c) ordonare"
+            },
+            {
+              "value": "d",
+              "label": "d) contradictie"
+            }
+          ],
+          "correctAnswer": "b",
+          "correctAnswerLabel": "b) incrucisare",
+          "correctExplanation": "Raspunsul corect pentru I.A.3 este b) incrucisare.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.3 este b) incrucisare.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.4",
+          "marks": "3 puncte",
+          "title": "Itemul 4",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Intr-o propozitie categorica se exprima:\na) doua raporturi intre doi termeni\nb) un singur raport intre trei termeni\nc) doua raporturi intre trei termeni\nd) un singur raport intre doi termeni",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) doua raporturi intre doi termeni"
+            },
+            {
+              "value": "b",
+              "label": "b) un singur raport intre trei termeni"
+            },
+            {
+              "value": "c",
+              "label": "c) doua raporturi intre trei termeni"
+            },
+            {
+              "value": "d",
+              "label": "d) un singur raport intre doi termeni"
+            }
+          ],
+          "correctAnswer": "d",
+          "correctAnswerLabel": "d) un singur raport intre doi termeni",
+          "correctExplanation": "Raspunsul corect pentru I.A.4 este d) un singur raport intre doi termeni.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.4 este d) un singur raport intre doi termeni.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.5",
+          "marks": "3 puncte",
+          "title": "Itemul 5",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Subiectul logic al propozitiei „Unii elevi de liceu sunt orgoliosi” este:\na) unii elevi\nb) elevi\nc) elevi de liceu\nd) unii elevi de liceu",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) unii elevi"
+            },
+            {
+              "value": "b",
+              "label": "b) elevi"
+            },
+            {
+              "value": "c",
+              "label": "c) elevi de liceu"
+            },
+            {
+              "value": "d",
+              "label": "d) unii elevi de liceu"
+            }
+          ],
+          "correctAnswer": "c",
+          "correctAnswerLabel": "c) elevi de liceu",
+          "correctExplanation": "Raspunsul corect pentru I.A.5 este c) elevi de liceu.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.5 este c) elevi de liceu.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.6",
+          "marks": "3 puncte",
+          "title": "Itemul 6",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Contradictoria propozitiei „Unele exercitii sunt dificile” este propozitia:\na) Niciun exercitiu nu este dificil.\nb) Unele exercitii nu sunt dificile.\nc) Toate exercitiile sunt dificile.\nd) Unele exercitii nu sunt accesibile.",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) Niciun exercitiu nu este dificil."
+            },
+            {
+              "value": "b",
+              "label": "b) Unele exercitii nu sunt dificile."
+            },
+            {
+              "value": "c",
+              "label": "c) Toate exercitiile sunt dificile."
+            },
+            {
+              "value": "d",
+              "label": "d) Unele exercitii nu sunt accesibile."
+            }
+          ],
+          "correctAnswer": "a",
+          "correctAnswerLabel": "a) Niciun exercitiu nu este dificil.",
+          "correctExplanation": "Raspunsul corect pentru I.A.6 este a) Niciun exercitiu nu este dificil..",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.6 este a) Niciun exercitiu nu este dificil..",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "reference": "I.B.1",
+          "marks": "12 puncte",
+          "title": "Scheme silogistice si verificare Venn",
+          "prompt": "Scrie schemele cerute si verifica validitatea prin diagrama Venn.",
+          "officialText": "Fie urmatoarele doua moduri silogistice: aai-1, eae-2. Scrieti schema de inferenta corespunzatoare fiecareia si construiti, in limbaj natural, un silogism pentru una dintre cele doua scheme de inferenta. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri silogistice date, precizand decizia la care ati ajuns.\n\nZone de raspuns:\nlogic_editor (Exemplu structura: MaP / SaM / SiP; apoi scrie un silogism in limbaj natural.)\ndiagram_canvas (Construieste diagrama Venn pentru unul dintre moduri si marcheaza zonele cerute.)",
+          "answer": "Modurile aai-1 si eae-2 sunt valide.",
+          "answerBullets": [
+            "aai-1: MaP / SaM / SiP",
+            "eae-2: PeM / SaM / SeP",
+            "Toate manualele de logica sunt materiale utile. Unele carti studiate de elevi sunt manuale de logica. Deci unele carti studiate de elevi sunt materiale utile. Formal: MaP; SiM; deci SiP (aai-1).",
+            "Venn aai-1: M subset P; S intersects M; therefore S intersects P",
+            "Venn eae-2: P disjoint M; S subset M; therefore S disjoint P"
+          ],
+          "markingNote": "Baremul accepta schema corecta, un silogism in limbaj natural pentru una dintre scheme si decizia explicita de validitate prin Venn."
+        }
+      ]
+    },
+    {
+      "id": "subiect-ii",
+      "title": "Subiectul II",
+      "points": "30 de puncte",
+      "overview": "Propozitii date:\n1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.",
+      "cards": [
+        {
+          "reference": "II.A",
+          "marks": "4 puncte",
+          "title": "Formula propozitiei 4",
+          "prompt": "Precizati formula propozitiei 4.",
+          "officialText": "1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.\n\nPrecizati formula propozitiei 4.\nPlaceholder: Exemplu format: SaP / SeP / SiP / SoP",
+          "answer": "SaP",
+          "justification": "Propozitia 4 este universala afirmativa, deci are formula SaP."
+        },
+        {
+          "reference": "II.B",
+          "marks": "6 puncte",
+          "title": "Subcontrara si contrara",
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 4.",
+          "officialText": "1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.\n\nConstruiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 4.\nPlaceholder: Exemplu: Subcontrara propozitiei X: ...; formal: ...; natural: ...",
+          "answerBullets": [
+            "Subcontrara propozitiei 1: SiP - Unele titluri de valoare sunt obligatiuni.",
+            "Contrara propozitiei 4: SeP - Nicio idee noua nu este interesanta."
+          ]
+        },
+        {
+          "reference": "II.C",
+          "marks": "10 puncte",
+          "title": "Conversiune si obversiune",
+          "prompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+          "officialText": "1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.\n\nAplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 2 si 3, atat in limbaj formal, cat si in limbaj natural.\nPlaceholder: Exemplu structura: Propozitia 2: formula initiala -> conversa: ... / obversa: ...",
+          "answerBullets": [
+            "Propozitia 2 (SiP): conversa PiS - Unele lucruri pasionate de sah sunt elevi.; obversa So~P - Unii elevi nu sunt nepasionati de sah.",
+            "Propozitia 3 (SeP): conversa PeS - Niciun animal domestic nu este tigru.; obversa Sa~P - Toti tigrii sunt non-animale domestice."
+          ]
+        },
+        {
+          "reference": "II.D",
+          "marks": "6 puncte",
+          "title": "De ce propozitia 1 nu se converteste corect",
+          "prompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+          "officialText": "1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.\n\nExplicati succint de ce propozitia 1 nu se converteste corect.\nPlaceholder: Exemplu: Propozitia de tip O nu admite conversiune valida deoarece ...",
+          "answer": "Propozitia 1 este de tip O (SoP). Propozitiile particulare negative nu se convertesc valid. Din „Unele titluri de valoare nu sunt obligatiuni” nu rezulta valid „Unele obligatiuni nu sunt titluri de valoare”."
+        },
+        {
+          "reference": "II.E",
+          "marks": "4 puncte",
+          "title": "Diagrama Euler pentru propozitia 3",
+          "prompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+          "officialText": "1. Unele titluri de valoare nu sunt obligatiuni.\n2. Unii elevi sunt pasionati de sah.\n3. Niciun tigru nu este animal domestic.\n4. Toate ideile noi sunt interesante.\n\nReprezentati prin metoda diagramelor Euler propozitia categorica 3.\nPlaceholder: Deseneaza doua cercuri separate pentru termenii care nu au elemente comune.",
+          "answer": "SeP - Niciun tigru nu este animal domestic.",
+          "answerBullets": [
+            "doua cercuri disjuncte: S=tigru, P=animal domestic",
+            "circle S labeled tigru",
+            "circle P labeled animal domestic",
+            "circles disjoint/no overlap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subiect-iii",
+      "title": "Subiectul III",
+      "points": "30 de puncte",
+      "overview": "Cerintele sunt pastrate in ordinea oficiala din varianta.",
+      "cards": [
+        {
+          "reference": "III.1",
+          "marks": "4 puncte",
+          "title": "Definitia demonstratiei",
+          "prompt": "Definiti conceptul de demonstratie.",
+          "officialText": "Definiti conceptul de demonstratie.\nPlaceholder: Exemplu structura: Demonstratia este procesul logic prin care ...",
+          "answer": "Demonstratia este procesul logic prin care se intemeiaza adevarul unei teze prin raportare la argumente/premise adevarate si reguli valide de inferenta."
+        },
+        {
+          "reference": "III.2",
+          "marks": "6 puncte",
+          "title": "Cele trei propozitii ale silogismului",
+          "prompt": "Precizati denumirile celor trei propozitii din structura unui silogism.",
+          "officialText": "Precizati denumirile celor trei propozitii din structura unui silogism.\nPlaceholder: Exemplu: premisa ..., premisa ..., concluzia.",
+          "answerBullets": [
+            "premisa majora",
+            "premisa minora",
+            "concluzia"
+          ]
+        },
+        {
+          "reference": "III.3",
+          "marks": "10 puncte",
+          "title": "Argument valid cu doua premise",
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia „Unii oameni sunt nerecunoscatori”.",
+          "officialText": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia „Unii oameni sunt nerecunoscatori”.\nPlaceholder: Exemplu structura: Premisa majora: ...; premisa minora: ...; concluzie: ...; formal: ...",
+          "answer": "argument valid de tip aii-1",
+          "answerBullets": [
+            "MaP; SiM; deci SiP",
+            "Toti oamenii lipsiti de recunostinta sunt nerecunoscatori. Unii oameni sunt lipsiti de recunostinta. Deci unii oameni sunt nerecunoscatori."
+          ]
+        },
+        {
+          "reference": "III.4",
+          "marks": "10 puncte",
+          "title": "Reguli de corectitudine a definirii",
+          "prompt": "Fie definitia: „Romanul este o oglinda pe care o plimbam de-a lungul unui drum.” Mentionati o regula de corectitudine pe care o incalca definitia data. Enuntati doua reguli de corectitudine a definirii, diferite de regula de la punctul a, si construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.",
+          "officialText": "Fie definitia: „Romanul este o oglinda pe care o plimbam de-a lungul unui drum.” Mentionati o regula de corectitudine pe care o incalca definitia data. Enuntati doua reguli de corectitudine a definirii, diferite de regula de la punctul a, si construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.\nPlaceholder: Exemplu structura: a) regula incalcata este ...; b) regula 1: ... definitie gresita: ...; regula 2: ... definitie gresita: ...",
+          "answer": "Regula claritatii si preciziei: definitia foloseste o exprimare metaforica, nu una clara si operationala.",
+          "answerBullets": [
+            "regula non-circularitatii: Romanul este o opera romanesca.",
+            "regula adecvarii definitiei: Romanul este orice text scris."
+          ]
+        }
+      ]
+    }
+  ],
+  "checkpoints": [],
+  "practiceNote": ""
+}

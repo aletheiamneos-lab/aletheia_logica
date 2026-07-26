@@ -1,0 +1,134 @@
+{
+  "slot": 27,
+  "nivel": "mediu",
+  "title": "Slot 27 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu, importate din documentul Word pentru slotul 27.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_27_mediu_card_1",
+      "front": "Definiția „Sportivul este un persoană disciplinată” este prea ____ dacă nu distinge sportivul de alte cazuri din aceeași clasă.",
+      "back": "Răspuns: largă. Explicație: Definiția este prea largă atunci când definitorul include mai multe obiecte decât definitul. Exemplu: Nu orice persoană disciplinată este sportiv; de aceea trebuie adăugată diferența specifică."
+    },
+    {
+      "id": "slot_27_mediu_card_2",
+      "front": "Definiția „Sportivul este doar acel persoană disciplinată care are o trăsătură accidentală” riscă să fie prea ____.",
+      "back": "Răspuns: restrânsă. Explicație: Definiția prea restrânsă exclude obiecte care aparțin termenului definit. Exemplu: O definiție corectă trebuie să cuprindă toate cazurile termenului definit."
+    },
+    {
+      "id": "slot_27_mediu_card_3",
+      "front": "Definiția „Legea este ceea ce este legal” este ____.",
+      "back": "Răspuns: circulară. Explicație: Ea explică termenul printr-un derivat al său și nu adaugă informație reală. Exemplu: O definiție corectă ar trebui să indice că legea este o normă juridică adoptată de autoritatea competentă."
+    },
+    {
+      "id": "slot_27_mediu_card_4",
+      "front": "Într-o clasificare, dacă folosim simultan criteriul vârstei și criteriul profesiei, încălcăm regula ____.",
+      "back": "Răspuns: criteriului unic. Explicație: Pe același nivel al clasificării trebuie folosită o singură bază de împărțire. Exemplu: „Persoane: minori, profesori și sportivi” amestecă criterii."
+    },
+    {
+      "id": "slot_27_mediu_card_5",
+      "front": "Dacă o clasificare lasă unele elemente în afara claselor rezultate, ea încalcă regula ____.",
+      "back": "Răspuns: completitudinii. Explicație: O clasificare trebuie să acopere întregul domeniu analizat. Exemplu: Dacă zilele săptămânii sunt enumerate doar până miercuri, clasificarea este incompletă."
+    },
+    {
+      "id": "slot_27_mediu_card_6",
+      "front": "Dacă un element poate intra simultan în două clase de pe același nivel, clasificarea încalcă regula ____.",
+      "back": "Răspuns: excluderii reciproce. Explicație: Clasele trebuie să fie separate clar, fără suprapuneri necontrolate. Exemplu: Un student poate fi și sportiv, deci clasele „studenți” și „sportivi” nu se exclud."
+    },
+    {
+      "id": "slot_27_mediu_card_7",
+      "front": "Între termenii „sportiv” și „persoană disciplinată”, dacă toți sportivii sunt persoane disciplinate, dar nu toți persoane disciplinate sunt sportivii, raportul este de ____.",
+      "back": "Răspuns: ordonare. Explicație: Extensiunea termenului mai restrâns este inclusă în extensiunea termenului mai larg. Exemplu: Sportivul este specie în raport cu persoană disciplinatăul, dacă toți sportivii aparțin clasei persoane disciplinate."
+    },
+    {
+      "id": "slot_27_mediu_card_8",
+      "front": "Între termenii „legal” și „ilegal” raportul este de ____.",
+      "back": "Răspuns: contradicție. Explicație: Termenii se exclud și epuizează universul de discurs relevant. Exemplu: Un act este fie legal, fie ilegal, dacă universul este cel al legalității."
+    },
+    {
+      "id": "slot_27_mediu_card_9",
+      "front": "Între termenii „alb” și „negru” raportul este de ____.",
+      "back": "Răspuns: contrarietate. Explicație: Termenii se exclud, dar nu epuizează universul, deoarece pot exista și alte culori. Exemplu: Un obiect poate fi nici alb, nici negru."
+    },
+    {
+      "id": "slot_27_mediu_card_10",
+      "front": "Propozițiile A și O sunt în raport de ____.",
+      "back": "Răspuns: contradicție. Explicație: Ele nu pot fi nici ambele adevărate, nici ambele false. Exemplu: „Toți sportivii sunt persoane disciplinate” se opune contradictoriu lui „Unii sportivii nu sunt persoane disciplinate”."
+    },
+    {
+      "id": "slot_27_mediu_card_11",
+      "front": "Propozițiile E și I sunt în raport de ____.",
+      "back": "Răspuns: contradicție. Explicație: Dacă una este adevărată, cealaltă este falsă; nu pot avea aceeași valoare. Exemplu: „Niciun sportiv nu este persoană disciplinată” se opune lui „Unii sportivii sunt persoane disciplinate”."
+    },
+    {
+      "id": "slot_27_mediu_card_12",
+      "front": "Propozițiile A și E sunt în raport de ____.",
+      "back": "Răspuns: contrarietate. Explicație: Nu pot fi ambele adevărate, dar pot fi ambele false. Exemplu: Pot exista situații în care doar unii S sunt P."
+    },
+    {
+      "id": "slot_27_mediu_card_13",
+      "front": "Propozițiile I și O sunt în raport de ____.",
+      "back": "Răspuns: subcontrarietate. Explicație: Nu pot fi ambele false, dar pot fi ambele adevărate. Exemplu: Este posibil ca unii S să fie P și alții să nu fie P."
+    },
+    {
+      "id": "slot_27_mediu_card_14",
+      "front": "Adevărul propoziției universale afirmative implică adevărul propoziției particulare afirmative prin raportul de ____.",
+      "back": "Răspuns: subalternare. Explicație: Adevărul coboară de la universală la particulară. Exemplu: Dacă toți sportivii sunt persoane disciplinate, atunci și unii sportivii sunt persoane disciplinate, presupunând existența clasei S."
+    },
+    {
+      "id": "slot_27_mediu_card_15",
+      "front": "Conversiunea simplă este validă pentru propozițiile ____ și ____.",
+      "back": "Răspuns: E și I. Explicație: E și I pot inversa subiectul și predicatul fără schimbarea cantității. Exemplu: „Niciun S nu este P” devine „Niciun P nu este S”; „Unii S sunt P” devine „Unii P sunt S”."
+    },
+    {
+      "id": "slot_27_mediu_card_16",
+      "front": "Propoziția A se convertește valid numai prin ____.",
+      "back": "Răspuns: accident. Explicație: Prin conversiune prin accident, universalul devine particular pentru a evita extinderea nejustificată. Exemplu: „Toți S sunt P” devine „Unii P sunt S”, cu presupunerea existenței lui S."
+    },
+    {
+      "id": "slot_27_mediu_card_17",
+      "front": "Propoziția O nu se convertește valid, deoarece ar distribui nejustificat un ____.",
+      "back": "Răspuns: termen. Explicație: Conversiunea lui O ar putea face în concluzie o afirmație mai puternică decât premisa. Exemplu: Distribuirea trebuie controlată la fiecare transformare."
+    },
+    {
+      "id": "slot_27_mediu_card_18",
+      "front": "Obversiunea schimbă calitatea propoziției și neagă ____.",
+      "back": "Răspuns: predicatul. Explicație: Aceasta păstrează valoarea de adevăr, dar reformulează propoziția. Exemplu: „Toți S sunt P” devine „Niciun S nu este non-P”."
+    },
+    {
+      "id": "slot_27_mediu_card_19",
+      "front": "Contrapozitia se obține, în forma standard, prin obversiune urmată de ____.",
+      "back": "Răspuns: conversiune. Explicație: Mai întâi se schimbă calitatea și se neagă predicatul, apoi se inversează termenii dacă regula permite. Exemplu: Contrapozitia este validă pentru A și O, în formele uzuale."
+    },
+    {
+      "id": "slot_27_mediu_card_20",
+      "front": "Într-un silogism, termenul mediu trebuie distribuit cel puțin ____.",
+      "back": "Răspuns: o dată. Explicație: Dacă M nu este distribuit, nu poate lega sigur termenul minor de termenul major. Exemplu: Aceasta este una dintre cele mai importante reguli de validitate."
+    },
+    {
+      "id": "slot_27_mediu_card_21",
+      "front": "Din două premise negative nu rezultă ____ validă.",
+      "back": "Răspuns: concluzie. Explicație: Două premise negative separă termenii, dar nu creează o legătură afirmativă între S și P. Exemplu: Aceasta este o lege generală a silogismului."
+    },
+    {
+      "id": "slot_27_mediu_card_22",
+      "front": "Dacă o premisă este negativă, concluzia trebuie să fie ____.",
+      "back": "Răspuns: negativă. Explicație: Semnul negativ al raportului trebuie păstrat în concluzie. Exemplu: O concluzie afirmativă ar contrazice structura premiselor."
+    },
+    {
+      "id": "slot_27_mediu_card_23",
+      "front": "Din două premise particulare nu rezultă concluzie ____.",
+      "back": "Răspuns: validă. Explicație: Două premise particulare nu oferă suficientă informație despre clase pentru o legătură necesară. Exemplu: Este o regulă fundamentală de validitate silogistică."
+    },
+    {
+      "id": "slot_27_mediu_card_24",
+      "front": "Dacă o premisă este particulară, concluzia trebuie să fie ____.",
+      "back": "Răspuns: particulară. Explicație: Dintr-o informație parțială nu se poate obține valid o concluzie universală. Exemplu: Această regulă previne generalizarea nejustificată."
+    },
+    {
+      "id": "slot_27_mediu_card_25",
+      "front": "În metoda Venn, propozițiile universale se reprezintă prin ____, iar particularele prin x.",
+      "back": "Răspuns: hașurare. Explicație: Hașurarea arată regiuni vide; x-ul arată existența unui element. Exemplu: În verificarea silogismului, universala se desenează înaintea particularei."
+    }
+  ]
+}

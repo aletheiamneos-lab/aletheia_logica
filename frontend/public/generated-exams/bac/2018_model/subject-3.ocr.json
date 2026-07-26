@@ -1,0 +1,256 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul EducatieiNationale",
+      "x": 1490.1136474609375,
+      "y": 188.34324645996094,
+      "score": 0.9739000817825054,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.51708984375,
+      "y": 262.6194763183594,
+      "score": 0.9943543788459566,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2887.755615234375,
+      "y": 443.0045471191406,
+      "score": 0.96670834507261,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 364.6022644042969,
+      "y": 450.96270751953125,
+      "score": 0.9061154276132584,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele douamoduri silogistice:aai-3,eae-2.",
+      "x": 364.6022644042969,
+      "y": 530.5443725585938,
+      "score": 0.9730631742837295,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 449.1477355957031,
+      "y": 604.8206176757812,
+      "score": 0.9863497848096101,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.789794921875,
+      "y": 687.0549926757812,
+      "score": 0.9840358612330063,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 454.43182373046875,
+      "y": 769.2893676757812,
+      "score": 0.9844685561127133,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3033.068115234375,
+      "y": 763.98388671875,
+      "score": 0.9972456246614456,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.1477355957031,
+      "y": 840.912841796875,
+      "score": 0.9867820649436025,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 451.789794921875,
+      "y": 920.4945068359375,
+      "score": 0.9779190440026541,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3035.710205078125,
+      "y": 920.4945068359375,
+      "score": 0.9655385091900826,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.24432373046875,
+      "y": 1000.076171875,
+      "score": 0.9893026672444254,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Unelepropozitiafirmativesuntadevarate\"",
+      "x": 451.789794921875,
+      "y": 1084.9632568359375,
+      "score": 0.979161666364086,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3051.5625,
+      "y": 1082.310546875,
+      "score": 0.9618824869394302,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorul silogism:Niciun eschimos nu este apicultor,pentru ca eschimosii nu apreciaza",
+      "x": 367.24432373046875,
+      "y": 1159.239501953125,
+      "score": 0.969687649181911,
+      "page_number": 3
+    },
+    {
+      "text": "miereaiartoatepersoanelecareapreciazamiereasuntapicultori.",
+      "x": 451.789794921875,
+      "y": 1238.8211669921875,
+      "score": 0.9931709571131344,
+      "page_number": 3
+    },
+    {
+      "text": "a.Precizati termenul minor al silogismului dat.",
+      "x": 446.50567626953125,
+      "y": 1313.0972900390625,
+      "score": 0.9958102677730803,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3046.278564453125,
+      "y": 1310.444580078125,
+      "score": 0.9867247864603996,
+      "page_number": 3
+    },
+    {
+      "text": "b.Mentionati, in limbaj natural, premisa majora a silogismului dat.",
+      "x": 449.1477355957031,
+      "y": 1392.678955078125,
+      "score": 0.9875469652574453,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.92041015625,
+      "y": 1392.678955078125,
+      "score": 0.9640000537037849,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 367.24432373046875,
+      "y": 1466.9552001953125,
+      "score": 0.9610022085684317,
+      "page_number": 3
+    },
+    {
+      "text": "Logicaestestintagandiri logice.",
+      "x": 451.789794921875,
+      "y": 1546.536865234375,
+      "score": 0.926156872703183,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3046.278564453125,
+      "y": 1623.4658203125,
+      "score": 0.9856885820627213,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 451.789794921875,
+      "y": 1626.1185302734375,
+      "score": 0.9716300624940131,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 446.50567626953125,
+      "y": 1703.0474853515625,
+      "score": 0.9763321256637574,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,logica\".",
+      "x": 578.6079711914062,
+      "y": 1785.2818603515625,
+      "score": 0.9727781109511853,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3051.5625,
+      "y": 1782.629150390625,
+      "score": 0.9929846227169037,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.31817626953125,
+      "y": 4942.02099609375,
+      "score": 0.9800411487112239,
+      "page_number": 3
+    },
+    {
+      "text": "Model",
+      "x": 3144.0341796875,
+      "y": 4947.326171875,
+      "score": 0.9988611936569214,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3din 3",
+      "x": 1653.9205322265625,
+      "y": 5024.25537109375,
+      "score": 0.9339293516599215,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul EducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "(30 de puncte)",
+    "SUBIECTULaIIII-lea",
+    "A.Fie urmatoarele douamoduri silogistice:aai-3,eae-2.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Unelepropozitiafirmativesuntadevarate\"",
+    "6 puncte",
+    "C.Fieurmatorul silogism:Niciun eschimos nu este apicultor,pentru ca eschimosii nu apreciaza",
+    "miereaiartoatepersoanelecareapreciazamiereasuntapicultori.",
+    "a.Precizati termenul minor al silogismului dat.",
+    "2 puncte",
+    "b.Mentionati, in limbaj natural, premisa majora a silogismului dat.",
+    "2 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Logicaestestintagandiri logice.",
+    "2 puncte",
+    "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,logica\".",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Model",
+    "Pagina 3din 3"
+  ],
+  "text": "Ministerul EducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\n(30 de puncte)\nSUBIECTULaIIII-lea\nA.Fie urmatoarele douamoduri silogistice:aai-3,eae-2.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Unelepropozitiafirmativesuntadevarate\"\n6 puncte\nC.Fieurmatorul silogism:Niciun eschimos nu este apicultor,pentru ca eschimosii nu apreciaza\nmiereaiartoatepersoanelecareapreciazamiereasuntapicultori.\na.Precizati termenul minor al silogismului dat.\n2 puncte\nb.Mentionati, in limbaj natural, premisa majora a silogismului dat.\n2 puncte\nD.Fie urmatoarea definitie:\nLogicaestestintagandiri logice.\n2 puncte\na.Mentionati o regula de corectitudine pe care o incalca definitia data.\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,logica\".\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nModel\nPagina 3din 3"
+}

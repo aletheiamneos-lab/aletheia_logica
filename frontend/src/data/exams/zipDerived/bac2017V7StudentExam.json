@@ -1,0 +1,372 @@
+{
+  "meta": {
+    "id": "bac-logica-2017-v7",
+    "title": "BAC Logică 2017 - Varianta 7",
+    "type": "bac_exam_student",
+    "year": 2017,
+    "variant": "Varianta 7",
+    "discipline": "Logică, argumentare și comunicare",
+    "student_visible": true,
+    "teacher_solution_visible": false,
+    "official_subject_file": "Examenul de bacalaureat național 2017_V7.pdf",
+    "official_barem_file": "Examenul de bacalaureat național 2017_V7_BAREM.pdf",
+    "scoring": {
+      "total": 100,
+      "official_bonus": 10,
+      "exam_points": 90
+    },
+    "rules": [
+      "Elevul vede doar cerințele, itemii și câmpurile de completare.",
+      "Nu se afișează răspunsurile oficiale în interfața elevului.",
+      "La finalizare se generează PDF-ul cu răspunsurile elevului, preview și înregistrare în raportul administratorului."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S1A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "type": "single_choice_group",
+          "items": [
+            {
+              "id": "S1A_1",
+              "prompt": "Una din regulile corectitudinii demonstrației, referitoare la teza de demonstrat, este:",
+              "options": {
+                "a": "teza de demonstrat trebuie să fie clar și precis formulată",
+                "b": "teza de demonstrat trebuie să fie o propoziție care a fost infirmată",
+                "c": "teza de demonstrat trebuie să fie înlocuită cu altă teză",
+                "d": "teza de demonstrat trebuie să fie înlocuită cu altă teză printr-o reformulare aparent identică"
+              }
+            },
+            {
+              "id": "S1A_2",
+              "prompt": "În funcție de gradul de probabilitate al concluziei, inferențele inductive pot fi:",
+              "options": {
+                "a": "valide și nevalide",
+                "b": "tari și slabe",
+                "c": "directe și indirecte",
+                "d": "imediate și mediate"
+              }
+            },
+            {
+              "id": "S1A_3",
+              "prompt": "Termenii „cadru didactic” și „bărbat” se află în raport de:",
+              "options": {
+                "a": "ordonare",
+                "b": "contrarietate",
+                "c": "încrucișare",
+                "d": "contradicție"
+              }
+            },
+            {
+              "id": "S1A_4",
+              "prompt": "Predicatul logic al propoziției „Unii elevi sunt pasionați de logica clasică”, este:",
+              "options": {
+                "a": "sunt",
+                "b": "sunt pasionați",
+                "c": "sunt pasionați de logica clasică",
+                "d": "pasionați de logica clasică"
+              }
+            },
+            {
+              "id": "S1A_5",
+              "prompt": "O operație de clasificare este corectă dacă:",
+              "options": {
+                "a": "nu apar toate speciile genului dat",
+                "b": "apar toate speciile genului dat",
+                "c": "apar specii străine care aparțin altui gen",
+                "d": "între clasele obținute există raporturi de identitate"
+              }
+            },
+            {
+              "id": "S1A_6",
+              "prompt": "Din punct de vedere intensional, termenul „văr primar” este:",
+              "options": {
+                "a": "relativ, concret, pozitiv, compus",
+                "b": "absolut, concret, pozitiv, simplu",
+                "c": "absolut, abstract, negativ, compus",
+                "d": "relativ, abstract, negativ, simplu"
+              }
+            },
+            {
+              "id": "S1A_7",
+              "prompt": "Inducția incompletă este o argumentare care presupune:",
+              "options": {
+                "a": "repetarea unor constatări și absența unui contraexemplu",
+                "b": "examinarea unei clase cu un număr foarte mic de obiecte",
+                "c": "examinarea unei clase cu un număr mare sau infinit de obiecte",
+                "d": "o concluzie cu caracter cert"
+              }
+            },
+            {
+              "id": "S1A_8",
+              "prompt": "Inducția completă este o argumentare care presupune:",
+              "options": {
+                "a": "o concluzie cu caracter cert",
+                "b": "o concluzie cu grad de probabilitate redus",
+                "c": "caracterul amplificator al premiselor în raport cu concluzia",
+                "d": "examinarea unei clase cu un număr infinit de obiecte"
+              }
+            },
+            {
+              "id": "S1A_9",
+              "prompt": "Intensiunea este un element din structura unui termen care:",
+              "options": {
+                "a": "reprezintă componenta lingvistică a termenului",
+                "b": "reprezintă cuvântul sau grupul de cuvinte prin care se exprimă termenul",
+                "c": "se referă la totalitatea obiectelor care formează o clasă de obiecte",
+                "d": "reprezintă însușirile definitorii ale obiectelor unei clase de obiecte"
+              }
+            },
+            {
+              "id": "S1A_10",
+              "prompt": "Propoziția „Majoritatea elevilor sunt pasionați de sport” este:",
+              "options": {
+                "a": "universală afirmativă",
+                "b": "particulară afirmativă",
+                "c": "particulară negativă",
+                "d": "universală negativă"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1B",
+          "title": "B. Raporturi între termeni și diagramă Euler",
+          "points": 10,
+          "type": "euler_truth_group",
+          "context": "Fie termenii A, B, C și D, astfel încât termenul A se află în raport de încrucișare cu termenul B și în opoziție cu termenul D. Termenul B este supraordonat termenului D. Termenul C este specie atât pentru A cât și pentru B însă nu are elemente comune cu D.",
+          "diagramRequirement": {
+            "diagramId": "EULER_2017_V7_S1B",
+            "tool": "canvas_or_upload",
+            "student_can_draw": true,
+            "student_can_upload": true,
+            "teacher_can_preview_expected": true
+          },
+          "items": [
+            {
+              "id": "S1B_a",
+              "statement": "Toți C sunt A."
+            },
+            {
+              "id": "S1B_b",
+              "statement": "Unii A nu sunt B."
+            },
+            {
+              "id": "S1B_c",
+              "statement": "Niciun D nu este B."
+            },
+            {
+              "id": "S1B_d",
+              "statement": "Unii C sunt B."
+            },
+            {
+              "id": "S1B_e",
+              "statement": "Toți A sunt D."
+            },
+            {
+              "id": "S1B_f",
+              "statement": "Unii D sunt B."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S2_CONTEXT",
+          "title": "Propoziții date",
+          "type": "statement_list",
+          "items": [
+            "Unii arbori sunt conifere.",
+            "Nicio axiomă nu este adevăr demonstrabil.",
+            "Unii șerpi nu sunt veninoși.",
+            "Toate meduzele sunt animale nevertebrate."
+          ]
+        },
+        {
+          "id": "S2_A",
+          "title": "A. Formule logice",
+          "points": 2,
+          "type": "text_inputs",
+          "prompt": "Precizați formulele logice corespunzătoare propozițiilor 1 și 4.",
+          "inputs": [
+            {
+              "id": "S2A_1",
+              "placeholder": "Exemplu de format: SaP / SeP / SiP / SoP"
+            },
+            {
+              "id": "S2A_4",
+              "placeholder": "Exemplu de format: SaP / SeP / SiP / SoP"
+            }
+          ]
+        },
+        {
+          "id": "S2_B",
+          "title": "B. Operații logice",
+          "points": 8,
+          "type": "text_inputs",
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, subcontrara propoziției 1, contrara propoziției 2, supraalterna propoziției 3 și subalterna propoziției 4.",
+          "inputs": [
+            {
+              "id": "S2B_subcontrara_1",
+              "placeholder": "Formal + natural. Exemplu: SoP - Unii S nu sunt P."
+            },
+            {
+              "id": "S2B_contrara_2",
+              "placeholder": "Formal + natural. Exemplu: SaP - Toți S sunt P."
+            },
+            {
+              "id": "S2B_supraalterna_3",
+              "placeholder": "Formal + natural. Exemplu: SeP - Niciun S nu este P."
+            },
+            {
+              "id": "S2B_subalterna_4",
+              "placeholder": "Formal + natural. Exemplu: SiP - Unii S sunt P."
+            }
+          ]
+        },
+        {
+          "id": "S2_C",
+          "title": "C. Conversiune și obversiune",
+          "points": 8,
+          "type": "text_inputs",
+          "prompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 2 și 4, atât în limbaj formal, cât și în limbaj natural.",
+          "inputs": [
+            {
+              "id": "S2C_conv_2",
+              "placeholder": "Conversa prop. 2: formal + natural"
+            },
+            {
+              "id": "S2C_obv_2",
+              "placeholder": "Obversa prop. 2: formal + natural"
+            },
+            {
+              "id": "S2C_conv_4",
+              "placeholder": "Conversa prop. 4: formal + natural"
+            },
+            {
+              "id": "S2C_obv_4",
+              "placeholder": "Obversa prop. 4: formal + natural"
+            }
+          ]
+        },
+        {
+          "id": "S2_D",
+          "title": "D. Obversa conversiei",
+          "points": 4,
+          "type": "text_inputs",
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversiei propoziției 2.",
+          "inputs": [
+            {
+              "id": "S2D_obv_conv_2",
+              "placeholder": "Exemplu: întâi conversa, apoi obversa: formal + natural"
+            }
+          ]
+        },
+        {
+          "id": "S2_E",
+          "title": "E. Formalizare și corectitudine",
+          "points": 8,
+          "type": "text_inputs",
+          "prompt": "Doi elevi, X și Y, opinează astfel: X: Dacă unele mamifere sunt animale acvatice, atunci unele animale acvatice sunt mamifere. Y: Dacă toate acțiunile planificate sunt eficiente, atunci toate acțiunile eficiente sunt planificate. Scrieți opiniile în limbaj formal și explicați corectitudinea/incorectitudinea raționamentelor formalizate.",
+          "inputs": [
+            {
+              "id": "S2E_X",
+              "placeholder": "Formalizare X + decizie: corect / incorect + explicație"
+            },
+            {
+              "id": "S2E_Y",
+              "placeholder": "Formalizare Y + decizie: corect / incorect + explicație"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "S3_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "type": "syllogism_modes",
+          "modes": [
+            "aee-2",
+            "iai-4"
+          ],
+          "diagramRequirement": {
+            "diagramId": "VENN_2017_V7_S3A",
+            "tool": "canvas_or_upload",
+            "student_can_draw": true,
+            "student_can_upload": true,
+            "teacher_can_preview_expected": true
+          },
+          "prompt": "Scrieți schemele de inferență pentru modurile date, construiți un silogism corespunzător și verificați validitatea prin diagrame Venn."
+        },
+        {
+          "id": "S3_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "type": "text_inputs",
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid prin care să justificați propoziția „Toți rechinii sunt animale acvatice”.",
+          "inputs": [
+            {
+              "id": "S3B_silogism",
+              "placeholder": "Scrie schema formală + silogismul în limbaj natural."
+            }
+          ]
+        },
+        {
+          "id": "S3_C",
+          "title": "C. Termen major și premisă minoră",
+          "points": 4,
+          "type": "text_inputs",
+          "prompt": "Fie următorul silogism: Dacă niciun om lingușitor nu este om moral, atunci unii oameni prefăcuți nu sunt oameni morali, având în vedere că unii oameni prefăcuți sunt oameni lingușitori. Precizați termenul major și menționați premisa minoră.",
+          "inputs": [
+            {
+              "id": "S3C_major",
+              "placeholder": "Termen major: ..."
+            },
+            {
+              "id": "S3C_minor_premise",
+              "placeholder": "Premisa minoră: ..."
+            }
+          ]
+        },
+        {
+          "id": "S3_D",
+          "title": "D. Definiție",
+          "points": 6,
+          "type": "text_inputs",
+          "prompt": "Fie definiția: „Mamifer nu este nici pește, nici amfibian, nici reptilă, nici pasăre.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Precizați o altă regulă, diferită, și construiți o definiție care să o încalce, având ca definit termenul „mamifer”.",
+          "inputs": [
+            {
+              "id": "S3D_rule_violated",
+              "placeholder": "Regula încălcată de definiția dată: ..."
+            },
+            {
+              "id": "S3D_other_rule",
+              "placeholder": "Altă regulă de corectitudine: ..."
+            },
+            {
+              "id": "S3D_bad_definition",
+              "placeholder": "Definiție greșită construită de tine pentru „mamifer”: ..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

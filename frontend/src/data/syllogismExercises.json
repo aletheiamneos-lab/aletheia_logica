@@ -1,0 +1,209 @@
+[
+  {
+    "id": "silogism-001",
+    "level": "basic",
+    "phase": ["learning", "practice", "test"],
+    "title": "Silogism valid direct",
+    "naturalLanguage": {
+      "majorPremise": "Toti juristii sunt absolventi de drept.",
+      "minorPremise": "Unii studenti sunt juristi.",
+      "conclusion": "Unii studenti sunt absolventi de drept."
+    },
+    "terms": {
+      "S": "studenti",
+      "P": "absolventi de drept",
+      "M": "juristi"
+    },
+    "forms": {
+      "majorPremise": "A",
+      "minorPremise": "I",
+      "conclusion": "I"
+    },
+    "fractions": {
+      "majorPremise": "MaP",
+      "minorPremise": "SiM",
+      "conclusion": "SiP"
+    },
+    "figure": 1,
+    "mood": "AII-1",
+    "validity": {
+      "isValid": true,
+      "violatedRules": []
+    },
+    "explanation": {
+      "short": "Silogismul este valid: termenul mediu leaga premisele si nu apare in concluzie.",
+      "steps": [
+        "S este termenul minor, deoarece este subiectul concluziei: studenti.",
+        "P este termenul major, deoarece este predicatul concluziei: absolventi de drept.",
+        "M este termenul mediu, deoarece apare in ambele premise, dar nu apare in concluzie: juristi.",
+        "Formele sunt A, I, I, iar fractiile sunt MaP, SiM, SiP.",
+        "Figura este I: M este subiect in premisa majora si predicat in premisa minora.",
+        "Regulile generale sunt respectate, deci verdictul este valid."
+      ]
+    }
+  },
+  {
+    "id": "silogism-002",
+    "level": "basic",
+    "phase": ["learning", "practice", "test"],
+    "title": "Figura a II-a valida",
+    "naturalLanguage": {
+      "majorPremise": "Niciun candidat nepregatit nu este admis.",
+      "minorPremise": "Toti elevii premianti sunt admisi.",
+      "conclusion": "Niciun elev premiant nu este candidat nepregatit."
+    },
+    "terms": {
+      "S": "elevi premianti",
+      "P": "candidati nepregatiti",
+      "M": "admisi"
+    },
+    "forms": {
+      "majorPremise": "E",
+      "minorPremise": "A",
+      "conclusion": "E"
+    },
+    "fractions": {
+      "majorPremise": "PeM",
+      "minorPremise": "SaM",
+      "conclusion": "SeP"
+    },
+    "figure": 2,
+    "mood": "EAE-2",
+    "validity": {
+      "isValid": true,
+      "violatedRules": []
+    },
+    "explanation": {
+      "short": "Silogismul este valid in figura a II-a, cu termenul mediu predicat in ambele premise.",
+      "steps": [
+        "Concluzia fixeaza S ca elevi premianti si P ca elevi nepregatiti.",
+        "M este termenul admisi, prezent in premise si absent din concluzie.",
+        "Premisa majora este PeM, premisa minora este SaM, concluzia este SeP.",
+        "Figura este II: P-M in majora si S-M in minora.",
+        "Premisa negativa cere concluzie negativa, iar aceasta conditie este indeplinita."
+      ]
+    }
+  },
+  {
+    "id": "silogism-003",
+    "level": "medium",
+    "phase": ["practice", "test"],
+    "title": "Termen mediu nedistribuit",
+    "naturalLanguage": {
+      "majorPremise": "Toti sportivii sunt disciplinati.",
+      "minorPremise": "Toti muzicienii sunt disciplinati.",
+      "conclusion": "Toti muzicienii sunt sportivi."
+    },
+    "terms": {
+      "S": "muzicieni",
+      "P": "sportivi",
+      "M": "disciplinati"
+    },
+    "forms": {
+      "majorPremise": "A",
+      "minorPremise": "A",
+      "conclusion": "A"
+    },
+    "fractions": {
+      "majorPremise": "PaM",
+      "minorPremise": "SaM",
+      "conclusion": "SaP"
+    },
+    "figure": 2,
+    "mood": "AAA-2",
+    "validity": {
+      "isValid": false,
+      "violatedRules": ["R2"]
+    },
+    "explanation": {
+      "short": "Silogismul este invalid deoarece M este predicat in doua propozitii A si nu este distribuit.",
+      "steps": [
+        "M este termenul disciplinati.",
+        "In propozitia A, predicatul nu este distribuit.",
+        "M apare ca predicat in ambele premise, deci nu este distribuit niciodata.",
+        "Regula termenului mediu distribuit este incalcata."
+      ]
+    }
+  },
+  {
+    "id": "silogism-004",
+    "level": "medium",
+    "phase": ["practice", "test"],
+    "title": "Figura a III-a valida",
+    "naturalLanguage": {
+      "majorPremise": "Niciun artist impulsiv nu este bun planificator.",
+      "minorPremise": "Unii artisti impulsivi sunt creatori de jocuri.",
+      "conclusion": "Unii creatori de jocuri nu sunt buni planificatori."
+    },
+    "terms": {
+      "S": "creatori de jocuri",
+      "P": "buni planificatori",
+      "M": "artisti impulsivi"
+    },
+    "forms": {
+      "majorPremise": "E",
+      "minorPremise": "I",
+      "conclusion": "O"
+    },
+    "fractions": {
+      "majorPremise": "MeP",
+      "minorPremise": "MiS",
+      "conclusion": "SoP"
+    },
+    "figure": 3,
+    "mood": "EIO-3",
+    "validity": {
+      "isValid": true,
+      "violatedRules": []
+    },
+    "explanation": {
+      "short": "Silogismul este valid: premisa negativa duce la concluzie negativa, iar premisa particulara duce la concluzie particulara.",
+      "steps": [
+        "M este subiect in ambele premise, deci figura este III.",
+        "Premisa majora E distribuie atat subiectul M, cat si predicatul P.",
+        "Concluzia O distribuie predicatul P, iar P a fost distribuit in majora.",
+        "Regulile de semn si cantitate sunt respectate."
+      ]
+    }
+  },
+  {
+    "id": "silogism-005",
+    "level": "hard",
+    "phase": ["test"],
+    "title": "Doua premise negative",
+    "naturalLanguage": {
+      "majorPremise": "Niciun critic superficial nu este cercetator riguros.",
+      "minorPremise": "Niciun student atent nu este critic superficial.",
+      "conclusion": "Niciun student atent nu este cercetator riguros."
+    },
+    "terms": {
+      "S": "studenti atenti",
+      "P": "cercetatori rigurosi",
+      "M": "critici superficiali"
+    },
+    "forms": {
+      "majorPremise": "E",
+      "minorPremise": "E",
+      "conclusion": "E"
+    },
+    "fractions": {
+      "majorPremise": "MeP",
+      "minorPremise": "SeM",
+      "conclusion": "SeP"
+    },
+    "figure": 1,
+    "mood": "EEE-1",
+    "validity": {
+      "isValid": false,
+      "violatedRules": ["R4"]
+    },
+    "explanation": {
+      "short": "Silogismul este invalid: din doua premise negative nu rezulta o concluzie silogistica.",
+      "steps": [
+        "Ambele premise sunt de tip E.",
+        "Doua premise negative nu pot lega afirmativ termenii S si P.",
+        "Regula R4 este incalcata, chiar daca termenii sunt identificati corect."
+      ]
+    }
+  }
+]

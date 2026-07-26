@@ -1,0 +1,631 @@
+{
+  "id": "bac-2014-v4",
+  "track": "bac",
+  "slug": "exercitiu-bac-2014-v4",
+  "title": "Exercitiu BAC 2014, V4",
+  "subtitle": "Test BAC 2014 Varianta 4 implementat strict din pachetul ZIP: examen elev, diagrame editabile si resurse profesor separate.",
+  "intro": "Elevul lucreaza pe cele trei subiecte oficiale, cu radio buttons si campuri de raspuns. Solutia profesorului ramane teacher-only si se incarca separat, doar la cerere.",
+  "teacherSolutionSlug": "2014-v4",
+  "teacherSolutionPdfFileName": "rezolvare_profesor_bac_2014_v4.pdf",
+  "officialPaper": {
+    "subjectPages": [
+      {
+        "title": "Subiectul oficial - pagina 1",
+        "src": "/generated-exams/bac/2014_v4/subject-1.jpg"
+      },
+      {
+        "title": "Subiectul oficial - pagina 2",
+        "src": "/generated-exams/bac/2014_v4/subject-2.jpg"
+      }
+    ],
+    "baremPages": [
+      {
+        "title": "Baremul oficial - pagina 1",
+        "src": "/generated-exams/bac/2014_v4/barem-1.jpg"
+      },
+      {
+        "title": "Baremul oficial - pagina 2",
+        "src": "/generated-exams/bac/2014_v4/barem-2.jpg"
+      }
+    ],
+    "subjectDownload": {
+      "href": "/generated-exams/bac/2014_v4/subject.pdf",
+      "fileName": "Examenul de bacalaureat national 2014_V4.pdf",
+      "label": "Descarca subiectul PDF"
+    },
+    "baremDownload": {
+      "href": "/generated-exams/bac/2014_v4/barem.pdf",
+      "fileName": "Examenul de bacalaureat national 2014_V4_BAREM.pdf",
+      "label": "Descarca baremul PDF"
+    }
+  },
+  "answerSheet": {
+    "schemaVersion": "BAC_EXAM_STUDENT_V2_PROFESSIONAL_INPUTS",
+    "examId": "bac_logica_2014_v4",
+    "title": "BAC Logică 2014 - Varianta 4",
+    "mode": "student_exam",
+    "visibility": "student",
+    "discipline": "Logică, argumentare și comunicare",
+    "sourceFiles": {
+      "subjectPdf": "Examenul de bacalaureat național 2014_V4.pdf",
+      "baremPdf": "Examenul de bacalaureat național 2014_V4_BAREM.pdf"
+    },
+    "workingTimeMinutes": 180,
+    "totalExamPointsWithoutBonus": 90,
+    "officialBonusPoints": 10,
+    "examRules": {
+      "totalPoints": 100,
+      "officialPoints": 10,
+      "workTimeMinutes": 180,
+      "studentCannotSeeSolutions": true,
+      "placeholdersAreHintsOnly": true
+    },
+    "uiPolicy": {
+      "preserveExistingDesignSystem": true,
+      "radioButtonsUnchanged": true,
+      "showOfficialPromptInline": true,
+      "placeholderStyle": "gray, disappears on input/focus, not submitted as answer",
+      "doNotDisplayCorrectAnswersToStudent": true,
+      "teacherResourcesAtTop": true,
+      "friendlyInputFields": true,
+      "diagramCanvasEnabled": true,
+      "diagramUploadEnabled": true,
+      "finalizeButtonRequired": true,
+      "generateStudentSubmissionReportOnFinalize": true,
+      "studentReportPreviewEnabled": true,
+      "studentReportEmailEnabled": true,
+      "registerSubmissionInAdminReport": true,
+      "teacherSolutionLoadedOnlyServerSide": true
+    },
+    "sections": [
+      {
+        "id": "I",
+        "title": "SUBIECTUL I",
+        "points": 30,
+        "groups": [
+          {
+            "id": "I_A",
+            "title": "A. Itemi cu alegere unica",
+            "points": 18,
+            "officialPrompt": "Scrie litera corespunzătoare răspunsului corect. Este corectă o singură variantă de răspuns.",
+            "answerType": "single_choice_group",
+            "items": [
+              {
+                "id": "I_A_1",
+                "label": "1",
+                "officialPrompt": "În structura unui termen, extensiunea reprezintă:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "cuvântul sau grupul de cuvinte prin care se exprimă"
+                  },
+                  {
+                    "key": "b",
+                    "text": "conținutul termenului"
+                  },
+                  {
+                    "key": "c",
+                    "text": "referința termenului adică totalitatea obiectelor la care se referă"
+                  },
+                  {
+                    "key": "d",
+                    "text": "înțelesul termenului adică proprietățile obiectelor la care se referă"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              },
+              {
+                "id": "I_A_2",
+                "label": "2",
+                "officialPrompt": "Termenul „argument deductiv” este din punct de vedere intensional:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "un termen negativ"
+                  },
+                  {
+                    "key": "b",
+                    "text": "un termen compus"
+                  },
+                  {
+                    "key": "c",
+                    "text": "un termen relativ"
+                  },
+                  {
+                    "key": "d",
+                    "text": "un termen abstract"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              },
+              {
+                "id": "I_A_3",
+                "label": "3",
+                "officialPrompt": "Termenii „continuitate” și „discontinuitate” se află în raport de:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "contrarietate"
+                  },
+                  {
+                    "key": "b",
+                    "text": "subalternare"
+                  },
+                  {
+                    "key": "c",
+                    "text": "contradicție"
+                  },
+                  {
+                    "key": "d",
+                    "text": "încrucișare"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              },
+              {
+                "id": "I_A_4",
+                "label": "4",
+                "officialPrompt": "O propoziție universal negativă este propoziția:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "Majoritatea oamenilor nu acceptă compromisuri"
+                  },
+                  {
+                    "key": "b",
+                    "text": "Orice tânăr iubește excursiile"
+                  },
+                  {
+                    "key": "c",
+                    "text": "Cei mai mulți elevi practică anumite sporturi"
+                  },
+                  {
+                    "key": "d",
+                    "text": "Nimeni nu este atoștiutor"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              },
+              {
+                "id": "I_A_5",
+                "label": "5",
+                "officialPrompt": "Predicatul logic al propoziției „Elevii care sunt buni la matematică sunt pasionați de informatică” este:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "sunt pasionați"
+                  },
+                  {
+                    "key": "b",
+                    "text": "pasionați de informatică"
+                  },
+                  {
+                    "key": "c",
+                    "text": "sunt buni"
+                  },
+                  {
+                    "key": "d",
+                    "text": "sunt buni la matematică"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              },
+              {
+                "id": "I_A_6",
+                "label": "6",
+                "officialPrompt": "Din adevărul propoziției SiP se poate deduce falsitatea propoziției SeP, în baza raportului logic de:",
+                "answerType": "single_choice",
+                "options": [
+                  {
+                    "key": "a",
+                    "text": "contradicție"
+                  },
+                  {
+                    "key": "b",
+                    "text": "subalternare"
+                  },
+                  {
+                    "key": "c",
+                    "text": "subcontrarietate"
+                  },
+                  {
+                    "key": "d",
+                    "text": "contrarietate"
+                  }
+                ],
+                "ui": {
+                  "useExistingRadioButtons": true,
+                  "showNoPlaceholder": true
+                }
+              }
+            ]
+          },
+          {
+            "id": "I_B",
+            "title": "B. Scheme silogistice si diagrame Venn",
+            "points": 12,
+            "officialPrompt": "Fie următoarele două moduri silogistice: eao-2, aee-4. Scrie schema de inferență și verifică prin diagrame Venn validitatea fiecăruia.",
+            "items": [
+              {
+                "id": "I_B",
+                "label": "B",
+                "officialPrompt": "Fie următoarele două moduri silogistice: eao-2, aee-4. Scrie schema de inferență și verifică prin diagrame Venn validitatea fiecăruia.",
+                "answerType": "syllogism_workspace",
+                "points": 12,
+                "fields": [
+                  {
+                    "key": "schema_eao_2",
+                    "label": "Schema pentru eao-2",
+                    "points": 3,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Exemplu structură: Premisa majoră / Premisa minoră / Concluzie, cu S, P, M."
+                    },
+                    "correction": "manual_teacher_review"
+                  },
+                  {
+                    "key": "schema_aee_4",
+                    "label": "Schema pentru aee-4",
+                    "points": 3,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Exemplu structură: Premisa majoră / Premisa minoră / Concluzie, cu S, P, M."
+                    },
+                    "correction": "manual_teacher_review"
+                  },
+                  {
+                    "key": "venn_decision",
+                    "label": "Decizia de validitate",
+                    "points": 2,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Exemplu: Modul este valid/nevalid deoarece diagrama face/nu face inevitabilă concluzia."
+                    },
+                    "correction": "manual_teacher_review"
+                  },
+                  {
+                    "key": "diagram_eao_2",
+                    "label": "Diagrama Venn eao-2",
+                    "points": 2,
+                    "inputType": "canvas_or_upload",
+                    "diagramId": "venn_s1b_eao2",
+                    "diagramType": "venn_syllogism",
+                    "inputConfig": {
+                      "label": "Diagrama Venn eao-2",
+                      "helperText": "Construieste diagrama Venn pentru eao-2.",
+                      "placeholder": "Construieste diagrama Venn pentru eao-2.",
+                      "canvas": {
+                        "width": 720,
+                        "height": 420
+                      },
+                      "upload": {
+                        "enabled": true,
+                        "acceptedTypes": [
+                          "image/png",
+                          "image/jpeg"
+                        ]
+                      }
+                    },
+                    "correction": "manual_teacher_review"
+                  },
+                  {
+                    "key": "diagram_aee_4",
+                    "label": "Diagrama Venn aee-4",
+                    "points": 2,
+                    "inputType": "canvas_or_upload",
+                    "diagramId": "venn_s1b_aee4",
+                    "diagramType": "venn_syllogism",
+                    "inputConfig": {
+                      "label": "Diagrama Venn aee-4",
+                      "helperText": "Construieste diagrama Venn pentru aee-4.",
+                      "placeholder": "Construieste diagrama Venn pentru aee-4.",
+                      "canvas": {
+                        "width": 720,
+                        "height": 420
+                      },
+                      "upload": {
+                        "enabled": true,
+                        "acceptedTypes": [
+                          "image/png",
+                          "image/jpeg"
+                        ]
+                      }
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "II",
+        "title": "SUBIECTUL II",
+        "points": 30,
+        "contextBlock": {
+          "title": "Propozitii date",
+          "items": [
+            "1. Toate resursele neregenerabile sunt epuizabile.",
+            "2. Unii oameni temerari nu sunt prudenți.",
+            "3. Unele teorii despre Univers sunt false.",
+            "4. Nicio acțiune pripită nu este eficientă."
+          ]
+        },
+        "groups": [
+          {
+            "id": "II_A",
+            "title": "A. Precizați formula propoziției 2.",
+            "points": 4,
+            "items": [
+              {
+                "id": "2_A",
+                "label": "A",
+                "officialPrompt": "Precizați formula propoziției 2.",
+                "answerType": "short_text",
+                "points": 4,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 4,
+                    "inputType": "text",
+                    "inputConfig": {
+                      "placeholder": "Exemplu: SaP / SeP / SiP / SoP, în funcție de cantitate și calitate."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "II_B",
+            "title": "B. Construiți, în limbaj formal și în limbaj natural, subcontrara propoziției 3 și subalterna propoziției 4.",
+            "points": 6,
+            "items": [
+              {
+                "id": "2_B",
+                "label": "B",
+                "officialPrompt": "Construiți, în limbaj formal și în limbaj natural, subcontrara propoziției 3 și subalterna propoziției 4.",
+                "answerType": "long_text",
+                "points": 6,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 6,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Scrie întâi forma logică, apoi propoziția în limbaj natural."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "II_C",
+            "title": "C. Aplicați operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+            "points": 10,
+            "items": [
+              {
+                "id": "2_C",
+                "label": "C",
+                "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+                "answerType": "long_text",
+                "points": 10,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 10,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Pentru fiecare propoziție: conversa = ..., obversa = ...; apoi forma în limbaj natural."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "II_D",
+            "title": "D. Explicați succint de ce propoziția 2 nu se convertește corect.",
+            "points": 6,
+            "items": [
+              {
+                "id": "2_D",
+                "label": "D",
+                "officialPrompt": "Explicați succint de ce propoziția 2 nu se convertește corect.",
+                "answerType": "long_text",
+                "points": 6,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 6,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Exemplu: Propoziția de tip O nu are conversiune validă; explică distribuirea termenilor."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "II_E",
+            "title": "E. Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+            "points": 4,
+            "items": [
+              {
+                "id": "II_E",
+                "label": "E",
+                "officialPrompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+                "answerType": "euler_diagram_upload_or_canvas",
+                "points": 4,
+                "diagramId": "euler_s2_prop3",
+                "diagramType": "euler_categorical",
+                "answerInput": {
+                  "diagramId": "euler_s2_prop3",
+                  "diagramType": "euler_categorical",
+                  "inputConfig": {
+                    "label": "Diagrama Euler",
+                    "helperText": "Desenează două cercuri S și P care se intersectează și marchează existența unor S care sunt P.",
+                    "placeholder": "Desenează două cercuri S și P care se intersectează și marchează existența unor S care sunt P.",
+                    "canvas": {
+                      "width": 720,
+                      "height": 420
+                    },
+                    "upload": {
+                      "enabled": true,
+                      "acceptedTypes": [
+                        "image/png",
+                        "image/jpeg"
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "III",
+        "title": "SUBIECTUL III",
+        "points": 30,
+        "groups": [
+          {
+            "id": "III_1",
+            "title": "1. Definiți conceptul de sofism.",
+            "points": 4,
+            "items": [
+              {
+                "id": "3_1",
+                "label": "1",
+                "officialPrompt": "Definiți conceptul de sofism.",
+                "answerType": "short_text",
+                "points": 4,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 4,
+                    "inputType": "text",
+                    "inputConfig": {
+                      "placeholder": "Exemplu structură: Sofismul este ..."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "III_2",
+            "title": "2. Enumerați două tipuri de raționamente, în funcție de criteriul corectitudinii logice.",
+            "points": 6,
+            "items": [
+              {
+                "id": "3_2",
+                "label": "2",
+                "officialPrompt": "Enumerați două tipuri de raționamente, în funcție de criteriul corectitudinii logice.",
+                "answerType": "short_text",
+                "points": 6,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 6,
+                    "inputType": "text",
+                    "inputConfig": {
+                      "placeholder": "Exemplu: raționament ... și raționament ..."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "III_3",
+            "title": "3. Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unii elevi nu sunt premianți”.",
+            "points": 10,
+            "items": [
+              {
+                "id": "3_3",
+                "label": "3",
+                "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unii elevi nu sunt premianți”.",
+                "answerType": "long_text",
+                "points": 10,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 10,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Exemplu structură: Premisa 1: ...; Premisa 2: ...; Concluzie: Unii elevi nu sunt premianți."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "III_4",
+            "title": "4. Fie următoarea definiție: „Copiii sunt florile vieții.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Enunțați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți pentru fiecare câte o definiție care să le încalce.",
+            "points": 10,
+            "items": [
+              {
+                "id": "3_4",
+                "label": "4",
+                "officialPrompt": "Fie următoarea definiție: „Copiii sunt florile vieții.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Enunțați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți pentru fiecare câte o definiție care să le încalce.",
+                "answerType": "long_text",
+                "points": 10,
+                "fields": [
+                  {
+                    "key": "answer",
+                    "label": "Raspuns",
+                    "points": 10,
+                    "inputType": "textarea",
+                    "inputConfig": {
+                      "placeholder": "Scrie regula încălcată, apoi două alte reguli + câte un exemplu de definiție greșită."
+                    },
+                    "correction": "manual_teacher_review"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2263 @@
+{
+  "track": "bac",
+  "source_dir": "E:\\Side_Work\\Economics_Profesor\\Logica\\Subiecte Bac",
+  "variant_count": 47,
+  "variants": [
+    {
+      "variant_id": "2013_v6",
+      "year": "2013",
+      "variant_label": "2013 - V6",
+      "title": "Examenul national de bacalaureat 2013 - Varianta V6",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat naţional 2013_V6.pdf",
+      "barem_pdf": "Examenul de bacalaureat naţional 2013_V6_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2014_v10",
+      "year": "2014",
+      "variant_label": "2014 - V10",
+      "title": "Examenul national de bacalaureat 2014 - Varianta V10",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2014_V10.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2014_V10_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2014_v4",
+      "year": "2014",
+      "variant_label": "2014 - V4",
+      "title": "Examenul national de bacalaureat 2014 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2014_V4.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2014_V4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2015_v2",
+      "year": "2015",
+      "variant_label": "2015 - V2",
+      "title": "Examenul national de bacalaureat 2015 - Varianta V2",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2015_V2.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2015_V2_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2015_v9",
+      "year": "2015",
+      "variant_label": "2015 - V9",
+      "title": "Examenul national de bacalaureat 2015 - Varianta V9",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2015_V9.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2015_V9_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2016_v10",
+      "year": "2016",
+      "variant_label": "2016 - V10",
+      "title": "Examenul national de bacalaureat 2016 - Varianta V10",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2016_V10.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2016_V10_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2016_v9",
+      "year": "2016",
+      "variant_label": "2016 - V9",
+      "title": "Examenul national de bacalaureat 2016 - Varianta V9",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2016_V9.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2016_V9_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2017_v3",
+      "year": "2017",
+      "variant_label": "2017 - V3",
+      "title": "Examenul national de bacalaureat 2017 - Varianta V3",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2017_V3.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2017_V3_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2017_v4",
+      "year": "2017",
+      "variant_label": "2017 - V4",
+      "title": "Examenul national de bacalaureat 2017 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2017_V4.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2017_V4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2017_v7",
+      "year": "2017",
+      "variant_label": "2017 - V7",
+      "title": "Examenul national de bacalaureat 2017 - Varianta V7",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2017_V7.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2017_V7_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2018_model",
+      "year": "2018",
+      "variant_label": "2018 - Model",
+      "title": "Examenul national de bacalaureat 2018 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2018_Model.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2018_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2018_simulare",
+      "year": "2018",
+      "variant_label": "2018 - Simulare",
+      "title": "Examenul national de bacalaureat 2018 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2018_Simulare.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2018_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2018_v1",
+      "year": "2018",
+      "variant_label": "2018 - V1",
+      "title": "Examenul national de bacalaureat 2018 - Varianta V1",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2018_V1.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2018_V1_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2018_v2",
+      "year": "2018",
+      "variant_label": "2018 - V2",
+      "title": "Examenul national de bacalaureat 2018 - Varianta V2",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2018_v2.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2018_v2_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2018_v9",
+      "year": "2018",
+      "variant_label": "2018 - V9",
+      "title": "Examenul national de bacalaureat 2018 - Varianta V9",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2018_v9.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2018_V9_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2019_model",
+      "year": "2019",
+      "variant_label": "2019 - Model",
+      "title": "Examenul national de bacalaureat 2019 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2019_Model.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2019_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2019_simulare",
+      "year": "2019",
+      "variant_label": "2019 - Simulare",
+      "title": "Examenul national de bacalaureat 2019 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2019_Simulare.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2019_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2019_v1",
+      "year": "2019",
+      "variant_label": "2019 - V1",
+      "title": "Examenul national de bacalaureat 2019 - Varianta V1",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2019_V1.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2019_V1_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2019_v2",
+      "year": "2019",
+      "variant_label": "2019 - V2",
+      "title": "Examenul national de bacalaureat 2019 - Varianta V2",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2019_V2.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2019_V2_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2019_v4",
+      "year": "2019",
+      "variant_label": "2019 - V4",
+      "title": "Examenul national de bacalaureat 2019 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2019_V4.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2019_v4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2020_model",
+      "year": "2020",
+      "variant_label": "2020 - Model",
+      "title": "Examenul national de bacalaureat 2020 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2020_Model.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2020_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2020_v2",
+      "year": "2020",
+      "variant_label": "2020 - V2",
+      "title": "Examenul national de bacalaureat 2020 - Varianta V2",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2020_V2.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2020_V2_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2020_v5",
+      "year": "2020",
+      "variant_label": "2020 - V5",
+      "title": "Examenul national de bacalaureat 2020 - Varianta V5",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2020_V5.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2020_V5_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2020_v6",
+      "year": "2020",
+      "variant_label": "2020 - V6",
+      "title": "Examenul national de bacalaureat 2020 - Varianta V6",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul de bacalaureat național 2020_V6.pdf",
+      "barem_pdf": "Examenul de bacalaureat național 2020_V6_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2021_model",
+      "year": "2021",
+      "variant_label": "2021 - Model",
+      "title": "Examenul national de bacalaureat 2021 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2021_Model.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2021_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2021_simulare",
+      "year": "2021",
+      "variant_label": "2021 - Simulare",
+      "title": "Examenul national de bacalaureat 2021 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2021_Simulare.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2021_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2021_v1",
+      "year": "2021",
+      "variant_label": "2021 - V1",
+      "title": "Examenul national de bacalaureat 2021 - Varianta V1",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2021_V1.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2021_V1_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2021_v4",
+      "year": "2021",
+      "variant_label": "2021 - V4",
+      "title": "Examenul national de bacalaureat 2021 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2021_V4.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2021_V4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2022_model",
+      "year": "2022",
+      "variant_label": "2022 - Model",
+      "title": "Examenul national de bacalaureat 2022 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2022_Model.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2022_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2022_simulare",
+      "year": "2022",
+      "variant_label": "2022 - Simulare",
+      "title": "Examenul national de bacalaureat 2022 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2022_Simulare.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2022_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2022_v1",
+      "year": "2022",
+      "variant_label": "2022 - V1",
+      "title": "Examenul national de bacalaureat 2022 - Varianta V1",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2022_V1.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2022_V1_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2022_v4",
+      "year": "2022",
+      "variant_label": "2022 - V4",
+      "title": "Examenul national de bacalaureat 2022 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2022_V4.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2022_V4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2022_v5",
+      "year": "2022",
+      "variant_label": "2022 - V5",
+      "title": "Examenul national de bacalaureat 2022 - Varianta V5",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2022_V5.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2022_V5_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2023_model",
+      "year": "2023",
+      "variant_label": "2023 - Model",
+      "title": "Examenul national de bacalaureat 2023 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2023_Model.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2023_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2023_simulare",
+      "year": "2023",
+      "variant_label": "2023 - Simulare",
+      "title": "Examenul national de bacalaureat 2023 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2023_Simulare.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2023_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2023_v5",
+      "year": "2023",
+      "variant_label": "2023 - V5",
+      "title": "Examenul national de bacalaureat 2023 - Varianta V5",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2023_V5.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2023_V5_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2023_v6",
+      "year": "2023",
+      "variant_label": "2023 - V6",
+      "title": "Examenul national de bacalaureat 2023 - Varianta V6",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2023_V6.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2023_V6_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2023_v7",
+      "year": "2023",
+      "variant_label": "2023 - V7",
+      "title": "Examenul national de bacalaureat 2023 - Varianta V7",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2023_V7.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2023_V7_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2024_model",
+      "year": "2024",
+      "variant_label": "2024 - Model",
+      "title": "Examenul national de bacalaureat 2024 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2024_Model.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2024_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 3,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2024_simulare",
+      "year": "2024",
+      "variant_label": "2024 - Simulare",
+      "title": "Examenul national de bacalaureat 2024 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2024_Simulare.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2024_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2024_v3",
+      "year": "2024",
+      "variant_label": "2024 - V3",
+      "title": "Examenul national de bacalaureat 2024 - Varianta V3",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2024_V3.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2024_V3_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2024_v4",
+      "year": "2024",
+      "variant_label": "2024 - V4",
+      "title": "Examenul national de bacalaureat 2024 - Varianta V4",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2024_V4.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2024_V4_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2024_v8",
+      "year": "2024",
+      "variant_label": "2024 - V8",
+      "title": "Examenul national de bacalaureat 2024 - Varianta V8",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2024_V8.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2024_V8_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2025_model",
+      "year": "2025",
+      "variant_label": "2025 - Model",
+      "title": "Examenul national de bacalaureat 2025 - Varianta Model",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2025_Model.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2025_Model_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2025_simulare",
+      "year": "2025",
+      "variant_label": "2025 - Simulare",
+      "title": "Examenul national de bacalaureat 2025 - Varianta Simulare",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2025_Simulare.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2025_Simulare_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2025_v1",
+      "year": "2025",
+      "variant_label": "2025 - V1",
+      "title": "Examenul national de bacalaureat 2025 - Varianta V1",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2025_v1.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2025_v1_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    },
+    {
+      "variant_id": "2025_v6",
+      "year": "2025",
+      "variant_label": "2025 - V6",
+      "title": "Examenul national de bacalaureat 2025 - Varianta V6",
+      "subtitle": "Subiect oficial, barem oficial si rezolvare explicata pe fiecare item.",
+      "subject_pdf": "Examenul național de bacalaureat 2025_V6.pdf",
+      "barem_pdf": "Examenul național de bacalaureat 2025_V6_BAREM.pdf",
+      "has_barem": true,
+      "subject_pages": 2,
+      "barem_pages": [
+        {
+          "label": "Baremul oficial - pagina 1",
+          "page_number": 1
+        },
+        {
+          "label": "Baremul oficial - pagina 2",
+          "page_number": 2
+        }
+      ],
+      "work_order": [
+        "La fiecare card vezi codul exact al punctului din examen.",
+        "Enuntul oficial este afisat separat, clar, nu doar in scan.",
+        "Rezolvarea iti arata cum gandesti, nu doar rezultatul final.",
+        "Subiectele II si III trebuie sparte in pasi, nu lasate compacte.",
+        "Poti verifica oricand baremul oficial din taburile de sus."
+      ],
+      "sections": [
+        {
+          "section_id": "subiectul_I",
+          "section_title": "Subiectul I",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_II",
+          "section_title": "Subiectul II",
+          "section_points": "30 de puncte",
+          "items": []
+        },
+        {
+          "section_id": "subiectul_III",
+          "section_title": "Subiectul III",
+          "section_points": "30 de puncte",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

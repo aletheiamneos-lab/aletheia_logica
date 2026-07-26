@@ -1,0 +1,134 @@
+{
+  "slot": 4,
+  "nivel": "mediu",
+  "title": "Slot 4 - Mediu",
+  "description": "Set de 25 flashcarduri pentru nivelul mediu, cu întrebări aplicate și răspunsuri clare.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_4_mediu_card_1",
+      "front": "Care este regula generală a obversiunii?",
+      "back": "La obversiune se schimbă calitatea propoziției și se neagă predicatul."
+    },
+    {
+      "id": "slot_4_mediu_card_2",
+      "front": "De ce obversiunea păstrează sensul logic?",
+      "back": "Pentru că exprimă același raport dintre clase folosind predicatul complementar."
+    },
+    {
+      "id": "slot_4_mediu_card_3",
+      "front": "Cum se obversează propoziția A?",
+      "back": "„Toți S sunt P” devine „Niciun S nu este non-P”."
+    },
+    {
+      "id": "slot_4_mediu_card_4",
+      "front": "Cum se obversează propoziția E?",
+      "back": "„Niciun S nu este P” devine „Toți S sunt non-P”."
+    },
+    {
+      "id": "slot_4_mediu_card_5",
+      "front": "Cum se obversează propoziția I?",
+      "back": "„Unii S sunt P” devine „Unii S nu sunt non-P”."
+    },
+    {
+      "id": "slot_4_mediu_card_6",
+      "front": "Cum se obversează propoziția O?",
+      "back": "„Unii S nu sunt P” devine „Unii S sunt non-P”."
+    },
+    {
+      "id": "slot_4_mediu_card_7",
+      "front": "Pentru ce propoziții este valabilă conversiunea simplă?",
+      "back": "Conversiunea simplă este valabilă pentru propozițiile E și I."
+    },
+    {
+      "id": "slot_4_mediu_card_8",
+      "front": "Cum se convertește propoziția E?",
+      "back": "„Niciun S nu este P” devine „Niciun P nu este S”."
+    },
+    {
+      "id": "slot_4_mediu_card_9",
+      "front": "Cum se convertește propoziția I?",
+      "back": "„Unii S sunt P” devine „Unii P sunt S”."
+    },
+    {
+      "id": "slot_4_mediu_card_10",
+      "front": "Cum se convertește propoziția A prin accident?",
+      "back": "„Toți S sunt P” devine „Unii P sunt S”, dacă se admite existența lui S."
+    },
+    {
+      "id": "slot_4_mediu_card_11",
+      "front": "De ce propoziția O nu se convertește valid?",
+      "back": "Pentru că inversarea termenilor ar distribui nejustificat predicatul."
+    },
+    {
+      "id": "slot_4_mediu_card_12",
+      "front": "Care este regula contrapozitiei?",
+      "back": "Se obversează propoziția, apoi se convertește rezultatul, când conversiunea este validă."
+    },
+    {
+      "id": "slot_4_mediu_card_13",
+      "front": "Ce contrapozitivă are propoziția A?",
+      "back": "„Toți S sunt P” devine „Niciun non-P nu este S”."
+    },
+    {
+      "id": "slot_4_mediu_card_14",
+      "front": "Ce contrapozitivă are propoziția O?",
+      "back": "„Unii S nu sunt P” devine „Unii non-P sunt S”."
+    },
+    {
+      "id": "slot_4_mediu_card_15",
+      "front": "De ce propoziția I nu are contrapozitivă validă?",
+      "back": "Pentru că obversa ei este o propoziție O, iar O nu se convertește valid."
+    },
+    {
+      "id": "slot_4_mediu_card_16",
+      "front": "Cum se traduce logic „Numai S sunt P”?",
+      "back": "Se traduce ca „Toți P sunt S”."
+    },
+    {
+      "id": "slot_4_mediu_card_17",
+      "front": "Cum se traduce logic „Doar S sunt P”?",
+      "back": "Se traduce ca „Toți P sunt S”."
+    },
+    {
+      "id": "slot_4_mediu_card_18",
+      "front": "De ce formulările cu „numai” sunt dificile?",
+      "back": "Pentru că schimbă direcția obișnuită a relației dintre S și P."
+    },
+    {
+      "id": "slot_4_mediu_card_19",
+      "front": "Cum se reprezintă A în Venn?",
+      "back": "Se hașurează partea din S care se află în afara lui P."
+    },
+    {
+      "id": "slot_4_mediu_card_20",
+      "front": "Cum se reprezintă E în Venn?",
+      "back": "Se hașurează intersecția dintre S și P."
+    },
+    {
+      "id": "slot_4_mediu_card_21",
+      "front": "Cum se reprezintă I în Venn?",
+      "back": "Se pune x în intersecția dintre S și P."
+    },
+    {
+      "id": "slot_4_mediu_card_22",
+      "front": "Cum se reprezintă O în Venn?",
+      "back": "Se pune x în partea din S care se află în afara lui P."
+    },
+    {
+      "id": "slot_4_mediu_card_23",
+      "front": "Care este regula de prioritate în Venn?",
+      "back": "Dacă există o premisă universală și una particulară, se reprezintă mai întâi premisa universală."
+    },
+    {
+      "id": "slot_4_mediu_card_24",
+      "front": "Ce înseamnă că o concluzie este citibilă pe diagramă?",
+      "back": "Înseamnă că ea rezultă deja din reprezentarea premiselor, fără intervenții suplimentare."
+    },
+    {
+      "id": "slot_4_mediu_card_25",
+      "front": "Ce verifică metoda Venn la un raționament?",
+      "back": "Verifică dacă concluzia este conținută logic în premise."
+    }
+  ]
+}

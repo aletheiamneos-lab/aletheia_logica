@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "id": "bac-logica-2015-v9",
+    "year": 2015,
+    "variant": "Varianta 9",
+    "type": "BAC Logică",
+    "student_visible": false,
+    "teacher_solution_visible": false,
+    "source_subject": "Examenul de bacalaureat național 2015_V9.pdf",
+    "source_barem": "Examenul de bacalaureat național 2015_V9_BAREM.pdf",
+    "total_points": 90,
+    "office_points": 10,
+    "teacher_only": true
+  },
+  "verification": {
+    "source_used": "Only current uploaded 2015 V9 subject and 2015 V9 barem.",
+    "status": "verified_against_official_barem",
+    "notes": "PDFs are scanned/image-based; verification was visual against the rendered pages."
+  },
+  "answers": {
+    "subject_I": {
+      "answers": [
+        "1-b",
+        "2-b",
+        "3-a",
+        "4-d",
+        "5-a",
+        "6-b",
+        "7-a",
+        "8-d",
+        "9-d",
+        "10-a"
+      ],
+      "points": "10 x 3p = 30p"
+    },
+    "subject_II": {
+      "given_propositions": {
+        "1": "Nicio experiență de viață nu este inutilă. (SeP)",
+        "2": "Unele acțiuni umane nu sunt legale. (SoP)",
+        "3": "Toți cocorii sunt păsări migratoare. (SaP)",
+        "4": "Unii bărbați sunt bucătari talentați. (SiP)"
+      },
+      "II.A": {
+        "answer": "SoP",
+        "explanation": "Propoziția 2 este particulară negativă: Unele S nu sunt P."
+      },
+      "II.B": {
+        "contrara_p1_formal": "SaP",
+        "contrara_p1_natural": "Toate experiențele de viață sunt inutile.",
+        "subcontrara_p4_formal": "SoP",
+        "subcontrara_p4_natural": "Unii bărbați nu sunt bucătari talentați."
+      },
+      "II.C": {
+        "p3_conversa_formal": "PiS",
+        "p3_conversa_natural": "Unele păsări migratoare sunt cocori.",
+        "p3_obversa_formal": "Se~P",
+        "p3_obversa_natural": "Niciun cocor nu este ființă care nu este pasăre migratoare.",
+        "p4_conversa_formal": "PiS",
+        "p4_conversa_natural": "Unii bucătari talentați sunt bărbați.",
+        "p4_obversa_formal": "So~P",
+        "p4_obversa_natural": "Unii bărbați nu sunt persoane care nu sunt bucătari talentați."
+      },
+      "II.D": {
+        "diagram": "Euler pentru SoP: două clase S/P; se marchează un x în zona S aflată în afara lui P."
+      },
+      "II.E": {
+        "X": "SoP -> PoS; raționament nevalid; conversiunea propoziției de tip O este nevalidă.",
+        "Y": "SaP -> PiS; raționament valid; conversiune prin accident, cu respectarea legii distribuirii termenilor."
+      }
+    },
+    "subject_III": {
+      "III.A": {
+        "mode_1": "aii-1",
+        "schema_1": [
+          "MaP",
+          "SiM",
+          "SiP"
+        ],
+        "validity_1": "valid",
+        "natural_1": "Toate mamiferele sunt vertebrate. Unele animale marine sunt mamifere. Deci unele animale marine sunt vertebrate.",
+        "mode_2": "eao-4",
+        "schema_2": [
+          "PeM",
+          "MaS",
+          "SoP"
+        ],
+        "validity_2": "valid conform baremului tradițional",
+        "natural_2": "Nicio ființă onestă nu este coruptă. Toți corupții sunt oameni. Deci unii oameni nu sunt onești."
+      },
+      "III.B": {
+        "target": "Unii oameni nu sunt onești.",
+        "formal": "MeP / SiM / SoP",
+        "natural": "Niciun corupt nu este onest. Unii oameni sunt corupți. Deci unii oameni nu sunt onești."
+      },
+      "III.C": {
+        "given_definition": "Logica = știința logicii.",
+        "violated_rule": "Regula evitării circularității / definiția nu trebuie să fie circulară.",
+        "other_rule_1": "Regula clarității și preciziei.",
+        "bad_definition_1": "Logica este ceva important pentru minte. - formulare vagă, neclară și imprecisă.",
+        "other_rule_2": "Regula adecvării definiției.",
+        "bad_definition_2": "Logica este știința care studiază toate gândurile omului. - definiție prea largă."
+      }
+    }
+  }
+}

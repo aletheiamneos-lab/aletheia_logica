@@ -1,0 +1,1284 @@
+{
+  "exercises": [
+    {
+      "id": 101,
+      "lesson_id": 2,
+      "topic": "definitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce eroare apare in definitia \"Mamiferul este animal vertebrat\"?",
+      "options": [
+        "Definitie prea larga",
+        "Definitie prea ingusta",
+        "Definitie circulara",
+        "Definitie metaforica"
+      ],
+      "correct_answer": "Definitie prea larga",
+      "explanation": "Definitorul include toate vertebratele, nu doar mamiferele. Prin urmare, sfera definitiei este mai larga decat sfera termenului definit."
+    },
+    {
+      "id": 102,
+      "lesson_id": 2,
+      "topic": "definitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce eroare apare in definitia \"Pasarea este animalul care zboara\"?",
+      "options": [
+        "Definitie prea larga",
+        "Definitie prea ingusta",
+        "Definitie prin gen proxim si diferenta specifica",
+        "Definitie ostensiva"
+      ],
+      "correct_answer": "Definitie prea larga",
+      "explanation": "Definitia cuprinde si obiecte care nu sunt pasari, de exemplu liliacul sau unele insecte. De aceea este prea larga."
+    },
+    {
+      "id": 103,
+      "lesson_id": 2,
+      "topic": "definitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce eroare logica apare in definitia \"Agricultura este activitatea agricultorului\"?",
+      "options": [
+        "Definitie circulara",
+        "Definitie prea ingusta",
+        "Definitie negativa valida",
+        "Definitie prin exemplificare"
+      ],
+      "correct_answer": "Definitie circulara",
+      "explanation": "Definitul este reluat in definitie sub forma unui termen din aceeasi familie lexicala. Nu afli ceva nou despre concept, ci doar il reformulezi."
+    },
+    {
+      "id": 104,
+      "lesson_id": 2,
+      "topic": "definitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care regula este incalcata in formularea \"Meseria este bratara de aur\"?",
+      "options": [
+        "Regula claritatii si preciziei",
+        "Regula adecvarii prin echivalenta",
+        "Regula subalternarii",
+        "Regula distributiei termenilor"
+      ],
+      "correct_answer": "Regula claritatii si preciziei",
+      "explanation": "Formularea este metaforica, nu logica. O definitie corecta trebuie sa exprime clar ce este obiectul, fara imagini poetice."
+    },
+    {
+      "id": 105,
+      "lesson_id": 2,
+      "topic": "definitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care dintre urmatoarele definitii foloseste modelul gen proxim + diferenta specifica?",
+      "options": [
+        "Omul este animalul rational",
+        "Omul este ceea ce este uman",
+        "Omul este fiinta care merge",
+        "Omul este fiinta admirabila"
+      ],
+      "correct_answer": "Omul este animalul rational",
+      "explanation": "Definitia indica mai intai genul proxim, \"animal\", apoi diferenta specifica, \"rational\". Acesta este modelul logic standard."
+    },
+    {
+      "id": 106,
+      "lesson_id": 2,
+      "topic": "clasificare",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care clasificare este incorecta deoarece amesteca doua criterii?",
+      "options": [
+        "Animale: domestice, salbatice, erbivore",
+        "Triunghiuri: echilaterale, isoscele, scalene",
+        "Numere: pare, impare",
+        "Propozitii: afirmative, negative"
+      ],
+      "correct_answer": "Animale: domestice, salbatice, erbivore",
+      "explanation": "Primele doua clase sunt date dupa mediul de viata, iar a treia dupa hrana. Pe aceeasi treapta a clasificarii trebuie pastrat un singur criteriu."
+    },
+    {
+      "id": 107,
+      "lesson_id": 2,
+      "topic": "propozitii-categorice",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce tip de propozitie este \"Toti studentii sunt persoane\"?",
+      "options": [
+        "A - universala afirmativa",
+        "E - universala negativa",
+        "I - particulara afirmativa",
+        "O - particulara negativa"
+      ],
+      "correct_answer": "A - universala afirmativa",
+      "explanation": "Cuantorul \"toti\" arata universalitatea, iar copula este afirmativa. Deci forma este A."
+    },
+    {
+      "id": 108,
+      "lesson_id": 2,
+      "topic": "propozitii-categorice",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce tip de propozitie este \"Niciun patrat nu este cerc\"?",
+      "options": [
+        "A - universala afirmativa",
+        "E - universala negativa",
+        "I - particulara afirmativa",
+        "O - particulara negativa"
+      ],
+      "correct_answer": "E - universala negativa",
+      "explanation": "Cuantorul \"niciun\" exprima universalitatea, iar relatia dintre termeni este negata. Prin urmare, forma este E."
+    },
+    {
+      "id": 109,
+      "lesson_id": 2,
+      "topic": "propozitii-categorice",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce tip de propozitie este \"Unii studenti sunt bursieri\"?",
+      "options": [
+        "A - universala afirmativa",
+        "E - universala negativa",
+        "I - particulara afirmativa",
+        "O - particulara negativa"
+      ],
+      "correct_answer": "I - particulara afirmativa",
+      "explanation": "Cuantorul \"unii\" arata particularitatea, iar enuntul afirma raportul dintre subiect si predicat. Deci forma este I."
+    },
+    {
+      "id": 110,
+      "lesson_id": 2,
+      "topic": "propozitii-categorice",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce tip de propozitie este \"Unii studenti nu sunt bursieri\"?",
+      "options": [
+        "A - universala afirmativa",
+        "E - universala negativa",
+        "I - particulara afirmativa",
+        "O - particulara negativa"
+      ],
+      "correct_answer": "O - particulara negativa",
+      "explanation": "Cuantorul \"unii\" indica particularitatea, iar negatia apare in copula. Forma este O."
+    },
+    {
+      "id": 111,
+      "lesson_id": 2,
+      "topic": "propozitii-exclusive",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cum se traduce logic enuntul \"Numai avocatii sunt membri ai baroului\", daca S = avocati si P = membri ai baroului?",
+      "options": [
+        "SaP",
+        "PaS",
+        "SeP",
+        "PoS"
+      ],
+      "correct_answer": "PaS",
+      "explanation": "\"Numai S sunt P\" se traduce prin \"Toti P sunt S\". De aceea forma corecta este PaS."
+    },
+    {
+      "id": 112,
+      "lesson_id": 2,
+      "topic": "propozitii-exclusive",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care este echivalentul corect pentru \"Doar elevii premianti primesc diploma\"?",
+      "options": [
+        "Toti elevii premianti primesc diploma",
+        "Toate persoanele care primesc diploma sunt elevi premianti",
+        "Niciun elev premiant nu ramane fara diploma",
+        "Unii elevi premianti primesc diploma"
+      ],
+      "correct_answer": "Toate persoanele care primesc diploma sunt elevi premianti",
+      "explanation": "Formula \"doar S sunt P\" se citeste logic \"toti P sunt S\". Accentul cade pe cei care au proprietatea P."
+    },
+    {
+      "id": 113,
+      "lesson_id": 2,
+      "topic": "patratul-opozitiei",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care este contradictoria propozitiei A (SaP)?",
+      "options": [
+        "E (SeP)",
+        "I (SiP)",
+        "O (SoP)",
+        "Tot A (SaP)"
+      ],
+      "correct_answer": "O (SoP)",
+      "explanation": "In patratul opozitiei, A si O sunt contradictorii. Daca una este adevarata, cealalta este falsa, si invers."
+    },
+    {
+      "id": 114,
+      "lesson_id": 2,
+      "topic": "patratul-opozitiei",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce raport exista intre A si E in patratul opozitiei?",
+      "options": [
+        "Contradictie",
+        "Contrarietate",
+        "Subcontrarietate",
+        "Subalternare"
+      ],
+      "correct_answer": "Contrarietate",
+      "explanation": "A si E nu pot fi ambele adevarate, dar pot fi ambele false. Acesta este raportul de contrarietate."
+    },
+    {
+      "id": 115,
+      "lesson_id": 2,
+      "topic": "patratul-opozitiei",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce raport exista intre I si O in patratul opozitiei?",
+      "options": [
+        "Contradictie",
+        "Contrarietate",
+        "Subcontrarietate",
+        "Identitate"
+      ],
+      "correct_answer": "Subcontrarietate",
+      "explanation": "I si O nu pot fi simultan false, dar pot fi simultan adevarate. Aceasta este subcontrarietatea."
+    },
+    {
+      "id": 116,
+      "lesson_id": 2,
+      "topic": "patratul-opozitiei",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca propozitia A (SaP) este adevarata, ce urmeaza sigur?",
+      "options": [
+        "E este adevarata",
+        "I este adevarata",
+        "O este adevarata",
+        "E si O sunt adevarate"
+      ],
+      "correct_answer": "I este adevarata",
+      "explanation": "Prin subalternare, adevarul universalei afirmative se transmite catre particulara afirmativa. Deci, daca A este adevarata, I este adevarata."
+    },
+    {
+      "id": 117,
+      "lesson_id": 2,
+      "topic": "patratul-opozitiei",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca propozitia O (SoP) este falsa, ce urmeaza sigur?",
+      "options": [
+        "A (SaP) este adevarata",
+        "E (SeP) este adevarata",
+        "I (SiP) este falsa",
+        "Nimic nu poate fi stabilit"
+      ],
+      "correct_answer": "A (SaP) este adevarata",
+      "explanation": "A si O sunt contradictorii. Daca O este falsa, atunci A trebuie sa fie adevarata."
+    },
+    {
+      "id": 118,
+      "lesson_id": 2,
+      "topic": "venn",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "In diagrama Venn pentru SaP, ce regiune se hasureaza?",
+      "options": [
+        "Intersectia dintre S si P",
+        "Portiunea din S aflata in afara lui P",
+        "Portiunea din P aflata in afara lui S",
+        "Intregul univers al discursului"
+      ],
+      "correct_answer": "Portiunea din S aflata in afara lui P",
+      "explanation": "SaP inseamna ca nu exista elemente din S care sa fie in afara lui P. Regiunea S minus P este, deci, vida si se hasureaza."
+    },
+    {
+      "id": 119,
+      "lesson_id": 2,
+      "topic": "clasificare",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care clasificare este corecta logic, pe acelasi nivel?",
+      "options": [
+        "Triunghiuri: echilaterale, isoscele, scalene",
+        "Animale: domestice, salbatice, mamifere",
+        "Carti: bune, rele, rosii",
+        "Studenti: buni, inalti, bursieri"
+      ],
+      "correct_answer": "Triunghiuri: echilaterale, isoscele, scalene",
+      "explanation": "Clasificarea foloseste un singur criteriu, cel al laturilor egale sau neegale, iar clasele rezultate sunt corelate unitar."
+    },
+    {
+      "id": 120,
+      "lesson_id": 2,
+      "topic": "propozitii-exceptive",
+      "difficulty": "greu",
+      "type": "multiple_choice",
+      "question": "Ce exprima logic enuntul \"Numai unii studenti sunt bursieri\"?",
+      "options": [
+        "Doar SiP",
+        "Doar SoP",
+        "Atat SiP, cat si SoP",
+        "Doar SaP"
+      ],
+      "correct_answer": "Atat SiP, cat si SoP",
+      "explanation": "\"Numai unii S sunt P\" inseamna ca exista studenti bursieri, dar si studenti care nu sunt bursieri. De aceea sunt vizate simultan SiP si SoP."
+    },
+    {
+      "id": 121,
+      "lesson_id": 3,
+      "topic": "deductie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce caracterizeaza un rationament deductiv?",
+      "options": [
+        "Concluzia este mai generala decat premisele",
+        "Concluzia nu depaseste generalitatea premiselor",
+        "Concluzia este doar probabila",
+        "Porneste mereu de la exemple izolate"
+      ],
+      "correct_answer": "Concluzia nu depaseste generalitatea premiselor",
+      "explanation": "In deductie, concluzia este deja continuta implicit in premise. De aceea gradul ei de generalitate nu il depaseste pe cel al premiselor."
+    },
+    {
+      "id": 122,
+      "lesson_id": 3,
+      "topic": "deductie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care dintre urmatoarele exemple este inductiv, nu deductiv?",
+      "options": [
+        "Toti oamenii sunt muritori; Socrate este om; deci Socrate este muritor",
+        "Niciun patrat nu este cerc; aceasta figura este patrat; deci nu este cerc",
+        "Am observat mai multe metale care se dilata la caldura; deci toate metalele se dilata la caldura",
+        "Toti judecatorii sunt juristi; Ana este judecator; deci Ana este jurist"
+      ],
+      "correct_answer": "Am observat mai multe metale care se dilata la caldura; deci toate metalele se dilata la caldura",
+      "explanation": "Se trece de la un numar limitat de cazuri la o concluzie mai generala. Acesta este tiparul clasic al inductiei."
+    },
+    {
+      "id": 123,
+      "lesson_id": 3,
+      "topic": "rationament",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care dintre urmatoarele NU este o conditie generala a rationamentului?",
+      "options": [
+        "Existenta unor premise",
+        "Derivarea unei concluzii",
+        "Temeiul suficient sau necesar al premiselor",
+        "Prezenta obligatorie a trei termeni"
+      ],
+      "correct_answer": "Prezenta obligatorie a trei termeni",
+      "explanation": "Trei termeni apar obligatoriu in silogism, nu in orice rationament. Un rationament general cere premise, concluzie si un temei care sustine inferenta."
+    },
+    {
+      "id": 124,
+      "lesson_id": 3,
+      "topic": "patratul-opozitiei",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care este contradictoria propozitiei SaP?",
+      "options": [
+        "SeP",
+        "SiP",
+        "SoP",
+        "PaS"
+      ],
+      "correct_answer": "SoP",
+      "explanation": "In patratul opozitiei, A si O sunt contradictorii. Daca una este adevarata, cealalta este falsa, si invers."
+    },
+    {
+      "id": 125,
+      "lesson_id": 3,
+      "topic": "patratul-opozitiei",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca SaP este adevarata, ce rezulta sigur?",
+      "options": [
+        "SeP este falsa",
+        "SoP este adevarata",
+        "SeP este nedeterminata",
+        "Nimic nu poate fi stabilit"
+      ],
+      "correct_answer": "SeP este falsa",
+      "explanation": "A si E sunt contrare. Daca SaP este adevarata, SeP nu mai poate fi adevarata, deci este falsa."
+    },
+    {
+      "id": 126,
+      "lesson_id": 3,
+      "topic": "patratul-opozitiei",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca SeP este falsa, ce rezulta sigur?",
+      "options": [
+        "SaP este falsa",
+        "SiP este adevarata",
+        "SoP este falsa",
+        "Niciuna dintre relatii nu ofera o concluzie sigura"
+      ],
+      "correct_answer": "SiP este adevarata",
+      "explanation": "E si I sunt contradictorii. Daca SeP este falsa, atunci SiP este obligatoriu adevarata."
+    },
+    {
+      "id": 127,
+      "lesson_id": 3,
+      "topic": "distribuire",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cum sunt distribuiti termenii in propozitia A (SaP)?",
+      "options": [
+        "S distribuit, P nedistribuit",
+        "S nedistribuit, P distribuit",
+        "Ambii distribuiti",
+        "Ambii nedistribuiti"
+      ],
+      "correct_answer": "S distribuit, P nedistribuit",
+      "explanation": "In A se vorbeste despre intreaga extensiune a subiectului, dar nu despre intreaga extensiune a predicatului."
+    },
+    {
+      "id": 128,
+      "lesson_id": 3,
+      "topic": "distribuire",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cum sunt distribuiti termenii in propozitia O (SoP)?",
+      "options": [
+        "S distribuit, P nedistribuit",
+        "S nedistribuit, P distribuit",
+        "Ambii distribuiti",
+        "Ambii nedistribuiti"
+      ],
+      "correct_answer": "S nedistribuit, P distribuit",
+      "explanation": "In O nu se vorbeste despre tot S, ci doar despre unii S. In schimb, negatia vizeaza intreaga extensiune a lui P."
+    },
+    {
+      "id": 129,
+      "lesson_id": 3,
+      "topic": "conversiune",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care conversiune simpla este valida?",
+      "options": [
+        "SeP -> PeS",
+        "SaP -> PaS",
+        "SoP -> PoS",
+        "SaP -> PiS"
+      ],
+      "correct_answer": "SeP -> PeS",
+      "explanation": "Conversiunea simpla pastreaza cantitatea si este valida pentru E si I. De aceea SeP poate deveni corect PeS."
+    },
+    {
+      "id": 130,
+      "lesson_id": 3,
+      "topic": "conversiune",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care conversiune prin accident este valida?",
+      "options": [
+        "SaP -> PiS",
+        "SeP -> PeS",
+        "SiP -> PiS",
+        "SoP -> PoS"
+      ],
+      "correct_answer": "SaP -> PiS",
+      "explanation": "A se converteste valid doar prin accident, adica din universala se trece la particulara. Rezultatul corect este PiS."
+    },
+    {
+      "id": 131,
+      "lesson_id": 3,
+      "topic": "conversiune",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care propozitie nu se converteste valid?",
+      "options": [
+        "SoP",
+        "SeP",
+        "SiP",
+        "SaP"
+      ],
+      "correct_answer": "SoP",
+      "explanation": "Forma O nu admite conversiune valida. Daca inversezi termenii, pierzi controlul distribuirii si concluzia nu mai este garantata."
+    },
+    {
+      "id": 132,
+      "lesson_id": 3,
+      "topic": "obversiune",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care este obversa propozitiei SeP?",
+      "options": [
+        "Sa non-P",
+        "So non-P",
+        "PeS",
+        "Si non-P"
+      ],
+      "correct_answer": "Sa non-P",
+      "explanation": "Obversiunea schimba calitatea copulei si inlocuieste predicatul cu complementarul lui. Niciun S nu este P devine Toti S sunt non-P."
+    },
+    {
+      "id": 133,
+      "lesson_id": 3,
+      "topic": "silogism",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "In silogism, care termen nu apare in concluzie?",
+      "options": [
+        "Termenul minor S",
+        "Termenul major P",
+        "Termenul mediu M",
+        "Predicatul logic"
+      ],
+      "correct_answer": "Termenul mediu M",
+      "explanation": "M are doar rol de legatura intre premise. Tocmai de aceea el dispare din concluzie."
+    },
+    {
+      "id": 134,
+      "lesson_id": 3,
+      "topic": "silogism",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce este termenul major intr-un silogism?",
+      "options": [
+        "Subiectul concluziei",
+        "Predicatul concluziei",
+        "Termenul care apare in ambele premise",
+        "Termenul care lipseste din premise"
+      ],
+      "correct_answer": "Predicatul concluziei",
+      "explanation": "P este termenul major pentru ca apare ca predicat al concluziei si se regaseste in premisa majora."
+    },
+    {
+      "id": 135,
+      "lesson_id": 3,
+      "topic": "figuri",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Figura silogistica este stabilita de:",
+      "options": [
+        "Calitatea concluziei",
+        "Pozitia termenului mediu in premise",
+        "Numarul termenilor distribuiti",
+        "Ordinea literelor A, E, I, O"
+      ],
+      "correct_answer": "Pozitia termenului mediu in premise",
+      "explanation": "Figura nu depinde de continutul termenilor, ci de locul ocupat de M in fiecare premisa."
+    },
+    {
+      "id": 136,
+      "lesson_id": 3,
+      "topic": "validitate",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce regula este incalcata intr-un silogism cu doua premise negative?",
+      "options": [
+        "Din doua premise negative nu rezulta concluzie",
+        "Termenul mediu trebuie sa fie distribuit in concluzie",
+        "Concluzia trebuie sa fie afirmativa",
+        "Premisa majora trebuie sa fie particulara"
+      ],
+      "correct_answer": "Din doua premise negative nu rezulta concluzie",
+      "explanation": "Doua premise negative nu ofera niciun pod logic intre S si P. De aceea silogismul devine nevalid."
+    },
+    {
+      "id": 137,
+      "lesson_id": 3,
+      "topic": "validitate",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Daca o premisa este negativa, ce trebuie sa fie concluzia?",
+      "options": [
+        "Tot negativa",
+        "Tot afirmativa",
+        "Universala",
+        "Indiferenta la semn"
+      ],
+      "correct_answer": "Tot negativa",
+      "explanation": "Premisa negativa transmite semnul negativ concluziei. Daca aceasta regula nu este respectata, forma devine invalida."
+    },
+    {
+      "id": 138,
+      "lesson_id": 3,
+      "topic": "validitate",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Daca o premisa este particulara, ce trebuie sa fie concluzia?",
+      "options": [
+        "Particulara",
+        "Universala",
+        "Negativa",
+        "Necesara"
+      ],
+      "correct_answer": "Particulara",
+      "explanation": "Nu poti obtine o concluzie mai puternica decat cea permisa de premise. O premisa particulara obliga concluzia sa ramana particulara."
+    },
+    {
+      "id": 139,
+      "lesson_id": 3,
+      "topic": "venn",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cum se reprezinta o propozitie universala intr-o diagrama Venn?",
+      "options": [
+        "Prin hasurarea regiunii vide",
+        "Prin plasarea unui x intr-o regiune",
+        "Prin colorarea tuturor regiunilor",
+        "Prin unirea cercurilor cu o sageata"
+      ],
+      "correct_answer": "Prin hasurarea regiunii vide",
+      "explanation": "Universalele spun ca o anumita zona nu contine elemente. De aceea regiunea respectiva se marcheaza ca vida, prin hasurare."
+    },
+    {
+      "id": 140,
+      "lesson_id": 3,
+      "topic": "venn",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca un silogism are o premisa universala si una particulara, care se reprezinta prima in diagrama Venn?",
+      "options": [
+        "Premisa particulara",
+        "Premisa universala",
+        "Concluzia",
+        "Ordinea nu conteaza niciodata"
+      ],
+      "correct_answer": "Premisa universala",
+      "explanation": "Mai intai se hasureaza zonele vide stabilite de universala. Abia apoi poti plasa corect x-ul cerut de o premisa particulara."
+    },
+    {
+      "id": 141,
+      "lesson_id": 4,
+      "topic": "propozitie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care dintre enunturile de mai jos este o propozitie logica?",
+      "options": [
+        "Ploua afara.",
+        "Inchide fereastra!",
+        "Cine a venit?",
+        "Ce frumos!"
+      ],
+      "correct_answer": "Ploua afara.",
+      "explanation": "O propozitie logica este un enunt care poate fi evaluat ca adevarat sau fals. Doar \"Ploua afara.\" are aceasta proprietate."
+    },
+    {
+      "id": 142,
+      "lesson_id": 4,
+      "topic": "conectori",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Daca p este falsa, ce valoare are negatia ei, notata ¬p?",
+      "options": [
+        "Adevarata",
+        "Falsa",
+        "Nedeterminata",
+        "Echivalenta"
+      ],
+      "correct_answer": "Adevarata",
+      "explanation": "Negatia inverseaza valoarea de adevar a propozitiei initiale. Daca p este falsa, ¬p devine adevarata."
+    },
+    {
+      "id": 143,
+      "lesson_id": 4,
+      "topic": "conectori",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cand este adevarata formula p ∧ q?",
+      "options": [
+        "Cand cel putin una dintre propoziitii este adevarata",
+        "Doar cand ambele propoziitii sunt adevarate",
+        "Doar cand ambele propoziitii sunt false",
+        "Cand p si q au valori diferite"
+      ],
+      "correct_answer": "Doar cand ambele propoziitii sunt adevarate",
+      "explanation": "Conjunctia cere adevar simultan in ambele componente. Un singur fals este suficient pentru a face formula falsa."
+    },
+    {
+      "id": 144,
+      "lesson_id": 4,
+      "topic": "conectori",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cand este falsa formula p ∨ q, in sens inclusiv?",
+      "options": [
+        "Cand exact una dintre propoziitii este adevarata",
+        "Cand ambele sunt adevarate",
+        "Doar cand ambele sunt false",
+        "Cand p este falsa, indiferent de q"
+      ],
+      "correct_answer": "Doar cand ambele sunt false",
+      "explanation": "Disjunctia inclusiva este adevarata daca macar una dintre componente este adevarata. Devine falsa numai in cazul 0,0."
+    },
+    {
+      "id": 145,
+      "lesson_id": 4,
+      "topic": "conectori",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cand este falsa implicatia p → q?",
+      "options": [
+        "Cand p este falsa si q este adevarata",
+        "Cand p este adevarata si q este falsa",
+        "Cand ambele sunt false",
+        "Cand p si q au aceeasi valoare"
+      ],
+      "correct_answer": "Cand p este adevarata si q este falsa",
+      "explanation": "Implicatia materiala are un singur caz de falsitate: antecedent adevarat si consecvent fals."
+    },
+    {
+      "id": 146,
+      "lesson_id": 4,
+      "topic": "conectori",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cand este adevarata echivalenta p ↔ q?",
+      "options": [
+        "Cand p este adevarata",
+        "Cand q este adevarata",
+        "Cand p si q au aceeasi valoare de adevar",
+        "Cand exact una dintre ele este adevarata"
+      ],
+      "correct_answer": "Cand p si q au aceeasi valoare de adevar",
+      "explanation": "Echivalenta verifica daca cele doua componente merg impreuna. Ea este adevarata in cazurile 1,1 si 0,0."
+    },
+    {
+      "id": 147,
+      "lesson_id": 4,
+      "topic": "tabele-de-adevar",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cate randuri are un tabel de adevar pentru trei variabile?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "16"
+      ],
+      "correct_answer": "8",
+      "explanation": "Numarul de randuri este 2 la puterea n. Pentru trei variabile, 2^3 inseamna 8."
+    },
+    {
+      "id": 148,
+      "lesson_id": 4,
+      "topic": "tabele-de-adevar",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce este o tautologie?",
+      "options": [
+        "O formula falsa pe toate randurile",
+        "O formula adevarata pe toate randurile",
+        "O formula cu exact un rand adevarat",
+        "O formula care contine doar negatii"
+      ],
+      "correct_answer": "O formula adevarata pe toate randurile",
+      "explanation": "Tautologia ramane adevarata indiferent de valorile variabilelor. De aceea ultima coloana a tabelului are numai 1."
+    },
+    {
+      "id": 149,
+      "lesson_id": 4,
+      "topic": "echivalente",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cu ce este echivalenta formula p → q?",
+      "options": [
+        "¬p ∨ q",
+        "p ∧ q",
+        "¬q ∨ p",
+        "¬p ∧ ¬q"
+      ],
+      "correct_answer": "¬p ∨ q",
+      "explanation": "Aceasta este echivalenta standard a implicatiei. Ea permite rescrierea rapida a formulelor in exercitiile de examen."
+    },
+    {
+      "id": 150,
+      "lesson_id": 4,
+      "topic": "echivalente",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cu ce este echivalenta formula p ↔ q?",
+      "options": [
+        "(p → q) ∧ (q → p)",
+        "(p ∧ q) ∨ ¬q",
+        "¬p ∨ q",
+        "p ⊻ q"
+      ],
+      "correct_answer": "(p → q) ∧ (q → p)",
+      "explanation": "Echivalenta inseamna dublu sens: din p urmeaza q si din q urmeaza p. De aceea se descompune in doua implicatii."
+    },
+    {
+      "id": 151,
+      "lesson_id": 4,
+      "topic": "echivalente",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care este forma corecta a legii lui De Morgan pentru ¬(p ∨ q)?",
+      "options": [
+        "¬p ∨ ¬q",
+        "¬p ∧ ¬q",
+        "p ∧ q",
+        "p → ¬q"
+      ],
+      "correct_answer": "¬p ∧ ¬q",
+      "explanation": "Negarea unei disjunctii transforma operatorul in conjunctie si neaga fiecare componenta."
+    },
+    {
+      "id": 152,
+      "lesson_id": 4,
+      "topic": "traducere",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Daca p = \"promovezi\" si q = \"inveti\", cum se traduce corect enuntul \"Promovezi numai daca inveti\"?",
+      "options": [
+        "p → q",
+        "q → p",
+        "p ∨ q",
+        "p ↔ q"
+      ],
+      "correct_answer": "p → q",
+      "explanation": "\"Numai daca\" introduce conditia necesara. Enuntul spune ca promovarea nu are loc fara invatare, deci p implica q."
+    },
+    {
+      "id": 153,
+      "lesson_id": 4,
+      "topic": "validitate",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cand este valid un argument in logica propozitionala?",
+      "options": [
+        "Cand toate premisele sunt adevarate in realitate",
+        "Cand este imposibil ca premisele sa fie adevarate si concluzia falsa",
+        "Cand concluzia suna plauzibil",
+        "Cand apar cel putin doua premise"
+      ],
+      "correct_answer": "Cand este imposibil ca premisele sa fie adevarate si concluzia falsa",
+      "explanation": "Validitatea tine de forma, nu de continutul factual. Criteriul corect este imposibilitatea combinatiei premise adevarate - concluzie falsa."
+    },
+    {
+      "id": 154,
+      "lesson_id": 4,
+      "topic": "scheme-de-inferenta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce schema de inferenta este (p → q), p ⟹ q?",
+      "options": [
+        "Modus Ponens",
+        "Modus Tollens",
+        "Negarea antecedentului",
+        "Afirmarea consecventului"
+      ],
+      "correct_answer": "Modus Ponens",
+      "explanation": "Se afirma antecedentul si se obtine consecventul. Aceasta este schema valida numita Modus Ponens."
+    },
+    {
+      "id": 155,
+      "lesson_id": 4,
+      "topic": "scheme-de-inferenta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce schema de inferenta este (p → q), ¬q ⟹ ¬p?",
+      "options": [
+        "Modus Ponens",
+        "Modus Tollens",
+        "Afirmarea consecventului",
+        "Dilema constructiva simpla"
+      ],
+      "correct_answer": "Modus Tollens",
+      "explanation": "Se neaga consecventul si, in mod valid, se neaga antecedentul. Acesta este Modus Tollens."
+    },
+    {
+      "id": 156,
+      "lesson_id": 4,
+      "topic": "scheme-de-inferenta",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cum se numeste eroarea din schema (p → q), q ⟹ p?",
+      "options": [
+        "Modus Tollens",
+        "Afirmarea consecventului",
+        "Negarea antecedentului",
+        "Dilema distructiva"
+      ],
+      "correct_answer": "Afirmarea consecventului",
+      "explanation": "Faptul ca q este adevarata nu garanteaza ca p este cauza ei. Schema inverseaza nevalid sensul implicatiei."
+    },
+    {
+      "id": 157,
+      "lesson_id": 4,
+      "topic": "scheme-de-inferenta",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce schema de inferenta este (p ∨ q), ¬p ⟹ q?",
+      "options": [
+        "Modus Ponendo Tollens",
+        "Modus Tollendo Ponens",
+        "Afirmarea consecventului",
+        "Negarea antecedentului"
+      ],
+      "correct_answer": "Modus Tollendo Ponens",
+      "explanation": "Se elimina prima alternativa prin negare si ramane cealalta. Aceasta este schema valida MTP."
+    },
+    {
+      "id": 158,
+      "lesson_id": 4,
+      "topic": "scheme-de-inferenta",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "In ce situatie este valida schema (p ⊻ q), p ⟹ ¬q?",
+      "options": [
+        "Cand disjunctia este inclusiva",
+        "Cand disjunctia este exclusiva",
+        "Cand p este falsa",
+        "Cand q este adevarata"
+      ],
+      "correct_answer": "Cand disjunctia este exclusiva",
+      "explanation": "Doar disjunctia exclusiva spune explicit ca nu pot fi adevarate ambele componente. De aceea MPT este valida numai in acest caz."
+    },
+    {
+      "id": 159,
+      "lesson_id": 4,
+      "topic": "argumentare-speciala",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce este o entimema?",
+      "options": [
+        "Un silogism cu o premisa omisa",
+        "O demonstratie prin reducere la absurd",
+        "O disjunctie exclusiva",
+        "Un tabel de adevar incomplet"
+      ],
+      "correct_answer": "Un silogism cu o premisa omisa",
+      "explanation": "Entimema este un silogism prescurtat. Una dintre premise este considerata implicita si trebuie reconstruita pentru a verifica validitatea."
+    },
+    {
+      "id": 160,
+      "lesson_id": 4,
+      "topic": "demonstratie",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care este schema demonstratiei indirecte?",
+      "options": [
+        "Fundament adevarat ⟹ teza",
+        "¬teza ⟹ contradictie ⟹ teza",
+        "p ∨ q, ¬p ⟹ q",
+        "p → q, q ⟹ p"
+      ],
+      "correct_answer": "¬teza ⟹ contradictie ⟹ teza",
+      "explanation": "Demonstratia indirecta presupune negatia tezei si arata ca ea duce la absurd. Tocmai contradictia obtinuta confirma teza initiala."
+    },
+    {
+      "id": 161,
+      "lesson_id": 5,
+      "topic": "analogie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce este analogia, ca rationament nedeductiv?",
+      "options": [
+        "Transferul unei proprietati pe baza unor asemanari relevante",
+        "Deducerea unei concluzii necesare din doua premise universale",
+        "Transformarea unei propozitii categorice prin conversiune",
+        "Negarea consecventului intr-o implicatie"
+      ],
+      "correct_answer": "Transferul unei proprietati pe baza unor asemanari relevante",
+      "explanation": "Analogia compara doua obiecte sau situatii si transfera probabil o proprietate de la unul la altul, pe baza asemanarilor constatate."
+    },
+    {
+      "id": 162,
+      "lesson_id": 5,
+      "topic": "analogie",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce face o analogie sa fie puternica?",
+      "options": [
+        "Numai faptul ca exemplele sunt multe",
+        "Asemanari esentiale si relevante pentru proprietatea transferata",
+        "Concluzia foarte indrazneata",
+        "Folosirea unui limbaj emotional"
+      ],
+      "correct_answer": "Asemanari esentiale si relevante pentru proprietatea transferata",
+      "explanation": "Nu orice asemanare conteaza. Analogiei ii creste forta doar daca punctele comune sunt legate direct de proprietatea pe care vrei sa o transferi."
+    },
+    {
+      "id": 163,
+      "lesson_id": 5,
+      "topic": "inductie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce caracterizeaza inductia completa?",
+      "options": [
+        "Examineaza toate cazurile unei clase finite",
+        "Examineaza doar un esantion si generalizeaza",
+        "Produce o concluzie mai sigura decat deductia",
+        "Este identica demonstratiei indirecte"
+      ],
+      "correct_answer": "Examineaza toate cazurile unei clase finite",
+      "explanation": "Inductia completa parcurge intreaga clasa. De aceea concluzia ei este sigura, dar puterea de extindere este redusa."
+    },
+    {
+      "id": 164,
+      "lesson_id": 5,
+      "topic": "inductie",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce caracter are concluzia inductiei incomplete?",
+      "options": [
+        "Necesara",
+        "Probabila",
+        "Contradictorie",
+        "Independenta de premise"
+      ],
+      "correct_answer": "Probabila",
+      "explanation": "Inductia incompleta porneste de la un numar limitat de cazuri. Din acest motiv concluzia ei ramane probabila, nu necesara."
+    },
+    {
+      "id": 165,
+      "lesson_id": 5,
+      "topic": "inductie",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care exemplu ilustreaza o generalizare pripita?",
+      "options": [
+        "Am citit doi martori contradictorii, deci toate depozitiile sunt false",
+        "Toate cazurile unei clase au fost verificate, deci regula este certa",
+        "Daca p atunci q; p; deci q",
+        "Niciun cerc nu este patrat"
+      ],
+      "correct_answer": "Am citit doi martori contradictorii, deci toate depozitiile sunt false",
+      "explanation": "Se porneste de la prea putine cazuri pentru o concluzie foarte larga. Exact aceasta disproportie face inductia slaba."
+    },
+    {
+      "id": 166,
+      "lesson_id": 5,
+      "topic": "metode-cauzale",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce cauta metoda concordantei?",
+      "options": [
+        "Factorul comun prezent in toate cazurile cu acelasi efect",
+        "Diferenta dintre doua silogisme",
+        "O concluzie necesara din premise universale",
+        "Predicatul distribuit in concluzie"
+      ],
+      "correct_answer": "Factorul comun prezent in toate cazurile cu acelasi efect",
+      "explanation": "Daca mai multe situatii diferite produc acelasi efect si au un singur factor comun, acel factor este suspectat drept cauza."
+    },
+    {
+      "id": 167,
+      "lesson_id": 5,
+      "topic": "metode-cauzale",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce identifica metoda diferentei?",
+      "options": [
+        "Circumstanta care diferentiaza cazul cu efect de cazul fara efect",
+        "Factorul comun tuturor cauzelor posibile",
+        "O relatie de contradictie in patratul logic",
+        "O eroare de tip ad hominem"
+      ],
+      "correct_answer": "Circumstanta care diferentiaza cazul cu efect de cazul fara efect",
+      "explanation": "Metoda compara doua situatii aproape identice. Daca doar un factor difera si efectul apare doar intr-un caz, acel factor este candidat cauzal."
+    },
+    {
+      "id": 168,
+      "lesson_id": 5,
+      "topic": "metode-cauzale",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Cum functioneaza metoda reziduurilor?",
+      "options": [
+        "Scade efectele deja explicate si atribuie restul cauzei ramase",
+        "Cauta doua premise negative",
+        "Verifica distributia termenului mediu",
+        "Transforma o propozitie universala in particulara"
+      ],
+      "correct_answer": "Scade efectele deja explicate si atribuie restul cauzei ramase",
+      "explanation": "Dupa ce explici o parte din fenomen prin cauze cunoscute, partea neexplicata ramane legata de factorul inca nereluat."
+    },
+    {
+      "id": 169,
+      "lesson_id": 5,
+      "topic": "metode-cauzale",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce urmareste metoda variatiilor concomitente?",
+      "options": [
+        "Modificari corelate intre o circumstanta si fenomen",
+        "Raportul de subalternare dintre A si I",
+        "Conversiunea simplei particulare",
+        "Eliminarea unei premise implicite"
+      ],
+      "correct_answer": "Modificari corelate intre o circumstanta si fenomen",
+      "explanation": "Daca schimbarea unui factor este insotita constant de schimbarea fenomenului, exista un indiciu serios de legatura cauzala."
+    },
+    {
+      "id": 170,
+      "lesson_id": 5,
+      "topic": "sofisme",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Care este diferenta de baza dintre sofism si paralogism?",
+      "options": [
+        "Sofismul este intentionat, paralogismul nu",
+        "Sofismul este deductiv, paralogismul inductiv",
+        "Sofismul este valid, paralogismul invalid",
+        "Nu exista nicio diferenta"
+      ],
+      "correct_answer": "Sofismul este intentionat, paralogismul nu",
+      "explanation": "Ambele sunt erori de argumentare, dar sofismul este construit cu intentie manipulativa, pe cand paralogismul apare din neglijenta sau necunoastere."
+    },
+    {
+      "id": 171,
+      "lesson_id": 5,
+      "topic": "sofisme-de-limbaj",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cum se numeste sofismul in care acelasi termen este folosit cu doua sensuri diferite?",
+      "options": [
+        "Echivocatie",
+        "Amfibolie",
+        "Ad misericordiam",
+        "Petitio principii"
+      ],
+      "correct_answer": "Echivocatie",
+      "explanation": "Eroarea apare fiindca termenul pare acelasi, dar isi schimba sensul in interiorul argumentului. Astfel legatura logica devine iluzorie."
+    },
+    {
+      "id": 172,
+      "lesson_id": 5,
+      "topic": "sofisme-de-limbaj",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Cum se numeste eroarea produsa de ambiguitatea structurii unei propozitii?",
+      "options": [
+        "Amfibolie",
+        "Echivocatie",
+        "Ad hominem",
+        "Compozitie"
+      ],
+      "correct_answer": "Amfibolie",
+      "explanation": "Amfibolia nu tine de sensul unui singur cuvant, ci de felul in care este construita sintactic propozitia."
+    },
+    {
+      "id": 173,
+      "lesson_id": 5,
+      "topic": "sofisme-de-limbaj",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce sofism modifica intelesul prin accentuarea nepotrivita a unei expresii?",
+      "options": [
+        "Sofismul accentului",
+        "Ad baculum",
+        "Subalternarea",
+        "Metoda diferentei"
+      ],
+      "correct_answer": "Sofismul accentului",
+      "explanation": "Uneori mutarea accentului schimba sensul enuntului si face argumentul sa para mai puternic decat este in realitate."
+    },
+    {
+      "id": 174,
+      "lesson_id": 5,
+      "topic": "diviziune-compozitie",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce eroare apare in rationamentul \"Echipa este excelenta, deci fiecare jucator este excelent\"?",
+      "options": [
+        "Diviziune",
+        "Compozitie",
+        "Ad ignorantiam",
+        "Modus Tollens"
+      ],
+      "correct_answer": "Diviziune",
+      "explanation": "Se transfera fara justificare o proprietate a intregului catre fiecare parte. O echipa poate functiona excelent fara ca fiecare membru sa fie exceptional izolat."
+    },
+    {
+      "id": 175,
+      "lesson_id": 5,
+      "topic": "circularitate",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Ce eroare apare in argumentul \"Legea este justa pentru ca este o lege dreapta\"?",
+      "options": [
+        "Petitio principii",
+        "Ad hominem",
+        "Ad baculum",
+        "Metoda concordantei"
+      ],
+      "correct_answer": "Petitio principii",
+      "explanation": "Premisa nu aduce un temei nou, ci reformuleaza teza in alti termeni. Argumentul se inchide intr-un cerc si nu demonstreaza nimic."
+    },
+    {
+      "id": 176,
+      "lesson_id": 5,
+      "topic": "relevanta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce sofism apare cand este atacata persoana, nu ideea sustinuta de ea?",
+      "options": [
+        "Ad hominem",
+        "Ad misericordiam",
+        "Ad ignorantiam",
+        "Petitio principii"
+      ],
+      "correct_answer": "Ad hominem",
+      "explanation": "Argumentul deviaza de la teza si loveste in caracterul sau biografia persoanei. Chiar daca atacul ar fi adevarat, el nu raspunde ideii discutate."
+    },
+    {
+      "id": 177,
+      "lesson_id": 5,
+      "topic": "relevanta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce sofism apare in enuntul \"Nimeni nu a demonstrat ca teoria este falsa, deci teoria este adevarata\"?",
+      "options": [
+        "Ad ignorantiam",
+        "Ad hominem",
+        "Ad baculum",
+        "Compozitie"
+      ],
+      "correct_answer": "Ad ignorantiam",
+      "explanation": "Lipsa unei dovezi impotriva unei teze nu este dovada adevarului ei. Enuntul confunda absenta probei cu proba pozitiei."
+    },
+    {
+      "id": 178,
+      "lesson_id": 5,
+      "topic": "relevanta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce sofism foloseste mila sau compasiunea in locul unui argument relevant?",
+      "options": [
+        "Ad misericordiam",
+        "Ad hominem",
+        "Ad baculum",
+        "Echivocatie"
+      ],
+      "correct_answer": "Ad misericordiam",
+      "explanation": "Emotia poate impresiona auditorul, dar nu rezolva problema logica. Sofismul substituie evaluarea motivelor cu apelul la mila."
+    },
+    {
+      "id": 179,
+      "lesson_id": 5,
+      "topic": "relevanta",
+      "difficulty": "usor",
+      "type": "multiple_choice",
+      "question": "Ce sofism inlocuieste argumentul cu amenintarea sau forta?",
+      "options": [
+        "Ad baculum",
+        "Ad misericordiam",
+        "Ad ignorantiam",
+        "Amfibolie"
+      ],
+      "correct_answer": "Ad baculum",
+      "explanation": "In loc sa arate de ce o concluzie ar fi adevarata, vorbitorul incearca sa o impuna prin frica sau constrangere."
+    },
+    {
+      "id": 180,
+      "lesson_id": 5,
+      "topic": "analogie",
+      "difficulty": "mediu",
+      "type": "multiple_choice",
+      "question": "Care formulare descrie o concluzie analogica prudenta?",
+      "options": [
+        "Cele doua cazuri seamana in cateva detalii, deci sunt identice in toate privintele",
+        "Avem cateva asemanari relevante, deci este probabil sa se pastreze si proprietatea discutata",
+        "Daca doua cazuri au acelasi nume, au si aceeasi structura juridica",
+        "Orice asemanare permite transferul sigur al concluziei"
+      ],
+      "correct_answer": "Avem cateva asemanari relevante, deci este probabil sa se pastreze si proprietatea discutata",
+      "explanation": "Analogia serioasa ramane modesta in concluzie. Ea vorbeste in termeni de probabilitate si cere asemanari relevante, nu identitate totala."
+    }
+  ]
+}

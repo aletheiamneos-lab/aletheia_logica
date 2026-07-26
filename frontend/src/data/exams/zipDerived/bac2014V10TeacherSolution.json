@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "examType": "BAC_LOGICA",
+    "year": 2014,
+    "variant": "Varianta 10",
+    "mode": "teacher_solution_backend",
+    "teacherOnly": true,
+    "studentVisible": false,
+    "sourceBasis": "Barem oficial 2014 Varianta 10"
+  },
+  "solutions": {
+    "S1_A": {
+      "answers": {
+        "1": "b",
+        "2": "c",
+        "3": "a",
+        "4": "c",
+        "5": "c",
+        "6": "d"
+      },
+      "points": "6 x 3p = 18p"
+    },
+    "S1_B": {
+      "points": "12p",
+      "syllogisms": [
+        {
+          "mode": "aoo-2",
+          "scheme": [
+            "PaM",
+            "SoM",
+            "SoP"
+          ],
+          "validity": "valid",
+          "note": "Schema corespunde modului aoo in figura a II-a; diagrama Venn confirma concluzia SoP."
+        },
+        {
+          "mode": "eao-4",
+          "scheme": [
+            "PeM",
+            "MaS",
+            "SoP"
+          ],
+          "validity": "valid",
+          "note": "Schema corespunde modului eao in figura a IV-a; diagrama Venn confirma concluzia SoP."
+        }
+      ]
+    },
+    "S2": {
+      "A": {
+        "answer": "SiP",
+        "explanation": "Propozitia 3: 'Unii colegi sunt prieteni' este particulara afirmativa."
+      },
+      "B": {
+        "formal": [
+          "Subcontrara propozitiei 1: SiP",
+          "Contrara propozitiei 2: SeP"
+        ],
+        "natural": [
+          "Unele rationamente sunt valide.",
+          "Niciun producator nu este agent economic."
+        ]
+      },
+      "C": {
+        "proposition2": {
+          "given": "SaP",
+          "converse": "PiS - Unii agenti economici sunt producatori.",
+          "obverse": "Se non-P - Niciun producator nu este non-agent economic."
+        },
+        "proposition4": {
+          "given": "SeP",
+          "converse": "PeS - Nicio stea nu este planeta.",
+          "obverse": "Sa non-P - Toate planetele sunt non-stele."
+        }
+      },
+      "D": {
+        "answer": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa."
+      },
+      "E": {
+        "diagram": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea."
+      }
+    },
+    "S3": {
+      "1": {
+        "answer": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa."
+      },
+      "2": {
+        "answer": [
+          "asadar",
+          "deci"
+        ],
+        "acceptedExamples": [
+          "prin urmare",
+          "in concluzie",
+          "rezulta ca"
+        ]
+      },
+      "3": {
+        "formal": [
+          "SaM",
+          "MaP",
+          "SaP"
+        ],
+        "natural": [
+          "Toti elevii care invata sunt elevi pregatiti.",
+          "Toti elevii pregatiti promoveaza examenul de bacalaureat.",
+          "Deci, toti elevii care invata promoveaza examenul de bacalaureat."
+        ],
+        "validity": "argument valid de tip AAA-1"
+      },
+      "4": {
+        "violatedRule": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman.",
+        "otherRules": [
+          {
+            "rule": "Definitia nu trebuie sa fie circulara.",
+            "badDefinition": "Romanul este o scriere romanesca."
+          },
+          {
+            "rule": "Definitia trebuie sa fie adecvata, nici prea larga, nici prea ingusta.",
+            "badDefinition": "Romanul este o carte."
+          }
+        ]
+      }
+    }
+  }
+}

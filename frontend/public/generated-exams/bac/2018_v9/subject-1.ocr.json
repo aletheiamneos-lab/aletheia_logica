@@ -1,0 +1,672 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "MinisterulEducatieiNationale",
+      "x": 1494.9957275390625,
+      "y": 196.30142211914062,
+      "score": 0.9865358429295676,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul NationaldeEvaluaresi Examinare",
+      "x": 1333.874267578125,
+      "y": 254.6613006591797,
+      "score": 0.9766610264778137,
+      "page_number": 1
+    },
+    {
+      "text": "Examenuldebacalaureatnational2018",
+      "x": 1225.57958984375,
+      "y": 371.3810729980469,
+      "score": 0.9947922085270737,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1674.6065673828125,
+      "y": 450.96270751953125,
+      "score": 0.9900589260188016,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1283.68896484375,
+      "y": 527.8916625976562,
+      "score": 0.9857137925697096,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 9",
+      "x": 3021.6875,
+      "y": 604.8206176757812,
+      "score": 0.9721893072128296,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.8629150390625,
+      "y": 761.3311767578125,
+      "score": 0.9719246952306657,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 367.1455993652344,
+      "y": 846.21826171875,
+      "score": 0.9734153764588492,
+      "page_number": 1
+    },
+    {
+      "text": "Toate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.",
+      "x": 380.3522644042969,
+      "y": 1000.076171875,
+      "score": 0.9463863174120585,
+      "page_number": 1
+    },
+    {
+      "text": "Timpul de lucru efectiv este de 3 ore.",
+      "x": 388.2762756347656,
+      "y": 1084.9632568359375,
+      "score": 0.9570187753752658,
+      "page_number": 1
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2857.9248046875,
+      "y": 1241.473876953125,
+      "score": 0.9625960375581469,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.78692626953125,
+      "y": 1246.779296875,
+      "score": 0.9734614610671997,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+      "x": 361.8629150390625,
+      "y": 1318.40283203125,
+      "score": 0.9667998209912726,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile demai jos.Estecorectaosinguravarianta deraspuns.",
+      "x": 367.1455993652344,
+      "y": 1403.2899169921875,
+      "score": 0.969463932312141,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 364.5042724609375,
+      "y": 1559.8004150390625,
+      "score": 0.9988694787025452,
+      "page_number": 1
+    },
+    {
+      "text": "Seriadetermeniordonaticrescatordinpunctdevedereintensionaleste:",
+      "x": 538.8323974609375,
+      "y": 1557.147705078125,
+      "score": 0.9946057758634053,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 1647.34033203125,
+      "score": 0.9964965283870697,
+      "page_number": 1
+    },
+    {
+      "text": "animal,urs,urs polar,animal salbatic",
+      "x": 541.4737548828125,
+      "y": 1642.0347900390625,
+      "score": 0.9846017393800948,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 1718.9637451171875,
+      "score": 0.9991438388824463,
+      "page_number": 1
+    },
+    {
+      "text": "animal, animal salbatic, urs, urs polar",
+      "x": 533.5497436523438,
+      "y": 1716.31103515625,
+      "score": 0.9738092781641544,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 1801.1981201171875,
+      "score": 0.8994674384593964,
+      "page_number": 1
+    },
+    {
+      "text": "animal salbatic,animal,urs,urs polar",
+      "x": 538.8323974609375,
+      "y": 1795.8927001953125,
+      "score": 0.9772969699568219,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 417.3309631347656,
+      "y": 1875.474365234375,
+      "score": 0.9930786788463593,
+      "page_number": 1
+    },
+    {
+      "text": "animal, animal salbatic, urs polar, urs",
+      "x": 528.2670288085938,
+      "y": 1872.8216552734375,
+      "score": 0.9879297828062986,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 364.5042724609375,
+      "y": 2031.9849853515625,
+      "score": 0.9970744848251343,
+      "page_number": 1
+    },
+    {
+      "text": "Rationamentul,Dacaniciundelfinnuesteanimalterestru,atunciniciunanimalterestrunu",
+      "x": 544.1150512695312,
+      "y": 2031.9849853515625,
+      "score": 0.9855502285534823,
+      "page_number": 1
+    },
+    {
+      "text": "estedelfin\"este:",
+      "x": 544.1150512695312,
+      "y": 2111.566650390625,
+      "score": 0.966924399137497,
+      "page_number": 1
+    },
+    {
+      "text": "o conversiuneprin accident",
+      "x": 522.984375,
+      "y": 2188.49560546875,
+      "score": 0.9550708967905778,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 412.0483093261719,
+      "y": 2191.148193359375,
+      "score": 0.990765780210495,
+      "page_number": 1
+    },
+    {
+      "text": "b. o conversiune simpla",
+      "x": 401.48297119140625,
+      "y": 2257.46630859375,
+      "score": 0.9736056586970454,
+      "page_number": 1
+    },
+    {
+      "text": "C.L",
+      "x": 414.68963623046875,
+      "y": 2350.3115234375,
+      "score": 0.7971891760826111,
+      "page_number": 1
+    },
+    {
+      "text": "un silogism",
+      "x": 525.625732421875,
+      "y": 2347.658935546875,
+      "score": 0.9993919676000421,
+      "page_number": 1
+    },
+    {
+      "text": "d.o obversiune",
+      "x": 406.765625,
+      "y": 2413.976806640625,
+      "score": 0.9862071147986821,
+      "page_number": 1
+    },
+    {
+      "text": "Termenii ,numar par\" si ,numar divizibil cu 2\" se afla in raport de:",
+      "x": 533.5497436523438,
+      "y": 2573.14013671875,
+      "score": 0.9673846118590411,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 367.1455993652344,
+      "y": 2581.098388671875,
+      "score": 0.9948407113552094,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 2663.332763671875,
+      "score": 0.9991687834262848,
+      "page_number": 1
+    },
+    {
+      "text": "ordonare",
+      "x": 536.1910400390625,
+      "y": 2658.02734375,
+      "score": 0.9976038336753845,
+      "page_number": 1
+    },
+    {
+      "text": "b.↑",
+      "x": 409.4069519042969,
+      "y": 2732.303466796875,
+      "score": 0.9042147000630697,
+      "page_number": 1
+    },
+    {
+      "text": "incrucisare",
+      "x": 525.625732421875,
+      "y": 2732.303466796875,
+      "score": 0.9892206733877008,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 412.0483093261719,
+      "y": 2817.190673828125,
+      "score": 0.911984920501709,
+      "page_number": 1
+    },
+    {
+      "text": "contrarietate",
+      "x": 530.9083862304688,
+      "y": 2814.537841796875,
+      "score": 0.9989500595973089,
+      "page_number": 1
+    },
+    {
+      "text": "d.identitate",
+      "x": 409.4069519042969,
+      "y": 2886.161376953125,
+      "score": 0.998503232995669,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 367.1455993652344,
+      "y": 3050.630126953125,
+      "score": 0.9972677528858185,
+      "page_number": 1
+    },
+    {
+      "text": "Subiectul logic al propozitiei,Unele animale acvatice sunt mamifere\"este:",
+      "x": 544.1150512695312,
+      "y": 3045.32470703125,
+      "score": 0.9743651600733195,
+      "page_number": 1
+    },
+    {
+      "text": "animaleacvatice",
+      "x": 541.4737548828125,
+      "y": 3127.55908203125,
+      "score": 0.9977978189786275,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 3138.169921875,
+      "score": 0.9954322576522827,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 409.4069519042969,
+      "y": 3204.488037109375,
+      "score": 0.9968764185905457,
+      "page_number": 1
+    },
+    {
+      "text": "animale",
+      "x": 536.1910400390625,
+      "y": 3204.488037109375,
+      "score": 0.9983712094170707,
+      "page_number": 1
+    },
+    {
+      "text": "uneleanimaleacvatice",
+      "x": 530.9083862304688,
+      "y": 3281.4169921875,
+      "score": 0.9967180699110031,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 3289.375244140625,
+      "score": 0.9363506436347961,
+      "page_number": 1
+    },
+    {
+      "text": "d.mamifere",
+      "x": 406.765625,
+      "y": 3358.345947265625,
+      "score": 0.9851986289024353,
+      "page_number": 1
+    },
+    {
+      "text": "Propozitia ,Orice om are un ideal\"este o propozitie categorica:",
+      "x": 538.8323974609375,
+      "y": 3512.203857421875,
+      "score": 0.9823877678977119,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 367.1455993652344,
+      "y": 3522.814697265625,
+      "score": 0.9967732727527618,
+      "page_number": 1
+    },
+    {
+      "text": "universalanegativa",
+      "x": 541.4737548828125,
+      "y": 3599.74365234375,
+      "score": 0.9931856857405769,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 3607.70166015625,
+      "score": 0.9976107776165009,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 412.0483093261719,
+      "y": 3676.672607421875,
+      "score": 0.9979968369007111,
+      "page_number": 1
+    },
+    {
+      "text": "particulara afirmativa",
+      "x": 530.9083862304688,
+      "y": 3679.3251953125,
+      "score": 0.999126369302923,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 3761.5595703125,
+      "score": 0.9549621641635895,
+      "page_number": 1
+    },
+    {
+      "text": "particulara negativa",
+      "x": 530.9083862304688,
+      "y": 3753.6015625,
+      "score": 0.9973183095455169,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 417.3309631347656,
+      "y": 3835.8359375,
+      "score": 0.9978040158748627,
+      "page_number": 1
+    },
+    {
+      "text": "universala afirmativa",
+      "x": 528.2670288085938,
+      "y": 3835.8359375,
+      "score": 0.9805743552389599,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 364.5042724609375,
+      "y": 3989.693603515625,
+      "score": 0.9988560974597931,
+      "page_number": 1
+    },
+    {
+      "text": "Dupa directia procesului de inferenta intre general si particular, inferentele sunt:",
+      "x": 538.8323974609375,
+      "y": 3984.38818359375,
+      "score": 0.9880594078983579,
+      "page_number": 1
+    },
+    {
+      "text": "validesi nevalide",
+      "x": 536.1910400390625,
+      "y": 4066.62255859375,
+      "score": 0.9716036249609554,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 412.0483093261719,
+      "y": 4077.233642578125,
+      "score": 0.9940298497676849,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 4148.85693359375,
+      "score": 0.999209851026535,
+      "page_number": 1
+    },
+    {
+      "text": "imediate si mediate",
+      "x": 525.625732421875,
+      "y": 4146.2041015625,
+      "score": 0.9568844061148795,
+      "page_number": 1
+    },
+    {
+      "text": "deductivesi inductive",
+      "x": 533.5497436523438,
+      "y": 4225.7861328125,
+      "score": 0.9846571371668861,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 4231.09130859375,
+      "score": 0.9095369577407837,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 417.3309631347656,
+      "y": 4308.0205078125,
+      "score": 0.9940097630023956,
+      "page_number": 1
+    },
+    {
+      "text": "tari si slabe",
+      "x": 525.625732421875,
+      "y": 4305.36767578125,
+      "score": 0.9741299381622901,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 361.8629150390625,
+      "y": 4459.2255859375,
+      "score": 0.9990435838699341,
+      "page_number": 1
+    },
+    {
+      "text": "Unadinregulilecorectitudiniidemonstratiei,referitoarelatezadedemonstrat,este:",
+      "x": 546.7564086914062,
+      "y": 4461.87841796875,
+      "score": 0.9824913167334223,
+      "page_number": 1
+    },
+    {
+      "text": "argumentele demonstratiei trebuie sa fie adevarate",
+      "x": 533.5497436523438,
+      "y": 4538.80712890625,
+      "score": 0.9621593940258026,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 4552.07080078125,
+      "score": 0.9977633953094482,
+      "page_number": 1
+    },
+    {
+      "text": "teza de demonstrat trebuie sa ramana aceeasi pe tot parcursul demonstratiei",
+      "x": 520.343017578125,
+      "y": 4613.08349609375,
+      "score": 0.9816903630892436,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 419.9722900390625,
+      "y": 4621.04150390625,
+      "score": 0.9987999796867371,
+      "page_number": 1
+    },
+    {
+      "text": "demonstratiatrebuiesafiecorecta",
+      "x": 533.5497436523438,
+      "y": 4695.31787109375,
+      "score": 0.9788026886601602,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 4700.623046875,
+      "score": 0.931750476360321,
+      "page_number": 1
+    },
+    {
+      "text": "d.teza de demonstrat trebuie sa fie o propozitie care a fost infirmata",
+      "x": 409.4069519042969,
+      "y": 4766.94140625,
+      "score": 0.984727531671524,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4942.02099609375,
+      "score": 0.9737747262935249,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 9",
+      "x": 3034.894287109375,
+      "y": 4947.326171875,
+      "score": 0.9745751023292542,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1650.83447265625,
+      "y": 5021.6025390625,
+      "score": 0.9777521703924451,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "MinisterulEducatieiNationale",
+    "Centrul NationaldeEvaluaresi Examinare",
+    "Examenuldebacalaureatnational2018",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Varianta 9",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "Toate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.",
+    "Timpul de lucru efectiv este de 3 ore.",
+    "(30 de puncte)",
+    "SUBIECTULI",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+    "enunturile demai jos.Estecorectaosinguravarianta deraspuns.",
+    "1.",
+    "Seriadetermeniordonaticrescatordinpunctdevedereintensionaleste:",
+    "a.",
+    "animal,urs,urs polar,animal salbatic",
+    "b.",
+    "animal, animal salbatic, urs, urs polar",
+    "C.",
+    "animal salbatic,animal,urs,urs polar",
+    "d.",
+    "animal, animal salbatic, urs polar, urs",
+    "2.",
+    "Rationamentul,Dacaniciundelfinnuesteanimalterestru,atunciniciunanimalterestrunu",
+    "estedelfin\"este:",
+    "o conversiuneprin accident",
+    "a.",
+    "b. o conversiune simpla",
+    "C.L",
+    "un silogism",
+    "d.o obversiune",
+    "Termenii ,numar par\" si ,numar divizibil cu 2\" se afla in raport de:",
+    "3.",
+    "a.",
+    "ordonare",
+    "b.↑",
+    "incrucisare",
+    "C.",
+    "contrarietate",
+    "d.identitate",
+    "4.",
+    "Subiectul logic al propozitiei,Unele animale acvatice sunt mamifere\"este:",
+    "animaleacvatice",
+    "a.",
+    "b.",
+    "animale",
+    "uneleanimaleacvatice",
+    "C.",
+    "d.mamifere",
+    "Propozitia ,Orice om are un ideal\"este o propozitie categorica:",
+    "5.",
+    "universalanegativa",
+    "a.",
+    "b.",
+    "particulara afirmativa",
+    "C.",
+    "particulara negativa",
+    "d.",
+    "universala afirmativa",
+    "6.",
+    "Dupa directia procesului de inferenta intre general si particular, inferentele sunt:",
+    "validesi nevalide",
+    "a.",
+    "b.",
+    "imediate si mediate",
+    "deductivesi inductive",
+    "C.",
+    "d.",
+    "tari si slabe",
+    "7.",
+    "Unadinregulilecorectitudiniidemonstratiei,referitoarelatezadedemonstrat,este:",
+    "argumentele demonstratiei trebuie sa fie adevarate",
+    "a.",
+    "teza de demonstrat trebuie sa ramana aceeasi pe tot parcursul demonstratiei",
+    "b.",
+    "demonstratiatrebuiesafiecorecta",
+    "C.",
+    "d.teza de demonstrat trebuie sa fie o propozitie care a fost infirmata",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta 9",
+    "Pagina 1 din 3"
+  ],
+  "text": "MinisterulEducatieiNationale\nCentrul NationaldeEvaluaresi Examinare\nExamenuldebacalaureatnational2018\nProba E. d)\nLogica, argumentare si comunicare\nVarianta 9\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\nToate subiectele sunt obligatorii. Se acorda 10 puncte din oficiu.\nTimpul de lucru efectiv este de 3 ore.\n(30 de puncte)\nSUBIECTULI\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre\nenunturile demai jos.Estecorectaosinguravarianta deraspuns.\n1.\nSeriadetermeniordonaticrescatordinpunctdevedereintensionaleste:\na.\nanimal,urs,urs polar,animal salbatic\nb.\nanimal, animal salbatic, urs, urs polar\nC.\nanimal salbatic,animal,urs,urs polar\nd.\nanimal, animal salbatic, urs polar, urs\n2.\nRationamentul,Dacaniciundelfinnuesteanimalterestru,atunciniciunanimalterestrunu\nestedelfin\"este:\no conversiuneprin accident\na.\nb. o conversiune simpla\nC.L\nun silogism\nd.o obversiune\nTermenii ,numar par\" si ,numar divizibil cu 2\" se afla in raport de:\n3.\na.\nordonare\nb.↑\nincrucisare\nC.\ncontrarietate\nd.identitate\n4.\nSubiectul logic al propozitiei,Unele animale acvatice sunt mamifere\"este:\nanimaleacvatice\na.\nb.\nanimale\nuneleanimaleacvatice\nC.\nd.mamifere\nPropozitia ,Orice om are un ideal\"este o propozitie categorica:\n5.\nuniversalanegativa\na.\nb.\nparticulara afirmativa\nC.\nparticulara negativa\nd.\nuniversala afirmativa\n6.\nDupa directia procesului de inferenta intre general si particular, inferentele sunt:\nvalidesi nevalide\na.\nb.\nimediate si mediate\ndeductivesi inductive\nC.\nd.\ntari si slabe\n7.\nUnadinregulilecorectitudiniidemonstratiei,referitoarelatezadedemonstrat,este:\nargumentele demonstratiei trebuie sa fie adevarate\na.\nteza de demonstrat trebuie sa ramana aceeasi pe tot parcursul demonstratiei\nb.\ndemonstratiatrebuiesafiecorecta\nC.\nd.teza de demonstrat trebuie sa fie o propozitie care a fost infirmata\nProba scrisa la logica, argumentare si comunicare\nVarianta 9\nPagina 1 din 3"
+}

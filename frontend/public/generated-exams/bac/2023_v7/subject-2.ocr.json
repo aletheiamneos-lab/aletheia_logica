@@ -1,0 +1,688 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1681.787109375,
+      "y": 184.664306640625,
+      "score": 0.9856389075517654,
+      "page_number": 2
+    },
+    {
+      "text": "CentrulNationaldePoliticisi EvaluareinEducatie",
+      "x": 1330.48046875,
+      "y": 247.0509033203125,
+      "score": 0.9879710220772288,
+      "page_number": 2
+    },
+    {
+      "text": "B.Se dau termenii M,N,O,P,si Q astfel incat termenul M se afla in raport de opozitie cu",
+      "x": 558.1041259765625,
+      "y": 351.8603820800781,
+      "score": 0.933479303258589,
+      "page_number": 2
+    },
+    {
+      "text": "termenul N, termenul O se afla in raport de opozitie cu termenul M si in raport de incrucisare cu",
+      "x": 553.12109375,
+      "y": 424.22882080078125,
+      "score": 0.9524622934380758,
+      "page_number": 2
+    },
+    {
+      "text": "termenul N. Termenul P este supraordonat termenului M, find totodata in raport de incrucisare",
+      "x": 550.6295166015625,
+      "y": 499.09271240234375,
+      "score": 0.9677471608243963,
+      "page_number": 2
+    },
+    {
+      "text": "cu termenul N si in raport de opozitie cu termenul O. Termenul Q este specie a termenului N si",
+      "x": 555.6126098632812,
+      "y": 573.9566040039062,
+      "score": 0.9905287908746842,
+      "page_number": 2
+    },
+    {
+      "text": "se afla in raport de incrucisare atat cu termenul O, cat si cu termenul P.",
+      "x": 555.6126098632812,
+      "y": 648.820556640625,
+      "score": 0.9777559903827874,
+      "page_number": 2
+    },
+    {
+      "text": "Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice",
+      "x": 717.5625,
+      "y": 723.6844482421875,
+      "score": 0.9751803117639878,
+      "page_number": 2
+    },
+    {
+      "text": "1.",
+      "x": 553.12109375,
+      "y": 726.179931640625,
+      "score": 0.996247410774231,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3032.19970703125,
+      "y": 796.0529174804688,
+      "score": 0.991647370159626,
+      "page_number": 2
+    },
+    {
+      "text": "dintreceicinci termeni.",
+      "x": 665.240234375,
+      "y": 798.54833984375,
+      "score": 0.9754744301671567,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 553.12109375,
+      "y": 870.9168090820312,
+      "score": 0.9988833963871002,
+      "page_number": 2
+    },
+    {
+      "text": "Stabiliti, pe baza raporturilor existente intre termenii M, N, O, P, Q care dintre urmatoarele",
+      "x": 710.087890625,
+      "y": 870.9168090820312,
+      "score": 0.970844511021959,
+      "page_number": 2
+    },
+    {
+      "text": "propoziti sunt adevarate si care sunt false(notati propozitile adevarate cu litera A, iar",
+      "x": 665.240234375,
+      "y": 945.7807006835938,
+      "score": 0.9585518575786205,
+      "page_number": 2
+    },
+    {
+      "text": "propozitilefalsecu literaF):",
+      "x": 665.240234375,
+      "y": 1023.1400756835938,
+      "score": 0.9807857338871274,
+      "page_number": 2
+    },
+    {
+      "text": "a) Unii N nu sunt M.",
+      "x": 590.494140625,
+      "y": 1093.0130615234375,
+      "score": 0.960269296169281,
+      "page_number": 2
+    },
+    {
+      "text": "c) Nici un M nu este P.",
+      "x": 1273.175048828125,
+      "y": 1093.0130615234375,
+      "score": 0.9611368930858114,
+      "page_number": 2
+    },
+    {
+      "text": "e) Toti Q sunt N.",
+      "x": 2020.635986328125,
+      "y": 1093.0130615234375,
+      "score": 0.9641739936435924,
+      "page_number": 2
+    },
+    {
+      "text": "g) Niciun O nu este N.",
+      "x": 2638.537109375,
+      "y": 1090.517578125,
+      "score": 0.9881517507813193,
+      "page_number": 2
+    },
+    {
+      "text": "b) Toti N sunt O.",
+      "x": 588.0025634765625,
+      "y": 1162.885986328125,
+      "score": 0.9976524885962991,
+      "page_number": 2
+    },
+    {
+      "text": "d) Unii P sunt N.",
+      "x": 1280.649658203125,
+      "y": 1167.876953125,
+      "score": 0.9738582512911629,
+      "page_number": 2
+    },
+    {
+      "text": "f) Unii Q sunt O.",
+      "x": 2020.635986328125,
+      "y": 1165.3814697265625,
+      "score": 0.991015679696027,
+      "page_number": 2
+    },
+    {
+      "text": "h) Toti N sunt Q.",
+      "x": 2638.537109375,
+      "y": 1167.876953125,
+      "score": 0.9805750566370347,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3029.708251953125,
+      "y": 1235.2545166015625,
+      "score": 0.9927009493112564,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2847.826171875,
+      "y": 1360.0277099609375,
+      "score": 0.9856100380420685,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 508.2734069824219,
+      "y": 1367.5140380859375,
+      "score": 0.9387353798922371,
+      "page_number": 2
+    },
+    {
+      "text": "Se dau urmatoarele propoziti:",
+      "x": 503.29034423828125,
+      "y": 1434.8916015625,
+      "score": 0.994556959333091,
+      "page_number": 2
+    },
+    {
+      "text": "1.Toateactiunileadmirabilesuntfaptemorale",
+      "x": 610.4263916015625,
+      "y": 1512.2509765625,
+      "score": 0.9955351527144269,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 610.4263916015625,
+      "y": 1589.6103515625,
+      "score": 0.9981938898563385,
+      "page_number": 2
+    },
+    {
+      "text": "Niciunpoemepicnuesteoscrierescurta.",
+      "x": 712.5794067382812,
+      "y": 1589.6103515625,
+      "score": 0.9879974024636405,
+      "page_number": 2
+    },
+    {
+      "text": "3.Unii filosofi faimosi sunt persoaneinteligente.",
+      "x": 600.4602661132812,
+      "y": 1654.492431640625,
+      "score": 0.9759968738166653,
+      "page_number": 2
+    },
+    {
+      "text": "4.Uneleevenimentesportivenusuntexperientememorabile.",
+      "x": 602.9517822265625,
+      "y": 1729.3563232421875,
+      "score": 0.9974873696382229,
+      "page_number": 2
+    },
+    {
+      "text": "A. Construiti, atat n limbaj formal cat si in limbaj natural, contrara propozitiei 1， subalterna",
+      "x": 508.2734069824219,
+      "y": 1809.2110595703125,
+      "score": 0.9670817243556181,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2, contradictoria propozitiei 3 si subcontrara propozitiei 4.",
+      "x": 605.443359375,
+      "y": 1886.5704345703125,
+      "score": 0.9875051591494312,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.69140625,
+      "y": 1889.06591796875,
+      "score": 0.9792002290487289,
+      "page_number": 2
+    },
+    {
+      "text": "B. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+      "x": 505.7818908691406,
+      "y": 1956.4434814453125,
+      "score": 0.9767312246064345,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 607.9348754882812,
+      "y": 2031.307373046875,
+      "score": 0.9844601246499524,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.69140625,
+      "y": 2106.17138671875,
+      "score": 0.9913579821586609,
+      "page_number": 2
+    },
+    {
+      "text": "C. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei supraalternei",
+      "x": 503.29034423828125,
+      "y": 2168.557861328125,
+      "score": 0.9914486300438008,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 4, respectiv, obversa contradictoriei propozitiei 1.",
+      "x": 610.4263916015625,
+      "y": 2255.899169921875,
+      "score": 0.981918454170227,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3032.19970703125,
+      "y": 2255.899169921875,
+      "score": 0.9589816480875015,
+      "page_number": 2
+    },
+    {
+      "text": "D.Doi elevi, X si Y, opineaza astfel:",
+      "x": 503.29034423828125,
+      "y": 2323.276611328125,
+      "score": 0.9607656630309852,
+      "page_number": 2
+    },
+    {
+      "text": "X:Daca totiprofesorii carismatici sunt iubiti de elevi, atunci totiprofesori iubiti de elevi sunt",
+      "x": 585.5110473632812,
+      "y": 2398.140625,
+      "score": 0.9488802244982768,
+      "page_number": 2
+    },
+    {
+      "text": "carismatici.",
+      "x": 513.2564697265625,
+      "y": 2477.995361328125,
+      "score": 0.9905042598644892,
+      "page_number": 2
+    },
+    {
+      "text": "Y:Dacauneleregulinu suntrationale,atunci uneleregulisunt irationale.",
+      "x": 580.5279541015625,
+      "y": 2542.87744140625,
+      "score": 0.9613662405925638,
+      "page_number": 2
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 565.5787353515625,
+      "y": 2617.7412109375,
+      "score": 0.9707831850758305,
+      "page_number": 2
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 665.240234375,
+      "y": 2695.1005859375,
+      "score": 0.9823435269436747,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3034.69140625,
+      "y": 2695.1005859375,
+      "score": 0.9688481613993645,
+      "page_number": 2
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+      "x": 660.2571411132812,
+      "y": 2762.478271484375,
+      "score": 0.986376410119989,
+      "page_number": 2
+    },
+    {
+      "text": "C.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+      "x": 665.240234375,
+      "y": 2842.3330078125,
+      "score": 0.9892272092401981,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3024.72509765625,
+      "y": 2839.837646484375,
+      "score": 0.9951198026537895,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 505.7818908691406,
+      "y": 2989.5654296875,
+      "score": 0.9136167698436313,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2847.826171875,
+      "y": 2987.06982421875,
+      "score": 0.9881734507424491,
+      "page_number": 2
+    },
+    {
+      "text": "A.Se dau urmatoarele doua moduri silogistice:aai-4,oao-2.",
+      "x": 505.7818908691406,
+      "y": 3066.9248046875,
+      "score": 0.9586481274219981,
+      "page_number": 2
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 585.5110473632812,
+      "y": 3141.78857421875,
+      "score": 0.9714040892279666,
+      "page_number": 2
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 583.01953125,
+      "y": 3211.66162109375,
+      "score": 0.9975855700347734,
+      "page_number": 2
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 590.494140625,
+      "y": 3294.011962890625,
+      "score": 0.9881341887844933,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3017.25048828125,
+      "y": 3294.011962890625,
+      "score": 0.9847369715571404,
+      "page_number": 2
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 585.5110473632812,
+      "y": 3361.389404296875,
+      "score": 0.990811146871008,
+      "page_number": 2
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 585.5110473632812,
+      "y": 3436.25341796875,
+      "score": 0.977686794031234,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3017.25048828125,
+      "y": 3436.25341796875,
+      "score": 0.9969113022089005,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 508.2734069824219,
+      "y": 3511.1171875,
+      "score": 0.9745179847726282,
+      "page_number": 2
+    },
+    {
+      "text": "propozitia“Niciopersoanacutemperament colericnu este introvertita\"",
+      "x": 588.0025634765625,
+      "y": 3585.981201171875,
+      "score": 0.9603673856366765,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.69140625,
+      "y": 3588.4765625,
+      "score": 0.9925820305943489,
+      "page_number": 2
+    },
+    {
+      "text": "C. Se da urmatorul silogism:Unele destinati de vacanta nu sunt destinati atractive, deoarece",
+      "x": 505.7818908691406,
+      "y": 3653.358642578125,
+      "score": 0.9511047106074251,
+      "page_number": 2
+    },
+    {
+      "text": "uneledestinatidevacantasuntindepartatesiniciodestinatieatractivanuesteindepartata.",
+      "x": 590.494140625,
+      "y": 3733.213623046875,
+      "score": 0.9781595475789977,
+      "page_number": 2
+    },
+    {
+      "text": "Porninddelasilogismul dat,stabiliti caredintreurmatoarelepropozitisuntadevaratesi caresunt",
+      "x": 505.7818908691406,
+      "y": 3805.58203125,
+      "score": 0.9809073865413666,
+      "page_number": 2
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 500.7987976074219,
+      "y": 3875.455078125,
+      "score": 0.9741767581020083,
+      "page_number": 2
+    },
+    {
+      "text": "Termenul mediuestedistribuitinpremisaminorasi nedistribuit inpremisamajora.",
+      "x": 540.6633911132812,
+      "y": 3952.814453125,
+      "score": 0.9732392517725627,
+      "page_number": 2
+    },
+    {
+      "text": "1.",
+      "x": 431.0357971191406,
+      "y": 3957.80517578125,
+      "score": 0.9961308240890503,
+      "page_number": 2
+    },
+    {
+      "text": "Predicatul logic al concluziei este reprezentat de termenul ,destinati atractive\".",
+      "x": 548.1380004882812,
+      "y": 4022.687255859375,
+      "score": 0.9836100412578117,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 433.52734375,
+      "y": 4030.173828125,
+      "score": 0.9973295331001282,
+      "page_number": 2
+    },
+    {
+      "text": "Premisa minora a silogismului este o propozitie particulara afirmativa.",
+      "x": 543.1549072265625,
+      "y": 4100.046875,
+      "score": 0.9785556188771423,
+      "page_number": 2
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.",
+      "x": 421.06964111328125,
+      "y": 4167.42431640625,
+      "score": 0.9851304847140645,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3029.708251953125,
+      "y": 4167.42431640625,
+      "score": 0.9976098388433456,
+      "page_number": 2
+    },
+    {
+      "text": "D.Sedaurmatoarea definitie:",
+      "x": 505.7818908691406,
+      "y": 4247.279296875,
+      "score": 0.9747126190750687,
+      "page_number": 2
+    },
+    {
+      "text": "Ghimbirulesteuimitoareadoctorieanaturi.",
+      "x": 592.9856567382812,
+      "y": 4319.6474609375,
+      "score": 0.9883953776115026,
+      "page_number": 2
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 583.01953125,
+      "y": 4394.51123046875,
+      "score": 0.940384391695261,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3029.708251953125,
+      "y": 4389.5205078125,
+      "score": 0.9952361583709717,
+      "page_number": 2
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 583.01953125,
+      "y": 4466.8798828125,
+      "score": 0.9814621943235398,
+      "page_number": 2
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,ghimbir\".",
+      "x": 707.5963134765625,
+      "y": 4544.2392578125,
+      "score": 0.9854569869276918,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3029.708251953125,
+      "y": 4544.2392578125,
+      "score": 0.9982622042298317,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisalalogica,argumentaresi comunicare",
+      "x": 503.29034423828125,
+      "y": 4688.97607421875,
+      "score": 0.9648942814932929,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta7",
+      "x": 3047.14892578125,
+      "y": 4693.96728515625,
+      "score": 0.9984237353006998,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1741.583984375,
+      "y": 4756.353515625,
+      "score": 0.9838041705744607,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "CentrulNationaldePoliticisi EvaluareinEducatie",
+    "B.Se dau termenii M,N,O,P,si Q astfel incat termenul M se afla in raport de opozitie cu",
+    "termenul N, termenul O se afla in raport de opozitie cu termenul M si in raport de incrucisare cu",
+    "termenul N. Termenul P este supraordonat termenului M, find totodata in raport de incrucisare",
+    "cu termenul N si in raport de opozitie cu termenul O. Termenul Q este specie a termenului N si",
+    "se afla in raport de incrucisare atat cu termenul O, cat si cu termenul P.",
+    "Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice",
+    "1.",
+    "2 puncte",
+    "dintreceicinci termeni.",
+    "2.",
+    "Stabiliti, pe baza raporturilor existente intre termenii M, N, O, P, Q care dintre urmatoarele",
+    "propoziti sunt adevarate si care sunt false(notati propozitile adevarate cu litera A, iar",
+    "propozitilefalsecu literaF):",
+    "a) Unii N nu sunt M.",
+    "c) Nici un M nu este P.",
+    "e) Toti Q sunt N.",
+    "g) Niciun O nu este N.",
+    "b) Toti N sunt O.",
+    "d) Unii P sunt N.",
+    "f) Unii Q sunt O.",
+    "h) Toti N sunt Q.",
+    "8 puncte",
+    "(30 de puncte)",
+    "SUBIECTULalII-lea",
+    "Se dau urmatoarele propoziti:",
+    "1.Toateactiunileadmirabilesuntfaptemorale",
+    "2.",
+    "Niciunpoemepicnuesteoscrierescurta.",
+    "3.Unii filosofi faimosi sunt persoaneinteligente.",
+    "4.Uneleevenimentesportivenusuntexperientememorabile.",
+    "A. Construiti, atat n limbaj formal cat si in limbaj natural, contrara propozitiei 1， subalterna",
+    "propozitiei 2, contradictoria propozitiei 3 si subcontrara propozitiei 4.",
+    "8 puncte",
+    "B. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+    "corecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+    "8 puncte",
+    "C. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei supraalternei",
+    "propozitiei 4, respectiv, obversa contradictoriei propozitiei 1.",
+    "6 puncte",
+    "D.Doi elevi, X si Y, opineaza astfel:",
+    "X:Daca totiprofesorii carismatici sunt iubiti de elevi, atunci totiprofesori iubiti de elevi sunt",
+    "carismatici.",
+    "Y:Dacauneleregulinu suntrationale,atunci uneleregulisunt irationale.",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+    "C.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.",
+    "2 puncte",
+    "SUBIECTULaIIII-lea",
+    "(30 de puncte)",
+    "A.Se dau urmatoarele doua moduri silogistice:aai-4,oao-2.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Niciopersoanacutemperament colericnu este introvertita\"",
+    "6 puncte",
+    "C. Se da urmatorul silogism:Unele destinati de vacanta nu sunt destinati atractive, deoarece",
+    "uneledestinatidevacantasuntindepartatesiniciodestinatieatractivanuesteindepartata.",
+    "Porninddelasilogismul dat,stabiliti caredintreurmatoarelepropozitisuntadevaratesi caresunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "Termenul mediuestedistribuitinpremisaminorasi nedistribuit inpremisamajora.",
+    "1.",
+    "Predicatul logic al concluziei este reprezentat de termenul ,destinati atractive\".",
+    "2.",
+    "Premisa minora a silogismului este o propozitie particulara afirmativa.",
+    "4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.",
+    "4 puncte",
+    "D.Sedaurmatoarea definitie:",
+    "Ghimbirulesteuimitoareadoctorieanaturi.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,ghimbir\".",
+    "4 puncte",
+    "Proba scrisalalogica,argumentaresi comunicare",
+    "Varianta7",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatiei\nCentrulNationaldePoliticisi EvaluareinEducatie\nB.Se dau termenii M,N,O,P,si Q astfel incat termenul M se afla in raport de opozitie cu\ntermenul N, termenul O se afla in raport de opozitie cu termenul M si in raport de incrucisare cu\ntermenul N. Termenul P este supraordonat termenului M, find totodata in raport de incrucisare\ncu termenul N si in raport de opozitie cu termenul O. Termenul Q este specie a termenului N si\nse afla in raport de incrucisare atat cu termenul O, cat si cu termenul P.\nReprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice\n1.\n2 puncte\ndintreceicinci termeni.\n2.\nStabiliti, pe baza raporturilor existente intre termenii M, N, O, P, Q care dintre urmatoarele\npropoziti sunt adevarate si care sunt false(notati propozitile adevarate cu litera A, iar\npropozitilefalsecu literaF):\na) Unii N nu sunt M.\nc) Nici un M nu este P.\ne) Toti Q sunt N.\ng) Niciun O nu este N.\nb) Toti N sunt O.\nd) Unii P sunt N.\nf) Unii Q sunt O.\nh) Toti N sunt Q.\n8 puncte\n(30 de puncte)\nSUBIECTULalII-lea\nSe dau urmatoarele propoziti:\n1.Toateactiunileadmirabilesuntfaptemorale\n2.\nNiciunpoemepicnuesteoscrierescurta.\n3.Unii filosofi faimosi sunt persoaneinteligente.\n4.Uneleevenimentesportivenusuntexperientememorabile.\nA. Construiti, atat n limbaj formal cat si in limbaj natural, contrara propozitiei 1， subalterna\npropozitiei 2, contradictoria propozitiei 3 si subcontrara propozitiei 4.\n8 puncte\nB. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa\ncorecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.\n8 puncte\nC. Construiti, atat in limbaj formal cat si in limbaj natural, conversa obversei supraalternei\npropozitiei 4, respectiv, obversa contradictoriei propozitiei 1.\n6 puncte\nD.Doi elevi, X si Y, opineaza astfel:\nX:Daca totiprofesorii carismatici sunt iubiti de elevi, atunci totiprofesori iubiti de elevi sunt\ncarismatici.\nY:Dacauneleregulinu suntrationale,atunci uneleregulisunt irationale.\nPorninddelaaceastasituatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte\nC.explicati corectitudinea/incorectitudinea logica a rationamentului elevului X.\n2 puncte\nSUBIECTULaIIII-lea\n(30 de puncte)\nA.Se dau urmatoarele doua moduri silogistice:aai-4,oao-2.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Niciopersoanacutemperament colericnu este introvertita\"\n6 puncte\nC. Se da urmatorul silogism:Unele destinati de vacanta nu sunt destinati atractive, deoarece\nuneledestinatidevacantasuntindepartatesiniciodestinatieatractivanuesteindepartata.\nPorninddelasilogismul dat,stabiliti caredintreurmatoarelepropozitisuntadevaratesi caresunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\nTermenul mediuestedistribuitinpremisaminorasi nedistribuit inpremisamajora.\n1.\nPredicatul logic al concluziei este reprezentat de termenul ,destinati atractive\".\n2.\nPremisa minora a silogismului este o propozitie particulara afirmativa.\n4. Subiectul logic al concluziei este distribuit atat in premisa, cat si in concluzie.\n4 puncte\nD.Sedaurmatoarea definitie:\nGhimbirulesteuimitoareadoctorieanaturi.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,ghimbir\".\n4 puncte\nProba scrisalalogica,argumentaresi comunicare\nVarianta7\nPagina 2 din 2"
+}

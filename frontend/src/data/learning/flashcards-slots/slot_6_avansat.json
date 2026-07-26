@@ -1,0 +1,134 @@
+{
+  "slot": 6,
+  "nivel": "avansat",
+  "title": "Slot 6 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_6_avansat_card_1",
+      "front": "Analizează: „Trei colegi au greșit; colegii nu știu logică.”",
+      "back": "Generalizare pripită: prea puține cazuri pentru concluzia generală."
+    },
+    {
+      "id": "slot_6_avansat_card_2",
+      "front": "Analizează: „O clasă preferă logica; toți elevii preferă logica.”",
+      "back": "Eșantion nereprezentativ."
+    },
+    {
+      "id": "slot_6_avansat_card_3",
+      "front": "Analizează: „De câte ori învăț, iau notă bună.”",
+      "back": "Inferență cauzală plauzibilă, dar trebuie verificate alte cauze."
+    },
+    {
+      "id": "slot_6_avansat_card_4",
+      "front": "Analizează: „După ce am schimbat pixul, am luat notă mare.”",
+      "back": "Cauză falsă: succesiunea temporală nu dovedește cauzalitate."
+    },
+    {
+      "id": "slot_6_avansat_card_5",
+      "front": "Analizează: „Elevii care citesc au rezultate bune; lectura e singura cauză.”",
+      "back": "Concluzie cauzală excesivă."
+    },
+    {
+      "id": "slot_6_avansat_card_6",
+      "front": "Identifică metoda: toate cazurile cu efect au factorul A.",
+      "back": "Metoda concordanței."
+    },
+    {
+      "id": "slot_6_avansat_card_7",
+      "front": "Identifică metoda: efectul apare doar când A este prezent.",
+      "back": "Metoda diferenței."
+    },
+    {
+      "id": "slot_6_avansat_card_8",
+      "front": "Identifică metoda: A crește și E crește.",
+      "back": "Metoda variațiilor concomitente."
+    },
+    {
+      "id": "slot_6_avansat_card_9",
+      "front": "Identifică metoda: rămâne un efect neexplicat după eliminări.",
+      "back": "Metoda reziduurilor."
+    },
+    {
+      "id": "slot_6_avansat_card_10",
+      "front": "Clasifică temeiul: „foc” pentru „fum”.",
+      "back": "În condiții normale, poate fi temei suficient, dar contextul contează."
+    },
+    {
+      "id": "slot_6_avansat_card_11",
+      "front": "Clasifică temeiul: „absolvirea liceului” pentru „bacalaureat promovat”.",
+      "back": "Necesar, dar nu suficient."
+    },
+    {
+      "id": "slot_6_avansat_card_12",
+      "front": "Clasifică temeiul: „triunghi echilateral” pentru „unghiuri egale”.",
+      "back": "Necesar și suficient în geometria euclidiană."
+    },
+    {
+      "id": "slot_6_avansat_card_13",
+      "front": "De ce majoritatea nu garantează adevărul?",
+      "back": "Pentru că popularitatea nu este criteriu logic de adevăr."
+    },
+    {
+      "id": "slot_6_avansat_card_14",
+      "front": "De ce un caz singular nu susține o lege generală?",
+      "back": "Pentru că poate fi excepție sau caz nereprezentativ."
+    },
+    {
+      "id": "slot_6_avansat_card_15",
+      "front": "Construiește contraexemplu: „Toți cititorii sunt calmi.”",
+      "back": "Un cititor nervos este contraexemplu."
+    },
+    {
+      "id": "slot_6_avansat_card_16",
+      "front": "Ce problemă are analogia „creierul este calculator, deci gândește exact ca el”?",
+      "back": "Analogie slabă și concluzie exagerată."
+    },
+    {
+      "id": "slot_6_avansat_card_17",
+      "front": "Ce întărește analogia dintre două sisteme juridice?",
+      "back": "Asemănări relevante de structură, funcție și context."
+    },
+    {
+      "id": "slot_6_avansat_card_18",
+      "front": "Ce slăbește analogia dintre două sisteme juridice?",
+      "back": "Diferențe majore de instituții, scop sau context."
+    },
+    {
+      "id": "slot_6_avansat_card_19",
+      "front": "Analizează: „Medicamentul a mers la doi pacienți; merge la toți.”",
+      "back": "Generalizare pripită și eșantion insuficient."
+    },
+    {
+      "id": "slot_6_avansat_card_20",
+      "front": "Analizează: „Regula a apărut, performanța a crescut; regula este sigur cauza.”",
+      "back": "Inferență cauzală neconfirmată."
+    },
+    {
+      "id": "slot_6_avansat_card_21",
+      "front": "Ce întrebare verifică o cauză necesară?",
+      "back": "Poate apărea efectul fără această condiție?"
+    },
+    {
+      "id": "slot_6_avansat_card_22",
+      "front": "Ce întrebare verifică o cauză suficientă?",
+      "back": "Dacă apare condiția, apare sigur efectul?"
+    },
+    {
+      "id": "slot_6_avansat_card_23",
+      "front": "Cum verifici o inducție solidă?",
+      "back": "Prin număr de cazuri, reprezentativitate, relevanță și contraexemple."
+    },
+    {
+      "id": "slot_6_avansat_card_24",
+      "front": "Cum verifici o analogie solidă?",
+      "back": "Prin relevanța asemănărilor și diferențelor."
+    },
+    {
+      "id": "slot_6_avansat_card_25",
+      "front": "Cum verifici o ipoteză cauzală?",
+      "back": "Prin date, cauze alternative, repetabilitate și coerență."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "examId": "bac_logica_2021_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler_relation_map",
+      "studentMode": "canvas_or_upload",
+      "teacherRendering": {
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "relations": [
+          "A intersects B",
+          "A opposite D",
+          "B superordinate D",
+          "C subset A",
+          "C subset B",
+          "E opposite C",
+          "E opposite D",
+          "E intersects A",
+          "E intersects B"
+        ],
+        "caption": "Relațiile Euler se randează schematic din contract; elevul desenează liber."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_eio_2_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "teacherRendering": {
+        "mode": "eio-2",
+        "schema": [
+          "PeM",
+          "SiM",
+          "SoP"
+        ],
+        "validity": "valid",
+        "caption": "După reprezentarea premiselor pentru eio-2, concluzia SoP rezultă din diagramă."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aee_4_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "teacherRendering": {
+        "mode": "aee-4",
+        "schema": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "validity": "valid",
+        "caption": "După reprezentarea premiselor pentru aee-4, concluzia SeP rezultă din diagramă."
+      }
+    }
+  ]
+}

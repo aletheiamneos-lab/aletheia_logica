@@ -1,0 +1,416 @@
+{
+  "schemaVersion": "2.0",
+  "solutionId": "teacher_solution_bac_logica_2024_v4",
+  "examId": "bac_logica_2024_v4",
+  "title": "BAC Logică 2024 - Varianta 4 - Rezolvare profesor",
+  "visibility": "teacher_only",
+  "security": {
+    "mustNotBeBundledInStudentFrontend": true,
+    "requiresRole": [
+      "teacher",
+      "admin"
+    ],
+    "sourceOfTruthForTeacherPreviewAndPdf": true
+  },
+  "metadata": {
+    "sourceDocuments": [
+      "Examenul național de bacalaureat 2024_V4.pdf",
+      "Examenul național de bacalaureat 2024_V4_BAREM.pdf"
+    ],
+    "notes": "Rezolvarea respectă baremul oficial. La itemii deschiși sunt incluse formulări acceptabile, fără a limita alte rezolvări corecte."
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "solutions": [
+        {
+          "groupId": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "answers": [
+            {
+              "itemId": "I_A_1",
+              "answer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_2",
+              "answer": "c",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_3",
+              "answer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_4",
+              "answer": "c",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_5",
+              "answer": "c",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_6",
+              "answer": "d",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_7",
+              "answer": "b",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_8",
+              "answer": "a",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_9",
+              "answer": "a",
+              "points": 2
+            },
+            {
+              "itemId": "I_A_10",
+              "answer": "d",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "groupId": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "answers": [
+            {
+              "itemId": "I_B_1",
+              "answer": "Diagramă Euler comună conform raporturilor indicate.",
+              "points": 2,
+              "diagramSolution": {
+                "diagramId": "diagram_I_B_euler_A_B_C_D_E",
+                "renderFromContract": true
+              }
+            },
+            {
+              "itemId": "I_B_2_a",
+              "answer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_b",
+              "answer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_c",
+              "answer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_d",
+              "answer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_e",
+              "answer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_f",
+              "answer": "A",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_g",
+              "answer": "F",
+              "points": 1
+            },
+            {
+              "itemId": "I_B_2_h",
+              "answer": "A",
+              "points": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "solutions": [
+        {
+          "groupId": "II_A",
+          "title": "A. Pătratul logic",
+          "points": 8,
+          "answers": [
+            {
+              "itemId": "II_A_1",
+              "formal": "SoP",
+              "natural": "Unele descoperiri științifice nu sunt realizări întemeiate pe eforturi sistematice.",
+              "points": {
+                "formal": 1,
+                "natural": 1
+              },
+              "explanation": "Contradictoria unei propoziții SaP este SoP."
+            },
+            {
+              "itemId": "II_A_2",
+              "formal": "SoP",
+              "natural": "Unele inferențe nedeductive nu sunt folosite în testarea ipotezelor științifice.",
+              "points": {
+                "formal": 1,
+                "natural": 1
+              },
+              "explanation": "Subcontrara unei propoziții SiP este SoP."
+            },
+            {
+              "itemId": "II_A_3",
+              "formal": "SaP",
+              "natural": "Toate numerele impare sunt divizibile cu 2.",
+              "points": {
+                "formal": 1,
+                "natural": 1
+              },
+              "explanation": "Contrara unei propoziții SeP este SaP."
+            },
+            {
+              "itemId": "II_A_4",
+              "formal": "SeP",
+              "natural": "Niciun articol de papetărie nu este realizat din materiale ecologice.",
+              "points": {
+                "formal": 1,
+                "natural": 1
+              },
+              "explanation": "Supraalterna unei propoziții SoP este SeP."
+            }
+          ]
+        },
+        {
+          "groupId": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "answers": [
+            {
+              "itemId": "II_B_1",
+              "converse": {
+                "formal": "PiS",
+                "natural": "Unele realizări întemeiate pe eforturi sistematice sunt descoperiri științifice."
+              },
+              "obverse": {
+                "formal": "Se¬P",
+                "natural": "Nicio descoperire științifică nu este realizare neîntemeiată pe eforturi sistematice."
+              },
+              "points": 4
+            },
+            {
+              "itemId": "II_B_2",
+              "converse": {
+                "formal": "PeS",
+                "natural": "Nimic divizibil cu 2 nu este număr impar."
+              },
+              "obverse": {
+                "formal": "Sa¬P",
+                "natural": "Toate numerele impare sunt nedivizibile cu 2."
+              },
+              "points": 4
+            }
+          ]
+        },
+        {
+          "groupId": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "answers": [
+            {
+              "itemId": "II_C_1",
+              "formal": "Po¬S",
+              "natural": "Unele lucruri realizate din materiale ecologice nu sunt non-articole de papetărie.",
+              "points": {
+                "formal": 1,
+                "natural": 2
+              },
+              "operationChain": "SoP → SiP → PiS → Po¬S"
+            },
+            {
+              "itemId": "II_C_2",
+              "formal": "¬PiS",
+              "natural": "Unele non-realizări întemeiate pe eforturi sistematice sunt descoperiri științifice.",
+              "points": {
+                "formal": 1,
+                "natural": 2
+              },
+              "operationChain": "SaP → SeP → Sa¬P → ¬PiS"
+            }
+          ]
+        },
+        {
+          "groupId": "II_D",
+          "title": "D. Opiniile elevilor",
+          "points": 8,
+          "answers": [
+            {
+              "itemId": "II_D_a",
+              "X": "SaP→PaS",
+              "Y": "SiP→So¬P",
+              "points": 4
+            },
+            {
+              "itemId": "II_D_b",
+              "X": "raționament incorect / conversiune nevalidă",
+              "Y": "raționament corect / obversiune validă",
+              "points": 2
+            },
+            {
+              "itemId": "II_D_c",
+              "answer": "Raționamentul elevului X este incorect, deoarece transformă nevalid o propoziție de tip SaP în PaS. Termenul P apare distribuit în concluzie, dar nu este distribuit în premisă, încălcând legea distribuirii termenilor.",
+              "points": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "solutions": [
+        {
+          "groupId": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "answers": [
+            {
+              "itemId": "III_A_a_eae_1",
+              "schema": [
+                "MeP",
+                "SaM",
+                "SeP"
+              ],
+              "points": 2
+            },
+            {
+              "itemId": "III_A_a_eae_3",
+              "schema": [
+                "MeP",
+                "MaS",
+                "SeP"
+              ],
+              "points": 2
+            },
+            {
+              "itemId": "III_A_b",
+              "answer": "Exemplu pentru eae-1: Niciun M nu este P. Toți S sunt M. Prin urmare, niciun S nu este P.",
+              "points": 2
+            },
+            {
+              "itemId": "III_A_c_eae_1",
+              "validity": "valid",
+              "diagramSolution": {
+                "diagramId": "diagram_III_A_c_eae_1_venn",
+                "renderFromContract": true
+              },
+              "explanation": "Modul eae-1 este valid; după reprezentarea premiselor, concluzia SeP rezultă din diagramă.",
+              "points": 4
+            },
+            {
+              "itemId": "III_A_c_eae_3",
+              "validity": "invalid",
+              "diagramSolution": {
+                "diagramId": "diagram_III_A_c_eae_3_venn",
+                "renderFromContract": true
+              },
+              "explanation": "Modul eae-3 este nevalid; după reprezentarea premiselor, concluzia SeP nu rezultă necesar din diagramă.",
+              "points": 4
+            }
+          ]
+        },
+        {
+          "groupId": "III_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "answers": [
+            {
+              "itemId": "III_B_formal",
+              "schema": [
+                "MaP",
+                "SiM",
+                "SiP"
+              ],
+              "terms": {
+                "S": "zile de iarnă",
+                "P": "zile geroase",
+                "M": "zile cu temperaturi sub zero"
+              },
+              "points": 3
+            },
+            {
+              "itemId": "III_B_natural",
+              "answer": "Toate zilele cu temperaturi sub zero sunt geroase. Unele zile de iarnă sunt zile cu temperaturi sub zero. Prin urmare, unele zile de iarnă sunt geroase.",
+              "points": 3
+            }
+          ]
+        },
+        {
+          "groupId": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "answers": [
+            {
+              "itemId": "III_C_1",
+              "answer": "F",
+              "points": 1,
+              "explanation": "În premisa minoră „toate reptilele sunt vertebrate”, termenul mediu este predicatul unei propoziții A și nu este distribuit."
+            },
+            {
+              "itemId": "III_C_2",
+              "answer": "F",
+              "points": 1,
+              "explanation": "Predicatul logic al concluziei este termenul „insecte”, nu „vertebrate”."
+            },
+            {
+              "itemId": "III_C_3",
+              "answer": "A",
+              "points": 1,
+              "explanation": "Concluzia „reptilele nu sunt insecte” este universală negativă."
+            },
+            {
+              "itemId": "III_C_4",
+              "answer": "A",
+              "points": 1,
+              "explanation": "Subiectul concluziei, „reptilele”, este distribuit în premisa minoră și în concluzia de tip E."
+            }
+          ]
+        },
+        {
+          "groupId": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "answers": [
+            {
+              "itemId": "III_D_a",
+              "answer": "Definiția încalcă regula adecvării: este prea largă, deoarece nu orice operație matematică este adunare.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_b",
+              "answer": "O altă regulă: definiția nu trebuie să fie circulară.",
+              "points": 2
+            },
+            {
+              "itemId": "III_D_c",
+              "answer": "Exemplu: Adunarea este operația prin care se adună. Această definiție încalcă regula evitării circularității.",
+              "points": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

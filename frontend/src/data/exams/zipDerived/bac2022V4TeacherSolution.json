@@ -1,0 +1,200 @@
+{
+  "examId": "bac_logica_2022_v4",
+  "title": "Examenul național de bacalaureat 2022 - Logică, argumentare și comunicare - Varianta 4",
+  "year": 2022,
+  "variant": "Varianta 4",
+  "subject": "Logică, argumentare și comunicare",
+  "profile": "Profil umanist, profil servicii, toate profilurile și specializările din filiera vocațională, cu excepția profilului militar",
+  "durationMinutes": 180,
+  "points": {
+    "exam": 90,
+    "office": 10,
+    "total": 100
+  },
+  "sourceFiles": {
+    "subjectPdf": "Examenul național de bacalaureat 2022_V4.pdf",
+    "baremPdf": "Examenul național de bacalaureat 2022_V4_BAREM.pdf"
+  },
+  "solutionId": "teacher_solution_bac_logica_2022_v4",
+  "visibility": "teacher_only",
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "solutions": [
+        {
+          "id": "I_A",
+          "title": "A. Grilă",
+          "correctAnswers": {
+            "1": "b",
+            "2": "c",
+            "3": "a",
+            "4": "c",
+            "5": "a",
+            "6": "c",
+            "7": "a",
+            "8": "d",
+            "9": "d",
+            "10": "c"
+          },
+          "scoring": "10 x 2p = 20p"
+        },
+        {
+          "id": "I_B",
+          "title": "B. Euler și A/F",
+          "correctAnswers": {
+            "a": "A",
+            "b": "A",
+            "c": "F",
+            "d": "A",
+            "e": "F",
+            "f": "A",
+            "g": "F",
+            "h": "F"
+          },
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler_ABCDE",
+            "renderFromContract": true
+          },
+          "scoring": "2p diagrama + 8 x 1p = 10p"
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "context": [
+        "1. Toate operele de artă sunt realizări bazate pe eforturi conștiente.",
+        "2. Unele științe nu sunt demersuri de cercetare deductivă.",
+        "3. Niciun stereotip nu este rezultat al gândirii critice.",
+        "4. Unele opere filosofice sunt lecturi fundamentale."
+      ],
+      "solutions": [
+        {
+          "id": "II_A_1",
+          "prompt": "Subalterna propoziției 1",
+          "formal": "SiP",
+          "natural": "Unele opere de artă sunt realizări bazate pe eforturi conștiente.",
+          "scoring": "1p formal + 1p natural"
+        },
+        {
+          "id": "II_A_2",
+          "prompt": "Contradictoria propoziției 2",
+          "formal": "SaP",
+          "natural": "Toate științele sunt demersuri de cercetare deductivă.",
+          "scoring": "1p formal + 1p natural"
+        },
+        {
+          "id": "II_A_3",
+          "prompt": "Contrara propoziției 3",
+          "formal": "SaP",
+          "natural": "Toate stereotipurile sunt rezultate ale gândirii critice.",
+          "scoring": "1p formal + 1p natural"
+        },
+        {
+          "id": "II_A_4",
+          "prompt": "Subcontrara propoziției 4",
+          "formal": "SoP",
+          "natural": "Unele opere filosofice nu sunt lecturi fundamentale.",
+          "scoring": "1p formal + 1p natural"
+        },
+        {
+          "id": "II_B_1",
+          "prompt": "Conversa și obversa propoziției 1",
+          "converseFormal": "PiS",
+          "converseNatural": "Unele realizări bazate pe eforturi conștiente sunt opere de artă.",
+          "obverseFormal": "Se¬P",
+          "obverseNatural": "Nicio operă de artă nu este realizare nebazată pe eforturi conștiente.",
+          "scoring": "2p formal + 2p natural"
+        },
+        {
+          "id": "II_B_3",
+          "prompt": "Conversa și obversa propoziției 3",
+          "converseFormal": "PeS",
+          "converseNatural": "Niciun rezultat al gândirii critice nu este stereotip.",
+          "obverseFormal": "Sa¬P",
+          "obverseNatural": "Toate stereotipurile sunt non-rezultate ale gândirii critice.",
+          "scoring": "2p formal + 2p natural"
+        },
+        {
+          "id": "II_C_1",
+          "prompt": "Conversa obversei supraalternei propoziției 4",
+          "formal": "¬PeS / ¬PoS",
+          "natural": "Nicio non-lectură fundamentală nu este operă filosofică. Se acceptă și forma particulară corespunzătoare, conform baremului.",
+          "scoring": "1p formal + 2p natural"
+        },
+        {
+          "id": "II_C_2",
+          "prompt": "Conversa supraalternei propoziției 2",
+          "formal": "PeS / PoS",
+          "natural": "Niciun demers de cercetare deductivă nu este știință. Se acceptă și forma particulară corespunzătoare, conform baremului.",
+          "scoring": "1p formal + 2p natural"
+        },
+        {
+          "id": "II_D_X",
+          "formal": "SaP→PiS",
+          "validity": "corect - conversiune validă",
+          "explanation": "Din SaP se obține valid PiS prin conversiune prin accident."
+        },
+        {
+          "id": "II_D_Y",
+          "formal": "SaP→PaS",
+          "validity": "incorect - conversiune nevalidă",
+          "explanation": "Se încalcă legea distribuirii termenilor: termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "solutions": [
+        {
+          "id": "III_A_1_eio_1",
+          "scheme": [
+            "MeP",
+            "SiM",
+            "SoP"
+          ],
+          "validity": "valid",
+          "diagramId": "diagram_III_A_eio_1_venn"
+        },
+        {
+          "id": "III_A_1_aeo_4",
+          "scheme": [
+            "PaM",
+            "MeS",
+            "SoP"
+          ],
+          "validity": "nevalid",
+          "diagramId": "diagram_III_A_aeo_4_venn"
+        },
+        {
+          "id": "III_A_natural_example",
+          "formal": "MeP / SiM / SoP",
+          "natural": "Niciun pește nu este mamifer. Unele animale acvatice sunt pești. Deci unele animale acvatice nu sunt mamifere."
+        },
+        {
+          "id": "III_B",
+          "formal": "MeP / SaM / SeP",
+          "natural": "Nicio persoană care învață constant nu este nepregătită pentru examene. Toți elevii conștiincioși sunt persoane care învață constant. Deci niciun elev conștiincios nu este nepregătit pentru examene."
+        },
+        {
+          "id": "III_C",
+          "correctAnswers": {
+            "1": "F",
+            "2": "A",
+            "3": "F",
+            "4": "F"
+          },
+          "analysis": "S = limbi similare cu limba română; P = limbi moderne; M = limbi romanice. Premisa majoră este PiM, premisa minoră MaS, concluzia SiP."
+        },
+        {
+          "id": "III_D",
+          "ruleViolated": "Definiția încalcă regula formulării afirmativ-pozitive / regula evitării definiției negative, deoarece explică prin ceea ce nu este obversiune.",
+          "otherRule": "Evitarea circularității.",
+          "constructedDefinition": "Conversiunea este operația logică prin care se realizează conversiunea unei propoziții."
+        }
+      ]
+    }
+  ]
+}

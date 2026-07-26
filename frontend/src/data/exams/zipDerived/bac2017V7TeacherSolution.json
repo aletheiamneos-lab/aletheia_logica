@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "id": "teacher-solution-bac-logica-2017-v7",
+    "title": "BAC Logică 2017 - Varianta 7 - Rezolvare profesor",
+    "visibility": "teacher_only",
+    "source": "official_barem_then_expanded_solution"
+  },
+  "official_keys": {
+    "S1A": [
+      "1-a",
+      "2-b",
+      "3-c",
+      "4-d",
+      "5-b",
+      "6-a",
+      "7-c",
+      "8-a",
+      "9-d",
+      "10-b"
+    ],
+    "S1B": [
+      "a-A",
+      "b-A",
+      "c-F",
+      "d-A",
+      "e-F",
+      "f-A"
+    ],
+    "S3A_validity": [
+      "aee-2 valid",
+      "iai-4 valid"
+    ]
+  },
+  "solutions": [
+    {
+      "id": "S1A",
+      "answer": "1-a, 2-b, 3-c, 4-d, 5-b, 6-a, 7-c, 8-a, 9-d, 10-b",
+      "points": "10 x 2p = 20p",
+      "explanation": "Răspunsurile sunt preluate din baremul oficial."
+    },
+    {
+      "id": "S1B",
+      "answer": "a-A, b-A, c-F, d-A, e-F, f-A",
+      "points": "6 x 1p = 6p + 4p diagrama Euler",
+      "explanation": "A se intersectează cu B; D este inclus în B și în opoziție cu A; C este specie pentru A și B, fără elemente comune cu D. Diagrama Euler trebuie să reflecte aceste incluziuni și opoziții."
+    },
+    {
+      "id": "S2A",
+      "answer": "1-SiP; 4-SaP",
+      "points": "2p",
+      "explanation": "„Unii arbori sunt conifere” este propoziție particular afirmativă. „Toate meduzele sunt animale nevertebrate” este propoziție universal afirmativă."
+    },
+    {
+      "id": "S2B",
+      "answer": "Subcontrara prop. 1: SoP - Unii arbori nu sunt conifere. Contrara prop. 2: SaP - Toate axiomele sunt adevăruri demonstrabile. Supraalterna prop. 3: SeP - Niciun șarpe nu este veninos. Subalterna prop. 4: SiP - Unele meduze sunt animale nevertebrate.",
+      "points": "8p",
+      "explanation": "Se aplică raporturile din pătratul opoziției: I-O subcontrare; E-A contrare; O are supraalternă E; A are subalternă I."
+    },
+    {
+      "id": "S2C",
+      "answer": "Prop. 2 SeP: conversa PeS - Niciun adevăr demonstrabil nu este axiomă; obversa Sa~P - Toate axiomele sunt non-adevăruri-demonstrabile. Prop. 4 SaP: conversa prin accident PiS - Unele animale nevertebrate sunt meduze; obversa Se~P - Nicio meduză nu este non-animal nevertebrat.",
+      "points": "8p",
+      "explanation": "E se convertește simplu; A se convertește prin accident. Obversiunea schimbă calitatea propoziției și înlocuiește predicatul cu contradictoriul său."
+    },
+    {
+      "id": "S2D",
+      "answer": "Obversa conversiei propoziției 2: ~PiS - Unele non-adevăruri-demonstrabile sunt axiome.",
+      "points": "4p",
+      "explanation": "Se pornește de la conversa propoziției E: PeS. Obversa acesteia este Pa~S / în formularea acceptată de barem: ~PiS, cu exprimare naturală adecvată."
+    },
+    {
+      "id": "S2E",
+      "answer": "X: SiP -> PiS, conversiune validă. Y: SaP -> PaS, conversiune nevalidă.",
+      "points": "8p",
+      "explanation": "Propoziția particular afirmativă se convertește corect simplu. Propoziția universal afirmativă nu se convertește simplu, ci doar prin accident; altfel se încalcă legea distribuirii termenilor."
+    },
+    {
+      "id": "S3A",
+      "answer": "aee-2: PeM / SaM / SeP - valid. iai-4: PiM / MaS / SiP - valid.",
+      "points": "14p",
+      "explanation": "Schemele sunt cele din barem. Validitatea trebuie confirmată și prin reprezentare Venn."
+    },
+    {
+      "id": "S3B",
+      "answer": "Exemplu valid: Toți rechinii sunt pești. Toți peștii sunt animale acvatice. Deci, toți rechinii sunt animale acvatice. Formal: MaP; SaM; SaP.",
+      "points": "6p",
+      "explanation": "Orice silogism valid care justifică propoziția dată este acceptabil dacă termenii sunt distribuiți corect și concluzia rezultă din premise."
+    },
+    {
+      "id": "S3C",
+      "answer": "Termen major: P = om moral. Premisa minoră: Unii oameni prefăcuți sunt oameni lingușitori.",
+      "points": "4p",
+      "explanation": "Predicatul concluziei este termenul major. Premisa minoră este premisa care conține termenul minor al concluziei."
+    },
+    {
+      "id": "S3D",
+      "answer": "Definiția încalcă regula definirii afirmative, deoarece definește prin negații/excluderi. Altă regulă posibilă: definiția nu trebuie să fie prea largă/prea îngustă/circulară/metaforică. Exemplu de definiție greșită: Mamiferul este un animal frumos.",
+      "points": "6p",
+      "explanation": "Baremul acceptă menționarea oricărei reguli încălcate de definiția dată și construirea unei definiții care încalcă o altă regulă de corectitudine."
+    }
+  ]
+}

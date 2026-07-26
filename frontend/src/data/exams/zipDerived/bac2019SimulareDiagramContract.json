@@ -1,0 +1,84 @@
+{
+  "examId": "bac_logica_2019_simulare",
+  "visibility": "teacher_admin_and_renderer",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler",
+      "studentMode": "hybrid_canvas_upload",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "relations": [
+        "B este supraordonat lui A",
+        "B este subordonat lui C",
+        "D este in opozitie cu A",
+        "D se incruciseaza cu C si cu B"
+      ],
+      "teacherModel": {
+        "description": "C include B, B include A; D nu intersecteaza A, dar intersecteaza B si C."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aee_2_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aee-2",
+      "teacherModel": {
+        "premises": [
+          "PaM",
+          "SeM"
+        ],
+        "conclusion": "SeP",
+        "validity": "valid",
+        "renderHints": [
+          "hasurare P in afara lui M",
+          "hasurare S∩M",
+          "rezulta S fara P"
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aai_4_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aai-4",
+      "teacherModel": {
+        "premises": [
+          "PaM",
+          "MaS"
+        ],
+        "conclusion": "SiP",
+        "validity": "valid",
+        "renderHints": [
+          "hasurare P in afara lui M",
+          "hasurare M in afara lui S",
+          "ramane existenta particulara in S∩P"
+        ]
+      }
+    }
+  ],
+  "studentDiagramPolicy": {
+    "showTeacherModelToStudent": false,
+    "saveFormat": [
+      "strokes_json",
+      "png_export"
+    ],
+    "allowUpload": true
+  },
+  "teacherDiagramPolicy": {
+    "renderFromContract": true,
+    "allowTemplateChangesWithoutChangingSolution": true
+  }
+}

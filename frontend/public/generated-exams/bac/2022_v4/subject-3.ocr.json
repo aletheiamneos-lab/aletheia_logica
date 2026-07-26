@@ -1,0 +1,360 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1619.5738525390625,
+      "y": 196.30142211914062,
+      "score": 0.974769115447998,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul National dePoliticisiEvaluareinEducatie",
+      "x": 1241.7613525390625,
+      "y": 259.96673583984375,
+      "score": 0.9772053348257187,
+      "page_number": 3
+    },
+    {
+      "text": "D.Doi elevi, X si Y, opineaza astfel:",
+      "x": 364.6022644042969,
+      "y": 374.0337829589844,
+      "score": 0.9413927954596442,
+      "page_number": 3
+    },
+    {
+      "text": "X:Dacatoatecartilerecomandatedescoalasuntlecturiindispensabileeducatiei,atunciunele",
+      "x": 449.1477355957031,
+      "y": 453.6154479980469,
+      "score": 0.9885564726519297,
+      "page_number": 3
+    },
+    {
+      "text": "lecturiindispensabileeducatieisuntcartirecomandatedescoala.",
+      "x": 364.6022644042969,
+      "y": 533.1970825195312,
+      "score": 0.99216726068723,
+      "page_number": 3
+    },
+    {
+      "text": "Y:Toateromanele politiste sunt lecturi palpitante，deoarece toatelecturile palpitante sunt",
+      "x": 446.50567626953125,
+      "y": 607.4733276367188,
+      "score": 0.9451517181450062,
+      "page_number": 3
+    },
+    {
+      "text": "romanepolitiste.",
+      "x": 364.6022644042969,
+      "y": 689.7077026367188,
+      "score": 0.9972870461642742,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind dela aceastasituatie.",
+      "x": 428.0113830566406,
+      "y": 766.6365966796875,
+      "score": 0.9420502751037992,
+      "page_number": 3
+    },
+    {
+      "text": "a.scrieti,in limbaj formal, opinile celor doi elevi;",
+      "x": 538.977294921875,
+      "y": 851.5237426757812,
+      "score": 0.953096323288404,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.92041015625,
+      "y": 848.8709716796875,
+      "score": 0.9870427027344704,
+      "page_number": 3
+    },
+    {
+      "text": "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+      "x": 536.3352661132812,
+      "y": 923.147216796875,
+      "score": 0.9767552426691806,
+      "page_number": 3
+    },
+    {
+      "text": "c. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+      "x": 536.3352661132812,
+      "y": 1002.7288818359375,
+      "score": 0.9800102737512482,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.6022644042969,
+      "y": 1230.8629150390625,
+      "score": 0.8949421031607522,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2890.397705078125,
+      "y": 1230.8629150390625,
+      "score": 0.9936989801270621,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele doua moduri silogistice: eio-1, aeo-4.",
+      "x": 364.6022644042969,
+      "y": 1315.75,
+      "score": 0.9744441285729408,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.789794921875,
+      "y": 1395.3316650390625,
+      "score": 0.9743034625830858,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.789794921875,
+      "y": 1472.2606201171875,
+      "score": 0.9897670538529105,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 454.43182373046875,
+      "y": 1549.1895751953125,
+      "score": 0.9937282568878598,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3035.710205078125,
+      "y": 1551.84228515625,
+      "score": 0.9641645178198814,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.1477355957031,
+      "y": 1628.771240234375,
+      "score": 0.9862877208777149,
+      "page_number": 3
+    },
+    {
+      "text": "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+      "x": 457.0738830566406,
+      "y": 1713.6583251953125,
+      "score": 0.9885438778183677,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3038.352294921875,
+      "y": 1711.005615234375,
+      "score": 0.9908160790801048,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 369.8863830566406,
+      "y": 1787.9345703125,
+      "score": 0.9817397369528716,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia,Niciunelevconstinciosnu estenepregatitpentru examene”",
+      "x": 454.43182373046875,
+      "y": 1867.5162353515625,
+      "score": 0.9704897180199623,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3051.5625,
+      "y": 1867.5162353515625,
+      "score": 0.9746155589818954,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Unele limbi moderne sunt limbi romanice, deci unele limbi similare cu",
+      "x": 361.9602355957031,
+      "y": 1939.1396484375,
+      "score": 0.9670196498433749,
+      "page_number": 3
+    },
+    {
+      "text": "limbaromanasuntlimbimoderne,dinmomentcetoatelimbileromanicesuntsimilareculimba",
+      "x": 449.1477355957031,
+      "y": 2016.068603515625,
+      "score": 0.9941184046940926,
+      "page_number": 3
+    },
+    {
+      "text": "romana.",
+      "x": 451.789794921875,
+      "y": 2100.955810546875,
+      "score": 0.9906953828675407,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 361.9602355957031,
+      "y": 2175.23193359375,
+      "score": 0.9755024101474498,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 359.31817626953125,
+      "y": 2254.813720703125,
+      "score": 0.9819821495385397,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenul minor este reprezentat de termenul ,limbi romanice\".",
+      "x": 475.56817626953125,
+      "y": 2329.08984375,
+      "score": 0.9920452710181947,
+      "page_number": 3
+    },
+    {
+      "text": "2. Premisa majora a silogismului este o propozitie particular afirmativa.",
+      "x": 472.9261474609375,
+      "y": 2408.67138671875,
+      "score": 0.9907551963035375,
+      "page_number": 3
+    },
+    {
+      "text": "3. Predicatul logic al concluziei este nedistribuit in premisa, dar este distribuit in concluzie.",
+      "x": 472.9261474609375,
+      "y": 2488.253173828125,
+      "score": 0.9864969960193044,
+      "page_number": 3
+    },
+    {
+      "text": "4.Termenul mediu estedistribuit inambelepremise.",
+      "x": 475.56817626953125,
+      "y": 2567.834716796875,
+      "score": 0.9712691778937975,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3054.20458984375,
+      "y": 2570.487548828125,
+      "score": 0.9979760721325874,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fieurmatoarea definitie:",
+      "x": 364.6022644042969,
+      "y": 2647.41650390625,
+      "score": 0.9707772754705869,
+      "page_number": 3
+    },
+    {
+      "text": "Conversiuneaesteoinferentaimediatacarenuesteobversiune.",
+      "x": 454.43182373046875,
+      "y": 2726.998046875,
+      "score": 0.9930420908060941,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 449.1477355957031,
+      "y": 2803.927001953125,
+      "score": 0.9424987112482389,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3051.5625,
+      "y": 2806.579833984375,
+      "score": 0.9868027046322823,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 449.1477355957031,
+      "y": 2883.5087890625,
+      "score": 0.9812817597389221,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,conversiune” 4 puncte",
+      "x": 578.6079711914062,
+      "y": 2963.09033203125,
+      "score": 0.9800145459431474,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 361.9602355957031,
+      "y": 4944.673828125,
+      "score": 0.9793127495415357,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 4",
+      "x": 3035.710205078125,
+      "y": 4949.97900390625,
+      "score": 0.9543833613395691,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1656.5625,
+      "y": 5024.25537109375,
+      "score": 0.9424401862280709,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul National dePoliticisiEvaluareinEducatie",
+    "D.Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacatoatecartilerecomandatedescoalasuntlecturiindispensabileeducatiei,atunciunele",
+    "lecturiindispensabileeducatieisuntcartirecomandatedescoala.",
+    "Y:Toateromanele politiste sunt lecturi palpitante，deoarece toatelecturile palpitante sunt",
+    "romanepolitiste.",
+    "Pornind dela aceastasituatie.",
+    "a.scrieti,in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte",
+    "c. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte",
+    "SUBIECTULalIII-lea",
+    "(30 de puncte)",
+    "A.Fie urmatoarele doua moduri silogistice: eio-1, aeo-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia,Niciunelevconstinciosnu estenepregatitpentru examene”",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Unele limbi moderne sunt limbi romanice, deci unele limbi similare cu",
+    "limbaromanasuntlimbimoderne,dinmomentcetoatelimbileromanicesuntsimilareculimba",
+    "romana.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenul minor este reprezentat de termenul ,limbi romanice\".",
+    "2. Premisa majora a silogismului este o propozitie particular afirmativa.",
+    "3. Predicatul logic al concluziei este nedistribuit in premisa, dar este distribuit in concluzie.",
+    "4.Termenul mediu estedistribuit inambelepremise.",
+    "4 puncte",
+    "D.Fieurmatoarea definitie:",
+    "Conversiuneaesteoinferentaimediatacarenuesteobversiune.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,conversiune” 4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta 4",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul National dePoliticisiEvaluareinEducatie\nD.Doi elevi, X si Y, opineaza astfel:\nX:Dacatoatecartilerecomandatedescoalasuntlecturiindispensabileeducatiei,atunciunele\nlecturiindispensabileeducatieisuntcartirecomandatedescoala.\nY:Toateromanele politiste sunt lecturi palpitante，deoarece toatelecturile palpitante sunt\nromanepolitiste.\nPornind dela aceastasituatie.\na.scrieti,in limbaj formal, opinile celor doi elevi;\n4 puncte\nb.precizati corectitudinea/incorectitudinea logica a rationamentelor formalizate;2 puncte\nc. explicati corectitudinea/incorectitudinea logica a rationamentului elevului Y.2 puncte\nSUBIECTULalIII-lea\n(30 de puncte)\nA.Fie urmatoarele doua moduri silogistice: eio-1, aeo-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogisticedate,precizandtotodatadecizialacareatiajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia,Niciunelevconstinciosnu estenepregatitpentru examene”\n6 puncte\nC. Fie urmatorul silogism: Unele limbi moderne sunt limbi romanice, deci unele limbi similare cu\nlimbaromanasuntlimbimoderne,dinmomentcetoatelimbileromanicesuntsimilareculimba\nromana.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenul minor este reprezentat de termenul ,limbi romanice\".\n2. Premisa majora a silogismului este o propozitie particular afirmativa.\n3. Predicatul logic al concluziei este nedistribuit in premisa, dar este distribuit in concluzie.\n4.Termenul mediu estedistribuit inambelepremise.\n4 puncte\nD.Fieurmatoarea definitie:\nConversiuneaesteoinferentaimediatacarenuesteobversiune.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,conversiune” 4 puncte\nProba scrisa la logica, argumentare si comunicare\nVarianta 4\nPagina 3 din 3"
+}

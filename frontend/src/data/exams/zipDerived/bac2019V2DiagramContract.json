@@ -1,0 +1,88 @@
+{
+  "examId": "bac_logica_2019_v2",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_A_B_C_D",
+      "diagramType": "euler",
+      "studentCanvas": true,
+      "teacherModel": {
+        "terms": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "relations": [
+          {
+            "type": "superset",
+            "container": "A",
+            "contained": "B"
+          },
+          {
+            "type": "subset",
+            "subset": "C",
+            "superset": "A"
+          },
+          {
+            "type": "contrary",
+            "term1": "B",
+            "term2": "C"
+          },
+          {
+            "type": "overlap",
+            "term1": "D",
+            "term2": "A"
+          },
+          {
+            "type": "overlap",
+            "term1": "D",
+            "term2": "C"
+          },
+          {
+            "type": "opposition",
+            "term1": "D",
+            "term2": "B"
+          }
+        ],
+        "renderInstructions": "A conține B și C; B și C sunt în opoziție; D intersectează A și C, dar nu intersectează B."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aee_2_venn",
+      "diagramType": "venn_three_terms",
+      "mood": "aee-2",
+      "schema": [
+        "PeM",
+        "SaM",
+        "SeP"
+      ],
+      "validity": "valid",
+      "teacherModel": {
+        "shade": [
+          "P∩M",
+          "S∩¬M"
+        ],
+        "conclusion": "SeP"
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aai_4_venn",
+      "diagramType": "venn_three_terms",
+      "mood": "aai-4",
+      "schema": [
+        "PaM",
+        "MaS",
+        "SiP"
+      ],
+      "validity": "valid",
+      "teacherModel": {
+        "shade": [
+          "P∩¬M",
+          "M∩¬S"
+        ],
+        "existentialMark": "S∩P",
+        "conclusion": "SiP"
+      }
+    }
+  ]
+}

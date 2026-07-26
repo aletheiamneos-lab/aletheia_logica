@@ -1,0 +1,330 @@
+{
+  "test_name": "Test Logica Set 3",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Definitia corecta pentru \u201estat\u201d este:",
+      "options": {
+        "A": "Statul este ceva important",
+        "B": "Statul este o organizatie politica",
+        "C": "Statul este ceea ce conduce",
+        "D": "Statul este sistem",
+        "E": "Statul nu este individ"
+      },
+      "correct_answer": "B",
+      "justification": "Definitia este clara si adecvata."
+    },
+    {
+      "id": 2,
+      "question": "Care definitie este prea larga?",
+      "options": {
+        "A": "Pisica este animal",
+        "B": "Pisica este mamifer carnivor",
+        "C": "Pisica este felina domestica",
+        "D": "Pisica este specie Felis",
+        "E": "Pisica este animal domestic"
+      },
+      "correct_answer": "A",
+      "justification": "Include mai multe animale."
+    },
+    {
+      "id": 3,
+      "question": "Definitia \u201edreptul este justitie\u201d este:",
+      "options": {
+        "A": "Corecta",
+        "B": "Circulara",
+        "C": "Vaga",
+        "D": "Restransa",
+        "E": "Exacta"
+      },
+      "correct_answer": "C",
+      "justification": "Termen vag, fara precizie."
+    },
+    {
+      "id": 4,
+      "question": "Definitia corecta trebuie sa fie:",
+      "options": {
+        "A": "Scurta",
+        "B": "Complexa",
+        "C": "Adecvata",
+        "D": "Abstracta",
+        "E": "Lunga"
+      },
+      "correct_answer": "C",
+      "justification": "Regula fundamentala."
+    },
+    {
+      "id": 5,
+      "question": "Care NU este definitie valida?",
+      "options": {
+        "A": "Omul este rational",
+        "B": "Contractul este acord",
+        "C": "Legea este norma",
+        "D": "Viata este vis",
+        "E": "Statul este institutie"
+      },
+      "correct_answer": "D",
+      "justification": "Este metaforica."
+    },
+    {
+      "id": 6,
+      "question": "Clasificarea \u201eanimale: mamifere, pasari, reptile\u201d este:",
+      "options": {
+        "A": "Corecta",
+        "B": "Incompleta",
+        "C": "Suprapusa",
+        "D": "Circulara",
+        "E": "Metaforica"
+      },
+      "correct_answer": "A",
+      "justification": "Respecta criteriul biologic."
+    },
+    {
+      "id": 7,
+      "question": "Clasificarea este invalida daca:",
+      "options": {
+        "A": "Are multe clase",
+        "B": "Nu e clara",
+        "C": "Amesteca criterii",
+        "D": "Este lunga",
+        "E": "Este scurta"
+      },
+      "correct_answer": "C",
+      "justification": "Incalca regula criteriului unic."
+    },
+    {
+      "id": 8,
+      "question": "Ce regula incalca: studenti: buni, anul I, inalti?",
+      "options": {
+        "A": "Excludere",
+        "B": "Criteriu unic",
+        "C": "Completitudine",
+        "D": "Claritate",
+        "E": "Distribuire"
+      },
+      "correct_answer": "B",
+      "justification": "Criterii diferite."
+    },
+    {
+      "id": 9,
+      "question": "Clasificare completa inseamna:",
+      "options": {
+        "A": "Putine clase",
+        "B": "Toate cazurile incluse",
+        "C": "Clase abstracte",
+        "D": "Clase mici",
+        "E": "Clase simple"
+      },
+      "correct_answer": "B",
+      "justification": "Include toate elementele."
+    },
+    {
+      "id": 10,
+      "question": "Suprapunerea apare cand:",
+      "options": {
+        "A": "Clasele sunt mici",
+        "B": "Clasele coincid partial",
+        "C": "Clasele sunt multe",
+        "D": "Clasele sunt simple",
+        "E": "Clasele sunt abstracte"
+      },
+      "correct_answer": "B",
+      "justification": "Elemente comune."
+    },
+    {
+      "id": 11,
+      "question": "\u201eTo\u021bi avoca\u021bii sunt juri\u0219ti\u201d este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "Particulara"
+      },
+      "correct_answer": "A",
+      "justification": "Universala afirmativa."
+    },
+    {
+      "id": 12,
+      "question": "\u201eUnii oameni nu sunt fericiti\u201d este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "Universal"
+      },
+      "correct_answer": "D",
+      "justification": "Particular negativa."
+    },
+    {
+      "id": 13,
+      "question": "In propozi\u021bia E:",
+      "options": {
+        "A": "S distribuit",
+        "B": "P distribuit",
+        "C": "Ambii distribuiti",
+        "D": "Niciunul",
+        "E": "Variabil"
+      },
+      "correct_answer": "C",
+      "justification": "Ambele clase sunt excluse."
+    },
+    {
+      "id": 14,
+      "question": "Propozitia A are:",
+      "options": {
+        "A": "Ambii distribuiti",
+        "B": "Doar S",
+        "C": "Doar P",
+        "D": "Niciunul",
+        "E": "Ambiguu"
+      },
+      "correct_answer": "B",
+      "justification": "S distribuit."
+    },
+    {
+      "id": 15,
+      "question": "\u201eNumai profesorii sunt competenti\u201d devine:",
+      "options": {
+        "A": "SaP",
+        "B": "PaS",
+        "C": "SiP",
+        "D": "SoP",
+        "E": "SeP"
+      },
+      "correct_answer": "B",
+      "justification": "Transformare corecta."
+    },
+    {
+      "id": 16,
+      "question": "Silogismul are:",
+      "options": {
+        "A": "1 termen",
+        "B": "2 termeni",
+        "C": "3 termeni",
+        "D": "4 termeni",
+        "E": "5 termeni"
+      },
+      "correct_answer": "C",
+      "justification": "Structura standard."
+    },
+    {
+      "id": 17,
+      "question": "Termenul major este:",
+      "options": {
+        "A": "Subiect",
+        "B": "Predicat concluzie",
+        "C": "Termen mediu",
+        "D": "Premisa",
+        "E": "Universal"
+      },
+      "correct_answer": "B",
+      "justification": "Predicatul concluziei."
+    },
+    {
+      "id": 18,
+      "question": "Daca o premisa este negativa:",
+      "options": {
+        "A": "Concluzie afirmativa",
+        "B": "Concluzie negativa",
+        "C": "Nu exista concluzie",
+        "D": "Universal",
+        "E": "Particular"
+      },
+      "correct_answer": "B",
+      "justification": "Regula silogismului."
+    },
+    {
+      "id": 19,
+      "question": "Daca am 2 particulare:",
+      "options": {
+        "A": "Valid",
+        "B": "Invalid",
+        "C": "Universal",
+        "D": "Negativ",
+        "E": "Mixt"
+      },
+      "correct_answer": "B",
+      "justification": "Nu rezulta concluzie."
+    },
+    {
+      "id": 20,
+      "question": "Termen mediu nedistribuit duce la:",
+      "options": {
+        "A": "Validitate",
+        "B": "Eroare",
+        "C": "Contradictie",
+        "D": "Analogic",
+        "E": "Inductie"
+      },
+      "correct_answer": "B",
+      "justification": "Nu leaga termenii."
+    },
+    {
+      "id": 21,
+      "question": "\u201eTo\u021bi S sunt P \u2192 Niciun S nu este non-P\u201d este:",
+      "options": {
+        "A": "Conversiune",
+        "B": "Obversiune",
+        "C": "Contrapozitie",
+        "D": "Inductie",
+        "E": "Analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Schimba calitatea si predicatul."
+    },
+    {
+      "id": 22,
+      "question": "\u201eUnii S sunt P \u2192 Unii P sunt S\u201d este:",
+      "options": {
+        "A": "Conversiune",
+        "B": "Obversiune",
+        "C": "Contrapozitie",
+        "D": "Fals",
+        "E": "Generalizare"
+      },
+      "correct_answer": "A",
+      "justification": "Conversiune simpla."
+    },
+    {
+      "id": 23,
+      "question": "\u201eUnii S nu sunt P\u201d nu se poate:",
+      "options": {
+        "A": "Converti",
+        "B": "Obversa",
+        "C": "Analiza",
+        "D": "Distribui",
+        "E": "Evalua"
+      },
+      "correct_answer": "A",
+      "justification": "Conversiune invalida."
+    },
+    {
+      "id": 24,
+      "question": "Eroare: extindere concluzie:",
+      "options": {
+        "A": "Distribuire ilegala",
+        "B": "Echivocatie",
+        "C": "Generalizare",
+        "D": "Inductie",
+        "E": "Analogie"
+      },
+      "correct_answer": "A",
+      "justification": "Termen distribuit nejustificat."
+    },
+    {
+      "id": 25,
+      "question": "Eroare: sens dublu termen:",
+      "options": {
+        "A": "Generalizare",
+        "B": "Echivocatie",
+        "C": "Distribuire",
+        "D": "Inductie",
+        "E": "Analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Termen ambiguu."
+    }
+  ]
+}

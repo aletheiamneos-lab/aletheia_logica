@@ -1,0 +1,65 @@
+{
+  "id": "teacher_solution_bac_logica_2015_v2",
+  "exam_id": "bac_logica_2015_v2",
+  "visibility": "teacher_only",
+  "source": "Barem oficial 2015 Varianta 2",
+  "answers": {
+    "I": {
+      "I.1": "c",
+      "I.2": "c",
+      "I.3": "a",
+      "I.4": "a",
+      "I.5": "b",
+      "I.6": "c",
+      "I.7": "b",
+      "I.8": "d",
+      "I.9": "d",
+      "I.10": "b"
+    },
+    "II.A": {
+      "formal": "SeP",
+      "explanation": "Propoziția 4 este universală negativă: Niciun S nu este P."
+    },
+    "II.B": {
+      "subcontrara_p3_formal": "SiP",
+      "subcontrara_p3_natural": "Unii profesori sunt vorbitori de limba franceză.",
+      "supraalterna_p1_formal": "SaP",
+      "supraalterna_p1_natural": "Toate formele de guvernământ sunt monarhii."
+    },
+    "II.C": {
+      "p2_conversa": "PiS - Unele haine elegante sunt costume scumpe.",
+      "p2_obversa": "Se~P - Niciun costum scump nu este haină neelegantă.",
+      "p4_conversa": "PeS - Niciun aliment dietetic nu este prăjitură cu ciocolată.",
+      "p4_obversa": "Sa~P - Toate prăjiturile cu ciocolată sunt alimente nedietetice."
+    },
+    "II.D": {
+      "diagram": "Euler pentru SoP: S=profesori, P=vorbitori de limba franceză; se marchează existența unei zone S aflate în afara lui P."
+    },
+    "II.E": {
+      "X": "SoP -> PoS. Raționament nevalid; conversiunea propoziției de tip O este nevalidă și încalcă legea distribuirii termenilor.",
+      "Y": "SeP -> PeS. Raționament valid; conversiunea simplă a propoziției de tip E este validă."
+    },
+    "III.A": {
+      "aaa-1": "MaP / SaM / SaP - mod valid.",
+      "eao-3": "MeP / MaS / SoP - mod valid în logica silogistică tradițională.",
+      "natural_example": "Exemplu pentru aaa-1: Toți medicii sunt persoane instruite. Toți cardiologii sunt medici. Deci toți cardiologii sunt persoane instruite."
+    },
+    "III.B": {
+      "formal": "MaP / SiM / SiP",
+      "natural": "Toate actele condamnabile sunt imorale. Unele acte umane sunt acte condamnabile. Deci unele acte umane sunt imorale."
+    },
+    "III.C": {
+      "given_definition_error": "Definiția încalcă regula adecvării: este prea largă, deoarece nu orice persoană care practică medicina este medic în sens strict profesional.",
+      "rule_1": "Definiția nu trebuie să fie circulară.",
+      "bad_definition_1": "Medicul este o persoană medicală. Definiția este circulară/neinformativă.",
+      "rule_2": "Definiția trebuie să fie clară și precisă.",
+      "bad_definition_2": "Medicul este cineva care face lucruri de sănătate. Definiția este neclară și imprecisă."
+    }
+  },
+  "verification_checklist": [
+    "Subiectul I a fost preluat din barem: 1-c, 2-c, 3-a, 4-a, 5-b, 6-c, 7-b, 8-d, 9-d, 10-b.",
+    "Subiectul II.A-E este construit pe cerințele oficiale și pe formele indicate în barem.",
+    "Subiectul III.A folosește schemele aaa-1 și eao-3 din barem.",
+    "JSON-ul elevului nu conține soluții; soluțiile sunt doar în acest fișier teacher-only."
+  ]
+}

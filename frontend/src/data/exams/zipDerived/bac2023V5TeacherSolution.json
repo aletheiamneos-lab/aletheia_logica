@@ -1,0 +1,221 @@
+{
+  "examId": "bac_logica_2023_v5",
+  "title": "Examenul national de bacalaureat 2023 - Logica, argumentare si comunicare - Varianta 5",
+  "year": 2023,
+  "variant": "V5",
+  "type": "BAC_LOGICA_EXAM",
+  "workingTimeMinutes": 180,
+  "totalPoints": 100,
+  "examPoints": 90,
+  "officePoints": 10,
+  "sourceFiles": {
+    "subject": "Examenul național de bacalaureat 2023_V5.pdf",
+    "barem": "Examenul național de bacalaureat 2023_V5_BAREM.pdf"
+  },
+  "visibility": "teacher_only",
+  "containsSolutions": true,
+  "security": {
+    "mustNotBeLoadedInStudentFrontend": true,
+    "requiresRole": [
+      "teacher",
+      "admin"
+    ]
+  },
+  "solutions": [
+    {
+      "sectionId": "I_A",
+      "title": "Subiectul I.A",
+      "answers": {
+        "1": "c",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "d",
+        "6": "a",
+        "7": "b",
+        "8": "c",
+        "9": "c",
+        "10": "a"
+      },
+      "scoring": "10 x 2p = 20p"
+    },
+    {
+      "sectionId": "I_B",
+      "title": "Subiectul I.B",
+      "answers": {
+        "a": "F",
+        "b": "F",
+        "c": "F",
+        "d": "F",
+        "e": "F",
+        "f": "F",
+        "g": "F",
+        "h": "A"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_MNOPQ",
+        "renderFromContract": true
+      },
+      "scoring": "2p diagramă + 8 x 1p A/F = 10p"
+    },
+    {
+      "sectionId": "II_A",
+      "title": "Subiectul II.A",
+      "answers": {
+        "1": {
+          "formal": "SiP",
+          "natural": "Unele cântece populare sunt lipsite de valoare stilistică."
+        },
+        "2": {
+          "formal": "SoP",
+          "natural": "Unele dimineți de vară nu sunt răcoroase."
+        },
+        "3": {
+          "formal": "SiP",
+          "natural": "Unii pictori români contemporani sunt recunoscuți în diaspora română."
+        },
+        "4": {
+          "formal": "SeP",
+          "natural": "Nicio societate conservatoare nu este stat modern."
+        }
+      },
+      "scoring": "4p formal + 4p natural = 8p"
+    },
+    {
+      "sectionId": "II_B",
+      "title": "Subiectul II.B",
+      "answers": {
+        "prop1": {
+          "conversa": {
+            "formal": "PeS",
+            "natural": "Nicio entitate lipsită de valoare stilistică nu este cântec popular."
+          },
+          "obversa": {
+            "formal": "Sa¬P",
+            "natural": "Toate cântecele populare sunt non-lipsite de valoare stilistică."
+          }
+        },
+        "prop2": {
+          "conversa": {
+            "formal": "PiS",
+            "natural": "Unele lucruri răcoroase sunt dimineți de vară."
+          },
+          "obversa": {
+            "formal": "So¬P",
+            "natural": "Unele dimineți de vară nu sunt non-răcoroase."
+          }
+        }
+      },
+      "scoring": "4p formal + 4p natural = 8p"
+    },
+    {
+      "sectionId": "II_C",
+      "title": "Subiectul II.C",
+      "answers": {
+        "1": {
+          "formalAccepted": [
+            "PiS",
+            "PaS"
+          ],
+          "natural": "Unele state moderne sunt societăți conservatoare."
+        },
+        "2": {
+          "formal": "PiS",
+          "natural": "Unele entități recunoscute în diaspora română sunt pictori români contemporani."
+        }
+      },
+      "scoring": "2p formal + 4p natural = 6p"
+    },
+    {
+      "sectionId": "II_D",
+      "title": "Subiectul II.D",
+      "answers": {
+        "X": {
+          "formal": "SeP→Sa¬P",
+          "correctness": "corect",
+          "operation": "obversiune validă"
+        },
+        "Y": {
+          "formal": "SoP→PoS",
+          "correctness": "incorect",
+          "operation": "conversiune nevalidă",
+          "explanation": "Se încalcă legea distribuirii termenilor: termenul S apare distribuit în concluzie, dar nu este distribuit în premisă."
+        }
+      },
+      "scoring": "4p formal + 2p corectitudine + 2p explicație = 8p"
+    },
+    {
+      "sectionId": "III_A",
+      "title": "Subiectul III.A",
+      "answers": {
+        "aee-2": {
+          "schema": [
+            "PaM",
+            "SeM",
+            "SeP"
+          ],
+          "validity": "valid",
+          "diagramId": "diagram_III_A_aee_2_venn"
+        },
+        "oao-4": {
+          "schema": [
+            "PoM",
+            "MaS",
+            "SoP"
+          ],
+          "validity": "nevalid",
+          "diagramId": "diagram_III_A_oao_4_venn"
+        },
+        "naturalExample": [
+          "Toate lecturile atractive sunt opere premiate.",
+          "Niciun roman contemporan nu este operă premiată.",
+          "Prin urmare, niciun roman contemporan nu este lectură atractivă."
+        ]
+      },
+      "scoring": "4p scheme + 4p exemplu natural + 4p Venn + 2p decizii validitate = 14p/16p conform împărțirii din barem"
+    },
+    {
+      "sectionId": "III_B",
+      "title": "Subiectul III.B",
+      "answer": {
+        "formal": [
+          "MeP",
+          "SiM",
+          "SoP"
+        ],
+        "natural": [
+          "Niciun text greu de înțeles nu este text citit de către liceeni.",
+          "Unele poezii contemporane sunt texte greu de înțeles.",
+          "Prin urmare, unele poezii contemporane nu sunt citite de către liceeni."
+        ]
+      },
+      "scoring": "3p formal + 3p natural = 6p"
+    },
+    {
+      "sectionId": "III_C",
+      "title": "Subiectul III.C",
+      "answers": {
+        "1": "F",
+        "2": "F",
+        "3": "A",
+        "4": "A"
+      },
+      "analysis": {
+        "S": "mamifere terestre",
+        "P": "erbivore",
+        "M": "feline",
+        "conclusion": "Unele mamifere terestre nu sunt erbivore (SoP)"
+      },
+      "scoring": "4 x 1p = 4p"
+    },
+    {
+      "sectionId": "III_D",
+      "title": "Subiectul III.D",
+      "answers": {
+        "1": "Definiția încalcă regula adecvării: este prea largă, deoarece „element chimic” se aplică multor elemente, nu doar clorului.",
+        "2": "Altă regulă: evitarea circularității. Exemplu care o încalcă: Clorul este substanța care conține clor."
+      },
+      "scoring": "2p + 4p = 6p"
+    }
+  ]
+}

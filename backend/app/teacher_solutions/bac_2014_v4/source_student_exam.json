@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "examId": "bac_logica_2014_v4",
+    "title": "BAC Logică 2014 - Varianta 4",
+    "year": 2014,
+    "variant": "V4",
+    "mode": "student_exam",
+    "subject": "Logică, argumentare și comunicare",
+    "studentVisibleSolutions": false,
+    "teacherOnlySolutionFile": "teacher_solution_bac_logica_2014_v4_BACKEND.json",
+    "points": {
+      "official": 90,
+      "oficiu": 10,
+      "total": 100
+    },
+    "sourceFiles": [
+      "Examenul de bacalaureat național 2014_V4.pdf",
+      "Examenul de bacalaureat național 2014_V4_BAREM.pdf"
+    ]
+  },
+  "uiRules": {
+    "preserveExistingRadioStyle": true,
+    "showQuestionTextWithoutDropdown": true,
+    "showFriendlyPlaceholdersOnlyForFreeText": true,
+    "doNotRevealAnswersToStudent": true,
+    "teacherSolutionDownload": {
+      "enabled": true,
+      "format": "pdf+preview",
+      "teacherOnly": true
+    },
+    "finalizeButton": {
+      "enabled": true,
+      "label": "Finalizează testul",
+      "generatesStudentPdf": true,
+      "previewBeforeEmail": true,
+      "emailEnabled": true,
+      "adminReportEnabled": true
+    }
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "S1_A",
+          "type": "single_choice_group",
+          "points": 18,
+          "instructions": "Scrie litera corespunzătoare răspunsului corect. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "id": "S1_A_1",
+              "prompt": "În structura unui termen, extensiunea reprezintă:",
+              "options": {
+                "a": "cuvântul sau grupul de cuvinte prin care se exprimă",
+                "b": "conținutul termenului",
+                "c": "referința termenului adică totalitatea obiectelor la care se referă",
+                "d": "înțelesul termenului adică proprietățile obiectelor la care se referă"
+              }
+            },
+            {
+              "id": "S1_A_2",
+              "prompt": "Termenul „argument deductiv” este din punct de vedere intensional:",
+              "options": {
+                "a": "un termen negativ",
+                "b": "un termen compus",
+                "c": "un termen relativ",
+                "d": "un termen abstract"
+              }
+            },
+            {
+              "id": "S1_A_3",
+              "prompt": "Termenii „continuitate” și „discontinuitate” se află în raport de:",
+              "options": {
+                "a": "contrarietate",
+                "b": "subalternare",
+                "c": "contradicție",
+                "d": "încrucișare"
+              }
+            },
+            {
+              "id": "S1_A_4",
+              "prompt": "O propoziție universal negativă este propoziția:",
+              "options": {
+                "a": "Majoritatea oamenilor nu acceptă compromisuri",
+                "b": "Orice tânăr iubește excursiile",
+                "c": "Cei mai mulți elevi practică anumite sporturi",
+                "d": "Nimeni nu este atoștiutor"
+              }
+            },
+            {
+              "id": "S1_A_5",
+              "prompt": "Predicatul logic al propoziției „Elevii care sunt buni la matematică sunt pasionați de informatică” este:",
+              "options": {
+                "a": "sunt pasionați",
+                "b": "pasionați de informatică",
+                "c": "sunt buni",
+                "d": "sunt buni la matematică"
+              }
+            },
+            {
+              "id": "S1_A_6",
+              "prompt": "Din adevărul propoziției SiP se poate deduce falsitatea propoziției SeP, în baza raportului logic de:",
+              "options": {
+                "a": "contradicție",
+                "b": "subalternare",
+                "c": "subcontrarietate",
+                "d": "contrarietate"
+              }
+            }
+          ]
+        },
+        {
+          "id": "S1_B",
+          "type": "syllogism_workspace",
+          "points": 12,
+          "prompt": "Fie următoarele două moduri silogistice: eao-2, aee-4. Scrie schema de inferență și verifică prin diagrame Venn validitatea fiecăruia.",
+          "inputPlaceholders": {
+            "schema_eao_2": "Exemplu structură: Premisa majoră / Premisa minoră / Concluzie, cu S, P, M.",
+            "schema_aee_4": "Exemplu structură: Premisa majoră / Premisa minoră / Concluzie, cu S, P, M.",
+            "venn_decision": "Exemplu: Modul este valid/nevalid deoarece diagrama face/nu face inevitabilă concluzia."
+          },
+          "diagramIds": [
+            "venn_s1b_eao2",
+            "venn_s1b_aee4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "intro": "Se dau următoarele propoziții: 1. Toate resursele neregenerabile sunt epuizabile. 2. Unii oameni temerari nu sunt prudenți. 3. Unele teorii despre Univers sunt false. 4. Nicio acțiune pripită nu este eficientă.",
+      "items": [
+        {
+          "id": "S2_A",
+          "type": "text_input",
+          "points": 4,
+          "prompt": "Precizați formula propoziției 2.",
+          "placeholder": "Exemplu: SaP / SeP / SiP / SoP, în funcție de cantitate și calitate."
+        },
+        {
+          "id": "S2_B",
+          "type": "completion_workspace",
+          "points": 6,
+          "prompt": "Construiți, în limbaj formal și în limbaj natural, subcontrara propoziției 3 și subalterna propoziției 4.",
+          "placeholder": "Scrie întâi forma logică, apoi propoziția în limbaj natural."
+        },
+        {
+          "id": "S2_C",
+          "type": "completion_workspace",
+          "points": 10,
+          "prompt": "Aplicați operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+          "placeholder": "Pentru fiecare propoziție: conversa = ..., obversa = ...; apoi forma în limbaj natural."
+        },
+        {
+          "id": "S2_D",
+          "type": "explanation_text",
+          "points": 6,
+          "prompt": "Explicați succint de ce propoziția 2 nu se convertește corect.",
+          "placeholder": "Exemplu: Propoziția de tip O nu are conversiune validă; explică distribuirea termenilor."
+        },
+        {
+          "id": "S2_E",
+          "type": "diagram_upload_or_canvas",
+          "points": 4,
+          "prompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+          "diagramId": "euler_s2_prop3",
+          "placeholder": "Desenează două cercuri S și P care se intersectează și marchează existența unor S care sunt P."
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "S3_1",
+          "type": "text_input",
+          "points": 4,
+          "prompt": "Definiți conceptul de sofism.",
+          "placeholder": "Exemplu structură: Sofismul este ..."
+        },
+        {
+          "id": "S3_2",
+          "type": "text_input",
+          "points": 6,
+          "prompt": "Enumerați două tipuri de raționamente, în funcție de criteriul corectitudinii logice.",
+          "placeholder": "Exemplu: raționament ... și raționament ..."
+        },
+        {
+          "id": "S3_3",
+          "type": "argument_builder",
+          "points": 10,
+          "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unii elevi nu sunt premianți”.",
+          "placeholder": "Exemplu structură: Premisa 1: ...; Premisa 2: ...; Concluzie: Unii elevi nu sunt premianți."
+        },
+        {
+          "id": "S3_4",
+          "type": "definition_analysis",
+          "points": 10,
+          "prompt": "Fie următoarea definiție: „Copiii sunt florile vieții.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Enunțați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți pentru fiecare câte o definiție care să le încalce.",
+          "placeholder": "Scrie regula încălcată, apoi două alte reguli + câte un exemplu de definiție greșită."
+        }
+      ]
+    }
+  ]
+}

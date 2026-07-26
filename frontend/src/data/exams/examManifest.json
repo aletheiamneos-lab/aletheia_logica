@@ -1,0 +1,60 @@
+[
+  {
+    "id": "bac-2025-v6",
+    "track": "bac",
+    "category": "example",
+    "slug": "modulul-1-bac-2025-varianta-6",
+    "title": "Modulul 1 - BAC 2025, Varianta 6",
+    "status": "available",
+    "moduleFile": "bac2025V6",
+    "variantLabel": "Varianta 6",
+    "sortOrder": 1
+  },
+  {
+    "id": "bac-2025-v1",
+    "track": "bac",
+    "category": "example",
+    "slug": "modulul-2-bac-2025-varianta-1",
+    "title": "Modulul 2 - BAC 2025, Varianta 1",
+    "status": "available",
+    "moduleFile": "bac2025V1",
+    "variantLabel": "Varianta 1",
+    "sortOrder": 2
+  },
+  {
+    "id": "bac-2013-v6",
+    "track": "bac",
+    "category": "example",
+    "slug": "modulul-3-bac-2013-varianta-6",
+    "aliases": ["exercitiu-bac-2013-v6"],
+    "title": "Modulul 3 - BAC 2013, Varianta 6",
+    "status": "available",
+    "moduleFile": "bac2013V6",
+    "variantLabel": "2013 - V6",
+    "sortOrder": 3
+  },
+  {
+    "id": "bac-2014-v10",
+    "track": "bac",
+    "category": "example",
+    "slug": "modulul-4-bac-2014-varianta-10",
+    "aliases": ["exercitiu-bac-2014-v10"],
+    "title": "Modulul 4 - BAC 2014, Varianta 10",
+    "status": "available",
+    "moduleFile": "bac2014V10",
+    "variantLabel": "2014 - V10",
+    "sortOrder": 4
+  },
+  {
+    "id": "bac-2014-v4",
+    "track": "bac",
+    "year": 2014,
+    "category": "exercise",
+    "slug": "exercitiu-bac-2014-v4",
+    "title": "Exercitiu BAC 2014, V4",
+    "status": "available",
+    "moduleFile": "bac2014V4",
+    "variantLabel": "2014 - V4",
+    "summary": "Test BAC 2014 Varianta 4 implementat din pachetul ZIP, cu foaie elev, diagrame editabile si resurse profesor separate."
+  }
+]

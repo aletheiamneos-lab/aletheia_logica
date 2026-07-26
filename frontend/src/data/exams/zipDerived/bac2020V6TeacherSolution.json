@@ -1,0 +1,138 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2020_v6",
+  "examId": "bac_logica_2020_v6",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logica 2020 Varianta 6",
+  "source": "Barem oficial incarcat de utilizator",
+  "items": {
+    "I_A": {
+      "correctAnswers": {
+        "1": "c",
+        "2": "b",
+        "3": "a",
+        "4": "b",
+        "5": "a",
+        "6": "d",
+        "7": "c",
+        "8": "b",
+        "9": "b",
+        "10": [
+          "a",
+          "c"
+        ]
+      },
+      "scoring": "10 x 2p = 20p"
+    },
+    "I_B": {
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "correctAnswers": {
+        "a": "F",
+        "b": "F",
+        "c": "A",
+        "d": "A",
+        "e": "F",
+        "f": "A",
+        "g": "F",
+        "h": "A"
+      },
+      "scoring": "2p diagrama + 8 x 1p"
+    },
+    "II_A": {
+      "formal": {
+        "subalterna_1": "SiP",
+        "contradictoria_2": "SeP",
+        "contrara_3": "SaP",
+        "subcontrara_4": "SiP"
+      },
+      "natural": {
+        "subalterna_1": "Unele virtuti sunt calitati dobandite in vederea unei vieti bune.",
+        "contradictoria_2": "Niciun secret nu este informatie banuita de toata lumea.",
+        "contrara_3": "Toti absolventii de studii superioare sunt someri.",
+        "subcontrara_4": "Unele echipe de fotbal sunt formatiuni bine antrenate."
+      },
+      "scoring": "4p formal + 4p limbaj natural"
+    },
+    "II_B": {
+      "formal": {
+        "propozitia_1": {
+          "conversa": "PiS",
+          "obversa": "Se~P"
+        },
+        "propozitia_3": {
+          "conversa": "PeS",
+          "obversa": "Sa~P"
+        }
+      },
+      "natural": {
+        "propozitia_1": {
+          "conversa": "Unele calitati dobandite in vederea unei vieti bune sunt virtuti.",
+          "obversa": "Nicio virtute nu este calitate nedobandita in vederea unei vieti bune."
+        },
+        "propozitia_3": {
+          "conversa": "Niciun somer nu este absolvent de studii superioare.",
+          "obversa": "Toti absolventii de studii superioare sunt non-someri."
+        }
+      },
+      "scoring": "4p formal + 4p limbaj natural"
+    },
+    "II_C": {
+      "formal": {
+        "cerinta_1": "Po~S",
+        "cerinta_2": "Se~P"
+      },
+      "natural": "Se puncteaza formularea naturala corecta corespunzatoare celor doua forme din barem.",
+      "scoring": "2p formal + 4p limbaj natural"
+    },
+    "II_D": {
+      "formal": {
+        "X": "SoP -> PoS",
+        "Y": "SaP -> Se~P"
+      },
+      "validity": {
+        "X": "incorect - conversiune nevalida",
+        "Y": "corect - obversiune valida"
+      },
+      "explanation": "La X se incalca regula distribuirii termenilor: termenul S apare distribuit in concluzie, dar nu este distribuit in premisa.",
+      "scoring": "4p formal + 2p verdict + 2p explicatie"
+    },
+    "III_A": {
+      "schemas": {
+        "aaa-1": "MaP / SaM / SaP",
+        "aoo-2": "PaM / SoM / SoP"
+      },
+      "validity": {
+        "aaa-1": "valid",
+        "aoo-2": "invalid"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_venn_aaa1_aoo2",
+        "renderFromContract": true
+      },
+      "scoring": "4p scheme + 4p silogism natural + 4p Venn + 2p decizie"
+    },
+    "III_B": {
+      "sampleFormal": "PeM / SaM / SeP",
+      "sampleNatural": "Nicio persoana imorala nu este interesata de dreptate. Toti oamenii nedrepti sunt persoane imorale. Prin urmare, niciun om nedrept nu este interesat de dreptate.",
+      "scoring": "3p formal + 3p natural"
+    },
+    "III_C": {
+      "correctAnswers": {
+        "1": "A",
+        "2": "A",
+        "3": "F",
+        "4": "A"
+      },
+      "scoring": "4 x 1p"
+    },
+    "III_D": {
+      "definition": "Adolescenta este varsta marilor reverii.",
+      "ruleViolated": "Regula evitarii limbajului metaforic / regula claritatii si preciziei.",
+      "otherRule": "De exemplu, regula adecvarii sau regula ne-circularitatii.",
+      "invalidDefinitionExample": "Adolescenta este perioada in care adolescentul traieste adolescenta.",
+      "scoring": "2p + 2p + 2p"
+    }
+  }
+}

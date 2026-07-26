@@ -1,0 +1,323 @@
+Lectia 4 - Raport de Expertiză: Logica Propozițională și Arhitectura Argumentării Structurate
+1. Unitățile de bază
+1.1 Propoziția (enunțul)
+O propoziție este un enunț care poate fi evaluat ca adevărat (1) sau fals (0).
+Exemple:
+„Plouă.” (propoziție)
+„Închide ușa!” (nu e propoziție: comandă)
+„Cine a venit?” (nu e propoziție: întrebare)
+1.2 Propoziții simple și compuse
+Propoziție simplă: p
+Propoziție compusă: se formează din propoziții simple prin conectori logici.
+Notare standard:
+p, q, r, s = propoziții simple
+2. Conectorii logici (operatorii)
+În grile, cheia este să identifici corect conectorul.
+2.1 Negația
+Simbol: ¬p (sau ~p)Citire: „nu p”, „nu este cazul că p”.
+Tabel de adevăr:
+dacă p=1 → ¬p=0
+dacă p=0 → ¬p=1
+2.2 Conjuncția
+Simbol: p ∧ qCitire: „p și q”, „p dar q”, „p iar q”.
+Regulă: p ∧ q este adevărată doar când ambele sunt adevărate.
+2.3 Disjuncția inclusivă (neexclusivă)
+Simbol: p ∨ qCitire: „p sau q”, „ori p ori q” (dacă nu apare clar exclusivitatea).
+Regulă: p ∨ q este falsă doar când ambele sunt false.
+2.4 Disjuncția exclusivă
+Simbol: p ⊻ q (sau W, în unele manuale)Citire: „fie p, fie q (dar nu ambele)”, „sau p, sau q”.
+Regulă: este adevărată când exact una este adevărată.
+Atenție de examen:
+Dacă apare doar „sau”, prezumi disjuncție inclusivă (∨).
+Dacă apare „fie… fie…”, „sau… sau… (dar nu ambele)”, atunci e exclusivă.
+2.5 Implicația
+Simbol: p → qCitire: „dacă p, atunci q”.
+Regulă de adevăr (cea mai importantă): p → q este falsă doar când p=1 și q=0.
+Traducere de examen:
+p = condiție suficientă
+q = condiție necesară
+2.6 Echivalența
+Simbol: p ↔ qCitire: „p dacă și numai dacă q”.
+Regulă: adevărată când p și q au aceeași valoare.
+Simbol
+Denumire
+Expresie naturală
+Condiție de adevăr
+~
+Negație
+"nu...", "nu este cazul că..."
+Valoarea este inversă față de propoziția inițială.
+&
+Conjuncție
+"...și...", "...dar...", "...iar..."
+Validă exclusiv când ambele componente sunt adevărate.
+V
+Disjuncție (neexclusivă)
+"...sau...", "...fie...", "...ori..."
+Adevărată dacă cel puțin o componentă este adevărată; falsă doar când ambele sunt false.
+→
+Implicație
+"dacă... atunci..."
+Falsă doar dacă antecedentul este adevărat și consecventul este fals.
+≡
+Echivalență
+"dacă și numai dacă..."
+Validă când ambele componente au aceeași valoare de adevăr.
+3. Tabelele de adevăr (instrumentul de verificare)
+3.1 Când folosești tabel de adevăr
+Folosești tabel de adevăr când:
+ai 2–3 variabile și vrei certitudine rapidă;
+ți se cere să stabilești dacă o formulă este tautologie/contradicție/contingent;
+vrei să verifici validitatea unui argument și nu recunoști schema.
+3.2 Pași standard (algoritm)
+Notează variabilele (p, q, r…)
+Scrie toate combinațiile (2^n rânduri)
+Calculează coloanele intermediare (¬, ∧, ∨) înainte de → și ↔
+Calculează formula finală
+3.3 Clasificarea formulelor
+Tautologie: 1 pe toate rândurile
+Contradicție: 0 pe toate rândurile
+Contingent: are și 1 și 0
+4. „Echivalențele de aur” (transformări obligatorii la admitere)
+Aceasta este secțiunea pe care trebuie să o știi pe dinafară.
+4.1 Implicația
+p → q ≡ ¬p ∨ q
+Interpretare: „Dacă p atunci q” este identic cu „nu p sau q”.
+4.2 Echivalența
+p ↔ q ≡ (p → q) ∧ (q → p)
+4.3 Legile lui De Morgan
+¬(p ∧ q) ≡ ¬p ∨ ¬q¬(p ∨ q) ≡ ¬p ∧ ¬q
+4.4 Dublă negație
+¬(¬p) ≡ p
+4.5 Distribuții utile (pentru simplificare)
+p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)
+5. Traducerea din limbaj natural în formulă (pas cu pas)
+5.1 Reguli rapide de traducere
+Identifică propozițiile simple (p, q, r) fără conectori.
+Identifică markerii de limbaj:
+„nu” → ¬
+„și / dar / iar” → ∧
+„sau” → ∨ (dacă nu e exclusiv)
+„dacă… atunci…” → →
+„doar dacă” / „numai dacă” → (p doar dacă q) înseamnă p → q
+„dacă și numai dacă” → ↔
+5.2 „Numai dacă” (capcana clasică)
+„p numai dacă q” = p → qExemplu: „Te treci examenul numai dacă înveți.”
+p: „treci examenul”
+q: „înveți”
+formulă: p → q
+5.3 „Dacă” vs „Doar dacă” (distincție practică)
+„Dacă p, atunci q” = p → q
+„p doar dacă q” = p → q (același sens logic)
+6. Argumente: adevăr vs validitate
+6.1 Diferența esențială
+Adevărul = proprietate a propozițiilor (conținut)
+Validitatea = proprietate a formei raționamentului
+Un argument este valid dacă este imposibil ca premisele să fie adevărate iar concluzia falsă.
+6.2 Forma standard a unui argument
+Premise: P1, P2, …Concluzie: CNotare: P1, P2, … ⟹ C
+7. „Fracțiile” (schemele de inferență) — nucleul grilelor
+Acestea se recunosc și se aplică fără calcule.
+7.1 Modus Ponens (MP)
+Fracție:(p → q), p ⟹ qModel:Dacă p atunci q. p. Deci q.
+7.2 Modus Tollens (MT)
+Fracție:(p → q), ¬q ⟹ ¬pModel:Dacă p atunci q. Nu q. Deci nu p.
+7.3 Afirmarea consecventului (EROARE)
+(p → q), q ⟹ p (nevalid)
+7.4 Negarea antecedentului (EROARE)
+(p → q), ¬p ⟹ ¬q (nevalid)
+7.5 Modus Tollendo-Ponens (MTP) — disjuncție
+Fracție:(p ∨ q), ¬p ⟹ qObservație: valid pentru disjuncție inclusivă și exclusivă.
+7.6 Modus Ponendo-Tollens (MPT) — doar disjuncție exclusivă
+Fracție:(p ⊻ q), p ⟹ ¬qAtenție: dacă disjuncția e inclusivă (∨), această concluzie este greșită.
+8. Dilemele (schemă + recunoaștere)
+8.1 Dilema constructivă simplă
+Fracție:(p → q), (r → q), (p ∨ r) ⟹ qIdee: două drumuri duc la același rezultat; dacă unul are loc, rezultatul e cert.
+8.2 Dilema constructivă complexă
+Fracție:(p → q), (r → s), (p ∨ r) ⟹ (q ∨ s)
+8.3 Dilema distructivă simplă
+Fracție:(p → q), (p → r), (¬q ∨ ¬r) ⟹ ¬p
+8.4 Dilema distructivă complexă
+Fracție:(p → q), (r → s), (¬q ∨ ¬s) ⟹ (¬p ∨ ¬r)
+9. Metoda rapidă de verificare a validității (fără tabel complet)
+9.1 Principiul-cheie
+Un argument este nevalid dacă există cel puțin un caz în care:
+toate premisele sunt 1
+concluzia este 0
+9.2 Procedură scurtă (standard de examen)
+Presupui că argumentul este nevalid: premise=1, concluzie=0.
+Deduceți valorile variabilelor din concluzie spre premise.
+Dacă apare contradicție (aceeași variabilă forțată la 1 și 0), argumentul este valid.
+Dacă nu apare contradicție, există contraexemplu → argument nevalid.
+10. Modele complete (gata de grilă)
+Model 1 (MP)
+Premise:
+Dacă p atunci q.
+p.Concluzie: q.
+Formalizare:(p → q), p ⟹ qRezultat: valid (Modus Ponens).
+Model 2 (MT)
+Premise:
+Dacă p atunci q.
+Nu q.Concluzie: Nu p.
+Formalizare:(p → q), ¬q ⟹ ¬pRezultat: valid (Modus Tollens).
+Model 3 (Capcană: afirmarea consecventului)
+Premise:
+Dacă p atunci q.
+q.Concluzie: p.
+Formalizare:(p → q), q ⟹ pRezultat: nevalid (eroare).
+11. Checklist de rezolvare în 60–90 secunde (examen)
+Identific propozițiile simple: p, q, r.
+Identific conectorii și scriu formula.
+Verific dacă se potrivește cu o „fracție” (MP/MT/MTP/MPT/dilemă).
+Dacă nu se potrivește, folosesc procedura de contraexemplu (premise=1, concluzie=0).
+Abia la final (dacă e scurt) fac tabel de adevăr.
+12. Mini-exerciții (model de lucru)
+Exercițiu tip A (traducere)
+„Dacă învață, atunci trece. Nu a trecut. Deci nu a învățat.”
+p: învață
+q: treceFormă: (p → q), ¬q ⟹ ¬p (MT)
+Exercițiu tip B (disjuncție)
+„Ori p, ori q. Nu p. Deci q.”Formă: (p ∨ q), ¬p ⟹ q (MTP)
+Exercițiu tip C (dilemă)
+„Dacă p atunci q. Dacă r atunci q. p sau r. Deci q.”Formă: (p → q), (r → q), (p ∨ r) ⟹ q (dilemă constructivă simplă)
+13. Concluzia capitolului
+Logica propozițională de examen este despre (1) traducere corectă, (2) echivalențe, (3) recunoașterea „fracțiilor” și (4) verificare prin contraexemplu. Dacă aceste patru elemente sunt stăpânite, grilele devin mecanice și sigure.
+4.1. Teoria demonstrației
+Teoria demonstrației
+Demonstrația este un proces logic prin care se stabilește adevărul unei teze, pe baza unor propoziții adevărate acceptate anterior (fundament), printr-un raționament corect.
+Componentele demonstrației
+Teza (demonstrandum)Propoziția a cărei adevăr se demonstrează.
+Fundamentul (principia demonstrandi)Totalitatea propozițiilor adevărate pe baza cărora se realizează demonstrația (axiome, definiții, premise).
+Procesul (raționamentul)Succesiunea de inferențe logice prin care teza este dedusă din fundament.
+Regulile tezei (3)
+Teza trebuie să fie clar formulată, fără ambiguități.
+Teza trebuie să rămână aceeași pe tot parcursul demonstrației.
+Teza trebuie să fie o propoziție demonstrabilă (nici evident adevărată, nici evident falsă).
+Regulile fundamentului (3)
+Fundamentul trebuie să fie adevărat.
+Fundamentul trebuie să fie suficient pentru a susține teza.
+Fundamentul trebuie să fie independent de teză (să nu o presupună).
+Tipuri de demonstrație
+1. Demonstrația directă
+Teza este dedusă direct din fundament prin raționamente valide.
+Schema generală:Fundament adevărat ⟹ Teză adevărată
+2. Demonstrația indirectă (reducere la absurd / apagogică)
+Se presupune negația tezei, iar din această presupunere se ajunge la o contradicție; rezultă că teza inițială este adevărată.
+Schema generală:¬Teză ⟹ contradicție ⟹ Teză
+4.2. Forme speciale de argumentare
+Forme speciale de argumentare
+1. Entimema
+Entimema este un silogism în care una dintre premise este omisă, fiind considerată implicit cunoscută sau evidentă.
+În entimemă pot fi omise:
+premisa majoră,
+premisa minoră,
+mai rar, concluzia.
+Regulă de examen:Pentru a verifica validitatea unei entimeme, aceasta trebuie reconstruită sub forma unui silogism complet.
+Reconstrucția entimemei – procedură:
+Se identifică propoziția explicită (premisă sau concluzie).
+Se deduce propoziția lipsă astfel încât să rezulte un silogism valid.
+Se verifică silogismul rezultat după regulile cunoscute.
+Exemplu:„Este judecător, deci este jurist.”
+Reconstrucție:
+Premisa majoră (omisă): Toți judecătorii sunt juriști.
+Premisa minoră: X este judecător.
+Concluzie: X este jurist.
+2. Soritul
+Soritul este un silogism compus format dintr-un lanț de silogisme în care concluzia fiecăruia devine premisă pentru următorul.
+a) Soritul aristotelic
+În soritul aristotelic, premisa majoră generală este exprimată, iar concluzia rezultă prin eliminarea termenilor intermediari.
+Schema:
+A este B
+B este C
+C este D∴ A este D
+Exemplu:
+Toți judecătorii sunt juriști.
+Toți juriștii sunt absolvenți de drept.
+Toți absolvenții de drept sunt licențiați.∴ Toți judecătorii sunt licențiați.
+b) Soritul goclenian
+În soritul goclenian, concluzia generală este exprimată, iar premisele sunt dispuse invers.
+Schema:
+A este B
+C este A
+D este C∴ D este B
+Observație: ordinea premiselor este inversată față de soritul aristotelic, dar validitatea se menține.
+3. Epicherema (opțional)
+Epicherema este un silogism în care una sau ambele premise sunt însoțite de o justificare (motivare).
+Exemplu:
+Toți judecătorii sunt juriști, deoarece au studii juridice.
+X este judecător.∴ X este jurist.
+4.3. Sofisme de supoziție neîntemeiată
+Sofisme de supoziție neîntemeiată
+1. Falsa dilemă (bifurcația forțată)
+Falsa dilemă este sofismul prin care un argument reduce în mod nejustificat opțiunile la doar două, ignorând alte posibilități reale.
+Forma generală:
+Ori A, ori B.
+Nu A.∴ B.
+Eroarea constă în presupoziția falsă că A și B sunt singurele alternative posibile.
+Indicatori tipici în grile:
+„ori… ori…”
+„nu există altă soluție”
+„singurele opțiuni sunt”
+Exemplu:„Ori susții această lege, ori ești împotriva statului. Nu o susții, deci ești împotriva statului.”
+Eroare: se ignoră poziții intermediare (neutralitate, abținere, critică parțială).
+2. Inconsistența premiselor
+Inconsistența premiselor apare atunci când premisele unui argument se contrazic între ele.
+Din premise inconsistente poate fi derivată orice concluzie, ceea ce face argumentul nevalid.
+Formulare logică:
+p
+¬p∴ q (oricare q)
+Exemplu:„Toți judecătorii sunt imparțiali. Unii judecători nu sunt imparțiali. Deci sistemul este corect.”
+Eroare: premisele se exclud reciproc.
+Anexe de tabele
+Tabel 1 – Structura demonstrației
+Element
+Denumire
+Rol în demonstrație
+1
+Teză (demonstrandum)
+Propoziția care trebuie demonstrată
+2
+Fundament (principia demonstrandi)
+Propoziții adevărate pe baza cărora se demonstrează teza
+3
+Proces (raționamentul)
+Succesiunea inferențelor logice prin care teza este dedusă din fundament
+Tabel 2 – Regulile demonstrației
+Componentă
+Reguli
+Teza
+1. Clar formulată 2. Rămâne aceeași 3. Propoziție demonstrabilă
+Fundament
+1. Adevărat 2. Suficient 3. Independent de teză
+Tabel 3 – Tipuri de demonstrație
+Tip de demonstrație
+Schemă logică
+Directă
+Fundament ⟹ Teză
+Indirectă (reducere la absurd)
+¬Teză ⟹ contradicție ⟹ Teză
+Tabel 4 – Forme speciale de argumentare
+Formă
+Definiție scurtă
+Schemă
+Entimemă
+Silogism cu o premisă omisă
+Premisă implicită + premisă explicită ⟹ concluzie
+Sorit
+Lanț de silogisme
+AaB, BaC, CaD ⟹ AaD
+Epicheremă
+Silogism cu premise motivate
+Premisă (+ justificare)
+Tabel 5 – Sofisme de supoziție neîntemeiată
+Sofism
+Descriere
+Falsa dilemă
+Reducerea artificială la două opțiuni
+Inconsistența
+Premise contradictorii
+Tabel 6 – Schema soritului (fracții)
+Premise
+Concluzie
+AaB BaC CaD
+AaD

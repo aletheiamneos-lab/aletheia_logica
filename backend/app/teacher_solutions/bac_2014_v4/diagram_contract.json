@@ -1,0 +1,180 @@
+{
+  "diagramSpecs": [
+    {
+      "diagramId": "venn_s1b_eao2",
+      "type": "venn_three_terms",
+      "mode": "eao-2",
+      "validity": "valid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": {
+        "major": "PeM",
+        "minor": "SaM",
+        "conclusion": "SoP"
+      },
+      "vennActions": [
+        {
+          "step": 1,
+          "premise": "PeM",
+          "action": "mark",
+          "meaning": "Reprezinta premisa PeM."
+        },
+        {
+          "step": 2,
+          "premise": "SaM",
+          "action": "mark",
+          "meaning": "Reprezinta premisa SaM."
+        },
+        {
+          "step": 3,
+          "conclusion": "SoP",
+          "action": "read",
+          "meaning": "Citeste concluzia SoP; modulul este valid."
+        }
+      ],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "eao-2: PeM / SaM / SoP - valid"
+      },
+      "sourceContract": {
+        "diagramId": "venn_s1b_eao2",
+        "type": "venn_syllogism",
+        "moodFigure": "eao-2",
+        "terms": [
+          "S",
+          "P",
+          "M"
+        ],
+        "expectedSchema": [
+          "PeM",
+          "SaM",
+          "SoP"
+        ],
+        "teacherOnlyDecision": "valid"
+      }
+    },
+    {
+      "diagramId": "venn_s1b_aee4",
+      "type": "venn_three_terms",
+      "mode": "aee-4",
+      "validity": "valid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": {
+        "major": "PaM",
+        "minor": "MeS",
+        "conclusion": "SeP"
+      },
+      "vennActions": [
+        {
+          "step": 1,
+          "premise": "PaM",
+          "action": "mark",
+          "meaning": "Reprezinta premisa PaM."
+        },
+        {
+          "step": 2,
+          "premise": "MeS",
+          "action": "mark",
+          "meaning": "Reprezinta premisa MeS."
+        },
+        {
+          "step": 3,
+          "conclusion": "SeP",
+          "action": "read",
+          "meaning": "Citeste concluzia SeP; modulul este valid."
+        }
+      ],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "aee-4: PaM / MeS / SeP - valid"
+      },
+      "sourceContract": {
+        "diagramId": "venn_s1b_aee4",
+        "type": "venn_syllogism",
+        "moodFigure": "aee-4",
+        "terms": [
+          "S",
+          "P",
+          "M"
+        ],
+        "expectedSchema": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "teacherOnlyDecision": "valid"
+      }
+    },
+    {
+      "diagramId": "euler_s2_prop3",
+      "type": "euler_categorical",
+      "formula": "SiP",
+      "natural": "Unele teorii despre Univers sunt false.",
+      "studentAction": "Draw two intersecting circles S and P and mark that at least one S is P.",
+      "renderHints": {
+        "style": "euler2_small",
+        "caption": "Unele teorii despre Univers sunt false.",
+        "note": "Draw two intersecting circles S and P and mark that at least one S is P."
+      },
+      "sourceContract": {
+        "diagramId": "euler_s2_prop3",
+        "type": "euler_categorical",
+        "formula": "SiP",
+        "natural": "Unele teorii despre Univers sunt false.",
+        "studentAction": "Draw two intersecting circles S and P and mark that at least one S is P."
+      }
+    }
+  ],
+  "sourceContract": {
+    "examId": "bac_logica_2014_v4",
+    "diagrams": [
+      {
+        "diagramId": "venn_s1b_eao2",
+        "type": "venn_syllogism",
+        "moodFigure": "eao-2",
+        "terms": [
+          "S",
+          "P",
+          "M"
+        ],
+        "expectedSchema": [
+          "PeM",
+          "SaM",
+          "SoP"
+        ],
+        "teacherOnlyDecision": "valid"
+      },
+      {
+        "diagramId": "venn_s1b_aee4",
+        "type": "venn_syllogism",
+        "moodFigure": "aee-4",
+        "terms": [
+          "S",
+          "P",
+          "M"
+        ],
+        "expectedSchema": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "teacherOnlyDecision": "valid"
+      },
+      {
+        "diagramId": "euler_s2_prop3",
+        "type": "euler_categorical",
+        "formula": "SiP",
+        "natural": "Unele teorii despre Univers sunt false.",
+        "studentAction": "Draw two intersecting circles S and P and mark that at least one S is P."
+      }
+    ],
+    "renderingNotes": "Diagrams must be editable in the app canvas. Student version receives only diagram instructions, not the completed solution."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "examId": "bac_logica_2020_v6",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler",
+      "studentMode": "hybrid_canvas_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A si B sunt contradictorii",
+        "C este supraordonat fata de A si B",
+        "C este specie a lui D",
+        "E este specie a lui D",
+        "E este intersectat cu C si in opozitie cu A si B"
+      ],
+      "renderingHints": {
+        "showLabels": true,
+        "allowTemplateChange": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_venn_aaa1_aoo2",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "modes": [
+        {
+          "mode": "aaa-1",
+          "schema": "MaP / SaM / SaP",
+          "validity": "valid"
+        },
+        {
+          "mode": "aoo-2",
+          "schema": "PaM / SoM / SoP",
+          "validity": "invalid"
+        }
+      ],
+      "renderingHints": {
+        "showLabels": true,
+        "allowTemplateChange": true,
+        "studentSeesOnlyBlankCanvas": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2023_simulare",
+  "examId": "bac_logica_2023_simulare",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2023 Simulare",
+  "source": "Examenul și baremul încărcate în această cerere",
+  "sections": [
+    {
+      "id": "I_A",
+      "title": "Subiectul I.A",
+      "answers": [
+        {
+          "itemId": "I_A_1",
+          "answer": "c",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_2",
+          "answer": "d",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_3",
+          "answer": "a",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_4",
+          "answer": "c",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_5",
+          "answer": "a",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_6",
+          "answer": "b",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_7",
+          "answer": "a",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_8",
+          "answer": "c",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_9",
+          "answer": "c",
+          "points": 2
+        },
+        {
+          "itemId": "I_A_10",
+          "answer": "d",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "I_B",
+      "title": "Subiectul I.B",
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_MNOPQ",
+        "renderFromContract": true
+      },
+      "answers": [
+        {
+          "itemId": "I_B_2_a",
+          "answer": "F",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_b",
+          "answer": "F",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_c",
+          "answer": "F",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_d",
+          "answer": "A",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_e",
+          "answer": "A",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_f",
+          "answer": "A",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_g",
+          "answer": "A",
+          "points": 1
+        },
+        {
+          "itemId": "I_B_2_h",
+          "answer": "F",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "answers": [
+        {
+          "itemId": "II_A_1",
+          "formal": "SiP",
+          "natural": "Unele poligoane convexe sunt linii frânte închise.",
+          "points": 2
+        },
+        {
+          "itemId": "II_A_2",
+          "formal": "SoP",
+          "natural": "Unii melci marini nu sunt capabili de fotosinteză.",
+          "points": 2
+        },
+        {
+          "itemId": "II_A_3",
+          "formal": "SeP",
+          "natural": "Nicio câmpie dunăreană nu este formată din aluviuni.",
+          "points": 2
+        },
+        {
+          "itemId": "II_A_4",
+          "formal": "SiP",
+          "natural": "Unele monumente istorice sunt rezistente la degradare fizică.",
+          "points": 2
+        },
+        {
+          "itemId": "II_B_p1_converse",
+          "formal": "PiS",
+          "natural": "Unele linii frânte închise sunt poligoane convexe.",
+          "points": 2
+        },
+        {
+          "itemId": "II_B_p1_obverse",
+          "formal": "Se¬P",
+          "natural": "Niciun poligon convex nu este non-linie frântă închisă.",
+          "points": 2
+        },
+        {
+          "itemId": "II_B_p2_converse",
+          "formal": "PiS",
+          "natural": "Unele ființe capabile de fotosinteză sunt melci marini.",
+          "points": 2
+        },
+        {
+          "itemId": "II_B_p2_obverse",
+          "formal": "So¬P",
+          "natural": "Unii melci marini nu sunt non-capabili de fotosinteză.",
+          "points": 2
+        },
+        {
+          "itemId": "II_C_1",
+          "formal": "¬PiS",
+          "natural": "Unele lucruri nerezistente la degradare fizică sunt monumente istorice.",
+          "points": 3
+        },
+        {
+          "itemId": "II_C_2",
+          "formal": "Sa¬P",
+          "natural": "Toți melcii marini sunt non-capabili de fotosinteză.",
+          "points": 3
+        },
+        {
+          "itemId": "II_D_X",
+          "formal": "SiP → PaS",
+          "validity": "incorect",
+          "explanation": "Conversiune nevalidă: dintr-o particulară afirmativă nu se obține valid o universală afirmativă. Se încalcă legea distribuirii termenilor: termenul P apare distribuit în concluzie, dar nu este distribuit în premisă.",
+          "points": 4
+        },
+        {
+          "itemId": "II_D_Y",
+          "formal": "SoP → Si¬P",
+          "validity": "corect",
+          "explanation": "Raționamentul este o obversiune validă: din „Unele populații arhaice nu sunt sedentare” rezultă „Unele populații arhaice sunt non-sedentare/migratoare”, în structura cerută de barem.",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "answers": [
+        {
+          "itemId": "III_A_1_eio2",
+          "schema": [
+            "PeM",
+            "SiM",
+            "SoP"
+          ],
+          "points": 2
+        },
+        {
+          "itemId": "III_A_1_aai4",
+          "schema": [
+            "PaM",
+            "MaS",
+            "SiP"
+          ],
+          "points": 2
+        },
+        {
+          "itemId": "III_A_1_natural",
+          "example": "Exemplu pentru eio-2: Niciun P nu este M. Unii S sunt M. Deci unii S nu sunt P. Se acceptă orice silogism în limbaj natural care respectă una dintre schemele date.",
+          "points": 4
+        },
+        {
+          "itemId": "III_A_2_eio2_venn",
+          "diagramSolution": {
+            "diagramId": "diagram_III_A_eio2_venn",
+            "renderFromContract": true
+          },
+          "validity": "valid",
+          "points": 3
+        },
+        {
+          "itemId": "III_A_2_aai4_venn",
+          "diagramSolution": {
+            "diagramId": "diagram_III_A_aai4_venn",
+            "renderFromContract": true
+          },
+          "validity": "valid",
+          "points": 3
+        },
+        {
+          "itemId": "III_B_answer",
+          "formal": "MaP / SiM / SiP",
+          "natural": "Toate comunitățile care respectă tradițiile sunt tradiționaliste. Unele comunități culturale sunt comunități care respectă tradițiile. Prin urmare, unele comunități culturale sunt tradiționaliste.",
+          "points": 6
+        },
+        {
+          "itemId": "III_C_1",
+          "answer": "F",
+          "explanation": "Termenul mediu este distribuit în premisa majoră, nu în ambele premise.",
+          "points": 1
+        },
+        {
+          "itemId": "III_C_2",
+          "answer": "F",
+          "explanation": "Concluzia este particulară negativă, nu particulară afirmativă.",
+          "points": 1
+        },
+        {
+          "itemId": "III_C_3",
+          "answer": "F",
+          "explanation": "Termenul major apare distribuit în concluzie.",
+          "points": 1
+        },
+        {
+          "itemId": "III_C_4",
+          "answer": "A",
+          "explanation": "Termenul major este distribuit în premisa în care apare și în concluzie.",
+          "points": 1
+        },
+        {
+          "itemId": "III_D_1",
+          "answer": "Regula adecvării poate fi menționată; definiția folosește o proprietate accidentală/subiectivă, nu fixează esența termenului „doină”. Se poate accepta și regula clarității și preciziei, dacă este justificată prin expresia vagă „extrem de apreciat”.",
+          "points": 2
+        },
+        {
+          "itemId": "III_D_2",
+          "answer": "Exemplu: regula evitării circularității. Definiție care o încalcă: Doina este un cântec doinit. Se acceptă orice altă regulă corect menționată și o definiție construită care o încalcă.",
+          "points": 4
+        }
+      ]
+    }
+  ]
+}

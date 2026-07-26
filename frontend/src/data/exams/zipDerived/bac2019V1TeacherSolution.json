@@ -1,0 +1,119 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2019_v1",
+  "examId": "bac_logica_2019_v1",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logica 2019 V1",
+  "totalPoints": 100,
+  "basePoints": 10,
+  "sourcePolicy": "Rezolvarea este construita strict pe baza baremului oficial 2019 V1 incarcat in pachet.",
+  "answers": {
+    "I_A": {
+      "answers": {
+        "1": "b",
+        "2": "d",
+        "3": "c",
+        "4": "d",
+        "5": "b",
+        "6": "a",
+        "7": "d",
+        "8": "a",
+        "9": "b",
+        "10": "c"
+      },
+      "points": "10x2p = 20p"
+    },
+    "I_B": {
+      "diagramId": "diagram_I_B_euler_terms",
+      "answers": {
+        "a": "F",
+        "b": "A",
+        "c": "A",
+        "d": "F",
+        "e": "A",
+        "f": "F"
+      },
+      "points": "4p diagrama + 6x1p = 10p"
+    },
+    "II_A": {
+      "correct": {
+        "1": "SaP",
+        "2": "SoP"
+      }
+    },
+    "II_B": {
+      "correct": {
+        "contrara_1": "SeP - Nicio excursie de studiu nu este activitate benefica pentru elevi.",
+        "subcontrara_2": "SiP - Unele figuri geometrice plane sunt patrulatere.",
+        "supraalterna_3": "SeP - Niciun animal terestru nu este peste.",
+        "subalterna_4": "SiP - Unii elevi sunt talentati la pictura."
+      }
+    },
+    "II_C": {
+      "correct": {
+        "conversa_1": "PiS - Unele activitati benefice pentru elevi sunt excursii de studiu.",
+        "obversa_1": "Se~P - Nicio excursie de studiu nu este activitate nebenefica pentru elevi.",
+        "conversa_3": "PeS - Niciun peste nu este animal terestru.",
+        "obversa_3": "Sa~P - Toate animalele terestre sunt non-pesti."
+      }
+    },
+    "II_D": {
+      "correct": "Po~S - Unele activitati benefice pentru elevi nu sunt non-excursii de studiu."
+    },
+    "II_E": {
+      "formal": {
+        "X": "SoP -> PoS",
+        "Y": "SiP -> PiS"
+      },
+      "decision": {
+        "X": "incorect - conversiune nevalida",
+        "Y": "corect - conversiune valida"
+      },
+      "explanation_X": "Rationamentul X aplica nevalid conversiunea unei propozitii particulare negative. Termenul S apare distribuit in concluzie, dar nu este distribuit in premisa."
+    },
+    "III_A": {
+      "schemes": {
+        "eae-2": [
+          "PeM",
+          "SaM",
+          "SeP"
+        ],
+        "aii-3": [
+          "MaP",
+          "MiS",
+          "SiP"
+        ]
+      },
+      "validity": {
+        "eae-2": "valid",
+        "aii-3": "valid"
+      },
+      "diagramIds": [
+        "diagram_III_A_eae_2_venn",
+        "diagram_III_A_aii_3_venn"
+      ]
+    },
+    "III_B": {
+      "sampleValidSyllogism": {
+        "formal": [
+          "Toate faptele imorale sunt actiuni umane.",
+          "Unele fapte imorale nu sunt acceptabile.",
+          "Prin urmare, unele actiuni umane nu sunt acceptabile."
+        ],
+        "note": "Se accepta orice silogism valid care justifica propozitia data."
+      }
+    },
+    "III_C": {
+      "answers": {
+        "1": "A",
+        "2": "F",
+        "3": "F",
+        "4": "A"
+      }
+    },
+    "III_D": {
+      "a": "Definitia incalca regula evitarii circularitatii, deoarece termenul definit este explicat printr-un termen din aceeasi familie lexicala: munte - muntoasa.",
+      "b": "Exemplu alta regula: definitia nu trebuie sa fie prea larga. Definitie gresita: Muntele este o forma de relief."
+    }
+  },
+  "scoringPolicy": "Nu se acorda punctaje intermediare, altele decat cele precizate explicit in barem. Se puncteaza orice modalitate de rezolvare corecta."
+}

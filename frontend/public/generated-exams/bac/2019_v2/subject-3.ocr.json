@@ -1,0 +1,280 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul EducatieiNationale",
+      "x": 1492.3543701171875,
+      "y": 193.64869689941406,
+      "score": 0.9805507207738942,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.156982421875,
+      "y": 262.6194763183594,
+      "score": 0.9935505224598778,
+      "page_number": 3
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2889.620849609375,
+      "y": 448.30999755859375,
+      "score": 0.9935241838296255,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.5042724609375,
+      "y": 450.96270751953125,
+      "score": 0.9161835942003462,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele douamoduri silogistice:aee-2,aai-4.",
+      "x": 364.5042724609375,
+      "y": 530.5443725585938,
+      "score": 0.9739561339594284,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.6683349609375,
+      "y": 610.1260375976562,
+      "score": 0.9748713562022084,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.6683349609375,
+      "y": 687.0549926757812,
+      "score": 0.98527265113333,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 454.3096618652344,
+      "y": 769.2893676757812,
+      "score": 0.9875050253338284,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.894287109375,
+      "y": 763.98388671875,
+      "score": 0.9975930973887444,
+      "page_number": 3
+    },
+    {
+      "text": "2.Verificati explicit, prinmetoda diagramelorVenn,validitatea fiecaruia dintre cele doua moduri",
+      "x": 451.6683349609375,
+      "y": 846.21826171875,
+      "score": 0.9623165030228464,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 451.6683349609375,
+      "y": 923.147216796875,
+      "score": 0.9479728875652192,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3040.1767578125,
+      "y": 928.45263671875,
+      "score": 0.9787514358758926,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 361.8629150390625,
+      "y": 994.7706909179688,
+      "score": 0.9885915962030303,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Niciunpestenuesteanimalterestru\"",
+      "x": 451.6683349609375,
+      "y": 1084.9632568359375,
+      "score": 0.9842995114104692,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3053.383544921875,
+      "y": 1084.9632568359375,
+      "score": 0.9453617632389069,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Toate hotararile juste sunt corecte, prin urmare unele sentinte nu sunt",
+      "x": 364.5042724609375,
+      "y": 1156.5867919921875,
+      "score": 0.9770694016193857,
+      "page_number": 3
+    },
+    {
+      "text": "hotarari juste,pentru caunele sentinte nu sunt corecte.",
+      "x": 451.6683349609375,
+      "y": 1236.16845703125,
+      "score": 0.9559882608326998,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 361.8629150390625,
+      "y": 1313.0972900390625,
+      "score": 0.9756869697334742,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 361.8629150390625,
+      "y": 1395.3316650390625,
+      "score": 0.9786498674324581,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenulmediuestedistribuitinambelepremise.",
+      "x": 451.6683349609375,
+      "y": 1472.2606201171875,
+      "score": 0.9958452847268846,
+      "page_number": 3
+    },
+    {
+      "text": "2. Predicatul logic al concluziei este reprezentat de termenul ,hotarari juste\"",
+      "x": 451.6683349609375,
+      "y": 1549.1895751953125,
+      "score": 0.9922936339921589,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie universala afirmativa.",
+      "x": 451.6683349609375,
+      "y": 1628.771240234375,
+      "score": 0.9829065736496088,
+      "page_number": 3
+    },
+    {
+      "text": "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+      "x": 451.6683349609375,
+      "y": 1708.3529052734375,
+      "score": 0.9824178273027594,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.100830078125,
+      "y": 1772.0181884765625,
+      "score": 0.9929483830928802,
+      "page_number": 3
+    },
+    {
+      "text": "D. Fie urmatoarea definitie:",
+      "x": 367.1455993652344,
+      "y": 1859.5579833984375,
+      "score": 0.9704904726573399,
+      "page_number": 3
+    },
+    {
+      "text": "Mamiferulesteunanimalvertebratterestru.",
+      "x": 451.6683349609375,
+      "y": 1941.7923583984375,
+      "score": 0.9939685265223185,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 2016.068603515625,
+      "score": 0.9424596950411797,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionatioreguladecorectitudinepecareoncalcadefinitiadata",
+      "x": 451.6683349609375,
+      "y": 2024.02685546875,
+      "score": 0.9929671545823415,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 449.0269775390625,
+      "y": 2098.302978515625,
+      "score": 0.9744861835241317,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3063.948974609375,
+      "y": 2175.23193359375,
+      "score": 0.944769524037838,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".",
+      "x": 578.452392578125,
+      "y": 2180.537353515625,
+      "score": 0.9728791272198712,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4942.02099609375,
+      "score": 0.979502298394028,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 2",
+      "x": 3034.894287109375,
+      "y": 4947.326171875,
+      "score": 0.993228280544281,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.475830078125,
+      "y": 5021.6025390625,
+      "score": 0.9379480949469975,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul EducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "(30depuncte)",
+    "SUBIECTULalIII-lea",
+    "A.Fie urmatoarele douamoduri silogistice:aee-2,aai-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2.Verificati explicit, prinmetoda diagramelorVenn,validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Niciunpestenuesteanimalterestru\"",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Toate hotararile juste sunt corecte, prin urmare unele sentinte nu sunt",
+    "hotarari juste,pentru caunele sentinte nu sunt corecte.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenulmediuestedistribuitinambelepremise.",
+    "2. Predicatul logic al concluziei este reprezentat de termenul ,hotarari juste\"",
+    "3. Concluzia silogismului este o propozitie universala afirmativa.",
+    "4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.",
+    "4 puncte",
+    "D. Fie urmatoarea definitie:",
+    "Mamiferulesteunanimalvertebratterestru.",
+    "2 puncte",
+    "a.Mentionatioreguladecorectitudinepecareoncalcadefinitiadata",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "4 puncte",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta 2",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul EducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\n(30depuncte)\nSUBIECTULalIII-lea\nA.Fie urmatoarele douamoduri silogistice:aee-2,aai-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2.Verificati explicit, prinmetoda diagramelorVenn,validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Niciunpestenuesteanimalterestru\"\n6 puncte\nC. Fie urmatorul silogism: Toate hotararile juste sunt corecte, prin urmare unele sentinte nu sunt\nhotarari juste,pentru caunele sentinte nu sunt corecte.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenulmediuestedistribuitinambelepremise.\n2. Predicatul logic al concluziei este reprezentat de termenul ,hotarari juste\"\n3. Concluzia silogismului este o propozitie universala afirmativa.\n4. Subiectul logic al concluziei este nedistribuit atat in premisa, cat si in concluzie.\n4 puncte\nD. Fie urmatoarea definitie:\nMamiferulesteunanimalvertebratterestru.\n2 puncte\na.Mentionatioreguladecorectitudinepecareoncalcadefinitiadata\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\n4 puncte\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".\nProba scrisa la logica, argumentare si comunicare\nVarianta 2\nPagina 3 din 3"
+}

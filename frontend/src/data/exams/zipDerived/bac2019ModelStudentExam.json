@@ -1,0 +1,334 @@
+{
+  "examId": "bac_logica_2019_model",
+  "title": "BAC Logică 2019 - Model",
+  "year": 2019,
+  "variant": "Model",
+  "mode": "student_exam",
+  "visibility": "student",
+  "rules": {
+    "studentSeesSolutions": false,
+    "teacherSolutionLocation": "backend_json",
+    "finalizeButton": true,
+    "generateStudentPdf": true,
+    "previewStudentPdf": true,
+    "emailStudentPdf": true,
+    "adminReportIntegration": true
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "inputType": "single_choice",
+          "items": [
+            {
+              "id": "I_A_1",
+              "prompt": "Operația logică prin care o propoziție este derivată din alte propoziții se numește:",
+              "options": [
+                "distribuire a termenilor",
+                "raționament",
+                "definire",
+                "clasificare"
+              ]
+            },
+            {
+              "id": "I_A_2",
+              "prompt": "Într-o inferență deductivă concluzia are:",
+              "options": [
+                "întotdeauna, un grad de generalitate mai mic decât cel al premiselor",
+                "întotdeauna, un grad de generalitate egal cu cel al premiselor",
+                "un grad de generalitate cel mult egal cu cel al premiselor",
+                "un grad de generalitate mai mare decât cel al premiselor"
+              ]
+            },
+            {
+              "id": "I_A_3",
+              "prompt": "Termenii Paris și Roma se află în raport de:",
+              "options": [
+                "contrarietate",
+                "ordonare",
+                "identitate",
+                "încrucișare"
+              ]
+            },
+            {
+              "id": "I_A_4",
+              "prompt": "Subiectul logic al propoziției „Niciun elev care învață bine nu este corigent” este:",
+              "options": [
+                "elev",
+                "elev care învață",
+                "elev care învață bine",
+                "niciun elev care învață bine"
+              ]
+            },
+            {
+              "id": "I_A_5",
+              "prompt": "Într-o inferență deductivă imediată validă:",
+              "options": [
+                "termenii distribuiți în premisă sunt întotdeauna distribuiți și în concluzie",
+                "termenii distribuiți în concluzie sunt întotdeauna distribuiți și în premisă",
+                "termenii distribuiți în premisă nu pot fi distribuiți și în concluzie",
+                "termenii nedistribuiți în concluzie nu pot fi distribuiți în premisă"
+              ]
+            },
+            {
+              "id": "I_A_6",
+              "prompt": "Din punct de vedere intensional, termenul intelectual este:",
+              "options": [
+                "negativ",
+                "distributiv",
+                "general",
+                "pozitiv"
+              ]
+            },
+            {
+              "id": "I_A_7",
+              "prompt": "Inducția incompletă:",
+              "options": [
+                "este o inducție completă căreia îi lipsește o premisă",
+                "este o inducție completă căreia îi lipsește concluzia",
+                "este un raționament prin care se trece de la toate cazurile la unele cazuri",
+                "este un raționament prin care se trece de la unele cazuri la toate cazurile"
+              ]
+            },
+            {
+              "id": "I_A_8",
+              "prompt": "Un exemplu de inducție completă este următorul raționament:",
+              "options": [
+                "Dacă unii dintre colegii mei sunt fericiți, atunci toți colegii mei sunt fericiți.",
+                "Dacă toți oamenii sunt fericiți, atunci unii oameni sunt fericiți.",
+                "Dacă unii oameni sunt fericiți, atunci alți oameni sunt nefericiți.",
+                "Dacă fiecare dintre colegii mei este fericit, atunci toți colegii mei sunt fericiți."
+              ]
+            },
+            {
+              "id": "I_A_9",
+              "prompt": "Seria de termeni corect ordonați crescător, în funcție de intensiunea lor, este:",
+              "options": [
+                "vertebrat, pisică, mamifer, felină",
+                "vertebrat, felină, pisică, mamifer",
+                "vertebrat, mamifer, felină, pisică",
+                "pisică, felină, mamifer, vertebrat"
+              ]
+            },
+            {
+              "id": "I_A_10",
+              "prompt": "Propoziția „Toți elevii care au participat la olimpiadele școlare sunt merituoși” este:",
+              "options": [
+                "universală afirmativă",
+                "universală negativă",
+                "particulară afirmativă",
+                "particulară negativă"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Diagramă Euler și A/F",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C și D, astfel încât termenii C și D se află în raport de încrucișare și sunt totodată specii ale termenului A. Termenul B este subordonat termenului A și supraordonat termenului C, aflându-se în raport de încrucișare cu D.",
+          "diagram": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_I_B_euler_terms",
+            "diagramType": "euler",
+            "studentTask": "Reprezintă raporturile logice dintre cei patru termeni prin metoda diagramelor Euler.",
+            "inputConfig": {
+              "helperText": "Desenează raporturile dintre termenii A, B, C și D.",
+              "canvas": {
+                "enabled": true,
+                "width": 720,
+                "height": 420,
+                "tools": [
+                  "pen",
+                  "eraser",
+                  "undo",
+                  "clear",
+                  "save"
+                ],
+                "defaultLabels": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "saveFormat": [
+                  "strokes_json",
+                  "png_export"
+                ]
+              },
+              "upload": {
+                "enabled": true,
+                "acceptedTypes": [
+                  "image/png",
+                  "image/jpeg",
+                  "image/webp",
+                  "application/pdf"
+                ],
+                "maxFileSizeMb": 10
+              }
+            }
+          },
+          "statements": [
+            {
+              "id": "I_B_a",
+              "text": "Unii C nu sunt A."
+            },
+            {
+              "id": "I_B_b",
+              "text": "Toți B sunt D."
+            },
+            {
+              "id": "I_B_c",
+              "text": "Unii C sunt D."
+            },
+            {
+              "id": "I_B_d",
+              "text": "Unii A sunt B."
+            },
+            {
+              "id": "I_B_e",
+              "text": "Toți D sunt A."
+            },
+            {
+              "id": "I_B_f",
+              "text": "Unii A sunt C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "propositions": [
+        "Unele suplimente alimentare sunt dăunătoare sănătății.",
+        "Nicio infracțiune nu este faptă morală.",
+        "Toți urșii Panda sunt animale protejate de legile internaționale.",
+        "Unele produse cosmetice nu sunt ieftine."
+      ],
+      "parts": [
+        {
+          "id": "II_A",
+          "title": "A. Precizarea formulelor logice",
+          "points": 2,
+          "items": [
+            {
+              "fieldId": "prop2",
+              "inputType": "short_text",
+              "placeholder": "Scrie forma logică. Exemplu: SeP"
+            },
+            {
+              "fieldId": "prop4",
+              "inputType": "short_text",
+              "placeholder": "Scrie forma logică. Exemplu: SoP"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Operații logice asupra propozițiilor",
+          "points": 8,
+          "inputConfig": {
+            "inputType": "structured_text",
+            "placeholder": "Scrie forma logică și propoziția în limbaj natural."
+          }
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune și obversiune pentru propozițiile 2 și 3",
+          "points": 8,
+          "inputConfig": {
+            "inputType": "structured_text",
+            "placeholder": "Aplică operația, apoi scrie rezultatul formal și în limbaj natural."
+          }
+        },
+        {
+          "id": "II_D",
+          "title": "D. Conversa obversei propoziției 4",
+          "points": 4,
+          "inputConfig": {
+            "inputType": "structured_text",
+            "placeholder": "Scrie formal și în limbaj natural conversa obversei."
+          }
+        },
+        {
+          "id": "II_E",
+          "title": "E. Opiniile elevilor X și Y",
+          "points": 8,
+          "opinions": {
+            "X": "Dacă unele acțiuni nu sunt titluri admise la bursă, atunci unele titluri admise la bursă nu sunt acțiuni.",
+            "Y": "Dacă toate trăsăturile temperamentale sunt însușiri de personalitate, atunci unele însușiri de personalitate sunt trăsături temperamentale."
+          },
+          "inputConfig": {
+            "inputType": "long_text",
+            "placeholder": "Scrie formalizarea, corectitudinea și explicația cerută."
+          }
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice: oao-3, iai-2",
+          "points": 14,
+          "modes": [
+            "oao-3",
+            "iai-2"
+          ],
+          "diagramRequired": true,
+          "diagramIds": [
+            "diagram_III_A_oao_3_venn",
+            "diagram_III_A_iai_2_venn"
+          ],
+          "inputConfig": {
+            "schemaPlaceholder": "Completează schema. Exemplu: MaP / SiM / SoP",
+            "diagramCanvas": true
+          }
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid pentru propoziția dată",
+          "points": 6,
+          "prompt": "Construiește un silogism valid prin care să justifici propoziția „Unele planete sunt lipsite de viață”.",
+          "inputConfig": {
+            "inputType": "long_text",
+            "placeholder": "Scrie silogismul în limbaj formal și în limbaj natural."
+          }
+        },
+        {
+          "id": "III_C",
+          "title": "C. Stabilirea valorii de adevăr a propozițiilor despre silogism",
+          "points": 4,
+          "statements": [
+            "Termenul mediu este distribuit în ambele premise.",
+            "Predicatul logic al concluziei este reprezentat de termenul „pasăre”.",
+            "Concluzia silogismului este o propoziție universală negativă.",
+            "Subiectul logic al concluziei este distribuit în premisă, dar este nedistribuit în concluzie."
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiție",
+          "points": 6,
+          "definition": "Cercul este figura geometrică plană care nu este nici romb, nici dreptunghi.",
+          "inputConfig": {
+            "inputType": "long_text",
+            "placeholder": "Menționează regula încălcată, o altă regulă și construiește o definiție care o încalcă, cu definitul „cerc”."
+          }
+        }
+      ]
+    }
+  ]
+}

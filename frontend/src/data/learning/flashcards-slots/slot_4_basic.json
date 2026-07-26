@@ -1,0 +1,134 @@
+{
+  "slot": 4,
+  "nivel": "basic",
+  "title": "Slot 4 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic, cu întrebări aplicate și răspunsuri clare.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_4_basic_card_1",
+      "front": "Ce este obversiunea?",
+      "back": "Obversiunea este operația logică prin care se schimbă calitatea propoziției și se neagă predicatul."
+    },
+    {
+      "id": "slot_4_basic_card_2",
+      "front": "Ce este conversiunea?",
+      "back": "Conversiunea este operația logică prin care subiectul și predicatul își schimbă locul."
+    },
+    {
+      "id": "slot_4_basic_card_3",
+      "front": "Ce este contrapozitia?",
+      "back": "Contrapozitia este operația prin care se inversează termenii și se neagă ambii termeni."
+    },
+    {
+      "id": "slot_4_basic_card_4",
+      "front": "Ce este subiectul logic?",
+      "back": "Subiectul logic este termenul despre care se afirmă sau se neagă ceva într-o propoziție."
+    },
+    {
+      "id": "slot_4_basic_card_5",
+      "front": "Ce este predicatul logic?",
+      "back": "Predicatul logic este termenul care se afirmă sau se neagă despre subiect."
+    },
+    {
+      "id": "slot_4_basic_card_6",
+      "front": "Ce este copula?",
+      "back": "Copula este elementul care leagă subiectul de predicat, afirmativ sau negativ."
+    },
+    {
+      "id": "slot_4_basic_card_7",
+      "front": "Ce este cuantorul?",
+      "back": "Cuantorul arată întinderea subiectului: toți, niciun, unii."
+    },
+    {
+      "id": "slot_4_basic_card_8",
+      "front": "Ce este propoziția universală?",
+      "back": "Propoziția universală se referă la întreaga clasă desemnată de subiect."
+    },
+    {
+      "id": "slot_4_basic_card_9",
+      "front": "Ce este propoziția particulară?",
+      "back": "Propoziția particulară se referă la o parte nedeterminată a clasei subiectului."
+    },
+    {
+      "id": "slot_4_basic_card_10",
+      "front": "Ce este propoziția afirmativă?",
+      "back": "Propoziția afirmativă stabilește o relație de includere sau apartenență între S și P."
+    },
+    {
+      "id": "slot_4_basic_card_11",
+      "front": "Ce este propoziția negativă?",
+      "back": "Propoziția negativă stabilește o relație de separare între S și P."
+    },
+    {
+      "id": "slot_4_basic_card_12",
+      "front": "Ce este pătratul opoziției?",
+      "back": "Pătratul opoziției este schema raporturilor dintre propozițiile A, E, I și O."
+    },
+    {
+      "id": "slot_4_basic_card_13",
+      "front": "Ce este contradicția în pătratul logic?",
+      "back": "Contradicția este raportul în care două propoziții nu pot fi nici ambele adevărate, nici ambele false."
+    },
+    {
+      "id": "slot_4_basic_card_14",
+      "front": "Ce este contrarietatea în pătratul logic?",
+      "back": "Contrarietatea este raportul în care două propoziții nu pot fi ambele adevărate, dar pot fi ambele false."
+    },
+    {
+      "id": "slot_4_basic_card_15",
+      "front": "Ce este subcontrarietatea?",
+      "back": "Subcontrarietatea este raportul în care două propoziții nu pot fi ambele false, dar pot fi ambele adevărate."
+    },
+    {
+      "id": "slot_4_basic_card_16",
+      "front": "Ce este subalternarea?",
+      "back": "Subalternarea este raportul dintre o propoziție universală și particulara corespunzătoare."
+    },
+    {
+      "id": "slot_4_basic_card_17",
+      "front": "Ce este metoda Euler?",
+      "back": "Metoda Euler reprezintă raporturile dintre termeni prin cercuri și incluziuni."
+    },
+    {
+      "id": "slot_4_basic_card_18",
+      "front": "Ce este metoda Venn?",
+      "back": "Metoda Venn reprezintă clasele prin cercuri intersectate și regiuni logice."
+    },
+    {
+      "id": "slot_4_basic_card_19",
+      "front": "Ce înseamnă hașurarea în Venn?",
+      "back": "Hașurarea indică faptul că o regiune este vidă, adică nu conține elemente."
+    },
+    {
+      "id": "slot_4_basic_card_20",
+      "front": "Ce înseamnă marcajul x în Venn?",
+      "back": "Marcajul x indică existența a cel puțin unui element într-o regiune."
+    },
+    {
+      "id": "slot_4_basic_card_21",
+      "front": "Ce este o propoziție exclusivă?",
+      "back": "Propoziția exclusivă este o propoziție formulată cu termeni precum „numai” sau „doar”."
+    },
+    {
+      "id": "slot_4_basic_card_22",
+      "front": "Ce este o propoziție exceptivă?",
+      "back": "Propoziția exceptivă exprimă o regulă generală împreună cu o excepție."
+    },
+    {
+      "id": "slot_4_basic_card_23",
+      "front": "Ce este forma logică?",
+      "back": "Forma logică este structura abstractă a propoziției, independentă de conținutul concret."
+    },
+    {
+      "id": "slot_4_basic_card_24",
+      "front": "Ce este valoarea de adevăr?",
+      "back": "Valoarea de adevăr arată dacă o propoziție este adevărată sau falsă."
+    },
+    {
+      "id": "slot_4_basic_card_25",
+      "front": "Ce este o inferență imediată?",
+      "back": "Inferența imediată este trecerea de la o propoziție la alta printr-o operație logică directă."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "examId": "bac_logica_2024_v3",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms_v3",
+      "diagramType": "euler_relation_map",
+      "studentMode": "hybrid_canvas_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A and B are contradictory",
+        "C includes A and B",
+        "C is included in D",
+        "E is included in D",
+        "E intersects C",
+        "E is opposed to A and B"
+      ],
+      "teacherExplanation": "A și B epuizează sfera lui C; C este inclus în D; E este inclus în D și se intersectează cu C, dar nu cu A sau B."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eio_2_venn_v3",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eio-2",
+      "schema": [
+        "PeM",
+        "SiM",
+        "SoP"
+      ],
+      "validity": "valid",
+      "teacherExplanation": "Se reprezintă mai întâi premisa universală PeM, apoi premisa particulară SiM. Marcajul particular rămâne în zona S care nu aparține lui P, deci concluzia SoP se citește din diagramă."
+    },
+    {
+      "diagramId": "diagram_III_A_c_aaa_3_venn_v3",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aaa-3",
+      "schema": [
+        "MaP",
+        "MaS",
+        "SaP"
+      ],
+      "validity": "invalid",
+      "teacherExplanation": "Din premisele MaP și MaS nu rezultă în mod necesar SaP. Diagrama nu garantează că toți S sunt P."
+    }
+  ]
+}

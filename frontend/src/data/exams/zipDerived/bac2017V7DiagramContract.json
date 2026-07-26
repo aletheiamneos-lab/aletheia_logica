@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "id": "diagram-contract-2017-v7",
+    "appliesTo": "bac-logica-2017-v7"
+  },
+  "diagrams": [
+    {
+      "diagramId": "EULER_2017_V7_S1B",
+      "type": "euler",
+      "studentTask": "Desenează raporturile dintre A, B, C, D.",
+      "expectedStructure": [
+        "A se încrucișează cu B",
+        "A este în opoziție cu D",
+        "D este inclus în B",
+        "C este inclus în A ∩ B",
+        "C nu are elemente comune cu D"
+      ],
+      "rendererHints": {
+        "shape": "circles/sets",
+        "smallPreview": true,
+        "allowUploadFallback": true
+      }
+    },
+    {
+      "diagramId": "VENN_2017_V7_S3A",
+      "type": "venn_syllogism",
+      "studentTask": "Verifică modurile aee-2 și iai-4 prin diagrame Venn.",
+      "expectedModes": [
+        {
+          "mode": "aee-2",
+          "validity": "valid"
+        },
+        {
+          "mode": "iai-4",
+          "validity": "valid"
+        }
+      ],
+      "rendererHints": {
+        "showThreeTerms": true,
+        "allowShadingAndX": true,
+        "allowUploadFallback": true
+      }
+    }
+  ],
+  "storage": "Salvează desenul elevului ca SVG/PNG/base64 și atașează-l la răspunsul testului și la PDF-ul final."
+}

@@ -1,0 +1,280 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul EducatieiNationale",
+      "x": 1492.3543701171875,
+      "y": 193.64869689941406,
+      "score": 0.9803288907840334,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.156982421875,
+      "y": 262.6194763183594,
+      "score": 0.993609701593717,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULaIIII-lea",
+      "x": 364.5042724609375,
+      "y": 525.2389526367188,
+      "score": 0.9115869435999129,
+      "page_number": 3
+    },
+    {
+      "text": "(30 depuncte)",
+      "x": 2889.620849609375,
+      "y": 530.5443725585938,
+      "score": 0.9566644063362708,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fieurmatoareledouamoduri silogistice:aee-2,aai-4.",
+      "x": 367.1455993652344,
+      "y": 612.7787475585938,
+      "score": 0.9796322233536664,
+      "page_number": 3
+    },
+    {
+      "text": "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.6683349609375,
+      "y": 689.7077026367188,
+      "score": 0.9738420300431304,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 454.3096618652344,
+      "y": 766.6365966796875,
+      "score": 0.961803433039914,
+      "page_number": 3
+    },
+    {
+      "text": "scheme deinferenta.",
+      "x": 451.6683349609375,
+      "y": 843.5655517578125,
+      "score": 0.9770447015762329,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3037.53564453125,
+      "y": 846.21826171875,
+      "score": 0.9909586608409882,
+      "page_number": 3
+    },
+    {
+      "text": "2.Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 451.6683349609375,
+      "y": 923.147216796875,
+      "score": 0.9755698783057076,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date,precizand totodata deciziala care ati ajuns.",
+      "x": 451.6683349609375,
+      "y": 1000.076171875,
+      "score": 0.9657178218247461,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3040.1767578125,
+      "y": 1002.7288818359375,
+      "score": 0.9837924540042877,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 364.5042724609375,
+      "y": 1077.005126953125,
+      "score": 0.9907429100207563,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Unele teori istoricenu suntcorecte\"",
+      "x": 451.6683349609375,
+      "y": 1161.8922119140625,
+      "score": 0.9573760408422222,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3050.7421875,
+      "y": 1164.544921875,
+      "score": 0.9546225219964981,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fieurmatorul silogism:Unelerationamenteimediate sunt corecte deci unelerationamente",
+      "x": 364.5042724609375,
+      "y": 1230.8629150390625,
+      "score": 0.9743127009447883,
+      "page_number": 3
+    },
+    {
+      "text": "deductivenusuntcorecte,pentrucaunelerationamentedeductivesuntimediate.",
+      "x": 451.6683349609375,
+      "y": 1310.444580078125,
+      "score": 0.9919893418039595,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 359.2215881347656,
+      "y": 1392.678955078125,
+      "score": 0.9843812874048063,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 359.2215881347656,
+      "y": 1469.60791015625,
+      "score": 0.9714829446304412,
+      "page_number": 3
+    },
+    {
+      "text": "1. Termenul mediu este distribuit in ambele premise.",
+      "x": 451.6683349609375,
+      "y": 1549.1895751953125,
+      "score": 0.9674913310087644,
+      "page_number": 3
+    },
+    {
+      "text": "2. Subiectul logic al concluziei este reprezentat de termenul,rationament deductiv\"",
+      "x": 451.6683349609375,
+      "y": 1626.1185302734375,
+      "score": 0.9808081058134516,
+      "page_number": 3
+    },
+    {
+      "text": "3. Concluzia silogismului este o propozitie particulara negativa.",
+      "x": 451.6683349609375,
+      "y": 1708.3529052734375,
+      "score": 0.9943509936332703,
+      "page_number": 3
+    },
+    {
+      "text": "4. Predicatul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.",
+      "x": 451.6683349609375,
+      "y": 1785.2818603515625,
+      "score": 0.967084566342462,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 1856.9052734375,
+      "score": 0.9987881928682327,
+      "page_number": 3
+    },
+    {
+      "text": "D. Fie urmatoarea definitie:",
+      "x": 367.1455993652344,
+      "y": 1939.1396484375,
+      "score": 0.9681331430162702,
+      "page_number": 3
+    },
+    {
+      "text": "Silogismulesteunrationamentdeductiv.",
+      "x": 454.3096618652344,
+      "y": 2018.7213134765625,
+      "score": 0.9945597797632217,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 446.3856506347656,
+      "y": 2095.650390625,
+      "score": 0.9737563348478742,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 2095.650390625,
+      "score": 0.997922882437706,
+      "page_number": 3
+    },
+    {
+      "text": "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+      "x": 449.0269775390625,
+      "y": 2175.23193359375,
+      "score": 0.9899915665388107,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\".",
+      "x": 578.452392578125,
+      "y": 2257.46630859375,
+      "score": 0.9875207666943713,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3040.1767578125,
+      "y": 2257.46630859375,
+      "score": 0.9505356401205063,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 361.8629150390625,
+      "y": 4942.02099609375,
+      "score": 0.9641197944174007,
+      "page_number": 3
+    },
+    {
+      "text": "Simulare",
+      "x": 3077.155517578125,
+      "y": 4947.326171875,
+      "score": 0.9993475824594498,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.475830078125,
+      "y": 5024.25537109375,
+      "score": 0.9528036628450666,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul EducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "SUBIECTULaIIII-lea",
+    "(30 depuncte)",
+    "A.Fieurmatoareledouamoduri silogistice:aee-2,aai-4.",
+    "1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme deinferenta.",
+    "8 puncte",
+    "2.Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date,precizand totodata deciziala care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Unele teori istoricenu suntcorecte\"",
+    "6 puncte",
+    "C.Fieurmatorul silogism:Unelerationamenteimediate sunt corecte deci unelerationamente",
+    "deductivenusuntcorecte,pentrucaunelerationamentedeductivesuntimediate.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1. Termenul mediu este distribuit in ambele premise.",
+    "2. Subiectul logic al concluziei este reprezentat de termenul,rationament deductiv\"",
+    "3. Concluzia silogismului este o propozitie particulara negativa.",
+    "4. Predicatul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.",
+    "4 puncte",
+    "D. Fie urmatoarea definitie:",
+    "Silogismulesteunrationamentdeductiv.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\".",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Simulare",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul EducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\nSUBIECTULaIIII-lea\n(30 depuncte)\nA.Fieurmatoareledouamoduri silogistice:aee-2,aai-4.\n1.Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme deinferenta.\n8 puncte\n2.Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date,precizand totodata deciziala care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Unele teori istoricenu suntcorecte\"\n6 puncte\nC.Fieurmatorul silogism:Unelerationamenteimediate sunt corecte deci unelerationamente\ndeductivenusuntcorecte,pentrucaunelerationamentedeductivesuntimediate.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1. Termenul mediu este distribuit in ambele premise.\n2. Subiectul logic al concluziei este reprezentat de termenul,rationament deductiv\"\n3. Concluzia silogismului este o propozitie particulara negativa.\n4. Predicatul logic al concluziei este distribuit in premisa, dar este nedistribuit in concluzie.\n4 puncte\nD. Fie urmatoarea definitie:\nSilogismulesteunrationamentdeductiv.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,silogism\".\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nSimulare\nPagina 3 din 3"
+}

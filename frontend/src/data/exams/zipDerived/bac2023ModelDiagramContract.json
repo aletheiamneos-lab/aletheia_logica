@@ -1,0 +1,61 @@
+{
+  "examId": "bac_logica_2023_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms_2023_model",
+      "diagramType": "euler_relation_map",
+      "studentMode": "hybrid_canvas_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q"
+      ],
+      "relations": [
+        "M and N are contrary/disjoint inside O",
+        "O is genus for M and N",
+        "P intersects O",
+        "P is included in Q",
+        "Q intersects O",
+        "Q is opposed to M and N"
+      ],
+      "teacherExplanation": "M și N sunt clase opuse în interiorul lui O. P se încrucișează cu O și este inclus în Q. Q se încrucișează cu O, dar este în opoziție cu M și N."
+    },
+    {
+      "diagramId": "diagram_III_A_c_oao_3_venn_2023_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "oao-3",
+      "schema": [
+        "MoP",
+        "MaS",
+        "SoP"
+      ],
+      "validity": "valid",
+      "teacherExplanation": "După reprezentarea premiselor MoP și MaS, concluzia SoP este citibilă din diagramă."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eee_4_venn_2023_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eee-4",
+      "schema": [
+        "PeM",
+        "MeS",
+        "SeP"
+      ],
+      "validity": "invalid",
+      "teacherExplanation": "După reprezentarea premiselor, concluzia SeP nu rezultă necesar; modul eee-4 este nevalid."
+    }
+  ]
+}

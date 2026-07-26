@@ -1,0 +1,134 @@
+{
+  "slot": 11,
+  "nivel": "basic",
+  "title": "Slot 11 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic, importate din documentul Word pentru slotul 11.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_11_basic_card_1",
+      "front": "Logica studiază formele și legile gândirii ____.",
+      "back": "Răspuns: corecte. Explicație: Logica nu analizează orice opinie, ci regulile prin care gândirea devine coerentă și validă. Exemplu: Un raționament corect păstrează legătura dintre premise și concluzie."
+    },
+    {
+      "id": "slot_11_basic_card_2",
+      "front": "Unitatea logică prin care este exprimată o noțiune se numește ____.",
+      "back": "Răspuns: termen. Explicație: Termenul este elementul de bază al gândirii logice; prin el indicăm un obiect, o clasă sau o proprietate. Exemplu: „medic” este termen logic."
+    },
+    {
+      "id": "slot_11_basic_card_3",
+      "front": "Totalitatea proprietăților unui termen formează ____ termenului.",
+      "back": "Răspuns: intensiunea. Explicație: Intensiunea arată conținutul termenului, adică notele prin care îl recunoaștem. Exemplu: Pentru „medic”, notele pot fi trăsături definitorii ale clasei respective."
+    },
+    {
+      "id": "slot_11_basic_card_4",
+      "front": "Totalitatea obiectelor la care se aplică un termen formează ____ termenului.",
+      "back": "Răspuns: extensiunea. Explicație: Extensiunea arată sfera termenului, adică toate obiectele care intră în clasa respectivă. Exemplu: Extensiunea termenului „medicii” cuprinde toate cazurile care sunt medicii."
+    },
+    {
+      "id": "slot_11_basic_card_5",
+      "front": "Când intensiunea unui termen crește, extensiunea lui ____.",
+      "back": "Răspuns: scade. Explicație: Cu cât adăugăm mai multe trăsături, cu atât clasa obiectelor vizate devine mai restrânsă. Exemplu: „medic absolvent” este mai restrâns decât „medic”."
+    },
+    {
+      "id": "slot_11_basic_card_6",
+      "front": "Operația logică prin care se stabilește sensul exact al unui termen se numește ____.",
+      "back": "Răspuns: definire. Explicație: Definirea fixează sensul termenului și reduce ambiguitatea. Exemplu: O definiție bună arată ce este termenul, nu doar oferă exemple întâmplătoare."
+    },
+    {
+      "id": "slot_11_basic_card_7",
+      "front": "Într-o definiție, termenul explicat se numește ____.",
+      "back": "Răspuns: definit. Explicație: Definitul este termenul care trebuie lămurit. Exemplu: Dacă definim „medic”, atunci „medic” este definitul."
+    },
+    {
+      "id": "slot_11_basic_card_8",
+      "front": "Într-o definiție, expresia care explică termenul se numește ____.",
+      "back": "Răspuns: definitor. Explicație: Definitorul oferă sensul termenului definit. Exemplu: În „medicul este ...”, partea de după „este” funcționează ca definitor."
+    },
+    {
+      "id": "slot_11_basic_card_9",
+      "front": "Definiția prin gen proxim și diferență specifică indică mai întâi clasa mai largă, numită ____.",
+      "back": "Răspuns: gen proxim. Explicație: Genul proxim așază termenul într-o clasă mai generală. Exemplu: Pentru „medic”, genul apropiat poate fi „absolvent” dacă medicii sunt incluși în absolvenți."
+    },
+    {
+      "id": "slot_11_basic_card_10",
+      "front": "Trăsătura care separă termenul definit de celelalte elemente ale aceluiași gen se numește ____.",
+      "back": "Răspuns: diferență specifică. Explicație: Diferența specifică individualizează termenul în interiorul genului proxim. Exemplu: Fără diferență specifică, definiția rămâne prea largă."
+    },
+    {
+      "id": "slot_11_basic_card_11",
+      "front": "Operația logică prin care împărțim o mulțime în clase după un criteriu se numește ____.",
+      "back": "Răspuns: clasificare. Explicație: Clasificarea organizează obiectele pe baza unei proprietăți comune. Exemplu: Dacă împărțim vehiculele după propulsie, criteriul poate fi „cu motor/fără motor”."
+    },
+    {
+      "id": "slot_11_basic_card_12",
+      "front": "Regula care cere folosirea unei singure baze de împărțire într-o clasificare se numește regula ____.",
+      "back": "Răspuns: criteriului unic. Explicație: Clasele de pe același nivel trebuie construite după același criteriu. Exemplu: „Elevi: minori și sportivi” amestecă vârsta cu activitatea."
+    },
+    {
+      "id": "slot_11_basic_card_13",
+      "front": "O clasificare corectă trebuie să includă toate elementele domeniului; această regulă se numește ____.",
+      "back": "Răspuns: completitudine. Explicație: Completitudinea cere ca niciun element al domeniului să nu rămână în afara claselor. Exemplu: Zilele săptămânii nu pot fi doar luni, marți și miercuri."
+    },
+    {
+      "id": "slot_11_basic_card_14",
+      "front": "Regula potrivit căreia două clase de pe același nivel nu trebuie să se suprapună se numește ____.",
+      "back": "Răspuns: excludere reciprocă. Explicație: Un element nu trebuie să aparțină simultan mai multor clase ale aceleiași clasificări. Exemplu: „Persoane: elevi și minori” încalcă regula, fiindcă un elev poate fi minor."
+    },
+    {
+      "id": "slot_11_basic_card_15",
+      "front": "Propoziția categorică exprimă un raport între subiectul logic și ____ logic.",
+      "back": "Răspuns: predicatul. Explicație: Subiectul indică despre cine se vorbește, iar predicatul indică ce se afirmă sau se neagă despre subiect. Exemplu: În „Toți medicii sunt absolvenți”, predicatul este „absolvenți”."
+    },
+    {
+      "id": "slot_11_basic_card_16",
+      "front": "Propoziția universal afirmativă are forma standard: ____ S sunt P.",
+      "back": "Răspuns: Toți. Explicație: Aceasta este propoziția de tip A și afirmă includerea întregii clase S în P. Exemplu: „Toți medicii sunt absolvenți” este propoziție A."
+    },
+    {
+      "id": "slot_11_basic_card_17",
+      "front": "Propoziția universal negativă are forma standard: ____ S nu este P.",
+      "back": "Răspuns: Niciun. Explicație: Aceasta este propoziția de tip E și afirmă separarea completă dintre S și P. Exemplu: „Niciun medic nu este absolvent” are forma E, dacă neagă raportul dintre clase."
+    },
+    {
+      "id": "slot_11_basic_card_18",
+      "front": "Propoziția particular afirmativă are forma standard: ____ S sunt P.",
+      "back": "Răspuns: Unii. Explicație: Aceasta este propoziția de tip I și afirmă că există cel puțin un S care este P. Exemplu: „Unii medicii sunt absolvenți” este tip I."
+    },
+    {
+      "id": "slot_11_basic_card_19",
+      "front": "Propoziția particular negativă are forma standard: ____ S nu sunt P.",
+      "back": "Răspuns: Unii. Explicație: Aceasta este propoziția de tip O și afirmă că există cel puțin un S care nu este P. Exemplu: „Unii medicii nu sunt absolvenți” este tip O."
+    },
+    {
+      "id": "slot_11_basic_card_20",
+      "front": "În propoziția A, subiectul este distribuit, iar predicatul este ____.",
+      "back": "Răspuns: nedistribuit. Explicație: A vorbește despre toți S, dar nu despre toți P. Exemplu: Din „Toți medicii sunt absolvenți” nu rezultă că toți absolvenți sunt medicii."
+    },
+    {
+      "id": "slot_11_basic_card_21",
+      "front": "În propoziția E, atât subiectul, cât și predicatul sunt ____.",
+      "back": "Răspuns: distribuiți. Explicație: E separă complet cele două clase, deci se referă la întreaga sferă a ambilor termeni. Exemplu: „Niciun medic nu este absolvent” exclude complet intersecția."
+    },
+    {
+      "id": "slot_11_basic_card_22",
+      "front": "În propoziția I, nici subiectul, nici predicatul nu sunt ____.",
+      "back": "Răspuns: distribuiți. Explicație: I afirmă existența unei intersecții parțiale, fără să vorbească despre întreaga clasă S sau întreaga clasă P. Exemplu: „Unii medicii sunt absolvenți” nu spune nimic despre toți medicii sau toți absolvenți."
+    },
+    {
+      "id": "slot_11_basic_card_23",
+      "front": "În propoziția O, subiectul este nedistribuit, iar predicatul este ____.",
+      "back": "Răspuns: distribuit. Explicație: O afirmă că unii S sunt excluși din întreaga clasă P. Exemplu: „Unii medicii nu sunt absolvenți” exclude acei S din clasa absolvenți."
+    },
+    {
+      "id": "slot_11_basic_card_24",
+      "front": "Silogismul are două premise și o ____.",
+      "back": "Răspuns: concluzie. Explicație: Concluzia este propoziția care rezultă din legătura realizată prin termenul mediu. Exemplu: Silogismul este un raționament deductiv mediat."
+    },
+    {
+      "id": "slot_11_basic_card_25",
+      "front": "Într-un silogism, termenul care apare în premise, dar nu apare în concluzie, se numește ____.",
+      "back": "Răspuns: termen mediu. Explicație: Termenul mediu face legătura dintre termenul minor și termenul major. Exemplu: Dacă termenul mediu nu leagă corect premisele, silogismul devine nevalid."
+    }
+  ]
+}

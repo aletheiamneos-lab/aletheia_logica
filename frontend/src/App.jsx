@@ -1,0 +1,327 @@
+import { Suspense, lazy, useEffect, useState } from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+import { BrowserRouter, HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
+
+import {
+  applyRootFont,
+  applyRootTheme,
+  buildAppearancePreferenceScope,
+  isStaticPreviewMode,
+  normalizeThemeName,
+  resolveInitialFont,
+  resolveInitialTheme,
+} from "./appEnvironment"
+import RequireAuth from "./components/auth/RequireAuth"
+import Navbar from "./components/Navbar"
+import SessionBadge from "./components/auth/SessionBadge"
+import { AuthProvider } from "./context/AuthContext"
+import { useAuth } from "./context/useAuth"
+
+const SIDEBAR_VISIBILITY_STORAGE_KEY = "logica-sidebar-hidden"
+
+const HomePage = lazy(() => import("./pages/HomePage"))
+const BibliotecaPage = lazy(() => import("./pages/BibliotecaPage"))
+const AccessSettingsPage = lazy(() => import("./pages/AccessSettingsPage"))
+const LessonsPage = lazy(() => import("./pages/LessonsPage"))
+const LearningHubPage = lazy(() => import("./pages/LearningHubPage"))
+const LearningModulePage = lazy(() => import("./pages/LearningModulePage"))
+const LearningItemPage = lazy(() => import("./pages/LearningItemPage"))
+const SilogismulPage = lazy(() => import("./pages/SilogismulPage"))
+const FlashcardsHomePage = lazy(() => import("./pages/FlashcardsHomePage"))
+const FlashcardsLevelPage = lazy(() => import("./pages/FlashcardsLevelPage"))
+const FlashcardSlotPage = lazy(() => import("./pages/FlashcardSlotPage"))
+const LessonDetailPage = lazy(() => import("./pages/LessonDetailPage"))
+const LessonWorkspacePage = lazy(() => import("./pages/LessonWorkspacePage"))
+const ExamTrackPage = lazy(() => import("./pages/ExamTrackPage"))
+const ExamModulePage = lazy(() => import("./pages/ExamModulePage"))
+const PracticePage = lazy(() => import("./pages/PracticePage"))
+const IntegratedTestsPage = lazy(() => import("./pages/IntegratedTestsPage"))
+const IntegratedTestExamPage = lazy(() => import("./pages/IntegratedTestExamPage"))
+const ProfilePage = lazy(() => import("./pages/ProfilePage"))
+const ButtonSystemPreviewPage = lazy(() => import("./pages/ButtonSystemPreviewPage"))
+
+function PageFallback() {
+  return (
+    <section className="hero-panel">
+      <p className="section-kicker">Se incarca</p>
+      <h1 className="section-title mt-2">Pregatim pagina.</h1>
+      <p className="section-subtitle mt-3">
+        Continutul local se incarca o singura data. Daca pagina este mai mare, poate dura putin mai mult
+        la prima accesare.
+      </p>
+    </section>
+  )
+}
+
+function AppLayout() {
+  const { isAuthenticated, isAdmin, session } = useAuth()
+  const location = useLocation()
+  const preferenceScope = buildAppearancePreferenceScope(session)
+  const [isSidebarHidden, setIsSidebarHidden] = useState(() => {
+    try {
+      return window.localStorage.getItem(SIDEBAR_VISIBILITY_STORAGE_KEY) === "true"
+    } catch {
+      return false
+    }
+  })
+  const isIntegratedExamRoute =
+    isAuthenticated && location.pathname.startsWith("/teste-integrate/examen/")
+  const hasSidebar = isAuthenticated && !isIntegratedExamRoute
+  const authenticatedLayoutStyle =
+    hasSidebar && !isSidebarHidden
+      ? { gridTemplateColumns: "var(--workspace-sidebar-width, 280px) minmax(0, 1fr)" }
+      : undefined
+
+  useEffect(() => {
+    const nextTheme = resolveInitialTheme(preferenceScope)
+    applyRootTheme(nextTheme, preferenceScope)
+    applyRootFont(resolveInitialFont(preferenceScope))
+  }, [preferenceScope])
+
+  useEffect(() => {
+    function handleThemeChange(event) {
+      const nextTheme = normalizeThemeName(event?.detail?.theme)
+      applyRootTheme(nextTheme, preferenceScope)
+    }
+
+    window.addEventListener("logica-theme-change", handleThemeChange)
+    return () => window.removeEventListener("logica-theme-change", handleThemeChange)
+  }, [preferenceScope])
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(SIDEBAR_VISIBILITY_STORAGE_KEY, String(isSidebarHidden))
+    } catch {
+      // Ignore storage failures in restricted browser contexts.
+    }
+  }, [isSidebarHidden])
+
+  return (
+    <div
+      className={`app-shell min-h-screen ${isAuthenticated ? "app-shell-auth" : "app-shell-public"} ${
+        hasSidebar && isSidebarHidden ? "app-shell-sidebar-hidden" : "app-shell-sidebar-visible"
+      } ${isIntegratedExamRoute ? "app-shell-exam" : ""}`}
+    >
+      <div
+        className={`app-layout-frame min-h-screen ${hasSidebar && !isSidebarHidden ? "lg:grid" : ""}`}
+        style={authenticatedLayoutStyle}
+      >
+        {hasSidebar && !isSidebarHidden ? (
+          <div className="app-sidebar-column lg:min-h-screen">
+            <Navbar />
+          </div>
+        ) : null}
+        {hasSidebar ? (
+          <button
+            type="button"
+            className={`app-sidebar-edge-toggle ${isSidebarHidden ? "is-hidden" : "is-visible"}`}
+            aria-label={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
+            title={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
+            onClick={() => setIsSidebarHidden((current) => !current)}
+          >
+            {isSidebarHidden ? (
+              <ChevronRight size={18} strokeWidth={1.9} />
+            ) : (
+              <ChevronLeft size={18} strokeWidth={1.9} />
+            )}
+          </button>
+        ) : null}
+        <div
+          className={`app-content-shell ${
+            isAuthenticated ? "app-content-shell-auth app-content-stage" : "app-content-shell-public"
+          }`}
+        >
+          <main
+            className={`app-content-main ${
+              isAuthenticated ? "app-content-main-auth" : "app-content-main-public"
+            }`}
+          >
+            <Suspense fallback={<PageFallback />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route
+                  path="/biblioteca"
+                  element={
+                    <RequireAuth>
+                      <BibliotecaPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/setari-acces"
+                  element={
+                    <RequireAuth teacherOnly>
+                      <AccessSettingsPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/lectii"
+                  element={
+                    <RequireAuth>
+                      <LessonsPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning"
+                  element={
+                    <RequireAuth>
+                      <LearningHubPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/silogismul"
+                  element={
+                    <RequireAuth>
+                      <SilogismulPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/module/flash-cards"
+                  element={
+                    <RequireAuth>
+                      <FlashcardsHomePage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/module/flash-cards/:level"
+                  element={
+                    <RequireAuth>
+                      <FlashcardsLevelPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/module/flash-cards/:level/:slotId"
+                  element={
+                    <RequireAuth>
+                      <FlashcardSlotPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/module/:moduleId"
+                  element={
+                    <RequireAuth>
+                      <LearningModulePage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/learning/module/:moduleId/item/:itemId"
+                  element={
+                    <RequireAuth>
+                      <LearningItemPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route path="/learning-2-0" element={<Navigate replace to="/learning" />} />
+                <Route
+                  path="/lectii/:lessonId"
+                  element={
+                    <RequireAuth>
+                      <LessonDetailPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/lectii/:lessonId/:tab"
+                  element={
+                    <RequireAuth>
+                      <LessonWorkspacePage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/bac"
+                  element={
+                    <RequireAuth>
+                      <ExamTrackPage trackSlug="bac" />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/bac/:moduleSlug"
+                  element={
+                    <RequireAuth>
+                      <ExamModulePage trackSlug="bac" />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/admitere"
+                  element={
+                    <RequireAuth>
+                      <ExamTrackPage trackSlug="admitere" />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/admitere/:moduleSlug"
+                  element={
+                    <RequireAuth>
+                      <ExamModulePage trackSlug="admitere" />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/exersare"
+                  element={
+                    <RequireAuth>
+                      <PracticePage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/teste-integrate"
+                  element={
+                    <RequireAuth>
+                      <IntegratedTestsPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/teste-integrate/examen/:attemptId"
+                  element={
+                    <RequireAuth>
+                      <IntegratedTestExamPage />
+                    </RequireAuth>
+                  }
+                />
+                <Route
+                  path="/profil"
+                  element={
+                    <RequireAuth>
+                      <ProfilePage />
+                    </RequireAuth>
+                  }
+                />
+                <Route path="/progres" element={<Navigate replace to="/teste-integrate" />} />
+                <Route path="/button-preview" element={<ButtonSystemPreviewPage />} />
+              </Routes>
+            </Suspense>
+          </main>
+          {!isIntegratedExamRoute && isAdmin ? <SessionBadge /> : null}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function App() {
+  const Router = isStaticPreviewMode() ? HashRouter : BrowserRouter
+
+  return (
+    <AuthProvider>
+      <Router>
+        <AppLayout />
+      </Router>
+    </AuthProvider>
+  )
+}
+
+export default App

@@ -1,0 +1,256 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul EducatieiNationale",
+      "x": 1489.713134765625,
+      "y": 188.34324645996094,
+      "score": 0.9741534549614479,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNational deEvaluaresi Examinare",
+      "x": 1336.515625,
+      "y": 257.31402587890625,
+      "score": 0.9801732019374245,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2889.620849609375,
+      "y": 443.0045471191406,
+      "score": 0.9648102564471108,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 364.5042724609375,
+      "y": 450.96270751953125,
+      "score": 0.9242998589487637,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fieurmatoareledouamoduri silogistice:eae-4,aii-3",
+      "x": 364.5042724609375,
+      "y": 530.5443725585938,
+      "score": 0.9858545064926147,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 449.0269775390625,
+      "y": 604.8206176757812,
+      "score": 0.9816317525894745,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.6683349609375,
+      "y": 687.0549926757812,
+      "score": 0.9828270090662915,
+      "page_number": 3
+    },
+    {
+      "text": "scheme de inferenta.",
+      "x": 454.3096618652344,
+      "y": 769.2893676757812,
+      "score": 0.969179430603981,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3037.53564453125,
+      "y": 766.6365966796875,
+      "score": 0.9903885126113892,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 449.0269775390625,
+      "y": 840.912841796875,
+      "score": 0.9843679401609633,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 449.0269775390625,
+      "y": 920.4945068359375,
+      "score": 0.9814062799726214,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.894287109375,
+      "y": 920.4945068359375,
+      "score": 0.9483950883150101,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.1455993652344,
+      "y": 1000.076171875,
+      "score": 0.9904365230281398,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Unii artistinu sunt pictori\"",
+      "x": 454.3096618652344,
+      "y": 1084.9632568359375,
+      "score": 0.9589586991530198,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.100830078125,
+      "y": 1082.310546875,
+      "score": 0.94862911850214,
+      "page_number": 3
+    },
+    {
+      "text": "C. Fie urmatorul silogism: Daca toate lucrurile suparatoare sunt inventi si niciun adevar nu este",
+      "x": 361.8629150390625,
+      "y": 1153.9339599609375,
+      "score": 0.9710426852875149,
+      "page_number": 3
+    },
+    {
+      "text": "inventie,rezultacaniciunadevarnuestesuparator.",
+      "x": 449.0269775390625,
+      "y": 1236.16845703125,
+      "score": 0.9861980935801631,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1310.444580078125,
+      "score": 0.9857506453990936,
+      "page_number": 3
+    },
+    {
+      "text": "a.Precizati termenul mediu alsilogismului dat.",
+      "x": 451.6683349609375,
+      "y": 1318.40283203125,
+      "score": 0.9641492962837219,
+      "page_number": 3
+    },
+    {
+      "text": "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+      "x": 449.0269775390625,
+      "y": 1390.0262451171875,
+      "score": 0.9845570895601722,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1392.678955078125,
+      "score": 0.9625381901860237,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 364.5042724609375,
+      "y": 1469.60791015625,
+      "score": 0.9920408438753199,
+      "page_number": 3
+    },
+    {
+      "text": "Tortulesteunprodusdecofetarie.",
+      "x": 454.3096618652344,
+      "y": 1549.1895751953125,
+      "score": 0.979350616534551,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 451.6683349609375,
+      "y": 1626.1185302734375,
+      "score": 0.9814769062731001,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1626.1185302734375,
+      "score": 0.9402882382273674,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 449.0269775390625,
+      "y": 1705.7001953125,
+      "score": 0.975583011507988,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,tort\".",
+      "x": 578.452392578125,
+      "y": 1787.9345703125,
+      "score": 0.9514964299324231,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 1782.629150390625,
+      "score": 0.9984039589762688,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4942.02099609375,
+      "score": 0.9826162566944044,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta 1",
+      "x": 3034.894287109375,
+      "y": 4947.326171875,
+      "score": 0.9828874945640564,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1656.1171875,
+      "y": 5021.6025390625,
+      "score": 0.9399555368082864,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul EducatieiNationale",
+    "CentrulNational deEvaluaresi Examinare",
+    "(30 de puncte)",
+    "SUBIECTULalII-lea",
+    "A.Fieurmatoareledouamoduri silogistice:eae-4,aii-3",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme de inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Unii artistinu sunt pictori\"",
+    "6 puncte",
+    "C. Fie urmatorul silogism: Daca toate lucrurile suparatoare sunt inventi si niciun adevar nu este",
+    "inventie,rezultacaniciunadevarnuestesuparator.",
+    "2 puncte",
+    "a.Precizati termenul mediu alsilogismului dat.",
+    "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+    "2 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Tortulesteunprodusdecofetarie.",
+    "a.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,tort\".",
+    "4 puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta 1",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul EducatieiNationale\nCentrulNational deEvaluaresi Examinare\n(30 de puncte)\nSUBIECTULalII-lea\nA.Fieurmatoareledouamoduri silogistice:eae-4,aii-3\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme de inferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Unii artistinu sunt pictori\"\n6 puncte\nC. Fie urmatorul silogism: Daca toate lucrurile suparatoare sunt inventi si niciun adevar nu este\ninventie,rezultacaniciunadevarnuestesuparator.\n2 puncte\na.Precizati termenul mediu alsilogismului dat.\nb. Mentionati, in limbaj natural, premisa minora a silogismului dat.\n2 puncte\nD.Fie urmatoarea definitie:\nTortulesteunprodusdecofetarie.\na.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,tort\".\n4 puncte\nProba scrisa la logica, argumentare si comunicare\nVarianta 1\nPagina 3 din 3"
+}

@@ -1,0 +1,55 @@
+{
+  "examId": "bac_logica_2018_model",
+  "diagrams": [
+    {
+      "diagramId": "DIA_S1B_EULER_2018_MODEL",
+      "type": "euler",
+      "usedIn": "S1B",
+      "studentMode": [
+        "canvas",
+        "imageUpload"
+      ],
+      "teacherExpectedModel": {
+        "relations": [
+          "A contradiction with B",
+          "C subset of B",
+          "D subset of A"
+        ]
+      }
+    },
+    {
+      "diagramId": "DIA_S3A_VENN_2018_MODEL",
+      "type": "venn_syllogism",
+      "usedIn": "S3A",
+      "studentMode": [
+        "canvas",
+        "imageUpload"
+      ],
+      "modes": [
+        {
+          "mode": "aai-3",
+          "scheme": [
+            "MaP",
+            "MaS",
+            "SiP"
+          ],
+          "validity": "valid"
+        },
+        {
+          "mode": "eae-2",
+          "scheme": [
+            "PeM",
+            "SaM",
+            "SeP"
+          ],
+          "validity": "valid"
+        }
+      ]
+    }
+  ],
+  "implementationNotes": [
+    "Păstrează diagramele ca obiecte editabile separate de soluții.",
+    "În raportul profesorului, dacă există diagramPreviewSvg, randează lângă explicație.",
+    "În examenul elevului nu afișa schema corectă sau soluția diagramei."
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "lessonId": 3,
+  "title": "Lectia 3 - Raport Tehnic: Mecanica Deducției Logice și Analiza Silogistică",
+  "intro": "Lecția 3 urmărește traseul de la premise la concluzie necesară: deducția, pătratul logic, inferențele imediate, silogismul și controlul validității prin diagrame Venn.",
+  "sections": [
+    {
+      "id": "fundamente-deductie",
+      "title": "Fundamentele deducției",
+      "intro": "Deducția este instrumentul logic al certitudinii.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "În arhitectura gândirii analitice, deducția reprezintă procesul logic prin care o concluzie este derivată cu necesitate din premisele stabilite anterior. Dacă premisele sunt adevărate și forma este validă, adevărul concluziei este garantat."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Raționamentele deductive nu depășesc gradul de generalitate al premiselor și oferă certitudine maximă.",
+            "Raționamentele inductive sau nedeductive spun mai mult decât premisele și oferă doar probabilitate."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Existența premiselor: trebuie să existe propoziții de plecare.",
+            "Derivarea concluziei: concluzia trebuie să fie o propoziție nouă față de datele inițiale.",
+            "Temeiul: premisele trebuie să ofere suport suficient sau necesar pentru concluzie.",
+            "Necesitatea concluziei: concluzia trebuie să rezulte cu rigoare din premise."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "patrat-logic",
+      "title": "Pătratul logic al lui Boethius",
+      "intro": "Pătratul logic este matricea care organizează raporturile de opoziție dintre propozițiile categorice.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Contradicție (SaP-SoP, SeP-SiP): propozițiile nu pot fi simultan nici adevărate, nici false.",
+            "Contrarietate (SaP-SeP): nu pot fi simultan adevărate, dar pot fi simultan false.",
+            "Subcontrarietate (SiP-SoP): nu pot fi simultan false, dar pot fi simultan adevărate.",
+            "Subalternare (SaP-SiP, SeP-SoP): adevărul se transmite de la universală la particulară, iar falsitatea de la particulară la universală."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": ["Valoare cunoscută", "Deducții"],
+          "rows": [
+            ["Dacă SaP = 1", "SeP = 0, SiP = 1, SoP = 0"],
+            ["Dacă SaP = 0", "SeP = ?, SiP = ?, SoP = 1"],
+            ["Dacă SeP = 1", "SaP = 0, SiP = 0, SoP = 1"],
+            ["Dacă SeP = 0", "SaP = ?, SiP = 1, SoP = ?"]
+          ],
+          "footnote": "În tabel, 1 = adevărat, 0 = fals, ? = nedeterminat."
+        }
+      ]
+    },
+    {
+      "id": "inferente-imediate",
+      "title": "Operații logice: conversiunea, obversiunea și distribuirea termenilor",
+      "intro": "Inferențele imediate pleacă de la o singură premisă și respectă legea distribuirii termenilor.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": ["Tip", "Distribuirea subiectului", "Distribuirea predicatului"],
+          "rows": [
+            ["A (SaP)", "S distribuit", "P nedistribuit"],
+            ["E (SeP)", "S distribuit", "P distribuit"],
+            ["I (SiP)", "S nedistribuit", "P nedistribuit"],
+            ["O (SoP)", "S nedistribuit", "P distribuit"]
+          ],
+          "footnote": "Un termen poate apărea distribuit în concluzie numai dacă a fost distribuit și în premisă."
+        },
+        {
+          "type": "distribution_explorer",
+          "forms": [
+            {
+              "symbol": "A",
+              "formula": "SaP",
+              "label": "Universală afirmativă",
+              "subjectDistributed": true,
+              "predicateDistributed": false,
+              "rule": "În SaP, subiectul este luat în toată extensiunea lui, dar predicatul nu este epuizat de propoziție.",
+              "whyItMatters": "Dacă tratezi predicatul ca distribuit în forma A, vei construi conversiuni greșite și silogisme invalide."
+            },
+            {
+              "symbol": "E",
+              "formula": "SeP",
+              "label": "Universală negativă",
+              "subjectDistributed": true,
+              "predicateDistributed": true,
+              "rule": "În SeP, atât subiectul, cât și predicatul sunt luați integral, pentru că propoziția exclude complet întâlnirea lor.",
+              "whyItMatters": "De aceea forma E admite conversiune simplă: distribuirea rămâne corectă și după inversare."
+            },
+            {
+              "symbol": "I",
+              "formula": "SiP",
+              "label": "Particulară afirmativă",
+              "subjectDistributed": false,
+              "predicateDistributed": false,
+              "rule": "În SiP, propoziția afirmă doar existența unei intersecții, fără să epuizeze nici S, nici P.",
+              "whyItMatters": "Forma I spune doar că există o zonă comună; nu te autorizează să vorbești despre întreaga extensiune a termenilor."
+            },
+            {
+              "symbol": "O",
+              "formula": "SoP",
+              "label": "Particulară negativă",
+              "subjectDistributed": false,
+              "predicateDistributed": true,
+              "rule": "În SoP, subiectul nu este luat complet, dar predicatul este exclus integral din partea lui S despre care se vorbește.",
+              "whyItMatters": "Forma O nu se convertește valid, pentru că distribuirea nu se păstrează corect după inversare."
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "label": "Conversiunea simplă",
+          "expression": "SeP → PeS; SiP → PiS",
+          "explanation": "Operația inversează rolurile termenilor fără a altera valoarea de adevăr pentru formele E și I."
+        },
+        {
+          "type": "formula",
+          "label": "Conversiunea prin accident",
+          "expression": "SaP → PiS",
+          "explanation": "Forma A se convertește valid doar prin restrângerea cantității de la universală la particulară."
+        },
+        {
+          "type": "formula",
+          "label": "Obversiunea",
+          "expression": "SaP → Se(non-P); SeP → Sa(non-P); SiP → So(non-P); SoP → Si(non-P)",
+          "explanation": "Obversiunea schimbă calitatea și neagă predicatul, păstrând valoarea de adevăr."
+        }
+      ]
+    },
+    {
+      "id": "silogism",
+      "title": "Silogismul: arhitectura raționamentului mediat",
+      "intro": "Silogismul leagă termenul minor și termenul major prin termenul mediu, care dispare în concluzie.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Silogismul este un raționament deductiv mediat prin care se stabilește o concluzie necesară între S și P cu ajutorul unui al treilea termen, M. Premisa majoră conține P și M, premisa minoră conține S și M, iar concluzia leagă S de P."
+        },
+        {
+          "type": "table",
+          "columns": ["Simbol", "Rol"],
+          "rows": [
+            ["S", "Termen minor, subiectul concluziei"],
+            ["P", "Termen major, predicatul concluziei"],
+            ["M", "Termen mediu, dispare în concluzie"],
+            ["a / e / i / o", "Tipul propoziției: universal afirmativ, universal negativ, particular afirmativ, particular negativ"]
+          ],
+          "footnote": "În problemele de examen, aceste coduri trebuie recunoscute automat."
+        },
+        {
+          "type": "table",
+          "columns": ["Fracție silogistică", "Citire"],
+          "rows": [
+            ["MaP", "Toți M sunt P"],
+            ["MeP", "Niciun M nu este P"],
+            ["MiP", "Unii M sunt P"],
+            ["MoP", "Unii M nu sunt P"],
+            ["PaM", "Toți P sunt M"],
+            ["PeM", "Niciun P nu este M"],
+            ["SaM", "Toți S sunt M"],
+            ["SeM", "Niciun S nu este M"],
+            ["SiM", "Unii S sunt M"],
+            ["SoM", "Unii S nu sunt M"]
+          ],
+          "footnote": "Fracțiile reprezintă forma exactă cerută în barem."
+        },
+        {
+          "type": "image",
+          "asset": "lesson-3/figuri-silogistice.png",
+          "alt": "Cele patru figuri silogistice marcate prin poziția termenului mediu în premise",
+          "caption": "Schemă locală a figurilor silogistice, utilă pentru identificarea rapidă a poziției termenului mediu.",
+          "interactiveTitle": "Identifică figura după poziția termenului mediu",
+          "helpText": "Marcajele îți arată unde stă termenul mediu în premise. Asta decide imediat figura silogistică.",
+          "hotspots": [
+            {
+              "label": "Figura I",
+              "x": 12,
+              "y": 47,
+              "text": "În figura I, termenul mediu este subiect în premisa majoră și predicat în premisa minoră. Este figura de referință pentru modurile perfecte."
+            },
+            {
+              "label": "Figura II",
+              "x": 38,
+              "y": 47,
+              "text": "În figura II, termenul mediu apare ca predicat în ambele premise. De aici apar frecvent moduri care cer conversiune pentru reducere."
+            },
+            {
+              "label": "Figura III și IV",
+              "x": 73,
+              "y": 47,
+              "text": "În figura III, termenul mediu este subiect în ambele premise. În figura IV, el este predicat în premisa majoră și subiect în premisa minoră."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legi-validitate",
+      "title": "Legile generale ale silogismului și verificarea validității",
+      "intro": "Un silogism este valid numai dacă respectă simultan regulile de distribuire și de calitate/cantitate ale premiselor.",
+      "blocks": [
+        {
+          "type": "bullets",
+          "items": [
+            "Termenul mediu trebuie să fie distribuit în cel puțin o premisă.",
+            "Din două premise negative nu rezultă concluzie.",
+            "Din două premise particulare nu rezultă concluzie.",
+            "Dacă o premisă este negativă, concluzia este negativă.",
+            "Dacă o premisă este particulară, concluzia este particulară.",
+            "Un termen distribuit în concluzie trebuie să fie distribuit și în premisă."
+          ]
+        },
+        {
+          "type": "table",
+          "columns": ["Figura", "Procedeu", "Scop"],
+          "rows": [
+            ["Figura II", "Conversiunea premisei", "Obținerea unei forme de Figura I"],
+            ["Figura III", "Conversiune + obversiune", "Eliminarea termenului mediu"],
+            ["Figura IV", "Conversiune + contrapozitie", "Transformarea într-un mod perfect"]
+          ],
+          "footnote": "Reducerea silogismelor servește verificării prin transformare în moduri consacrate."
+        },
+        {
+          "type": "example",
+          "title": "Model complet de analiză",
+          "text": "Silogism: „Toți judecătorii sunt juriști. Niciun medic nu este judecător.” Identificare: S = medici, P = juriști, M = judecători. Formalizare: MaP, SeM. Figura: II. Mod: AEE-2."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Universalele se reprezintă prin hașurarea regiunii vide.",
+            "Particularele se reprezintă prin plasarea unui „x” în regiunea ne-vidă.",
+            "Dacă silogismul conține o premisă universală și una particulară, universala se desenează prima.",
+            "Silogismul este valid dacă, după reprezentarea premiselor, concluzia poate fi citită direct din diagramă."
+          ]
+        },
+        {
+          "type": "callout",
+          "tone": "info",
+          "title": "Concluzia lecției",
+          "text": "Deducția și silogismul transformă discursul dintr-o succesiune de afirmații într-o demonstrație controlabilă prin reguli și diagrame."
+        }
+      ]
+    }
+  ]
+}

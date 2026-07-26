@@ -1,0 +1,352 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei si Cercetari",
+      "x": 1534.786376953125,
+      "y": 219.60079956054688,
+      "score": 0.9749386202205311,
+      "page_number": 2
+    },
+    {
+      "text": "Centrul National pentruCurriculumsi Evaluare",
+      "x": 1370.344970703125,
+      "y": 284.48284912109375,
+      "score": 0.9510439471764998,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2847.826171875,
+      "y": 419.2378845214844,
+      "score": 0.9701326617172786,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 505.7818908691406,
+      "y": 426.7242736816406,
+      "score": 0.88199339972602,
+      "page_number": 2
+    },
+    {
+      "text": "A.",
+      "x": 503.29034423828125,
+      "y": 501.58819580078125,
+      "score": 0.9915529787540436,
+      "page_number": 2
+    },
+    {
+      "text": "a) cate 2 puncte pentru scrierea schemei de inferenta corespunzatoare fiecaruia dintre cele doua",
+      "x": 503.29034423828125,
+      "y": 573.9566040039062,
+      "score": 0.9759270710249742,
+      "page_number": 2
+    },
+    {
+      "text": "moduri silogistice date,astfel:",
+      "x": 505.7818908691406,
+      "y": 651.3159790039062,
+      "score": 0.9644768314976846,
+      "page_number": 2
+    },
+    {
+      "text": "PeM",
+      "x": 503.29034423828125,
+      "y": 718.6935424804688,
+      "score": 0.9959694147109985,
+      "page_number": 2
+    },
+    {
+      "text": "PaM",
+      "x": 916.8853759765625,
+      "y": 721.18896484375,
+      "score": 0.9951964219411215,
+      "page_number": 2
+    },
+    {
+      "text": "SiM",
+      "x": 503.29034423828125,
+      "y": 791.0619506835938,
+      "score": 0.9976675113042196,
+      "page_number": 2
+    },
+    {
+      "text": "MaS",
+      "x": 914.3938598632812,
+      "y": 791.0619506835938,
+      "score": 0.9943632880846659,
+      "page_number": 2
+    },
+    {
+      "text": "SoP",
+      "x": 505.7818908691406,
+      "y": 860.9349365234375,
+      "score": 0.9974564711252848,
+      "page_number": 2
+    },
+    {
+      "text": "SaP",
+      "x": 914.3938598632812,
+      "y": 863.430419921875,
+      "score": 0.9993658860524496,
+      "page_number": 2
+    },
+    {
+      "text": "2x2p=4puncte",
+      "x": 2867.75830078125,
+      "y": 863.430419921875,
+      "score": 0.9984051237503687,
+      "page_number": 2
+    },
+    {
+      "text": "b) construirea, in limbaj natural, unui silogism care sa corespunda uneia dintre cele doua scheme",
+      "x": 498.3072814941406,
+      "y": 935.798828125,
+      "score": 0.9828966911306086,
+      "page_number": 2
+    },
+    {
+      "text": "de inferenta scrisela subpunctul a)",
+      "x": 503.29034423828125,
+      "y": 1015.6536865234375,
+      "score": 0.9588097316878182,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3032.19970703125,
+      "y": 1015.6536865234375,
+      "score": 0.9487817585468292,
+      "page_number": 2
+    },
+    {
+      "text": "Nota: Punctajul pentru construirea in limbaj natural a silogismului cerut se acorda independent de",
+      "x": 500.7987976074219,
+      "y": 1088.0220947265625,
+      "score": 0.9894531557754594,
+      "page_number": 2
+    },
+    {
+      "text": "valoareadeadevarapropozitilor.",
+      "x": 503.29034423828125,
+      "y": 1165.3814697265625,
+      "score": 0.997044446070989,
+      "page_number": 2
+    },
+    {
+      "text": "c) - cate 3 puncte pentru verificarea explicita, prin metoda diagramelor Venn (reprezentare grafica), a",
+      "x": 503.29034423828125,
+      "y": 1237.75,
+      "score": 0.987608889931614,
+      "page_number": 2
+    },
+    {
+      "text": "validitatifiecaruiadintreceledouamodurisilogistice",
+      "x": 505.7818908691406,
+      "y": 1312.6138916015625,
+      "score": 0.9945933604240418,
+      "page_number": 2
+    },
+    {
+      "text": "2x3p=6puncte",
+      "x": 2865.266845703125,
+      "y": 1312.6138916015625,
+      "score": 0.9973706851402918,
+      "page_number": 2
+    },
+    {
+      "text": "- cate 1 punct pentru precizarea deciziei privind validitatea fiecarui mod silogistic, astfel: eio-2, mod",
+      "x": 503.29034423828125,
+      "y": 1377.4959716796875,
+      "score": 0.9891541265306019,
+      "page_number": 2
+    },
+    {
+      "text": "silogisticvalid;aaa-4,modsilogisticnevalid",
+      "x": 510.76495361328125,
+      "y": 1459.84619140625,
+      "score": 0.981439273981821,
+      "page_number": 2
+    },
+    {
+      "text": "2x1p=2puncte",
+      "x": 2867.75830078125,
+      "y": 1462.3416748046875,
+      "score": 0.9953203946352005,
+      "page_number": 2
+    },
+    {
+      "text": "Nota: Punctajul se acorda numai in situatia in care decizia privind validitatea fiecarui mod silogistic",
+      "x": 503.29034423828125,
+      "y": 1529.71923828125,
+      "score": 0.9800998875238363,
+      "page_number": 2
+    },
+    {
+      "text": "rezultadinreprezentareagraficaaacestuia.",
+      "x": 505.7818908691406,
+      "y": 1609.573974609375,
+      "score": 0.9961276158690453,
+      "page_number": 2
+    },
+    {
+      "text": "B. - construirea, in limbaj formal, a oricarui silogism valid care sa justifice propozitia data 3 puncte",
+      "x": 505.7818908691406,
+      "y": 1749.3199462890625,
+      "score": 0.9750270797656133,
+      "page_number": 2
+    },
+    {
+      "text": "- scrierea, in limbaj natural, a silogismului valid construit (cu premise adevarate/plauzibile) 3 puncte",
+      "x": 583.01953125,
+      "y": 1829.1748046875,
+      "score": 0.9672757673722047,
+      "page_number": 2
+    },
+    {
+      "text": "C. cate 1 punct pentru fiecare dintre cele patru raspunsuri corecte, astfel:",
+      "x": 503.29034423828125,
+      "y": 1966.42529296875,
+      "score": 0.981234632040325,
+      "page_number": 2
+    },
+    {
+      "text": "4x1p=4 puncte",
+      "x": 2867.75830078125,
+      "y": 2036.29833984375,
+      "score": 0.9967013735037583,
+      "page_number": 2
+    },
+    {
+      "text": "1-A, 2-F, 3-A, 4-F",
+      "x": 505.7818908691406,
+      "y": 2046.2801513671875,
+      "score": 0.9467400477992164,
+      "page_number": 2
+    },
+    {
+      "text": "D.",
+      "x": 503.29034423828125,
+      "y": 2123.6396484375,
+      "score": 0.9976316690444946,
+      "page_number": 2
+    },
+    {
+      "text": "a)mentionareauneireguli decorectitudinepecareoincalcadefinitiadata",
+      "x": 503.29034423828125,
+      "y": 2196.008056640625,
+      "score": 0.9820320832006859,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3032.19970703125,
+      "y": 2193.512451171875,
+      "score": 0.9557683020830154,
+      "page_number": 2
+    },
+    {
+      "text": "b) precizarea oricarei alte reguli de corectitudine a definiri, alta decat cea mentionata la subpunctul a)",
+      "x": 505.7818908691406,
+      "y": 2270.871826171875,
+      "score": 0.9778220051864408,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3029.708251953125,
+      "y": 2348.231201171875,
+      "score": 0.9737419635057449,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3029.708251953125,
+      "y": 2415.60888671875,
+      "score": 0.9966008141636848,
+      "page_number": 2
+    },
+    {
+      "text": "c) construirea definitiei cerute",
+      "x": 508.2734069824219,
+      "y": 2418.104248046875,
+      "score": 0.9532950632274151,
+      "page_number": 2
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresi comunicare",
+      "x": 505.7818908691406,
+      "y": 4484.34814453125,
+      "score": 0.985052382404154,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta 6",
+      "x": 3017.25048828125,
+      "y": 4484.34814453125,
+      "score": 0.9903660237789154,
+      "page_number": 2
+    },
+    {
+      "text": "Baremdeevaluaresidenotare",
+      "x": 505.7818908691406,
+      "y": 4551.7255859375,
+      "score": 0.9986672115325927,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1721.651611328125,
+      "y": 4614.1123046875,
+      "score": 0.9893385001591274,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei si Cercetari",
+    "Centrul National pentruCurriculumsi Evaluare",
+    "(30 de puncte)",
+    "SUBIECTULalIII-lea",
+    "A.",
+    "a) cate 2 puncte pentru scrierea schemei de inferenta corespunzatoare fiecaruia dintre cele doua",
+    "moduri silogistice date,astfel:",
+    "PeM",
+    "PaM",
+    "SiM",
+    "MaS",
+    "SoP",
+    "SaP",
+    "2x2p=4puncte",
+    "b) construirea, in limbaj natural, unui silogism care sa corespunda uneia dintre cele doua scheme",
+    "de inferenta scrisela subpunctul a)",
+    "2 puncte",
+    "Nota: Punctajul pentru construirea in limbaj natural a silogismului cerut se acorda independent de",
+    "valoareadeadevarapropozitilor.",
+    "c) - cate 3 puncte pentru verificarea explicita, prin metoda diagramelor Venn (reprezentare grafica), a",
+    "validitatifiecaruiadintreceledouamodurisilogistice",
+    "2x3p=6puncte",
+    "- cate 1 punct pentru precizarea deciziei privind validitatea fiecarui mod silogistic, astfel: eio-2, mod",
+    "silogisticvalid;aaa-4,modsilogisticnevalid",
+    "2x1p=2puncte",
+    "Nota: Punctajul se acorda numai in situatia in care decizia privind validitatea fiecarui mod silogistic",
+    "rezultadinreprezentareagraficaaacestuia.",
+    "B. - construirea, in limbaj formal, a oricarui silogism valid care sa justifice propozitia data 3 puncte",
+    "- scrierea, in limbaj natural, a silogismului valid construit (cu premise adevarate/plauzibile) 3 puncte",
+    "C. cate 1 punct pentru fiecare dintre cele patru raspunsuri corecte, astfel:",
+    "4x1p=4 puncte",
+    "1-A, 2-F, 3-A, 4-F",
+    "D.",
+    "a)mentionareauneireguli decorectitudinepecareoincalcadefinitiadata",
+    "2 puncte",
+    "b) precizarea oricarei alte reguli de corectitudine a definiri, alta decat cea mentionata la subpunctul a)",
+    "2 puncte",
+    "2 puncte",
+    "c) construirea definitiei cerute",
+    "Probascrisalalogica,argumentaresi comunicare",
+    "Varianta 6",
+    "Baremdeevaluaresidenotare",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatiei si Cercetari\nCentrul National pentruCurriculumsi Evaluare\n(30 de puncte)\nSUBIECTULalIII-lea\nA.\na) cate 2 puncte pentru scrierea schemei de inferenta corespunzatoare fiecaruia dintre cele doua\nmoduri silogistice date,astfel:\nPeM\nPaM\nSiM\nMaS\nSoP\nSaP\n2x2p=4puncte\nb) construirea, in limbaj natural, unui silogism care sa corespunda uneia dintre cele doua scheme\nde inferenta scrisela subpunctul a)\n2 puncte\nNota: Punctajul pentru construirea in limbaj natural a silogismului cerut se acorda independent de\nvaloareadeadevarapropozitilor.\nc) - cate 3 puncte pentru verificarea explicita, prin metoda diagramelor Venn (reprezentare grafica), a\nvaliditatifiecaruiadintreceledouamodurisilogistice\n2x3p=6puncte\n- cate 1 punct pentru precizarea deciziei privind validitatea fiecarui mod silogistic, astfel: eio-2, mod\nsilogisticvalid;aaa-4,modsilogisticnevalid\n2x1p=2puncte\nNota: Punctajul se acorda numai in situatia in care decizia privind validitatea fiecarui mod silogistic\nrezultadinreprezentareagraficaaacestuia.\nB. - construirea, in limbaj formal, a oricarui silogism valid care sa justifice propozitia data 3 puncte\n- scrierea, in limbaj natural, a silogismului valid construit (cu premise adevarate/plauzibile) 3 puncte\nC. cate 1 punct pentru fiecare dintre cele patru raspunsuri corecte, astfel:\n4x1p=4 puncte\n1-A, 2-F, 3-A, 4-F\nD.\na)mentionareauneireguli decorectitudinepecareoincalcadefinitiadata\n2 puncte\nb) precizarea oricarei alte reguli de corectitudine a definiri, alta decat cea mentionata la subpunctul a)\n2 puncte\n2 puncte\nc) construirea definitiei cerute\nProbascrisalalogica,argumentaresi comunicare\nVarianta 6\nBaremdeevaluaresidenotare\nPagina 2 din 2"
+}

@@ -1,0 +1,164 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2021_model",
+  "examId": "bac_logica_2021_model",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2021 Model",
+  "items": {
+    "I_A": {
+      "answers": {
+        "1": "b",
+        "2": "a",
+        "3": "d",
+        "4": "c",
+        "5": "b",
+        "6": "d",
+        "7": "a",
+        "8": "b",
+        "9": "c",
+        "10": "b"
+      },
+      "scoring": "10x2p = 20p"
+    },
+    "I_B": {
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "answers": {
+        "a": "A",
+        "b": "A",
+        "c": "F",
+        "d": "A",
+        "e": "F",
+        "f": "A",
+        "g": "F",
+        "h": "F"
+      },
+      "scoring": "2p diagramă + 8x1p = 10p"
+    },
+    "II_A": {
+      "answers": {
+        "II_A_1": {
+          "formal": "SoP",
+          "natural": "Unii arbori nu sunt conifere."
+        },
+        "II_A_2": {
+          "formal": "SaP",
+          "natural": "Toate axiomele sunt adevăruri demonstrabile."
+        },
+        "II_A_3": {
+          "formal": "SeP",
+          "natural": "Niciun șarpe nu este veninos."
+        },
+        "II_A_4": {
+          "formal": "SiP",
+          "natural": "Unele meduze sunt animale nevertebrate."
+        }
+      },
+      "scoring": "4x1p formal + 4x1p natural = 8p"
+    },
+    "II_B": {
+      "answers": {
+        "prop2": {
+          "converse_formal": "PeS",
+          "converse_natural": "Niciun adevăr demonstrabil nu este axiomă.",
+          "obverse_formal": "Sa~P",
+          "obverse_natural": "Toate axiomele sunt non-adevăruri demonstrabile."
+        },
+        "prop4": {
+          "converse_formal": "PiS",
+          "converse_natural": "Unele animale nevertebrate sunt meduze.",
+          "obverse_formal": "Se~P",
+          "obverse_natural": "Nicio meduză nu este non-animal nevertebrat."
+        }
+      },
+      "scoring": "4p formal + 4p natural"
+    },
+    "II_C": {
+      "answers": {
+        "II_C_1": {
+          "formal": "~PiS",
+          "natural": "Unele non-conifere sunt arbori."
+        },
+        "II_C_3": {
+          "formal": "PiS",
+          "natural": "Unele ființe veninoase sunt șerpi."
+        }
+      },
+      "scoring": "2p formal + 4p natural"
+    },
+    "II_D": {
+      "answers": {
+        "X": {
+          "formal": "SiP -> PiS",
+          "decision": "corect / conversiune validă",
+          "explanation": "Propoziția de tip I se convertește valid prin schimbarea termenilor."
+        },
+        "Y": {
+          "formal": "SoP -> PoS",
+          "decision": "incorect / conversiune nevalidă",
+          "explanation": "Se încalcă legea distribuirii termenilor: termenul S apare distribuit în concluzie, dar nu este distribuit în premisă."
+        }
+      },
+      "scoring": "4p formal + 2p decizii + 2p explicație"
+    },
+    "III_A": {
+      "answers": {
+        "eio-2": {
+          "schema": [
+            "PeM",
+            "SiM",
+            "SoP"
+          ],
+          "validity": "valid"
+        },
+        "aee-4": {
+          "schema": [
+            "PaM",
+            "MeS",
+            "SeP"
+          ],
+          "validity": "valid"
+        }
+      },
+      "diagramSolutions": [
+        {
+          "diagramId": "diagram_III_A_eio_2_venn",
+          "renderFromContract": true
+        },
+        {
+          "diagramId": "diagram_III_A_aee_4_venn",
+          "renderFromContract": true
+        }
+      ],
+      "scoring": "4p scheme + 4p silogism natural + 4p Venn + 2p decizie"
+    },
+    "III_B": {
+      "sample": {
+        "formal": [
+          "Toate felinele sunt carnivore.",
+          "Unele mamifere sunt feline.",
+          "Unele mamifere sunt carnivore."
+        ],
+        "natural": "Unele mamifere sunt feline; toate felinele sunt carnivore; deci unele mamifere sunt carnivore."
+      },
+      "scoring": "3p formal + 3p natural"
+    },
+    "III_C": {
+      "answers": {
+        "1": "A",
+        "2": "F",
+        "3": "F",
+        "4": "A"
+      },
+      "scoring": "4x1p = 4p"
+    },
+    "III_D": {
+      "answers": {
+        "a": "Definiția încalcă regula evitării circularității / regula de a nu defini prin termenul definit.",
+        "b": "Exemplu de altă regulă: definiția trebuie să fie clară și precisă. Exemplu de definiție incorectă: Inducția incompletă este o formă foarte interesantă de gândire."
+      },
+      "scoring": "2p + 2p + 2p"
+    }
+  }
+}

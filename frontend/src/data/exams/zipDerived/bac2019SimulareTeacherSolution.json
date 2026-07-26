@@ -1,0 +1,111 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2019_simulare",
+  "examId": "bac_logica_2019_simulare",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logica 2019 Simulare",
+  "totalPoints": 100,
+  "basePoints": 10,
+  "sourcePolicy": "Rezolvarea este construita strict pe baza baremului oficial 2019 Simulare incarcat in pachet.",
+  "answers": {
+    "I_A": {
+      "answers": {
+        "1": "b",
+        "2": "d",
+        "3": "b",
+        "4": "a",
+        "5": "c",
+        "6": "d",
+        "7": "a",
+        "8": "b",
+        "9": "d",
+        "10": "c"
+      },
+      "points": "10x2p = 20p"
+    },
+    "I_B": {
+      "diagramId": "diagram_I_B_euler_terms",
+      "answers": {
+        "a": "A",
+        "b": "F",
+        "c": "F",
+        "d": "F",
+        "e": "A",
+        "f": "F"
+      },
+      "points": "4p diagrama + 6x1p = 10p"
+    },
+    "II_A": {
+      "correct": {
+        "1": "SaP",
+        "2": "SoP"
+      }
+    },
+    "II_B": {
+      "correct": {
+        "subalterna_1": "SiP - Unele teorii politice sunt modele ideale de analiza.",
+        "contradictoria_2": "SaP - Toate operele lui Platon sunt traduse in limba romana.",
+        "contrara_3": "SaP - Toate trasaturile de caracter sunt ereditare.",
+        "subcontrara_4": "SoP - Unele firme de IT nu sunt profitabile."
+      }
+    },
+    "II_C": {
+      "correct": {
+        "conversa_1": "PiS - Unele modele ideale de analiza sunt teorii politice.",
+        "obversa_1": "Se~P - Nicio teorie politica nu este non-model ideal de analiza.",
+        "conversa_3": "PeS - Nicio trasatura ereditara nu este trasatura de caracter.",
+        "obversa_3": "Sa~P - Toate trasaturile de caracter sunt non-ereditare."
+      }
+    },
+    "II_D": {
+      "correct": "~PiS - Unele non-ereditare sunt trasaturi de caracter."
+    },
+    "II_E": {
+      "formal": {
+        "X": "SoP -> PoS",
+        "Y": "SiP -> PiS"
+      },
+      "decision": {
+        "X": "incorect - conversiune nevalida",
+        "Y": "corect - conversiune valida"
+      },
+      "explanation_X": "Rationamentul X aplica nevalid conversiunea unei propozitii particulare negative. Termenul S apare distribuit in concluzie, dar nu este distribuit in premisa."
+    },
+    "III_A": {
+      "schemes": {
+        "aee-2": [
+          "PaM",
+          "SeM",
+          "SeP"
+        ],
+        "aai-4": [
+          "PaM",
+          "MaS",
+          "SiP"
+        ]
+      },
+      "validity": {
+        "aee-2": "valid",
+        "aai-4": "valid"
+      },
+      "diagramIds": [
+        "diagram_III_A_aee_2_venn",
+        "diagram_III_A_aai_4_venn"
+      ]
+    },
+    "III_B": {
+      "accepted": "Orice silogism valid care justifica propozitia „Unele teorii istorice nu sunt corecte”, scris corect in limbaj formal si natural, primeste punctaj conform baremului."
+    },
+    "III_C": {
+      "answers": {
+        "1": "F",
+        "2": "A",
+        "3": "A",
+        "4": "F"
+      },
+      "points": "4x1p = 4p"
+    },
+    "III_D": {
+      "accepted": "Definitia „Silogismul este un rationament deductiv” este prea larga / nu indica diferenta specifica. Se accepta mentionarea oricarei reguli incalcate corect identificata si construirea unei definitii care incalca o alta regula, avand ca definit termenul „silogism”."
+    }
+  }
+}

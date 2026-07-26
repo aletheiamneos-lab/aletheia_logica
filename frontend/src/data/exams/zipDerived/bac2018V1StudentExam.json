@@ -1,0 +1,544 @@
+{
+  "examId": "bac_logica_2018_v1",
+  "title": "BAC Logică 2018 - Varianta 1",
+  "year": 2018,
+  "variant": "Varianta 1",
+  "mode": "student_exam",
+  "visibility": "student",
+  "sourcePolicy": {
+    "studentVisible": true,
+    "teacherSolutionVisible": false,
+    "doNotExposeCorrectAnswersInStudentBundle": true,
+    "useOnlyCurrentUploadedSubjectAndBarem": true
+  },
+  "finalization": {
+    "enabled": true,
+    "buttonLabel": "Finalizează testul",
+    "afterSubmit": [
+      "generate_student_pdf",
+      "show_preview",
+      "send_email_if_enabled",
+      "create_admin_report_entry"
+    ],
+    "studentPdf": {
+      "enabled": true,
+      "previewEnabled": true,
+      "downloadEnabled": true,
+      "emailEnabled": true
+    },
+    "adminReport": {
+      "enabled": true,
+      "includeStudentAnswers": true,
+      "includeDiagramExports": true,
+      "includeScoreBreakdown": true
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "instructions": "Scrie litera corespunzătoare răspunsului corect. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "number": 1,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_2",
+              "number": 2,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_3",
+              "number": 3,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_4",
+              "number": 4,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_5",
+              "number": 5,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_6",
+              "number": 6,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_7",
+              "number": 7,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_8",
+              "number": 8,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_9",
+              "number": 9,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            },
+            {
+              "id": "I_A_10",
+              "number": 10,
+              "inputType": "single_choice",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "points": 2,
+              "studentVisible": true,
+              "teacherSolutionVisible": false
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi logice între termeni - diagramă Euler și A/F",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C și D, astfel încât termenii A și B se află în raport de încrucișare și, în același timp, ambii sunt subordonați termenului C; termenul D se află în raport de opoziție atât față de termenul A, cât și față de termenul B, dar este subordonat termenului C.",
+          "items": [
+            {
+              "id": "I_B_1",
+              "title": "Reprezentare prin metoda diagramelor Euler",
+              "points": 4,
+              "studentTask": "Reprezintă, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei patru termeni.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_2018_v1_I_B_euler",
+                "diagramType": "euler",
+                "studentVisible": true,
+                "teacherSolutionVisible": false,
+                "inputConfig": {
+                  "label": "Diagrama Euler",
+                  "helperText": "Desenează raporturile dintre termenii A, B, C și D. Poți desena direct sau poți încărca o imagine.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "A",
+                      "B",
+                      "C",
+                      "D"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            },
+            {
+              "id": "I_B_2",
+              "title": "Adevărat / Fals",
+              "points": 6,
+              "items": [
+                {
+                  "id": "I_B_2_a",
+                  "label": "a",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                },
+                {
+                  "id": "I_B_2_b",
+                  "label": "b",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                },
+                {
+                  "id": "I_B_2_c",
+                  "label": "c",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                },
+                {
+                  "id": "I_B_2_d",
+                  "label": "d",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                },
+                {
+                  "id": "I_B_2_e",
+                  "label": "e",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                },
+                {
+                  "id": "I_B_2_f",
+                  "label": "f",
+                  "inputType": "true_false",
+                  "options": [
+                    "A",
+                    "F"
+                  ],
+                  "points": 1,
+                  "studentVisible": true,
+                  "teacherSolutionVisible": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "officialPrompt": "Se dau propozițiile: 1. Toți intelectualii sunt adepți ai libertății individuale. 2. Unii pești albaștri nu sunt animale de dimensiuni mari. 3. Niciun aliment bogat în calorii nu este recomandat de medicul nutriționist. 4. Unele flori de primăvară sunt plante rezistente la frig.",
+      "parts": [
+        {
+          "id": "II_A",
+          "title": "A. Formule logice pentru propozițiile 1 și 2",
+          "points": 2,
+          "answerInput": {
+            "inputType": "short_text_group",
+            "fields": [
+              {
+                "fieldId": "p1",
+                "label": "Propoziția 1",
+                "placeholder": "Scrie forma logică. Exemplu de format: SaP"
+              },
+              {
+                "fieldId": "p2",
+                "label": "Propoziția 2",
+                "placeholder": "Scrie forma logică. Exemplu de format: SoP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_B",
+          "title": "B. Construirea propozițiilor cerute",
+          "points": 8,
+          "answerInput": {
+            "inputType": "structured_text_group",
+            "fields": [
+              {
+                "fieldId": "subalterna_p1",
+                "label": "Subalterna propoziției 1",
+                "placeholder": "Scrie propoziția completă în limbaj natural."
+              },
+              {
+                "fieldId": "contradictoria_p2",
+                "label": "Contradictoria propoziției 2",
+                "placeholder": "Scrie propoziția completă în limbaj natural."
+              },
+              {
+                "fieldId": "contrara_p3",
+                "label": "Contrara propoziției 3",
+                "placeholder": "Scrie propoziția completă în limbaj natural."
+              },
+              {
+                "fieldId": "subcontrara_p4",
+                "label": "Subcontrara propoziției 4",
+                "placeholder": "Scrie propoziția completă în limbaj natural."
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune și obversiune pentru propozițiile 3 și 4",
+          "points": 8,
+          "answerInput": {
+            "inputType": "structured_text",
+            "placeholder": "Scrie forma logică și varianta în limbaj natural pentru fiecare operație cerută."
+          }
+        },
+        {
+          "id": "II_D",
+          "title": "D. Obversa conversei propoziției 4",
+          "points": 4,
+          "answerInput": {
+            "inputType": "structured_text",
+            "placeholder": "Scrie întâi forma logică, apoi propoziția în limbaj natural."
+          }
+        },
+        {
+          "id": "II_E",
+          "title": "E. Opiniile elevilor X și Y",
+          "points": 8,
+          "officialPrompt": "X: Dacă unele activități de voluntariat sunt lucruri apreciate de elevi, atunci unele lucruri apreciate de elevi sunt activități de voluntariat. Y: Dacă unii oameni nu sunt creatori de cultură, atunci unii creatori de cultură nu sunt oameni.",
+          "answerInput": {
+            "inputType": "structured_text_group",
+            "fields": [
+              {
+                "fieldId": "formalizare",
+                "label": "Formalizarea opiniilor",
+                "placeholder": "Scrie forma logică a fiecărei opinii."
+              },
+              {
+                "fieldId": "corectitudine",
+                "label": "Corectitudine / incorectitudine",
+                "placeholder": "Precizează dacă raționamentele sunt corecte sau incorecte."
+              },
+              {
+                "fieldId": "explicatie",
+                "label": "Explicație pentru opinia cerută",
+                "placeholder": "Explică pe scurt regula aplicată."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "parts": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice eae-4 și aii-3",
+          "points": 14,
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_2018_v1_III_A_venn",
+            "diagramType": "venn_three_terms",
+            "studentVisible": true,
+            "teacherSolutionVisible": false,
+            "inputConfig": {
+              "label": "Diagrame Venn pentru eae-4 și aii-3",
+              "helperText": "Scrie schemele și verifică validitatea prin diagrame Venn.",
+              "canvas": {
+                "enabled": true,
+                "width": 720,
+                "height": 420,
+                "tools": [
+                  "pen",
+                  "eraser",
+                  "undo",
+                  "clear",
+                  "save"
+                ],
+                "allowTextLabels": true,
+                "defaultLabels": [
+                  "S",
+                  "P",
+                  "M"
+                ],
+                "saveFormat": [
+                  "strokes_json",
+                  "png_export"
+                ]
+              },
+              "upload": {
+                "enabled": true,
+                "acceptedTypes": [
+                  "image/png",
+                  "image/jpeg",
+                  "image/webp"
+                ],
+                "maxFileSizeMb": 10
+              }
+            }
+          }
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid pentru propoziția „Unii artiști nu sunt pictori”",
+          "points": 6,
+          "answerInput": {
+            "inputType": "long_text",
+            "placeholder": "Construiește silogismul în limbaj formal și în limbaj natural."
+          }
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Dacă toate lucrurile supărătoare sunt invenții și niciun adevăr nu este invenție, rezultă că niciun adevăr nu este supărător.",
+          "answerInput": {
+            "inputType": "structured_text_group",
+            "fields": [
+              {
+                "fieldId": "term_mediu",
+                "label": "Termenul mediu",
+                "placeholder": "Precizează termenul mediu al silogismului."
+              },
+              {
+                "fieldId": "premisa_minora",
+                "label": "Premisa minoră",
+                "placeholder": "Scrie, în limbaj natural, premisa minoră."
+              }
+            ]
+          }
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiție și reguli de corectitudine",
+          "points": 6,
+          "officialPrompt": "Tortul este un produs de cofetărie.",
+          "answerInput": {
+            "inputType": "structured_text_group",
+            "fields": [
+              {
+                "fieldId": "regula_incalcata",
+                "label": "Regula încălcată",
+                "placeholder": "Menționează regula de corectitudine încălcată."
+              },
+              {
+                "fieldId": "alta_regula",
+                "label": "Altă regulă",
+                "placeholder": "Precizează o altă regulă de corectitudine a definirii."
+              },
+              {
+                "fieldId": "definitie_gresita",
+                "label": "Definiție cerută",
+                "placeholder": "Construiește o definiție care să încalce acea altă regulă, având ca definit termenul „tort”."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

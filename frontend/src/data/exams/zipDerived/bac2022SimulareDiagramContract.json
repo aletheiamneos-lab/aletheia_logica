@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "BAC_LOGICA_DIAGRAM_CONTRACT_V2",
+  "examId": "bac_logica_2022_simulare",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler_relation_map",
+      "teacherRendering": {
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "relations": [
+          "A = B",
+          "C = B",
+          "D intersects A",
+          "E subset B"
+        ]
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aee2_venn",
+      "diagramType": "venn_three_terms",
+      "teacherRendering": {
+        "premises": [
+          "PaM",
+          "SeM"
+        ],
+        "conclusion": "SeP",
+        "validity": "valid"
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_aii3_venn",
+      "diagramType": "venn_three_terms",
+      "teacherRendering": {
+        "premises": [
+          "MiP",
+          "MaS"
+        ],
+        "conclusion": "SiP",
+        "validity": "valid"
+      }
+    }
+  ]
+}

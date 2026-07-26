@@ -1,0 +1,519 @@
+{
+  "id": "bac-2025-v1",
+  "track": "bac",
+  "slug": "modulul-2-bac-2025-varianta-1",
+  "title": "Modulul 2 - BAC 2025, Varianta 1",
+  "subtitle": "Subiect oficial afisat local, urmat de rezolvarea explicata pentru fiecare cerinta din varianta 1.",
+  "intro": "Varianta 1 pastreaza aceeasi logica de lucru: vezi subiectul exact din PDF-ul tau, apoi mergi pe explicatia ghidata. Accentul este pe recunoasterea rapida a capitolului, pe formula corecta si pe justificarea fiecarui pas.",
+  "officialPaper": {
+    "subjectPages": [
+      {
+        "assetKey": "bac2025V1SubjectPage1",
+        "title": "Subiectul oficial - pagina 1"
+      },
+      {
+        "assetKey": "bac2025V1SubjectPage2",
+        "title": "Subiectul oficial - pagina 2"
+      }
+    ],
+    "baremPages": [
+      {
+        "assetKey": "bac2025V1BaremPage1",
+        "title": "Baremul oficial - pagina 1"
+      },
+      {
+        "assetKey": "bac2025V1BaremPage2",
+        "title": "Baremul oficial - pagina 2"
+      }
+    ]
+  },
+  "strategyBullets": [
+    "La grila, identifici imediat daca enuntul tine de termeni, propozitii categorice sau inferente.",
+    "La transformarile de la Subiectul II, scrii mereu forma initiala si fiecare pas intermediar.",
+    "La silogisme, fixezi mai intai figura si distributia termenilor, apoi decizi validitatea.",
+    "La definitii, separi limbajul poetic de cerinta logica si invoci explicit regula incalcata."
+  ],
+  "sections": [
+    {
+      "id": "subiect-i-a",
+      "title": "Subiectul I.A - Itemi grila",
+      "points": "20 de puncte",
+      "overview": "Varianta 1 amesteca legea variatiei inverse, inferente imediate, clasificarea si formulele categorice. Daca recunosti repede capitolul, raspunsul devine direct.",
+      "cards": [
+        {
+          "title": "Itemul 1",
+          "prompt": "Daca termenului \"masina de tocat\" i se adauga proprietatea \"carne\", ce se intampla cu extensiunea si intensiunea?",
+          "answer": "d) Extensiunea termenului scade in timp ce intensiunea creste.",
+          "steps": [
+            "Pornesti de la un termen general: \"masina de tocat\".",
+            "Adaugi o nota noua, care il face mai precis: \"de carne\".",
+            "Mai multe note inseamna continut mintal mai bogat, dar clasa de obiecte devine mai mica."
+          ],
+          "schema": ["+ proprietate", "intensiune creste", "extensiune scade"],
+          "commonTrap": "Nu inversa regula. Variatia dintre intensiune si extensiune este inversa, nu directa."
+        },
+        {
+          "title": "Itemul 2",
+          "prompt": "Inferenta \"Unii avocati nu sunt persoane cunoscute in oras, prin urmare unele persoane cunoscute in oras nu sunt avocati\" este valida sau invalida?",
+          "answer": "b) O deductie imediata nevalida.",
+          "steps": [
+            "Enuntul porneste de la o propozitie de tip O: \"Unii S nu sunt P\".",
+            "Concluzia inverseaza termenii si pastreaza negativitatea.",
+            "Asta ar fi o conversiune a propozitiei O, operatie nevalida in logica traditionala."
+          ],
+          "schema": ["SoP", "conversiune incercata", "operatie nevalida"],
+          "commonTrap": "Forma pare plauzibila in limbaj obisnuit, dar nu orice propozitie negativa se poate converti."
+        },
+        {
+          "title": "Itemul 3",
+          "prompt": "Intre propozitiile \"Toate masinile sunt mari\" si \"Unele masini sunt mari\" ce raport exista?",
+          "answer": "d) Subalternare.",
+          "steps": [
+            "Prima propozitie este de tip A: SaP.",
+            "A doua este de tip I: SiP.",
+            "In patratul opozitiei, intre A si I exista raportul de subalternare."
+          ],
+          "schema": ["SaP", "SiP", "A -> I"],
+          "commonTrap": "Nu este contradictie, pentru ca cele doua pot fi simultan adevarate."
+        },
+        {
+          "title": "Itemul 4",
+          "prompt": "Care este subiectul logic in propozitia \"Majoritatea cartilor de vizita sunt ale oamenilor de afaceri\"?",
+          "answer": "c) \"cartilor de vizita\".",
+          "steps": [
+            "Subiectul logic este termenul despre care se afirma ceva.",
+            "Cuantificatorul \"majoritatea\" nu face parte din termenul-subiect propriu-zis.",
+            "Despre cartile de vizita se spune ca sunt ale oamenilor de afaceri."
+          ],
+          "schema": ["majoritatea = cuantificator", "S = carti de vizita", "P = ale oamenilor de afaceri"],
+          "commonTrap": "Nu confunda grupa cuantificata cu termenul logic efectiv."
+        },
+        {
+          "title": "Itemul 5",
+          "prompt": "Ce regula trebuie respectata intr-o clasificare corecta?",
+          "answer": "d) Omogenitatii.",
+          "steps": [
+            "Clasificarea corecta foloseste acelasi criteriu pe toate ramurile.",
+            "Aceasta cerinta poarta numele de omogenitate.",
+            "Cand schimbi criteriul de clasificare, apare eroarea."
+          ],
+          "schema": ["un singur criteriu", "ramuri omogene"],
+          "commonTrap": "Claritatea si adecvarea sunt reguli ale definitiei, nu regula centrala a clasificarii."
+        },
+        {
+          "title": "Itemul 6",
+          "prompt": "Din punct de vedere intensional, termenul \"frumusete\" este abstract, concret, negativ sau compus?",
+          "answer": "b) Abstract.",
+          "steps": [
+            "Termenul nu desemneaza un obiect material individual.",
+            "El exprima o insusire sau o calitate.",
+            "Termenii care exprima calitati sunt abstracti."
+          ],
+          "schema": ["calitate", "nu obiect concret", "abstract"],
+          "commonTrap": "Faptul ca termenul are un singur cuvant nu il face automat simplu in clasificarea ceruta aici."
+        },
+        {
+          "title": "Itemul 7",
+          "prompt": "Rationamentul \"Unele conflicte nu sunt gestionate corect, deci unele conflicte sunt gestionate incorect\" este ce fel de inferenta?",
+          "answer": "a) Obversiune valida.",
+          "steps": [
+            "Pornesti de la o propozitie O: \"Unele S nu sunt P\".",
+            "Prin obversiune, schimbi calitatea si complementezi predicatul.",
+            "Obtii o propozitie I cu predicat complementar: \"Unele S sunt non-P\"."
+          ],
+          "schema": ["SoP", "obversiune", "Si~P"],
+          "commonTrap": "Nu este conversiune, pentru ca termenii nu isi schimba locul."
+        },
+        {
+          "title": "Itemul 8",
+          "prompt": "Propozitia \"Unii actori nu sunt cantareti\" este de ce tip?",
+          "answer": "b) Particulara negativa.",
+          "steps": [
+            "Cuantificatorul \"unii\" indica particularul.",
+            "Negatia este data de \"nu sunt\".",
+            "Particular + negativ inseamna forma O."
+          ],
+          "schema": ["unii", "nu sunt", "forma O"],
+          "commonTrap": "Nu uita ca forma O este particulara negativa, nu universala negativa."
+        },
+        {
+          "title": "Itemul 9",
+          "prompt": "O inferenta deductiva mediata presupune existenta a ce anume?",
+          "answer": "b) Mai multor premise.",
+          "steps": [
+            "Inferenta mediata introduce un termen sau un pas intermediar.",
+            "De aceea nu lucreaza cu o singura premisa, ca deductia imediata.",
+            "Forma clasica este silogismul, care are doua premise."
+          ],
+          "schema": ["deductie mediata", "cel putin doua premise"],
+          "commonTrap": "Nu confunda demonstratia sau clasificarea cu structura minima a unei inferente mediate."
+        },
+        {
+          "title": "Itemul 10",
+          "prompt": "Propozitiei \"Niciun elev nu este persoana cu studii superioare\" ii corespunde ce formula?",
+          "answer": "b) SeP.",
+          "steps": [
+            "Formula \"Niciun S nu este P\" este tipul E.",
+            "Subiectul este \"elev\", iar predicatul este \"persoana cu studii superioare\".",
+            "Rezultatul formal este SeP."
+          ],
+          "schema": ["Niciun S nu este P", "SeP"],
+          "commonTrap": "Nu transforma propozitia in SoP. Particulara negativa ar incepe cu \"Unii\"."
+        }
+      ]
+    },
+    {
+      "id": "subiect-i-b",
+      "title": "Subiectul I.B - Diagrame Euler si verdict pe propozitii",
+      "points": "10 puncte",
+      "overview": "Relatiile dintre termeni se citesc in doi pasi: mai intai construiesti harta termenilor, apoi verifici fiecare propozitie pe baza hartii, nu din intuitie.",
+      "cards": [
+        {
+          "title": "B1 - Cum construiesti diagrama",
+          "prompt": "A, B si C sunt in raport de incrucisare, D este specie a intersectiei lor, iar E este in raport de contrarietate cu ceilalti termeni.",
+          "answerBullets": [
+            "A, B si C trebuie desenate astfel incat sa aiba o zona comuna tripla, dar si zone proprii.",
+            "D se aseaza complet in zona comuna dintre A, B si C.",
+            "E se deseneaza separat, fara nicio intersectie cu A, B, C sau D."
+          ],
+          "steps": [
+            "Desenezi trei cercuri care se incruciseaza doua cate doua si toate trei impreuna.",
+            "Pui D in miezul comun al lui A, B si C, pentru ca este specie a intersectiei lor.",
+            "Asezi E in afara tuturor celorlalte, deoarece este contrar cu fiecare."
+          ],
+          "schema": ["A ∩ B != 0", "A ∩ C != 0", "B ∩ C != 0", "D ⊂ A ∩ B ∩ C", "E ∩ A = 0", "E ∩ B = 0", "E ∩ C = 0", "E ∩ D = 0"],
+          "commonTrap": "D nu este doar in intersectia a doua multimi, ci in intersectia tuturor celor trei: A, B si C."
+        },
+        {
+          "title": "B2 - Adevarat sau fals",
+          "prompt": "Baremul da verdictele F, A, A, A, A, F, A, A. Important este sa vezi de ce apar.",
+          "evaluations": [
+            {
+              "label": "a) Niciun C nu este A",
+              "value": "Fals",
+              "note": "A si C se incruciseaza, deci exista zona comuna."
+            },
+            {
+              "label": "b) Unii A nu sunt B",
+              "value": "Adevarat",
+              "note": "Incrucisarea nu inseamna includere totala; A are si parte in afara lui B."
+            },
+            {
+              "label": "c) Unii A sunt D",
+              "value": "Adevarat",
+              "note": "D este inclus in A, deci orice element din D este si in A."
+            },
+            {
+              "label": "d) Unii D nu sunt E",
+              "value": "Adevarat",
+              "note": "E este separat de D, deci orice D este in afara lui E."
+            },
+            {
+              "label": "e) Toti D sunt C",
+              "value": "Adevarat",
+              "note": "D este specie a intersectiei A-B-C, deci este inclus si in C."
+            },
+            {
+              "label": "f) Niciun B nu este C",
+              "value": "Fals",
+              "note": "B si C se incruciseaza."
+            },
+            {
+              "label": "g) Unii E nu sunt A",
+              "value": "Adevarat",
+              "note": "E este contrar cu A, deci orice E este in afara lui A."
+            },
+            {
+              "label": "h) Unii D sunt A",
+              "value": "Adevarat",
+              "note": "D este inclus in A."
+            }
+          ],
+          "commonTrap": "Cand un termen este specie a unei intersectii, obtii imediat mai multe adevaruri de tipul \"Unii D sunt A/B/C\" si \"Toti D sunt A/B/C\"."
+        }
+      ]
+    },
+    {
+      "id": "subiect-ii",
+      "title": "Subiectul al II-lea - Propozitii categorice si transformari",
+      "points": "30 de puncte",
+      "overview": "Varianta 1 cere transformari in lant. Ca sa nu te pierzi, notezi tipul propozitiei, apoi aplici operatie dupa operatie.",
+      "cards": [
+        {
+          "title": "II.A - Contradictorie, contrara, supraalterna, subcontrara",
+          "prompt": "Pornesti de la tipurile SeP, SaP, SiP si SoP ale celor patru propozitii date.",
+          "table": {
+            "columns": ["Cerinta", "Formula", "Raspuns in limbaj natural"],
+            "rows": [
+              [
+                "Contradictoria propozitiei 1",
+                "SiP",
+                "Unii membri ai grupului formal sunt usor de impresionat."
+              ],
+              [
+                "Contrara propozitiei 2",
+                "SeP",
+                "Nicio floare din ghivecele bunicii nu este colorata si parfumata."
+              ],
+              [
+                "Supraalterna propozitiei 3",
+                "SaP",
+                "Toti scriitorii romani contemporani sunt cunoscuti la nivel international."
+              ],
+              [
+                "Subcontrara propozitiei 4",
+                "SiP",
+                "Unele animale de la polul nord sunt in pericol de disparitie."
+              ]
+            ]
+          },
+          "steps": [
+            "Etichetezi formele de start: 1 = E, 2 = A, 3 = I, 4 = O.",
+            "Din patratul opozitiei: E are contradictorie I, A are contrara E, I are supraalterna A, O are subcontrara I.",
+            "Pastrezi termenii identici si modifici doar cantitatea sau calitatea ceruta."
+          ],
+          "schema": ["SeP -> SiP", "SaP -> SeP", "SiP -> SaP", "SoP -> SiP"],
+          "commonTrap": "La supraalterna, elevii scriu uneori o universala negativa. Verifica mereu daca urci spre A sau spre E."
+        },
+        {
+          "title": "II.B - Conversa si obversa propozitiilor 2 si 3",
+          "prompt": "Subiectul cere atat forma, cat si raspunsul in limbaj natural pentru fiecare operatie.",
+          "table": {
+            "columns": ["Pornire", "Operatie", "Formula finala", "Raspuns natural"],
+            "rows": [
+              [
+                "2. Toate florile din ghivecele bunicii sunt colorate si parfumate (SaP)",
+                "Conversa",
+                "PiS",
+                "Unele lucruri colorate si parfumate sunt flori din ghivecele bunicii."
+              ],
+              [
+                "2. Toate florile din ghivecele bunicii sunt colorate si parfumate (SaP)",
+                "Obversa",
+                "Se~P",
+                "Nicio floare din ghivecele bunicii nu este necolorata sau neparfumata."
+              ],
+              [
+                "3. Unii scriitori romani contemporani sunt cunoscuti la nivel international (SiP)",
+                "Conversa",
+                "PiS",
+                "Unele persoane cunoscute la nivel international sunt scriitori romani contemporani."
+              ],
+              [
+                "3. Unii scriitori romani contemporani sunt cunoscuti la nivel international (SiP)",
+                "Obversa",
+                "So~P",
+                "Unii scriitori romani contemporani nu sunt necunoscuti la nivel international."
+              ]
+            ]
+          },
+          "steps": [
+            "Conversa inverseaza termenii S si P.",
+            "Obversa schimba afirmativul in negativ si complementeaza predicatul.",
+            "La propozitia A, conversa corecta este doar particulara, adica PiS."
+          ],
+          "schema": ["SaP -> PiS", "SaP -> Se~P", "SiP -> PiS", "SiP -> So~P"],
+          "commonTrap": "Nu scrie PaS pentru conversiunea lui SaP. Baremul o trateaza ca nevalida."
+        },
+        {
+          "title": "II.C - Lanturi de transformari",
+          "prompt": "Aici totul sta in ordinea pasilor. Daca sari o etapa, formula finala nu mai iese.",
+          "table": {
+            "columns": ["Cerinta", "Drum logic", "Formula finala", "Raspuns natural"],
+            "rows": [
+              [
+                "Supraalterna conversei obversei propozitiei 4",
+                "SoP -> Si~P -> ~PiS -> ~PaS",
+                "~PaS",
+                "Toate fiintele care nu sunt in pericol de disparitie sunt animale de la polul nord."
+              ],
+              [
+                "Obversa conversei contrarei propozitiei 1",
+                "SeP -> SaP -> PiS -> Po~S",
+                "Po~S",
+                "Unele fiinte usor de impresionat nu sunt non-membri ai grupului formal."
+              ]
+            ]
+          },
+          "steps": [
+            "Notezi formula initiala.",
+            "Aplici prima operatie exact pe formula de start.",
+            "Aplici urmatoarea operatie pe rezultatul anterior, nu pe propozitia initiala."
+          ],
+          "schema": ["pas cu pas", "fiecare operatie pe rezultatul anterior"],
+          "commonTrap": "Cea mai frecventa eroare este inversarea ordinii: elevii fac mai intai supraalterna, desi subiectul cere obversa si apoi conversa."
+        },
+        {
+          "title": "II.D - Opiniile elevilor X si Y",
+          "prompt": "Unul lucreaza cu obversiunea lui I, celalalt cu conversiunea prin accident a lui A.",
+          "answerBullets": [
+            "Elevul X: SiP -> So~P. Este o obversiune valida, deci rationamentul este corect.",
+            "Elevul Y: SaP -> PiS. Este o conversiune valida prin accident, deci rationamentul este corect.",
+            "Baremul accepta explicit ambele rationamente ca valide."
+          ],
+          "steps": [
+            "La X, ideile adevarate devin idei care nu sunt false. Este exact obversiunea unei propozitii I.",
+            "La Y, din \"Toate zilele de vacanta sunt zile asteptate\" se obtine \"Unele zile asteptate sunt zile de vacanta\".",
+            "Conversiunea propozitiei A nu este simpla, ci prin accident, de aceea concluzia este particulara."
+          ],
+          "schema": ["SiP -> So~P", "SaP -> PiS"],
+          "commonTrap": "Daca Y ar fi concluzionat \"Toate zilele asteptate sunt zile de vacanta\", rationamentul ar fi fost incorect."
+        }
+      ]
+    },
+    {
+      "id": "subiect-iii",
+      "title": "Subiectul al III-lea - Silogisme si definitii",
+      "points": "30 de puncte",
+      "overview": "Varianta 1 cere doua moduri silogistice, un silogism valid pentru o concluzie data si analiza unei erori de definire. Lucrezi pe figura, distributie si regula incalcata.",
+      "cards": [
+        {
+          "title": "III.A - Schemele modurilor eio-1 si oao-2",
+          "prompt": "Baremul cere scrierea schemelor si decizia de validitate pentru cele doua moduri.",
+          "table": {
+            "columns": ["Mod", "Schema corecta", "Decizie"],
+            "rows": [
+              ["eio-1", "MeP / SiM / SoP", "Valid"],
+              ["oao-2", "PoM / SaM / SoP", "Nevalid"]
+            ]
+          },
+          "steps": [
+            "Figura I are forma M-P in premisa majora si S-M in premisa minora.",
+            "Figura a II-a are forma P-M in premisa majora si S-M in premisa minora.",
+            "Dupa asezarea termenilor, verifici daca diagrama Venn obliga sau nu concluzia."
+          ],
+          "schema": ["figura I: M-P / S-M", "figura II: P-M / S-M"],
+          "commonTrap": "Nu poti decide validitatea doar din literele modului daca ai asezat termenii pe figura gresita."
+        },
+        {
+          "title": "III.A.b-c - Exemplu si verificare grafica",
+          "prompt": "Pentru modulul valid eio-1 poti construi un exemplu simplu si il verifici in diagrama Venn.",
+          "answerBullets": [
+            "Exemplu natural: Niciun automobil cu motor termic nu este electric. Unele vehicule sunt automobile cu motor termic. Deci unele vehicule nu sunt electrice.",
+            "Premisa E goleste zona comuna dintre M si P.",
+            "Premisa I plaseaza existenta in zona S-M.",
+            "Cum S-M-P este interzisa, existenta ramane in S-M-nonP, de unde rezulta SoP."
+          ],
+          "schema": ["MeP", "SiM", "SoP"],
+          "commonTrap": "La modulul nevalid oao-2 nu reusesti sa fortezi concluzia doar din diagrama; de aici vine verdictul de nevaliditate."
+        },
+        {
+          "title": "III.B - Silogism valid pentru concluzia data",
+          "prompt": "Concluzia ceruta este: \"Unele vehicule nu sunt electrice\".",
+          "answerBullets": [
+            "Schema valida folosita: MeP / SiM / SoP.",
+            "Formal: Niciun M nu este P. Unele S sunt M. Deci unele S nu sunt P.",
+            "Natural: Niciun automobil cu motor termic nu este electric. Unele vehicule sunt automobile cu motor termic. Deci unele vehicule nu sunt electrice."
+          ],
+          "steps": [
+            "Pastrezi concluzia exact in forma SoP.",
+            "Alegi un termen mediu M care leaga vehiculele de non-electric.",
+            "Folosesti un mod valid deja cunoscut, in acest caz Ferio."
+          ],
+          "schema": ["Ferio", "MeP", "SiM", "SoP"],
+          "commonTrap": "Nu schimba predicatul concluziei. Subiectul cere justificarea exacta a propozitiei date."
+        },
+        {
+          "title": "III.C - Analiza silogismului dat",
+          "prompt": "Baremul cere raspunsurile F, A, F, F. Ele se obtin din forma premiselor si din distributia termenilor.",
+          "evaluations": [
+            {
+              "label": "1. Concluzia silogismului este o propozitie universala afirmativa",
+              "value": "Fals",
+              "note": "Concluzia este \"Niciun dictionar de limba franceza nu este carte de desenat\", adica o propozitie E, universala negativa."
+            },
+            {
+              "label": "2. Subiectul logic al concluziei este termenul \"dictionar de limba franceza\"",
+              "value": "Adevarat",
+              "note": "Acesta este termenul despre care se afirma negatia relatiei cu \"carte de desenat\"."
+            },
+            {
+              "label": "3. Termenul major este distribuit in premisa majora",
+              "value": "Fals",
+              "note": "Termenul major este \"carte de desenat\" si apare ca subiect intr-o propozitie O; in O, subiectul nu este distribuit."
+            },
+            {
+              "label": "4. Termenul mediu este distribuit in ambele premise",
+              "value": "Fals",
+              "note": "In premisa I, termenul mediu nu este distribuit, iar in premisa O este distribuit doar daca ocupa locul de predicat."
+            }
+          ],
+          "commonTrap": "Pentru distributie, nu te baza pe sensul obisnuit al propozitiei. Verifica mereu tipul I, O, A sau E."
+        },
+        {
+          "title": "III.D - Definitia metaforica",
+          "prompt": "\"Ciocanitoarea este medicul padurii\" poate fi frumoasa stilistic, dar nu este o definitie riguroasa.",
+          "answerBullets": [
+            "La punctul a poti mentiona regula claritatii si preciziei: definitia nu trebuie sa fie metaforica sau figurata.",
+            "La punctul b poti da alta regula, de exemplu adecvarea definitiei la extensiunea termenului.",
+            "La punctul c poti construi o definitie gresita care incalca regula aleasa la b, de pilda: \"Ciocanitoarea este orice pasare\"."
+          ],
+          "steps": [
+            "Identifici regula incalcata de definitia data.",
+            "Alegi o regula diferita pentru punctul b.",
+            "Construiesti intentionat o definitie incorecta exact prin acea regula."
+          ],
+          "schema": ["a = regula incalcata", "b = alta regula", "c = exemplu care incalca b"],
+          "commonTrap": "La punctul c nu dai o definitie buna, ci una gresita intr-un mod controlat."
+        }
+      ]
+    },
+    {
+      "id": "cum-gandesti",
+      "title": "Cum gandesti varianta 1 in examen",
+      "points": "Strategie",
+      "overview": "Scopul nu este doar sa recunosti raspunsul, ci sa folosesti un traseu stabil de lucru sub presiunea timpului.",
+      "cards": [
+        {
+          "title": "Schema rapida pentru Subiectul I",
+          "prompt": "Fiecare item grila se rezolva mai repede daca il traduci imediat in capitol si regula.",
+          "schema": [
+            "termeni -> intensiune / extensiune / abstract / concret",
+            "propozitii -> A / E / I / O",
+            "inferente -> conversiune / obversiune / deductie mediata",
+            "clasificare -> omogenitate"
+          ],
+          "commonTrap": "Daca citesti doar cuvintele-cheie si nu vezi capitolul, poti aplica o regula buna intr-un loc gresit."
+        },
+        {
+          "title": "Schema rapida pentru Subiectele II si III",
+          "prompt": "Cand subiectul cere transformari si silogisme, ordinea scrisului conteaza aproape la fel de mult ca raspunsul final.",
+          "steps": [
+            "Scrii formula initiala.",
+            "Marchezi operatia sau figura ceruta.",
+            "Executi fiecare pas intermediar in ordine.",
+            "Traduci la final in limbaj natural."
+          ],
+          "commonTrap": "Daca nu notezi formula intermediara, nu mai poti verifica unde ai gresit."
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "question": "Conversiunea unei propozitii O este valida?",
+      "options": ["Da", "Nu"],
+      "correctAnswer": "Nu",
+      "explanation": "Propozitia O nu se converteste corect in logica traditionala."
+    },
+    {
+      "question": "Intre SaP si SiP exista raport de subalternare?",
+      "options": ["Da", "Nu"],
+      "correctAnswer": "Da",
+      "explanation": "SaP este supraalterna lui SiP."
+    },
+    {
+      "question": "In varianta 1, modulul eio-1 este valid?",
+      "options": ["Valid", "Nevalid"],
+      "correctAnswer": "Valid",
+      "explanation": "Baremul il marcheaza explicit ca mod silogistic valid."
+    },
+    {
+      "question": "O definitie metaforica respecta regula claritatii?",
+      "options": ["Da", "Nu"],
+      "correctAnswer": "Nu",
+      "explanation": "Definitia logica trebuie sa fie clara si nefigurata."
+    }
+  ],
+  "practiceNote": "Zona este pregatita pentru exercitiile derivate din varianta 1. Putem adauga imediat itemi noi pe baza materialelor urmatoare."
+}

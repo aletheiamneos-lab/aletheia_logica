@@ -1,0 +1,266 @@
+{
+  "module": "Antrenament complet",
+  "description": "Exercitii integrate care combina mai multe capitole si cerinte pe pasi.",
+  "ui_rules": {
+    "placement": ["learning2.0_main_module"],
+    "interaction": ["step_by_step", "instant_feedback", "show_why_after_check"],
+    "difficulty_levels": ["usor", "mediu", "greu"]
+  },
+  "items": [
+    {
+      "id": "int_001",
+      "level": "usor",
+      "title": "De la propozitie categorica la Patratul logic",
+      "situation": "Avem propozitia: \"Toti elevii sunt silitori.\"",
+      "steps": [
+        {
+          "id": "int_001_step_1",
+          "type": "multiple_choice",
+          "question": "Ce tip de propozitie este?",
+          "options": ["A", "E", "I", "O"],
+          "correct_answer": "A",
+          "explanation": "Enuntul este universal afirmativ: Toti S sunt P."
+        },
+        {
+          "id": "int_001_step_2",
+          "type": "multiple_choice",
+          "question": "Care este forma simbolica?",
+          "options": ["SaP", "SeP", "SiP", "SoP"],
+          "correct_answer": "SaP",
+          "explanation": "Forma A se noteaza traditional SaP."
+        },
+        {
+          "id": "int_001_step_3",
+          "type": "multiple_choice",
+          "question": "Daca A este adevarata, ce valoare are I?",
+          "options": ["adevarata", "falsa", "nedeterminata", "imposibila"],
+          "correct_answer": "adevarata",
+          "explanation": "Prin subalternare, adevarul coboara de la A la I."
+        },
+        {
+          "id": "int_001_step_4",
+          "type": "multiple_choice",
+          "question": "Care este capcana clasica aici?",
+          "options": [
+            "Confundarea lui A cu I",
+            "Confundarea termenului cu propozitia",
+            "Confundarea lui E cu O",
+            "Confundarea lui p cu q"
+          ],
+          "correct_answer": "Confundarea lui A cu I",
+          "explanation": "Multi elevi citesc doar relatia dintre termeni si ignora cuantorul \"toti\"."
+        }
+      ],
+      "final_explanation": "Exercitiul leaga tipul propozitiei, forma simbolica si efectul ei in Patratul logic.",
+      "tags": ["categorice", "patrat_logic", "A", "SaP", "lectia_2"]
+    },
+    {
+      "id": "int_002",
+      "level": "mediu",
+      "title": "De la limbaj natural la p si q",
+      "situation": "Avem enuntul: \"Daca un elev invata, atunci promoveaza.\"",
+      "steps": [
+        {
+          "id": "int_002_step_1",
+          "type": "multiple_choice",
+          "question": "Cum notam propozitiile simple?",
+          "options": [
+            "p = elevul invata; q = elevul promoveaza",
+            "p = elevul promoveaza; q = elevul invata",
+            "p = elevul este silitor; q = elevul este sportiv",
+            "p = elevul lipseste; q = elevul invata"
+          ],
+          "correct_answer": "p = elevul invata; q = elevul promoveaza",
+          "explanation": "Pastrezi ordinea naturala a enuntului: antecedentul devine p, consecventul devine q."
+        },
+        {
+          "id": "int_002_step_2",
+          "type": "multiple_choice",
+          "question": "Care este forma logica a enuntului?",
+          "options": ["p & q", "p -> q", "p <-> q", "nu p sau nu q"],
+          "correct_answer": "p -> q",
+          "explanation": "Formula \"daca..., atunci...\" indica implicatie."
+        },
+        {
+          "id": "int_002_step_3",
+          "type": "multiple_choice",
+          "question": "Cand este falsa aceasta formula?",
+          "options": ["T/T", "T/F", "F/T", "F/F"],
+          "correct_answer": "T/F",
+          "explanation": "Implicatia este falsa doar cand antecedentul este adevarat si consecventul este fals."
+        },
+        {
+          "id": "int_002_step_4",
+          "type": "multiple_choice",
+          "question": "Ce eroare apare daca elevul spune \"promoveaza, deci a invatat\"?",
+          "options": [
+            "Modus Tollens",
+            "Afirmarea consecventului",
+            "Negarea antecedentului",
+            "Subalternare"
+          ],
+          "correct_answer": "Afirmarea consecventului",
+          "explanation": "Din q nu rezulta valid p; concluzia intoarce nepermis sensul implicatiei."
+        }
+      ],
+      "final_explanation": "Exercitiul combina traducerea, forma logica, tabelul de adevar si recunoasterea unei erori.",
+      "tags": ["propozitional", "p_q", "validitate", "capcane", "lectia_4"]
+    },
+    {
+      "id": "int_003",
+      "level": "greu",
+      "title": "De la categorice la silogism",
+      "situation": "Premise: \"Toti elevii sunt silitori.\" \"Unii sportivi sunt elevi.\"",
+      "steps": [
+        {
+          "id": "int_003_step_1",
+          "type": "multiple_choice",
+          "question": "Identifica termenul mediu.",
+          "options": ["elevi", "sportivi", "silitori", "concluzia"],
+          "correct_answer": "elevi",
+          "explanation": "Termenul care apare in ambele premise si dispare din concluzie este M."
+        },
+        {
+          "id": "int_003_step_2",
+          "type": "multiple_choice",
+          "question": "Ce concluzie urmeaza valid?",
+          "options": [
+            "Unii sportivi sunt silitori.",
+            "Toti sportivii sunt silitori.",
+            "Unii silitori sunt sportivi.",
+            "Niciun sportiv nu este silitor."
+          ],
+          "correct_answer": "Unii sportivi sunt silitori.",
+          "explanation": "Din particulara plus universala poti obtine o concluzie particulara corecta, nu una universala."
+        },
+        {
+          "id": "int_003_step_3",
+          "type": "boolean",
+          "question": "Este valid sa concluzionam \"Toti sportivii sunt silitori\"?",
+          "options": [true, false],
+          "correct_answer": false,
+          "explanation": "Premisa despre sportivi este doar particulara; concluzia universala ar fi mai tare decat permit premisele."
+        },
+        {
+          "id": "int_003_step_4",
+          "type": "multiple_choice",
+          "question": "Care este capcana principala?",
+          "options": [
+            "Concluzie mai tare decat permit premisele",
+            "Negarea antecedentului",
+            "Confundarea lui A cu E",
+            "Conversiune simpla invalida"
+          ],
+          "correct_answer": "Concluzie mai tare decat permit premisele",
+          "explanation": "Elevul universalizeaza concluzia fara baza in premise."
+        }
+      ],
+      "final_explanation": "Exercitiul combina propozitii categorice, rolul termenului mediu si controlul puterii concluziei.",
+      "tags": ["silogism", "integrat", "concluzie", "distribuire", "lectia_3"]
+    },
+    {
+      "id": "int_004",
+      "level": "mediu",
+      "title": "Legi reguli din Patratul logic cu formele categorice",
+      "situation": "Ai enuntul: \"Unii elevi nu sunt silitori.\"",
+      "steps": [
+        {
+          "id": "int_004_step_1",
+          "type": "multiple_choice",
+          "question": "Ce forma categorica ai aici?",
+          "options": ["A", "E", "I", "O"],
+          "correct_answer": "O",
+          "explanation": "Enuntul este particular negativ, deci forma O."
+        },
+        {
+          "id": "int_004_step_2",
+          "type": "multiple_choice",
+          "question": "Care este forma simbolica?",
+          "options": ["SaP", "SeP", "SiP", "SoP"],
+          "correct_answer": "SoP",
+          "explanation": "O se noteaza traditional SoP."
+        },
+        {
+          "id": "int_004_step_3",
+          "type": "multiple_choice",
+          "question": "Daca O este falsa, ce forma devine sigur adevarata?",
+          "options": ["A", "E", "I", "niciuna"],
+          "correct_answer": "A",
+          "explanation": "A si O sunt contradictorii. Daca O este falsa, A devine adevarata."
+        },
+        {
+          "id": "int_004_step_4",
+          "type": "multiple_choice",
+          "question": "Ce capcana apare cel mai des aici?",
+          "options": [
+            "Confundarea lui O cu E",
+            "Confundarea lui A cu I",
+            "Confundarea lui p cu q",
+            "Confundarea concluziei cu premisa"
+          ],
+          "correct_answer": "Confundarea lui O cu E",
+          "explanation": "Ambele sunt negative, dar E este universala si O este particulara."
+        }
+      ],
+      "final_explanation": "Exercitiul leaga recunoasterea formei O de relatia ei contradictorie cu A.",
+      "tags": ["categorice", "patrat_logic", "O", "SoP", "lectia_2"]
+    },
+    {
+      "id": "int_005",
+      "level": "greu",
+      "title": "Verifici schema, validitatea si capcana",
+      "situation": "Argument: \"Daca elevul este prezent, atunci poate sustine testul. Elevul poate sustine testul. Deci elevul este prezent.\"",
+      "steps": [
+        {
+          "id": "int_005_step_1",
+          "type": "multiple_choice",
+          "question": "Cum notezi corect propozitiile simple?",
+          "options": [
+            "p = elevul este prezent; q = elevul poate sustine testul",
+            "p = elevul poate sustine testul; q = elevul este prezent",
+            "p = elevul este silitor; q = elevul este sportiv",
+            "p = elevul invata; q = elevul promoveaza"
+          ],
+          "correct_answer": "p = elevul este prezent; q = elevul poate sustine testul",
+          "explanation": "p trebuie sa corespunda antecedentului, iar q consecventului din regula data."
+        },
+        {
+          "id": "int_005_step_2",
+          "type": "multiple_choice",
+          "question": "Ce schema apare in argument?",
+          "options": [
+            "(p -> q), p => q",
+            "(p -> q), q => p",
+            "(p -> q), nu q => nu p",
+            "(p sau q), nu p => q"
+          ],
+          "correct_answer": "(p -> q), q => p",
+          "explanation": "A doua premisa afirma consecventul q, iar concluzia intoarce nepermis spre p."
+        },
+        {
+          "id": "int_005_step_3",
+          "type": "boolean",
+          "question": "Este argumentul valid?",
+          "options": [true, false],
+          "correct_answer": false,
+          "explanation": "Schema este afirmarea consecventului, deci forma este nevalida."
+        },
+        {
+          "id": "int_005_step_4",
+          "type": "multiple_choice",
+          "question": "De ce este gresita concluzia?",
+          "options": [
+            "Pentru ca q poate fi adevarata si din alte motive decat p",
+            "Pentru ca p si q nu pot aparea impreuna",
+            "Pentru ca orice implicatie este falsa",
+            "Pentru ca premisa a doua este o negatie"
+          ],
+          "correct_answer": "Pentru ca q poate fi adevarata si din alte motive decat p",
+          "explanation": "Consecventul nu garanteaza cauza initiala. Exista si alte cai prin care q poate deveni adevarata."
+        }
+      ],
+      "final_explanation": "Exercitiul combina traducerea, recunoasterea schemei si justificarea concreta a nevaliditatii.",
+      "tags": ["propozitional", "validitate", "capcane", "lectia_4"]
+    }
+  ]
+}

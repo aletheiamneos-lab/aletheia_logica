@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "BAC_LOGICA_TEACHER_SOLUTION_V2",
+  "solutionId": "teacher_solution_bac_logica_2020_model",
+  "examId": "bac_logica_2020_model",
+  "visibility": "teacher_only",
+  "source": "Examenul de bacalaureat național 2020_Model_BAREM.pdf",
+  "answerKey": {
+    "I_A": {
+      "1": "a",
+      "2": "c",
+      "3": "b",
+      "4": "d",
+      "5": "b",
+      "6": "c",
+      "7": "c",
+      "8": "c",
+      "9": "d",
+      "10": "a"
+    },
+    "I_B": {
+      "a": "A",
+      "b": "F",
+      "c": "F",
+      "d": "A",
+      "e": "A",
+      "f": "A",
+      "g": "F",
+      "h": "F"
+    },
+    "II_A": {
+      "formal": [
+        "1: SiP",
+        "2: SeP",
+        "3: SaP",
+        "4: SiP"
+      ],
+      "note": "Se acordă punctaj pentru construirea în limbaj formal și natural conform baremului."
+    },
+    "II_B": {
+      "items": "Conversă și obversă corecte pentru propozițiile 1 și 3, în limbaj formal și natural, conform baremului."
+    },
+    "II_C": {
+      "formal": [
+        "conversa obversei supraalternii propoziției 4: ~PiS",
+        "conversa subalternei propoziției 1: PiS"
+      ]
+    },
+    "II_D": {
+      "X": "SaP -> PaS; raționament incorect / conversiune nevalidă.",
+      "Y": "SiP -> SoP; raționament corect / obversiune validă.",
+      "explanation": "La X se încalcă legea distribuirii termenilor; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+    },
+    "III_A": {
+      "modes": [
+        "aii-1",
+        "aai-4"
+      ],
+      "schemes": {
+        "aii-1": [
+          "MaP",
+          "SiM",
+          "SiP"
+        ],
+        "aai-4": [
+          "PaM",
+          "MaS",
+          "SiP"
+        ]
+      },
+      "validity": {
+        "aii-1": "valid",
+        "aai-4": "valid"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_venn_2020_model",
+        "renderFromContract": true
+      }
+    },
+    "III_C": {
+      "1": "F",
+      "2": "A",
+      "3": "A",
+      "4": "F"
+    },
+    "III_D": {
+      "givenDefinition": "Acizii sunt compuși chimici care nu sunt nici baze, nici săruri.",
+      "accepted": "Menționarea oricărei reguli de corectitudine încălcate de definiția dată; precizarea unei alte reguli diferite; construirea unei definiții care să o încalce, având ca definit termenul „acizi”."
+    }
+  },
+  "scoringSummary": {
+    "I": 30,
+    "II": 30,
+    "III": 30,
+    "oficiu": 10,
+    "total": 100
+  },
+  "teacherOnly": true
+}

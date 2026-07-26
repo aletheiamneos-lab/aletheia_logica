@@ -1,0 +1,288 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1616.931884765625,
+      "y": 193.64869689941406,
+      "score": 0.9760184764862061,
+      "page_number": 3
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1241.7613525390625,
+      "y": 259.96673583984375,
+      "score": 0.9626692210106139,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 364.6022644042969,
+      "y": 371.3810729980469,
+      "score": 0.9224150391185985,
+      "page_number": 3
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2861.335205078125,
+      "y": 366.07562255859375,
+      "score": 0.9655199476650783,
+      "page_number": 3
+    },
+    {
+      "text": "A.Se dau urmatoarele doua moduri silogistice:eio-2, aai-4.",
+      "x": 364.6022644042969,
+      "y": 450.96270751953125,
+      "score": 0.9673436777345066,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.789794921875,
+      "y": 533.1970825195312,
+      "score": 0.9724473739447801,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 454.43182373046875,
+      "y": 610.1260375976562,
+      "score": 0.9940064121847567,
+      "page_number": 3
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 454.43182373046875,
+      "y": 692.3604125976562,
+      "score": 0.9833729068438212,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3040.994384765625,
+      "y": 695.0131225585938,
+      "score": 0.9881691113114357,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 451.789794921875,
+      "y": 766.6365966796875,
+      "score": 0.9878365541949417,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3035.710205078125,
+      "y": 843.5655517578125,
+      "score": 0.9571689739823341,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date,precizand totodata decizia la care ati ajuns.",
+      "x": 454.43182373046875,
+      "y": 846.21826171875,
+      "score": 0.9638367487538245,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.24432373046875,
+      "y": 920.4945068359375,
+      "score": 0.9775857739853409,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Unele comunitati culturale sunt traditionaliste.\"",
+      "x": 449.1477355957031,
+      "y": 1002.7288818359375,
+      "score": 0.9547161534428596,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3056.8466796875,
+      "y": 1002.7288818359375,
+      "score": 0.9977134466171265,
+      "page_number": 3
+    },
+    {
+      "text": "C.Se da urmatorul silogism:Se crede ca unelepopulati arhaice nu erau patriarhale,intrucat nicio",
+      "x": 364.6022644042969,
+      "y": 1079.6578369140625,
+      "score": 0.9545301487571315,
+      "page_number": 3
+    },
+    {
+      "text": "societatepatriarhalanueraocomunitateincaredescendentasafieasiguratapeliniematernasi",
+      "x": 367.24432373046875,
+      "y": 1159.239501953125,
+      "score": 0.9891062163444887,
+      "page_number": 3
+    },
+    {
+      "text": "unelepopulatiarhaiceeraucomunitati incaredescendentaseasigurapeliniematerna.",
+      "x": 367.24432373046875,
+      "y": 1238.8211669921875,
+      "score": 0.9900588330469633,
+      "page_number": 3
+    },
+    {
+      "text": "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+      "x": 364.6022644042969,
+      "y": 1315.75,
+      "score": 0.9662605878150109,
+      "page_number": 3
+    },
+    {
+      "text": "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+      "x": 361.9602355957031,
+      "y": 1395.3316650390625,
+      "score": 0.9686866274901799,
+      "page_number": 3
+    },
+    {
+      "text": "1.Termenul mediu este distribuit in ambele premise.",
+      "x": 472.9261474609375,
+      "y": 1472.2606201171875,
+      "score": 0.9613596913861293,
+      "page_number": 3
+    },
+    {
+      "text": "2.Concluzia silogismului este o propozitie particular afirmativa.",
+      "x": 467.6420593261719,
+      "y": 1543.8841552734375,
+      "score": 0.9905832116420452,
+      "page_number": 3
+    },
+    {
+      "text": "3.Niciun termen extrem nu apare distribuit in concluzie.",
+      "x": 470.2840881347656,
+      "y": 1628.771240234375,
+      "score": 0.9840454405971936,
+      "page_number": 3
+    },
+    {
+      "text": "4.Termenul major este distribuit atat in premisa in care apare cat si in concluzie.",
+      "x": 472.9261474609375,
+      "y": 1705.7001953125,
+      "score": 0.9715580179030636,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3051.5625,
+      "y": 1772.0181884765625,
+      "score": 0.9897012263536453,
+      "page_number": 3
+    },
+    {
+      "text": "D.Se da urmatoarea definitie:",
+      "x": 367.24432373046875,
+      "y": 1859.5579833984375,
+      "score": 0.9507024863670612,
+      "page_number": 3
+    },
+    {
+      "text": "Doina este un cantec popular extrem de apreciat de etnografi.",
+      "x": 449.1477355957031,
+      "y": 1941.7923583984375,
+      "score": 0.9917169252379996,
+      "page_number": 3
+    },
+    {
+      "text": "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+      "x": 446.50567626953125,
+      "y": 2016.068603515625,
+      "score": 0.9691717401146889,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3056.8466796875,
+      "y": 2021.3740234375,
+      "score": 0.96401147544384,
+      "page_number": 3
+    },
+    {
+      "text": "2.  Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1",
+      "x": 449.1477355957031,
+      "y": 2098.302978515625,
+      "score": 0.9748457153834919,
+      "page_number": 3
+    },
+    {
+      "text": "4 puncte",
+      "x": 3051.5625,
+      "y": 2175.23193359375,
+      "score": 0.9989395290613174,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,doina\"",
+      "x": 581.25,
+      "y": 2180.537353515625,
+      "score": 0.9783163651441916,
+      "page_number": 3
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresicomunicare",
+      "x": 361.9602355957031,
+      "y": 4987.1171875,
+      "score": 0.9843378566032233,
+      "page_number": 3
+    },
+    {
+      "text": "Simulare",
+      "x": 3101.761474609375,
+      "y": 4992.42236328125,
+      "score": 0.9994421005249023,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1680.3409423828125,
+      "y": 5053.43505859375,
+      "score": 0.9666651657649449,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "SUBIECTULalII-lea",
+    "(30 de puncte)",
+    "A.Se dau urmatoarele doua moduri silogistice:eio-2, aai-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "6 puncte",
+    "silogistice date,precizand totodata decizia la care ati ajuns.",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Unele comunitati culturale sunt traditionaliste.\"",
+    "6 puncte",
+    "C.Se da urmatorul silogism:Se crede ca unelepopulati arhaice nu erau patriarhale,intrucat nicio",
+    "societatepatriarhalanueraocomunitateincaredescendentasafieasiguratapeliniematernasi",
+    "unelepopulatiarhaiceeraucomunitati incaredescendentaseasigurapeliniematerna.",
+    "Pornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt",
+    "false (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):",
+    "1.Termenul mediu este distribuit in ambele premise.",
+    "2.Concluzia silogismului este o propozitie particular afirmativa.",
+    "3.Niciun termen extrem nu apare distribuit in concluzie.",
+    "4.Termenul major este distribuit atat in premisa in care apare cat si in concluzie.",
+    "4 puncte",
+    "D.Se da urmatoarea definitie:",
+    "Doina este un cantec popular extrem de apreciat de etnografi.",
+    "1.Mentionati o regula de corectitudine pe care o incalca definitia data.",
+    "2 puncte",
+    "2.  Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1",
+    "4 puncte",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,doina\"",
+    "Probascrisalalogica,argumentaresicomunicare",
+    "Simulare",
+    "Pagina 3 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul NationaldePoliticisi EvaluareinEducatie\nSUBIECTULalII-lea\n(30 de puncte)\nA.Se dau urmatoarele doua moduri silogistice:eio-2, aai-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\n6 puncte\nsilogistice date,precizand totodata decizia la care ati ajuns.\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Unele comunitati culturale sunt traditionaliste.\"\n6 puncte\nC.Se da urmatorul silogism:Se crede ca unelepopulati arhaice nu erau patriarhale,intrucat nicio\nsocietatepatriarhalanueraocomunitateincaredescendentasafieasiguratapeliniematernasi\nunelepopulatiarhaiceeraucomunitati incaredescendentaseasigurapeliniematerna.\nPornind de la silogismul dat, stabiliti care dintre urmatoarele propoziti sunt adevarate si care sunt\nfalse (notati propozitile adevarate cu litera A, iar propozitile false cu litera F):\n1.Termenul mediu este distribuit in ambele premise.\n2.Concluzia silogismului este o propozitie particular afirmativa.\n3.Niciun termen extrem nu apare distribuit in concluzie.\n4.Termenul major este distribuit atat in premisa in care apare cat si in concluzie.\n4 puncte\nD.Se da urmatoarea definitie:\nDoina este un cantec popular extrem de apreciat de etnografi.\n1.Mentionati o regula de corectitudine pe care o incalca definitia data.\n2 puncte\n2.  Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul 1\n4 puncte\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,doina\"\nProbascrisalalogica,argumentaresicomunicare\nSimulare\nPagina 3 din 3"
+}

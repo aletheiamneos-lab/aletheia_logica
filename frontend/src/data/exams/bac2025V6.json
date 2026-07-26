@@ -1,0 +1,522 @@
+{
+  "id": "bac-2025-v6",
+  "track": "bac",
+  "slug": "modulul-1-bac-2025-varianta-6",
+  "title": "Modulul 1 - BAC 2025, Varianta 6",
+  "subtitle": "Subiect oficial afisat local, urmat de rezolvarea explicata punct cu punct.",
+  "intro": "Acesta este primul model complet de examen din aplicatie. Paginile oficiale sunt pastrate local exact din PDF-ul furnizat, iar sub ele ai transcriere de lucru, raspuns corect, justificare si schema de gandire.",
+  "officialPaper": {
+    "subjectPages": [
+      {
+        "assetKey": "bac2025V6SubjectPage1",
+        "title": "Subiectul oficial - pagina 1"
+      },
+      {
+        "assetKey": "bac2025V6SubjectPage2",
+        "title": "Subiectul oficial - pagina 2"
+      }
+    ],
+    "baremPages": [
+      {
+        "assetKey": "bac2025V6BaremPage1",
+        "title": "Baremul oficial - pagina 1"
+      },
+      {
+        "assetKey": "bac2025V6BaremPage2",
+        "title": "Baremul oficial - pagina 2"
+      }
+    ]
+  },
+  "strategyBullets": [
+    "Mai intai identifici capitolul testat: termeni, propozitii categorice, transformari sau silogisme.",
+    "Apoi traduci rapid enuntul intr-o formula sau intr-un raport logic simplu.",
+    "Abia dupa asta alegi raspunsul sau scrii transformarea ceruta.",
+    "La subiectele ample, lucrezi pe pasi mici: tipul propozitiei, regula aplicata, concluzia."
+  ],
+  "sections": [
+    {
+      "id": "subiect-i-a",
+      "title": "Subiectul I.A - Itemi grila",
+      "points": "20 de puncte",
+      "overview": "Aici lucrezi pe reguli-cheie. Fiecare intrebare cere o recunoastere rapida a capitolului si a legii folosite.",
+      "cards": [
+        {
+          "title": "Itemul 1",
+          "prompt": "Daca termenului „problema” i se adauga proprietatea „controversata”, ce se intampla cu extensiunea si intensiunea?",
+          "answer": "b) Extensiunea scade, iar intensiunea creste.",
+          "steps": [
+            "Adaugi o proprietate noua termenului de baza.",
+            "Prin asta, conceptul devine mai bogat in continut mintal.",
+            "Cu cat are mai multe proprietati, cu atat se aplica la mai putine obiecte."
+          ],
+          "schema": ["+ proprietate", "intensiune ↑", "extensiune ↓"],
+          "commonTrap": "Multi inverseaza legea variatiei inverse. Retine regula fixa: mai multe note inseamna mai putine obiecte."
+        },
+        {
+          "title": "Itemul 2",
+          "prompt": "Dintr-o propozitie universala afirmativa despre inteligenta artificiala se obtine forma „Unele sisteme bazate pe invatare automata sunt forme de inteligenta artificiala”. Ce operatie recunosti?",
+          "answer": "d) Conversiune prin accident.",
+          "steps": [
+            "Pornesti de la o propozitie de tip A: „Toti S sunt P”.",
+            "Dupa conversiune, ordinea termenilor se inverseaza.",
+            "La propozitia A, conversiunea corecta nu ramane universala, ci devine particulara: „Unii P sunt S”."
+          ],
+          "schema": ["SaP", "conversiune prin accident", "PiS"],
+          "commonTrap": "Daca scrii „Toti P sunt S”, faci o conversiune simpla nevalida pentru forma A."
+        },
+        {
+          "title": "Itemul 3",
+          "prompt": "Care pereche de termeni se afla in raport de ordonare?",
+          "answer": "b) „conversiune simpla” si „rationament deductiv imediat”.",
+          "steps": [
+            "Raportul de ordonare inseamna includere: un termen este specie, celalalt este gen.",
+            "Conversiunea simpla este un tip particular de rationament deductiv imediat.",
+            "Deci sfera termenului mai restrans intra in sfera termenului mai larg."
+          ],
+          "schema": ["conversiune simpla ⊂ rationament deductiv imediat"],
+          "commonTrap": "Nu confunda ordonarea cu coordonarea. Doua specii ale aceluiasi gen nu sunt in ordonare."
+        },
+        {
+          "title": "Itemul 4",
+          "prompt": "In propozitia „Niciun mamifer acvatic nu este dotat cu branhii”, ce fel de cuantor apare?",
+          "answer": "c) Cuantor universal.",
+          "steps": [
+            "Cuvantul-cheie este „niciun”.",
+            "Acesta acopera intreaga clasa a subiectului.",
+            "Propozitia este universala negativa, deci cuantorul este universal."
+          ],
+          "schema": ["Niciun S nu este P", "forma E", "cuantor universal"],
+          "commonTrap": "Faptul ca propozitia este negativa nu schimba tipul cuantorului."
+        },
+        {
+          "title": "Itemul 5",
+          "prompt": "Clasificarea animalelor in domestice, salbatice, patrupede si bipede este corecta sau incorecta?",
+          "answer": "d) Incorecta.",
+          "steps": [
+            "O clasificare corecta trebuie sa foloseasca acelasi criteriu pe toate ramurile.",
+            "„Domestice / salbatice” folosesc un criteriu, iar „patrupede / bipede” folosesc alt criteriu.",
+            "Cand criteriul se schimba pe parcurs, clasificarea devine incorecta."
+          ],
+          "schema": ["criteriu 1 ≠ criteriu 2", "clasificare neunitara"],
+          "commonTrap": "Nu este suficient ca exemplele sa para plauzibile. Conteaza unitatea criteriului."
+        },
+        {
+          "title": "Itemul 6",
+          "prompt": "Din punct de vedere extensional, termenul „rezolvare incompleta” este vid sau nevid, singular sau general?",
+          "answer": "c) Nevid, general.",
+          "steps": [
+            "Exista in realitate mai multe rezolvari incomplete, deci termenul nu este vid.",
+            "El nu desemneaza un singur obiect individual, ci o clasa intreaga.",
+            "Prin urmare, extensiunea lui este nevida si generala."
+          ],
+          "schema": ["exista obiecte", "mai multe cazuri", "nevid + general"],
+          "commonTrap": "Faptul ca termenul are o nuanta negativa nu il face automat „vid” sau „negativ extensional”."
+        },
+        {
+          "title": "Itemul 7",
+          "prompt": "Care este predicatul logic al propozitiei „Unele lalele sunt albe”?",
+          "answer": "d) „albe”.",
+          "steps": [
+            "In propozitia categoriala, subiectul logic este termenul despre care se spune ceva.",
+            "Predicatul logic este proprietatea atribuita subiectului.",
+            "Aici, despre unele lalele se spune ca sunt albe."
+          ],
+          "schema": ["Unele S sunt P", "S = lalele", "P = albe"],
+          "commonTrap": "Grupul verbal „sunt albe” nu este predicatul logic in intregime; termenul-predicat este „albe”."
+        },
+        {
+          "title": "Itemul 8",
+          "prompt": "Propozitia „Majoritatea informatiilor nu este usor de verificat” este universala sau particulara, afirmativa sau negativa?",
+          "answer": "b) Particulara negativa.",
+          "steps": [
+            "„Majoritatea” nu inseamna totalitatea clasei, deci nu ai universalitate.",
+            "Formula contine negatia „nu este”.",
+            "Rezultatul este o propozitie particulara negativa."
+          ],
+          "schema": ["majoritatea = particular", "nu este = negativ", "tip O extins"],
+          "commonTrap": "Nu trata „majoritatea” ca echivalent pentru „toate”. In logica scolara se duce in aria particularului."
+        },
+        {
+          "title": "Itemul 9",
+          "prompt": "Ce reprezinta intensiunea termenului „stilou”?",
+          "answer": "b) „instrument de scris cu cerneala si penita”.",
+          "steps": [
+            "Intensiunea inseamna totalitatea notelor esentiale ale termenului.",
+            "Nu cauti multimea tuturor stilourilor, ci proprietatile definitorii.",
+            "Varianta corecta descrie continutul conceptului, nu extensiunea lui."
+          ],
+          "schema": ["intensiune = note esentiale", "nu = totalitatea obiectelor"],
+          "commonTrap": "Optiunile care incep cu „totalitatea...” trimit spre extensiune, nu spre intensiune."
+        },
+        {
+          "title": "Itemul 10",
+          "prompt": "Propozitiei „Multe nuvele istorice sunt preferate de catre elevii de gimnaziu” ii corespunde ce formula?",
+          "answer": "b) SiP.",
+          "steps": [
+            "„Multe” este tratat, in practica bacului, ca o cuantificare particulara.",
+            "Relatia dintre subiect si predicat este afirmativa: „sunt preferate”.",
+            "Particular + afirmativ inseamna formula I."
+          ],
+          "schema": ["multe -> particular", "sunt -> afirmativ", "SiP"],
+          "commonTrap": "Nu transforma „multe” in universalitate doar pentru ca suna puternic."
+        }
+      ]
+    },
+    {
+      "id": "subiect-i-b",
+      "title": "Subiectul I.B - Raporturi intre termeni",
+      "points": "10 puncte",
+      "overview": "Aici nu merge pe intuirea enunturilor. Trebuie sa construiesti mai intai desenul mental al termenilor, apoi sa verifici fiecare propozitie pe rand.",
+      "cards": [
+        {
+          "title": "B1 - Cum construiesti diagrama Euler",
+          "prompt": "Relatiile date in subiect trebuie transformate intr-un singur desen coerent.",
+          "answerBullets": [
+            "A si B sunt in contradictie: nu se suprapun si, impreuna, epuizeaza universul de discurs.",
+            "C este in incrucisare cu A si cu B: are o zona comuna cu fiecare dintre ele.",
+            "E este in opozitie cu A si cu C, dar se incruciseaza cu B si cu D.",
+            "D se incruciseaza cu A, cu B si cu E, deci trebuie desenat astfel incat sa aiba portiuni comune cu fiecare."
+          ],
+          "steps": [
+            "Desenezi mai intai contradictia A / B, pentru ca ea fixeaza scheletul universului.",
+            "Apoi asezi C astfel incat sa intre partial si in A, si in B.",
+            "Dupa aceea plasezi E in afara lui A si C, dar cu o zona comuna in B.",
+            "La final introduci D peste trei regiuni: una in A, una in B si una comuna cu E."
+          ],
+          "schema": ["A ∩ B = ∅", "A ∪ B = U", "C ∩ A ≠ ∅", "C ∩ B ≠ ∅", "E ∩ A = ∅", "E ∩ C = ∅", "E ∩ B ≠ ∅", "D ∩ A ≠ ∅", "D ∩ B ≠ ∅", "D ∩ E ≠ ∅"],
+          "commonTrap": "Daca sari direct la adevarat/fals fara desen, vei rata faptul ca unele relatii sunt doar partiale, nu totale."
+        },
+        {
+          "title": "B2 - Evaluarea celor opt propozitii",
+          "prompt": "Dupa ce ai diagrama, verifici literal fiecare enunt cerut in barem.",
+          "evaluations": [
+            {
+              "label": "a) Unii E sunt C",
+              "value": "Fals",
+              "note": "E si C sunt in opozitie, deci nu au elemente comune."
+            },
+            {
+              "label": "b) Toti C sunt B",
+              "value": "Fals",
+              "note": "C are si zona comuna cu A, nu doar cu B."
+            },
+            {
+              "label": "c) Niciun B nu este C",
+              "value": "Fals",
+              "note": "Exista o intersectie intre B si C."
+            },
+            {
+              "label": "d) Unii D nu sunt E",
+              "value": "Adevarat",
+              "note": "D se incruciseaza cu E, iar asta inseamna si parte comuna, si parte din D in afara lui E."
+            },
+            {
+              "label": "e) Niciun A nu este D",
+              "value": "Fals",
+              "note": "D se incruciseaza cu A, deci unele D sunt A."
+            },
+            {
+              "label": "f) Unii A nu sunt E",
+              "value": "Adevarat",
+              "note": "E este in opozitie cu A, deci tot ce este A se afla in afara lui E."
+            },
+            {
+              "label": "g) Toti E sunt B",
+              "value": "Fals",
+              "note": "E are zona comuna cu B, dar nu este inclus total in B."
+            },
+            {
+              "label": "h) Unii C sunt A",
+              "value": "Adevarat",
+              "note": "C se incruciseaza cu A, deci exista cel putin o zona comuna."
+            }
+          ],
+          "commonTrap": "Incrucisarea inseamna simultan „unele sunt” si „unele nu sunt”. Tocmai de aceea apar atat adevaruri, cat si falsuri aparent apropiate."
+        }
+      ]
+    },
+    {
+      "id": "subiect-ii",
+      "title": "Subiectul al II-lea - Propozitii categorice si transformari",
+      "points": "30 de puncte",
+      "overview": "Cheia aici este sa traduci mai intai fiecare propozitie in A, E, I sau O. Dupa aceea aplici foarte controlat patratul opozitiei, conversiunea si obversiunea.",
+      "cards": [
+        {
+          "title": "II.A - Subalterna, contradictoria, contrara, subcontrara",
+          "prompt": "Pornesti de la forma fiecarei propozitii si aplici exact relatia ceruta.",
+          "table": {
+            "columns": ["Cerința", "Formula", "Raspuns in limbaj natural"],
+            "rows": [
+              [
+                "Subalterna propoziției 1",
+                "SiP",
+                "Unele mamifere acvatice sunt vivipare."
+              ],
+              [
+                "Contradictoria propoziției 2",
+                "SeP",
+                "Nicio persoana pasionata de poezie nu este interesata de filosofie."
+              ],
+              [
+                "Contrara propoziției 3",
+                "SaP",
+                "Toate elementele chimice din grupa a VI-a sunt halogeni."
+              ],
+              [
+                "Subcontrara propoziției 4",
+                "SiP",
+                "Unele activitati scolare sunt obligatorii."
+              ]
+            ]
+          },
+          "steps": [
+            "Mai intai etichetezi propozitiile initiale: 1 este A, 2 este I, 3 este E, 4 este O.",
+            "Apoi folosesti patratul opozitiei: A -> I pentru subalterna, I -> E pentru contradictorie, E -> A pentru contrara, O -> I pentru subcontrara.",
+            "Pastrezi aceiasi termeni S si P; se modifica doar cantitatea si sau calitatea, dupa caz."
+          ],
+          "schema": ["A -> I", "I <-> E", "E <-> A", "O <-> I"],
+          "commonTrap": "Elevii schimba uneori termenii sau adauga cuvinte noi. Aici transformi doar forma propozitiei, nu continutul termenilor."
+        },
+        {
+          "title": "II.B - Conversiune si obversiune pentru propozitiile 1 si 2",
+          "prompt": "Cerința nu cere doar rezultatul final, ci aplicarea explicita a operatiei.",
+          "table": {
+            "columns": ["Pornire", "Operatie", "Formula rezultata", "Raspuns natural"],
+            "rows": [
+              [
+                "1. Toate mamiferele acvatice sunt vivipare (SaP)",
+                "Conversa corecta",
+                "PiS",
+                "Unele fiinte vivipare sunt mamifere acvatice."
+              ],
+              [
+                "1. Toate mamiferele acvatice sunt vivipare (SaP)",
+                "Obversa corecta",
+                "Se~P",
+                "Niciun mamifer acvatic nu este nevivipar."
+              ],
+              [
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie (SiP)",
+                "Conversa corecta",
+                "PiS",
+                "Unele persoane interesate de filosofie sunt pasionate de poezie."
+              ],
+              [
+                "2. Unele persoane pasionate de poezie sunt interesate de filosofie (SiP)",
+                "Obversa corecta",
+                "So~P",
+                "Unele persoane pasionate de poezie nu sunt neinteresate de filosofie."
+              ]
+            ]
+          },
+          "steps": [
+            "La conversiune inversezi termenii S si P.",
+            "La obversiune schimbi calitatea propozitiei si complementezi predicatul.",
+            "Forma A se converteste doar prin accident, pe cand forma I se converteste simplu."
+          ],
+          "schema": ["SaP -> PiS", "SaP -> Se~P", "SiP -> PiS", "SiP -> So~P"],
+          "commonTrap": "La obversiune nu negi subiectul, ci complementezi predicatul."
+        },
+        {
+          "title": "II.C - Compozitii de transformari",
+          "prompt": "Aici nu sari la final. Marchezi fiecare operatie in ordinea data.",
+          "table": {
+            "columns": ["Cerința", "Drumul logic", "Formula finala", "Raspuns natural"],
+            "rows": [
+              [
+                "Conversa obversei supraalternei propoziției 4",
+                "SoP -> SeP -> Sa~P -> ~PiS",
+                "~PiS",
+                "Unele activitati neobligatorii sunt activitati scolare."
+              ],
+              [
+                "Obversa supraalternei propoziției 2",
+                "SiP -> SaP -> Se~P",
+                "Se~P",
+                "Nicio persoana pasionata de poezie nu este neinteresata de filosofie."
+              ]
+            ]
+          },
+          "steps": [
+            "Identifici propozitia de start si tipul ei.",
+            "Aplici prima transformare exact cum este ceruta, fara sa sari etape.",
+            "Abia pe rezultatul obtinut aplici a doua transformare."
+          ],
+          "schema": ["nu sari pasi", "scrii fiecare formula intermediara"],
+          "commonTrap": "Cand sunt doua sau trei transformari legate, elevii confunda usor supraalterna cu obversa. Noteaza fiecare pas separat."
+        },
+        {
+          "title": "II.D - Opiniile elevilor X si Y",
+          "prompt": "Trebuie sa traduci formal, sa decizi validitatea si sa justifici verdictul.",
+          "answerBullets": [
+            "Elevul X: SaP -> Se~P. Aceasta este obversiune valida.",
+            "Elevul Y: SaP -> PaS. Aceasta este o conversiune nevalida a propozitiei A.",
+            "Verdict: rationamentul lui X este corect, rationamentul lui Y este incorect."
+          ],
+          "steps": [
+            "Pornirea comuna este o propozitie de tip A: „Toti S sunt P”.",
+            "Obversa valida a lui SaP este Se~P, deci X respecta regula.",
+            "Y schimba ordinea termenilor si pastreaza universalitatea, ceea ce ar insemna o conversiune simpla pentru A, operatie nepermisa.",
+            "Explicatia clasica a erorii: termenul predicat ajunge distribuit in concluzie, fara sa fie distribuit in premisa."
+          ],
+          "schema": ["SaP -> Se~P", "SaP -/-> PaS"],
+          "commonTrap": "Nu este suficient sa spui „este gresit”. La punctul c trebuie numita eroarea logica sau regula incalcata."
+        }
+      ]
+    },
+    {
+      "id": "subiect-iii",
+      "title": "Subiectul al III-lea - Silogisme si definitii",
+      "points": "30 de puncte",
+      "overview": "Aici trebuie sa vezi repede figura, distributia termenilor si tipul de eroare. Daca le amesteci, pierzi punctele mari.",
+      "cards": [
+        {
+          "title": "III.A - Schemele si validitatea modurilor date",
+          "prompt": "Subiectul da doua moduri silogistice: eio-2 si aaa-4.",
+          "table": {
+            "columns": ["Mod", "Schema corecta", "Decizie"],
+            "rows": [
+              ["eio-2", "PeM / SiM / SoP", "Valid"],
+              ["aaa-4", "PaM / MaS / SaP", "Nevalid"]
+            ]
+          },
+          "steps": [
+            "Figura a II-a pune termenul mediu ca predicat in ambele premise.",
+            "Figura a IV-a are forma P-M in premisa majora si M-S in premisa minora.",
+            "Dupa ce asezi corect termenii, verifici daca distributia si diagrama Venn sustin concluzia."
+          ],
+          "schema": ["fig. II: P-M / S-M", "fig. IV: P-M / M-S"],
+          "commonTrap": "Multi memoreaza doar literele EIO sau AAA si uita sa le aseze corect pe figura."
+        },
+        {
+          "title": "III.A.b-c - Exemplu de silogism si verificare",
+          "prompt": "Pentru modulul valid eio-2, poti construi un exemplu natural si apoi il verifici prin diagrama Venn.",
+          "answerBullets": [
+            "Exemplu natural: Niciun mamifer nu este reptila. Unele animale de companie sunt reptile. Deci unele animale de companie nu sunt mamifere.",
+            "In diagrama, zona comuna P-M este goala prin premisa E.",
+            "Premisa I plaseaza existenta in zona S-M. Cum partea S-M-P este exclusa, semnul existent ramane in S-M-nonP.",
+            "Concluzia SoP devine astfel justificata grafic."
+          ],
+          "schema": ["PeM", "SiM", "SoP"],
+          "commonTrap": "La verificarea Venn trebuie sa rezulte vizual concluzia. Nu ajunge sa spui doar din memorie ca modulul este valid."
+        },
+        {
+          "title": "III.B - Silogism valid pentru concluzia data",
+          "prompt": "Trebuie construit un silogism valid care sa justifice concluzia „Unii baieti care merg pe bicicleta sunt echipati cu casca de protectie”.",
+          "answerBullets": [
+            "Schema valida aleasa: MaP / SiM / SiP.",
+            "Formal: Toți M sunt P. Unii S sunt M. Deci unii S sunt P.",
+            "Natural: Toti membrii clubului de ciclism sunt echipati cu casca de protectie. Unii baieti care merg pe bicicleta sunt membri ai clubului de ciclism. Deci unii baieti care merg pe bicicleta sunt echipati cu casca de protectie."
+          ],
+          "steps": [
+            "Pastrezi concluzia exact in forma data: SiP.",
+            "Cauti un termen mediu M care leaga legitim subiectul de predicat.",
+            "Alegi un mod valid cunoscut, de exemplu Darii."
+          ],
+          "schema": ["MaP", "SiM", "SiP", "Darii"],
+          "commonTrap": "Nu schimba formularea concluziei. Subiectul cere sa o justifici, nu sa o reformulezi."
+        },
+        {
+          "title": "III.C - Analiza silogismului dat",
+          "prompt": "Pentru cele patru enunturi, trebuie sa marchezi rapid adevarat sau fals pe baza distributiei.",
+          "evaluations": [
+            {
+              "label": "1. Premisa majora este o propozitie universala afirmativa",
+              "value": "Adevarat",
+              "note": "„Persoanele implicate in activitati extrascolare sunt voluntari” este de tip A."
+            },
+            {
+              "label": "2. Premisele silogismului sunt propozitii negative",
+              "value": "Fals",
+              "note": "Ambele premise sunt afirmative: una de tip I si una de tip A."
+            },
+            {
+              "label": "3. Termenul mediu este nedistribuit in ambele premise",
+              "value": "Adevarat",
+              "note": "In A, predicatul nu este distribuit; in I, nici subiectul, nici predicatul nu sunt distribuite."
+            },
+            {
+              "label": "4. Termenul major este distribuit in premisa, dar nedistribuit in concluzie",
+              "value": "Fals",
+              "note": "In concluzia de tip O, predicatul este distribuit."
+            }
+          ],
+          "commonTrap": "Aici ajuta enorm sa notezi forma celor trei propozitii: I, A, O. Din asta vezi imediat distributia."
+        },
+        {
+          "title": "III.D - Definitia metaforica",
+          "prompt": "„Satul e locul unde s-a nascut vesnicia” este frumoasa literar, dar nu este o definitie logica buna.",
+          "answerBullets": [
+            "La punctul a poti invoca regula claritatii si preciziei: definitia nu trebuie sa fie metaforica sau figurata.",
+            "La punctul b poti mentiona o alta regula, de exemplu adecvarea: definitia nu trebuie sa fie nici prea larga, nici prea ingusta.",
+            "La punctul c poti construi o definitie care incalca regula aleasa la b, de exemplu: „Satul este orice asezare omeneasca”, daca vrei sa oferi o definitie prea larga."
+          ],
+          "steps": [
+            "La a identifici eroarea din definitia data: limbaj poetic, nu limbaj clar.",
+            "La b alegi alta regula de corectitudine, diferita de prima.",
+            "La c construiesti intenționat o definitie gresita, dar gresita exact prin regula aleasa la b."
+          ],
+          "schema": ["a = regula incalcata", "b = alta regula", "c = exemplu care incalca b"],
+          "commonTrap": "La punctul c nu trebuie sa scrii o definitie buna, ci una care sa incalce precis regula mentionata la b."
+        }
+      ]
+    },
+    {
+      "id": "cum-gandesti",
+      "title": "Cum gandesti varianta in examen",
+      "points": "Strategie",
+      "overview": "Pe langa raspunsuri, modulul te invata si ordinea mentala corecta de lucru.",
+      "cards": [
+        {
+          "title": "Schema rapida pentru Subiectul I",
+          "prompt": "La itemii grila nu improvizezi. Recunosti capitolul si aplici regula.",
+          "schema": [
+            "termeni -> intensiune / extensiune / clasificare",
+            "propozitii -> A / E / I / O",
+            "operatii -> conversiune / obversiune",
+            "silogism -> figura / mod / distributie"
+          ],
+          "commonTrap": "Daca citesti prea repede si sari peste capitolul testat, alegi o regula buna pentru o intrebare gresita."
+        },
+        {
+          "title": "Schema rapida pentru Subiectele II si III",
+          "prompt": "Aici punctele se iau din controlul pasilor intermediari.",
+          "steps": [
+            "Scrii forma initiala.",
+            "Marchezi ce operatie sau ce relatie ti se cere.",
+            "Executi pasii unul cate unul.",
+            "Verifici daca formula finala corespunde si in limbaj natural."
+          ],
+          "commonTrap": "Multi sar direct la raspunsul natural si uita formula. La BAC, formula arata profesorului ca gandesti corect."
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "question": "Daca adaugi o proprietate unui termen, extensiunea lui creste sau scade?",
+      "options": ["Creste", "Scade"],
+      "correctAnswer": "Scade",
+      "explanation": "Mai multe proprietati inseamna un termen mai restrictiv, deci aplicabil la mai putine obiecte."
+    },
+    {
+      "question": "Conversiunea corecta a unei propozitii A ramane universala?",
+      "options": ["Da", "Nu"],
+      "correctAnswer": "Nu",
+      "explanation": "Propozitia A se converteste prin accident: din SaP obtii PiS, nu PaS."
+    },
+    {
+      "question": "Modulul eio-2 este valid sau nevalid?",
+      "options": ["Valid", "Nevalid"],
+      "correctAnswer": "Valid",
+      "explanation": "Diagrama Venn forteaza concluzia SoP, deci modulul este valid."
+    },
+    {
+      "question": "O definitie metaforica respecta regula claritatii?",
+      "options": ["Da", "Nu"],
+      "correctAnswer": "Nu",
+      "explanation": "Definitia logica trebuie sa fie clara si univoca, nu figurata."
+    }
+  ],
+  "practiceNote": "Sub aceasta pagina putem adauga ulterior exercitii derivate din model, pe baza materialelor pe care le trimiti."
+}

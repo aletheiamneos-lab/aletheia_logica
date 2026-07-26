@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "2.1-diagram-contract",
+  "examId": "bac_logica_2025_model",
+  "visibility": "backend_and_renderer",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler_relation_map",
+      "studentMode": {
+        "input": "hybrid_canvas_upload"
+      },
+      "teacherMode": {
+        "renderModel": true
+      },
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        {
+          "type": "inclusion",
+          "inner": "A",
+          "outer": "C"
+        },
+        {
+          "type": "inclusion",
+          "inner": "B",
+          "outer": "C"
+        },
+        {
+          "type": "contrariety",
+          "terms": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "type": "contrariety",
+          "terms": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "type": "contrariety",
+          "terms": [
+            "A",
+            "D"
+          ]
+        },
+        {
+          "type": "contrariety",
+          "terms": [
+            "A",
+            "E"
+          ]
+        },
+        {
+          "type": "intersection",
+          "terms": [
+            "D",
+            "E"
+          ]
+        }
+      ],
+      "caption": "Model Euler: A si B sunt incluse in C; D este separat de C; E intersecteaza D si este separat de A."
+    },
+    {
+      "diagramId": "diagram_III_A_c_eio_2_venn",
+      "diagramType": "venn_three_terms",
+      "mode": "eio-2",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "PeM",
+        "SiM"
+      ],
+      "conclusion": "SoP",
+      "validity": "valid",
+      "studentMode": {
+        "input": "hybrid_canvas_upload"
+      },
+      "teacherMode": {
+        "renderModel": true
+      },
+      "instructions": "Hasureaza intersectia P-M; plaseaza x in intersectia S-M; concluzia SoP se citeste din diagrama."
+    },
+    {
+      "diagramId": "diagram_III_A_c_aaa_3_venn",
+      "diagramType": "venn_three_terms",
+      "mode": "aaa-3",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "premises": [
+        "MaP",
+        "MaS"
+      ],
+      "conclusion": "SaP",
+      "validity": "invalid",
+      "studentMode": {
+        "input": "hybrid_canvas_upload"
+      },
+      "teacherMode": {
+        "renderModel": true
+      },
+      "instructions": "Reprezinta MaP si MaS; concluzia universala SaP nu rezulta din premise."
+    }
+  ]
+}

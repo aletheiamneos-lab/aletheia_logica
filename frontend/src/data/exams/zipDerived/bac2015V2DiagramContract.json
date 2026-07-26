@@ -1,0 +1,38 @@
+{
+  "exam_id": "bac_logica_2015_v2",
+  "diagrams": [
+    {
+      "diagramId": "euler_II_D_2015_v2",
+      "type": "euler",
+      "prompt": "Unii profesori nu sunt vorbitori de limba franceză.",
+      "expected_structure": {
+        "sets": [
+          "profesori",
+          "vorbitori de limba franceză"
+        ],
+        "relation": "partial_or_unknown_overlap_with_marked_S_outside_P",
+        "mark": "x in S outside P"
+      },
+      "student_input_modes": [
+        "draw_canvas",
+        "upload_image"
+      ],
+      "teacher_hint": "Două cercuri S și P; marchează existența unei zone din S în afara lui P."
+    },
+    {
+      "diagramId": "venn_III_A_aaa1_2015_v2",
+      "type": "venn_3_terms",
+      "mode": "aaa-1",
+      "schema": "MaP / SaM / SaP",
+      "expected_validity": "valid"
+    },
+    {
+      "diagramId": "venn_III_A_eao3_2015_v2",
+      "type": "venn_3_terms",
+      "mode": "eao-3",
+      "schema": "MeP / MaS / SoP",
+      "expected_validity": "valid_traditional"
+    }
+  ],
+  "rendering_notes": "Aplicația trebuie să permită desen canvas sau upload imagine pentru elev, iar pentru profesor să poată afișa schema așteptată."
+}

@@ -1,0 +1,144 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2022_model",
+  "examId": "bac_logica_2022_model",
+  "visibility": "teacher_only",
+  "teacherOnly": true,
+  "gradingSource": "Examenul national de bacalaureat 2022_Model_BAREM.pdf",
+  "answers": {
+    "I_A": {
+      "1": "b",
+      "2": "a",
+      "3": "d",
+      "4": "c",
+      "5": "c",
+      "6": "b",
+      "7": "a",
+      "8": "b",
+      "9": "d",
+      "10": "a"
+    },
+    "I_B": {
+      "a": "A",
+      "b": "A",
+      "c": "A",
+      "d": "F",
+      "e": "A",
+      "f": "F",
+      "g": "F",
+      "h": "A"
+    },
+    "II_A": {
+      "II_A_1": {
+        "formal": "SaP",
+        "natural": "Toate masinile de epoca sunt ieftine."
+      },
+      "II_A_2": {
+        "formal": "SoP",
+        "natural": "Unii profesionisti nu sunt medici."
+      },
+      "II_A_3": {
+        "formal": "SaP",
+        "natural": "Toti elevii de clasa a XII-a sunt premianti."
+      },
+      "II_A_4": {
+        "formal": "SiP",
+        "natural": "Unele filme istorice sunt educative."
+      }
+    },
+    "II_B": {
+      "p1": {
+        "initial": "SeP",
+        "conversion": {
+          "formal": "PeS",
+          "natural": "Niciun lucru ieftin nu este masina de epoca."
+        },
+        "obversion": {
+          "formal": "Sa~P",
+          "natural": "Toate masinile de epoca sunt lucruri non-ieftine."
+        }
+      },
+      "p2": {
+        "initial": "SiP",
+        "conversion": {
+          "formal": "PiS",
+          "natural": "Unii medici sunt profesionisti."
+        },
+        "obversion": {
+          "formal": "So~P",
+          "natural": "Unii profesionisti nu sunt non-medici."
+        }
+      }
+    },
+    "II_C": {
+      "II_C_1": {
+        "formal": "~PeS",
+        "alternativeFormal": "~PoS",
+        "natural": "Niciun non-premiant nu este elev de clasa a XII-a."
+      },
+      "II_C_2": {
+        "formal": "Sa~P",
+        "natural": "Toate filmele istorice sunt non-educative."
+      }
+    },
+    "II_D": {
+      "X": {
+        "formal": "SaP -> PaS",
+        "validity": "incorect",
+        "operation": "conversiune nevalida",
+        "explanation": "Conversiunea propozitiei universale afirmative nu este valida simplu; se incalca legea distribuirii termenilor, deoarece termenul P apare distribuit in concluzie, dar nu este distribuit in premisa."
+      },
+      "Y": {
+        "formal": "SoP -> Si~P",
+        "validity": "corect",
+        "operation": "obversiune valida"
+      }
+    },
+    "III_A": {
+      "aoo-2": {
+        "schema": [
+          "PaM",
+          "SoM",
+          "SoP"
+        ],
+        "validity": "valid"
+      },
+      "aaa-4": {
+        "schema": [
+          "PaM",
+          "MaS",
+          "SiP"
+        ],
+        "validity": "valid"
+      }
+    },
+    "III_B": {
+      "exampleFormal": [
+        "MeP",
+        "SiM",
+        "SoP"
+      ],
+      "exampleNatural": [
+        "Niciun lucru care nu atrage interesul adolescentilor nu este interesant pentru adolescenti.",
+        "Unele romane de aventuri sunt lucruri care nu atrag interesul adolescentilor.",
+        "Unele romane de aventuri nu sunt interesante pentru adolescenti."
+      ]
+    },
+    "III_C": {
+      "1": "A",
+      "2": "F",
+      "3": "F",
+      "4": "F"
+    },
+    "III_D": {
+      "ruleA": "Definitia incalca regula claritatii si preciziei / definitia trebuie sa fie lipsita de limbaj metaforic.",
+      "otherRule": "Regula necircularitatii.",
+      "exampleDefinition": "Educatia este procesul prin care o persoana este educata."
+    }
+  },
+  "scoring": {
+    "I_A": "10x2p=20p",
+    "I_B": "2p diagrama Euler + 8x1p A/F",
+    "II": "30p conform baremului",
+    "III": "30p conform baremului"
+  }
+}

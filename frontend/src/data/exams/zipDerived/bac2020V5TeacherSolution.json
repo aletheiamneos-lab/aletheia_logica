@@ -1,0 +1,184 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2020_v5",
+  "examId": "bac_logica_2020_v5",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2020 Varianta 5",
+  "source": "Examenul de bacalaureat național 2020_V5_BAREM.pdf",
+  "items": [
+    {
+      "section": "I.A",
+      "correctAnswers": {
+        "1": "c",
+        "2": "d",
+        "3": "b",
+        "4": "a",
+        "5": "d",
+        "6": "c",
+        "7": "a",
+        "8": "c",
+        "9": "c",
+        "10": "d"
+      },
+      "scoring": "10x2p = 20p"
+    },
+    {
+      "section": "I.B",
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_2020_v5",
+        "renderFromContract": true
+      },
+      "correctAnswers": {
+        "a": "A",
+        "b": "F",
+        "c": "A",
+        "d": "A",
+        "e": "F",
+        "f": "A",
+        "g": "F",
+        "h": "F"
+      },
+      "scoring": "2p diagramă + 8x1p A/F"
+    },
+    {
+      "section": "II.A",
+      "correctAnswers": {
+        "p1_contrary": {
+          "formal": "SeP",
+          "natural": "Nicio acțiune responsabilă nu este rezultat al educației."
+        },
+        "p2_contradictory": {
+          "formal": "SeP",
+          "natural": "Nicio alergie nu este reacție sezonieră."
+        },
+        "p3_subaltern": {
+          "formal": "SoP",
+          "natural": "Unii scriitori de succes nu sunt persoane lipsite de imaginație."
+        },
+        "p4_subcontrary": {
+          "formal": "SiP",
+          "natural": "Unele vertebrate sunt păsări."
+        }
+      },
+      "scoring": "8p"
+    },
+    {
+      "section": "II.B",
+      "correctAnswers": {
+        "p2_conversion": {
+          "formal": "PiS",
+          "natural": "Unele reacții sezoniere sunt alergii."
+        },
+        "p2_obversion": {
+          "formal": "So~P",
+          "natural": "Unele alergii nu sunt non-reacții sezoniere."
+        },
+        "p3_conversion": {
+          "formal": "PeS",
+          "natural": "Nicio persoană lipsită de imaginație nu este scriitor de succes."
+        },
+        "p3_obversion": {
+          "formal": "Sa~P",
+          "natural": "Toți scriitorii de succes sunt persoane care nu sunt lipsite de imaginație."
+        }
+      },
+      "scoring": "8p"
+    },
+    {
+      "section": "II.C",
+      "correctAnswers": {
+        "compound_p4": {
+          "formal": "Po~S",
+          "natural": "Unele păsări nu sunt non-vertebrate."
+        },
+        "compound_p1": {
+          "formal": "Sa~P",
+          "natural": "Toate acțiunile responsabile sunt non-rezultate ale educației."
+        }
+      },
+      "scoring": "6p"
+    },
+    {
+      "section": "II.D",
+      "correctAnswers": {
+        "X": {
+          "formal": "SaP→PaS",
+          "status": "incorect",
+          "explanation": "Conversiune nevalidă a propoziției universal afirmative; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+        },
+        "Y": {
+          "formal": "SiP→So~P",
+          "status": "corect",
+          "operation": "obversiune validă"
+        }
+      },
+      "scoring": "8p"
+    },
+    {
+      "section": "III.A",
+      "correctAnswers": {
+        "eae-3": {
+          "schema": [
+            "MeP",
+            "MaS",
+            "SeP"
+          ],
+          "validity": "nevalid"
+        },
+        "iai-4": {
+          "schema": [
+            "PiM",
+            "MaS",
+            "SiP"
+          ],
+          "validity": "valid"
+        }
+      },
+      "diagramSolutions": [
+        {
+          "diagramId": "diagram_III_A_eae3_2020_v5",
+          "renderFromContract": true
+        },
+        {
+          "diagramId": "diagram_III_A_iai4_2020_v5",
+          "renderFromContract": true
+        }
+      ],
+      "scoring": "14p"
+    },
+    {
+      "section": "III.B",
+      "correctAnswer": {
+        "formal": [
+          "MaP",
+          "SiM",
+          "SiP"
+        ],
+        "natural": [
+          "Toți pictorii renascentiști italieni sunt pictori talentați.",
+          "Unii italieni sunt pictori renascentiști italieni.",
+          "Deci, unii italieni sunt pictori talentați."
+        ]
+      },
+      "scoring": "6p"
+    },
+    {
+      "section": "III.C",
+      "correctAnswers": {
+        "1": "A",
+        "2": "F",
+        "3": "F",
+        "4": "A"
+      },
+      "scoring": "4p"
+    },
+    {
+      "section": "III.D",
+      "correctAnswer": {
+        "givenDefinitionRule": "Încalcă regula clarității și preciziei: definiția este metaforică, nu explică noțiunea de om.",
+        "alternativeRule": "Regula adecvării definiției.",
+        "badDefinitionExample": "Omul este o ființă vie. Definiția este prea largă, deoarece include și alte ființe vii, nu doar oamenii."
+      },
+      "scoring": "6p"
+    }
+  ]
+}

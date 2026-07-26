@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "BAC_TEACHER_SOLUTION_BACKEND_V1",
+  "examId": "bac_logica_2014_v4",
+  "title": "Rezolvare profesor - BAC Logica 2014 - Varianta 4",
+  "visibility": "teacherOnly",
+  "sourceOfTruth": true,
+  "doNotExposeToStudent": true,
+  "renderingPrinciple": "Aplicatia genereaza preview/PDF din acest JSON. Schimbarea afisarii nu necesita schimbarea datelor de solutie.",
+  "sourceBackendJson": {
+    "metadata": {
+      "examId": "bac_logica_2014_v4",
+      "title": "BAC Logică 2014 - Varianta 4",
+      "visibility": "teacher_only",
+      "basedOn": "official_barem",
+      "studentMustNotSee": true
+    },
+    "answerKey": {
+      "S1_A": {
+        "1": "c",
+        "2": "b",
+        "3": "c",
+        "4": "d",
+        "5": "b",
+        "6": "a"
+      },
+      "S1_B": {
+        "eao-2": {
+          "schema": [
+            "PeM",
+            "SaM",
+            "SoP"
+          ],
+          "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem"
+        },
+        "aee-4": {
+          "schema": [
+            "PaM",
+            "MeS",
+            "SeP"
+          ],
+          "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem"
+        }
+      },
+      "S2_A": "SoP",
+      "S2_B": {
+        "subcontrara_prop3_formal": "SoP",
+        "subcontrara_prop3_natural": "Unele teorii despre Univers nu sunt false.",
+        "subalterna_prop4_formal": "SoP",
+        "subalterna_prop4_natural": "Unele acțiuni pripite nu sunt eficiente."
+      },
+      "S2_C": {
+        "prop1": {
+          "original": "SaP",
+          "conversa_formal": "PiS",
+          "conversa_natural": "Unele lucruri epuizabile sunt resurse neregenerabile.",
+          "obversa_formal": "Se non-P",
+          "obversa_natural": "Nicio resursă neregenerabilă nu este neepuizabilă."
+        },
+        "prop4": {
+          "original": "SeP",
+          "conversa_formal": "PeS",
+          "conversa_natural": "Nicio acțiune eficientă nu este pripită.",
+          "obversa_formal": "Sa non-P",
+          "obversa_natural": "Toate acțiunile pripite sunt ineficiente."
+        }
+      },
+      "S2_D": "Propoziția 2 este de tip O, SoP. Propozițiile particulare negative nu se convertesc valid. Conversa ar fi PoS, dar prin această trecere se schimbă distribuirea termenilor și se poate ajunge la o concluzie nejustificată.",
+      "S2_E": {
+        "formula": "SiP",
+        "natural": "Unele teorii despre Univers sunt false. Diagrama Euler trebuie să indice existența unei intersecții între S și P."
+      },
+      "S3_1": "Sofismul este un raționament aparent corect, dar în realitate incorect, folosit de regulă pentru a produce convingere printr-o eroare logică.",
+      "S3_2": [
+        "raționamente valide",
+        "raționamente nevalide"
+      ],
+      "S3_3": {
+        "formal": "MeP; SiM; deci SoP",
+        "natural": "Niciun elev corigent nu este premiant. Unii elevi sunt corigenți. Prin urmare, unii elevi nu sunt premianți."
+      },
+      "S3_4": {
+        "violated_rule": "Definiția „Copiii sunt florile vieții” încalcă regula clarității și preciziei, deoarece folosește o formulare metaforică.",
+        "other_rules_examples": [
+          {
+            "rule": "Definiția nu trebuie să fie prea largă.",
+            "bad_definition": "Copilul este o ființă vie."
+          },
+          {
+            "rule": "Definiția nu trebuie să fie circulară.",
+            "bad_definition": "Copilul este o persoană copilăroasă."
+          }
+        ]
+      }
+    },
+    "verificationChecklist": [
+      "Subiectul I.A comparat cu baremul: 1-c, 2-b, 3-c, 4-d, 5-b, 6-a.",
+      "Subiectul I.B comparat cu baremul: eao-2 și aee-4, schemele oficiale introduse.",
+      "Subiectul II.A-E comparat cu baremul: formula SoP, operații și diagramă Euler.",
+      "Subiectul III.1-4 comparat cu baremul: definiție sofism, tipuri raționament, argument valid, definiție greșită.",
+      "JSON-ul elevului nu conține soluții.",
+      "JSON-ul profesorului este marcat teacher_only."
+    ]
+  },
+  "scoringSummary": {
+    "total": 100,
+    "officialPoints": 10,
+    "subjectI": 30,
+    "subjectII": 30,
+    "subjectIII": 30
+  },
+  "solutions": [
+    {
+      "sectionId": "I",
+      "sectionTitle": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 18,
+          "officialPrompt": "Scrie litera corespunzătoare răspunsului corect. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "itemId": "I_A_1",
+              "points": 3,
+              "officialPrompt": "În structura unui termen, extensiunea reprezintă:",
+              "correctLetter": "c",
+              "answer": "c) referința termenului adică totalitatea obiectelor la care se referă"
+            },
+            {
+              "itemId": "I_A_2",
+              "points": 3,
+              "officialPrompt": "Termenul „argument deductiv” este din punct de vedere intensional:",
+              "correctLetter": "b",
+              "answer": "b) un termen compus"
+            },
+            {
+              "itemId": "I_A_3",
+              "points": 3,
+              "officialPrompt": "Termenii „continuitate” și „discontinuitate” se află în raport de:",
+              "correctLetter": "c",
+              "answer": "c) contradicție"
+            },
+            {
+              "itemId": "I_A_4",
+              "points": 3,
+              "officialPrompt": "O propoziție universal negativă este propoziția:",
+              "correctLetter": "d",
+              "answer": "d) Nimeni nu este atoștiutor"
+            },
+            {
+              "itemId": "I_A_5",
+              "points": 3,
+              "officialPrompt": "Predicatul logic al propoziției „Elevii care sunt buni la matematică sunt pasionați de informatică” este:",
+              "correctLetter": "b",
+              "answer": "b) pasionați de informatică"
+            },
+            {
+              "itemId": "I_A_6",
+              "points": 3,
+              "officialPrompt": "Din adevărul propoziției SiP se poate deduce falsitatea propoziției SeP, în baza raportului logic de:",
+              "correctLetter": "a",
+              "answer": "a) contradicție"
+            }
+          ]
+        },
+        {
+          "groupId": "I_B",
+          "title": "B. Scheme silogistice si diagrame Venn",
+          "points": 12,
+          "officialPrompt": "Fie următoarele două moduri silogistice: eao-2, aee-4. Scrie schema de inferență și verifică prin diagrame Venn validitatea fiecăruia.",
+          "items": [
+            {
+              "itemId": "I_B_eao_2",
+              "points": 6,
+              "officialPrompt": "Schema si validitatea modului eao-2",
+              "schema": [
+                "PeM",
+                "SaM",
+                "SoP"
+              ],
+              "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem",
+              "diagramRef": "venn_s1b_eao2"
+            },
+            {
+              "itemId": "I_B_aee_4",
+              "points": 6,
+              "officialPrompt": "Schema si validitatea modului aee-4",
+              "schema": [
+                "PaM",
+                "MeS",
+                "SeP"
+              ],
+              "decision": "valid conform verificării prin diagramă Venn în logica silogistică folosită la barem",
+              "diagramRef": "venn_s1b_aee4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "II",
+      "sectionTitle": "Subiectul II",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "II_A",
+          "title": "A. Formula propozitiei 2",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "II_A",
+              "points": 4,
+              "officialPrompt": "Precizați formula propoziției 2.",
+              "answer": "SoP"
+            }
+          ]
+        },
+        {
+          "groupId": "II_B",
+          "title": "B. Subcontrara si subalterna",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "II_B",
+              "points": 6,
+              "officialPrompt": "Construiți, în limbaj formal și în limbaj natural, subcontrara propoziției 3 și subalterna propoziției 4.",
+              "subcontrara_prop3_formal": "SoP",
+              "subcontrara_prop3_natural": "Unele teorii despre Univers nu sunt false.",
+              "subalterna_prop4_formal": "SoP",
+              "subalterna_prop4_natural": "Unele acțiuni pripite nu sunt eficiente."
+            }
+          ]
+        },
+        {
+          "groupId": "II_C",
+          "title": "C. Conversiune si obversiune",
+          "points": 10,
+          "items": [
+            {
+              "itemId": "II_C",
+              "points": 10,
+              "officialPrompt": "Aplicați operațiile de conversiune și obversiune pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 4, atât în limbaj formal, cât și în limbaj natural.",
+              "prop1": {
+                "original": "SaP",
+                "conversa_formal": "PiS",
+                "conversa_natural": "Unele lucruri epuizabile sunt resurse neregenerabile.",
+                "obversa_formal": "Se non-P",
+                "obversa_natural": "Nicio resursă neregenerabilă nu este neepuizabilă."
+              },
+              "prop4": {
+                "original": "SeP",
+                "conversa_formal": "PeS",
+                "conversa_natural": "Nicio acțiune eficientă nu este pripită.",
+                "obversa_formal": "Sa non-P",
+                "obversa_natural": "Toate acțiunile pripite sunt ineficiente."
+              }
+            }
+          ]
+        },
+        {
+          "groupId": "II_D",
+          "title": "D. Conversiune nevalida",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "II_D",
+              "points": 6,
+              "officialPrompt": "Explicați succint de ce propoziția 2 nu se convertește corect.",
+              "answer": "Propoziția 2 este de tip O, SoP. Propozițiile particulare negative nu se convertesc valid. Conversa ar fi PoS, dar prin această trecere se schimbă distribuirea termenilor și se poate ajunge la o concluzie nejustificată."
+            }
+          ]
+        },
+        {
+          "groupId": "II_E",
+          "title": "E. Diagrama Euler",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "II_E",
+              "points": 4,
+              "officialPrompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 3.",
+              "formula": "SiP",
+              "natural": "Unele teorii despre Univers sunt false. Diagrama Euler trebuie să indice existența unei intersecții între S și P.",
+              "diagramRef": "euler_s2_prop3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "III",
+      "sectionTitle": "Subiectul III",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "III_1",
+          "title": "1. Sofism",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "III_1",
+              "points": 4,
+              "officialPrompt": "Definiți conceptul de sofism.",
+              "answer": "Sofismul este un raționament aparent corect, dar în realitate incorect, folosit de regulă pentru a produce convingere printr-o eroare logică."
+            }
+          ]
+        },
+        {
+          "groupId": "III_2",
+          "title": "2. Tipuri de rationamente",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "III_2",
+              "points": 6,
+              "officialPrompt": "Enumerați două tipuri de raționamente, în funcție de criteriul corectitudinii logice.",
+              "answers": [
+                "raționamente valide",
+                "raționamente nevalide"
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "III_3",
+          "title": "3. Argument valid",
+          "points": 10,
+          "items": [
+            {
+              "itemId": "III_3",
+              "points": 10,
+              "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un argument valid cu două premise, prin care să justificați propoziția „Unii elevi nu sunt premianți”.",
+              "formal": "MeP; SiM; deci SoP",
+              "natural": "Niciun elev corigent nu este premiant. Unii elevi sunt corigenți. Prin urmare, unii elevi nu sunt premianți."
+            }
+          ]
+        },
+        {
+          "groupId": "III_4",
+          "title": "4. Reguli de definire",
+          "points": 10,
+          "items": [
+            {
+              "itemId": "III_4",
+              "points": 10,
+              "officialPrompt": "Fie următoarea definiție: „Copiii sunt florile vieții.” Menționați o regulă de corectitudine pe care o încalcă definiția dată. Enunțați două reguli de corectitudine a definirii, diferite de regula de la punctul a, și construiți pentru fiecare câte o definiție care să le încalce.",
+              "violated_rule": "Definiția „Copiii sunt florile vieții” încalcă regula clarității și preciziei, deoarece folosește o formulare metaforică.",
+              "other_rules_examples": [
+                {
+                  "rule": "Definiția nu trebuie să fie prea largă.",
+                  "bad_definition": "Copilul este o ființă vie."
+                },
+                {
+                  "rule": "Definiția nu trebuie să fie circulară.",
+                  "bad_definition": "Copilul este o persoană copilăroasă."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

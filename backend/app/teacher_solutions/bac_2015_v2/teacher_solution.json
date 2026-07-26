@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "BAC_TEACHER_SOLUTION_BACKEND_V1",
+  "examId": "bac_logica_2015_v2",
+  "title": "Rezolvare profesor - BAC Logica 2015 - Varianta 2",
+  "visibility": "teacherOnly",
+  "sourceOfTruth": true,
+  "doNotExposeToStudent": true,
+  "renderingPrinciple": "Aplicatia genereaza preview/PDF din acest JSON. Datele sunt legate de baremul oficial 2015 V2.",
+  "scoringSummary": {
+    "total": 100,
+    "officialPoints": 10,
+    "subjectI": 30,
+    "subjectII": 30,
+    "subjectIII": 30
+  },
+  "solutions": [
+    {
+      "sectionId": "I",
+      "sectionTitle": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 30,
+          "officialPrompt": "Scrie litera corespunzatoare raspunsului corect. Este corecta o singura varianta de raspuns.",
+          "items": [
+            {
+              "itemId": "I_A_1",
+              "points": 3,
+              "officialPrompt": "Extensiunea termenului numar natural inseamna:",
+              "correctLetter": "c",
+              "answer": "c) totalitatea numerelor naturale"
+            },
+            {
+              "itemId": "I_A_2",
+              "points": 3,
+              "officialPrompt": "Termenul religiozitate este:",
+              "correctLetter": "c",
+              "answer": "c) abstract, simplu, nevid, general"
+            },
+            {
+              "itemId": "I_A_3",
+              "points": 3,
+              "officialPrompt": "Termenii bacalaureat si examen se afla in raport de:",
+              "correctLetter": "a",
+              "answer": "a) ordonare"
+            },
+            {
+              "itemId": "I_A_4",
+              "points": 3,
+              "officialPrompt": "Predicatul logic al propozitiei date este:",
+              "correctLetter": "a",
+              "answer": "a) pe cale de disparitie"
+            },
+            {
+              "itemId": "I_A_5",
+              "points": 3,
+              "officialPrompt": "Reprezinta o propozitie particulara afirmativa:",
+              "correctLetter": "b",
+              "answer": "b) Doar unii elevi si-au facut tema."
+            },
+            {
+              "itemId": "I_A_6",
+              "points": 3,
+              "officialPrompt": "Rationamentul deductiv in care, din premise adevarate, se obtin numai concluzii adevarate este:",
+              "correctLetter": "c",
+              "answer": "c) valid"
+            },
+            {
+              "itemId": "I_A_7",
+              "points": 3,
+              "officialPrompt": "Nu se afla printre elementele demonstratiei:",
+              "correctLetter": "b",
+              "answer": "b) regulile demonstratiei"
+            },
+            {
+              "itemId": "I_A_8",
+              "points": 3,
+              "officialPrompt": "Rationamentul despre clasa a IX-a B este un exemplu de:",
+              "correctLetter": "d",
+              "answer": "d) inductie completa"
+            },
+            {
+              "itemId": "I_A_9",
+              "points": 3,
+              "officialPrompt": "Inductia incompleta este:",
+              "correctLetter": "d",
+              "answer": "d) o generalizare, pornind de la o parte din obiectele unei clase"
+            },
+            {
+              "itemId": "I_A_10",
+              "points": 3,
+              "officialPrompt": "Pe aceeasi treapta a unei clasificari corecte, intre clasele obtinute trebuie sa existe numai raporturi de:",
+              "correctLetter": "b",
+              "answer": "b) opozitie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "II",
+      "sectionTitle": "Subiectul al II-lea",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "II_A",
+          "title": "A. Formula propozitiei 4",
+          "points": 2,
+          "items": [
+            {
+              "itemId": "II_A",
+              "points": 2,
+              "officialPrompt": "Precizati formula propozitiei 4.",
+              "formula": "SeP",
+              "answer": "Propozitia 4 este de tip E: SeP."
+            }
+          ]
+        },
+        {
+          "groupId": "II_B",
+          "title": "B. Subcontrara si supraalterna",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "II_B",
+              "points": 6,
+              "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 3 si supraalterna propozitiei 1.",
+              "answers": {
+                "subcontrara_prop3_formal": "SiP",
+                "subcontrara_prop3_natural": "Unii profesori sunt vorbitori de limba franceza.",
+                "supraalterna_prop1_formal": "SaP",
+                "supraalterna_prop1_natural": "Toate formele de guvernamant sunt monarhii."
+              },
+              "note": "Baremul acorda puncte pentru forma formala si pentru exprimarea in limbaj natural."
+            }
+          ]
+        },
+        {
+          "groupId": "II_C",
+          "title": "C. Conversiune si obversiune",
+          "points": 10,
+          "items": [
+            {
+              "itemId": "II_C",
+              "points": 10,
+              "officialPrompt": "Aplicati conversiunea si obversiunea pentru propozitiile 2 si 4.",
+              "answers": {
+                "prop2": {
+                  "original": "SaP",
+                  "conversa_formal": "PiS",
+                  "conversa_natural": "Unele haine elegante sunt costume scumpe.",
+                  "obversa_formal": "Se non-P",
+                  "obversa_natural": "Niciun costum scump nu este haina neeleganta."
+                },
+                "prop4": {
+                  "original": "SeP",
+                  "conversa_formal": "PeS",
+                  "conversa_natural": "Niciun aliment dietetic nu este prajitura cu ciocolata.",
+                  "obversa_formal": "Sa non-P",
+                  "obversa_natural": "Toate prajiturile cu ciocolata sunt alimente nedietetice."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "groupId": "II_D",
+          "title": "D. Diagrama Euler",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "II_D",
+              "points": 4,
+              "officialPrompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+              "formula": "SoP",
+              "natural": "Unii profesori nu sunt vorbitori de limba franceza.",
+              "diagramRef": "bac_2015_v2_ii_d_euler"
+            }
+          ]
+        },
+        {
+          "groupId": "II_E",
+          "title": "E. Formalizare si corectitudine logica",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_E",
+              "points": 8,
+              "officialPrompt": "Formalizati demersul logic al celor doua rationamente si explicati corectitudinea lor.",
+              "answers": {
+                "X": {
+                  "formal": "SoP -> PoS",
+                  "decision": "conversiune nevalida",
+                  "explanation": "Se incalca legea distribuirii termenilor."
+                },
+                "Y": {
+                  "formal": "SeP -> PeS",
+                  "decision": "conversiune valida",
+                  "explanation": "Se respecta legea distribuirii termenilor."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "III",
+      "sectionTitle": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "groupId": "III_A",
+          "title": "A. Scheme silogistice si diagrama Venn",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "III_A",
+              "points": 8,
+              "officialPrompt": "Fie urmatoarele doua moduri silogistice: aaa-1, eao-3.",
+              "schema": [
+                "aaa-1: MaP; SaM; deci SaP",
+                "eao-3: MeP; MaS; deci SoP"
+              ],
+              "natural": "Exemplu pentru aaa-1: Toate mamiferele sunt vertebrate. Toti cainii sunt mamifere. Prin urmare, toti cainii sunt vertebrate.",
+              "decision": "aaa-1 este valid; eao-3 este valid conform verificarii prin diagrama Venn.",
+              "diagramRef": "bac_2015_v2_iii_a_venn"
+            }
+          ]
+        },
+        {
+          "groupId": "III_B",
+          "title": "B. Argument valid",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "III_B",
+              "points": 8,
+              "officialPrompt": "Construiti un argument valid cu doua premise care sa justifice propozitia: Unele acte umane sunt imorale.",
+              "formal": "MaP; SiM; deci SiP",
+              "natural": "Toate actele condamnabile sunt imorale. Unele acte umane sunt acte condamnabile. Prin urmare, unele acte umane sunt imorale."
+            }
+          ]
+        },
+        {
+          "groupId": "III_C",
+          "title": "C. Reguli de corectitudine a definirii",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "III_C",
+              "points": 8,
+              "officialPrompt": "Medicul este persoana care practica medicina. Precizati regula incalcata si construiti alte doua definitii incorecte.",
+              "violated_rule": "Definitia este circulara, deoarece definitorul trimite la aceeasi familie lexicala: medic - medicina.",
+              "other_rules_examples": [
+                {
+                  "rule": "Definitia nu trebuie sa fie prea larga.",
+                  "bad_definition": "Medicul este o persoana."
+                },
+                {
+                  "rule": "Definitia nu trebuie sa fie negativa, cand poate fi afirmativa.",
+                  "bad_definition": "Medicul este persoana care nu este pacient."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "verificationChecklist": [
+    "Subiectul I verificat dupa barem: 1-c, 2-c, 3-a, 4-a, 5-b, 6-c, 7-b, 8-d, 9-d, 10-b.",
+    "Subiectul II punctat dupa baremul oficial 2015 V2.",
+    "Subiectul III include schemele aaa-1 si eao-3 si verificarea prin diagrama Venn.",
+    "Datele sunt teacher-only si nu sunt expuse in foaia elevului."
+  ]
+}

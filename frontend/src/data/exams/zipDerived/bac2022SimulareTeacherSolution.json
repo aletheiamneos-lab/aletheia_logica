@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "BAC_LOGICA_TEACHER_SOLUTION_V2",
+  "solutionId": "teacher_solution_bac_logica_2022_simulare",
+  "examId": "bac_logica_2022_simulare",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2022 Simulare",
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "correctAnswer": "d",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_2",
+      "correctAnswer": "a",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_3",
+      "correctAnswer": "c",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_4",
+      "correctAnswer": "b",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_5",
+      "correctAnswer": "b",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_6",
+      "correctAnswer": "d",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_7",
+      "correctAnswer": "b",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_8",
+      "correctAnswer": "a",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_9",
+      "correctAnswer": "a",
+      "points": 2
+    },
+    {
+      "itemId": "I_A_10",
+      "correctAnswer": "d",
+      "points": 2
+    },
+    {
+      "itemId": "I_B_diagram",
+      "correctAnswer": "A identic cu B; C identic cu B; D încrucișat cu A; E subordonat lui B.",
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "points": 2
+    },
+    {
+      "itemId": "I_B_a",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_b",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_c",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_d",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_e",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_f",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_g",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_h",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "II_A_1",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unele experiențe personale pozitive nu sunt amintiri frumoase."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_A_2",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unele competiții școlare nu sunt concursuri cu grad sporit de dificultate."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_A_3",
+      "correctAnswer": {
+        "formal": "SaP",
+        "natural": "Toate călătoriile bine organizate sunt neplăcute."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_A_4",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Nicio acțiune reprobabilă nu este evaluată din punct de vedere moral."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_B_1_conv",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele amintiri frumoase sunt experiențe personale pozitive."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_B_1_obv",
+      "correctAnswer": {
+        "formal": "Se¬P",
+        "natural": "Nicio experiență personală pozitivă nu este non-amintire frumoasă."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_B_3_conv",
+      "correctAnswer": {
+        "formal": "PeS",
+        "natural": "Nicio situație neplăcută nu este călătorie bine organizată."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_B_3_obv",
+      "correctAnswer": {
+        "formal": "Sa¬P",
+        "natural": "Toate călătoriile bine organizate sunt plăcute."
+      },
+      "points": 2,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_C_1",
+      "correctAnswer": {
+        "formal": "¬PiS",
+        "natural": "Unele lucruri plăcute sunt călătorii bine organizate."
+      },
+      "points": 3,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_C_2",
+      "correctAnswer": {
+        "formal": "So¬P",
+        "natural": "Unele acțiuni reprobabile nu sunt neevaluate din punct de vedere moral."
+      },
+      "points": 3,
+      "explanation": "Conform baremului oficial; limbajul natural admite formulări echivalente corecte."
+    },
+    {
+      "itemId": "II_D_X",
+      "correctAnswer": {
+        "formal": "SiP→PaS",
+        "decision": "incorrect",
+        "explanation": "Conversiune nevalidă; termenul P apare distribuit în concluzie, dar nu este distribuit în premisă."
+      },
+      "points": 4
+    },
+    {
+      "itemId": "II_D_Y",
+      "correctAnswer": {
+        "formal": "SiP→PiS",
+        "decision": "correct"
+      },
+      "points": 4
+    },
+    {
+      "itemId": "III_A_aee2_schema",
+      "correctAnswer": {
+        "majorPremise": "PaM",
+        "minorPremise": "SeM",
+        "conclusion": "SeP"
+      },
+      "points": 4
+    },
+    {
+      "itemId": "III_A_aii3_schema",
+      "correctAnswer": {
+        "majorPremise": "MiP",
+        "minorPremise": "MaS",
+        "conclusion": "SiP"
+      },
+      "points": 4
+    },
+    {
+      "itemId": "III_A_aee2_venn",
+      "correctAnswer": {
+        "validityDecision": "valid"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_aee2_venn",
+        "renderFromContract": true
+      },
+      "points": 3
+    },
+    {
+      "itemId": "III_A_aii3_venn",
+      "correctAnswer": {
+        "validityDecision": "valid"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_aii3_venn",
+        "renderFromContract": true
+      },
+      "points": 3
+    },
+    {
+      "itemId": "III_A_natural",
+      "correctAnswer": "Se acceptă orice silogism în limbaj natural care corespunde corect uneia dintre scheme.",
+      "points": 4
+    },
+    {
+      "itemId": "III_B_formal",
+      "correctAnswer": {
+        "majorPremise": "MeP",
+        "minorPremise": "SaM",
+        "conclusion": "SeP"
+      },
+      "points": 3
+    },
+    {
+      "itemId": "III_B_natural",
+      "correctAnswer": "Niciun teritoriu cartografiat nu este necartografiat. Toate insulele din Pacific sunt teritorii cartografiate. Prin urmare, nicio insulă din Pacific nu este necartografiată.",
+      "points": 3
+    },
+    {
+      "itemId": "III_C_1",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "III_C_2",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "III_C_3",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "III_C_4",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "III_D_1",
+      "correctAnswer": "Încalcă regula clarității și preciziei / evitarea limbajului figurat.",
+      "points": 2
+    },
+    {
+      "itemId": "III_D_2",
+      "correctAnswer": "Exemplu: regula circularității. Adolescența este perioada adolescentului.",
+      "points": 4
+    }
+  ]
+}

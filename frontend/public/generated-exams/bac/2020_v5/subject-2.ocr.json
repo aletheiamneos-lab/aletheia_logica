@@ -1,0 +1,656 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei si Cercetari",
+      "x": 1460.658447265625,
+      "y": 190.9959716796875,
+      "score": 0.9841070861527415,
+      "page_number": 2
+    },
+    {
+      "text": "Centrul NationaldePoliticisiEvaluareinEducatie",
+      "x": 1244.06884765625,
+      "y": 265.2721862792969,
+      "score": 0.9840473662252012,
+      "page_number": 2
+    },
+    {
+      "text": "8.  in cazul unei clase cu numar mic, finit de elemente se poate deriva o concluzie certa daca se",
+      "x": 356.58026123046875,
+      "y": 363.42291259765625,
+      "score": 0.9708459875018326,
+      "page_number": 2
+    },
+    {
+      "text": "cerceteaza:",
+      "x": 536.1910400390625,
+      "y": 456.2681579589844,
+      "score": 0.9954131679101423,
+      "page_number": 2
+    },
+    {
+      "text": "unele elemente ale clasei, prin inductie incompleta",
+      "x": 533.5497436523438,
+      "y": 533.1970825195312,
+      "score": 0.9774264482890859,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 414.68963623046875,
+      "y": 538.5025634765625,
+      "score": 0.9902887940406799,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 417.3309631347656,
+      "y": 615.4314575195312,
+      "score": 0.9987571835517883,
+      "page_number": 2
+    },
+    {
+      "text": "elementelereprezentative aleclasei,prininductie completa",
+      "x": 533.5497436523438,
+      "y": 612.7787475585938,
+      "score": 0.9752745830586979,
+      "page_number": 2
+    },
+    {
+      "text": "c.t",
+      "x": 417.3309631347656,
+      "y": 700.318603515625,
+      "score": 0.9826669494311014,
+      "page_number": 2
+    },
+    {
+      "text": "toate elementele clasei, prin inductie completa",
+      "x": 528.2670288085938,
+      "y": 692.3604125976562,
+      "score": 0.9699214912475423,
+      "page_number": 2
+    },
+    {
+      "text": "d. toate elementele reprezentative, prin inductie incompleta",
+      "x": 409.4069519042969,
+      "y": 763.98388671875,
+      "score": 0.9867298543453217,
+      "page_number": 2
+    },
+    {
+      "text": "9.",
+      "x": 361.8629150390625,
+      "y": 901.9254150390625,
+      "score": 0.9993299841880798,
+      "page_number": 2
+    },
+    {
+      "text": "Dacatermenului,examendebacalaureat\"iseeliminaproprietatea,debacalaureat\",atunci:",
+      "x": 541.4737548828125,
+      "y": 907.2308959960938,
+      "score": 0.9795851171016693,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneascade,extensiuneascade",
+      "x": 538.8323974609375,
+      "y": 989.4652709960938,
+      "score": 0.9850815986142014,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 419.9722900390625,
+      "y": 994.7706909179688,
+      "score": 0.9942963421344757,
+      "page_number": 2
+    },
+    {
+      "text": "intensiunea creste,extensiunea creste",
+      "x": 528.2670288085938,
+      "y": 1061.0887451171875,
+      "score": 0.9734094593975995,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 417.3309631347656,
+      "y": 1063.741455078125,
+      "score": 0.9985430240631104,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 1145.975830078125,
+      "score": 0.8633803725242615,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneascade,extensiuneacreste",
+      "x": 530.9083862304688,
+      "y": 1138.0177001953125,
+      "score": 0.9858495032086092,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 419.9722900390625,
+      "y": 1222.90478515625,
+      "score": 0.9966070055961609,
+      "page_number": 2
+    },
+    {
+      "text": "intensiunea creste, extensiunea scade",
+      "x": 528.2670288085938,
+      "y": 1220.2520751953125,
+      "score": 0.9755997577229062,
+      "page_number": 2
+    },
+    {
+      "text": "10.",
+      "x": 369.78692626953125,
+      "y": 1360.8463134765625,
+      "score": 0.9941312670707703,
+      "page_number": 2
+    },
+    {
+      "text": "Propozitia,Uneleerorideargumentarenusunteroriformale\"este",
+      "x": 522.984375,
+      "y": 1360.8463134765625,
+      "score": 0.9817538198671842,
+      "page_number": 2
+    },
+    {
+      "text": "particulara afirmativa",
+      "x": 522.984375,
+      "y": 1440.427978515625,
+      "score": 0.9957217438654467,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 1448.3861083984375,
+      "score": 0.9945701360702515,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 412.0483093261719,
+      "y": 1517.35693359375,
+      "score": 0.9961736798286438,
+      "page_number": 2
+    },
+    {
+      "text": "universala afirmativa",
+      "x": 530.9083862304688,
+      "y": 1520.0096435546875,
+      "score": 0.9872175199644906,
+      "page_number": 2
+    },
+    {
+      "text": "universala negativa",
+      "x": 536.1910400390625,
+      "y": 1599.59130859375,
+      "score": 0.9507948850330553,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 414.68963623046875,
+      "y": 1602.2440185546875,
+      "score": 0.8307079672813416,
+      "page_number": 2
+    },
+    {
+      "text": "particulara negativa",
+      "x": 520.343017578125,
+      "y": 1673.8675537109375,
+      "score": 0.9908863050597054,
+      "page_number": 2
+    },
+    {
+      "text": "d.p",
+      "x": 417.3309631347656,
+      "y": 1679.1729736328125,
+      "score": 0.8374372522036234,
+      "page_number": 2
+    },
+    {
+      "text": "20 de puncte",
+      "x": 2934.5234375,
+      "y": 1745.490966796875,
+      "score": 0.9683828006188074,
+      "page_number": 2
+    },
+    {
+      "text": "B.Fie termenii A,B,C,D,si E astfel incat termenul A este supraordonat termenului B.Termenul",
+      "x": 422.6136474609375,
+      "y": 1886.085205078125,
+      "score": 0.9540770060413486,
+      "page_number": 2
+    },
+    {
+      "text": "C se afla in raport de incrucisare cu termenul A, dar in raport de opozitie cu termenul B.",
+      "x": 419.9722900390625,
+      "y": 1963.01416015625,
+      "score": 0.9689291596412659,
+      "page_number": 2
+    },
+    {
+      "text": "Termenul Destespeciea termenuluiA,darseaflainraportdeincrucisareatatcu termenul B,",
+      "x": 417.3309631347656,
+      "y": 2042.5958251953125,
+      "score": 0.9675679523043517,
+      "page_number": 2
+    },
+    {
+      "text": "cat si cu termenul C. Termenul E este specie a termenului C, dar se afla in raport de incrucisare",
+      "x": 419.9722900390625,
+      "y": 2119.52490234375,
+      "score": 0.9697398285275882,
+      "page_number": 2
+    },
+    {
+      "text": "atatcu termenulA,catsi cu termenul D.",
+      "x": 425.2549743652344,
+      "y": 2204.411865234375,
+      "score": 0.9515170599963214,
+      "page_number": 2
+    },
+    {
+      "text": "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice",
+      "x": 409.4069519042969,
+      "y": 2270.72998046875,
+      "score": 0.9854640290141106,
+      "page_number": 2
+    },
+    {
+      "text": "dintre cei cinci termeni.",
+      "x": 528.2670288085938,
+      "y": 2355.616943359375,
+      "score": 0.9882938838005066,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3050.7421875,
+      "y": 2360.92236328125,
+      "score": 0.9952215403318405,
+      "page_number": 2
+    },
+    {
+      "text": "2.  Stabiliti, pe baza raporturilor existente intre termeni A, B, C, D, E care dintre urmatoarele",
+      "x": 406.765625,
+      "y": 2427.240478515625,
+      "score": 0.9781755762001902,
+      "page_number": 2
+    },
+    {
+      "text": "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar",
+      "x": 528.2670288085938,
+      "y": 2517.43310546875,
+      "score": 0.975977650615904,
+      "page_number": 2
+    },
+    {
+      "text": "propozitilefalsecu literaF):",
+      "x": 536.1910400390625,
+      "y": 2597.0146484375,
+      "score": 0.967300255383764,
+      "page_number": 2
+    },
+    {
+      "text": "a. Toti D sunt A.",
+      "x": 631.2791137695312,
+      "y": 2671.291015625,
+      "score": 0.981342101798338,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 641.844482421875,
+      "y": 2753.525390625,
+      "score": 0.9994321763515472,
+      "page_number": 2
+    },
+    {
+      "text": "Unii B sunt C.",
+      "x": 744.8565673828125,
+      "y": 2745.567138671875,
+      "score": 0.9672507643699646,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 641.844482421875,
+      "y": 2833.10693359375,
+      "score": 0.9751266241073608,
+      "page_number": 2
+    },
+    {
+      "text": "Unii D sunt B.",
+      "x": 747.4978637695312,
+      "y": 2827.801513671875,
+      "score": 0.9902839830943516,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 641.844482421875,
+      "y": 2907.38330078125,
+      "score": 0.9881024062633514,
+      "page_number": 2
+    },
+    {
+      "text": "Unii E sunt D.",
+      "x": 744.8565673828125,
+      "y": 2910.035888671875,
+      "score": 0.9867486102240426,
+      "page_number": 2
+    },
+    {
+      "text": "Niciun A nu este C.",
+      "x": 747.4978637695312,
+      "y": 2986.96484375,
+      "score": 0.9368203909773576,
+      "page_number": 2
+    },
+    {
+      "text": "e.",
+      "x": 641.844482421875,
+      "y": 2994.923095703125,
+      "score": 0.9742211103439331,
+      "page_number": 2
+    },
+    {
+      "text": "f.",
+      "x": 633.9204711914062,
+      "y": 3063.893798828125,
+      "score": 0.9460864961147308,
+      "page_number": 2
+    },
+    {
+      "text": "Unii D nu sunt C.",
+      "x": 747.4978637695312,
+      "y": 3063.893798828125,
+      "score": 0.9936947016155019,
+      "page_number": 2
+    },
+    {
+      "text": "Toti E sunt B.",
+      "x": 742.2152099609375,
+      "y": 3143.475341796875,
+      "score": 0.9404250596250806,
+      "page_number": 2
+    },
+    {
+      "text": "g.",
+      "x": 647.1271362304688,
+      "y": 3156.739013671875,
+      "score": 0.9907858371734619,
+      "page_number": 2
+    },
+    {
+      "text": "h.Unii B nu sunt A.",
+      "x": 639.203125,
+      "y": 3217.751708984375,
+      "score": 0.9810813288939627,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3063.948974609375,
+      "y": 3292.02783203125,
+      "score": 0.9967632740736008,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2857.9248046875,
+      "y": 3424.6640625,
+      "score": 0.990787535905838,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULaIII-lea",
+      "x": 369.78692626953125,
+      "y": 3432.6220703125,
+      "score": 0.9259673462194555,
+      "page_number": 2
+    },
+    {
+      "text": "Se dau urmatoarele propoziti:",
+      "x": 364.5042724609375,
+      "y": 3506.8984375,
+      "score": 0.9823386936352171,
+      "page_number": 2
+    },
+    {
+      "text": "1.Toate actiunileresponsabile sunt rezultate ale educatiei.",
+      "x": 472.79901123046875,
+      "y": 3586.47998046875,
+      "score": 0.9672949566679486,
+      "page_number": 2
+    },
+    {
+      "text": "2.Unelealergiisuntreactisezoniere.",
+      "x": 472.79901123046875,
+      "y": 3668.71435546875,
+      "score": 0.9868204137858223,
+      "page_number": 2
+    },
+    {
+      "text": "3.Niciun scritor de succes nu este persoana lipsita de imaginatie",
+      "x": 467.5163269042969,
+      "y": 3740.337890625,
+      "score": 0.9698494131748493,
+      "page_number": 2
+    },
+    {
+      "text": "4.Unelevertebratenu suntpasari.",
+      "x": 472.79901123046875,
+      "y": 3822.572265625,
+      "score": 0.9659999830107535,
+      "page_number": 2
+    },
+    {
+      "text": "A. Construiti, atat in limbaj formal cat si in limbaj natural, contrara propozitiei 1, contradictoria",
+      "x": 367.1455993652344,
+      "y": 3960.513671875,
+      "score": 0.9852002534535852,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei2,subalternapropozitiei3sisubcontrarapropozitiei4.",
+      "x": 478.0816650390625,
+      "y": 4045.40087890625,
+      "score": 0.9901077034043484,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3053.383544921875,
+      "y": 4042.748046875,
+      "score": 0.9961609318852425,
+      "page_number": 2
+    },
+    {
+      "text": "B. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+      "x": 361.8629150390625,
+      "y": 4114.37158203125,
+      "score": 0.9837720667322477,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 475.4403381347656,
+      "y": 4196.60595703125,
+      "score": 0.9910589935853309,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3053.383544921875,
+      "y": 4281.4931640625,
+      "score": 0.9977017492055893,
+      "page_number": 2
+    },
+    {
+      "text": "C. Construiti, atat in limbaj formal cat si in limbaj natural, obversa conversei subcontrarei",
+      "x": 367.1455993652344,
+      "y": 4347.81103515625,
+      "score": 0.9800987275697852,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 4, respectiv, obversa contrarei propozitiei 1.",
+      "x": 478.0816650390625,
+      "y": 4435.35107421875,
+      "score": 0.9820976812264015,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.100830078125,
+      "y": 4435.35107421875,
+      "score": 0.9947390481829643,
+      "page_number": 2
+    },
+    {
+      "text": "D. Doi elevi, X si Y, opineaza astfel:",
+      "x": 364.5042724609375,
+      "y": 4509.62744140625,
+      "score": 0.9685837814682409,
+      "page_number": 2
+    },
+    {
+      "text": "X:Dacatoatecartiledefilosofiesuntvalori culturale,atuncitoatevalorileculturalesuntcartide",
+      "x": 451.6683349609375,
+      "y": 4589.208984375,
+      "score": 0.9862423010086745,
+      "page_number": 2
+    },
+    {
+      "text": "filosofie.",
+      "x": 367.1455993652344,
+      "y": 4671.443359375,
+      "score": 0.9514874756336212,
+      "page_number": 2
+    },
+    {
+      "text": "Y: Daca unele soluti propuse sunt corecte, atunci unele soluti propuse nu sunt incorecte.",
+      "x": 449.0269775390625,
+      "y": 4740.4140625,
+      "score": 0.9717348398787252,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisa la logica,argumentaresi comunicare",
+      "x": 364.5042724609375,
+      "y": 4878.35546875,
+      "score": 0.9529214095562062,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta5",
+      "x": 3034.894287109375,
+      "y": 4881.00830078125,
+      "score": 0.9989387260542976,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 3",
+      "x": 1653.475830078125,
+      "y": 5018.94970703125,
+      "score": 0.9944161474704742,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei si Cercetari",
+    "Centrul NationaldePoliticisiEvaluareinEducatie",
+    "8.  in cazul unei clase cu numar mic, finit de elemente se poate deriva o concluzie certa daca se",
+    "cerceteaza:",
+    "unele elemente ale clasei, prin inductie incompleta",
+    "a.",
+    "b.",
+    "elementelereprezentative aleclasei,prininductie completa",
+    "c.t",
+    "toate elementele clasei, prin inductie completa",
+    "d. toate elementele reprezentative, prin inductie incompleta",
+    "9.",
+    "Dacatermenului,examendebacalaureat\"iseeliminaproprietatea,debacalaureat\",atunci:",
+    "intensiuneascade,extensiuneascade",
+    "a.",
+    "intensiunea creste,extensiunea creste",
+    "b.",
+    "C.",
+    "intensiuneascade,extensiuneacreste",
+    "d.",
+    "intensiunea creste, extensiunea scade",
+    "10.",
+    "Propozitia,Uneleerorideargumentarenusunteroriformale\"este",
+    "particulara afirmativa",
+    "a.",
+    "b.",
+    "universala afirmativa",
+    "universala negativa",
+    "C.",
+    "particulara negativa",
+    "d.p",
+    "20 de puncte",
+    "B.Fie termenii A,B,C,D,si E astfel incat termenul A este supraordonat termenului B.Termenul",
+    "C se afla in raport de incrucisare cu termenul A, dar in raport de opozitie cu termenul B.",
+    "Termenul Destespeciea termenuluiA,darseaflainraportdeincrucisareatatcu termenul B,",
+    "cat si cu termenul C. Termenul E este specie a termenului C, dar se afla in raport de incrucisare",
+    "atatcu termenulA,catsi cu termenul D.",
+    "1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice",
+    "dintre cei cinci termeni.",
+    "2 puncte",
+    "2.  Stabiliti, pe baza raporturilor existente intre termeni A, B, C, D, E care dintre urmatoarele",
+    "propoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar",
+    "propozitilefalsecu literaF):",
+    "a. Toti D sunt A.",
+    "b.",
+    "Unii B sunt C.",
+    "C.",
+    "Unii D sunt B.",
+    "d.",
+    "Unii E sunt D.",
+    "Niciun A nu este C.",
+    "e.",
+    "f.",
+    "Unii D nu sunt C.",
+    "Toti E sunt B.",
+    "g.",
+    "h.Unii B nu sunt A.",
+    "8 puncte",
+    "(30 de puncte)",
+    "SUBIECTULaIII-lea",
+    "Se dau urmatoarele propoziti:",
+    "1.Toate actiunileresponsabile sunt rezultate ale educatiei.",
+    "2.Unelealergiisuntreactisezoniere.",
+    "3.Niciun scritor de succes nu este persoana lipsita de imaginatie",
+    "4.Unelevertebratenu suntpasari.",
+    "A. Construiti, atat in limbaj formal cat si in limbaj natural, contrara propozitiei 1, contradictoria",
+    "propozitiei2,subalternapropozitiei3sisubcontrarapropozitiei4.",
+    "8 puncte",
+    "B. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+    "corecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+    "8 puncte",
+    "C. Construiti, atat in limbaj formal cat si in limbaj natural, obversa conversei subcontrarei",
+    "propozitiei 4, respectiv, obversa contrarei propozitiei 1.",
+    "6 puncte",
+    "D. Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacatoatecartiledefilosofiesuntvalori culturale,atuncitoatevalorileculturalesuntcartide",
+    "filosofie.",
+    "Y: Daca unele soluti propuse sunt corecte, atunci unele soluti propuse nu sunt incorecte.",
+    "Proba scrisa la logica,argumentaresi comunicare",
+    "Varianta5",
+    "Pagina 2 din 3"
+  ],
+  "text": "Ministerul Educatiei si Cercetari\nCentrul NationaldePoliticisiEvaluareinEducatie\n8.  in cazul unei clase cu numar mic, finit de elemente se poate deriva o concluzie certa daca se\ncerceteaza:\nunele elemente ale clasei, prin inductie incompleta\na.\nb.\nelementelereprezentative aleclasei,prininductie completa\nc.t\ntoate elementele clasei, prin inductie completa\nd. toate elementele reprezentative, prin inductie incompleta\n9.\nDacatermenului,examendebacalaureat\"iseeliminaproprietatea,debacalaureat\",atunci:\nintensiuneascade,extensiuneascade\na.\nintensiunea creste,extensiunea creste\nb.\nC.\nintensiuneascade,extensiuneacreste\nd.\nintensiunea creste, extensiunea scade\n10.\nPropozitia,Uneleerorideargumentarenusunteroriformale\"este\nparticulara afirmativa\na.\nb.\nuniversala afirmativa\nuniversala negativa\nC.\nparticulara negativa\nd.p\n20 de puncte\nB.Fie termenii A,B,C,D,si E astfel incat termenul A este supraordonat termenului B.Termenul\nC se afla in raport de incrucisare cu termenul A, dar in raport de opozitie cu termenul B.\nTermenul Destespeciea termenuluiA,darseaflainraportdeincrucisareatatcu termenul B,\ncat si cu termenul C. Termenul E este specie a termenului C, dar se afla in raport de incrucisare\natatcu termenulA,catsi cu termenul D.\n1. Reprezentati, prin metoda diagramelor Euler, pe o diagrama comuna, raporturile logice\ndintre cei cinci termeni.\n2 puncte\n2.  Stabiliti, pe baza raporturilor existente intre termeni A, B, C, D, E care dintre urmatoarele\npropoziti sunt adevarate si care sunt false (notati propozitile adevarate cu litera A, iar\npropozitilefalsecu literaF):\na. Toti D sunt A.\nb.\nUnii B sunt C.\nC.\nUnii D sunt B.\nd.\nUnii E sunt D.\nNiciun A nu este C.\ne.\nf.\nUnii D nu sunt C.\nToti E sunt B.\ng.\nh.Unii B nu sunt A.\n8 puncte\n(30 de puncte)\nSUBIECTULaIII-lea\nSe dau urmatoarele propoziti:\n1.Toate actiunileresponsabile sunt rezultate ale educatiei.\n2.Unelealergiisuntreactisezoniere.\n3.Niciun scritor de succes nu este persoana lipsita de imaginatie\n4.Unelevertebratenu suntpasari.\nA. Construiti, atat in limbaj formal cat si in limbaj natural, contrara propozitiei 1, contradictoria\npropozitiei2,subalternapropozitiei3sisubcontrarapropozitiei4.\n8 puncte\nB. Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa\ncorecte ale fiecareia dintre propozitile 2 si 3, atat in limbaj formal, cat si in limbaj natural.\n8 puncte\nC. Construiti, atat in limbaj formal cat si in limbaj natural, obversa conversei subcontrarei\npropozitiei 4, respectiv, obversa contrarei propozitiei 1.\n6 puncte\nD. Doi elevi, X si Y, opineaza astfel:\nX:Dacatoatecartiledefilosofiesuntvalori culturale,atuncitoatevalorileculturalesuntcartide\nfilosofie.\nY: Daca unele soluti propuse sunt corecte, atunci unele soluti propuse nu sunt incorecte.\nProba scrisa la logica,argumentaresi comunicare\nVarianta5\nPagina 2 din 3"
+}

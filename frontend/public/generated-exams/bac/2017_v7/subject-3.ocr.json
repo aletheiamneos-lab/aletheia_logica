@@ -1,0 +1,256 @@
+{
+  "page_number": 3,
+  "entries": [
+    {
+      "text": "MinisterulEducatieiNationale",
+      "x": 1492.3543701171875,
+      "y": 193.64869689941406,
+      "score": 0.996578865817615,
+      "page_number": 3
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1339.156982421875,
+      "y": 262.6194763183594,
+      "score": 0.993971038195822,
+      "page_number": 3
+    },
+    {
+      "text": "(30 depuncte)",
+      "x": 2889.620849609375,
+      "y": 448.30999755859375,
+      "score": 0.9629809948114249,
+      "page_number": 3
+    },
+    {
+      "text": "SUBIECTULalII-lea",
+      "x": 364.5042724609375,
+      "y": 450.96270751953125,
+      "score": 0.9242998589487637,
+      "page_number": 3
+    },
+    {
+      "text": "A.Fie urmatoarele douamoduri silogistice:aee-2,iai-4.",
+      "x": 364.5042724609375,
+      "y": 530.5443725585938,
+      "score": 0.9721008685399901,
+      "page_number": 3
+    },
+    {
+      "text": "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+      "x": 451.6683349609375,
+      "y": 610.1260375976562,
+      "score": 0.9753635337819224,
+      "page_number": 3
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.6683349609375,
+      "y": 687.0549926757812,
+      "score": 0.9824460369089375,
+      "page_number": 3
+    },
+    {
+      "text": "scheme de inferenta.",
+      "x": 451.6683349609375,
+      "y": 766.6365966796875,
+      "score": 0.9768765032291412,
+      "page_number": 3
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.894287109375,
+      "y": 763.98388671875,
+      "score": 0.9974339604377747,
+      "page_number": 3
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+      "x": 451.6683349609375,
+      "y": 843.5655517578125,
+      "score": 0.9812758372287558,
+      "page_number": 3
+    },
+    {
+      "text": "silogistice date, precizand totodata decizia la care ati ajuns.",
+      "x": 451.6683349609375,
+      "y": 923.147216796875,
+      "score": 0.9500793559210641,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.894287109375,
+      "y": 920.4945068359375,
+      "score": 0.9483950883150101,
+      "page_number": 3
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+      "x": 367.1455993652344,
+      "y": 1000.076171875,
+      "score": 0.9904528428923409,
+      "page_number": 3
+    },
+    {
+      "text": "propozitia“Toti rechini sunt animale acvatice\"",
+      "x": 451.6683349609375,
+      "y": 1084.9632568359375,
+      "score": 0.9492495954036713,
+      "page_number": 3
+    },
+    {
+      "text": "6 puncte",
+      "x": 3034.894287109375,
+      "y": 1082.310546875,
+      "score": 0.9901815503835678,
+      "page_number": 3
+    },
+    {
+      "text": "C.Fie urmatorul silogism:Daca niciun om lingusitor nu este om moral, atunci unii oameni prefacuti",
+      "x": 364.5042724609375,
+      "y": 1153.9339599609375,
+      "score": 0.9607310086181483,
+      "page_number": 3
+    },
+    {
+      "text": "nusuntoamenimorali,avandinvederecauniioameniprefacutisuntoameni lingusitori.",
+      "x": 449.0269775390625,
+      "y": 1238.8211669921875,
+      "score": 0.9739736538184317,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1313.0972900390625,
+      "score": 0.9480296522378922,
+      "page_number": 3
+    },
+    {
+      "text": "a.Precizati termenul major al silogismului dat.",
+      "x": 449.0269775390625,
+      "y": 1315.75,
+      "score": 0.9955918535273126,
+      "page_number": 3
+    },
+    {
+      "text": "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+      "x": 449.0269775390625,
+      "y": 1392.678955078125,
+      "score": 0.9878341801026288,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1392.678955078125,
+      "score": 0.9625381901860237,
+      "page_number": 3
+    },
+    {
+      "text": "D.Fie urmatoarea definitie:",
+      "x": 364.5042724609375,
+      "y": 1469.60791015625,
+      "score": 0.988378972918899,
+      "page_number": 3
+    },
+    {
+      "text": "Mamifernuestenicipeste,niciamfibian,nicireptila,nicipasare.",
+      "x": 451.6683349609375,
+      "y": 1551.84228515625,
+      "score": 0.9569665895680249,
+      "page_number": 3
+    },
+    {
+      "text": "a.Mentionati oregula de corectitudine pe care oincalcadefinitia datäa.",
+      "x": 449.0269775390625,
+      "y": 1631.4239501953125,
+      "score": 0.9477005864892687,
+      "page_number": 3
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 1626.1185302734375,
+      "score": 0.9402882382273674,
+      "page_number": 3
+    },
+    {
+      "text": "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+      "x": 446.3856506347656,
+      "y": 1703.0474853515625,
+      "score": 0.9753916937112809,
+      "page_number": 3
+    },
+    {
+      "text": "si construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".",
+      "x": 578.452392578125,
+      "y": 1787.9345703125,
+      "score": 0.9726093661637953,
+      "page_number": 3
+    },
+    {
+      "text": "4puncte",
+      "x": 2884.338134765625,
+      "y": 1787.9345703125,
+      "score": 0.9983629754611424,
+      "page_number": 3
+    },
+    {
+      "text": "Proba scrisa la logica, argumentare si comunicare",
+      "x": 359.2215881347656,
+      "y": 4942.02099609375,
+      "score": 0.9715721242281855,
+      "page_number": 3
+    },
+    {
+      "text": "Varianta7",
+      "x": 3034.894287109375,
+      "y": 4947.326171875,
+      "score": 0.998776290151808,
+      "page_number": 3
+    },
+    {
+      "text": "Pagina 3 din 3",
+      "x": 1653.475830078125,
+      "y": 5021.6025390625,
+      "score": 0.950807490519115,
+      "page_number": 3
+    }
+  ],
+  "lines": [
+    "MinisterulEducatieiNationale",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "(30 depuncte)",
+    "SUBIECTULalII-lea",
+    "A.Fie urmatoarele douamoduri silogistice:aee-2,iai-4.",
+    "1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "scheme de inferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri",
+    "silogistice date, precizand totodata decizia la care ati ajuns.",
+    "6 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati",
+    "propozitia“Toti rechini sunt animale acvatice\"",
+    "6 puncte",
+    "C.Fie urmatorul silogism:Daca niciun om lingusitor nu este om moral, atunci unii oameni prefacuti",
+    "nusuntoamenimorali,avandinvederecauniioameniprefacutisuntoameni lingusitori.",
+    "2 puncte",
+    "a.Precizati termenul major al silogismului dat.",
+    "b. Mentionati, in limbaj natural, premisa minora a silogismului dat.",
+    "2 puncte",
+    "D.Fie urmatoarea definitie:",
+    "Mamifernuestenicipeste,niciamfibian,nicireptila,nicipasare.",
+    "a.Mentionati oregula de corectitudine pe care oincalcadefinitia datäa.",
+    "2 puncte",
+    "b.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.",
+    "si construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".",
+    "4puncte",
+    "Proba scrisa la logica, argumentare si comunicare",
+    "Varianta7",
+    "Pagina 3 din 3"
+  ],
+  "text": "MinisterulEducatieiNationale\nCentrulNationaldeEvaluaresiExaminare\n(30 depuncte)\nSUBIECTULalII-lea\nA.Fie urmatoarele douamoduri silogistice:aee-2,iai-4.\n1. Scrieti schema de inferenta corespunzatoare fiecaruia dintre cele doua moduri silogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nscheme de inferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea fiecaruia dintre cele doua moduri\nsilogistice date, precizand totodata decizia la care ati ajuns.\n6 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un silogism valid, prin care sa justificati\npropozitia“Toti rechini sunt animale acvatice\"\n6 puncte\nC.Fie urmatorul silogism:Daca niciun om lingusitor nu este om moral, atunci unii oameni prefacuti\nnusuntoamenimorali,avandinvederecauniioameniprefacutisuntoameni lingusitori.\n2 puncte\na.Precizati termenul major al silogismului dat.\nb. Mentionati, in limbaj natural, premisa minora a silogismului dat.\n2 puncte\nD.Fie urmatoarea definitie:\nMamifernuestenicipeste,niciamfibian,nicireptila,nicipasare.\na.Mentionati oregula de corectitudine pe care oincalcadefinitia datäa.\n2 puncte\nb.Precizati o alta regula de corectitudine a definiri, diferita de regula identificata la punctul a.\nsi construiti o definitie care sa o incalce, avand ca definit termenul ,mamifer\".\n4puncte\nProba scrisa la logica, argumentare si comunicare\nVarianta7\nPagina 3 din 3"
+}

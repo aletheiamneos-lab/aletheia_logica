@@ -1,0 +1,481 @@
+{
+  "examId": "bac_logica_2018_v2",
+  "title": "BAC Logică 2018 - Varianta 2",
+  "year": 2018,
+  "variant": "Varianta 2",
+  "mode": "student_exam",
+  "visibility": "student",
+  "sourceFiles": {
+    "subject": "Examenul de bacalaureat național 2018_v2.pdf",
+    "barem": "teacher_only"
+  },
+  "rules": {
+    "noSolutionsInStudentMode": true,
+    "placeholderMustNotBeSaved": true,
+    "finalizeButton": true
+  },
+  "features": {
+    "friendlyInputs": true,
+    "diagramCanvas": true,
+    "diagramUpload": true,
+    "studentPdfAfterFinalize": true,
+    "previewStudentPdf": true,
+    "emailStudentReport": true,
+    "adminReportIntegration": true
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "parts": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "studentTask": "Scrie litera corespunzătoare răspunsului corect pentru fiecare dintre enunțurile de mai jos. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "prompt": "Orice demonstrație este compusă din:",
+              "options": {
+                "a": "procesul de demonstrare, criteriul demonstrației, obiectele de demonstrat",
+                "b": "fundamentul demonstrației, criteriul demonstrației, procesul de demonstrare",
+                "c": "fundamentul demonstrației, teza de demonstrat, procesul de demonstrare",
+                "d": "procesul de demonstrare, relația de demonstrare, criteriul demonstrației"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_2",
+              "prompt": "Raționamentul „Unele păsări sunt animale negre, deci unele animale negre sunt păsări” este:",
+              "options": {
+                "a": "inductiv, mediat, nevalid",
+                "b": "deductiv, mediat, nevalid",
+                "c": "inductiv, imediat, valid",
+                "d": "deductiv, imediat, valid"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_3",
+              "prompt": "Raportul de încrucișare se stabilește între termenii:",
+              "options": {
+                "a": "bărbat - elegant",
+                "b": "cult - incult",
+                "c": "profesor - profesor de filosofie",
+                "d": "nea - zăpadă"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_4",
+              "prompt": "Predicatul logic al propoziției „Multe filme premiate cu Oscar sunt ecranizări după romane celebre” este:",
+              "options": {
+                "a": "sunt ecranizări după romane celebre",
+                "b": "ecranizări după romane",
+                "c": "sunt ecranizări după romane",
+                "d": "ecranizări după romane celebre"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_5",
+              "prompt": "Regula opoziției între clase afirmă că, pe aceeași treaptă a clasificării, între clasele obținute trebuie să existe doar raporturi de:",
+              "options": {
+                "a": "ordonare sau intersectare",
+                "b": "contrarietate sau intersectare",
+                "c": "contrarietate sau contradicție",
+                "d": "identitate sau concordanță"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_6",
+              "prompt": "Din punct de vedere intensional, termenul cozonac este:",
+              "options": {
+                "a": "absolut, concret, pozitiv, simplu",
+                "b": "abstract, general, pozitiv, nevid",
+                "c": "relativ, concret, pozitiv, precis",
+                "d": "nevid, concret, general, simplu"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_7",
+              "prompt": "Raționamentul „Dacă unii pictori contemporani sunt talentați, atunci toți pictorii contemporani sunt talentați” este un exemplu de inducție:",
+              "options": {
+                "a": "intermediată",
+                "b": "incompletă",
+                "c": "mijlocită",
+                "d": "completă"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_8",
+              "prompt": "Raționamentul „Dacă fiecare elev de clasa a IX-a este pasionat de logică, atunci toți elevii de clasa a IX-a sunt pasionați de logică” este un exemplu de:",
+              "options": {
+                "a": "inducție completă",
+                "b": "deducție completă",
+                "c": "inducție incompletă",
+                "d": "deducție incompletă"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_9",
+              "prompt": "Intensiunea termenului calculator este constituită din totalitatea:",
+              "options": {
+                "a": "caracteristicilor obiectelor care formează extensiunea termenului",
+                "b": "obiectelor ale căror caracteristici formează extensiunea termenului",
+                "c": "relațiilor dezvoltate de obiectele din extensiunea termenului",
+                "d": "manifestărilor interioare/exterioare ale obiectelor din extensiunea termenului"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            },
+            {
+              "id": "I_A_10",
+              "prompt": "Propoziția „Nicio formă de guvernare nu este perfectă” este:",
+              "options": {
+                "a": "universală afirmativă",
+                "b": "universală negativă",
+                "c": "particulară afirmativă",
+                "d": "particulară negativă"
+              },
+              "answerInput": {
+                "inputType": "single_choice"
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi logice între termeni",
+          "points": 10,
+          "officialPrompt": "Fie termenii A, B, C și D, astfel încât termenii A și B se află în raport de încrucișare, C este specie a intersecției dintre A și B, dar gen pentru D.",
+          "items": [
+            {
+              "id": "I_B_1",
+              "title": "Diagramă Euler",
+              "studentTask": "Reprezentați, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei patru termeni.",
+              "points": 4,
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_I_B_euler_2018_v2",
+                "diagramType": "euler",
+                "inputConfig": {
+                  "label": "Diagrama Euler",
+                  "helperText": "Desenează raporturile dintre termenii A, B, C și D. Poți desena direct sau încărca o imagine.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 720,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "A",
+                      "B",
+                      "C",
+                      "D"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              }
+            },
+            {
+              "id": "I_B_2",
+              "title": "Adevărat/Fals",
+              "studentTask": "Stabiliți, pe baza raporturilor existente între termenii A, B, C, D, care dintre următoarele propoziții sunt adevărate și care sunt false.",
+              "points": 6,
+              "items": [
+                {
+                  "id": "I_B_2_a",
+                  "prompt": "Unii D nu sunt B.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                },
+                {
+                  "id": "I_B_2_b",
+                  "prompt": "Toți A sunt D.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                },
+                {
+                  "id": "I_B_2_c",
+                  "prompt": "Niciun C nu este D.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                },
+                {
+                  "id": "I_B_2_d",
+                  "prompt": "Niciun A nu este B.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                },
+                {
+                  "id": "I_B_2_e",
+                  "prompt": "Toți D sunt C.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                },
+                {
+                  "id": "I_B_2_f",
+                  "prompt": "Toți C sunt A.",
+                  "answerInput": {
+                    "inputType": "true_false"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "officialPrompt": "Se dau următoarele propoziții: 1. Nicio felină nu este animal erbivor. 2. Unele alimente sunt produse cu un conținut ridicat de grăsimi. 3. Toți magistrații sunt persoane responsabile. 4. Unele teme pentru acasă nu sunt activități ușor de îndeplinit.",
+      "items": [
+        {
+          "id": "II_A",
+          "title": "A. Formule logice",
+          "points": 2,
+          "studentTask": "Precizați formulele logice corespunzătoare propozițiilor 2 și 4.",
+          "answerInput": {
+            "inputType": "multi_short_text",
+            "fields": [
+              {
+                "fieldId": "prop2",
+                "label": "Propoziția 2",
+                "placeholder": "Scrie forma logică. Exemplu de format: SiP"
+              },
+              {
+                "fieldId": "prop4",
+                "label": "Propoziția 4",
+                "placeholder": "Scrie forma logică. Exemplu de format: SoP"
+              }
+            ]
+          }
+        },
+        {
+          "id": "II_B",
+          "title": "B. Operații logice",
+          "points": 8,
+          "studentTask": "Construiți, atât în limbaj formal cât și în limbaj natural, contrara propoziției 1, subcontrara propoziției 2, subalterna propoziției 3 și supraalterna propoziției 4.",
+          "answerInput": {
+            "inputType": "structured_text_set",
+            "helperText": "Completează forma logică și propoziția în limbaj natural pentru fiecare operație cerută.",
+            "fields": [
+              "contrara_prop1",
+              "subcontrara_prop2",
+              "subalterna_prop3",
+              "supraalterna_prop4"
+            ]
+          }
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune și obversiune",
+          "points": 8,
+          "studentTask": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 1 și 2, atât în limbaj formal, cât și în limbaj natural.",
+          "answerInput": {
+            "inputType": "structured_text_set",
+            "fields": [
+              "conversa_prop1",
+              "obversa_prop1",
+              "conversa_prop2",
+              "obversa_prop2"
+            ]
+          }
+        },
+        {
+          "id": "II_D",
+          "title": "D. Obversa conversei",
+          "points": 4,
+          "studentTask": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei propoziției 3.",
+          "answerInput": {
+            "inputType": "structured_text",
+            "inputConfig": {
+              "placeholder": "Scrie forma logică și apoi propoziția în limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "II_E",
+          "title": "E. Raționamente formalizate",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X și Y, opinează astfel: X: Dacă unele depozite bancare nu sunt plasamente riscante, înseamnă că unele plasamente riscante nu sunt depozite bancare. Y: Dacă unele cheltuieli salariale sunt costuri variabile, rezultă că unele costuri variabile sunt cheltuieli salariale.",
+          "answerInput": {
+            "inputType": "multi_part_text",
+            "fields": [
+              {
+                "fieldId": "formalizare",
+                "label": "Formalizarea opiniilor",
+                "placeholder": "Exemplu de format: X: SoP -> PoS; Y: SiP -> PiS"
+              },
+              {
+                "fieldId": "corectitudine",
+                "label": "Corectitudine/incorectitudine",
+                "placeholder": "Precizează pentru fiecare dacă raționamentul este corect sau incorect."
+              },
+              {
+                "fieldId": "explicatie_Y",
+                "label": "Explicația pentru elevul Y",
+                "placeholder": "Explică pe scurt de ce raționamentul elevului Y este corect sau incorect."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice: aaa-4, eae-2",
+          "points": 14,
+          "items": [
+            {
+              "id": "III_A_1",
+              "studentTask": "Scrieți schema de inferență corespunzătoare fiecăruia dintre cele două moduri silogistice date și construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență.",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "fields": [
+                  "aaa_4",
+                  "eae_2"
+                ]
+              }
+            },
+            {
+              "id": "III_A_2",
+              "studentTask": "Verificați explicit, prin metoda diagramelor Venn, validitatea fiecăruia dintre cele două moduri silogistice date, precizând totodată decizia la care ați ajuns.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_venn_2018_v2",
+                "diagramType": "venn_three_terms"
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Silogism valid",
+          "points": 6,
+          "studentTask": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid, prin care să justificați propoziția „Toate sofismele sunt argumente eronate”.",
+          "answerInput": {
+            "inputType": "long_text",
+            "inputConfig": {
+              "placeholder": "Scrie schema formală, apoi silogismul în limbaj natural."
+            }
+          }
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Unii oameni înțelepți nu sunt sociabili, pentru că niciun introvertit nu este sociabil și unii oameni înțelepți sunt introvertiți.",
+          "items": [
+            {
+              "id": "III_C_a",
+              "studentTask": "Precizați termenul mediu al silogismului dat.",
+              "answerInput": {
+                "inputType": "short_text",
+                "inputConfig": {
+                  "placeholder": "Scrie termenul mediu."
+                }
+              }
+            },
+            {
+              "id": "III_C_b",
+              "studentTask": "Menționați, în limbaj natural, premisa majoră a silogismului dat.",
+              "answerInput": {
+                "inputType": "structured_text",
+                "inputConfig": {
+                  "placeholder": "Scrie premisa majoră în limbaj natural."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiție",
+          "points": 6,
+          "officialPrompt": "Aritmetica este partea matematicii care nu studiază figurile geometrice.",
+          "items": [
+            {
+              "id": "III_D_a",
+              "studentTask": "Menționați o regulă de corectitudine pe care o încalcă definiția dată.",
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie regula încălcată."
+                }
+              }
+            },
+            {
+              "id": "III_D_b",
+              "studentTask": "Precizați o altă regulă de corectitudine a definirii, diferită de regula identificată la punctul a, și construiți o definiție care să o încalce, având ca definit termenul „aritmetica”.",
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie regula aleasă și o definiție greșită care o încalcă."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

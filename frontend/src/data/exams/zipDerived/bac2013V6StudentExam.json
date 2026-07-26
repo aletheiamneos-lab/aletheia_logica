@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "examId": "bac_logica_2013_v6",
+    "year": 2013,
+    "variant": "Varianta 6",
+    "discipline": "Logica, argumentare si comunicare",
+    "mode": "exam",
+    "points": {
+      "subject_I": 30,
+      "subject_II": 30,
+      "subject_III": 30,
+      "oficiu": 10,
+      "total": 100
+    },
+    "sourceFiles": {
+      "subject": "Examenul de bacalaureat naţional 2013_V6.pdf",
+      "barem": "Examenul de bacalaureat naţional 2013_V6_BAREM.pdf"
+    },
+    "studentVisibility": "exam_only_no_solutions",
+    "teacherVisibility": "teacher_only_solution"
+  },
+  "uiRules": {
+    "keepExistingRadioButtons": true,
+    "showPlaceholdersOnlyInTextInputs": true,
+    "doNotShowCorrectAnswersToStudent": true,
+    "submitButton": {
+      "label": "Finalizeaza testul",
+      "position": "bottom_sticky_and_end"
+    },
+    "afterSubmit": [
+      "generate_student_pdf",
+      "allow_preview",
+      "allow_email",
+      "show_in_admin_report"
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1",
+      "title": "Subiectul I",
+      "points": 30,
+      "items": [
+        {
+          "id": "I.A.1",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Extensiunea termenului elev este alcatuita din:",
+          "options": [
+            "toti elevii",
+            "elevii din ciclul liceal",
+            "elevii din ciclul gimnazial",
+            "elevii din ciclul primar"
+          ]
+        },
+        {
+          "id": "I.A.2",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenul bicicleta este, dupa intensiune:",
+          "options": [
+            "nevid",
+            "distributiv",
+            "pozitiv",
+            "vag"
+          ]
+        },
+        {
+          "id": "I.A.3",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Termenii roman si profesor sunt in raport de:",
+          "options": [
+            "contrarietate",
+            "incrucisare",
+            "ordonare",
+            "contradictie"
+          ]
+        },
+        {
+          "id": "I.A.4",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Intr-o propozitie categorica se exprima:",
+          "options": [
+            "doua raporturi intre doi termeni",
+            "un singur raport intre trei termeni",
+            "doua raporturi intre trei termeni",
+            "un singur raport intre doi termeni"
+          ]
+        },
+        {
+          "id": "I.A.5",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Subiectul logic al propozitiei „Unii elevi de liceu sunt orgoliosi” este:",
+          "options": [
+            "unii elevi",
+            "elevi",
+            "elevi de liceu",
+            "unii elevi de liceu"
+          ]
+        },
+        {
+          "id": "I.A.6",
+          "type": "single_choice",
+          "points": 3,
+          "prompt": "Contradictoria propozitiei „Unele exercitii sunt dificile” este propozitia:",
+          "options": [
+            "Niciun exercitiu nu este dificil.",
+            "Unele exercitii nu sunt dificile.",
+            "Toate exercitiile sunt dificile.",
+            "Unele exercitii nu sunt accesibile."
+          ]
+        },
+        {
+          "id": "I.B.1",
+          "type": "syllogism_schema_and_venn",
+          "points": 12,
+          "prompt": "Fie urmatoarele doua moduri silogistice: aai-1, eae-2. Scrieti schema de inferenta corespunzatoare fiecareia si construiti, in limbaj natural, un silogism pentru una dintre cele doua scheme de inferenta. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri silogistice date, precizand decizia la care ati ajuns.",
+          "studentInputs": [
+            {
+              "kind": "logic_editor",
+              "placeholder": "Exemplu structura: MaP / SaM / SiP; apoi scrie un silogism in limbaj natural."
+            },
+            {
+              "kind": "diagram_canvas",
+              "diagramId": "venn_I_B_aai1_or_eae2",
+              "placeholder": "Construieste diagrama Venn pentru unul dintre moduri si marcheaza zonele cerute."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "givenPropositions": [
+        "Unele titluri de valoare nu sunt obligatiuni.",
+        "Unii elevi sunt pasionati de sah.",
+        "Niciun tigru nu este animal domestic.",
+        "Toate ideile noi sunt interesante."
+      ],
+      "items": [
+        {
+          "id": "II.A",
+          "type": "text_input",
+          "points": 4,
+          "prompt": "Precizati formula propozitiei 4.",
+          "placeholder": "Exemplu format: SaP / SeP / SiP / SoP"
+        },
+        {
+          "id": "II.B",
+          "type": "logic_editor",
+          "points": 6,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 4.",
+          "placeholder": "Exemplu: Subcontrara propozitiei X: ...; formal: ...; natural: ..."
+        },
+        {
+          "id": "II.C",
+          "type": "logic_editor",
+          "points": 10,
+          "prompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+          "placeholder": "Exemplu structura: Propozitia 2: formula initiala -> conversa: ... / obversa: ..."
+        },
+        {
+          "id": "II.D",
+          "type": "textarea",
+          "points": 6,
+          "prompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+          "placeholder": "Exemplu: Propozitia de tip O nu admite conversiune valida deoarece ..."
+        },
+        {
+          "id": "II.E",
+          "type": "diagram_canvas",
+          "points": 4,
+          "prompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+          "diagramId": "euler_II_E_prop3",
+          "placeholder": "Deseneaza doua cercuri separate pentru termenii care nu au elemente comune."
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "items": [
+        {
+          "id": "III.1",
+          "type": "textarea",
+          "points": 4,
+          "prompt": "Definiti conceptul de demonstratie.",
+          "placeholder": "Exemplu structura: Demonstratia este procesul logic prin care ..."
+        },
+        {
+          "id": "III.2",
+          "type": "textarea",
+          "points": 6,
+          "prompt": "Precizati denumirile celor trei propozitii din structura unui silogism.",
+          "placeholder": "Exemplu: premisa ..., premisa ..., concluzia."
+        },
+        {
+          "id": "III.3",
+          "type": "logic_editor",
+          "points": 10,
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia „Unii oameni sunt nerecunoscatori”.",
+          "placeholder": "Exemplu structura: Premisa majora: ...; premisa minora: ...; concluzie: ...; formal: ..."
+        },
+        {
+          "id": "III.4",
+          "type": "textarea",
+          "points": 10,
+          "prompt": "Fie definitia: „Romanul este o oglinda pe care o plimbam de-a lungul unui drum.” Mentionati o regula de corectitudine pe care o incalca definitia data. Enuntati doua reguli de corectitudine a definirii, diferite de regula de la punctul a, si construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.",
+          "placeholder": "Exemplu structura: a) regula incalcata este ...; b) regula 1: ... definitie gresita: ...; regula 2: ... definitie gresita: ..."
+        }
+      ]
+    }
+  ]
+}

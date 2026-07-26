@@ -1,0 +1,102 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2018_simulare",
+  "examId": "bac_logica_2018_simulare",
+  "visibility": "teacher_only",
+  "source": "Examenul de bacalaureat național 2018 - Simulare + barem oficial",
+  "sections": {
+    "I_A": {
+      "answers": [
+        "1-d",
+        "2-b",
+        "3-c",
+        "4-a",
+        "5-b",
+        "6-d",
+        "7-c",
+        "8-b",
+        "9-d",
+        "10-a"
+      ],
+      "points": "10 x 2p = 20p"
+    },
+    "I_B": {
+      "diagram": "Euler: A și B sunt în încrucișare; A și B sunt subordonate lui C; D este opus față de A și B, dar subordonat lui C.",
+      "answers": [
+        "a-A",
+        "b-A",
+        "c-F",
+        "d-A",
+        "e-F",
+        "f-F"
+      ],
+      "points": "4p diagramă + 6 x 1p"
+    },
+    "II": {
+      "A": {
+        "p2": "SiP",
+        "p4": "SoP"
+      },
+      "B": {
+        "contrara_p1": "Toți paralelogramele sunt triunghiuri. (SaP)",
+        "subcontrara_p2": "Unele vârstnici nu sunt superstițioși. (SoP)",
+        "subalterna_p3": "Unele sentimente sunt trăiri afective. (SiP)",
+        "supraalterna_p4": "Nicio vertebrată nu este pește. (SeP)"
+      },
+      "C": {
+        "p1_conversa": "PeS - Niciun triunghi nu este paralelogram.",
+        "p1_obversa": "Sa~P - Toate paralelogramele sunt non-triunghiuri.",
+        "p2_conversa": "PiS - Unele persoane superstițioase sunt vârstnici.",
+        "p2_obversa": "So~P - Unii vârstnici nu sunt non-superstițioși."
+      },
+      "D": {
+        "formal": "~PiS",
+        "natural": "Unele non-trăiri afective sunt sentimente."
+      },
+      "E": {
+        "X": "SoP -> PoS; conversiune nevalidă pentru propoziție de tip O.",
+        "Y": "SeP -> PeS; conversiune validă pentru propoziție de tip E.",
+        "explanation": "Raționamentul elevului X este incorect deoarece în conversiunea unei propoziții particulare negative nu se păstrează validitatea; raționamentul elevului Y este corect, deoarece propozițiile universale negative se convertesc valid."
+      }
+    },
+    "III": {
+      "A": {
+        "aaa-2": [
+          "PaM",
+          "SaM",
+          "SaP"
+        ],
+        "aee-4": [
+          "PaM",
+          "MeS",
+          "SeP"
+        ],
+        "validity": {
+          "aaa-2": "nevalid",
+          "aee-4": "valid"
+        }
+      },
+      "B": {
+        "formal": [
+          "MeP",
+          "SiM",
+          "SoP"
+        ],
+        "natural": [
+          "Niciun raționament mediat nu este raționament imediat.",
+          "Unele inferențe sunt raționamente mediate.",
+          "Unele inferențe nu sunt raționamente imediate."
+        ]
+      },
+      "C": {
+        "term_major": "P = nerăbdători să ajungă studenți",
+        "premisa_minora": "Toți liceenii sunt elevi."
+      },
+      "D": {
+        "given": "Celulele sunt neisovitele uzine ale țesutului viu.",
+        "rule_example": "Definiția încalcă regula clarității și preciziei, deoarece folosește o exprimare metaforică.",
+        "other_rule": "O altă regulă: definiția nu trebuie să fie circulară / nu trebuie să fie prea largă sau prea îngustă.",
+        "constructed_definition": "Celula este o mică uzină vie care lucrează fără oprire."
+      }
+    }
+  }
+}

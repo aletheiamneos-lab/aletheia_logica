@@ -1,0 +1,431 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2024_simulare",
+  "examId": "bac_logica_2024_simulare",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - BAC Logică 2024 - Simulare",
+  "source": "Barem oficial 2024 - Simulare",
+  "items": [
+    {
+      "itemId": "I_A_1",
+      "section": "I.A",
+      "officialPrompt": "Procesul de demonstrare este ansamblul de:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "raționamente prin care conchidem teza din fundament"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_2",
+      "section": "I.A",
+      "officialPrompt": "Raționamentul „Niciun animal de companie nu este neîndrăgit de către copii, fiind știut faptul că toate animalele de companie sunt îndrăgite de către copii.” este:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "o obversiune validă"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_3",
+      "section": "I.A",
+      "officialPrompt": "Între termenii medici și tânăr există un raport logic de:",
+      "correctAnswer": {
+        "variant": "a",
+        "text": "încrucișare"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_4",
+      "section": "I.A",
+      "officialPrompt": "Cuantorul propoziției „Toate autoturismele electrice sunt mașini nepoluante.” este:",
+      "correctAnswer": {
+        "variant": "d",
+        "text": "toate"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_5",
+      "section": "I.A",
+      "officialPrompt": "Cerința ca asemănările obiectelor situate în aceeași clasă să fie mai importante și mai numeroase decât deosebirile, într-o clasificare corectă, este o cerință impusă de regula:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "omogenității"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_6",
+      "section": "I.A",
+      "officialPrompt": "Din punct de vedere intensional, termenul fratele meu este:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "relativ, concret"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_7",
+      "section": "I.A",
+      "officialPrompt": "Predicatul logic al propoziției „Unele instrumente de scris sunt obiecte școlare.” este:",
+      "correctAnswer": {
+        "variant": "a",
+        "text": "obiecte școlare"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_8",
+      "section": "I.A",
+      "officialPrompt": "Este un exemplu de propoziție universal afirmativă, propoziția:",
+      "correctAnswer": {
+        "variant": "c",
+        "text": "Toți studenții sunt absolvenți de liceu care au promovat examenul de bacalaureat."
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_9",
+      "section": "I.A",
+      "officialPrompt": "Propoziția „Deținătorii de diplomă de licență sunt absolvenți de facultate.” este un tip de propoziție categorică:",
+      "correctAnswer": {
+        "variant": "d",
+        "text": "universală afirmativă"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_A_10",
+      "section": "I.A",
+      "officialPrompt": "Propoziției categorice „Unele plante sunt flori.” îi corespunde formula:",
+      "correctAnswer": {
+        "variant": "b",
+        "text": "SiP"
+      },
+      "points": 2,
+      "scoring": "2p pentru răspunsul corect."
+    },
+    {
+      "itemId": "I_B_1",
+      "section": "I.B",
+      "officialPrompt": "Reprezentarea prin metoda diagramelor Euler a raporturilor logice dintre A, B, C, D și E.",
+      "correctAnswer": "A este inclus în B; C este inclus în A; D se încrucișează cu A și B, dar este în opoziție cu C; E este inclus în D și este în opoziție cu B.",
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler_terms",
+        "renderFromContract": true
+      },
+      "points": 2
+    },
+    {
+      "itemId": "I_B_2_a",
+      "section": "I.B",
+      "officialPrompt": "Afirmația a)",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_b",
+      "section": "I.B",
+      "officialPrompt": "Afirmația b)",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_c",
+      "section": "I.B",
+      "officialPrompt": "Afirmația c)",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_d",
+      "section": "I.B",
+      "officialPrompt": "Afirmația d)",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_e",
+      "section": "I.B",
+      "officialPrompt": "Afirmația e)",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_f",
+      "section": "I.B",
+      "officialPrompt": "Afirmația f)",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_g",
+      "section": "I.B",
+      "officialPrompt": "Afirmația g)",
+      "correctAnswer": "A",
+      "points": 1
+    },
+    {
+      "itemId": "I_B_2_h",
+      "section": "I.B",
+      "officialPrompt": "Afirmația h)",
+      "correctAnswer": "F",
+      "points": 1
+    },
+    {
+      "itemId": "II_A_1",
+      "section": "II.A",
+      "officialPrompt": "Subalterna propoziției 1",
+      "correctAnswer": {
+        "formal": "SoP",
+        "natural": "Unii președinți nu sunt regi."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_A_2",
+      "section": "II.A",
+      "officialPrompt": "Contrara propoziției 2",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Niciun antreprenor nu este persoană care își asumă riscuri."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_A_3",
+      "section": "II.A",
+      "officialPrompt": "Contradictoria propoziției 3",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Nicio clădire nu este operă de artă."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_A_4",
+      "section": "II.A",
+      "officialPrompt": "Supraalterna propoziției 4",
+      "correctAnswer": {
+        "formal": "SeP",
+        "natural": "Niciun profesionist nu este om tratat cu respectul cuvenit."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_B_2_conv",
+      "section": "II.B",
+      "officialPrompt": "Conversa propoziției 2",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele persoane care își asumă riscuri sunt antreprenori."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_B_2_obv",
+      "section": "II.B",
+      "officialPrompt": "Obversa propoziției 2",
+      "correctAnswer": {
+        "formal": "Se¬P",
+        "natural": "Niciun antreprenor nu este persoană care nu își asumă riscuri."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_B_3_conv",
+      "section": "II.B",
+      "officialPrompt": "Conversa propoziției 3",
+      "correctAnswer": {
+        "formal": "PiS",
+        "natural": "Unele opere de artă sunt clădiri."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_B_3_obv",
+      "section": "II.B",
+      "officialPrompt": "Obversa propoziției 3",
+      "correctAnswer": {
+        "formal": "So¬P",
+        "natural": "Unele clădiri nu sunt non-opere de artă."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_C_1",
+      "section": "II.C",
+      "officialPrompt": "Conversa obversei contrarei propoziției 1",
+      "correctAnswer": {
+        "formal": "¬PeS / ¬PoS",
+        "natural": "Niciun non-rege nu este președinte / unele non-regi nu sunt președinți, în funcție de forma acceptată de conversiune."
+      },
+      "points": 3
+    },
+    {
+      "itemId": "II_C_2",
+      "section": "II.C",
+      "officialPrompt": "Obversa supraalternei propoziției 3",
+      "correctAnswer": {
+        "formal": "Se¬P",
+        "natural": "Nicio clădire nu este non-operă de artă."
+      },
+      "points": 3
+    },
+    {
+      "itemId": "II_D_X_formal",
+      "section": "II.D",
+      "officialPrompt": "Formalizare X",
+      "correctAnswer": {
+        "formal": "SaP → PaS"
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_D_Y_formal",
+      "section": "II.D",
+      "officialPrompt": "Formalizare Y",
+      "correctAnswer": {
+        "formal": "SiP → So¬P"
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_D_validity",
+      "section": "II.D",
+      "officialPrompt": "Corectitudine",
+      "correctAnswer": {
+        "X": "incorect - conversiune nevalidă",
+        "Y": "corect - obversiune validă"
+      },
+      "points": 2
+    },
+    {
+      "itemId": "II_D_explain_X",
+      "section": "II.D",
+      "officialPrompt": "Explicație X",
+      "correctAnswer": {
+        "explanation": "Raționamentul elevului X este incorect, deoarece conversiunea unei propoziții universale afirmative nu se face simplu. În concluzie, termenul P apare distribuit, dar nu este distribuit în premisă."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_A_a_eae_2",
+      "section": "III.A",
+      "officialPrompt": "Schema eae-2",
+      "correctAnswer": {
+        "majorPremise": "PeM",
+        "minorPremise": "SaM",
+        "conclusion": "SeP"
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_A_a_iae_4",
+      "section": "III.A",
+      "officialPrompt": "Schema iae-4",
+      "correctAnswer": {
+        "majorPremise": "PiM",
+        "minorPremise": "MaS",
+        "conclusion": "SeP"
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_A_b",
+      "section": "III.A",
+      "officialPrompt": "Silogism în limbaj natural",
+      "correctAnswer": {
+        "example": "Niciun reptil nu este mamifer. Toate pisicile sunt mamifere. Deci nicio pisică nu este reptilă."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_A_c_eae_2_venn",
+      "section": "III.A",
+      "officialPrompt": "Verificare Venn eae-2",
+      "correctAnswer": {
+        "validityDecision": "valid",
+        "explanation": "Modul eae-2 este valid; după reprezentarea premiselor, concluzia SeP rezultă din diagramă."
+      },
+      "points": 4,
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_c_eae_2_venn",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_A_c_iae_4_venn",
+      "section": "III.A",
+      "officialPrompt": "Verificare Venn iae-4",
+      "correctAnswer": {
+        "validityDecision": "invalid",
+        "explanation": "Modul iae-4 este nevalid; concluzia nu rezultă din reprezentarea premiselor."
+      },
+      "points": 4,
+      "diagramSolution": {
+        "diagramId": "diagram_III_A_c_iae_4_venn",
+        "renderFromContract": true
+      }
+    },
+    {
+      "itemId": "III_B_answer",
+      "section": "III.B",
+      "officialPrompt": "Silogism valid pentru «Unele vehicule sunt nepoluante.»",
+      "correctAnswer": {
+        "formal": "MaP / SiM // SiP",
+        "natural": "Toate autoturismele electrice sunt nepoluante. Unele vehicule sunt autoturisme electrice. Deci unele vehicule sunt nepoluante."
+      },
+      "points": 6
+    },
+    {
+      "itemId": "III_C_tf",
+      "section": "III.C",
+      "officialPrompt": "A/F silogism dat",
+      "correctAnswer": {
+        "1": "F",
+        "2": "A",
+        "3": "A",
+        "4": "F"
+      },
+      "points": 4
+    },
+    {
+      "itemId": "III_D_a",
+      "section": "III.D",
+      "officialPrompt": "Regula încălcată",
+      "correctAnswer": {
+        "answer": "Evitarea circularității / definiția nu trebuie să fie circulară."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_D_b",
+      "section": "III.D",
+      "officialPrompt": "Altă regulă",
+      "correctAnswer": {
+        "answer": "Claritate și precizie (sau o altă regulă corectă diferită de circularitate)."
+      },
+      "points": 2
+    },
+    {
+      "itemId": "III_D_c",
+      "section": "III.D",
+      "officialPrompt": "Definiție construită",
+      "correctAnswer": {
+        "example": "Pictura este muzica privirii. Această definiție încalcă regula clarității și preciziei prin formulare metaforică."
+      },
+      "points": 2
+    }
+  ]
+}

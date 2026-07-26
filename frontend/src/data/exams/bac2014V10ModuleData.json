@@ -1,0 +1,372 @@
+{
+  "id": "bac-2014-v10",
+  "track": "bac",
+  "slug": "modulul-4-bac-2014-varianta-10",
+  "title": "Modulul 4 - BAC 2014, Varianta 10",
+  "subtitle": "Exemplu complet construit pe pachetul oficial 2014 V10, cu subiectul si baremul variantei corecte.",
+  "intro": "Pagina pastreaza impartirea pe Subiectul I, Subiectul II si Subiectul III, iar cardurile folosesc raspunsurile din JSON-ul teacher al pachetului 2014 V10.",
+  "officialPaper": {
+    "subjectPages": [
+      {
+        "title": "Subiectul oficial - pagina 1",
+        "src": "/generated-exams/bac/2014_v10/subject-1.jpg"
+      },
+      {
+        "title": "Subiectul oficial - pagina 2",
+        "src": "/generated-exams/bac/2014_v10/subject-2.jpg"
+      }
+    ],
+    "baremPages": [
+      {
+        "title": "Baremul oficial - pagina 1",
+        "src": "/generated-exams/bac/2014_v10/barem-1.jpg"
+      },
+      {
+        "title": "Baremul oficial - pagina 2",
+        "src": "/generated-exams/bac/2014_v10/barem-2.jpg"
+      }
+    ],
+    "subjectDownload": {
+      "href": "/generated-exams/bac/2014_v10/subject.pdf",
+      "fileName": "Examenul de bacalaureat național 2014_V10.pdf",
+      "label": "Descarca subiectul PDF"
+    },
+    "baremDownload": {
+      "href": "/generated-exams/bac/2014_v10/barem.pdf",
+      "fileName": "Examenul de bacalaureat național 2014_V10_BAREM.pdf",
+      "label": "Descarca baremul PDF"
+    }
+  },
+  "strategyBullets": [],
+  "sections": [
+    {
+      "id": "subiect-i",
+      "title": "Subiectul I",
+      "points": "30 de puncte",
+      "overview": "Cerintele sunt pastrate in ordinea oficiala din varianta.",
+      "cards": [
+        {
+          "kind": "choice",
+          "reference": "I.A.1",
+          "marks": "3 puncte",
+          "title": "Itemul 1",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Daca termenului tort i se adauga proprietatea de ciocolata, atunci:\na) intensiunea termenului scade\nb) extensiunea termenului scade\nc) extensiunea termenului creste\nd) extensiunea termenului ramane neschimbata",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) intensiunea termenului scade"
+            },
+            {
+              "value": "b",
+              "label": "b) extensiunea termenului scade"
+            },
+            {
+              "value": "c",
+              "label": "c) extensiunea termenului creste"
+            },
+            {
+              "value": "d",
+              "label": "d) extensiunea termenului ramane neschimbata"
+            }
+          ],
+          "correctAnswer": "b",
+          "correctAnswerLabel": "b) extensiunea termenului scade",
+          "correctExplanation": "Raspunsul corect pentru I.A.1 este b) extensiunea termenului scade.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.1 este b) extensiunea termenului scade.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.2",
+          "marks": "3 puncte",
+          "title": "Itemul 2",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Termenul pisica este, dupa intensiune:\na) nevid\nb) general\nc) pozitiv\nd) sigur",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) nevid"
+            },
+            {
+              "value": "b",
+              "label": "b) general"
+            },
+            {
+              "value": "c",
+              "label": "c) pozitiv"
+            },
+            {
+              "value": "d",
+              "label": "d) sigur"
+            }
+          ],
+          "correctAnswer": "c",
+          "correctAnswerLabel": "c) pozitiv",
+          "correctExplanation": "Raspunsul corect pentru I.A.2 este c) pozitiv.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.2 este c) pozitiv.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.3",
+          "marks": "3 puncte",
+          "title": "Itemul 3",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Termenii stilou si creion sunt in raport de:\na) contrarietate\nb) ordonare\nc) contradictie\nd) identitate",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) contrarietate"
+            },
+            {
+              "value": "b",
+              "label": "b) ordonare"
+            },
+            {
+              "value": "c",
+              "label": "c) contradictie"
+            },
+            {
+              "value": "d",
+              "label": "d) identitate"
+            }
+          ],
+          "correctAnswer": "a",
+          "correctAnswerLabel": "a) contrarietate",
+          "correctExplanation": "Raspunsul corect pentru I.A.3 este a) contrarietate.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.3 este a) contrarietate.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.4",
+          "marks": "3 puncte",
+          "title": "Itemul 4",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Propozitia 'Unele actiuni sunt corect apreciate' este:\na) universala afirmativa\nb) universala negativa\nc) particulara afirmativa\nd) particulara negativa",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) universala afirmativa"
+            },
+            {
+              "value": "b",
+              "label": "b) universala negativa"
+            },
+            {
+              "value": "c",
+              "label": "c) particulara afirmativa"
+            },
+            {
+              "value": "d",
+              "label": "d) particulara negativa"
+            }
+          ],
+          "correctAnswer": "c",
+          "correctAnswerLabel": "c) particulara afirmativa",
+          "correctExplanation": "Raspunsul corect pentru I.A.4 este c) particulara afirmativa.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.4 este c) particulara afirmativa.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.5",
+          "marks": "3 puncte",
+          "title": "Itemul 5",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Predicatul logic al propozitiei 'Unii oameni nu sunt optimisti din fire' este:\na) nu sunt optimisti din fire\nb) sunt optimisti din fire\nc) optimisti din fire\nd) optimisti",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) nu sunt optimisti din fire"
+            },
+            {
+              "value": "b",
+              "label": "b) sunt optimisti din fire"
+            },
+            {
+              "value": "c",
+              "label": "c) optimisti din fire"
+            },
+            {
+              "value": "d",
+              "label": "d) optimisti"
+            }
+          ],
+          "correctAnswer": "c",
+          "correctAnswerLabel": "c) optimisti din fire",
+          "correctExplanation": "Raspunsul corect pentru I.A.5 este c) optimisti din fire.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.5 este c) optimisti din fire.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "kind": "choice",
+          "reference": "I.A.6",
+          "marks": "3 puncte",
+          "title": "Itemul 6",
+          "prompt": "Alege varianta corecta pe baza enuntului oficial.",
+          "officialText": "Propozitiile 'Toti elevii sunt inteligenti' si 'Unii elevi sunt inteligenti' se afla in raport de:\na) contradictie\nb) contrarietate\nc) subcontrarietate\nd) subalternare",
+          "options": [
+            {
+              "value": "a",
+              "label": "a) contradictie"
+            },
+            {
+              "value": "b",
+              "label": "b) contrarietate"
+            },
+            {
+              "value": "c",
+              "label": "c) subcontrarietate"
+            },
+            {
+              "value": "d",
+              "label": "d) subalternare"
+            }
+          ],
+          "correctAnswer": "d",
+          "correctAnswerLabel": "d) subalternare",
+          "correctExplanation": "Raspunsul corect pentru I.A.6 este d) subalternare.",
+          "incorrectExplanation": "Raspunsul corect pentru I.A.6 este d) subalternare.",
+          "exerciseType": "multiple_choice"
+        },
+        {
+          "reference": "I.B",
+          "marks": "12p",
+          "title": "Scheme silogistice si verificare Venn",
+          "prompt": "Fie urmatoarele doua moduri silogistice: aoo-2, eao-4. Scrie schema de inferenta si verifica validitatea prin diagrame Venn.",
+          "officialText": "Fie urmatoarele doua moduri silogistice: aoo-2, eao-4. Scrie schema de inferenta si verifica validitatea prin diagrame Venn.\n\nZone de raspuns:\nSchema pentru aoo-2: structured_text (Exemplu de structura: MaP / SiM / SiP. Completeaza schema corespunzatoare modului cerut.)\nSchema pentru eao-4: structured_text (Scrie cele doua premise si concluzia, folosind termenii S, P, M.)\nDecizia de validitate: text_area (Exemplu: Modul este valid/nevalid, deoarece diagrama Venn confirma/nu confirma concluzia.)\nvenn_canvas (Deseneaza/completeaza diagrama Venn pentru fiecare mod silogistic.)",
+          "answer": "Modurile aoo-2 si eao-4 sunt valide.",
+          "answerBullets": [
+            "aoo-2: PaM / SoM / SoP - valid; Schema corespunde modului aoo in figura a II-a; diagrama Venn confirma concluzia SoP.",
+            "eao-4: PeM / MaS / SoP - valid; Schema corespunde modului eao in figura a IV-a; diagrama Venn confirma concluzia SoP.",
+            "Venn aoo-2: PaM / SoM / SoP - valid",
+            "Venn eao-4: PeM / MaS / SoP - valid"
+          ],
+          "markingNote": "Baremul cere schema, decizia de validitate si confirmarea prin diagrama Venn."
+        }
+      ]
+    },
+    {
+      "id": "subiect-ii",
+      "title": "Subiectul II",
+      "points": "30 de puncte",
+      "overview": "Propozitii date:\n1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.",
+      "cards": [
+        {
+          "reference": "II.A",
+          "marks": "4 puncte",
+          "title": "Formula propozitiei 3",
+          "prompt": "Precizati formula propozitiei 3.",
+          "officialText": "1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.\n\nPrecizati formula propozitiei 3.\nPlaceholder: Exemplu: SaP / SeP / SiP / SoP, in functie de cuantor si calitate.",
+          "answer": "SiP",
+          "justification": "Propozitia 3: 'Unii colegi sunt prieteni' este particulara afirmativa."
+        },
+        {
+          "reference": "II.B",
+          "marks": "6 puncte",
+          "title": "Subcontrara si contrara",
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 2.",
+          "officialText": "1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.\n\nConstruiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 2.\nPlaceholder: Scrie pentru fiecare: formula + formulare in limbaj natural.",
+          "answerBullets": [
+            "Subcontrara propozitiei 1: SiP",
+            "Contrara propozitiei 2: SeP",
+            "Unele rationamente sunt valide.",
+            "Niciun producator nu este agent economic."
+          ]
+        },
+        {
+          "reference": "II.C",
+          "marks": "10 puncte",
+          "title": "Conversiune si obversiune",
+          "prompt": "Aplicati conversiunea si obversiunea pentru propozitiile 2 si 4, in limbaj formal si natural.",
+          "officialText": "1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.\n\nAplicati conversiunea si obversiunea pentru propozitiile 2 si 4, in limbaj formal si natural.\nPlaceholder: Pentru fiecare propozitie: Conversa: ... / Obversa: ...",
+          "answerBullets": [
+            "Propozitia 2 (SaP): conversa PiS - Unii agenti economici sunt producatori.; obversa Se non-P - Niciun producator nu este non-agent economic.",
+            "Propozitia 4 (SeP): conversa PeS - Nicio stea nu este planeta.; obversa Sa non-P - Toate planetele sunt non-stele."
+          ]
+        },
+        {
+          "reference": "II.D",
+          "marks": "6 puncte",
+          "title": "De ce propozitia 1 nu se converteste corect",
+          "prompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+          "officialText": "1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.\n\nExplicati succint de ce propozitia 1 nu se converteste corect.\nPlaceholder: Explica regula: ce tip de propozitie este, ce conversiune ar rezulta si de ce nu este valida.",
+          "answer": "Propozitia 1 este de tip SoP, particulara negativa. Propozitiile de tip O nu au conversiune valida. Forma SoP -> PoS nu este garantata logic, deoarece ar distribui nepermis termenii si poate produce o concluzie care nu rezulta din premisa."
+        },
+        {
+          "reference": "II.E",
+          "marks": "4 puncte",
+          "title": "Diagrama Euler pentru propozitia 4",
+          "prompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 4.",
+          "officialText": "1. Unele rationamente nu sunt valide.\n2. Toti producatorii sunt agenti economici.\n3. Unii colegi sunt prieteni.\n4. Nicio planeta nu este stea.\n\nReprezentati prin metoda diagramelor Euler propozitia categorica 4.\nPlaceholder: Deseneaza doua cercuri fara intersectie: S = planete, P = stele.",
+          "answer": "Doua cercuri disjuncte: S = planete; P = stele. Reprezinta SeP: Nicio planeta nu este stea.",
+          "answerBullets": [
+            "Formula: SeP",
+            "Termeni: S = planete; P = stele",
+            "Relatie asteptata: disjoint_circles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subiect-iii",
+      "title": "Subiectul III",
+      "points": "30 de puncte",
+      "overview": "Cerintele sunt pastrate in ordinea oficiala din varianta.",
+      "cards": [
+        {
+          "reference": "III.1",
+          "marks": "4 puncte",
+          "title": "Definitia rationamentului valid",
+          "prompt": "Definiti conceptul de rationament valid.",
+          "officialText": "Definiti conceptul de rationament valid.\nPlaceholder: Exemplu de structura: Un rationament valid este acel rationament in care...",
+          "answer": "Un rationament valid este rationamentul in care concluzia decurge in mod necesar din premise; daca premisele sunt adevarate, concluzia nu poate fi falsa."
+        },
+        {
+          "reference": "III.2",
+          "marks": "6 puncte",
+          "title": "Indicatori de concluzie",
+          "prompt": "Mentionati doi indicatori de concluzie.",
+          "officialText": "Mentionati doi indicatori de concluzie.\nPlaceholder: Exemplu: asadar, deci, prin urmare, in concluzie.",
+          "answerBullets": [
+            "asadar",
+            "deci"
+          ],
+          "markingNote": "Se accepta si: prin urmare, in concluzie, rezulta ca."
+        },
+        {
+          "reference": "III.3",
+          "marks": "10 puncte",
+          "title": "Argument valid cu doua premise",
+          "prompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia 'Toti elevii care invata promoveaza examenul de bacalaureat'.",
+          "officialText": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia 'Toti elevii care invata promoveaza examenul de bacalaureat'.\nPlaceholder: Scrie doua premise si concluzia. Exemplu de forma: Toti S sunt M. Toti M sunt P. Deci, toti S sunt P.",
+          "answer": "argument valid de tip AAA-1",
+          "answerBullets": [
+            "SaM",
+            "MaP",
+            "SaP",
+            "Toti elevii care invata sunt elevi pregatiti.",
+            "Toti elevii pregatiti promoveaza examenul de bacalaureat.",
+            "Deci, toti elevii care invata promoveaza examenul de bacalaureat."
+          ]
+        },
+        {
+          "reference": "III.4",
+          "marks": "10 puncte",
+          "title": "Reguli de corectitudine a definirii",
+          "prompt": "Analizati definitia: 'Romanul este o oglinda pe care o plimbam de-a lungul unui drum.' Mentionati regula incalcata si doua alte reguli de corectitudine a definirii, cu exemple de definitii care le incalca.",
+          "officialText": "Analizati definitia: 'Romanul este o oglinda pe care o plimbam de-a lungul unui drum.' Mentionati regula incalcata si doua alte reguli de corectitudine a definirii, cu exemple de definitii care le incalca.\nPlaceholder: 1. Regula incalcata: ... 2. Alte doua reguli + cate o definitie gresita pentru fiecare.",
+          "answer": "Definitia incalca regula claritatii si preciziei: este metaforica, figurata, nu explica propriu-zis notiunea de roman.",
+          "answerBullets": [
+            "Definitia nu trebuie sa fie circulara.: Romanul este o scriere romanesca.",
+            "Definitia trebuie sa fie adecvata, nici prea larga, nici prea ingusta.: Romanul este o carte."
+          ]
+        }
+      ]
+    }
+  ],
+  "checkpoints": [],
+  "practiceNote": ""
+}

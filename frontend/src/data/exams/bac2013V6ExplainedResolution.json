@@ -1,0 +1,767 @@
+{
+  "schemaVersion": "3.0",
+  "documentType": "bac_explained_resolution",
+  "examId": "bac_logica_2013_v6",
+  "title": "Modulul 3 - BAC 2013, Varianta 6 - Rezolvare explicata",
+  "purpose": "Pagina de rezolvare explicata, nu test. Elevul vede cerinta oficiala, contextul, raspunsul final, explicatia scurta si poate deschide pasii, baremul sau diagrama.",
+  "displayModes": [
+    {
+      "id": "step_by_step",
+      "label": "Rezolvare pas cu pas"
+    },
+    {
+      "id": "barem_explained",
+      "label": "Barem explicat"
+    }
+  ],
+  "uiGuidelines": {
+    "notATest": true,
+    "noInputFields": true,
+    "hideTechnicalLabels": true,
+    "layout": "Carduri aerisite, expandabile, grupate pe Subiectul I, II, III.",
+    "defaultOpenGroup": "I_A",
+    "showOfficialOptions": true,
+    "showMiniDiagramsWhenAvailable": true
+  },
+  "scoringSummary": {
+    "totalWithOfficePoints": 100,
+    "officePoints": 10,
+    "examPoints": 90,
+    "sections": {
+      "I": 30,
+      "II": 30,
+      "III": 30
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unica",
+          "points": 18,
+          "cards": [
+            {
+              "id": "I_A_1",
+              "title": "1. Item grila",
+              "points": "3p",
+              "officialPrompt": "Extensiunea termenului elev este alcatuita din:",
+              "options": {
+                "a": "toti elevii",
+                "b": "elevii din ciclul liceal",
+                "c": "elevii din ciclul gimnazial",
+                "d": "elevii din ciclul primar"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "a"
+              },
+              "shortResolution": "Raspuns corect: a. toti elevii",
+              "finalAnswer": {
+                "letter": "a",
+                "text": "toti elevii"
+              },
+              "shortExplanation": "Baremul indica varianta a.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este a."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: toti elevii."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta a.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_2",
+              "title": "2. Item grila",
+              "points": "3p",
+              "officialPrompt": "Termenul bicicleta este, dupa intensiune:",
+              "options": {
+                "a": "nevid",
+                "b": "distributiv",
+                "c": "pozitiv",
+                "d": "vag"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "c"
+              },
+              "shortResolution": "Raspuns corect: c. pozitiv",
+              "finalAnswer": {
+                "letter": "c",
+                "text": "pozitiv"
+              },
+              "shortExplanation": "Baremul indica varianta c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este c."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: pozitiv."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta c.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_3",
+              "title": "3. Item grila",
+              "points": "3p",
+              "officialPrompt": "Termenii roman si profesor sunt in raport de:",
+              "options": {
+                "a": "contrarietate",
+                "b": "incrucisare",
+                "c": "ordonare",
+                "d": "contradictie"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "b"
+              },
+              "shortResolution": "Raspuns corect: b. incrucisare",
+              "finalAnswer": {
+                "letter": "b",
+                "text": "incrucisare"
+              },
+              "shortExplanation": "Baremul indica varianta b.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este b."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: incrucisare."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta b.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_4",
+              "title": "4. Item grila",
+              "points": "3p",
+              "officialPrompt": "Intr-o propozitie categorica se exprima:",
+              "options": {
+                "a": "doua raporturi intre doi termeni",
+                "b": "un singur raport intre trei termeni",
+                "c": "doua raporturi intre trei termeni",
+                "d": "un singur raport intre doi termeni"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "d"
+              },
+              "shortResolution": "Raspuns corect: d. un singur raport intre doi termeni",
+              "finalAnswer": {
+                "letter": "d",
+                "text": "un singur raport intre doi termeni"
+              },
+              "shortExplanation": "Baremul indica varianta d.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este d."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: un singur raport intre doi termeni."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta d.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_5",
+              "title": "5. Item grila",
+              "points": "3p",
+              "officialPrompt": "Subiectul logic al propozitiei „Unii elevi de liceu sunt orgoliosi” este:",
+              "options": {
+                "a": "unii elevi",
+                "b": "elevi",
+                "c": "elevi de liceu",
+                "d": "unii elevi de liceu"
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "c"
+              },
+              "shortResolution": "Raspuns corect: c. elevi de liceu",
+              "finalAnswer": {
+                "letter": "c",
+                "text": "elevi de liceu"
+              },
+              "shortExplanation": "Baremul indica varianta c.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este c."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: elevi de liceu."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta c.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            },
+            {
+              "id": "I_A_6",
+              "title": "6. Item grila",
+              "points": "3p",
+              "officialPrompt": "Contradictoria propozitiei „Unele exercitii sunt dificile” este propozitia:",
+              "options": {
+                "a": "Niciun exercitiu nu este dificil.",
+                "b": "Unele exercitii nu sunt dificile.",
+                "c": "Toate exercitiile sunt dificile.",
+                "d": "Unele exercitii nu sunt accesibile."
+              },
+              "context": [],
+              "notationBox": {
+                "type": "choice_item",
+                "label": "Varianta corecta",
+                "value": "a"
+              },
+              "shortResolution": "Raspuns corect: a. Niciun exercitiu nu este dificil.",
+              "finalAnswer": {
+                "letter": "a",
+                "text": "Niciun exercitiu nu este dificil."
+              },
+              "shortExplanation": "Baremul indica varianta a.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Citeste cerinta si cele patru variante de raspuns."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Compara variantele cu baremul: raspunsul corect este a."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Formularea asociata raspunsului corect este: Niciun exercitiu nu este dificil.."
+                }
+              ],
+              "baremExplained": "Barem: 3p pentru varianta a.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Scheme silogistice si diagrame Venn",
+          "points": 12,
+          "cards": [
+            {
+              "id": "I_B_1",
+              "title": "1. Scheme pentru aai-1 si eae-2",
+              "points": "12p",
+              "officialPrompt": "Fie urmatoarele doua moduri silogistice: aai-1, eae-2. Scrieti schema de inferenta corespunzatoare fiecareia si construiti, in limbaj natural, un silogism pentru una dintre cele doua scheme de inferenta. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri silogistice date, precizand decizia la care ati ajuns.",
+              "context": [],
+              "notationBox": {
+                "type": "syllogism_schema",
+                "schema": {
+                  "aai-1": "MaP / SaM / SiP",
+                  "eae-2": "PeM / SaM / SeP"
+                },
+                "mode": "aai-1; eae-2"
+              },
+              "shortResolution": "Schemele corecte sunt MaP / SaM / SiP pentru aai-1 si PeM / SaM / SeP pentru eae-2; ambele moduri sunt valide.",
+              "finalAnswer": {
+                "answers": {
+                  "aai-1": "MaP / SaM / SiP",
+                  "eae-2": "PeM / SaM / SeP"
+                },
+                "verdict": "aai-1 valid; eae-2 valid"
+              },
+              "shortExplanation": "Schemele corecte sunt MaP / SaM / SiP pentru aai-1 si PeM / SaM / SeP pentru eae-2; ambele moduri sunt valide.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "aai-1: MaP / SaM / SiP."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "eae-2: PeM / SaM / SeP."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Toate manualele de logica sunt materiale utile. Unele carti studiate de elevi sunt manuale de logica. Deci unele carti studiate de elevi sunt materiale utile. Formal: MaP; SiM; deci SiP (aai-1)."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Venn aai-1: M subset P; S intersects M; therefore S intersects P."
+                },
+                {
+                  "label": "Pasul 5",
+                  "text": "Venn eae-2: P disjoint M; S subset M; therefore S disjoint P."
+                }
+              ],
+              "baremExplained": "Barem: schema de inferenta, un silogism in limbaj natural si verificarea validitatii prin Venn.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "venn_three_terms",
+                "caption": "Verificare Venn pentru unul dintre modurile cerute, conform contractului de diagrama.",
+                "xRegions": [
+                  "S intersecteaza P pentru aai-1"
+                ]
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul II",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "contextBlock": {
+        "title": "Propozitii date",
+        "items": [
+          "1. Unele titluri de valoare nu sunt obligatiuni.",
+          "2. Unii elevi sunt pasionati de sah.",
+          "3. Niciun tigru nu este animal domestic.",
+          "4. Toate ideile noi sunt interesante."
+        ]
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Formula propozitiei 4",
+          "points": 4,
+          "cards": [
+            {
+              "id": "II_A",
+              "title": "A. Formula propozitiei 4",
+              "points": "4p",
+              "officialPrompt": "Precizati formula propozitiei 4.",
+              "context": [],
+              "notationBox": {
+                "type": "categorical_formula",
+                "formal": "SaP"
+              },
+              "shortResolution": "Formula corecta este SaP.",
+              "finalAnswer": {
+                "formal": "SaP"
+              },
+              "shortExplanation": "Formula corecta este SaP.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 4 este: Toate ideile noi sunt interesante."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Formula indicata in barem este SaP."
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Subcontrara si contrara",
+          "points": 6,
+          "cards": [
+            {
+              "id": "II_B",
+              "title": "B. Subcontrara propozitiei 1 si contrara propozitiei 4",
+              "points": "6p",
+              "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si contrara propozitiei 4.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Subcontrara propozitiei 1 este SiP; contrara propozitiei 4 este SeP.",
+              "finalAnswer": {
+                "answers": {
+                  "Subcontrara propozitiei 1": "SiP - Unele titluri de valoare sunt obligatiuni.",
+                  "Contrara propozitiei 4": "SeP - Nicio idee noua nu este interesanta."
+                }
+              },
+              "shortExplanation": "Subcontrara propozitiei 1 este SiP; contrara propozitiei 4 este SeP.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "SiP: Unele titluri de valoare sunt obligatiuni.."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "SeP: Nicio idee noua nu este interesanta.."
+                }
+              ],
+              "baremExplained": "Barem: 6p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Conversiune si obversiune",
+          "points": 10,
+          "cards": [
+            {
+              "id": "II_C",
+              "title": "C. Conversa si obversa propozitiilor 2 si 3",
+              "points": "10p",
+              "officialPrompt": "Aplicati explicit operatiile de conversiune si obversiune, pentru a deriva conversa si obversa corecte ale fiecareia dintre propozitiile 2 si 3, atat in limbaj formal, cat si in limbaj natural.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Pentru propozitia 2 se obtin PiS si So~P; pentru propozitia 3 se obtin PeS si Sa~P.",
+              "finalAnswer": {
+                "answers": {
+                  "Propozitia 2": "conversa: PiS - Unele lucruri pasionate de sah sunt elevi.; obversa: So~P - Unii elevi nu sunt nepasionati de sah.",
+                  "Propozitia 3": "conversa: PeS - Niciun animal domestic nu este tigru.; obversa: Sa~P - Toti tigrii sunt non-animale domestice."
+                }
+              },
+              "shortExplanation": "Pentru propozitia 2 se obtin PiS si So~P; pentru propozitia 3 se obtin PeS si Sa~P.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 2 (SiP): PiS - Unele lucruri pasionate de sah sunt elevi.."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Propozitia 2 (SiP): So~P - Unii elevi nu sunt nepasionati de sah.."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "Propozitia 3 (SeP): PeS - Niciun animal domestic nu este tigru.."
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "Propozitia 3 (SeP): Sa~P - Toti tigrii sunt non-animale domestice.."
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "operation_chain",
+                "nodes": [
+                  "propozitie data",
+                  "conversa",
+                  "obversa"
+                ],
+                "caption": "Cerintele aplica operatiile de conversiune si obversiune in limbaj formal si natural."
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Conversiune nevalida",
+          "points": 6,
+          "cards": [
+            {
+              "id": "II_D",
+              "title": "D. De ce propozitia 1 nu se converteste corect",
+              "points": "6p",
+              "officialPrompt": "Explicati succint de ce propozitia 1 nu se converteste corect.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Propozitia 1 este de tip O (SoP). Propozitiile particulare negative nu se convertesc valid. Din „Unele titluri de valoare nu sunt obligatiuni” nu rezulta valid „Unele obligatiuni nu sunt titluri de valoare”.",
+              "finalAnswer": {
+                "explanation": "Propozitia 1 este de tip O (SoP). Propozitiile particulare negative nu se convertesc valid. Din „Unele titluri de valoare nu sunt obligatiuni” nu rezulta valid „Unele obligatiuni nu sunt titluri de valoare”."
+              },
+              "shortExplanation": "Propozitia 1 este de tip O (SoP). Propozitiile particulare negative nu se convertesc valid. Din „Unele titluri de valoare nu sunt obligatiuni” nu rezulta valid „Unele obligatiuni nu sunt titluri de valoare”.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Propozitia 1 este de tip O (SoP). Propozitiile particulare negative nu se convertesc valid. Din „Unele titluri de valoare nu sunt obligatiuni” nu rezulta valid „Unele obligatiuni nu sunt titluri de valoare”."
+                }
+              ],
+              "baremExplained": "Barem: 6p conform raspunsului indicat.",
+              "commonMistake": "A inversa termenii unei propozitii particulare negative ca si cum ar avea conversiune valida.",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "II_E",
+          "title": "E. Diagrama Euler",
+          "points": 4,
+          "cards": [
+            {
+              "id": "II_E",
+              "title": "E. Reprezentarea Euler a propozitiei 3",
+              "points": "4p",
+              "officialPrompt": "Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "doua cercuri disjuncte: S=tigru, P=animal domestic",
+              "finalAnswer": {
+                "formal": "SeP",
+                "natural": "Niciun tigru nu este animal domestic.",
+                "explanation": "doua cercuri disjuncte: S=tigru, P=animal domestic"
+              },
+              "shortExplanation": "doua cercuri disjuncte: S=tigru, P=animal domestic",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Niciun tigru nu este animal domestic."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "doua cercuri disjuncte: S=tigru, P=animal domestic"
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "circle S labeled tigru"
+                },
+                {
+                  "label": "Pasul 4",
+                  "text": "circle P labeled animal domestic"
+                },
+                {
+                  "label": "Pasul 5",
+                  "text": "circles disjoint/no overlap"
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "venn2",
+                "labels": [
+                  "S",
+                  "P"
+                ],
+                "caption": "doua cercuri disjuncte: S=tigru, P=animal domestic"
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul III",
+      "points": 30,
+      "displayMode": "official_grouped_resolution",
+      "groups": [
+        {
+          "id": "III_1",
+          "title": "1. Definitia demonstratiei",
+          "points": 4,
+          "cards": [
+            {
+              "id": "III_1",
+              "title": "1. Definitia conceptului de demonstratie",
+              "points": "4p",
+              "officialPrompt": "Definiti conceptul de demonstratie.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Demonstratia este procesul logic prin care se intemeiaza adevarul unei teze prin raportare la argumente/premise adevarate si reguli valide de inferenta.",
+              "finalAnswer": {
+                "text": "Demonstratia este procesul logic prin care se intemeiaza adevarul unei teze prin raportare la argumente/premise adevarate si reguli valide de inferenta."
+              },
+              "shortExplanation": "Demonstratia este procesul logic prin care se intemeiaza adevarul unei teze prin raportare la argumente/premise adevarate si reguli valide de inferenta.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Demonstratia este procesul logic prin care se intemeiaza adevarul unei teze prin raportare la argumente/premise adevarate si reguli valide de inferenta."
+                }
+              ],
+              "baremExplained": "Barem: 4p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_2",
+          "title": "2. Structura silogismului",
+          "points": 6,
+          "cards": [
+            {
+              "id": "III_2",
+              "title": "2. Cele trei propozitii ale silogismului",
+              "points": "6p",
+              "officialPrompt": "Precizati denumirile celor trei propozitii din structura unui silogism.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "premisa majora; premisa minora; concluzia",
+              "finalAnswer": {
+                "answers": [
+                  "premisa majora",
+                  "premisa minora",
+                  "concluzia"
+                ]
+              },
+              "shortExplanation": "premisa majora; premisa minora; concluzia",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "premisa majora"
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "premisa minora"
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "concluzia"
+                }
+              ],
+              "baremExplained": "Barem: 6p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_3",
+          "title": "3. Argument valid cu doua premise",
+          "points": 10,
+          "cards": [
+            {
+              "id": "III_3",
+              "title": "3. Argument pentru concluzia data",
+              "points": "10p",
+              "officialPrompt": "Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin care sa justificati propozitia „Unii oameni sunt nerecunoscatori”.",
+              "context": [],
+              "notationBox": {
+                "type": "syllogism_schema",
+                "schema": "MaP; SiM; deci SiP",
+                "verdict": "argument valid de tip aii-1"
+              },
+              "shortResolution": "MaP; SiM; deci SiP; argument valid de tip aii-1.",
+              "finalAnswer": {
+                "formal": "MaP; SiM; deci SiP",
+                "natural": "Toti oamenii lipsiti de recunostinta sunt nerecunoscatori. Unii oameni sunt lipsiti de recunostinta. Deci unii oameni sunt nerecunoscatori.",
+                "verdict": "argument valid de tip aii-1"
+              },
+              "shortExplanation": "MaP; SiM; deci SiP; argument valid de tip aii-1.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "MaP; SiM; deci SiP"
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "Toti oamenii lipsiti de recunostinta sunt nerecunoscatori. Unii oameni sunt lipsiti de recunostinta. Deci unii oameni sunt nerecunoscatori."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "argument valid de tip aii-1"
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": {
+                "type": "syllogism_figure",
+                "pattern": "MaP/ SiM/ deci SiP",
+                "caption": "argument valid de tip aii-1"
+              },
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        },
+        {
+          "id": "III_4",
+          "title": "4. Reguli de corectitudine a definirii",
+          "points": 10,
+          "cards": [
+            {
+              "id": "III_4",
+              "title": "4. Analiza definitiei date",
+              "points": "10p",
+              "officialPrompt": "Fie definitia: „Romanul este o oglinda pe care o plimbam de-a lungul unui drum.” Mentionati o regula de corectitudine pe care o incalca definitia data. Enuntati doua reguli de corectitudine a definirii, diferite de regula de la punctul a, si construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.",
+              "context": [],
+              "notationBox": null,
+              "shortResolution": "Regula claritatii si preciziei: definitia foloseste o exprimare metaforica, nu una clara si operationala.",
+              "finalAnswer": {
+                "explanation": "Regula claritatii si preciziei: definitia foloseste o exprimare metaforica, nu una clara si operationala.",
+                "answers": {
+                  "regula non-circularitatii": "Romanul este o opera romanesca.",
+                  "regula adecvarii definitiei": "Romanul este orice text scris."
+                }
+              },
+              "shortExplanation": "Regula claritatii si preciziei: definitia foloseste o exprimare metaforica, nu una clara si operationala.",
+              "expandedSteps": [
+                {
+                  "label": "Pasul 1",
+                  "text": "Regula claritatii si preciziei: definitia foloseste o exprimare metaforica, nu una clara si operationala."
+                },
+                {
+                  "label": "Pasul 2",
+                  "text": "regula non-circularitatii: Romanul este o opera romanesca."
+                },
+                {
+                  "label": "Pasul 3",
+                  "text": "regula adecvarii definitiei: Romanul este orice text scris."
+                }
+              ],
+              "baremExplained": "Barem: 10p conform raspunsului indicat.",
+              "commonMistake": "",
+              "miniDiagram": null,
+              "displayTemplate": "explained_resolution_card_v2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

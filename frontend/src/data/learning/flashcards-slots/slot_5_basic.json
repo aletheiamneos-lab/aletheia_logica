@@ -1,0 +1,134 @@
+{
+  "slot": 5,
+  "nivel": "basic",
+  "title": "Slot 5 - Basic",
+  "description": "Set de 25 flashcarduri pentru nivelul basic, formulate didactic și aplicat.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_5_basic_card_1",
+      "front": "Ce este silogismul?",
+      "back": "Silogismul este un raționament deductiv mediat, format din două premise și o concluzie."
+    },
+    {
+      "id": "slot_5_basic_card_2",
+      "front": "Ce înseamnă raționament deductiv mediat?",
+      "back": "Înseamnă că legătura dintre doi termeni se face printr-un al treilea termen, numit termen mediu."
+    },
+    {
+      "id": "slot_5_basic_card_3",
+      "front": "Câte premise are un silogism?",
+      "back": "Un silogism are două premise: premisa majoră și premisa minoră."
+    },
+    {
+      "id": "slot_5_basic_card_4",
+      "front": "Ce este concluzia silogismului?",
+      "back": "Concluzia este propoziția care leagă termenul minor de termenul major."
+    },
+    {
+      "id": "slot_5_basic_card_5",
+      "front": "Ce este termenul major?",
+      "back": "Termenul major este predicatul concluziei și se notează cu P."
+    },
+    {
+      "id": "slot_5_basic_card_6",
+      "front": "Ce este termenul minor?",
+      "back": "Termenul minor este subiectul concluziei și se notează cu S."
+    },
+    {
+      "id": "slot_5_basic_card_7",
+      "front": "Ce este termenul mediu?",
+      "back": "Termenul mediu este termenul care apare în ambele premise, dar nu apare în concluzie."
+    },
+    {
+      "id": "slot_5_basic_card_8",
+      "front": "Ce rol are termenul mediu?",
+      "back": "Termenul mediu face legătura logică dintre termenul minor și termenul major."
+    },
+    {
+      "id": "slot_5_basic_card_9",
+      "front": "Ce este premisa majoră?",
+      "back": "Premisa majoră este premisa care conține termenul major și termenul mediu."
+    },
+    {
+      "id": "slot_5_basic_card_10",
+      "front": "Ce este premisa minoră?",
+      "back": "Premisa minoră este premisa care conține termenul minor și termenul mediu."
+    },
+    {
+      "id": "slot_5_basic_card_11",
+      "front": "Ce înseamnă forma SaP?",
+      "back": "SaP înseamnă: Toți S sunt P."
+    },
+    {
+      "id": "slot_5_basic_card_12",
+      "front": "Ce înseamnă forma SeP?",
+      "back": "SeP înseamnă: Niciun S nu este P."
+    },
+    {
+      "id": "slot_5_basic_card_13",
+      "front": "Ce înseamnă forma SiP?",
+      "back": "SiP înseamnă: Unii S sunt P."
+    },
+    {
+      "id": "slot_5_basic_card_14",
+      "front": "Ce înseamnă forma SoP?",
+      "back": "SoP înseamnă: Unii S nu sunt P."
+    },
+    {
+      "id": "slot_5_basic_card_15",
+      "front": "Ce înseamnă MaP?",
+      "back": "MaP înseamnă: Toți M sunt P."
+    },
+    {
+      "id": "slot_5_basic_card_16",
+      "front": "Ce înseamnă MeP?",
+      "back": "MeP înseamnă: Niciun M nu este P."
+    },
+    {
+      "id": "slot_5_basic_card_17",
+      "front": "Ce înseamnă SaM?",
+      "back": "SaM înseamnă: Toți S sunt M."
+    },
+    {
+      "id": "slot_5_basic_card_18",
+      "front": "Ce înseamnă SiM?",
+      "back": "SiM înseamnă: Unii S sunt M."
+    },
+    {
+      "id": "slot_5_basic_card_19",
+      "front": "Ce este figura silogistică?",
+      "back": "Figura silogistică este determinată de poziția termenului mediu în premise."
+    },
+    {
+      "id": "slot_5_basic_card_20",
+      "front": "Ce este modul silogistic?",
+      "back": "Modul silogistic este succesiunea tipurilor de propoziții A, E, I, O din premise și concluzie."
+    },
+    {
+      "id": "slot_5_basic_card_21",
+      "front": "Ce este un silogism valid?",
+      "back": "Un silogism valid este un silogism care respectă legile de validitate."
+    },
+    {
+      "id": "slot_5_basic_card_22",
+      "front": "Ce este un silogism nevalid?",
+      "back": "Un silogism nevalid încalcă cel puțin o regulă de validitate."
+    },
+    {
+      "id": "slot_5_basic_card_23",
+      "front": "Ce este verificarea silogismului?",
+      "back": "Verificarea silogismului urmărește dacă forma respectă distribuirea termenilor și legile silogismului."
+    },
+    {
+      "id": "slot_5_basic_card_24",
+      "front": "Ce este metoda Venn pentru silogisme?",
+      "back": "Metoda Venn testează dacă concluzia rezultă din reprezentarea grafică a premiselor."
+    },
+    {
+      "id": "slot_5_basic_card_25",
+      "front": "De ce sunt importante legile silogismului?",
+      "back": "Pentru că ele stabilesc condițiile minime ale unei concluzii deductive corecte."
+    }
+  ]
+}

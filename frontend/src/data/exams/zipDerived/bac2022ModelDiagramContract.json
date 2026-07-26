@@ -1,0 +1,59 @@
+{
+  "examId": "bac_logica_2022_model",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_2022_model",
+      "diagramType": "euler_relations",
+      "studentMode": "canvas_or_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "B and C intersect.",
+        "A and D are identical sets inside the intersection B ∩ C.",
+        "E intersects both B and C.",
+        "E is in opposition with A and D."
+      ],
+      "renderNote": "Randare schematica: doua cercuri intersectate B/C; A=D in intersectie; E intersecteaza B si C, dar nu A/D."
+    },
+    {
+      "diagramId": "diagram_III_A_aoo_2_venn_2022_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aoo-2",
+      "schema": [
+        "PaM",
+        "SoM",
+        "SoP"
+      ],
+      "validity": "valid",
+      "renderNote": "Diagrama Venn trebuie sa faca vizibila concluzia SoP dupa reprezentarea premiselor."
+    },
+    {
+      "diagramId": "diagram_III_A_aaa_4_venn_2022_model",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aaa-4",
+      "schema": [
+        "PaM",
+        "MaS",
+        "SiP"
+      ],
+      "validity": "valid",
+      "renderNote": "Concluzia acceptata in barem este SiP; decizia de validitate este valid."
+    }
+  ]
+}

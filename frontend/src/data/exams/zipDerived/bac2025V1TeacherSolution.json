@@ -1,0 +1,425 @@
+{
+  "solutionId": "teacher_solution_bac_logica_2025_v1",
+  "examId": "bac_logica_2025_v1",
+  "visibility": "teacher_only",
+  "title": "Rezolvare profesor - Examenul de bacalaureat national 2025 - Varianta 1 - Logica, argumentare si comunicare",
+  "source": "Derivat local din bac2025V1ExplainedResolution.json si OCR/PDF-ul din proiect",
+  "items": {
+    "I_A": {
+      "correctAnswers": {
+        "1": "d",
+        "2": "b",
+        "3": "d",
+        "4": "c",
+        "5": "d",
+        "6": "b",
+        "7": "a",
+        "8": "b",
+        "9": "b",
+        "10": "b"
+      }
+    },
+    "I_B": {
+      "correctAnswers": {
+        "a": "F",
+        "b": "A",
+        "c": "A",
+        "d": "A",
+        "e": "A",
+        "f": "F",
+        "g": "A",
+        "h": "A"
+      },
+      "diagramSolution": {
+        "diagramId": "diagram_I_B_euler",
+        "renderFromContract": true
+      }
+    },
+    "III_C": {
+      "correctAnswers": {
+        "1": "F",
+        "2": "A",
+        "3": "F",
+        "4": "F"
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "groupId": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "items": [
+            {
+              "itemId": "I_A_1",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "Dacă termenului „mașină de tocat” i se adaugă proprietatea „carne” atunci:",
+              "answer": "d) extensiunea termenului scade în timp ce intensiunea crește",
+              "explanation": "Când adaugi o proprietate unui termen, conținutul/intensiunea crește, iar sfera/extensiunea se restrânge."
+            },
+            {
+              "itemId": "I_A_2",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Inferența „Unii avocați nu sunt persoane cunoscute în oraș, prin urmare unele persoane cunoscute în oraș nu sunt avocați.” este:",
+              "answer": "b) o deducție imediată nevalidă",
+              "explanation": "Se încearcă o conversiune a propoziției de tip O, iar propozițiile O nu se convertesc valid. Este o deducție imediată, dar nevalidă."
+            },
+            {
+              "itemId": "I_A_3",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "Între propozițiile categorice „Toate mașinile sunt maro.” și „Unele mașini sunt maro.” există un raport de:",
+              "answer": "d) subalternare",
+              "explanation": "Prima propoziție este SaP, iar a doua este SiP. Relația A–I este subalternare."
+            },
+            {
+              "itemId": "I_A_4",
+              "correctAnswer": "c",
+              "correctLetter": "c",
+              "points": 2,
+              "officialPrompt": "Subiectul logic al propoziției „Majoritatea cărților de vizită sunt ale oamenilor de afaceri.” este:",
+              "answer": "c) cărților de vizită",
+              "explanation": "Subiectul logic este termenul despre care se afirmă ceva: clasa „cărților de vizită”. Cuantorul „majoritatea” nu face parte din termenul-subiect propriu-zis."
+            },
+            {
+              "itemId": "I_A_5",
+              "correctAnswer": "d",
+              "correctLetter": "d",
+              "points": 2,
+              "officialPrompt": "O clasificare corectă presupune respectarea regulii:",
+              "answer": "d) omogenității",
+              "explanation": "Clasificarea cere clase formate pe un criteriu coerent, astfel încât elementele aceleiași clase să fie relevante prin asemănare."
+            },
+            {
+              "itemId": "I_A_6",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Din punct de vedere intensional, termenul „frumusețe” este:",
+              "answer": "b) abstract",
+              "explanation": "„Frumusețe” desemnează o însușire considerată separat de obiectele concrete. De aceea este termen abstract."
+            },
+            {
+              "itemId": "I_A_7",
+              "correctAnswer": "a",
+              "correctLetter": "a",
+              "points": 2,
+              "officialPrompt": "Raționamentul „Unele conflicte nu sunt gestionate corect, deci unele conflicte sunt gestionate incorect.” este:",
+              "answer": "a) obversiune validă",
+              "explanation": "Se păstrează subiectul, se schimbă calitatea și se neagă predicatul: SoP devine Si¬P."
+            },
+            {
+              "itemId": "I_A_8",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Propoziția „Unii actori nu sunt cântăreți.” este un exemplu de propoziție:",
+              "answer": "b) particulară negativă",
+              "explanation": "„Unii” indică particularitatea, iar „nu sunt” indică negația. Forma este SoP."
+            },
+            {
+              "itemId": "I_A_9",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "O inferență deductivă mediată presupune existența:",
+              "answer": "b) mai multor premise",
+              "explanation": "Inferența mediată ajunge la concluzie prin intermediul mai multor premise. Silogismul este exemplul clasic."
+            },
+            {
+              "itemId": "I_A_10",
+              "correctAnswer": "b",
+              "correctLetter": "b",
+              "points": 2,
+              "officialPrompt": "Propoziției categorice „Niciun elev nu este persoană cu studii superioare.” îi corespunde formula:",
+              "answer": "b) SeP",
+              "explanation": "„Niciun S nu este P” este propoziție universal negativă, adică SeP."
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "groupId": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "diagramSolution": {
+            "diagramId": "diagram_I_B_euler",
+            "renderFromContract": true
+          },
+          "items": [
+            {
+              "itemId": "I_B_DIAGRAM",
+              "points": 2,
+              "diagramRef": "diagram_I_B_euler",
+              "answer": "Diagrama Euler conform raporturilor din enun?."
+            },
+            {
+              "itemId": "I_B_AF",
+              "points": 8,
+              "answers": {
+                "a": "F",
+                "b": "A",
+                "c": "A",
+                "d": "A",
+                "e": "A",
+                "f": "F",
+                "g": "A",
+                "h": "A"
+              },
+              "correctAnswers": {
+                "a": "F",
+                "b": "A",
+                "c": "A",
+                "d": "A",
+                "e": "A",
+                "f": "F",
+                "g": "A",
+                "h": "A"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "II_A",
+          "groupId": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_A_1",
+              "points": 2,
+              "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, contradictoria propoziției 1.",
+              "answer": "Formă logică: SiP. Limbaj natural: Unii membri ai grupului formal sunt ușor de impresionat.",
+              "explanation": "Propoziția 1 este SeP, iar contradictoria lui SeP este SiP."
+            },
+            {
+              "itemId": "II_A_2",
+              "points": 2,
+              "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, contrara propoziției 2.",
+              "answer": "Formă logică: SeP. Limbaj natural: Nicio floare din ghivecele bunicii nu este colorată și parfumată.",
+              "explanation": "Propoziția 2 este SaP, iar contrara lui SaP este SeP."
+            },
+            {
+              "itemId": "II_A_3",
+              "points": 2,
+              "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, supraalterna propoziției 3.",
+              "answer": "Formă logică: SaP. Limbaj natural: Toți scriitorii români contemporani sunt cunoscuți la nivel internațional.",
+              "explanation": "Propoziția 3 este SiP, iar supraalterna corespunzătoare este SaP."
+            },
+            {
+              "itemId": "II_A_4",
+              "points": 2,
+              "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, subcontrara propoziției 4.",
+              "answer": "Formă logică: SiP. Limbaj natural: Unele animale de la polul nord sunt în pericol de dispariție.",
+              "explanation": "Propoziția 4 este SoP, iar subcontrara lui SoP este SiP."
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "groupId": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_B_2",
+              "points": 4,
+              "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 2.",
+              "answer": "Conversa: PiS. Obversa: Se¬P.",
+              "explanation": "Propoziția 2 este SaP. Conversa validă a lui SaP este prin accident, PiS. Obversa lui SaP este Se¬P."
+            },
+            {
+              "itemId": "II_B_3",
+              "points": 4,
+              "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 3.",
+              "answer": "Conversa: PiS. Obversa: So¬P.",
+              "explanation": "Propoziția 3 este SiP. Conversiunea simplă păstrează I: SiP → PiS. Obversa este So¬P."
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "groupId": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "II_C_1",
+              "points": 3,
+              "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, supraalterna conversei obversei propoziției 4.",
+              "answer": "Formă logică: ¬PaS.",
+              "explanation": "Din SoP obținem prin obversiune Si¬P; conversa este ¬PiS; supraalterna devine ¬PaS."
+            },
+            {
+              "itemId": "II_C_2",
+              "points": 3,
+              "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei contrarei propoziției 1.",
+              "answer": "Formă logică: Po¬S.",
+              "explanation": "Contrara lui SeP este SaP; conversa lui SaP este PiS; obversa conversei este Po¬S."
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "groupId": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "items": [
+            {
+              "itemId": "II_D_X",
+              "points": 3,
+              "officialPrompt": "X: Dacă unele idei sunt adevărate, atunci unele idei nu sunt false.",
+              "answer": "Formalizare: SiP → So¬P. Verdict: raționament corect.",
+              "explanation": "Dintr-o particulară afirmativă SiP se obține prin obversiune particulara negativă So¬P."
+            },
+            {
+              "itemId": "II_D_Y",
+              "points": 5,
+              "officialPrompt": "Y: Toate zilele de vacanță sunt așteptate cu nerăbdare de către toți, deci unele zile așteptate cu nerăbdare de către toți sunt zile de vacanță.",
+              "answer": "Formalizare: SaP → PiS. Verdict: raționament corect.",
+              "explanation": "Conversiunea prin accident a propoziției SaP produce PiS; nu se încalcă legea distribuirii termenilor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "groupId": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "items": [
+            {
+              "itemId": "III_A_eio_1",
+              "points": 2,
+              "officialPrompt": "Scrieți schema de inferență corespunzătoare modului silogistic eio-1.",
+              "answer": "Premisa majoră: MeP. Premisa minoră: SiM. Concluzia: SoP.",
+              "explanation": "Figura I are M–P în premisa majoră și S–M în premisa minoră. Modul eio cere E, I, O."
+            },
+            {
+              "itemId": "III_A_oao_2",
+              "points": 2,
+              "officialPrompt": "Scrieți schema de inferență corespunzătoare modului silogistic oao-2.",
+              "answer": "Premisa majoră: PoM. Premisa minoră: SaM. Concluzia: SoP.",
+              "explanation": "Figura II are termenul mediu predicat în ambele premise. Modul oao cere O, A, O."
+            },
+            {
+              "itemId": "III_A_b",
+              "points": 2,
+              "officialPrompt": "Construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență scrise la subpunctul a).",
+              "answer": "Exemplu valid pentru schema eio-1.",
+              "explanation": "M = medici, P = avocați, S = profesioniști. Forma este MeP / SiM / SoP."
+            },
+            {
+              "itemId": "III_A_valid_eio_1",
+              "points": 4,
+              "officialPrompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului eio-1 și precizați decizia rezultată.",
+              "answer": "eio-1 este mod silogistic valid.",
+              "explanation": "Premisa universal negativă MeP hașurează zona M∩P; particulara SiM plasează x în S∩M, iar x-ul rămâne în afara lui P. Concluzia SoP rezultă.",
+              "diagramRef": "diagram_III_A_valid_eio_1"
+            },
+            {
+              "itemId": "III_A_valid_oao_2",
+              "points": 4,
+              "officialPrompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului oao-2 și precizați decizia rezultată.",
+              "answer": "oao-2 este mod silogistic nevalid.",
+              "explanation": "După reprezentarea premiselor PoM și SaM, concluzia SoP nu se citește obligatoriu din diagramă.",
+              "diagramRef": "diagram_III_A_valid_oao_2"
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "groupId": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "III_B_1",
+              "points": 6,
+              "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, un silogism valid, prin care să justificați propoziția „Unele vehicule nu sunt electrice”.",
+              "answer": "Formă logică: MeP / SiM // SoP.",
+              "explanation": "Este un silogism valid de tip EIO-1, cu S = vehicule, P = electrice, M = vehicule cu motor diesel."
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "groupId": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "items": [
+            {
+              "itemId": "III_C",
+              "points": 4,
+              "answers": {
+                "1": "F",
+                "2": "A",
+                "3": "F",
+                "4": "F"
+              },
+              "correctAnswers": {
+                "1": "F",
+                "2": "A",
+                "3": "F",
+                "4": "F"
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "groupId": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "items": [
+            {
+              "itemId": "III_D_a",
+              "points": 2,
+              "officialPrompt": "Menționați o regulă de corectitudine pe care o încalcă definiția dată.",
+              "answer": "Definiția încalcă regula clarității și preciziei / evitării metaforei.",
+              "explanation": "„Medicul pădurii” este o metaforă, nu un definitor logic riguros."
+            },
+            {
+              "itemId": "III_D_b",
+              "points": 2,
+              "officialPrompt": "Precizați o regulă de corectitudine a definirii, alta decât cea menționată la subpunctul a).",
+              "answer": "Se poate alege orice altă regulă validă, diferită de cea de la a).",
+              "explanation": "Baremul permite orice altă regulă de corectitudine a definirii, dacă nu este aceeași cu prima."
+            },
+            {
+              "itemId": "III_D_c",
+              "points": 2,
+              "officialPrompt": "Construiți o definiție, având ca definit termenul „ciocănitoare”, care să încalce regula precizată la subpunctul b).",
+              "answer": "Exemplu de definiție circulară: Ciocănitoarea este pasărea care ciocănește ca o ciocănitoare.",
+              "explanation": "Definiția folosește termenul definit în definitor, deci nu explică termenul."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

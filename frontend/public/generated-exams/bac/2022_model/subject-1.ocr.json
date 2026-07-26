@@ -1,0 +1,608 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1616.931884765625,
+      "y": 233.4395294189453,
+      "score": 0.9748096853494644,
+      "page_number": 1
+    },
+    {
+      "text": "CentrulNationaldePoliticisi EvaluareinEducatie",
+      "x": 1236.477294921875,
+      "y": 291.7994079589844,
+      "score": 0.978588483903719,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2022",
+      "x": 1231.1932373046875,
+      "y": 456.2681579589844,
+      "score": 0.996392264510646,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1669.772705078125,
+      "y": 522.586181640625,
+      "score": 0.9663769006729126,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1284.0340576171875,
+      "y": 607.4733276367188,
+      "score": 0.9825329220656193,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3151.960205078125,
+      "y": 687.0549926757812,
+      "score": 0.9985140323638916,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.9602355957031,
+      "y": 817.038330078125,
+      "score": 0.9810045157160078,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 364.6022644042969,
+      "y": 904.5781860351562,
+      "score": 0.9950962322098869,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii.Se acordazecepuncte dinoficiu.",
+      "x": 367.24432373046875,
+      "y": 1063.741455078125,
+      "score": 0.9619340969966008,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpul de lucru efectiv este de trei ore.",
+      "x": 364.6022644042969,
+      "y": 1148.6285400390625,
+      "score": 0.9401955746469044,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 369.8863830566406,
+      "y": 1305.13916015625,
+      "score": 0.9784690380096436,
+      "page_number": 1
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2861.335205078125,
+      "y": 1305.13916015625,
+      "score": 0.9957339813311895,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+      "x": 361.9602355957031,
+      "y": 1376.7626953125,
+      "score": 0.9788568425685802,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 364.6022644042969,
+      "y": 1458.9970703125,
+      "score": 0.9859464394323754,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 396.30682373046875,
+      "y": 1588.9803466796875,
+      "score": 0.9760769009590149,
+      "page_number": 1
+    },
+    {
+      "text": "Intr-o demonstratie corecta, teza de demonstrat:",
+      "x": 552.1875,
+      "y": 1588.9803466796875,
+      "score": 0.9913904828329881,
+      "page_number": 1
+    },
+    {
+      "text": "a. este neclar formulata",
+      "x": 443.8636474609375,
+      "y": 1676.520263671875,
+      "score": 0.978671429057916,
+      "page_number": 1
+    },
+    {
+      "text": "b. este cel putin o propozitie probabila",
+      "x": 438.5795593261719,
+      "y": 1742.8382568359375,
+      "score": 0.9803561747074128,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 1840.989013671875,
+      "score": 0.9252018928527832,
+      "page_number": 1
+    },
+    {
+      "text": "este o propozitie infirmata",
+      "x": 560.1136474609375,
+      "y": 1835.68359375,
+      "score": 0.9568074765028777,
+      "page_number": 1
+    },
+    {
+      "text": "d. se modifica pe parcursul demonstratiei",
+      "x": 443.8636474609375,
+      "y": 1904.654296875,
+      "score": 0.9748552630587322,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 396.30682373046875,
+      "y": 2045.24853515625,
+      "score": 0.9989499151706696,
+      "page_number": 1
+    },
+    {
+      "text": "Rationamentul Deoareceniciunlucruconstructivnu estediscutietensionata,urmeazaca",
+      "x": 570.6818237304688,
+      "y": 2045.24853515625,
+      "score": 0.974146513999263,
+      "page_number": 1
+    },
+    {
+      "text": "unelediscutitensionatenusuntconstructive,este:",
+      "x": 573.3238525390625,
+      "y": 2119.52490234375,
+      "score": 0.9842613352381665,
+      "page_number": 1
+    },
+    {
+      "text": "deductiv imediat, de tip conversiune prin accident",
+      "x": 560.1136474609375,
+      "y": 2201.75927734375,
+      "score": 0.9809564340114594,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 454.43182373046875,
+      "y": 2212.3701171875,
+      "score": 0.988273948431015,
+      "page_number": 1
+    },
+    {
+      "text": "inductiv incomplet, de tip inductie stintifica",
+      "x": 552.1875,
+      "y": 2281.3408203125,
+      "score": 0.9652145038480344,
+      "page_number": 1
+    },
+    {
+      "text": "b.i",
+      "x": 451.789794921875,
+      "y": 2286.646240234375,
+      "score": 0.995839536190033,
+      "page_number": 1
+    },
+    {
+      "text": "c.deductiv imediat, de tip obversiune",
+      "x": 446.50567626953125,
+      "y": 2358.269775390625,
+      "score": 0.9809800177007109,
+      "page_number": 1
+    },
+    {
+      "text": "d.deductiv mediat, de tip silogism",
+      "x": 441.2215881347656,
+      "y": 2432.5458984375,
+      "score": 0.9920225248617285,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 396.30682373046875,
+      "y": 2573.14013671875,
+      "score": 0.9966787993907928,
+      "page_number": 1
+    },
+    {
+      "text": "Termenii examensi examen final se aflainraport de:",
+      "x": 562.7556762695312,
+      "y": 2567.834716796875,
+      "score": 0.9543468976020812,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 446.50567626953125,
+      "y": 2655.37451171875,
+      "score": 0.990278035402298,
+      "page_number": 1
+    },
+    {
+      "text": "identitate",
+      "x": 557.4716186523438,
+      "y": 2650.069091796875,
+      "score": 0.9982445776462555,
+      "page_number": 1
+    },
+    {
+      "text": "b. incrucisare",
+      "x": 438.5795593261719,
+      "y": 2719.0400390625,
+      "score": 0.9792665200574058,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 446.50567626953125,
+      "y": 2811.88525390625,
+      "score": 0.8794688582420349,
+      "page_number": 1
+    },
+    {
+      "text": "contrarietate",
+      "x": 560.1136474609375,
+      "y": 2811.88525390625,
+      "score": 0.9987706679564256,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 449.1477355957031,
+      "y": 2883.5087890625,
+      "score": 0.9821461141109467,
+      "page_number": 1
+    },
+    {
+      "text": "ordonare",
+      "x": 546.9034423828125,
+      "y": 2883.5087890625,
+      "score": 0.9982157647609711,
+      "page_number": 1
+    },
+    {
+      "text": "in cadrul propozitiei ,Uni copii sunt dornici sa mearga la scoala\" cuantorul este:",
+      "x": 557.4716186523438,
+      "y": 3005.533935546875,
+      "score": 0.9776180546458174,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 398.9488830566406,
+      "y": 3021.4501953125,
+      "score": 0.9984187185764313,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 3108.989990234375,
+      "score": 0.9903780817985535,
+      "page_number": 1
+    },
+    {
+      "text": "singular",
+      "x": 565.3977661132812,
+      "y": 3103.6845703125,
+      "score": 0.9993945434689522,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 446.50567626953125,
+      "y": 3177.960693359375,
+      "score": 0.9964627325534821,
+      "page_number": 1
+    },
+    {
+      "text": "universal",
+      "x": 557.4716186523438,
+      "y": 3177.960693359375,
+      "score": 0.9983150031831529,
+      "page_number": 1
+    },
+    {
+      "text": "particular",
+      "x": 554.8295288085938,
+      "y": 3257.54248046875,
+      "score": 0.9995336771011353,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 446.50567626953125,
+      "y": 3262.847900390625,
+      "score": 0.8262521326541901,
+      "page_number": 1
+    },
+    {
+      "text": "d.i",
+      "x": 446.50567626953125,
+      "y": 3331.818603515625,
+      "score": 0.9711341063181559,
+      "page_number": 1
+    },
+    {
+      "text": "individual",
+      "x": 557.4716186523438,
+      "y": 3334.471435546875,
+      "score": 0.998607063293457,
+      "page_number": 1
+    },
+    {
+      "text": "Incalcarea reguli omogenitati, in cazul clasificari, presupune ca:",
+      "x": 562.7556762695312,
+      "y": 3456.49658203125,
+      "score": 0.975403059612621,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 396.30682373046875,
+      "y": 3467.107421875,
+      "score": 0.9986202120780945,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 3557.300048828125,
+      "score": 0.9941390752792358,
+      "page_number": 1
+    },
+    {
+      "text": "intr-ooperatie sasefoloseascasimultanmai multe criteri",
+      "x": 562.7556762695312,
+      "y": 3549.341796875,
+      "score": 0.9636765635675855,
+      "page_number": 1
+    },
+    {
+      "text": "b.intre clasele aflate pe aceeasi treapta sa existe raporturi de ordonare",
+      "x": 441.2215881347656,
+      "y": 3620.96533203125,
+      "score": 0.9794654584910771,
+      "page_number": 1
+    },
+    {
+      "text": "c.deosebiriledintreobiecteleaceleeasiclasesafiemaiimportantedecatasemanarile",
+      "x": 446.50567626953125,
+      "y": 3708.505126953125,
+      "score": 0.994435108021686,
+      "page_number": 1
+    },
+    {
+      "text": "d.in clasele obtinute sa nu se regaseasca fiecare dintre elementele initiale ale clasificarii",
+      "x": 446.50567626953125,
+      "y": 3782.781494140625,
+      "score": 0.9681868046842595,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 396.30682373046875,
+      "y": 3920.722900390625,
+      "score": 0.9983783066272736,
+      "page_number": 1
+    },
+    {
+      "text": "Dinpunctdevedereintensional,termenultestdechimieeste:",
+      "x": 568.039794921875,
+      "y": 3918.0703125,
+      "score": 0.9925124555263879,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 449.1477355957031,
+      "y": 4005.610107421875,
+      "score": 0.9928007423877716,
+      "page_number": 1
+    },
+    {
+      "text": "abstract,absolut",
+      "x": 568.039794921875,
+      "y": 4002.957275390625,
+      "score": 0.9864810109138489,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 449.1477355957031,
+      "y": 4077.233642578125,
+      "score": 0.9996248483657837,
+      "page_number": 1
+    },
+    {
+      "text": "concret, compus",
+      "x": 562.7556762695312,
+      "y": 4077.233642578125,
+      "score": 0.9988617618878682,
+      "page_number": 1
+    },
+    {
+      "text": "negativ, precis",
+      "x": 554.8295288085938,
+      "y": 4154.16259765625,
+      "score": 0.9963406006495158,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 451.789794921875,
+      "y": 4164.7734375,
+      "score": 0.9529357850551605,
+      "page_number": 1
+    },
+    {
+      "text": "d. vid, vag",
+      "x": 443.8636474609375,
+      "y": 4225.7861328125,
+      "score": 0.9565814516761086,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 398.9488830566406,
+      "y": 4366.38037109375,
+      "score": 0.9988365769386292,
+      "page_number": 1
+    },
+    {
+      "text": "Concluziaunei inductii incompleteeste:",
+      "x": 565.3977661132812,
+      "y": 4369.03271484375,
+      "score": 0.979757834421961,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 451.789794921875,
+      "y": 4456.57275390625,
+      "score": 0.9884162843227386,
+      "page_number": 1
+    },
+    {
+      "text": "probabilasi arecaracteramplificator",
+      "x": 546.9034423828125,
+      "y": 4451.26708984375,
+      "score": 0.9815484063965934,
+      "page_number": 1
+    },
+    {
+      "text": "b. certa/sigura si are caracter amplificator",
+      "x": 441.2215881347656,
+      "y": 4517.58544921875,
+      "score": 0.9900565513155677,
+      "page_number": 1
+    },
+    {
+      "text": "c. probabila si are caracter diminuator",
+      "x": 441.2215881347656,
+      "y": 4599.81982421875,
+      "score": 0.9879038028227978,
+      "page_number": 1
+    },
+    {
+      "text": "d.certa/sigura si are caracter diminuator",
+      "x": 446.50567626953125,
+      "y": 4676.74853515625,
+      "score": 0.991219064084495,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisala logica,argumentaresi comunicare",
+      "x": 361.9602355957031,
+      "y": 4957.93701171875,
+      "score": 0.9704634702723959,
+      "page_number": 1
+    },
+    {
+      "text": "Model",
+      "x": 3165.17041015625,
+      "y": 4960.58984375,
+      "score": 0.9984268426895142,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1675.056884765625,
+      "y": 5021.6025390625,
+      "score": 0.9990804152829307,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "CentrulNationaldePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2022",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Model",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii.Se acordazecepuncte dinoficiu.",
+    "·Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULI",
+    "(30depuncte)",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "1.",
+    "Intr-o demonstratie corecta, teza de demonstrat:",
+    "a. este neclar formulata",
+    "b. este cel putin o propozitie probabila",
+    "C.",
+    "este o propozitie infirmata",
+    "d. se modifica pe parcursul demonstratiei",
+    "2.",
+    "Rationamentul Deoareceniciunlucruconstructivnu estediscutietensionata,urmeazaca",
+    "unelediscutitensionatenusuntconstructive,este:",
+    "deductiv imediat, de tip conversiune prin accident",
+    "a.",
+    "inductiv incomplet, de tip inductie stintifica",
+    "b.i",
+    "c.deductiv imediat, de tip obversiune",
+    "d.deductiv mediat, de tip silogism",
+    "3.",
+    "Termenii examensi examen final se aflainraport de:",
+    "a.",
+    "identitate",
+    "b. incrucisare",
+    "C.",
+    "contrarietate",
+    "d.",
+    "ordonare",
+    "in cadrul propozitiei ,Uni copii sunt dornici sa mearga la scoala\" cuantorul este:",
+    "4.",
+    "a.",
+    "singular",
+    "b.",
+    "universal",
+    "particular",
+    "C.",
+    "d.i",
+    "individual",
+    "Incalcarea reguli omogenitati, in cazul clasificari, presupune ca:",
+    "5.",
+    "a.",
+    "intr-ooperatie sasefoloseascasimultanmai multe criteri",
+    "b.intre clasele aflate pe aceeasi treapta sa existe raporturi de ordonare",
+    "c.deosebiriledintreobiecteleaceleeasiclasesafiemaiimportantedecatasemanarile",
+    "d.in clasele obtinute sa nu se regaseasca fiecare dintre elementele initiale ale clasificarii",
+    "6.",
+    "Dinpunctdevedereintensional,termenultestdechimieeste:",
+    "a.",
+    "abstract,absolut",
+    "b.",
+    "concret, compus",
+    "negativ, precis",
+    "C.",
+    "d. vid, vag",
+    "7.",
+    "Concluziaunei inductii incompleteeste:",
+    "a.",
+    "probabilasi arecaracteramplificator",
+    "b. certa/sigura si are caracter amplificator",
+    "c. probabila si are caracter diminuator",
+    "d.certa/sigura si are caracter diminuator",
+    "Proba scrisala logica,argumentaresi comunicare",
+    "Model",
+    "Pagina 1 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrulNationaldePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2022\nProba E. d)\nLogica, argumentare si comunicare\nModel\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii.Se acordazecepuncte dinoficiu.\n·Timpul de lucru efectiv este de trei ore.\nSUBIECTULI\n(30depuncte)\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect, pentru fiecare dintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\n1.\nIntr-o demonstratie corecta, teza de demonstrat:\na. este neclar formulata\nb. este cel putin o propozitie probabila\nC.\neste o propozitie infirmata\nd. se modifica pe parcursul demonstratiei\n2.\nRationamentul Deoareceniciunlucruconstructivnu estediscutietensionata,urmeazaca\nunelediscutitensionatenusuntconstructive,este:\ndeductiv imediat, de tip conversiune prin accident\na.\ninductiv incomplet, de tip inductie stintifica\nb.i\nc.deductiv imediat, de tip obversiune\nd.deductiv mediat, de tip silogism\n3.\nTermenii examensi examen final se aflainraport de:\na.\nidentitate\nb. incrucisare\nC.\ncontrarietate\nd.\nordonare\nin cadrul propozitiei ,Uni copii sunt dornici sa mearga la scoala\" cuantorul este:\n4.\na.\nsingular\nb.\nuniversal\nparticular\nC.\nd.i\nindividual\nIncalcarea reguli omogenitati, in cazul clasificari, presupune ca:\n5.\na.\nintr-ooperatie sasefoloseascasimultanmai multe criteri\nb.intre clasele aflate pe aceeasi treapta sa existe raporturi de ordonare\nc.deosebiriledintreobiecteleaceleeasiclasesafiemaiimportantedecatasemanarile\nd.in clasele obtinute sa nu se regaseasca fiecare dintre elementele initiale ale clasificarii\n6.\nDinpunctdevedereintensional,termenultestdechimieeste:\na.\nabstract,absolut\nb.\nconcret, compus\nnegativ, precis\nC.\nd. vid, vag\n7.\nConcluziaunei inductii incompleteeste:\na.\nprobabilasi arecaracteramplificator\nb. certa/sigura si are caracter amplificator\nc. probabila si are caracter diminuator\nd.certa/sigura si are caracter diminuator\nProba scrisala logica,argumentaresi comunicare\nModel\nPagina 1 din 3"
+}

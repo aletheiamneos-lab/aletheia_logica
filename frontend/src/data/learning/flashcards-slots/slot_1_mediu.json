@@ -1,0 +1,134 @@
+{
+  "slot": 1,
+  "nivel": "mediu",
+  "title": "Slot 1 - Mediu",
+  "description": "Set complet de 25 flashcarduri pentru nivelul mediu, strict pe materia de logică.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_1_mediu_card_1",
+      "front": "Care este relația dintre intensiune și extensiune?",
+      "back": "Sunt invers proporționale: când intensiunea crește, extensiunea scade."
+    },
+    {
+      "id": "slot_1_mediu_card_2",
+      "front": "De ce termenii trebuie să își păstreze același sens?",
+      "back": "Pentru că schimbarea sensului încalcă principiul identității."
+    },
+    {
+      "id": "slot_1_mediu_card_3",
+      "front": "Ce înseamnă definiție adecvată?",
+      "back": "Definitul și definitorul au aceeași extensiune."
+    },
+    {
+      "id": "slot_1_mediu_card_4",
+      "front": "Ce este o definiție prea largă?",
+      "back": "Definitorul include mai multe obiecte decât termenul definit."
+    },
+    {
+      "id": "slot_1_mediu_card_5",
+      "front": "Ce este o definiție prea restrânsă?",
+      "back": "Definitorul exclude obiecte care aparțin termenului definit."
+    },
+    {
+      "id": "slot_1_mediu_card_6",
+      "front": "Ce este o definiție circulară?",
+      "back": "Termenul este explicat prin el însuși sau printr-un derivat al său."
+    },
+    {
+      "id": "slot_1_mediu_card_7",
+      "front": "De ce definiția trebuie să fie clară?",
+      "back": "Pentru eliminarea ambiguității."
+    },
+    {
+      "id": "slot_1_mediu_card_8",
+      "front": "Ce este genul proxim?",
+      "back": "Clasa mai largă și cea mai apropiată în care se include termenul definit."
+    },
+    {
+      "id": "slot_1_mediu_card_9",
+      "front": "Ce este diferența specifică?",
+      "back": "Trăsătura care distinge termenul definit de celelalte elemente ale aceluiași gen."
+    },
+    {
+      "id": "slot_1_mediu_card_10",
+      "front": "Ce înseamnă criteriu unic?",
+      "back": "Toate clasele sunt formate după aceeași proprietate de împărțire."
+    },
+    {
+      "id": "slot_1_mediu_card_11",
+      "front": "Ce înseamnă completitudinea clasificării?",
+      "back": "Toate elementele domeniului sunt incluse în clasele rezultate."
+    },
+    {
+      "id": "slot_1_mediu_card_12",
+      "front": "Ce înseamnă excluderea reciprocă?",
+      "back": "Un element nu aparține simultan mai multor clase de pe același nivel."
+    },
+    {
+      "id": "slot_1_mediu_card_13",
+      "front": "Ce este raportul de identitate?",
+      "back": "Doi termeni au aceeași extensiune."
+    },
+    {
+      "id": "slot_1_mediu_card_14",
+      "front": "Ce este raportul de ordonare?",
+      "back": "Extensiunea unui termen este inclusă complet în extensiunea altuia."
+    },
+    {
+      "id": "slot_1_mediu_card_15",
+      "front": "Ce este raportul de încrucișare?",
+      "back": "Termenii au elemente comune, dar fiecare are și elemente proprii."
+    },
+    {
+      "id": "slot_1_mediu_card_16",
+      "front": "Ce este raportul de contrarietate?",
+      "back": "Termenii se exclud, dar nu epuizează universul de discurs."
+    },
+    {
+      "id": "slot_1_mediu_card_17",
+      "front": "Ce este raportul de contradicție?",
+      "back": "Termenii se exclud și epuizează universul de discurs."
+    },
+    {
+      "id": "slot_1_mediu_card_18",
+      "front": "Cum sunt distribuiți termenii în A?",
+      "back": "S este distribuit, P este nedistribuit."
+    },
+    {
+      "id": "slot_1_mediu_card_19",
+      "front": "Cum sunt distribuiți termenii în E?",
+      "back": "S și P sunt distribuiți."
+    },
+    {
+      "id": "slot_1_mediu_card_20",
+      "front": "Cum sunt distribuiți termenii în I?",
+      "back": "Nici S, nici P nu sunt distribuiți."
+    },
+    {
+      "id": "slot_1_mediu_card_21",
+      "front": "Cum sunt distribuiți termenii în O?",
+      "back": "S este nedistribuit, P este distribuit."
+    },
+    {
+      "id": "slot_1_mediu_card_22",
+      "front": "Ce este premisa majoră?",
+      "back": "Premisa care conține termenul major și termenul mediu."
+    },
+    {
+      "id": "slot_1_mediu_card_23",
+      "front": "Ce este premisa minoră?",
+      "back": "Premisa care conține termenul minor și termenul mediu."
+    },
+    {
+      "id": "slot_1_mediu_card_24",
+      "front": "Care este rolul termenului mediu?",
+      "back": "Leagă termenul minor de termenul major prin premise."
+    },
+    {
+      "id": "slot_1_mediu_card_25",
+      "front": "Care este regula termenului mediu?",
+      "back": "Termenul mediu trebuie distribuit cel puțin o dată în premise."
+    }
+  ]
+}

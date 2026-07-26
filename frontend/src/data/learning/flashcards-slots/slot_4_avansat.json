@@ -1,0 +1,134 @@
+{
+  "slot": 4,
+  "nivel": "avansat",
+  "title": "Slot 4 - Avansat",
+  "description": "Set de 25 flashcarduri pentru nivelul avansat, cu întrebări aplicate și răspunsuri clare.",
+  "card_count": 25,
+  "cards": [
+    {
+      "id": "slot_4_avansat_card_1",
+      "front": "Obversează: „Toți elevii sunt atenți.”",
+      "back": "Rezultatul este: „Niciun elev nu este neatent”."
+    },
+    {
+      "id": "slot_4_avansat_card_2",
+      "front": "Obversează: „Niciun elev nu este absent.”",
+      "back": "Rezultatul este: „Toți elevii sunt non-absenți”."
+    },
+    {
+      "id": "slot_4_avansat_card_3",
+      "front": "Obversează: „Unii elevi sunt sportivi.”",
+      "back": "Rezultatul este: „Unii elevi nu sunt non-sportivi”."
+    },
+    {
+      "id": "slot_4_avansat_card_4",
+      "front": "Obversează: „Unii elevi nu sunt pregătiți.”",
+      "back": "Rezultatul este: „Unii elevi sunt nepregătiți”."
+    },
+    {
+      "id": "slot_4_avansat_card_5",
+      "front": "Convertește: „Niciun avocat nu este medic.”",
+      "back": "Rezultatul este: „Niciun medic nu este avocat”."
+    },
+    {
+      "id": "slot_4_avansat_card_6",
+      "front": "Convertește: „Unii studenți sunt sportivi.”",
+      "back": "Rezultatul este: „Unii sportivi sunt studenți”."
+    },
+    {
+      "id": "slot_4_avansat_card_7",
+      "front": "Convertește prin accident: „Toți judecătorii sunt juriști.”",
+      "back": "Rezultatul este: „Unii juriști sunt judecători”, dacă se admite existența judecătorilor."
+    },
+    {
+      "id": "slot_4_avansat_card_8",
+      "front": "Explică de ce „Unii S nu sunt P” nu se convertește valid.",
+      "back": "Pentru că forma convertită ar putea afirma mai mult decât permite propoziția inițială."
+    },
+    {
+      "id": "slot_4_avansat_card_9",
+      "front": "Contrapune: „Toți S sunt P.”",
+      "back": "Contrapozitiva este: „Niciun non-P nu este S”."
+    },
+    {
+      "id": "slot_4_avansat_card_10",
+      "front": "Contrapune: „Unii S nu sunt P.”",
+      "back": "Contrapozitiva este: „Unii non-P sunt S”."
+    },
+    {
+      "id": "slot_4_avansat_card_11",
+      "front": "De ce propoziția I nu poate fi contrapozată valid?",
+      "back": "Pentru că operația ar ajunge la conversiunea unei propoziții O, care nu este validă."
+    },
+    {
+      "id": "slot_4_avansat_card_12",
+      "front": "Identifică forma logică: „Numai oamenii majori pot vota.”",
+      "back": "Toți cei care pot vota sunt oameni majori."
+    },
+    {
+      "id": "slot_4_avansat_card_13",
+      "front": "Identifică forma logică: „Doar studenții înscriși pot participa.”",
+      "back": "Toți cei care pot participa sunt studenți înscriși."
+    },
+    {
+      "id": "slot_4_avansat_card_14",
+      "front": "Identifică eroarea: „Numai S sunt P” interpretat ca „Toți S sunt P”.",
+      "back": "Eroarea constă în inversarea greșită a direcției relației logice."
+    },
+    {
+      "id": "slot_4_avansat_card_15",
+      "front": "Dacă SaP este adevărată, ce valori au SeP, SiP și SoP?",
+      "back": "SeP este falsă, SiP este adevărată, SoP este falsă."
+    },
+    {
+      "id": "slot_4_avansat_card_16",
+      "front": "Dacă SeP este adevărată, ce valori au SaP, SiP și SoP?",
+      "back": "SaP este falsă, SiP este falsă, SoP este adevărată."
+    },
+    {
+      "id": "slot_4_avansat_card_17",
+      "front": "Dacă SiP este falsă, ce rezultă sigur?",
+      "back": "Rezultă că SeP este adevărată, deoarece E și I sunt contradictorii."
+    },
+    {
+      "id": "slot_4_avansat_card_18",
+      "front": "Dacă SoP este falsă, ce rezultă sigur?",
+      "back": "Rezultă că SaP este adevărată, deoarece A și O sunt contradictorii."
+    },
+    {
+      "id": "slot_4_avansat_card_19",
+      "front": "Dacă A este falsă, ce se poate spune despre E?",
+      "back": "Valoarea lui E rămâne nedeterminată."
+    },
+    {
+      "id": "slot_4_avansat_card_20",
+      "front": "Dacă I este adevărată, ce se poate spune despre O?",
+      "back": "Valoarea lui O rămâne nedeterminată."
+    },
+    {
+      "id": "slot_4_avansat_card_21",
+      "front": "Verifică: A și O pot fi ambele adevărate?",
+      "back": "Nu. A și O sunt contradictorii."
+    },
+    {
+      "id": "slot_4_avansat_card_22",
+      "front": "Verifică: A și E pot fi ambele false?",
+      "back": "Da. A și E sunt contrare, deci pot fi ambele false."
+    },
+    {
+      "id": "slot_4_avansat_card_23",
+      "front": "Verifică: I și O pot fi ambele adevărate?",
+      "back": "Da. I și O sunt subcontrare."
+    },
+    {
+      "id": "slot_4_avansat_card_24",
+      "front": "Verifică: I și O pot fi ambele false?",
+      "back": "Nu. Două subcontrare nu pot fi ambele false."
+    },
+    {
+      "id": "slot_4_avansat_card_25",
+      "front": "Aplică Venn: ce concluzie verifici după reprezentarea premiselor?",
+      "back": "Verifici dacă regiunea cerută de concluzie este deja hașurată sau marcată conform premiselor."
+    }
+  ]
+}

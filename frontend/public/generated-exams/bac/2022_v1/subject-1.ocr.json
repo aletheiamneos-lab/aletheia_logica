@@ -1,0 +1,712 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei",
+      "x": 1679.2955322265625,
+      "y": 182.16883850097656,
+      "score": 0.9729105651378631,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul National dePoliticisi EvaluareinEducatie",
+      "x": 1327.9888916015625,
+      "y": 247.0509033203125,
+      "score": 0.977959385762612,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2022",
+      "x": 1318.022705078125,
+      "y": 356.8512878417969,
+      "score": 0.9956663883093632,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E. d)",
+      "x": 1731.6177978515625,
+      "y": 424.22882080078125,
+      "score": 0.9821588938886469,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1370.344970703125,
+      "y": 501.58819580078125,
+      "score": 0.9824982899608035,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 1",
+      "x": 2974.89453125,
+      "y": 573.9566040039062,
+      "score": 0.9983893394470215,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanistdinfiliera teoretica,profilul servicii dinfiliera tehnologicasi toateprofilurile",
+      "x": 503.29034423828125,
+      "y": 716.1980590820312,
+      "score": 0.959155360236764,
+      "page_number": 1
+    },
+    {
+      "text": "sispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar",
+      "x": 508.2734069824219,
+      "y": 798.54833984375,
+      "score": 0.9706288539446317,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda zecepuncte din oficiu.",
+      "x": 505.7818908691406,
+      "y": 945.7807006835938,
+      "score": 0.9478976963197484,
+      "page_number": 1
+    },
+    {
+      "text": "·Timpul de lucru efectiv este de trei ore.",
+      "x": 503.29034423828125,
+      "y": 1025.635498046875,
+      "score": 0.972901273341406,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULI",
+      "x": 505.7818908691406,
+      "y": 1172.867919921875,
+      "score": 0.9735410392284394,
+      "page_number": 1
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2850.317626953125,
+      "y": 1175.3634033203125,
+      "score": 0.9907881667216619,
+      "page_number": 1
+    },
+    {
+      "text": "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre",
+      "x": 505.7818908691406,
+      "y": 1245.236328125,
+      "score": 0.9809620425265323,
+      "page_number": 1
+    },
+    {
+      "text": "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+      "x": 503.29034423828125,
+      "y": 1320.1002197265625,
+      "score": 0.9742242287505757,
+      "page_number": 1
+    },
+    {
+      "text": "in situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie",
+      "x": 660.2571411132812,
+      "y": 1437.3870849609375,
+      "score": 0.9924149244062362,
+      "page_number": 1
+    },
+    {
+      "text": "1.",
+      "x": 505.7818908691406,
+      "y": 1447.368896484375,
+      "score": 0.9989478290081024,
+      "page_number": 1
+    },
+    {
+      "text": "format numai dinrationamente:",
+      "x": 665.240234375,
+      "y": 1522.2327880859375,
+      "score": 0.9880083244422386,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 548.1380004882812,
+      "y": 1599.5921630859375,
+      "score": 0.9883614182472229,
+      "page_number": 1
+    },
+    {
+      "text": "inductivevalide",
+      "x": 660.2571411132812,
+      "y": 1597.0966796875,
+      "score": 0.9977544824282328,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 1671.9605712890625,
+      "score": 0.9992666244506836,
+      "page_number": 1
+    },
+    {
+      "text": "deductive tari",
+      "x": 662.7486572265625,
+      "y": 1674.4560546875,
+      "score": 0.9055175738675254,
+      "page_number": 1
+    },
+    {
+      "text": "inductive tari",
+      "x": 660.2571411132812,
+      "y": 1744.3291015625,
+      "score": 0.9657851372446332,
+      "page_number": 1
+    },
+    {
+      "text": "c.",
+      "x": 553.12109375,
+      "y": 1749.3199462890625,
+      "score": 0.843540757894516,
+      "page_number": 1
+    },
+    {
+      "text": "deductivevalide",
+      "x": 657.765625,
+      "y": 1814.2020263671875,
+      "score": 0.9966704885164896,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 550.6295166015625,
+      "y": 1821.6884765625,
+      "score": 0.9936217665672302,
+      "page_number": 1
+    },
+    {
+      "text": "2.",
+      "x": 503.29034423828125,
+      "y": 1943.9661865234375,
+      "score": 0.9978050887584686,
+      "page_number": 1
+    },
+    {
+      "text": "Rationamentul Orice melancolic este introvertit; asadar, unii introvertiti sunt melancolici este:",
+      "x": 672.71484375,
+      "y": 1938.9752197265625,
+      "score": 0.9710607424224775,
+      "page_number": 1
+    },
+    {
+      "text": "deductiv mediat, de tip silogism",
+      "x": 670.2232666015625,
+      "y": 2013.839111328125,
+      "score": 0.9897765703499317,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 553.12109375,
+      "y": 2023.821044921875,
+      "score": 0.9955825209617615,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 2093.69384765625,
+      "score": 0.9990662336349487,
+      "page_number": 1
+    },
+    {
+      "text": "deductiv imediat, de tip conversiune simpla",
+      "x": 670.2232666015625,
+      "y": 2091.198486328125,
+      "score": 0.9713720443636872,
+      "page_number": 1
+    },
+    {
+      "text": "deductiv imediat, de tip conversiune prin accident",
+      "x": 670.2232666015625,
+      "y": 2163.56689453125,
+      "score": 0.9725958502292633,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 553.12109375,
+      "y": 2173.548828125,
+      "score": 0.774458259344101,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 2243.421875,
+      "score": 0.9973238706588745,
+      "page_number": 1
+    },
+    {
+      "text": "inductivincomplet,detipinductieprinsimplaenumerare",
+      "x": 670.2232666015625,
+      "y": 2243.421875,
+      "score": 0.9947387850284577,
+      "page_number": 1
+    },
+    {
+      "text": "3.",
+      "x": 503.29034423828125,
+      "y": 2365.699462890625,
+      "score": 0.9969525635242462,
+      "page_number": 1
+    },
+    {
+      "text": "Se stabileste un raport de contrarietateintre termeni:",
+      "x": 677.6978759765625,
+      "y": 2365.699462890625,
+      "score": 0.9515151800932707,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 550.6295166015625,
+      "y": 2453.040771484375,
+      "score": 0.9965870082378387,
+      "page_number": 1
+    },
+    {
+      "text": "pix cu gel si creion",
+      "x": 672.71484375,
+      "y": 2445.554443359375,
+      "score": 0.9327884763479233,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 550.6295166015625,
+      "y": 2515.42724609375,
+      "score": 0.9994558393955231,
+      "page_number": 1
+    },
+    {
+      "text": "delfin si mamifer",
+      "x": 672.71484375,
+      "y": 2515.42724609375,
+      "score": 0.9506458044052124,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 555.6126098632812,
+      "y": 2597.777587890625,
+      "score": 0.8280823826789856,
+      "page_number": 1
+    },
+    {
+      "text": "legal si ilegal",
+      "x": 670.2232666015625,
+      "y": 2590.291259765625,
+      "score": 0.9715397874514262,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 2667.650634765625,
+      "score": 0.9964123666286469,
+      "page_number": 1
+    },
+    {
+      "text": "elev la profilul umanist si persoana pasionata de informatica",
+      "x": 670.2232666015625,
+      "y": 2662.65966796875,
+      "score": 0.9824620514619545,
+      "page_number": 1
+    },
+    {
+      "text": "Cuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\"este:",
+      "x": 675.2063598632812,
+      "y": 2789.92822265625,
+      "score": 0.969718188415339,
+      "page_number": 1
+    },
+    {
+      "text": "4.",
+      "x": 508.2734069824219,
+      "y": 2792.423828125,
+      "score": 0.9956424236297607,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 553.12109375,
+      "y": 2872.278564453125,
+      "score": 0.9839048087596893,
+      "page_number": 1
+    },
+    {
+      "text": ",nicio depasire”",
+      "x": 667.7317504882812,
+      "y": 2867.28759765625,
+      "score": 0.9405120387673378,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 548.1380004882812,
+      "y": 2934.665283203125,
+      "score": 0.9980592429637909,
+      "page_number": 1
+    },
+    {
+      "text": "\",nicio”",
+      "x": 672.71484375,
+      "y": 2937.16064453125,
+      "score": 0.9066303223371506,
+      "page_number": 1
+    },
+    {
+      "text": ",niciodepasire a termenului\"",
+      "x": 670.2232666015625,
+      "y": 3014.52001953125,
+      "score": 0.9569139544452939,
+      "page_number": 1
+    },
+    {
+      "text": "c.",
+      "x": 553.12109375,
+      "y": 3019.510986328125,
+      "score": 0.7409224510192871,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 3089.384033203125,
+      "score": 0.9943190217018127,
+      "page_number": 1
+    },
+    {
+      "text": ",nicio depasire a termenului limita\"",
+      "x": 667.7317504882812,
+      "y": 3086.888427734375,
+      "score": 0.9389016843504376,
+      "page_number": 1
+    },
+    {
+      "text": "5.",
+      "x": 500.7987976074219,
+      "y": 3209.166259765625,
+      "score": 0.9979558885097504,
+      "page_number": 1
+    },
+    {
+      "text": "Clasificarea elevilorparticipantilaun concursnational de dezbateri infete,elevi dinmediul",
+      "x": 677.6978759765625,
+      "y": 3206.670654296875,
+      "score": 0.9653672569253472,
+      "page_number": 1
+    },
+    {
+      "text": "urban,elevidinmediulruralsibaieti:",
+      "x": 682.6809692382812,
+      "y": 3289.02099609375,
+      "score": 0.9623580873012543,
+      "page_number": 1
+    },
+    {
+      "text": "este incorecta, deoarece are doua criteri si incalca regula raportului de opozitie intre clase",
+      "x": 670.2232666015625,
+      "y": 3356.3984375,
+      "score": 0.964068480945648,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 555.6126098632812,
+      "y": 3366.38037109375,
+      "score": 0.9912945330142975,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 555.6126098632812,
+      "y": 3436.25341796875,
+      "score": 0.9991065859794617,
+      "page_number": 1
+    },
+    {
+      "text": "este corecta,deoarece are un singur criteriu si are numai raporturi de opozitieintre clase",
+      "x": 670.2232666015625,
+      "y": 3428.76708984375,
+      "score": 0.9655157234933641,
+      "page_number": 1
+    },
+    {
+      "text": "estepreaabundenta",
+      "x": 680.189453125,
+      "y": 3508.621826171875,
+      "score": 0.9848738452967476,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 558.1041259765625,
+      "y": 3516.108154296875,
+      "score": 0.8965346217155457,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 3583.48583984375,
+      "score": 0.9974824786186218,
+      "page_number": 1
+    },
+    {
+      "text": "este incompleta",
+      "x": 672.71484375,
+      "y": 3585.981201171875,
+      "score": 0.9976169308026631,
+      "page_number": 1
+    },
+    {
+      "text": "6.",
+      "x": 505.7818908691406,
+      "y": 3708.259033203125,
+      "score": 0.9991650283336639,
+      "page_number": 1
+    },
+    {
+      "text": "Alegeti termenul care este simultan absolut si general:",
+      "x": 672.71484375,
+      "y": 3705.763427734375,
+      "score": 0.9526167750358582,
+      "page_number": 1
+    },
+    {
+      "text": "nepoata",
+      "x": 667.7317504882812,
+      "y": 3785.618408203125,
+      "score": 0.9345495360238212,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 553.12109375,
+      "y": 3788.11376953125,
+      "score": 0.994984894990921,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 548.1380004882812,
+      "y": 3855.4912109375,
+      "score": 0.9989262521266937,
+      "page_number": 1
+    },
+    {
+      "text": "poetulMihaiEminescu",
+      "x": 662.7486572265625,
+      "y": 3857.98681640625,
+      "score": 0.9927899461043509,
+      "page_number": 1
+    },
+    {
+      "text": "colega mea",
+      "x": 670.2232666015625,
+      "y": 3927.859619140625,
+      "score": 0.9958177983760834,
+      "page_number": 1
+    },
+    {
+      "text": "C.",
+      "x": 553.12109375,
+      "y": 3935.34619140625,
+      "score": 0.8373463153839111,
+      "page_number": 1
+    },
+    {
+      "text": "d.",
+      "x": 553.12109375,
+      "y": 4005.218994140625,
+      "score": 0.9970234930515289,
+      "page_number": 1
+    },
+    {
+      "text": "carte",
+      "x": 667.7317504882812,
+      "y": 4002.7236328125,
+      "score": 0.9988648176193238,
+      "page_number": 1
+    },
+    {
+      "text": "7.",
+      "x": 495.81573486328125,
+      "y": 4122.505859375,
+      "score": 0.9974150359630585,
+      "page_number": 1
+    },
+    {
+      "text": "Se caracterizeazaprinprobabilitate si caracter amplificator concluzia:",
+      "x": 665.240234375,
+      "y": 4125.00146484375,
+      "score": 0.9751776703766414,
+      "page_number": 1
+    },
+    {
+      "text": "a.",
+      "x": 550.6295166015625,
+      "y": 4212.3427734375,
+      "score": 0.990492582321167,
+      "page_number": 1
+    },
+    {
+      "text": "unei inducticomplete",
+      "x": 665.240234375,
+      "y": 4207.3515625,
+      "score": 0.983380252122879,
+      "page_number": 1
+    },
+    {
+      "text": "b.",
+      "x": 553.12109375,
+      "y": 4279.72021484375,
+      "score": 0.9989151358604431,
+      "page_number": 1
+    },
+    {
+      "text": "unei inducti incomplete",
+      "x": 665.240234375,
+      "y": 4279.72021484375,
+      "score": 0.9683529008989749,
+      "page_number": 1
+    },
+    {
+      "text": "c.L",
+      "x": 550.6295166015625,
+      "y": 4357.07958984375,
+      "score": 0.63016410668691,
+      "page_number": 1
+    },
+    {
+      "text": "unui silogism valid",
+      "x": 660.2571411132812,
+      "y": 4352.08837890625,
+      "score": 0.9744319351095903,
+      "page_number": 1
+    },
+    {
+      "text": "d.unei conversiunivalide",
+      "x": 550.6295166015625,
+      "y": 4424.45703125,
+      "score": 0.9839347004890442,
+      "page_number": 1
+    },
+    {
+      "text": "Probascrisalalogica,argumentaresi comunicare",
+      "x": 503.29034423828125,
+      "y": 4654.03955078125,
+      "score": 0.977237499573014,
+      "page_number": 1
+    },
+    {
+      "text": "Varianta 1",
+      "x": 3017.25048828125,
+      "y": 4654.03955078125,
+      "score": 0.9940458536148071,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 3",
+      "x": 1719.16015625,
+      "y": 4726.408203125,
+      "score": 0.9915526679583958,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei",
+    "Centrul National dePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2022",
+    "Proba E. d)",
+    "Logica, argumentare si comunicare",
+    "Varianta 1",
+    "Profilul umanistdinfiliera teoretica,profilul servicii dinfiliera tehnologicasi toateprofilurile",
+    "sispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar",
+    "·Toate subiectele sunt obligatorii. Se acorda zecepuncte din oficiu.",
+    "·Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULI",
+    "(30depuncte)",
+    "A. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre",
+    "enunturile de mai jos. Este corecta o singura varianta de raspuns.",
+    "in situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie",
+    "1.",
+    "format numai dinrationamente:",
+    "a.",
+    "inductivevalide",
+    "b.",
+    "deductive tari",
+    "inductive tari",
+    "c.",
+    "deductivevalide",
+    "d.",
+    "2.",
+    "Rationamentul Orice melancolic este introvertit; asadar, unii introvertiti sunt melancolici este:",
+    "deductiv mediat, de tip silogism",
+    "a.",
+    "b.",
+    "deductiv imediat, de tip conversiune simpla",
+    "deductiv imediat, de tip conversiune prin accident",
+    "C.",
+    "d.",
+    "inductivincomplet,detipinductieprinsimplaenumerare",
+    "3.",
+    "Se stabileste un raport de contrarietateintre termeni:",
+    "a.",
+    "pix cu gel si creion",
+    "b.",
+    "delfin si mamifer",
+    "C.",
+    "legal si ilegal",
+    "d.",
+    "elev la profilul umanist si persoana pasionata de informatica",
+    "Cuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\"este:",
+    "4.",
+    "a.",
+    ",nicio depasire”",
+    "b.",
+    "\",nicio”",
+    ",niciodepasire a termenului\"",
+    "c.",
+    "d.",
+    ",nicio depasire a termenului limita\"",
+    "5.",
+    "Clasificarea elevilorparticipantilaun concursnational de dezbateri infete,elevi dinmediul",
+    "urban,elevidinmediulruralsibaieti:",
+    "este incorecta, deoarece are doua criteri si incalca regula raportului de opozitie intre clase",
+    "a.",
+    "b.",
+    "este corecta,deoarece are un singur criteriu si are numai raporturi de opozitieintre clase",
+    "estepreaabundenta",
+    "C.",
+    "d.",
+    "este incompleta",
+    "6.",
+    "Alegeti termenul care este simultan absolut si general:",
+    "nepoata",
+    "a.",
+    "b.",
+    "poetulMihaiEminescu",
+    "colega mea",
+    "C.",
+    "d.",
+    "carte",
+    "7.",
+    "Se caracterizeazaprinprobabilitate si caracter amplificator concluzia:",
+    "a.",
+    "unei inducticomplete",
+    "b.",
+    "unei inducti incomplete",
+    "c.L",
+    "unui silogism valid",
+    "d.unei conversiunivalide",
+    "Probascrisalalogica,argumentaresi comunicare",
+    "Varianta 1",
+    "Pagina 1 din 3"
+  ],
+  "text": "Ministerul Educatiei\nCentrul National dePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2022\nProba E. d)\nLogica, argumentare si comunicare\nVarianta 1\nProfilul umanistdinfiliera teoretica,profilul servicii dinfiliera tehnologicasi toateprofilurile\nsispecializariledinfilieravocationala,cuexceptiaprofiluluimilitar\n·Toate subiectele sunt obligatorii. Se acorda zecepuncte din oficiu.\n·Timpul de lucru efectiv este de trei ore.\nSUBIECTULI\n(30depuncte)\nA. Scrieti pe foaia de examen litera corespunzatoare raspunsului corect,pentru fiecare dintre\nenunturile de mai jos. Este corecta o singura varianta de raspuns.\nin situatia in care demonstratia este logic corecta, procesul de demonstrare va trebui sa fie\n1.\nformat numai dinrationamente:\na.\ninductivevalide\nb.\ndeductive tari\ninductive tari\nc.\ndeductivevalide\nd.\n2.\nRationamentul Orice melancolic este introvertit; asadar, unii introvertiti sunt melancolici este:\ndeductiv mediat, de tip silogism\na.\nb.\ndeductiv imediat, de tip conversiune simpla\ndeductiv imediat, de tip conversiune prin accident\nC.\nd.\ninductivincomplet,detipinductieprinsimplaenumerare\n3.\nSe stabileste un raport de contrarietateintre termeni:\na.\npix cu gel si creion\nb.\ndelfin si mamifer\nC.\nlegal si ilegal\nd.\nelev la profilul umanist si persoana pasionata de informatica\nCuantorul propozitiei ,Nicio depasire a termenului limita nu este acceptata\"este:\n4.\na.\n,nicio depasire”\nb.\n\",nicio”\n,niciodepasire a termenului\"\nc.\nd.\n,nicio depasire a termenului limita\"\n5.\nClasificarea elevilorparticipantilaun concursnational de dezbateri infete,elevi dinmediul\nurban,elevidinmediulruralsibaieti:\neste incorecta, deoarece are doua criteri si incalca regula raportului de opozitie intre clase\na.\nb.\neste corecta,deoarece are un singur criteriu si are numai raporturi de opozitieintre clase\nestepreaabundenta\nC.\nd.\neste incompleta\n6.\nAlegeti termenul care este simultan absolut si general:\nnepoata\na.\nb.\npoetulMihaiEminescu\ncolega mea\nC.\nd.\ncarte\n7.\nSe caracterizeazaprinprobabilitate si caracter amplificator concluzia:\na.\nunei inducticomplete\nb.\nunei inducti incomplete\nc.L\nunui silogism valid\nd.unei conversiunivalide\nProbascrisalalogica,argumentaresi comunicare\nVarianta 1\nPagina 1 din 3"
+}

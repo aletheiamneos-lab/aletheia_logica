@@ -1,0 +1,141 @@
+Lectia 3 - Raport Tehnic: Mecanica Deducției Logice și Analiza Silogistică
+1. Fundamentele Deducției: De la Premise la Certitudine
+În arhitectura gândirii analitice, deducția reprezintă procesul logic fundamental prin care o concluzie este derivată cu necesitate absolută din premisele stabilite anterior. Validitatea formală constituie pilonul central al acestui mecanism: dacă premisele sunt adevărate și structura argumentului respectă legile logice, adevărul concluziei este garantat. Acest caracter apodictic transformă deducția într-un instrument strategic pentru demonstrațiile care vizează certitudinea, nu doar probabilitatea.
+Analiza Tipologiei Raționamentelor
+Conform rigorilor epistemologice, raționamentele se clasifică în funcție de direcția inferenței și gradul de generalitate (Sursa: 3.1.2):
+Raționamente Deductive: Concluzia posedă un grad de generalitate care nu depășește niciodată gradul de generalitate al premiselor. Certitudinea este maximă, deoarece concluzia este deja conținută implicit în suportul premiselor.
+Raționamente Inductive (Nededutive): Concluzia este mai generală decât premisele, având un caracter probabil; aici, concluzia „spune mai mult” decât datele inițiale.
+Condițiile Structurale ale Raționamentului
+Pentru ca un ansamblu de propoziții să constituie un raționament, acesta trebuie să satisfacă patru condiții simultane (Sursa: 3.1.1):
+Datele premiselor: Existența unor propoziții inițiale (puncte de plecare).
+Derivarea concluziei: Emergența unei propoziții noi din datele existente.
+Temeiul (Suportul) premiselor: Premisele trebuie să constituie un temei suficient (în cazul deducției) sau un temei necesar (în cazul inducției) pentru derivarea concluziei.
+Necesitatea concluziei: Concluzia trebuie să rezulte cu rigoare din premisele date.
+Acest inferențialism atinge prima sa expresie formală în relațiile dintre propozițiile categorice, structurate în Pătratul Logic.
+--------------------------------------------------------------------------------
+2. Pătratul Logic al lui Boethius: Matricea Raporturilor Logice
+Pătratul Logic servește drept instrument algoritmic pentru vizualizarea raporturilor de opoziție între cele patru tipuri de propoziții categorice: A (SaP), E (SeP), I (SiP) și O (SoP). Importanța sa rezidă în capacitatea de a determina valorile de adevăr ale propozițiilor opuse plecând de la o singură variabilă cunoscută.
+Analiza Raporturilor de Opoziție
+Contradicție (SaP-SoP, SeP-SiP): Propozițiile nu pot fi simultan nici adevărate, nici false. (SaP = 1) →(SoP = 0); (SaP = 0) →(SoP = 1).
+Contrarietate (SaP-SeP): Propozițiile nu pot fi simultan adevărate, dar pot fi simultan false. Dacă una este adevărată, cealaltă este falsă. Dacă una este falsă, valoarea celeilalte este nedeterminată (?).
+Subcontrarietate (SiP-SoP): Propozițiile nu pot fi simultan false, dar pot fi simultan adevărate. Dacă una este falsă, cealaltă este obligatoriu adevărată. Dacă una este adevărată, cealaltă este nedeterminată (?).
+Subalternare (SaP-SiP, SeP-SoP): Adevărul se transmite de la universală la particulară (SaP = 1 →SiP = 1), iar falsitatea de la particulară la universală (SiP = 0 →SaP = 0). Invers, valorile rămân sub semnul întrebării (?).
+Sinteza Corelațiilor de Adevăr
+Conform sursei (Cap. 2.3.4), valorile de adevăr (1 = adevărat, 0 = fals, ? = nedeterminat) se deduc astfel:
+Dacă SaP = 1: SeP = 0, SiP = 1, SoP = 0.
+Dacă SaP = 0: SeP = ?, SiP = ?, SoP = 1.
+Dacă SeP = 1: SaP = 0, SiP = 0, SoP = 1.
+Dacă SeP = 0: SaP = ?, SiP = 1, SoP = ?.
+Aceste raporturi fundamentează inferențele imediate, unde rigoarea formală este menținută prin legile distribuirii.
+--------------------------------------------------------------------------------
+3. Operații Logice: Conversiunea, Obversiunea și Distribuirea Termenilor
+Inferențele imediate reprezintă tranziția logică de la o singură premisă la o concluzie. Validitatea acestora este guvernată de Legea Distribuirii Termenilor: un termen poate apărea distribuit în concluzie numai dacă a fost distribuit și în premisă.
+Statutul Distribuirii Termenilor
+Un termen este distribuit (+) când este considerat în întreaga sa extensiune și nedistribuit (-) când este vizat doar parțial:
+A (SaP): S(+), P(-)
+E (SeP): S(+), P(+)
+I (SiP): S(-), P(-)
+O (SoP): S(-), P(+)
+Conversiunea (S-P  P-S)
+Operația prin care se inversează rolurile termenilor.
+Conversiunea Simplă: Valabilă pentru E și I, păstrează cantitatea propoziției.
+SeP  PeS
+SiP  PiS
+Conversiunea prin Accident (c.p.a.): Valabilă pentru A, implică restrângerea extensiunii de la universală la particulară.
+SaP  PiS
+Notă: Propoziția O (SoP) nu se poate converti valid.
+Obversiunea (S-P  S- )
+Această operație conservă valoarea de adevăr prin modificarea calității copulei și negarea predicatului (Sursa 3.2.3):
+SaP  Se(Toți S sunt P → Niciun S nu este non-P)
+SeP Sa( (Niciun S nu este P → Toți S sunt non-P)
+SiP So( (Unii S sunt P → Unii S nu sunt non-P)
+SoP  Si( (Unii S nu sunt P → Unii S sunt non-P)
+--------------------------------------------------------------------------------
+Silogismul: Arhitectura Raționamentului Mediat
+Silogismul este un raționament deductiv mediat prin care se stabilește o concluzie necesară între doi termeni (S și P) cu ajutorul unui al treilea termen, numit termen mediu (M).
+Caracteristica esențială a silogismului este că termenul mediu nu apare în concluzie, având rol exclusiv de legătură între premise.
+Structura generală:
+Premisa majoră – conține termenul major (P) și termenul mediu (M)
+Premisa minoră – conține termenul minor (S) și termenul mediu (M)
+Concluzia – leagă termenul minor (S) de termenul major (P)
+Termenii silogismului – codificare standard
+Pentru redactarea corectă (BAC / admitere), se folosesc coduri fixe:
+S – termen minor (subiectul concluziei)
+P – termen major (predicatul concluziei)
+M – termen mediu (dispare în concluzie)
+Exemplu:
+Concluzia: „Toți S sunt P”
+Premise: una conține P–M, cealaltă S–M
+Codul propozițiilor (litere mici)
+Tipul propoziției este indicat printr-o literă mică:
+a – universal afirmativ„Toți … sunt …”
+e – universal negativ„Niciun … nu este …”
+i – particular afirmativ„Unii … sunt …”
+o – particular negativ„Unii … nu sunt …”
+Fracțiile silogistice (OBLIGATORIU)
+Fracțiile reprezintă forma exactă a premiselor, așa cum este punctată în barem.
+Exemple fundamentale:
+MaP = „Toți M sunt P”
+MeP = „Niciun M nu este P”
+MiP = „Unii M sunt P”
+MoP = „Unii M nu sunt P”
+PaM = „Toți P sunt M”
+PeM = „Niciun P nu este M”
+SaM = „Toți S sunt M”
+SeM = „Niciun S nu este M”
+SiM = „Unii S sunt M”
+SoM = „Unii S nu sunt M”
+Regulă de examen:Elevul trebuie să poată traduce instant orice propoziție din limbaj natural într-o fracție.
+Figurile silogistice
+Figura este determinată de poziția termenului mediu (M) în premise.
+Legile generale ale silogismului
+Un silogism este valid doar dacă respectă simultan următoarele reguli:
+Termenul mediu trebuie să fie distribuit în cel puțin o premisă
+Din două premise negative nu rezultă concluzie
+Din două premise particulare nu rezultă concluzie
+Dacă o premisă este negativă, concluzia este negativă
+Dacă o premisă este particulară, concluzia este particulară
+Un termen distribuit în concluzie trebuie să fie distribuit și în premisă
+Distribuirea termenilor (schemă de memorie)
+A (SaP) → S distribuit, P nedistribuit
+E (SeP) → S distribuit, P distribuit
+I (SiP) → S nedistribuit, P nedistribuit
+O (SoP) → S nedistribuit, P distribuit
+Tabel – Reducerea silogismelor
+Figura
+Procedeu folosit
+Scop
+Figura II
+Conversiunea premisei
+Obținere formă Figura I
+Figura III
+Conversiune + obversiune
+Eliminarea termenului mediu
+Figura IV
+Conversiune + contrapozitie
+Transformare în mod perfect
+Model de analiză completă (BAC)
+Silogism dat:
+Toți judecătorii sunt juriști.
+Niciun medic nu este judecător.
+Identificare:
+S = medici
+P = juriști
+M = judecători
+Formalizare:
+MaP
+SeM
+Figura: IIMod: AEE–2
+Justificare standard (BAREM):„Termenul mediu este distribuit în premisa minoră. Termenul major este distribuit în concluzie și este distribuit în premisa majoră. Silogismul respectă legile distribuirii termenilor și este valid.”
+6. Verificarea Validității: Metoda Diagramelor Venn
+Metoda Venn reprezintă un algoritm de decizie bazat pe reprezentarea grafică a extensiunii termenilor prin trei cercuri intersectate (S, P, M).
+Procedura și Notația Algebrică
+Pentru testarea validității, se utilizează următoarele convenții (Sursa 3.3.6):
+Universalele (A, E): Se reprezintă prin hașurarea regiunii vide. Formula: SP=0 (intersecția este vidă).
+Particularele (I, O): Se reprezintă prin plasarea unui „x” în regiunea ne-vidă. Formula: SP - 0 (existența a cel puțin unui element).
+Regula de Prioritate: În procesul de reprezentare, dacă silogismul conține o premisă universală și una particulară, premisă universală trebuie reprezentată obligatoriu prima. Hașurarea zonelor vide oferă contextul necesar pentru plasarea corectă a simbolului „x”.
+Regula de Decizie: Silogismul este declarat valid dacă și numai dacă, după reprezentarea grafică a ambelor premise, concluzia se regăsește citibilă pe diagramă, fără a fi necesară nicio intervenție suplimentară.
+--------------------------------------------------------------------------------
+6. Concluzii: Importanța Strategică a Rigorii Logice
+Analiza mecanismelor deductive, de la raporturile imediate ale Pătratului Logic până la structurile mediate ale silogismului, constituie fundamentul oricărei arhitecturi intelectuale coerente. Această rigoare metodologică transformă discursul dintr-o simplă succesiune de afirmații într-o demonstrație irefutabilă.
+Stăpânirea acestor instrumente — inclusiv a legii distribuirii și a algoritmului Venn — permite identificarea instantanee a sofismelor și construirea unor argumente imuabile. În ultimă instanță, logica nu este doar o disciplină teoretică, ci însăși garanția raționalității, servind drept fundament imuabil pentru toate științele și pentru orice formă de comunicare care aspiră la adevăr.

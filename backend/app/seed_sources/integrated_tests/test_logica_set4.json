@@ -1,0 +1,357 @@
+{
+  "test_name": "Test Logica Set 4",
+  "subject": "Logica",
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": 1,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții respectă regula genului proxim și a diferenței specifice?",
+      "options": {
+        "A": "Omul este o ființă",
+        "B": "Omul este o ființă rațională",
+        "C": "Omul este un animal sau o plantă",
+        "D": "Omul nu este animal",
+        "E": "Omul este ceea ce gândește"
+      },
+      "correct_answer": "B",
+      "justification": "„ființă” este genul proxim, iar „rațională” este diferența specifică."
+    },
+    {
+      "id": 2,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este circulară?",
+      "options": {
+        "A": "Contractul este un acord juridic",
+        "B": "Legea este o normă juridică",
+        "C": "Legea este ceea ce este legal",
+        "D": "Statul este o instituție politică",
+        "E": "Dreptul este un sistem de norme"
+      },
+      "correct_answer": "C",
+      "justification": "Termenul este explicat printr-un derivat al său."
+    },
+    {
+      "id": 3,
+      "category": "Definitii",
+      "question": "Definiția „Câinele este un animal” este:",
+      "options": {
+        "A": "corectă",
+        "B": "prea largă",
+        "C": "prea restrânsă",
+        "D": "metaforică",
+        "E": "contradictorie"
+      },
+      "correct_answer": "B",
+      "justification": "Nu diferențiază câinele de alte animale."
+    },
+    {
+      "id": 4,
+      "category": "Definitii",
+      "question": "Care dintre următoarele definiții este formulată metaforic?",
+      "options": {
+        "A": "Inima este organul care pompează sângele",
+        "B": "Inima este motorul vieții",
+        "C": "Contractul este acord juridic",
+        "D": "Statul este instituție politică",
+        "E": "Dreptul este sistem de norme"
+      },
+      "correct_answer": "B",
+      "justification": "Utilizează limbaj figurat."
+    },
+    {
+      "id": 5,
+      "category": "Definitii",
+      "question": "Pentru ca o definiție să fie corectă, aceasta trebuie:",
+      "options": {
+        "A": "să fie cât mai scurtă",
+        "B": "să fie metaforică",
+        "C": "să fie echivalentă ca sferă cu termenul definit",
+        "D": "să fie negativă",
+        "E": "să fie abstractă"
+      },
+      "correct_answer": "C",
+      "justification": "Respectă regula adecvării."
+    },
+    {
+      "id": 6,
+      "category": "Clasificare",
+      "question": "Care clasificare respectă criteriul unic?",
+      "options": {
+        "A": "Elevii sunt buni, înalți și din anul I",
+        "B": "Vehiculele sunt rapide, electrice și mari",
+        "C": "Persoanele sunt minori și majori",
+        "D": "Studenții sunt inteligenți și la drept",
+        "E": "Animalele sunt domestice și carnivore"
+      },
+      "correct_answer": "C",
+      "justification": "Un singur criteriu: vârsta."
+    },
+    {
+      "id": 7,
+      "category": "Clasificare",
+      "question": "Eroare în „Elevii sunt buni, înalți și din anul I”?",
+      "options": {
+        "A": "incompletitudine",
+        "B": "suprapunere",
+        "C": "amestec criterii",
+        "D": "contradicție",
+        "E": "circularitate"
+      },
+      "correct_answer": "C",
+      "justification": "Criterii diferite."
+    },
+    {
+      "id": 8,
+      "category": "Clasificare",
+      "question": "Clasificarea completă înseamnă:",
+      "options": {
+        "A": "puține clase",
+        "B": "toate elementele incluse",
+        "C": "simplă",
+        "D": "abstractă",
+        "E": "scurtă"
+      },
+      "correct_answer": "B",
+      "justification": "Acoperă întreaga extensiune."
+    },
+    {
+      "id": 9,
+      "category": "Clasificare",
+      "question": "Suprapunerea apare când:",
+      "options": {
+        "A": "clase mici",
+        "B": "elemente comune",
+        "C": "clase generale",
+        "D": "abstracte",
+        "E": "independente"
+      },
+      "correct_answer": "B",
+      "justification": "Același element în mai multe clase."
+    },
+    {
+      "id": 10,
+      "category": "Clasificare",
+      "question": "Numerele naturale: pare/impare este:",
+      "options": {
+        "A": "incorect",
+        "B": "incomplet",
+        "C": "corect",
+        "D": "contradictoriu",
+        "E": "circular"
+      },
+      "correct_answer": "C",
+      "justification": "Criteriu unic și complet."
+    },
+    {
+      "id": 11,
+      "category": "Propozitii",
+      "question": "„Toți studenții sunt prezenți” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "singular"
+      },
+      "correct_answer": "A",
+      "justification": "Universal afirmativ."
+    },
+    {
+      "id": 12,
+      "category": "Propozitii",
+      "question": "„Niciun elev nu este absent” este:",
+      "options": {
+        "A": "A",
+        "B": "E",
+        "C": "I",
+        "D": "O",
+        "E": "singular"
+      },
+      "correct_answer": "B",
+      "justification": "Universal negativ."
+    },
+    {
+      "id": 13,
+      "category": "Propozitii",
+      "question": "Distribuirea în A:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "ambele",
+        "D": "niciuna",
+        "E": "variabil"
+      },
+      "correct_answer": "A",
+      "justification": "Subiect distribuit."
+    },
+    {
+      "id": 14,
+      "category": "Propozitii",
+      "question": "Distribuirea în E:",
+      "options": {
+        "A": "S",
+        "B": "P",
+        "C": "ambele",
+        "D": "niciuna",
+        "E": "variabil"
+      },
+      "correct_answer": "C",
+      "justification": "Ambele distribuite."
+    },
+    {
+      "id": 15,
+      "category": "Propozitii",
+      "question": "„Numai studenții sunt participanți” se traduce:",
+      "options": {
+        "A": "SaP",
+        "B": "PaS",
+        "C": "SiP",
+        "D": "SoP",
+        "E": "SeP"
+      },
+      "correct_answer": "B",
+      "justification": "P inclus în S."
+    },
+    {
+      "id": 16,
+      "category": "Silogisme",
+      "question": "MaP înseamnă:",
+      "options": {
+        "A": "Unii M sunt P",
+        "B": "Toți M sunt P",
+        "C": "Niciun M nu este P",
+        "D": "Unii M nu sunt P",
+        "E": "Toți P sunt M"
+      },
+      "correct_answer": "B",
+      "justification": "Universal afirmativ."
+    },
+    {
+      "id": 17,
+      "category": "Silogisme",
+      "question": "EIO este:",
+      "options": {
+        "A": "invalid",
+        "B": "valid",
+        "C": "eroare",
+        "D": "inductiv",
+        "E": "analogic"
+      },
+      "correct_answer": "B",
+      "justification": "Mod valid."
+    },
+    {
+      "id": 18,
+      "category": "Silogisme",
+      "question": "Termenul mediu:",
+      "options": {
+        "A": "apare concluzie",
+        "B": "leagă termenii",
+        "C": "predicat",
+        "D": "subiect",
+        "E": "nu există"
+      },
+      "correct_answer": "B",
+      "justification": "Face legătura."
+    },
+    {
+      "id": 19,
+      "category": "Silogisme",
+      "question": "A și O sunt:",
+      "options": {
+        "A": "contrare",
+        "B": "contradictorii",
+        "C": "subcontrare",
+        "D": "subalterne",
+        "E": "identice"
+      },
+      "correct_answer": "B",
+      "justification": "Nu pot fi simultan adevărate/fals."
+    },
+    {
+      "id": 20,
+      "category": "Silogisme",
+      "question": "Două premise negative:",
+      "options": {
+        "A": "valid",
+        "B": "invalid",
+        "C": "particular",
+        "D": "universal",
+        "E": "mixt"
+      },
+      "correct_answer": "B",
+      "justification": "Nu rezultă concluzie."
+    },
+    {
+      "id": 21,
+      "category": "Erori",
+      "question": "Termen mediu nedistribuit:",
+      "options": {
+        "A": "valid",
+        "B": "eroare",
+        "C": "contradicție",
+        "D": "inducție",
+        "E": "analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Nu leagă termenii."
+    },
+    {
+      "id": 22,
+      "category": "Erori",
+      "question": "Unii → Toți:",
+      "options": {
+        "A": "valid",
+        "B": "eroare",
+        "C": "deducție",
+        "D": "analogie",
+        "E": "definiție"
+      },
+      "correct_answer": "B",
+      "justification": "Generalizare nejustificată."
+    },
+    {
+      "id": 23,
+      "category": "Erori",
+      "question": "Echivocația:",
+      "options": {
+        "A": "sens unic",
+        "B": "sens dublu",
+        "C": "definiție",
+        "D": "clasificare",
+        "E": "deducție"
+      },
+      "correct_answer": "B",
+      "justification": "Ambiguitate."
+    },
+    {
+      "id": 24,
+      "category": "Erori",
+      "question": "Distribuire ilegală:",
+      "options": {
+        "A": "extindere termen",
+        "B": "corect",
+        "C": "deducție",
+        "D": "inducție",
+        "E": "analogie"
+      },
+      "correct_answer": "A",
+      "justification": "Distribuit doar în concluzie."
+    },
+    {
+      "id": 25,
+      "category": "Erori",
+      "question": "Obversiunea:",
+      "options": {
+        "A": "conversiune",
+        "B": "schimbă calitatea și neagă predicatul",
+        "C": "contrapozitie",
+        "D": "inducție",
+        "E": "analogie"
+      },
+      "correct_answer": "B",
+      "justification": "Transformare logică."
+    }
+  ]
+}

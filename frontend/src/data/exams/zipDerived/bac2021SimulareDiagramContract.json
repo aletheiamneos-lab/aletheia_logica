@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "BAC_LOGICA_DIAGRAM_CONTRACT_V2",
+  "examId": "bac_logica_2021_simulare",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler",
+      "diagramType": "euler_relation_map",
+      "studentInput": "hybrid_diagram",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A contrar cu B",
+        "C specie a lui B",
+        "D specie a lui A",
+        "E opus cu C și D",
+        "E încrucișat cu A și B",
+        "E are zonă în afara lui A și B"
+      ],
+      "teacherRendering": "Randare Euler schematică din relații; nu se expune elevului."
+    },
+    {
+      "diagramId": "diagram_III_A_eio_3",
+      "diagramType": "venn_three_terms",
+      "studentInput": "hybrid_diagram",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eio-3",
+      "schema": [
+        "MeP",
+        "MiS",
+        "SoP"
+      ],
+      "validity": "valid"
+    },
+    {
+      "diagramId": "diagram_III_A_iai_4",
+      "diagramType": "venn_three_terms",
+      "studentInput": "hybrid_diagram",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "iai-4",
+      "schema": [
+        "PiM",
+        "MaS",
+        "SiP"
+      ],
+      "validity": "valid"
+    }
+  ]
+}

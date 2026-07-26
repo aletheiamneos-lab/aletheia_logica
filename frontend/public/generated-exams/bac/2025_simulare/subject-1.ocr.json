@@ -1,0 +1,568 @@
+{
+  "page_number": 1,
+  "entries": [
+    {
+      "text": "Ministerul Educatieisi Cercetarii",
+      "x": 1463.6932373046875,
+      "y": 108.7615966796875,
+      "score": 0.9528945232882644,
+      "page_number": 1
+    },
+    {
+      "text": "Centrul NationaldePoliticisi EvaluareinEducatie",
+      "x": 1241.7613525390625,
+      "y": 175.07965087890625,
+      "score": 0.9786079855675393,
+      "page_number": 1
+    },
+    {
+      "text": "Examenulnationaldebacalaureat2025",
+      "x": 1228.5511474609375,
+      "y": 291.7994079589844,
+      "score": 0.9960961721160195,
+      "page_number": 1
+    },
+    {
+      "text": "Proba E.d)",
+      "x": 1672.414794921875,
+      "y": 366.07562255859375,
+      "score": 0.9931175827980041,
+      "page_number": 1
+    },
+    {
+      "text": "Logica, argumentare si comunicare",
+      "x": 1286.6761474609375,
+      "y": 480.1426696777344,
+      "score": 0.9968445174621813,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3064.772705078125,
+      "y": 559.7243041992188,
+      "score": 0.9971492365002632,
+      "page_number": 1
+    },
+    {
+      "text": "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+      "x": 361.9602355957031,
+      "y": 668.4859008789062,
+      "score": 0.9691225227855501,
+      "page_number": 1
+    },
+    {
+      "text": "specializarile din filiera vocationala, cu exceptia profilului militar",
+      "x": 367.24432373046875,
+      "y": 756.0257568359375,
+      "score": 0.9836649826594761,
+      "page_number": 1
+    },
+    {
+      "text": "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+      "x": 361.9602355957031,
+      "y": 888.6618041992188,
+      "score": 0.9660357323245726,
+      "page_number": 1
+    },
+    {
+      "text": "· Timpul de lucru efectiv este de trei ore.",
+      "x": 359.31817626953125,
+      "y": 976.20166015625,
+      "score": 0.9562097482903059,
+      "page_number": 1
+    },
+    {
+      "text": "SUBIECTULT",
+      "x": 369.8863830566406,
+      "y": 1116.7958984375,
+      "score": 0.9461783587932586,
+      "page_number": 1
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2882.4716796875,
+      "y": 1111.490478515625,
+      "score": 0.9909728666146597,
+      "page_number": 1
+    },
+    {
+      "text": "A. Pentru fiecare dintre urmatori itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si",
+      "x": 361.9602355957031,
+      "y": 1185.7667236328125,
+      "score": 0.9911459666309934,
+      "page_number": 1
+    },
+    {
+      "text": "notati in dreptul ei doar litera asociata raspunsului corect.Este corecta o singura varianta de",
+      "x": 364.6022644042969,
+      "y": 1268.0010986328125,
+      "score": 0.9592151560281452,
+      "page_number": 1
+    },
+    {
+      "text": "raspuns.",
+      "x": 364.6022644042969,
+      "y": 1352.88818359375,
+      "score": 0.9994990304112434,
+      "page_number": 1
+    },
+    {
+      "text": "1. Demonstratia este procesul logic in care:",
+      "x": 367.24432373046875,
+      "y": 1480.21875,
+      "score": 0.9567146003246307,
+      "page_number": 1
+    },
+    {
+      "text": "a.opropozitiefalsaestederivatadinpropozitiadevarate",
+      "x": 367.24432373046875,
+      "y": 1565.10595703125,
+      "score": 0.995496062671437,
+      "page_number": 1
+    },
+    {
+      "text": "b.opropozitieadevarataestederivatadinpropozitiiprobabile",
+      "x": 369.8863830566406,
+      "y": 1642.0347900390625,
+      "score": 0.9880655780434608,
+      "page_number": 1
+    },
+    {
+      "text": "c. o propozitie data este derivata din propoziti adevarate",
+      "x": 364.6022644042969,
+      "y": 1718.9637451171875,
+      "score": 0.9638564237232866,
+      "page_number": 1
+    },
+    {
+      "text": "d. o propozitie falsa este derivata din propoziti false",
+      "x": 364.6022644042969,
+      "y": 1798.54541015625,
+      "score": 0.9777107758955522,
+      "page_number": 1
+    },
+    {
+      "text": "2.Inferenta\"Unelefintemuritoare suntoameni,dacaoamenii sunt finte muritoare.”este:",
+      "x": 364.6022644042969,
+      "y": 1928.52880859375,
+      "score": 0.9609353745855936,
+      "page_number": 1
+    },
+    {
+      "text": "a.oinductieincompleta",
+      "x": 372.5284118652344,
+      "y": 2018.7213134765625,
+      "score": 0.99430779616038,
+      "page_number": 1
+    },
+    {
+      "text": "c.o conversiuneprin accident",
+      "x": 1933.977294921875,
+      "y": 2016.068603515625,
+      "score": 0.9699736833572388,
+      "page_number": 1
+    },
+    {
+      "text": "b. o deductie mediata",
+      "x": 364.6022644042969,
+      "y": 2092.99755859375,
+      "score": 0.9524030458359491,
+      "page_number": 1
+    },
+    {
+      "text": "d.o obversiune valida",
+      "x": 1939.2613525390625,
+      "y": 2090.3447265625,
+      "score": 0.9744471112887064,
+      "page_number": 1
+    },
+    {
+      "text": "3. Este falsa, urmatoarea afirmatie, cu privire la raporturile dintre termeni:",
+      "x": 361.9602355957031,
+      "y": 2217.675537109375,
+      "score": 0.9843304439997062,
+      "page_number": 1
+    },
+    {
+      "text": "a.termeniivertebratsinevertebratseaflainraportdecontradictie",
+      "x": 367.24432373046875,
+      "y": 2302.5625,
+      "score": 0.9952620844046275,
+      "page_number": 1
+    },
+    {
+      "text": "b.termeniipisicasianimalalintatseaflainraportdeintersectare",
+      "x": 372.5284118652344,
+      "y": 2384.796875,
+      "score": 0.9860001165988082,
+      "page_number": 1
+    },
+    {
+      "text": "c.termeniipixsistilouseaflainraportdecontrarietate",
+      "x": 369.8863830566406,
+      "y": 2461.725830078125,
+      "score": 0.9796677753329277,
+      "page_number": 1
+    },
+    {
+      "text": "d. termenii crizantema si floare rosie se afla in raport de ordonare",
+      "x": 364.6022644042969,
+      "y": 2533.349365234375,
+      "score": 0.9929531225386787,
+      "page_number": 1
+    },
+    {
+      "text": "4. Subiectul logic al propozitiei \"Toate prajiturile cu fistic sunt deserturi aromate.\"este:",
+      "x": 364.6022644042969,
+      "y": 2671.291015625,
+      "score": 0.9696306949076445,
+      "page_number": 1
+    },
+    {
+      "text": "a. toate",
+      "x": 367.24432373046875,
+      "y": 2756.177978515625,
+      "score": 0.9759519472718239,
+      "page_number": 1
+    },
+    {
+      "text": "c. toate prajiturile cu fistic",
+      "x": 1936.619384765625,
+      "y": 2756.177978515625,
+      "score": 0.9759205102920532,
+      "page_number": 1
+    },
+    {
+      "text": "b. prajiturile cu fistic",
+      "x": 364.6022644042969,
+      "y": 2833.10693359375,
+      "score": 0.9705707107981046,
+      "page_number": 1
+    },
+    {
+      "text": "d. toate prajiturile",
+      "x": 1939.2613525390625,
+      "y": 2833.10693359375,
+      "score": 0.9804429620504379,
+      "page_number": 1
+    },
+    {
+      "text": "5. Clasificarea rationamentelor in functie de directia procesului de inferare in deductive si inductive",
+      "x": 361.9602355957031,
+      "y": 2960.4375,
+      "score": 0.9839619907360633,
+      "page_number": 1
+    },
+    {
+      "text": "este:",
+      "x": 364.6022644042969,
+      "y": 3047.9775390625,
+      "score": 0.9958173513412476,
+      "page_number": 1
+    },
+    {
+      "text": "a.corecta",
+      "x": 361.9602355957031,
+      "y": 3124.906494140625,
+      "score": 0.9976907107565138,
+      "page_number": 1
+    },
+    {
+      "text": "c. neomogena",
+      "x": 1936.619384765625,
+      "y": 3122.253662109375,
+      "score": 0.9983884245157242,
+      "page_number": 1
+    },
+    {
+      "text": "b. incompleta",
+      "x": 364.6022644042969,
+      "y": 3204.488037109375,
+      "score": 0.987847993007073,
+      "page_number": 1
+    },
+    {
+      "text": "d. abundenta",
+      "x": 1936.619384765625,
+      "y": 3201.835205078125,
+      "score": 0.9713502277930578,
+      "page_number": 1
+    },
+    {
+      "text": "6.Din punct devedere intensional, termenul libertate este:",
+      "x": 367.24432373046875,
+      "y": 3334.471435546875,
+      "score": 0.9653969216963341,
+      "page_number": 1
+    },
+    {
+      "text": "a.concret, absolut",
+      "x": 367.24432373046875,
+      "y": 3414.052978515625,
+      "score": 0.9784397615326775,
+      "page_number": 1
+    },
+    {
+      "text": "c. concret, simplu",
+      "x": 1936.619384765625,
+      "y": 3416.705810546875,
+      "score": 0.990008552869161,
+      "page_number": 1
+    },
+    {
+      "text": "b. abstract, absolut",
+      "x": 367.24432373046875,
+      "y": 3493.634765625,
+      "score": 0.9888103425502777,
+      "page_number": 1
+    },
+    {
+      "text": "d.pozitiv,relativ",
+      "x": 1939.2613525390625,
+      "y": 3496.287353515625,
+      "score": 0.975520579253926,
+      "page_number": 1
+    },
+    {
+      "text": "7.Rationamentul\"Unele melodi sunt relaxante, deci unele melodi nu sunt nerelaxante.”este:",
+      "x": 364.6022644042969,
+      "y": 3626.270751953125,
+      "score": 0.95450197980645,
+      "page_number": 1
+    },
+    {
+      "text": "a.conversiune",
+      "x": 367.24432373046875,
+      "y": 3711.157958984375,
+      "score": 0.9984373587828416,
+      "page_number": 1
+    },
+    {
+      "text": "c.deductie mediata",
+      "x": 1936.619384765625,
+      "y": 3708.505126953125,
+      "score": 0.9799789587656657,
+      "page_number": 1
+    },
+    {
+      "text": "b. silogism",
+      "x": 361.9602355957031,
+      "y": 3780.128662109375,
+      "score": 0.9879898754033175,
+      "page_number": 1
+    },
+    {
+      "text": "d. obversiune",
+      "x": 1931.335205078125,
+      "y": 3780.128662109375,
+      "score": 0.9778258892206045,
+      "page_number": 1
+    },
+    {
+      "text": "8.Propozitia\"Niciun mamifer nu este nevertebrat.\"este un exemplu depropozitie:",
+      "x": 369.8863830566406,
+      "y": 3920.722900390625,
+      "score": 0.9613945766901358,
+      "page_number": 1
+    },
+    {
+      "text": "a.universalaafirmativa",
+      "x": 367.24432373046875,
+      "y": 4000.3046875,
+      "score": 0.9960136684504423,
+      "page_number": 1
+    },
+    {
+      "text": "c.universalanegativa",
+      "x": 1939.2613525390625,
+      "y": 4000.3046875,
+      "score": 0.9971603274345398,
+      "page_number": 1
+    },
+    {
+      "text": "b. particulara negativa",
+      "x": 369.8863830566406,
+      "y": 4079.88623046875,
+      "score": 0.9778615910073986,
+      "page_number": 1
+    },
+    {
+      "text": "d. particulara afirmativa",
+      "x": 1936.619384765625,
+      "y": 4077.233642578125,
+      "score": 0.9980902767181397,
+      "page_number": 1
+    },
+    {
+      "text": "9.Extensiunea termenuluioglindaeste:",
+      "x": 364.6022644042969,
+      "y": 4209.86962890625,
+      "score": 0.9839968863460753,
+      "page_number": 1
+    },
+    {
+      "text": "a.totalitateaoglinzilor",
+      "x": 372.5284118652344,
+      "y": 4297.40966796875,
+      "score": 0.9966910455537878,
+      "page_number": 1
+    },
+    {
+      "text": "b.suprafatanetedasilucioasa,careareproprietateadeareflectalumina",
+      "x": 372.5284118652344,
+      "y": 4371.685546875,
+      "score": 0.9901725891977549,
+      "page_number": 1
+    },
+    {
+      "text": "c.totalitateaobiectelordedecor",
+      "x": 367.24432373046875,
+      "y": 4448.61474609375,
+      "score": 0.9918950657049815,
+      "page_number": 1
+    },
+    {
+      "text": "d.lucru care infatiseaza,reprezinta, simbolizeaza ceva",
+      "x": 369.8863830566406,
+      "y": 4522.890625,
+      "score": 0.9678034903826537,
+      "page_number": 1
+    },
+    {
+      "text": "10.Propozitiei categorice\"Toti diplomati sunt oameni politici.\"fi corespunde formula:",
+      "x": 367.24432373046875,
+      "y": 4655.52685546875,
+      "score": 0.9761690230930553,
+      "page_number": 1
+    },
+    {
+      "text": "a.SiP",
+      "x": 364.6022644042969,
+      "y": 4743.06689453125,
+      "score": 0.9984294056892395,
+      "page_number": 1
+    },
+    {
+      "text": "c.SeP",
+      "x": 1931.335205078125,
+      "y": 4743.06689453125,
+      "score": 0.9908345818519593,
+      "page_number": 1
+    },
+    {
+      "text": "b. SaP",
+      "x": 359.31817626953125,
+      "y": 4817.3427734375,
+      "score": 0.9810127019882202,
+      "page_number": 1
+    },
+    {
+      "text": "d. SoP",
+      "x": 1931.335205078125,
+      "y": 4817.3427734375,
+      "score": 0.9397775828838348,
+      "page_number": 1
+    },
+    {
+      "text": "20depuncte",
+      "x": 2940.5966796875,
+      "y": 4896.9248046875,
+      "score": 0.9986513733863831,
+      "page_number": 1
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 364.6022644042969,
+      "y": 5032.21337890625,
+      "score": 0.9815988975266615,
+      "page_number": 1
+    },
+    {
+      "text": "Simulare",
+      "x": 3101.761474609375,
+      "y": 5034.8662109375,
+      "score": 0.9991920813918114,
+      "page_number": 1
+    },
+    {
+      "text": "Pagina 1 din 2",
+      "x": 1682.9830322265625,
+      "y": 5101.18408203125,
+      "score": 0.9693680916513715,
+      "page_number": 1
+    }
+  ],
+  "lines": [
+    "Ministerul Educatieisi Cercetarii",
+    "Centrul NationaldePoliticisi EvaluareinEducatie",
+    "Examenulnationaldebacalaureat2025",
+    "Proba E.d)",
+    "Logica, argumentare si comunicare",
+    "Simulare",
+    "Profilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si",
+    "specializarile din filiera vocationala, cu exceptia profilului militar",
+    "·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.",
+    "· Timpul de lucru efectiv este de trei ore.",
+    "SUBIECTULT",
+    "(30depuncte)",
+    "A. Pentru fiecare dintre urmatori itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si",
+    "notati in dreptul ei doar litera asociata raspunsului corect.Este corecta o singura varianta de",
+    "raspuns.",
+    "1. Demonstratia este procesul logic in care:",
+    "a.opropozitiefalsaestederivatadinpropozitiadevarate",
+    "b.opropozitieadevarataestederivatadinpropozitiiprobabile",
+    "c. o propozitie data este derivata din propoziti adevarate",
+    "d. o propozitie falsa este derivata din propoziti false",
+    "2.Inferenta\"Unelefintemuritoare suntoameni,dacaoamenii sunt finte muritoare.”este:",
+    "a.oinductieincompleta",
+    "c.o conversiuneprin accident",
+    "b. o deductie mediata",
+    "d.o obversiune valida",
+    "3. Este falsa, urmatoarea afirmatie, cu privire la raporturile dintre termeni:",
+    "a.termeniivertebratsinevertebratseaflainraportdecontradictie",
+    "b.termeniipisicasianimalalintatseaflainraportdeintersectare",
+    "c.termeniipixsistilouseaflainraportdecontrarietate",
+    "d. termenii crizantema si floare rosie se afla in raport de ordonare",
+    "4. Subiectul logic al propozitiei \"Toate prajiturile cu fistic sunt deserturi aromate.\"este:",
+    "a. toate",
+    "c. toate prajiturile cu fistic",
+    "b. prajiturile cu fistic",
+    "d. toate prajiturile",
+    "5. Clasificarea rationamentelor in functie de directia procesului de inferare in deductive si inductive",
+    "este:",
+    "a.corecta",
+    "c. neomogena",
+    "b. incompleta",
+    "d. abundenta",
+    "6.Din punct devedere intensional, termenul libertate este:",
+    "a.concret, absolut",
+    "c. concret, simplu",
+    "b. abstract, absolut",
+    "d.pozitiv,relativ",
+    "7.Rationamentul\"Unele melodi sunt relaxante, deci unele melodi nu sunt nerelaxante.”este:",
+    "a.conversiune",
+    "c.deductie mediata",
+    "b. silogism",
+    "d. obversiune",
+    "8.Propozitia\"Niciun mamifer nu este nevertebrat.\"este un exemplu depropozitie:",
+    "a.universalaafirmativa",
+    "c.universalanegativa",
+    "b. particulara negativa",
+    "d. particulara afirmativa",
+    "9.Extensiunea termenuluioglindaeste:",
+    "a.totalitateaoglinzilor",
+    "b.suprafatanetedasilucioasa,careareproprietateadeareflectalumina",
+    "c.totalitateaobiectelordedecor",
+    "d.lucru care infatiseaza,reprezinta, simbolizeaza ceva",
+    "10.Propozitiei categorice\"Toti diplomati sunt oameni politici.\"fi corespunde formula:",
+    "a.SiP",
+    "c.SeP",
+    "b. SaP",
+    "d. SoP",
+    "20depuncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Simulare",
+    "Pagina 1 din 2"
+  ],
+  "text": "Ministerul Educatieisi Cercetarii\nCentrul NationaldePoliticisi EvaluareinEducatie\nExamenulnationaldebacalaureat2025\nProba E.d)\nLogica, argumentare si comunicare\nSimulare\nProfilul umanist din filiera teoretica, profilul servicii din filiera tehnologica si toate profilurile si\nspecializarile din filiera vocationala, cu exceptia profilului militar\n·Toate subiectele sunt obligatorii. Se acorda zece puncte din oficiu.\n· Timpul de lucru efectiv este de trei ore.\nSUBIECTULT\n(30depuncte)\nA. Pentru fiecare dintre urmatori itemi, scrieti, pe foaia de examen, doar cifra corespunzatoare si\nnotati in dreptul ei doar litera asociata raspunsului corect.Este corecta o singura varianta de\nraspuns.\n1. Demonstratia este procesul logic in care:\na.opropozitiefalsaestederivatadinpropozitiadevarate\nb.opropozitieadevarataestederivatadinpropozitiiprobabile\nc. o propozitie data este derivata din propoziti adevarate\nd. o propozitie falsa este derivata din propoziti false\n2.Inferenta\"Unelefintemuritoare suntoameni,dacaoamenii sunt finte muritoare.”este:\na.oinductieincompleta\nc.o conversiuneprin accident\nb. o deductie mediata\nd.o obversiune valida\n3. Este falsa, urmatoarea afirmatie, cu privire la raporturile dintre termeni:\na.termeniivertebratsinevertebratseaflainraportdecontradictie\nb.termeniipisicasianimalalintatseaflainraportdeintersectare\nc.termeniipixsistilouseaflainraportdecontrarietate\nd. termenii crizantema si floare rosie se afla in raport de ordonare\n4. Subiectul logic al propozitiei \"Toate prajiturile cu fistic sunt deserturi aromate.\"este:\na. toate\nc. toate prajiturile cu fistic\nb. prajiturile cu fistic\nd. toate prajiturile\n5. Clasificarea rationamentelor in functie de directia procesului de inferare in deductive si inductive\neste:\na.corecta\nc. neomogena\nb. incompleta\nd. abundenta\n6.Din punct devedere intensional, termenul libertate este:\na.concret, absolut\nc. concret, simplu\nb. abstract, absolut\nd.pozitiv,relativ\n7.Rationamentul\"Unele melodi sunt relaxante, deci unele melodi nu sunt nerelaxante.”este:\na.conversiune\nc.deductie mediata\nb. silogism\nd. obversiune\n8.Propozitia\"Niciun mamifer nu este nevertebrat.\"este un exemplu depropozitie:\na.universalaafirmativa\nc.universalanegativa\nb. particulara negativa\nd. particulara afirmativa\n9.Extensiunea termenuluioglindaeste:\na.totalitateaoglinzilor\nb.suprafatanetedasilucioasa,careareproprietateadeareflectalumina\nc.totalitateaobiectelordedecor\nd.lucru care infatiseaza,reprezinta, simbolizeaza ceva\n10.Propozitiei categorice\"Toti diplomati sunt oameni politici.\"fi corespunde formula:\na.SiP\nc.SeP\nb. SaP\nd. SoP\n20depuncte\nProba scrisa la logica,argumentare si comunicare\nSimulare\nPagina 1 din 2"
+}

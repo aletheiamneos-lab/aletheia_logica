@@ -1,0 +1,815 @@
+{
+  "examId": "bac_logica_2025_v1",
+  "title": "Examenul de bacalaureat national 2025 - Varianta 1 - Logica, argumentare si comunicare",
+  "mode": "student_exam",
+  "visibility": "student",
+  "examYear": 2025,
+  "variant": "Varianta 1",
+  "subject": "Logica, argumentare si comunicare",
+  "durationMinutes": 180,
+  "score": {
+    "examPoints": 90,
+    "officePoints": 10,
+    "totalPoints": 100
+  },
+  "sourceFiles": {
+    "subjectPdf": "Examenul na?ional de bacalaureat 2025_v1.pdf",
+    "baremPdf": "Examenul na?ional de bacalaureat 2025_v1_BAREM.pdf"
+  },
+  "sections": [
+    {
+      "id": "I",
+      "title": "Subiectul I",
+      "points": 30,
+      "groups": [
+        {
+          "id": "I_A",
+          "title": "A. Itemi cu alegere unică",
+          "points": 20,
+          "officialPrompt": "Pentru fiecare dintre următorii itemi, scrieți, pe foaia de examen, doar cifra corespunzătoare și notați în dreptul ei doar litera asociată răspunsului corect. Este corectă o singură variantă de răspuns.",
+          "items": [
+            {
+              "id": "I_A_1",
+              "number": "1",
+              "prompt": "Dacă termenului „mașină de tocat” i se adaugă proprietatea „carne” atunci:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "extensiunea termenului rămâne neschimbată în timp ce intensiunea crește",
+                  "b": "extensiunea și intensiunea rămân neschimbate",
+                  "c": "extensiunea termenului crește în timp ce intensiunea scade",
+                  "d": "extensiunea termenului scade în timp ce intensiunea crește"
+                }
+              }
+            },
+            {
+              "id": "I_A_2",
+              "number": "2",
+              "prompt": "Inferența „Unii avocați nu sunt persoane cunoscute în oraș, prin urmare unele persoane cunoscute în oraș nu sunt avocați.” este:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "o inducție completă",
+                  "b": "o deducție imediată nevalidă",
+                  "c": "o deducție mediată",
+                  "d": "o deducție imediată validă"
+                }
+              }
+            },
+            {
+              "id": "I_A_3",
+              "number": "3",
+              "prompt": "Între propozițiile categorice „Toate mașinile sunt maro.” și „Unele mașini sunt maro.” există un raport de:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "contradicție",
+                  "b": "subcontrarietate",
+                  "c": "contrarietate",
+                  "d": "subalternare"
+                }
+              }
+            },
+            {
+              "id": "I_A_4",
+              "number": "4",
+              "prompt": "Subiectul logic al propoziției „Majoritatea cărților de vizită sunt ale oamenilor de afaceri.” este:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "majoritatea cărților",
+                  "b": "cărțile",
+                  "c": "cărților de vizită",
+                  "d": "oamenilor de afaceri"
+                }
+              }
+            },
+            {
+              "id": "I_A_5",
+              "number": "5",
+              "prompt": "O clasificare corectă presupune respectarea regulii:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "consistenței",
+                  "b": "clarității și preciziei",
+                  "c": "adecvării",
+                  "d": "omogenității"
+                }
+              }
+            },
+            {
+              "id": "I_A_6",
+              "number": "6",
+              "prompt": "Din punct de vedere intensional, termenul „frumusețe” este:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "nevid",
+                  "b": "abstract",
+                  "c": "negativ",
+                  "d": "compus"
+                }
+              }
+            },
+            {
+              "id": "I_A_7",
+              "number": "7",
+              "prompt": "Raționamentul „Unele conflicte nu sunt gestionate corect, deci unele conflicte sunt gestionate incorect.” este:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "obversiune validă",
+                  "b": "conversiune nevalidă",
+                  "c": "inducție completă",
+                  "d": "inducție incompletă"
+                }
+              }
+            },
+            {
+              "id": "I_A_8",
+              "number": "8",
+              "prompt": "Propoziția „Unii actori nu sunt cântăreți.” este un exemplu de propoziție:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "universală afirmativă",
+                  "b": "particulară negativă",
+                  "c": "universală negativă",
+                  "d": "particulară afirmativă"
+                }
+              }
+            },
+            {
+              "id": "I_A_9",
+              "number": "9",
+              "prompt": "O inferență deductivă mediată presupune existența:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "unui fundament al demonstrației",
+                  "b": "mai multor premise",
+                  "c": "unei singure premise",
+                  "d": "unui criteriu de clasificare"
+                }
+              }
+            },
+            {
+              "id": "I_A_10",
+              "number": "10",
+              "prompt": "Propoziției categorice „Niciun elev nu este persoană cu studii superioare.” îi corespunde formula:",
+              "points": 2,
+              "answerInput": {
+                "inputType": "single_choice",
+                "options": {
+                  "a": "SaP",
+                  "b": "SeP",
+                  "c": "SoP",
+                  "d": "SiP"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "I_B",
+          "title": "B. Raporturi între termeni",
+          "points": 10,
+          "officialPrompt": "Se dau termenii A, B, C, D și E astfel încât termenii A, B și C se află în raport de încrucișare; termenul D este specie a intersecției acestora; termenul E este în raport de contrarietate cu ceilalți termeni. Reprezentați raporturile prin metoda diagramelor Euler și stabiliți valoarea de adevăr a propozițiilor a–h.",
+          "contextBlock": {
+            "title": "Context comun",
+            "items": [
+              "A, B și C sunt în raport de încrucișare.",
+              "D este specie a intersecției termenilor A, B și C.",
+              "E este în raport de contrarietate/opoziție cu ceilalți termeni."
+            ]
+          },
+          "items": [
+            {
+              "id": "I_B_1",
+              "title": "1. Diagrama Euler",
+              "prompt": "Reprezenta?i, prin metoda diagramelor Euler, pe o diagram? comun?, raporturile logice dintre termenii da?i.",
+              "points": 2,
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_I_B_euler",
+                "diagramType": "euler"
+              }
+            },
+            {
+              "id": "I_B_2",
+              "title": "2. Adev?rat / Fals",
+              "prompt": "Stabili?i valoarea de adev?r a propozi?iilor date.",
+              "points": 8,
+              "answerInput": {
+                "inputType": "true_false_table",
+                "items": [
+                  {
+                    "id": "I_B_2_a",
+                    "label": "a",
+                    "statement": "Niciun C nu este A.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_b",
+                    "label": "b",
+                    "statement": "Unii A nu sunt B.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_c",
+                    "label": "c",
+                    "statement": "Unii A sunt D.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_d",
+                    "label": "d",
+                    "statement": "Unii D nu sunt E.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_e",
+                    "label": "e",
+                    "statement": "Toți D sunt C.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_f",
+                    "label": "f",
+                    "statement": "Niciun B nu este C.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_g",
+                    "label": "g",
+                    "statement": "Unii E nu sunt A.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "I_B_2_h",
+                    "label": "h",
+                    "statement": "Unii D sunt A.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, contradictoria propoziției 1, contrara propoziției 2, supraalterna propoziției 3 și subcontrara propoziției 4.",
+          "contextBlock": null,
+          "items": [
+            {
+              "id": "II_A_1",
+              "title": "Contradictoria propoziției 1",
+              "points": 2,
+              "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, contradictoria propoziției 1.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_A_2",
+              "title": "Contrara propoziției 2",
+              "points": 2,
+              "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, contrara propoziției 2.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_A_3",
+              "title": "Supraalterna propoziției 3",
+              "points": 2,
+              "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, supraalterna propoziției 3.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_A_4",
+              "title": "Subcontrara propoziției 4",
+              "points": 2,
+              "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, subcontrara propoziției 4.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 2 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "contextBlock": null,
+          "items": [
+            {
+              "id": "II_B_2",
+              "title": "Propoziția 2: conversiune și obversiune",
+              "points": 4,
+              "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 2.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_B_3",
+              "title": "Propoziția 3: conversiune și obversiune",
+              "points": 4,
+              "prompt": "Aplicați explicit operațiile de conversiune și obversiune pentru propoziția 3.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, supraalterna conversei obversei propoziției 4, respectiv obversa conversei contrarei propoziției 1.",
+          "contextBlock": null,
+          "items": [
+            {
+              "id": "II_C_1",
+              "title": "Supraalterna conversei obversei propoziției 4",
+              "points": 3,
+              "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, supraalterna conversei obversei propoziției 4.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_C_2",
+              "title": "Obversa conversei contrarei propoziției 1",
+              "points": 3,
+              "prompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei contrarei propoziției 1.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Analiza opiniilor elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X și Y, opinează astfel. Pornind de la această situație: scrieți în limbaj formal opiniile, precizați corectitudinea/incorectitudinea logică și explicați corectitudinea/incorectitudinea raționamentului elevului Y.",
+          "contextBlock": {
+            "title": "Opiniile elevilor",
+            "items": [
+              "X: Dacă unele idei sunt adevărate, atunci unele idei nu sunt false.",
+              "Y: Toate zilele de vacanță sunt așteptate cu nerăbdare de către toți, deci unele zile așteptate cu nerăbdare de către toți sunt zile de vacanță."
+            ]
+          },
+          "items": [
+            {
+              "id": "II_D_X",
+              "title": "Elevul X",
+              "points": 3,
+              "prompt": "X: Dacă unele idei sunt adevărate, atunci unele idei nu sunt false.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "II_D_Y",
+              "title": "Elevul Y",
+              "points": 5,
+              "prompt": "Y: Toate zilele de vacanță sunt așteptate cu nerăbdare de către toți, deci unele zile așteptate cu nerăbdare de către toți sunt zile de vacanță.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 14,
+          "officialPrompt": "Se dau următoarele două moduri silogistice: eio-1, oao-2. Scrieți schemele, construiți un silogism în limbaj natural și verificați validitatea prin metoda diagramelor Venn.",
+          "contextBlock": null,
+          "items": [
+            {
+              "id": "III_A_eio_1",
+              "title": "Schema eio-1",
+              "points": 2,
+              "prompt": "Scrieți schema de inferență corespunzătoare modului silogistic eio-1.",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "fields": [
+                  {
+                    "fieldId": "majorPremise",
+                    "label": "Premisa majora",
+                    "placeholder": "Completeaza premisa majora."
+                  },
+                  {
+                    "fieldId": "minorPremise",
+                    "label": "Premisa minora",
+                    "placeholder": "Completeaza premisa minora."
+                  },
+                  {
+                    "fieldId": "conclusion",
+                    "label": "Concluzia",
+                    "placeholder": "Scrie concluzia."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "III_A_oao_2",
+              "title": "Schema oao-2",
+              "points": 2,
+              "prompt": "Scrieți schema de inferență corespunzătoare modului silogistic oao-2.",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "fields": [
+                  {
+                    "fieldId": "majorPremise",
+                    "label": "Premisa majora",
+                    "placeholder": "Completeaza premisa majora."
+                  },
+                  {
+                    "fieldId": "minorPremise",
+                    "label": "Premisa minora",
+                    "placeholder": "Completeaza premisa minora."
+                  },
+                  {
+                    "fieldId": "conclusion",
+                    "label": "Concluzia",
+                    "placeholder": "Scrie concluzia."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "III_A_b",
+              "title": "Silogism în limbaj natural",
+              "points": 2,
+              "prompt": "Construiți, în limbaj natural, un silogism care să corespundă uneia dintre cele două scheme de inferență scrise la subpunctul a).",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "III_A_valid_eio_1",
+              "title": "Validitate eio-1",
+              "points": 4,
+              "prompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului eio-1 și precizați decizia rezultată.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_valid_eio_1",
+                "diagramType": "venn_three_terms",
+                "inputConfig": {
+                  "label": "Validitate eio-1",
+                  "helperText": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului eio-1 și precizați decizia rezultată.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ]
+                  }
+                }
+              },
+              "additionalFields": [
+                {
+                  "fieldId": "validityDecision",
+                  "inputType": "single_choice",
+                  "label": "Decizie",
+                  "options": [
+                    {
+                      "value": "valid",
+                      "label": "Valid"
+                    },
+                    {
+                      "value": "invalid",
+                      "label": "Nevalid"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "explanation",
+                  "inputType": "long_text",
+                  "label": "Explicatie",
+                  "placeholder": "Explica pe scurt verdictul rezultat din diagrama."
+                }
+              ]
+            },
+            {
+              "id": "III_A_valid_oao_2",
+              "title": "Validitate oao-2",
+              "points": 4,
+              "prompt": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului oao-2 și precizați decizia rezultată.",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_valid_oao_2",
+                "diagramType": "venn_three_terms",
+                "inputConfig": {
+                  "label": "Validitate oao-2",
+                  "helperText": "Verificați explicit, prin metoda diagramelor Venn, validitatea modului oao-2 și precizați decizia rezultată.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp",
+                      "application/pdf"
+                    ]
+                  }
+                }
+              },
+              "additionalFields": [
+                {
+                  "fieldId": "validityDecision",
+                  "inputType": "single_choice",
+                  "label": "Decizie",
+                  "options": [
+                    {
+                      "value": "valid",
+                      "label": "Valid"
+                    },
+                    {
+                      "value": "invalid",
+                      "label": "Nevalid"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "explanation",
+                  "inputType": "long_text",
+                  "label": "Explicatie",
+                  "placeholder": "Explica pe scurt verdictul rezultat din diagrama."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, un silogism valid, prin care să justificați propoziția „Unele vehicule nu sunt electrice”.",
+          "contextBlock": null,
+          "items": [
+            {
+              "id": "III_B_1",
+              "title": "Silogism valid pentru propoziția dată",
+              "points": 6,
+              "prompt": "Construiți, atât în limbaj formal, cât și în limbaj natural, un silogism valid, prin care să justificați propoziția „Unele vehicule nu sunt electrice”.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Se dă următorul silogism: Unele dicționare de limbă franceză sunt pentru uzul elevilor de liceu, deci niciun dicționar de limbă franceză nu este carte de desenat, pentru că unele cărți de desenat nu sunt pentru uzul elevilor de liceu. Stabiliți valoarea de adevăr a enunțurilor 1–4.",
+          "contextBlock": {
+            "title": "Silogismul dat",
+            "items": [
+              "Unele dicționare de limbă franceză sunt pentru uzul elevilor de liceu.",
+              "Unele cărți de desenat nu sunt pentru uzul elevilor de liceu.",
+              "Concluzie: Niciun dicționar de limbă franceză nu este carte de desenat."
+            ]
+          },
+          "items": [
+            {
+              "id": "III_C_tf",
+              "title": "Adev?rat / Fals",
+              "points": 4,
+              "answerInput": {
+                "inputType": "true_false_table",
+                "items": [
+                  {
+                    "id": "III_C_1",
+                    "label": "1",
+                    "statement": "Concluzia silogismului este o propoziție universală afirmativă.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "III_C_2",
+                    "label": "2",
+                    "statement": "Subiectul logic al concluziei este reprezentat de termenul „dicționar de limbă franceză”.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "III_C_3",
+                    "label": "3",
+                    "statement": "Termenul major este distribuit în premisa majoră.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  },
+                  {
+                    "id": "III_C_4",
+                    "label": "4",
+                    "statement": "Termenul mediu este distribuit în ambele premise.",
+                    "options": [
+                      "A",
+                      "F"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "officialPrompt": "Se dă următoarea definiție: „Ciocănitoarea este medicul pădurii.” Menționați o regulă încălcată, precizați o altă regulă și construiți o definiție care să încalce regula precizată.",
+          "contextBlock": {
+            "title": "Definiția dată",
+            "items": [
+              "Ciocănitoarea este medicul pădurii."
+            ]
+          },
+          "items": [
+            {
+              "id": "III_D_a",
+              "title": "Regulă încălcată",
+              "points": 2,
+              "prompt": "Menționați o regulă de corectitudine pe care o încalcă definiția dată.",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "III_D_b",
+              "title": "Altă regulă",
+              "points": 2,
+              "prompt": "Precizați o regulă de corectitudine a definirii, alta decât cea menționată la subpunctul a).",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            },
+            {
+              "id": "III_D_c",
+              "title": "Definiție greșită construită",
+              "points": 2,
+              "prompt": "Construiți o definiție, având ca definit termenul „ciocănitoare”, care să încalce regula precizată la subpunctul b).",
+              "contextBlock": null,
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie raspunsul aici.",
+                  "minRows": 3
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "examId": "bac_logica_2021_v4",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_terms",
+      "diagramType": "euler",
+      "studentMode": "canvas_or_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [
+        "A is contradictory with B",
+        "C subset of A",
+        "C opposed to B, D, E",
+        "D subset of B",
+        "D opposed to A and C",
+        "D superordinate to E"
+      ],
+      "instructions": "A and B disjoint; C inside A; D inside B; E inside D; C disjoint from D and E."
+    },
+    {
+      "diagramId": "diagram_III_A_eao_1_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "eao-1",
+      "validity": "valid",
+      "teacherInstructions": "Represent MeP and SaM; conclusion SoP follows."
+    },
+    {
+      "diagramId": "diagram_III_A_aaa_2_venn",
+      "diagramType": "venn_three_terms",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "mode": "aaa-2",
+      "validity": "invalid",
+      "teacherInstructions": "Represent PaM and SaM; universal conclusion SaP does not necessarily follow."
+    }
+  ]
+}

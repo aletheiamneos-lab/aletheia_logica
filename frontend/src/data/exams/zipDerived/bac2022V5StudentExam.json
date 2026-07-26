@@ -1,0 +1,1191 @@
+{
+  "examId": "bac_logica_2022_v5",
+  "title": "BAC Logică 2022 - Varianta 5",
+  "mode": "student_exam",
+  "visibility": "student",
+  "points": {
+    "subjectI": 30,
+    "subjectII": 30,
+    "subjectIII": 30,
+    "office": 10,
+    "total": 100
+  },
+  "durationMinutes": 180,
+  "studentSafety": "Nu conține soluții, barem sau explicații teacher-only.",
+  "sections": [
+    {
+      "id": "I_A",
+      "title": "Subiectul I.A - Itemi cu alegere unică",
+      "points": 20,
+      "officialPrompt": "Scrieți pe foaia de examen litera corespunzătoare răspunsului corect, pentru fiecare dintre enunțurile de mai jos. Este corectă o singură variantă de răspuns.",
+      "items": [
+        {
+          "id": "I_A_1",
+          "title": "1",
+          "points": 2,
+          "prompt": "Demonstrația este un proces logic prin care o propoziție:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "evident falsă este conchisă din propoziții adevărate"
+              },
+              {
+                "value": "b",
+                "label": "infirmată este conchisă din propoziții false"
+              },
+              {
+                "value": "c",
+                "label": "dată este conchisă din propoziții adevărate"
+              },
+              {
+                "value": "d",
+                "label": "dată este conchisă din propoziții false"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_2",
+          "title": "2",
+          "points": 2,
+          "prompt": "Raționamentul «Dacă unii elevi de clasa a IX-a sunt sportivi, atunci unii sportivi sunt adolescenți, deoarece toți elevii de clasa a IX-a sunt adolescenți» este un exemplu de raționament:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "inductiv tare"
+              },
+              {
+                "value": "b",
+                "label": "inductiv slab"
+              },
+              {
+                "value": "c",
+                "label": "deductiv mediat"
+              },
+              {
+                "value": "d",
+                "label": "deductiv imediat"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_3",
+          "title": "3",
+          "points": 2,
+          "prompt": "Între termenii constănțean și elev se stabilește un raport logic de:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "identitate"
+              },
+              {
+                "value": "b",
+                "label": "ordonare"
+              },
+              {
+                "value": "c",
+                "label": "încrucișare"
+              },
+              {
+                "value": "d",
+                "label": "contrarietate"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_4",
+          "title": "4",
+          "points": 2,
+          "prompt": "Predicatul logic al propoziției «Toți alpiniștii sunt oameni curajoși» este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "sunt oameni curajoși"
+              },
+              {
+                "value": "b",
+                "label": "oameni curajoși"
+              },
+              {
+                "value": "c",
+                "label": "oameni"
+              },
+              {
+                "value": "d",
+                "label": "sunt"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_5",
+          "title": "5",
+          "points": 2,
+          "prompt": "Una dintre regulile de corectitudine a operației de clasificare este regula:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "raportului de ordonare între clase"
+              },
+              {
+                "value": "b",
+                "label": "eterogenității claselor"
+              },
+              {
+                "value": "c",
+                "label": "raportului de opoziție între clase"
+              },
+              {
+                "value": "d",
+                "label": "criteriului multiplu"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_6",
+          "title": "6",
+          "points": 2,
+          "prompt": "Din punct de vedere intensional, termenul nevăzător este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "negativ, concret"
+              },
+              {
+                "value": "b",
+                "label": "nevid, general"
+              },
+              {
+                "value": "c",
+                "label": "colectiv, vag"
+              },
+              {
+                "value": "d",
+                "label": "relativ, compus"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_7",
+          "title": "7",
+          "points": 2,
+          "prompt": "Concluzia inducției incomplete este întotdeauna:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "probabilă"
+              },
+              {
+                "value": "b",
+                "label": "falsă"
+              },
+              {
+                "value": "c",
+                "label": "adevărată"
+              },
+              {
+                "value": "d",
+                "label": "certă"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_8",
+          "title": "8",
+          "points": 2,
+          "prompt": "Inducția completă este tipul de raționament în care:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "se trece de la unele cazuri cercetate la toate cazurile existente"
+              },
+              {
+                "value": "b",
+                "label": "se trece de la fiecare caz cercetat la toate cazurile cercetate"
+              },
+              {
+                "value": "c",
+                "label": "concluzia se referă la cazuri necercetate în premise"
+              },
+              {
+                "value": "d",
+                "label": "premisele se referă la o parte a obiectelor de cercetat"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_9",
+          "title": "9",
+          "points": 2,
+          "prompt": "Termenul trandafir, comparativ cu termenul floare, are:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "intensiunea mai mare, dar extensiunea egală"
+              },
+              {
+                "value": "b",
+                "label": "intensiunea mai mare, dar extensiunea mai mică"
+              },
+              {
+                "value": "c",
+                "label": "intensiunea mai mică, dar extensiunea mai mare"
+              },
+              {
+                "value": "d",
+                "label": "intensiunea mai mică, dar extensiunea egală"
+              }
+            ]
+          }
+        },
+        {
+          "id": "I_A_10",
+          "title": "10",
+          "points": 2,
+          "prompt": "Propoziția «Niciun elev de liceu nu este needucat» este:",
+          "answerInput": {
+            "inputType": "single_choice",
+            "options": [
+              {
+                "value": "a",
+                "label": "particulară afirmativă"
+              },
+              {
+                "value": "b",
+                "label": "particulară negativă"
+              },
+              {
+                "value": "c",
+                "label": "universală afirmativă"
+              },
+              {
+                "value": "d",
+                "label": "universală negativă"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "I_B",
+      "title": "Subiectul I.B - Raporturi între termeni",
+      "points": 10,
+      "officialPrompt": "Reprezentați, prin metoda diagramelor Euler, pe o diagramă comună, raporturile logice dintre cei cinci termeni. Apoi stabiliți valoarea de adevăr a propozițiilor date.",
+      "contextBlock": {
+        "text": "Fie termenii A, B, C, D și E astfel încât termenii A și B sunt în raport de contrarietate, termenul C este gen față de termenii A și B; termenul D este în raport de încrucișare cu termenul C, fiind, totodată, un termen subordonat față de termenul E, care, la rândul său, este intersectat cu termenul C, dar în opoziție cu termenii A și B."
+      },
+      "items": [
+        {
+          "id": "I_B_1",
+          "title": "Diagramă Euler",
+          "points": 2,
+          "studentTask": "Reprezintă raporturile logice dintre termenii A, B, C, D și E.",
+          "answerInput": {
+            "inputType": "hybrid_diagram",
+            "requiresDiagram": true,
+            "diagramId": "diagram_I_B_euler_terms",
+            "diagramType": "euler",
+            "inputConfig": {
+              "label": "Diagrama Euler",
+              "helperText": "Desenează aici raporturile dintre termenii A, B, C, D și E.",
+              "canvas": {
+                "enabled": true,
+                "width": 720,
+                "height": 420,
+                "tools": [
+                  "pen",
+                  "eraser",
+                  "undo",
+                  "clear",
+                  "save"
+                ],
+                "allowTextLabels": true,
+                "defaultLabels": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E"
+                ],
+                "saveFormat": [
+                  "strokes_json",
+                  "png_export"
+                ]
+              },
+              "upload": {
+                "enabled": true,
+                "acceptedTypes": [
+                  "image/png",
+                  "image/jpeg",
+                  "image/webp",
+                  "application/pdf"
+                ],
+                "maxFileSizeMb": 10
+              }
+            }
+          }
+        },
+        {
+          "id": "I_B_2",
+          "title": "A/F pe baza diagramei",
+          "points": 8,
+          "items": [
+            {
+              "id": "I_B_2_a",
+              "prompt": "Unii C sunt A.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_b",
+              "prompt": "Toți B sunt D.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_c",
+              "prompt": "Niciun E nu este C.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_d",
+              "prompt": "Toți D sunt E.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_e",
+              "prompt": "Niciun A nu este B.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_f",
+              "prompt": "Toți B sunt E.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_g",
+              "prompt": "Unii C nu sunt D.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "I_B_2_h",
+              "prompt": "Unii B nu sunt C.",
+              "answerInput": {
+                "inputType": "true_false",
+                "options": [
+                  {
+                    "value": "A",
+                    "label": "Adevărat"
+                  },
+                  {
+                    "value": "F",
+                    "label": "Fals"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II",
+      "title": "Subiectul al II-lea",
+      "points": 30,
+      "contextBlock": {
+        "title": "Se dau următoarele propoziții:",
+        "items": [
+          "1. Niciun om de știință nu este superstițios.",
+          "2. Toate sucurile de fructe sunt băuturi răcoritoare dulci.",
+          "3. Unele opere de artă sunt bunuri vândute la licitație.",
+          "4. Unii profesori universitari nu sunt parlamentari."
+        ]
+      },
+      "groups": [
+        {
+          "id": "II_A",
+          "title": "A. Raporturi în pătratul logic",
+          "points": 8,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, contrara propoziției 1, subalterna propoziției 2, contradictoria propoziției 3 și subcontrara propoziției 4.",
+          "items": [
+            {
+              "id": "II_A_1",
+              "title": "Contrara propoziției 1",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_A_2",
+              "title": "Subalterna propoziției 2",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_A_3",
+              "title": "Contradictoria propoziției 3",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_A_4",
+              "title": "Subcontrara propoziției 4",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "II_B",
+          "title": "B. Conversiune și obversiune",
+          "points": 8,
+          "officialPrompt": "Aplicați explicit operațiile de conversiune și obversiune, pentru a deriva conversa și obversa corecte ale fiecăreia dintre propozițiile 2 și 3, atât în limbaj formal, cât și în limbaj natural.",
+          "items": [
+            {
+              "id": "II_B_P2",
+              "title": "Propoziția 2",
+              "fields": [
+                {
+                  "fieldId": "converse_formal",
+                  "label": "Conversa - formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "converse_natural",
+                  "label": "Conversa - limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                },
+                {
+                  "fieldId": "obverse_formal",
+                  "label": "Obversa - formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "obverse_natural",
+                  "label": "Obversa - limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_B_P3",
+              "title": "Propoziția 3",
+              "fields": [
+                {
+                  "fieldId": "converse_formal",
+                  "label": "Conversa - formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "converse_natural",
+                  "label": "Conversa - limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                },
+                {
+                  "fieldId": "obverse_formal",
+                  "label": "Obversa - formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "obverse_natural",
+                  "label": "Obversa - limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "II_C",
+          "title": "C. Operații compuse",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, obversa conversei contradictoriei propoziției 4, respectiv obversa subalternei propoziției 1.",
+          "items": [
+            {
+              "id": "II_C_1",
+              "title": "Obversa conversei contradictoriei propoziției 4",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_C_2",
+              "title": "Obversa subalternei propoziției 1",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formă logică",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "natural",
+                  "label": "Limbaj natural",
+                  "answerInput": {
+                    "inputType": "structured_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie propoziția completă în limbaj natural.",
+                      "helperText": "Păstrează termenii din propoziția inițială și schimbă doar ce cere operația logică.",
+                      "minRows": 2,
+                      "maxRows": 4
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "II_D",
+          "title": "D. Formalizarea opiniilor elevilor",
+          "points": 8,
+          "officialPrompt": "Doi elevi, X și Y, opinează astfel. Scrieți în limbaj formal opiniile, precizați corectitudinea/incorectitudinea logică și explicați incorectitudinea raționamentului elevului X.",
+          "contextBlock": {
+            "items": [
+              "X: Dacă unele animale acvatice nu sunt mamifere, atunci unele mamifere nu sunt animale acvatice.",
+              "Y: Dacă toate faptele bune sunt morale, atunci nicio faptă bună nu este imorală."
+            ]
+          },
+          "items": [
+            {
+              "id": "II_D_X",
+              "title": "Elevul X",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formalizare",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "decision",
+                  "label": "Corectitudine",
+                  "answerInput": {
+                    "inputType": "single_choice",
+                    "options": [
+                      {
+                        "value": "correct",
+                        "label": "Corect"
+                      },
+                      {
+                        "value": "incorrect",
+                        "label": "Incorect"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "fieldId": "explanation",
+                  "label": "Explicație",
+                  "answerInput": {
+                    "inputType": "long_text",
+                    "inputConfig": {
+                      "placeholder": "Explică pe scurt de ce raționamentul este corect sau incorect.",
+                      "minRows": 3,
+                      "maxRows": 6
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "II_D_Y",
+              "title": "Elevul Y",
+              "fields": [
+                {
+                  "fieldId": "formal",
+                  "label": "Formalizare",
+                  "answerInput": {
+                    "inputType": "short_text",
+                    "inputConfig": {
+                      "placeholder": "Scrie forma logică. Exemplu de format: SiP",
+                      "helperText": "Folosește notația standard: SaP, SeP, SiP, SoP, cu S/P sau termeni înlocuiți dacă este cazul."
+                    }
+                  }
+                },
+                {
+                  "fieldId": "decision",
+                  "label": "Corectitudine",
+                  "answerInput": {
+                    "inputType": "single_choice",
+                    "options": [
+                      {
+                        "value": "correct",
+                        "label": "Corect"
+                      },
+                      {
+                        "value": "incorrect",
+                        "label": "Incorect"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Subiectul al III-lea",
+      "points": 30,
+      "groups": [
+        {
+          "id": "III_A",
+          "title": "A. Moduri silogistice",
+          "points": 18,
+          "officialPrompt": "Fie următoarele două moduri silogistice: oao-3, eee-4. Scrieți schema de inferență, construiți în limbaj natural un silogism corespunzător uneia dintre scheme și verificați prin diagrame Venn validitatea fiecăruia.",
+          "items": [
+            {
+              "id": "III_A_1_oao_3",
+              "title": "Schema oao-3",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "inputConfig": {
+                  "fields": [
+                    {
+                      "fieldId": "majorPremise",
+                      "label": "Premisa majoră",
+                      "placeholder": "Completează premisa majoră. Exemplu de format: MoP"
+                    },
+                    {
+                      "fieldId": "minorPremise",
+                      "label": "Premisa minoră",
+                      "placeholder": "Completează premisa minoră. Exemplu de format: MaS"
+                    },
+                    {
+                      "fieldId": "conclusion",
+                      "label": "Concluzia",
+                      "placeholder": "Scrie concluzia. Exemplu de format: SoP"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "III_A_1_eee_4",
+              "title": "Schema eee-4",
+              "answerInput": {
+                "inputType": "syllogism_schema",
+                "inputConfig": {
+                  "fields": [
+                    {
+                      "fieldId": "majorPremise",
+                      "label": "Premisa majoră",
+                      "placeholder": "Completează premisa majoră. Exemplu de format: PeM"
+                    },
+                    {
+                      "fieldId": "minorPremise",
+                      "label": "Premisa minoră",
+                      "placeholder": "Completează premisa minoră. Exemplu de format: MeS"
+                    },
+                    {
+                      "fieldId": "conclusion",
+                      "label": "Concluzia",
+                      "placeholder": "Scrie concluzia. Exemplu de format: SeP"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "III_A_2_natural",
+              "title": "Silogism în limbaj natural",
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Construiește un silogism în limbaj natural care respectă una dintre schemele de mai sus.",
+                  "minRows": 4,
+                  "maxRows": 8
+                }
+              }
+            },
+            {
+              "id": "III_A_3_oao_3_venn",
+              "title": "Verificare Venn - oao-3",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_oao_3_venn",
+                "diagramType": "venn_three_terms",
+                "inputConfig": {
+                  "label": "Diagrama Venn",
+                  "helperText": "Desenează reprezentarea Venn pentru termenii S, P și M.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "S",
+                      "P",
+                      "M"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              },
+              "additionalFields": [
+                {
+                  "fieldId": "validityDecision",
+                  "inputType": "single_choice",
+                  "label": "Decizie",
+                  "options": [
+                    {
+                      "value": "valid",
+                      "label": "Valid"
+                    },
+                    {
+                      "value": "invalid",
+                      "label": "Nevalid"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "explanation",
+                  "inputType": "long_text",
+                  "label": "Explicație",
+                  "placeholder": "Explică pe scurt dacă din diagramă rezultă concluzia."
+                }
+              ]
+            },
+            {
+              "id": "III_A_3_eee_4_venn",
+              "title": "Verificare Venn - eee-4",
+              "answerInput": {
+                "inputType": "hybrid_diagram",
+                "requiresDiagram": true,
+                "diagramId": "diagram_III_A_eee_4_venn",
+                "diagramType": "venn_three_terms",
+                "inputConfig": {
+                  "label": "Diagrama Venn",
+                  "helperText": "Desenează reprezentarea Venn pentru termenii S, P și M.",
+                  "canvas": {
+                    "enabled": true,
+                    "width": 680,
+                    "height": 420,
+                    "tools": [
+                      "pen",
+                      "eraser",
+                      "undo",
+                      "clear",
+                      "save"
+                    ],
+                    "allowTextLabels": true,
+                    "defaultLabels": [
+                      "S",
+                      "P",
+                      "M"
+                    ],
+                    "saveFormat": [
+                      "strokes_json",
+                      "png_export"
+                    ]
+                  },
+                  "upload": {
+                    "enabled": true,
+                    "acceptedTypes": [
+                      "image/png",
+                      "image/jpeg",
+                      "image/webp"
+                    ],
+                    "maxFileSizeMb": 10
+                  }
+                }
+              },
+              "additionalFields": [
+                {
+                  "fieldId": "validityDecision",
+                  "inputType": "single_choice",
+                  "label": "Decizie",
+                  "options": [
+                    {
+                      "value": "valid",
+                      "label": "Valid"
+                    },
+                    {
+                      "value": "invalid",
+                      "label": "Nevalid"
+                    }
+                  ]
+                },
+                {
+                  "fieldId": "explanation",
+                  "inputType": "long_text",
+                  "label": "Explicație",
+                  "placeholder": "Explică pe scurt dacă din diagramă rezultă concluzia."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "III_B",
+          "title": "B. Construirea unui silogism valid",
+          "points": 6,
+          "officialPrompt": "Construiți, atât în limbaj formal cât și în limbaj natural, un silogism valid prin care să justificați propoziția «Niciun elev conștiincios nu este îngrijorat în legătură cu promovarea examenului de bacalaureat»."
+        },
+        {
+          "id": "III_C",
+          "title": "C. Analiza silogismului dat",
+          "points": 4,
+          "officialPrompt": "Fie următorul silogism: Niciun automobil electric nu este poluant, întrucât niciun automobil electric nu este vehicul generator de gaze nocive, iar toate vehiculele generatoare de gaze nocive sunt poluante.",
+          "items": [
+            {
+              "id": "III_C_1",
+              "prompt": "Termenul major este distribuit în premisa majoră.",
+              "answerInput": {
+                "inputType": "true_false"
+              }
+            },
+            {
+              "id": "III_C_2",
+              "prompt": "Subiectul logic al concluziei este reprezentat de termenul «automobil electric»."
+            },
+            {
+              "id": "III_C_3",
+              "prompt": "Concluzia silogismului este o propoziție universală negativă."
+            },
+            {
+              "id": "III_C_4",
+              "prompt": "Termenul mediu este distribuit în premisa minoră."
+            }
+          ]
+        },
+        {
+          "id": "III_D",
+          "title": "D. Definiția",
+          "points": 6,
+          "officialPrompt": "Fie următoarea definiție: Filosofia este disciplina care studiază concepțiile filosofice.",
+          "items": [
+            {
+              "id": "III_D_1",
+              "prompt": "Menționați o regulă de corectitudine pe care o încalcă definiția dată.",
+              "answerInput": {
+                "inputType": "long_text",
+                "inputConfig": {
+                  "placeholder": "Scrie regula de definire încălcată."
+                }
+              }
+            },
+            {
+              "id": "III_D_2",
+              "prompt": "Precizați o altă regulă de corectitudine a definirii, diferită de regula identificată la punctul 1 și construiți o definiție care să o încalce, având ca definit termenul «filosofie»."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "diagramSpecs": [
+    {
+      "diagramId": "diagram_I_B_euler",
+      "type": "euler_relation_map",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "relations": [],
+      "natural": "A, B și C se intersectează parțial; D este plasat în zona comună A∩B∩C; E este separat de toate celelalte clase.",
+      "renderHints": {
+        "style": "euler_relation_map",
+        "caption": "Diagrama Euler comună pentru verificarea afirmațiilor a–h."
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_valid_eio_1",
+      "type": "venn_three_terms",
+      "mode": "eio-1",
+      "validity": "valid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": null,
+      "vennActions": [],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "Concluzia SoP rezultă din diagramă.",
+        "showShadedRegions": true,
+        "showXMarks": true
+      }
+    },
+    {
+      "diagramId": "diagram_III_A_valid_oao_2",
+      "type": "venn_three_terms",
+      "mode": "oao-2",
+      "validity": "nevalid",
+      "labels": {
+        "S": "S",
+        "P": "P",
+        "M": "M"
+      },
+      "scheme": null,
+      "vennActions": [],
+      "renderHints": {
+        "style": "venn3_small",
+        "caption": "Concluzia SoP nu rezultă necesar; modul este nevalid.",
+        "showShadedRegions": true,
+        "showXMarks": true
+      }
+    }
+  ],
+  "contractVersion": "DERIVED_FROM_EXPLAINED_RESOLUTION_V1",
+  "studentDiagramPolicy": {
+    "studentNeverSeesTeacherDiagram": true,
+    "inputs": [
+      "canvas",
+      "image_upload"
+    ]
+  },
+  "teacherDiagramPolicy": {
+    "renderFromDiagramContract": true
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "page_number": 2,
+  "entries": [
+    {
+      "text": "Ministerul Educatiei Nationale si Cercetari Stintifice",
+      "x": 1215.01416015625,
+      "y": 236.09225463867188,
+      "score": 0.9503803319401212,
+      "page_number": 2
+    },
+    {
+      "text": "CentrulNationaldeEvaluaresiExaminare",
+      "x": 1333.874267578125,
+      "y": 307.7157287597656,
+      "score": 0.993129132522477,
+      "page_number": 2
+    },
+    {
+      "text": "8.",
+      "x": 364.5042724609375,
+      "y": 381.991943359375,
+      "score": 0.9753975570201874,
+      "page_number": 2
+    },
+    {
+      "text": "Inductiacompletaeste:",
+      "x": 525.625732421875,
+      "y": 384.6446838378906,
+      "score": 0.9937653711863926,
+      "page_number": 2
+    },
+    {
+      "text": "oabstractizareintr-oclasainfinita,concretadeobiecte",
+      "x": 525.625732421875,
+      "y": 461.5736083984375,
+      "score": 0.9632648369845223,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 469.5317687988281,
+      "score": 0.9869831800460815,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 414.68963623046875,
+      "y": 541.1552734375,
+      "score": 0.9952631890773773,
+      "page_number": 2
+    },
+    {
+      "text": "oconcretizareintr-oclasaabstractadeobiecte",
+      "x": 530.9083862304688,
+      "y": 541.1552734375,
+      "score": 0.9828532636165619,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 626.0423583984375,
+      "score": 0.9329744875431061,
+      "page_number": 2
+    },
+    {
+      "text": "Oparticularizareintr-o clasa infinita de obiecte",
+      "x": 530.9083862304688,
+      "y": 618.084228515625,
+      "score": 0.9549916374186674,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 419.9722900390625,
+      "y": 700.318603515625,
+      "score": 0.9970968961715698,
+      "page_number": 2
+    },
+    {
+      "text": "ogeneralizareintr-oclasafinitadeobiecte",
+      "x": 522.984375,
+      "y": 700.318603515625,
+      "score": 0.9752965729970199,
+      "page_number": 2
+    },
+    {
+      "text": "9.",
+      "x": 369.78692626953125,
+      "y": 856.8291625976562,
+      "score": 0.9968958795070648,
+      "page_number": 2
+    },
+    {
+      "text": "Eliminandtermenuluianimalsalbaticproprietateasalbatic:",
+      "x": 538.8323974609375,
+      "y": 848.8709716796875,
+      "score": 0.9920954571829902,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 941.7162475585938,
+      "score": 0.9971278607845306,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneacreste,iarextensiuneascade",
+      "x": 538.8323974609375,
+      "y": 933.7581176757812,
+      "score": 0.9882327994784793,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 417.3309631347656,
+      "y": 1013.3397827148438,
+      "score": 0.9981136322021484,
+      "page_number": 2
+    },
+    {
+      "text": "extensiuneacresteiarintensiuneascade",
+      "x": 536.1910400390625,
+      "y": 1013.3397827148438,
+      "score": 0.9968452519840665,
+      "page_number": 2
+    },
+    {
+      "text": "C.",
+      "x": 417.3309631347656,
+      "y": 1095.5740966796875,
+      "score": 0.9173640608787537,
+      "page_number": 2
+    },
+    {
+      "text": "intensiuneanusemodifica,iarextensiuneacreste",
+      "x": 533.5497436523438,
+      "y": 1090.2686767578125,
+      "score": 0.990188097411936,
+      "page_number": 2
+    },
+    {
+      "text": "extensiunea nu se modifica, iarintensiunea creste",
+      "x": 533.5497436523438,
+      "y": 1167.1976318359375,
+      "score": 0.9632087763474912,
+      "page_number": 2
+    },
+    {
+      "text": "d.",
+      "x": 422.6136474609375,
+      "y": 1175.15576171875,
+      "score": 0.9947177469730377,
+      "page_number": 2
+    },
+    {
+      "text": "10.",
+      "x": 372.42828369140625,
+      "y": 1336.9718017578125,
+      "score": 0.997511088848114,
+      "page_number": 2
+    },
+    {
+      "text": "Propozitia Uni angajati din sectorul public sunt nemotivati este:",
+      "x": 533.5497436523438,
+      "y": 1326.3609619140625,
+      "score": 0.9727927006207979,
+      "page_number": 2
+    },
+    {
+      "text": "a.",
+      "x": 417.3309631347656,
+      "y": 1421.85888671875,
+      "score": 0.9965847730636597,
+      "page_number": 2
+    },
+    {
+      "text": "universalaafirmativa",
+      "x": 538.8323974609375,
+      "y": 1411.248046875,
+      "score": 0.9951662868261337,
+      "page_number": 2
+    },
+    {
+      "text": "b.",
+      "x": 417.3309631347656,
+      "y": 1490.8297119140625,
+      "score": 0.9990520179271698,
+      "page_number": 2
+    },
+    {
+      "text": "universala negativa",
+      "x": 533.5497436523438,
+      "y": 1488.177001953125,
+      "score": 0.9876567721366882,
+      "page_number": 2
+    },
+    {
+      "text": "c. particulara afirmativa",
+      "x": 406.765625,
+      "y": 1567.7586669921875,
+      "score": 0.9517139220237731,
+      "page_number": 2
+    },
+    {
+      "text": "d. particulara negativa",
+      "x": 412.0483093261719,
+      "y": 1644.6876220703125,
+      "score": 0.9830315164897753,
+      "page_number": 2
+    },
+    {
+      "text": "(30depuncte)",
+      "x": 2857.9248046875,
+      "y": 1793.239990234375,
+      "score": 0.9785428444544474,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULaIII-lea",
+      "x": 372.42828369140625,
+      "y": 1803.850830078125,
+      "score": 0.9234483803019804,
+      "page_number": 2
+    },
+    {
+      "text": "Sedauurmatoarelepropoziti:",
+      "x": 367.1455993652344,
+      "y": 1878.1270751953125,
+      "score": 0.988704658471621,
+      "page_number": 2
+    },
+    {
+      "text": "1.Uneleipotezestintifice sunt confirmate.",
+      "x": 586.3764038085938,
+      "y": 1960.3614501953125,
+      "score": 0.967535905721711,
+      "page_number": 2
+    },
+    {
+      "text": "2.",
+      "x": 583.735107421875,
+      "y": 2037.2904052734375,
+      "score": 0.9985735416412354,
+      "page_number": 2
+    },
+    {
+      "text": "Unelepiesedemobiliernusuntreconditionabile.",
+      "x": 689.3884887695312,
+      "y": 2037.2904052734375,
+      "score": 0.9950914050257483,
+      "page_number": 2
+    },
+    {
+      "text": "3.",
+      "x": 583.735107421875,
+      "y": 2114.21923828125,
+      "score": 0.9989741146564484,
+      "page_number": 2
+    },
+    {
+      "text": "Niciun infractor nu este nevinovat.",
+      "x": 681.4644775390625,
+      "y": 2114.21923828125,
+      "score": 0.9842954908098493,
+      "page_number": 2
+    },
+    {
+      "text": "4. Toti acizii sunt substante corozive.",
+      "x": 578.452392578125,
+      "y": 2188.49560546875,
+      "score": 0.9947545757660499,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3048.100830078125,
+      "y": 2345.006103515625,
+      "score": 0.942772388458252,
+      "page_number": 2
+    },
+    {
+      "text": "A.Precizati formula propozitiei 4.",
+      "x": 367.1455993652344,
+      "y": 2347.658935546875,
+      "score": 0.9949282179860508,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna",
+      "x": 364.5042724609375,
+      "y": 2427.240478515625,
+      "score": 0.9836164139784299,
+      "page_number": 2
+    },
+    {
+      "text": "6 puncte",
+      "x": 3048.100830078125,
+      "y": 2501.516845703125,
+      "score": 0.9107634797692299,
+      "page_number": 2
+    },
+    {
+      "text": "propozitiei 2.",
+      "x": 475.4403381347656,
+      "y": 2509.474853515625,
+      "score": 0.9992673397064209,
+      "page_number": 2
+    },
+    {
+      "text": "C.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+      "x": 367.1455993652344,
+      "y": 2583.751220703125,
+      "score": 0.9585930429006878,
+      "page_number": 2
+    },
+    {
+      "text": "corecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.",
+      "x": 475.4403381347656,
+      "y": 2663.332763671875,
+      "score": 0.9886732316508735,
+      "page_number": 2
+    },
+    {
+      "text": "10 puncte",
+      "x": 3021.6875,
+      "y": 2740.26171875,
+      "score": 0.990608811378479,
+      "page_number": 2
+    },
+    {
+      "text": "D. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+      "x": 367.1455993652344,
+      "y": 2814.537841796875,
+      "score": 0.9716989432062422,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 2817.190673828125,
+      "score": 0.9989339262247086,
+      "page_number": 2
+    },
+    {
+      "text": "E. Doi elevi, X si Y, opineaza astfel:",
+      "x": 361.8629150390625,
+      "y": 2891.466796875,
+      "score": 0.9863641387537906,
+      "page_number": 2
+    },
+    {
+      "text": "X:Dacauniserpinusuntreptileveninoase,atunci unelereptileveninoasenusuntserpi.",
+      "x": 430.53765869140625,
+      "y": 2976.35400390625,
+      "score": 0.9841196343496248,
+      "page_number": 2
+    },
+    {
+      "text": "Y:Dacatoti trandafiri suntflori cughimpi,atunci uneleflori cughimpi sunt trandafiri.",
+      "x": 433.1789855957031,
+      "y": 3055.935546875,
+      "score": 0.9499306075629734,
+      "page_number": 2
+    },
+    {
+      "text": "Porninddelaaceastasituatie:",
+      "x": 430.53765869140625,
+      "y": 3207.140869140625,
+      "score": 0.9709924437381603,
+      "page_number": 2
+    },
+    {
+      "text": "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+      "x": 538.8323974609375,
+      "y": 3292.02783203125,
+      "score": 0.9617760383857871,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3048.100830078125,
+      "y": 3284.069580078125,
+      "score": 0.9780557155609131,
+      "page_number": 2
+    },
+    {
+      "text": "b. explicati corectitudinea rationamentelor formalizate.",
+      "x": 536.1910400390625,
+      "y": 3363.6513671875,
+      "score": 0.9871647006699017,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3045.45947265625,
+      "y": 3363.6513671875,
+      "score": 0.9984448552131653,
+      "page_number": 2
+    },
+    {
+      "text": "(30 de puncte)",
+      "x": 2863.20751953125,
+      "y": 3520.161865234375,
+      "score": 0.9597568384238652,
+      "page_number": 2
+    },
+    {
+      "text": "SUBIECTULalIII-lea",
+      "x": 364.5042724609375,
+      "y": 3522.814697265625,
+      "score": 0.9134276741080813,
+      "page_number": 2
+    },
+    {
+      "text": "A.Fie urmatoarele doua moduri silogistice:eio-1,aee-2.",
+      "x": 364.5042724609375,
+      "y": 3599.74365234375,
+      "score": 0.9774173906555882,
+      "page_number": 2
+    },
+    {
+      "text": "1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice",
+      "x": 454.3096618652344,
+      "y": 3684.630615234375,
+      "score": 0.9855290150936739,
+      "page_number": 2
+    },
+    {
+      "text": "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+      "x": 451.6683349609375,
+      "y": 3756.254150390625,
+      "score": 0.9840915844492291,
+      "page_number": 2
+    },
+    {
+      "text": "schemedeinferenta.",
+      "x": 454.3096618652344,
+      "y": 3841.141357421875,
+      "score": 0.9930460817284055,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3034.894287109375,
+      "y": 3838.488525390625,
+      "score": 0.9440341293811798,
+      "page_number": 2
+    },
+    {
+      "text": "2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri",
+      "x": 449.0269775390625,
+      "y": 3915.41748046875,
+      "score": 0.9896207457841045,
+      "page_number": 2
+    },
+    {
+      "text": "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+      "x": 456.95098876953125,
+      "y": 3997.65185546875,
+      "score": 0.9943877133456144,
+      "page_number": 2
+    },
+    {
+      "text": "4 puncte",
+      "x": 3034.894287109375,
+      "y": 3994.999267578125,
+      "score": 0.9687183946371078,
+      "page_number": 2
+    },
+    {
+      "text": "B. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin",
+      "x": 367.1455993652344,
+      "y": 4069.275390625,
+      "score": 0.983266244916355,
+      "page_number": 2
+    },
+    {
+      "text": "care sa justificati propozitia“Unele animale terestre sunt vertebrate”",
+      "x": 451.6683349609375,
+      "y": 4151.509765625,
+      "score": 0.9681488445826939,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3048.100830078125,
+      "y": 4148.85693359375,
+      "score": 0.9988213181495667,
+      "page_number": 2
+    },
+    {
+      "text": "C.Fieurmatoareadefinitie:Pisicaesteunanimaldomestic.",
+      "x": 369.78692626953125,
+      "y": 4231.09130859375,
+      "score": 0.9939580892141049,
+      "page_number": 2
+    },
+    {
+      "text": "a.Mentionati o regula de corectitudine pe care oincalca definitia data.",
+      "x": 449.0269775390625,
+      "y": 4308.0205078125,
+      "score": 0.958222337172065,
+      "page_number": 2
+    },
+    {
+      "text": "2 puncte",
+      "x": 3053.383544921875,
+      "y": 4308.0205078125,
+      "score": 0.9515851140022278,
+      "page_number": 2
+    },
+    {
+      "text": "b. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si",
+      "x": 443.74432373046875,
+      "y": 4382.29638671875,
+      "score": 0.9682329952061831,
+      "page_number": 2
+    },
+    {
+      "text": "construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.",
+      "x": 583.735107421875,
+      "y": 4464.53076171875,
+      "score": 0.9728278796884078,
+      "page_number": 2
+    },
+    {
+      "text": "8 puncte",
+      "x": 3048.100830078125,
+      "y": 4461.87841796875,
+      "score": 0.9922651052474976,
+      "page_number": 2
+    },
+    {
+      "text": "Proba scrisa la logica,argumentare si comunicare",
+      "x": 364.5042724609375,
+      "y": 4902.22998046875,
+      "score": 0.97938139239947,
+      "page_number": 2
+    },
+    {
+      "text": "Varianta 9",
+      "x": 3034.894287109375,
+      "y": 4902.22998046875,
+      "score": 0.9732686638832092,
+      "page_number": 2
+    },
+    {
+      "text": "Pagina 2 din 2",
+      "x": 1656.1171875,
+      "y": 4971.20068359375,
+      "score": 0.9760546939713615,
+      "page_number": 2
+    }
+  ],
+  "lines": [
+    "Ministerul Educatiei Nationale si Cercetari Stintifice",
+    "CentrulNationaldeEvaluaresiExaminare",
+    "8.",
+    "Inductiacompletaeste:",
+    "oabstractizareintr-oclasainfinita,concretadeobiecte",
+    "a.",
+    "b.",
+    "oconcretizareintr-oclasaabstractadeobiecte",
+    "C.",
+    "Oparticularizareintr-o clasa infinita de obiecte",
+    "d.",
+    "ogeneralizareintr-oclasafinitadeobiecte",
+    "9.",
+    "Eliminandtermenuluianimalsalbaticproprietateasalbatic:",
+    "a.",
+    "intensiuneacreste,iarextensiuneascade",
+    "b.",
+    "extensiuneacresteiarintensiuneascade",
+    "C.",
+    "intensiuneanusemodifica,iarextensiuneacreste",
+    "extensiunea nu se modifica, iarintensiunea creste",
+    "d.",
+    "10.",
+    "Propozitia Uni angajati din sectorul public sunt nemotivati este:",
+    "a.",
+    "universalaafirmativa",
+    "b.",
+    "universala negativa",
+    "c. particulara afirmativa",
+    "d. particulara negativa",
+    "(30depuncte)",
+    "SUBIECTULaIII-lea",
+    "Sedauurmatoarelepropoziti:",
+    "1.Uneleipotezestintifice sunt confirmate.",
+    "2.",
+    "Unelepiesedemobiliernusuntreconditionabile.",
+    "3.",
+    "Niciun infractor nu este nevinovat.",
+    "4. Toti acizii sunt substante corozive.",
+    "2 puncte",
+    "A.Precizati formula propozitiei 4.",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna",
+    "6 puncte",
+    "propozitiei 2.",
+    "C.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa",
+    "corecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.",
+    "10 puncte",
+    "D. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.",
+    "4 puncte",
+    "E. Doi elevi, X si Y, opineaza astfel:",
+    "X:Dacauniserpinusuntreptileveninoase,atunci unelereptileveninoasenusuntserpi.",
+    "Y:Dacatoti trandafiri suntflori cughimpi,atunci uneleflori cughimpi sunt trandafiri.",
+    "Porninddelaaceastasituatie:",
+    "a.scrieti, in limbaj formal, opinile celor doi elevi;",
+    "4 puncte",
+    "b. explicati corectitudinea rationamentelor formalizate.",
+    "4 puncte",
+    "(30 de puncte)",
+    "SUBIECTULalIII-lea",
+    "A.Fie urmatoarele doua moduri silogistice:eio-1,aee-2.",
+    "1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice",
+    "date si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua",
+    "schemedeinferenta.",
+    "8 puncte",
+    "2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri",
+    "silogisticedate,precizandtotodatadecizialacareatiajuns.",
+    "4 puncte",
+    "B. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin",
+    "care sa justificati propozitia“Unele animale terestre sunt vertebrate”",
+    "8 puncte",
+    "C.Fieurmatoareadefinitie:Pisicaesteunanimaldomestic.",
+    "a.Mentionati o regula de corectitudine pe care oincalca definitia data.",
+    "2 puncte",
+    "b. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si",
+    "construiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.",
+    "8 puncte",
+    "Proba scrisa la logica,argumentare si comunicare",
+    "Varianta 9",
+    "Pagina 2 din 2"
+  ],
+  "text": "Ministerul Educatiei Nationale si Cercetari Stintifice\nCentrulNationaldeEvaluaresiExaminare\n8.\nInductiacompletaeste:\noabstractizareintr-oclasainfinita,concretadeobiecte\na.\nb.\noconcretizareintr-oclasaabstractadeobiecte\nC.\nOparticularizareintr-o clasa infinita de obiecte\nd.\nogeneralizareintr-oclasafinitadeobiecte\n9.\nEliminandtermenuluianimalsalbaticproprietateasalbatic:\na.\nintensiuneacreste,iarextensiuneascade\nb.\nextensiuneacresteiarintensiuneascade\nC.\nintensiuneanusemodifica,iarextensiuneacreste\nextensiunea nu se modifica, iarintensiunea creste\nd.\n10.\nPropozitia Uni angajati din sectorul public sunt nemotivati este:\na.\nuniversalaafirmativa\nb.\nuniversala negativa\nc. particulara afirmativa\nd. particulara negativa\n(30depuncte)\nSUBIECTULaIII-lea\nSedauurmatoarelepropoziti:\n1.Uneleipotezestintifice sunt confirmate.\n2.\nUnelepiesedemobiliernusuntreconditionabile.\n3.\nNiciun infractor nu este nevinovat.\n4. Toti acizii sunt substante corozive.\n2 puncte\nA.Precizati formula propozitiei 4.\nB. Construiti, atat in limbaj formal cat si in limbaj natural, subcontrara propozitiei 1 si supraalterna\n6 puncte\npropozitiei 2.\nC.Aplicati explicit operatile de conversiune si obversiune, pentru a deriva conversa si obversa\ncorecte ale fiecareia dintre propozitile 1 si 4, atat in limbaj formal, cat si in limbaj natural.\n10 puncte\nD. Reprezentati prin metoda diagramelor Euler propozitia categorica 3.\n4 puncte\nE. Doi elevi, X si Y, opineaza astfel:\nX:Dacauniserpinusuntreptileveninoase,atunci unelereptileveninoasenusuntserpi.\nY:Dacatoti trandafiri suntflori cughimpi,atunci uneleflori cughimpi sunt trandafiri.\nPorninddelaaceastasituatie:\na.scrieti, in limbaj formal, opinile celor doi elevi;\n4 puncte\nb. explicati corectitudinea rationamentelor formalizate.\n4 puncte\n(30 de puncte)\nSUBIECTULalIII-lea\nA.Fie urmatoarele doua moduri silogistice:eio-1,aee-2.\n1.Scrietischemadeinferentacorespunzatoarefiecaruiadintreceledouamodurisilogistice\ndate si construiti, in limbaj natural, un silogism care sa corespunda uneia dintre cele doua\nschemedeinferenta.\n8 puncte\n2. Verificati explicit, prin metoda diagramelor Venn, validitatea oricaruia dintre cele doua moduri\nsilogisticedate,precizandtotodatadecizialacareatiajuns.\n4 puncte\nB. Construiti, atat in limbaj formal cat si in limbaj natural, un argument valid cu doua premise, prin\ncare sa justificati propozitia“Unele animale terestre sunt vertebrate”\n8 puncte\nC.Fieurmatoareadefinitie:Pisicaesteunanimaldomestic.\na.Mentionati o regula de corectitudine pe care oincalca definitia data.\n2 puncte\nb. Enuntati doua reguli de corectitudine a definiri, diferite de regula de la punctul a. si\nconstruiti, pentru fiecare dintre acestea, cate o definitie care sa le incalce.\n8 puncte\nProba scrisa la logica,argumentare si comunicare\nVarianta 9\nPagina 2 din 2"
+}

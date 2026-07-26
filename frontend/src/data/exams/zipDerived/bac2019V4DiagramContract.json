@@ -1,0 +1,59 @@
+{
+  "examId": "bac_logica_2019_v4",
+  "diagrams": [
+    {
+      "diagramId": "diagram_I_B_euler_2019_v4",
+      "diagramType": "euler",
+      "studentMode": "canvas_or_upload",
+      "teacherMode": "render_from_contract",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "relations": [
+        "A contradicts B",
+        "C subordinate to A",
+        "C contrary to D",
+        "D species of A",
+        "D opposite to B"
+      ],
+      "notes": "B is disjoint from A; C and D are included in A and mutually contrary."
+    },
+    {
+      "diagramId": "diagram_III_A_aae_2_2019_v4",
+      "diagramType": "venn_three_terms",
+      "mode": "aae-2",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "validity": "invalid",
+      "teacherMarks": [
+        "shade P outside M",
+        "shade S outside M",
+        "conclusion SeP does not follow"
+      ]
+    },
+    {
+      "diagramId": "diagram_III_A_iai_3_2019_v4",
+      "diagramType": "venn_three_terms",
+      "mode": "iai-3",
+      "labels": [
+        "S",
+        "P",
+        "M"
+      ],
+      "validity": "valid",
+      "teacherMarks": [
+        "place x in M and P",
+        "shade M outside S",
+        "conclusion SiP follows"
+      ]
+    }
+  ],
+  "studentInstruction": "Elevul vede doar zona de desen sau upload, nu diagrama-model.",
+  "teacherInstruction": "Profesorul vede diagrama-model generata din contract, nu desenul elevului."
+}

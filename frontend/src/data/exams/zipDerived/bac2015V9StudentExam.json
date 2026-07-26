@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "id": "bac-logica-2015-v9",
+    "year": 2015,
+    "variant": "Varianta 9",
+    "type": "BAC Logică",
+    "student_visible": true,
+    "teacher_solution_visible": false,
+    "source_subject": "Examenul de bacalaureat național 2015_V9.pdf",
+    "source_barem": "Examenul de bacalaureat național 2015_V9_BAREM.pdf",
+    "total_points": 90,
+    "office_points": 10
+  },
+  "student_exam": {
+    "title": "BAC Logică 2015 - Varianta 9",
+    "mode": "exam",
+    "instructions": [
+      "Elevul vede doar cerințele și câmpurile de completare.",
+      "Soluțiile și justificările rămân teacher-only/backend."
+    ],
+    "subjects": [
+      {
+        "id": "S1",
+        "title": "Subiectul I",
+        "points": 30,
+        "items": [
+          {
+            "id": "I.A.1",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.2",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.3",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.4",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.5",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.6",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.7",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.8",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.9",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          },
+          {
+            "id": "I.A.10",
+            "type": "single_choice",
+            "points": 3,
+            "prompt": "Item grilă conform subiectului oficial. Se păstrează variantele a-d din PDF."
+          }
+        ]
+      },
+      {
+        "id": "S2",
+        "title": "Subiectul al II-lea",
+        "points": 30,
+        "items": [
+          {
+            "id": "II.A",
+            "type": "text_input",
+            "points": 2,
+            "prompt": "Precizați formula propoziției 2.",
+            "placeholder": "Exemplu de format: SaP / SeP / SiP / SoP"
+          },
+          {
+            "id": "II.B",
+            "type": "structured_inputs",
+            "points": 6,
+            "prompt": "Construiți, în limbaj formal și natural, contrara propoziției 1 și subcontrara propoziției 4.",
+            "placeholder": "Scrieți separat: formulă logică + propoziție în limbaj natural."
+          },
+          {
+            "id": "II.C",
+            "type": "structured_inputs",
+            "points": 10,
+            "prompt": "Aplicați conversiunea și obversiunea pentru propozițiile 3 și 4.",
+            "placeholder": "Pentru fiecare: conversa formală, conversa naturală, obversa formală, obversa naturală."
+          },
+          {
+            "id": "II.D",
+            "type": "diagram_euler",
+            "points": 4,
+            "prompt": "Reprezentați prin metoda diagramelor Euler propoziția categorică 2.",
+            "placeholder": "Desenați două cercuri S/P și marcați existența în zona S din afara lui P."
+          },
+          {
+            "id": "II.E",
+            "type": "structured_inputs",
+            "points": 8,
+            "prompt": "Formalizați raționamentele X și Y și explicați corectitudinea lor.",
+            "placeholder": "Exemplu de structură: X: SoP -> PoS; decizie: valid/nevalid; explicație scurtă."
+          }
+        ]
+      },
+      {
+        "id": "S3",
+        "title": "Subiectul al III-lea",
+        "points": 30,
+        "items": [
+          {
+            "id": "III.A",
+            "type": "syllogism_schema_and_venn",
+            "points": 12,
+            "prompt": "Pentru modurile silogistice aii-1 și eao-4: scrieți schema, construiți un silogism natural și verificați prin Venn.",
+            "placeholder": "Completați schema cu M, P, S; apoi scrieți un exemplu natural."
+          },
+          {
+            "id": "III.B",
+            "type": "argument_construction",
+            "points": 8,
+            "prompt": "Construiți un argument valid cu două premise care să justifice propoziția „Unii oameni nu sunt onești”.",
+            "placeholder": "Premisa majoră: ...; Premisa minoră: ...; Concluzie: ..."
+          },
+          {
+            "id": "III.C",
+            "type": "definition_correction",
+            "points": 10,
+            "prompt": "Analizați definiția „Logica = știința logicii”: regula încălcată, alte două reguli și definiții care le încalcă.",
+            "placeholder": "Regula încălcată: ...; Altă regulă 1 + exemplu; Altă regulă 2 + exemplu."
+          }
+        ]
+      }
+    ]
+  }
+}
