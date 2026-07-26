@@ -41,7 +41,7 @@ export default function ButtonSystemPreviewPage() {
       <div className="button-system-preview-header">
         <div>
           <p className="section-kicker">Preview butoane</p>
-          <h1 className="button-system-preview-title">Aletheia Button System</h1>
+          <h1 className="button-system-preview-title">A mentor Button System</h1>
         </div>
         <div className="button-system-preview-theme-list" aria-label="Teme preview">
           {previewThemes.map((theme) => {

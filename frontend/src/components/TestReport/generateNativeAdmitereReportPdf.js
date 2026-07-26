@@ -118,7 +118,7 @@ function paintPage(doc, pageNumber) {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7)
   setText(doc, mix(COLORS.muted, COLORS.page, 0.8))
-  doc.text(`Aletheia | raport admitere | ${pageNumber}`, PAGE.width / 2, 291, { align: "center" })
+  doc.text(`A mentor | raport admitere | ${pageNumber}`, PAGE.width / 2, 291, { align: "center" })
 }
 
 function centeredCircleText(doc, text, cx, cy, radius, options = {}) {
@@ -175,7 +175,7 @@ function drawLineIcon(doc, type, x, y, color = COLORS.navy) {
   doc.line(x + 1.1, y + 9.8, x + 2.7, y + 7.8)
 }
 
-function drawAletheiaLogoMark(doc, centerX, y, height) {
+function drawBrandLogoMark(doc, centerX, y, height) {
   const width = (height * 124) / 190
   const x = centerX - width / 2
   const scale = height / 190
@@ -207,12 +207,12 @@ function drawHeader(doc, reportData) {
   centeredCircleText(doc, "", centerX - 31.5, top + 6.5, 0.8, { fill: COLORS.gold, border: COLORS.gold, fontSize: 1 })
   centeredCircleText(doc, "", centerX + 31.5, top + 6.5, 0.8, { fill: COLORS.gold, border: COLORS.gold, fontSize: 1 })
 
-  drawAletheiaLogoMark(doc, centerX, top - 5.5, 15.5)
+  drawBrandLogoMark(doc, centerX, top - 5.5, 15.5)
 
   doc.setFont("helvetica", "bold")
   doc.setFontSize(10.2)
   setText(doc, COLORS.navy)
-  doc.text("ALETHEIA", centerX, top + 16, { align: "center" })
+  doc.text("A MENTOR", centerX, top + 16, { align: "center" })
   doc.setFont("helvetica", "normal")
   doc.setFontSize(6.2)
   setText(doc, COLORS.gold)

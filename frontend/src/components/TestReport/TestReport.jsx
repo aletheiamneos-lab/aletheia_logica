@@ -104,7 +104,7 @@ function ReportHeader({ data }) {
         <span className="report-brand-dot" />
         <div className="report-brand-center">
           <ReportCrest />
-          <div className="report-brand-name">ALETHEIA</div>
+          <div className="report-brand-name">A MENTOR</div>
           <div className="report-brand-tagline">EXCELENȚĂ PRIN EVALUARE</div>
         </div>
         <span className="report-brand-dot" />
@@ -316,7 +316,7 @@ function ReportFooter() {
   return (
     <footer className="report-footer">
       <span aria-hidden="true" />
-      <p>made by Aletheia</p>
+      <p>made by A mentor</p>
       <span aria-hidden="true" />
     </footer>
   )

@@ -14,6 +14,7 @@ function TeacherTestEditor({
   isSaving,
   isPublishing,
   message,
+  error,
   onCollapse,
 }) {
   const [activeLesson, setActiveLesson] = useState(1)
@@ -68,6 +69,7 @@ function TeacherTestEditor({
 
   return (
     <section className="panel p-5 sm:p-6 testing-admin-editor-builder">
+      {error ? <div className="alert-panel mb-4">{error}</div> : null}
       <div className="testing-admin-editor-header flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div className="testing-admin-editor-copy">
           <p className="section-kicker">Test</p>

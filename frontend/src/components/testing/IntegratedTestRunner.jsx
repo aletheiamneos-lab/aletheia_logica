@@ -225,7 +225,7 @@ function IntegratedTestRunner({
             >
               {isEmbedded
                 ? "Corectarea apare dupa submit."
-                : "Lucrezi pe itemul curent, iar progresul se salveaza local pe parcurs."}
+                : "Lucrezi pe itemul curent, iar progresul se salveaza in Supabase pe parcurs."}
             </p>
           </div>
 

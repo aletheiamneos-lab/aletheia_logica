@@ -176,7 +176,7 @@ function ensureSpace(doc, cursorY, neededHeight, pageState) {
   return cursorY + neededHeight <= pageHeight - 12 ? cursorY : addPage(doc, pageState)
 }
 
-function drawAletheiaLogoMark(doc, centerX, y, height, color) {
+function drawBrandLogoMark(doc, centerX, y, height, color) {
   const width = (height * 124) / 190
   const x = centerX - width / 2
   const scale = height / 190
@@ -217,7 +217,7 @@ function drawHeader(doc, { title, subtitle, score, submittedAt, pageState }) {
   doc.setTextColor(236, 240, 246)
   doc.text(textLines(doc, title, contentWidth - 62).slice(0, 2), margin + 7, 33)
 
-  drawAletheiaLogoMark(doc, pageWidth - margin - 42, 16.4, 20, mix(theme.accent, [255, 255, 255], 0.15))
+  drawBrandLogoMark(doc, pageWidth - margin - 42, 16.4, 20, mix(theme.accent, [255, 255, 255], 0.15))
 
   setFill(doc, mix(theme.accent, [255, 255, 255], 0.18))
   doc.circle(pageWidth - margin - 18, 27, 12, "F")

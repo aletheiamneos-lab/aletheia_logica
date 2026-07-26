@@ -303,7 +303,7 @@ def fill_background(c: canvas.Canvas) -> None:
 def draw_watermark(c: canvas.Canvas) -> None:
     c.setFont(FONT_REGULAR, 7)
     c.setFillColor(HexColor("#9a9a9a"))
-    c.drawRightString(PAGE_W - MARGIN_R, 9.5 * MM, "made by Aletheia")
+    c.drawRightString(PAGE_W - MARGIN_R, 9.5 * MM, "made by A mentor")
 
 
 def page_title(c: canvas.Canvas, page_no: int, student_name: str) -> None:
@@ -991,7 +991,7 @@ def _option_text_from_label(label: str) -> str:
     return re.sub(r"^\s*[A-Z][.)]\s*", "", str(label or "").strip(), flags=re.IGNORECASE)
 
 
-def _build_aletheia_integrated_payload(source: dict, payload: dict) -> dict:
+def _build_integrated_report_payload(source: dict, payload: dict) -> dict:
     categories = payload.get("categories") or []
     total_questions = len(payload.get("questions") or [])
     correct_count = sum(1 for question in payload.get("questions") or [] if question.get("is_correct"))
@@ -1074,7 +1074,7 @@ def _build_aletheia_integrated_payload(source: dict, payload: dict) -> dict:
         "duration": format_duration(payload.get("duration_seconds") or 0),
         "radar": radar,
         "groups": [group for group in groups_by_label.values() if group["questions"]],
-        "reportTemplate": "aletheia-integrated",
+        "reportTemplate": "a-mentor-integrated",
         "reportTemplateVersion": "v1",
     }
 

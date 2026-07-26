@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import os
 from functools import lru_cache
 from pathlib import Path
@@ -11,6 +12,7 @@ from supabase import Client, create_client
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BACKEND_DIR / ".env")
+LOGGER = logging.getLogger("uvicorn.error")
 
 
 def _configuration_error() -> HTTPException:
@@ -18,7 +20,7 @@ def _configuration_error() -> HTTPException:
         status_code=503,
         detail=(
             "Supabase nu este configurat complet. Completeaza SUPABASE_URL, "
-            "SUPABASE_ANON_KEY si SUPABASE_SERVICE_ROLE_KEY in backend/.env."
+            "si SUPABASE_SERVICE_ROLE_KEY in backend/.env."
         ),
     )
 
@@ -26,10 +28,13 @@ def _configuration_error() -> HTTPException:
 @lru_cache(maxsize=1)
 def get_server_supabase() -> Client:
     url = os.getenv("SUPABASE_URL", "").strip()
-    anon_key = os.getenv("SUPABASE_ANON_KEY", "").strip()
     service_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "").strip()
-    if not url or not anon_key or not service_key:
+    if not url or not service_key:
         raise _configuration_error()
+    LOGGER.info(
+        "[Supabase client] initializare backend key_source=SUPABASE_SERVICE_ROLE_KEY "
+        "url_configured=true"
+    )
     return create_client(url, service_key)
 
 

@@ -770,7 +770,7 @@ export function buildTeacherSolutionPdfDocument(payload, options = {}) {
   doc.setProperties({
     title: solution.title ?? "Rezolvare profesor",
     subject: solution.examId ?? "BAC",
-    creator: "Aletheia",
+    creator: "A mentor",
   })
 
   writer.cover(solution)

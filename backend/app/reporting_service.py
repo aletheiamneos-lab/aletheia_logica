@@ -267,9 +267,9 @@ def _build_integrated_html_context(report_data: dict) -> dict:
     return {
         "brand": {
             "title": "Logica",
-            "subtitle": "by Aletheia",
+            "subtitle": "by A mentor",
             "top_right_label": "TEST INTEGRAT",
-            "footer_brand": "Aletheia",
+            "footer_brand": "A mentor",
             "footer_tagline": "Excelență prin evaluare",
         },
         "report": {

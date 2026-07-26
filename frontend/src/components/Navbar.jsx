@@ -186,7 +186,7 @@ function Navbar({ onHide }) {
             <div className="app-sidebar-header-copy min-w-0">
               <div className="app-sidebar-brand-line">
                 <div className="app-sidebar-brand">Logica</div>
-                <span className="app-sidebar-brand-credit">by Aletheia</span>
+                <span className="app-sidebar-brand-credit">by A mentor</span>
               </div>
             </div>
           </div>

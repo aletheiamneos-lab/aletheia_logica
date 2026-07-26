@@ -45,7 +45,7 @@ RED = HexColor("#E03131")
 RED_SOFT = HexColor("#FDEAEA")
 NEUTRAL_SOFT = HexColor("#F8FAFC")
 BLUE_SOFT = HexColor("#EFF6FF")
-REPORT_TEMPLATE = "aletheia-admitere"
+REPORT_TEMPLATE = "a-mentor-admitere"
 REPORT_TEMPLATE_VERSION = "v2-dynamic"
 QUESTION_HEADER_HEIGHT = 24
 QUESTION_TEXT_TOP_GAP = 18
@@ -218,7 +218,7 @@ def _draw_page_background(pdf: canvas.Canvas, page_number: int, page_bg=PAGE_BG,
     pdf.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
     pdf.setFont(FONT_REGULAR, 7)
     pdf.setFillColor(MUTED)
-    pdf.drawCentredString(PAGE_W / 2, 16, _pdf_text(f"Aletheia | {footer_label} | {page_number}"))
+    pdf.drawCentredString(PAGE_W / 2, 16, _pdf_text(f"A mentor | {footer_label} | {page_number}"))
 
 
 def _ensure_page(pdf: canvas.Canvas, state: dict, y: float, height: float = 44) -> float:
@@ -256,7 +256,7 @@ def _draw_wrapped(
     return y
 
 
-def _draw_aletheia_mark(pdf: canvas.Canvas, center_x: float, y: float, height: float) -> None:
+def _draw_brand_mark(pdf: canvas.Canvas, center_x: float, y: float, height: float) -> None:
     width = height * 0.65
     x = center_x - width / 2
     pdf.setStrokeColor(GOLD)
@@ -298,10 +298,10 @@ def _draw_header(pdf: canvas.Canvas, report: dict, y: float) -> float:
     pdf.circle(center_x - 56, y - 11, 2.2, stroke=0, fill=1)
     pdf.circle(center_x + 56, y - 11, 2.2, stroke=0, fill=1)
 
-    _draw_aletheia_mark(pdf, center_x, y - 43, 34)
+    _draw_brand_mark(pdf, center_x, y - 43, 34)
     pdf.setFont(FONT_BOLD, 10)
     pdf.setFillColor(NAVY)
-    pdf.drawCentredString(center_x, y - 57, "ALETHEIA")
+    pdf.drawCentredString(center_x, y - 57, "A MENTOR")
     pdf.setFont(FONT_REGULAR, 6.4)
     pdf.setFillColor(GOLD)
     pdf.drawCentredString(center_x, y - 67, "EXCELENTA PRIN EVALUARE")
@@ -356,10 +356,10 @@ def _draw_header_clean(pdf: canvas.Canvas, report: dict, y: float) -> float:
     pdf.circle(center_x - 56, y - 11, 2.2, stroke=0, fill=1)
     pdf.circle(center_x + 56, y - 11, 2.2, stroke=0, fill=1)
 
-    _draw_aletheia_mark(pdf, center_x, y - 43, 34)
+    _draw_brand_mark(pdf, center_x, y - 43, 34)
     pdf.setFont(FONT_BOLD, 10)
     pdf.setFillColor(NAVY)
-    pdf.drawCentredString(center_x, y - 57, "ALETHEIA")
+    pdf.drawCentredString(center_x, y - 57, "A MENTOR")
     pdf.setFont(FONT_REGULAR, 6.4)
     pdf.setFillColor(GOLD)
     pdf.drawCentredString(center_x, y - 67, "EXCELENTA PRIN EVALUARE")
@@ -773,7 +773,7 @@ def _draw_footer_brand(pdf: canvas.Canvas, y: float, state: dict) -> None:
     pdf.line(PAGE_W / 2 + 42, y - 8, PAGE_W - MARGIN, y - 8)
     pdf.setFont(FONT_REGULAR, 9)
     pdf.setFillColor(GOLD)
-    pdf.drawCentredString(PAGE_W / 2, y - 11, "made by Aletheia")
+    pdf.drawCentredString(PAGE_W / 2, y - 11, "made by A mentor")
 
 
 def _generate_pdf(report: dict, target) -> None:
@@ -922,7 +922,7 @@ def generate_admitere_student_report_pdf_bytes(report: dict) -> bytes:
     return buffer.getvalue()
 
 
-def write_aletheia_report_pdf(report: dict, output_path: Path) -> Path:
+def write_admitere_report_pdf(report: dict, output_path: Path) -> Path:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     buffer = BytesIO()
     _generate_pdf(report, buffer)

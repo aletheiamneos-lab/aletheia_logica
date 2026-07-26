@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import uuid
 from pathlib import Path
 
@@ -15,6 +16,8 @@ from .reporting_service import (
     save_test_definition_snapshot,
 )
 from .supabase_service import get_server_supabase
+
+LOGGER = logging.getLogger("uvicorn.error")
 
 TEST_COLUMNS = (
     "id,title,slug,description,duration_minutes,difficulty_label,is_active,is_draft,"
@@ -54,13 +57,63 @@ def _error(status_code: int, detail: str) -> HTTPException:
     return HTTPException(status_code=status_code, detail=detail)
 
 
-def _api_error(error: APIError, fallback: str) -> HTTPException:
+def _api_error(error: Exception, fallback: str) -> HTTPException:
     code = getattr(error, "code", "")
+    message = getattr(error, "message", str(error))
+    details = getattr(error, "details", None)
+    hint = getattr(error, "hint", None)
+    diagnostic_parts = [message]
+    if code:
+        diagnostic_parts.append(f"cod={code}")
+    if details:
+        diagnostic_parts.append(f"detalii={details}")
+    if hint:
+        diagnostic_parts.append(f"hint={hint}")
+    diagnostic = " | ".join(diagnostic_parts)
     if code == "23505":
-        return _error(409, "Slug-ul sau identificatorul exista deja.")
+        return _error(409, f"Slug-ul sau identificatorul exista deja. Supabase: {diagnostic}")
     if code in {"22P02", "23503"}:
-        return _error(400, getattr(error, "message", fallback))
-    return _error(502, f"{fallback}: {getattr(error, 'message', str(error))}")
+        return _error(400, f"{fallback}. Supabase: {diagnostic}")
+    return _error(502, f"{fallback}. Supabase: {diagnostic}")
+
+
+def _execute_write(
+    table: str,
+    operation: str,
+    query,
+    record_id: str = "",
+    require_affected_rows: bool = True,
+):
+    context = f"table={table} operation={operation}"
+    if record_id:
+        context += f" record_id={record_id}"
+    LOGGER.info("[Supabase write] START %s key_source=SUPABASE_SERVICE_ROLE_KEY", context)
+    try:
+        response = query.execute()
+    except APIError as error:
+        LOGGER.exception(
+            "[Supabase write] ERROR %s code=%s message=%s details=%s hint=%s",
+            context,
+            getattr(error, "code", ""),
+            getattr(error, "message", str(error)),
+            getattr(error, "details", None),
+            getattr(error, "hint", None),
+        )
+        raise
+    except Exception:
+        LOGGER.exception("[Supabase write] UNEXPECTED_ERROR %s", context)
+        raise
+
+    rows = response.data if isinstance(response.data, list) else []
+    if require_affected_rows and not rows:
+        message = (
+            f"Supabase nu a modificat niciun rand pentru {context}. "
+            "Verifica RLS, cheia service_role si identificatorul trimis."
+        )
+        LOGGER.error("[Supabase write] EMPTY_RESULT %s", context)
+        raise RuntimeError(message)
+    LOGGER.info("[Supabase write] SUCCESS %s affected_rows=%s", context, len(rows))
+    return response
 
 
 def _slugify(value: str) -> str:
@@ -532,16 +585,44 @@ def _replace_questions(test_id: str, questions: list[dict]) -> None:
     client = get_server_supabase()
     old_rows = client.table("questions").select(QUESTION_COLUMNS).eq("test_id", test_id).execute().data or []
     try:
-        client.table("questions").delete().eq("test_id", test_id).execute()
+        _execute_write(
+            "questions",
+            "delete_for_replace",
+            client.table("questions").delete().eq("test_id", test_id),
+            test_id,
+            require_affected_rows=False,
+        )
         if questions:
-            client.table("questions").insert(questions).execute()
-    except APIError as error:
+            _execute_write(
+                "questions",
+                "insert_replacement",
+                client.table("questions").insert(questions),
+                test_id,
+            )
+    except Exception as error:
         try:
-            client.table("questions").delete().eq("test_id", test_id).execute()
+            _execute_write(
+                "questions",
+                "rollback_delete",
+                client.table("questions").delete().eq("test_id", test_id),
+                test_id,
+                require_affected_rows=False,
+            )
             if old_rows:
-                client.table("questions").insert(old_rows).execute()
-        except APIError:
-            pass
+                _execute_write(
+                    "questions",
+                    "rollback_restore",
+                    client.table("questions").insert(old_rows),
+                    test_id,
+                )
+        except Exception as rollback_error:
+            LOGGER.exception(
+                "[Supabase write] ROLLBACK_ERROR table=questions record_id=%s "
+                "code=%s message=%s",
+                test_id,
+                getattr(rollback_error, "code", ""),
+                getattr(rollback_error, "message", str(rollback_error)),
+            )
         raise _api_error(error, "Intrebarile nu au putut fi salvate") from error
 
 
@@ -551,7 +632,7 @@ def list_integrated_tests(current_user: dict) -> list[dict]:
         query = query.eq("is_active", True).eq("is_draft", False)
     try:
         rows = query.order("updated_at", desc=True).execute().data or []
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Testele nu au putut fi citite") from error
 
     result = []
@@ -631,14 +712,35 @@ def create_integrated_test(current_user: dict, payload: dict) -> dict:
     }
     client = get_server_supabase()
     try:
-        row = client.table("tests").insert(test_payload).execute().data[0]
+        row = _execute_write(
+            "tests",
+            "insert",
+            client.table("tests").insert(test_payload),
+            test_id,
+        ).data[0]
         if questions:
-            client.table("questions").insert(questions).execute()
-    except APIError as error:
+            _execute_write(
+                "questions",
+                "insert",
+                client.table("questions").insert(questions),
+                test_id,
+            )
+    except Exception as error:
         try:
-            client.table("tests").delete().eq("id", test_id).execute()
-        except APIError:
-            pass
+            _execute_write(
+                "tests",
+                "rollback_delete",
+                client.table("tests").delete().eq("id", test_id),
+                test_id,
+                require_affected_rows=False,
+            )
+        except Exception as rollback_error:
+            LOGGER.exception(
+                "[Supabase write] ROLLBACK_ERROR table=tests record_id=%s code=%s message=%s",
+                test_id,
+                getattr(rollback_error, "code", ""),
+                getattr(rollback_error, "message", str(rollback_error)),
+            )
         raise _api_error(error, "Testul nu a putut fi creat") from error
     serialized = {**_test_from_row(row, questions), "questions": questions}
     save_test_definition_snapshot(serialized)
@@ -669,15 +771,16 @@ def update_integrated_test(current_user: dict, test_id: str, payload: dict) -> d
     }
     try:
         row = (
-            get_server_supabase()
-            .table("tests")
-            .update(changes)
-            .eq("id", test_id)
-            .execute()
+            _execute_write(
+                "tests",
+                "update",
+                get_server_supabase().table("tests").update(changes).eq("id", test_id),
+                test_id,
+            )
             .data[0]
         )
         _replace_questions(test_id, questions)
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Testul nu a putut fi actualizat") from error
     serialized = {**_test_from_row(row, questions), "questions": questions}
     save_test_definition_snapshot(serialized)
@@ -694,14 +797,18 @@ def publish_integrated_test(current_user: dict, test_id: str) -> dict:
         raise _error(400, "Testul nu poate fi publicat inca. " + " ".join(validation["issues"]))
     try:
         updated = (
-            get_server_supabase()
-            .table("tests")
-            .update({"is_active": True, "is_draft": False, "updated_at": utc_now_iso()})
-            .eq("id", test_id)
-            .execute()
+            _execute_write(
+                "tests",
+                "publish_update",
+                get_server_supabase()
+                .table("tests")
+                .update({"is_active": True, "is_draft": False, "updated_at": utc_now_iso()})
+                .eq("id", test_id),
+                test_id,
+            )
             .data[0]
         )
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Testul nu a putut fi publicat") from error
     serialized = {**_test_from_row(updated or row, questions), "questions": questions}
     save_test_definition_snapshot(serialized)
@@ -775,8 +882,13 @@ def start_attempt(current_user: dict, test_id: str) -> dict:
             "teacher_comment": "",
         }
         try:
-            attempt_row = get_server_supabase().table("attempts").insert(payload).execute().data[0]
-        except APIError as error:
+            attempt_row = _execute_write(
+                "attempts",
+                "insert_start",
+                get_server_supabase().table("attempts").insert(payload),
+                test_id,
+            ).data[0]
+        except Exception as error:
             raise _api_error(error, "Incercarea nu a putut fi pornita") from error
     public_questions = [_public_question(question) for question in private_questions]
     test = _test_from_row(test_row, private_questions)
@@ -820,14 +932,18 @@ def update_attempt_progress(current_user: dict, attempt_id: str, payload: dict) 
     meta["progress_events"] = events[-250:]
     try:
         updated = (
-            get_server_supabase()
-            .table("attempts")
-            .update({"raw_answers": {"answers": answers, "_meta": meta}, "updated_at": utc_now_iso()})
-            .eq("id", attempt_id)
-            .execute()
+            _execute_write(
+                "attempts",
+                "update_progress",
+                get_server_supabase()
+                .table("attempts")
+                .update({"raw_answers": {"answers": answers, "_meta": meta}, "updated_at": utc_now_iso()})
+                .eq("id", attempt_id),
+                attempt_id,
+            )
             .data[0]
         )
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Progresul nu a putut fi salvat") from error
     return _attempt_from_row(updated, questions)
 
@@ -873,10 +989,16 @@ def _build_report(row: dict, persist_files: bool = False) -> tuple[dict, dict | 
     bundle = persist_report_bundle(report) if persist_files else None
     if persist_files:
         try:
-            get_server_supabase().table("attempts").update(
-                {"pdf_generated_at": utc_now_iso(), "updated_at": utc_now_iso()}
-            ).eq("id", str(row["id"])).execute()
-        except APIError as error:
+            _execute_write(
+                "attempts",
+                "update_pdf_generated_at",
+                get_server_supabase()
+                .table("attempts")
+                .update({"pdf_generated_at": utc_now_iso(), "updated_at": utc_now_iso()})
+                .eq("id", str(row["id"])),
+                str(row["id"]),
+            )
+        except Exception as error:
             raise _api_error(error, "Data generarii PDF nu a putut fi salvata") from error
     return report, bundle
 
@@ -904,23 +1026,27 @@ def submit_attempt(current_user: dict, attempt_id: str) -> dict:
     meta["progress_events"] = events[-250:]
     try:
         updated = (
-            get_server_supabase()
-            .table("attempts")
-            .update(
-                {
-                    "status": "graded",
-                    "submitted_at": submitted_at,
-                    "score_total": score,
-                    "scores_per_lesson": scores,
-                    "raw_answers": {"answers": answers, "_meta": meta},
-                    "updated_at": submitted_at,
-                }
+            _execute_write(
+                "attempts",
+                "update_submit",
+                get_server_supabase()
+                .table("attempts")
+                .update(
+                    {
+                        "status": "graded",
+                        "submitted_at": submitted_at,
+                        "score_total": score,
+                        "scores_per_lesson": scores,
+                        "raw_answers": {"answers": answers, "_meta": meta},
+                        "updated_at": submitted_at,
+                    }
+                )
+                .eq("id", attempt_id),
+                attempt_id,
             )
-            .eq("id", attempt_id)
-            .execute()
             .data[0]
         )
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Incercarea nu a putut fi finalizata") from error
     attempt = _attempt_from_row(updated, questions)
     report, _ = _build_report(updated, persist_files=current_user["role"] == "student")
@@ -975,14 +1101,18 @@ def update_teacher_comment(current_user: dict, attempt_id: str, teacher_comment:
     row = _fetch_attempt(attempt_id)
     try:
         updated = (
-            get_server_supabase()
-            .table("attempts")
-            .update({"teacher_comment": teacher_comment, "updated_at": utc_now_iso()})
-            .eq("id", attempt_id)
-            .execute()
+            _execute_write(
+                "attempts",
+                "update_teacher_comment",
+                get_server_supabase()
+                .table("attempts")
+                .update({"teacher_comment": teacher_comment, "updated_at": utc_now_iso()})
+                .eq("id", attempt_id),
+                attempt_id,
+            )
             .data[0]
         )
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Comentariul nu a putut fi salvat") from error
     report, _ = _build_report(updated, persist_files=updated.get("status") in FINAL_STATUSES)
     return {"attempt": _attempt_from_row(updated), "report": report}
@@ -994,7 +1124,7 @@ def _list_attempt_rows(status: str | None = None) -> list[dict]:
         query = query.eq("status", status)
     try:
         return query.order("updated_at", desc=True).execute().data or []
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Incercarile nu au putut fi citite") from error
 
 
@@ -1158,19 +1288,19 @@ def update_student_marker(
         for row in matching_rows:
             answers, meta = _raw_envelope(row)
             meta["marker"] = marker
-            (
-                get_server_supabase()
-                .table("attempts")
-                .update(
+            _execute_write(
+                "attempts",
+                "update_student_marker",
+                get_server_supabase().table("attempts").update(
                     {
                         "raw_answers": {"answers": answers, "_meta": meta},
                         "updated_at": utc_now_iso(),
                     }
                 )
-                .eq("id", str(row["id"]))
-                .execute()
+                .eq("id", str(row["id"])),
+                str(row["id"]),
             )
-    except APIError as error:
+    except Exception as error:
         raise _api_error(error, "Markerul studentului nu a putut fi salvat") from error
     return {
         "studentKey": student_key,

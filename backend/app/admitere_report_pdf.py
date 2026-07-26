@@ -500,7 +500,7 @@ def _draw_header(pdf: canvas.Canvas, compact: bool = False) -> float:
     pdf.setFont(FONT_BOLD, 19 if compact else 26)
     pdf.drawString(MARGIN, top_y, "Logica")
     pdf.setFont(FONT_REGULAR, 8.5 if compact else 10.5)
-    pdf.drawString(MARGIN, top_y - (4.7 if compact else 5.8) * MM, "by Aletheia")
+    pdf.drawString(MARGIN, top_y - (4.7 if compact else 5.8) * MM, "by A mentor")
     pdf.setFont(FONT_BOLD, 8.2)
     pdf.drawRightString(PAGE_W - MARGIN, top_y - 0.5 * MM, "TEST DE ADMITERE")
     rule_y = top_y - (8.2 if compact else 9.5) * MM
@@ -515,8 +515,8 @@ def _draw_footer(pdf: canvas.Canvas, page_number: int, page_count: int) -> None:
     pdf.rect(0, 0, PAGE_W, FOOTER_H, fill=1, stroke=0)
     pdf.setFillColor(WHITE)
     pdf.setFont(FONT_BOLD, 9.5)
-    pdf.drawString(MARGIN, 5.1 * MM, "Aletheia")
-    brand_width = pdfmetrics.stringWidth("Aletheia", FONT_BOLD, 9.5)
+    pdf.drawString(MARGIN, 5.1 * MM, "A mentor")
+    brand_width = pdfmetrics.stringWidth("A mentor", FONT_BOLD, 9.5)
     divider_x = MARGIN + brand_width + 5 * MM
     pdf.setStrokeColor(colors.Color(1, 1, 1, alpha=0.65))
     pdf.setLineWidth(0.5)
@@ -1265,7 +1265,7 @@ def build_admitere_pdf_report(source: dict, target) -> None:
     canvas_target = str(target) if isinstance(target, Path) else target
     pdf = canvas.Canvas(canvas_target, pagesize=A4, pageCompression=1)
     pdf.setTitle(report["test_title"])
-    pdf.setAuthor("Logica by Aletheia")
+    pdf.setAuthor("Logica by A mentor")
     pdf.setSubject("Raport finalizare test de admitere")
     _draw_summary_page(pdf, report, page_count, overview_limit)
 
