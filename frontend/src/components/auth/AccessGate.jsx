@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { useLocation, useNavigate } from "react-router-dom"
 
-import { identifyTrackedStudent, loadTrackedStudent } from "../../api/client"
+import { loadTrackedStudent } from "../../api/client"
 import { useAuth } from "../../context/useAuth"
 
 const roleCards = [
@@ -10,7 +10,7 @@ const roleCards = [
     title: "Student",
     eyebrow: "Flux personal",
     description:
-      "Intri cu prenume si nume, apoi lucrezi doar pe testele si progresul tau local, fara acces la date administrative.",
+      "Intri cu emailul autorizat si numele tau, apoi lucrezi fara acces la date administrative.",
     highlights: ["Progres local", "Teste publicate", "Fara acces admin"],
   },
   {
@@ -150,15 +150,7 @@ function AccessGate() {
   const { loginStudent, loginAdmin } = useAuth()
   const trackedStudent = loadTrackedStudent()
   const [mode, setMode] = useState("student")
-  const [studentFirstName, setStudentFirstName] = useState(() => {
-    const parts = String(trackedStudent?.name ?? "").trim().split(/\s+/).filter(Boolean)
-    return parts.slice(0, -1).join(" ") || parts[0] || ""
-  })
-  const [studentLastName, setStudentLastName] = useState(() => {
-    const parts = String(trackedStudent?.name ?? "").trim().split(/\s+/).filter(Boolean)
-    return parts.length > 1 ? parts.at(-1) ?? "" : ""
-  })
-  const [studentClassName, setStudentClassName] = useState(trackedStudent?.class_name ?? "")
+  const [studentName, setStudentName] = useState(trackedStudent?.name ?? "")
   const [studentEmail, setStudentEmail] = useState(trackedStudent?.email ?? "")
   const [adminPassword, setAdminPassword] = useState("")
   const [error, setError] = useState("")
@@ -171,13 +163,7 @@ function AccessGate() {
 
     try {
       if (mode === "student") {
-        const fullName = [studentFirstName, studentLastName].filter(Boolean).join(" ").trim()
-        await identifyTrackedStudent({
-          name: fullName,
-          className: studentClassName,
-          email: studentEmail,
-        })
-        await loginStudent(studentFirstName, studentLastName)
+        await loginStudent(studentEmail, studentName)
       } else {
         await loginAdmin(adminPassword)
       }
@@ -208,7 +194,7 @@ function AccessGate() {
             </div>
             <p className="access-login-caption">
               {mode === "student"
-                ? "Acces rapid pe baza numelui, cu progres si teste personale."
+                ? "Acces pe baza emailului aprobat de profesor si a numelui complet."
                 : "Acces cu parola pentru control complet asupra testelor si monitorizarii."}
             </p>
           </div>
@@ -238,33 +224,14 @@ function AccessGate() {
             {mode === "student" ? (
               <div className="access-login-form-row">
                 <label className="access-input-shell">
-                  <span className="section-kicker">Prenume</span>
+                  <span className="section-kicker">Nume complet</span>
                   <input
                     className="testing-input"
-                    value={studentFirstName}
-                    onChange={(event) => setStudentFirstName(event.target.value)}
-                    placeholder="Introdu prenumele"
-                    autoComplete="given-name"
-                  />
-                </label>
-                <label className="access-input-shell">
-                  <span className="section-kicker">Nume</span>
-                  <input
-                    className="testing-input"
-                    value={studentLastName}
-                    onChange={(event) => setStudentLastName(event.target.value)}
-                    placeholder="Introdu numele"
-                    autoComplete="family-name"
-                  />
-                </label>
-                <label className="access-input-shell">
-                  <span className="section-kicker">Clasa / grupa</span>
-                  <input
-                    className="testing-input"
-                    value={studentClassName}
-                    onChange={(event) => setStudentClassName(event.target.value)}
-                    placeholder="Optional"
-                    autoComplete="organization-title"
+                    value={studentName}
+                    onChange={(event) => setStudentName(event.target.value)}
+                    placeholder="Introdu numele complet"
+                    autoComplete="name"
+                    required
                   />
                 </label>
                 <label className="access-input-shell sm:col-span-2">
@@ -273,8 +240,10 @@ function AccessGate() {
                     className="testing-input"
                     value={studentEmail}
                     onChange={(event) => setStudentEmail(event.target.value)}
-                    placeholder="Optional"
+                    placeholder="nume@exemplu.ro"
                     autoComplete="email"
+                    type="email"
+                    required
                   />
                 </label>
               </div>
@@ -305,7 +274,7 @@ function AccessGate() {
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 {mode === "admin"
                   ? "Parola este verificata local si nu este afisata in interfata dupa autentificare."
-                  : "Numele este folosit doar pentru sesiunea locala si pentru progresul tau din aplicatie."}
+                  : "Emailul este verificat in lista profesorului, iar sesiunea dispare automat la inchiderea tabului."}
               </p>
             </div>
 

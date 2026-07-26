@@ -7572,3 +7572,48 @@
 .admitere-question-card .option-button::before {
   border-width: 1px !important;
 }
+/* Administrare acces elevi */
+.allowed-students-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.allowed-students-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 0.85rem;
+}
+
+.allowed-students-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.allowed-students-table td {
+  vertical-align: middle;
+}
+
+.allowed-students-delete {
+  color: #b2473f;
+  border-color: rgba(178, 71, 63, 0.3);
+}
+
+.status-pill.is-danger {
+  color: #a33e37;
+  border-color: rgba(178, 71, 63, 0.24);
+  background: rgba(247, 226, 222, 0.72);
+}
+
+@media (max-width: 800px) {
+  .allowed-students-heading {
+    flex-direction: column;
+  }
+
+  .allowed-students-form {
+    grid-template-columns: 1fr;
+  }
+}

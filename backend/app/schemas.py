@@ -115,8 +115,42 @@ class SessionResponse(BaseModel):
 
 
 class StudentLoginRequest(BaseModel):
-    first_name: str = Field(..., min_length=1, max_length=60)
-    last_name: str = Field(..., min_length=1, max_length=60)
+    email: str = Field(..., min_length=3, max_length=254)
+    name: str = Field(..., min_length=1, max_length=160)
+
+    @model_validator(mode="after")
+    def validate_student_identity(self) -> "StudentLoginRequest":
+        self.email = self.email.strip().casefold()
+        self.name = " ".join(self.name.strip().split())
+        if "@" not in self.email or self.email.startswith("@") or self.email.endswith("@"):
+            raise ValueError("Adresa de email nu este valida.")
+        if not self.name:
+            raise ValueError("Numele este obligatoriu.")
+        return self
+
+
+class AllowedStudentCreateRequest(BaseModel):
+    email: str = Field(..., min_length=3, max_length=254)
+    name: str = Field(..., min_length=1, max_length=160)
+
+    @model_validator(mode="after")
+    def normalize_values(self) -> "AllowedStudentCreateRequest":
+        self.email = self.email.strip().casefold()
+        self.name = " ".join(self.name.strip().split())
+        if "@" not in self.email or self.email.startswith("@") or self.email.endswith("@"):
+            raise ValueError("Adresa de email nu este valida.")
+        return self
+
+
+class AllowedStudentPatchRequest(BaseModel):
+    is_blocked: bool | None = None
+    force_logout: bool | None = None
+
+    @model_validator(mode="after")
+    def require_change(self) -> "AllowedStudentPatchRequest":
+        if self.is_blocked is None and self.force_logout is None:
+            raise ValueError("Trimite is_blocked sau force_logout.")
+        return self
 
 
 class TeacherLoginRequest(BaseModel):

@@ -28,6 +28,7 @@ import TeacherTestEditor from "../components/testing/TeacherTestEditor"
 import IntegratedTestCatalogCard from "../components/testing/IntegratedTestCatalogCard"
 import StudentIntegratedReportPanel from "../components/testing/StudentIntegratedReportPanel"
 import IntegratedTestRunner from "../components/testing/IntegratedTestRunner"
+import AllowedStudentsAdminPanel from "../components/testing/AllowedStudentsAdminPanel"
 import { useAuth } from "../context/useAuth"
 import {
   buildIntegratedExamUrl,
@@ -1175,6 +1176,8 @@ function IntegratedTestsPage() {
             onPreviewPdf={previewAdminPdf}
             onExportError={handlePdfExportError}
           />
+
+          <AllowedStudentsAdminPanel />
         </>
       ) : null}
     </div>

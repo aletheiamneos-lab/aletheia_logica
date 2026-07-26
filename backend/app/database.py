@@ -61,7 +61,8 @@ CREATE TABLE IF NOT EXISTS auth_sessions (
     initials TEXT NOT NULL,
     created_at TEXT NOT NULL,
     last_seen_at TEXT NOT NULL,
-    is_active INTEGER NOT NULL DEFAULT 1
+    is_active INTEGER NOT NULL DEFAULT 1,
+    email TEXT NOT NULL DEFAULT ''
 );
 
 CREATE TABLE IF NOT EXISTS integrated_tests (
@@ -302,6 +303,7 @@ def initialize_database(reset: bool = False) -> Path:
 
     with get_connection() as connection:
         connection.executescript(SCHEMA_SQL)
+        _ensure_column(connection, "auth_sessions", "email", "TEXT NOT NULL DEFAULT ''")
         _ensure_column(connection, "exercises", "incorrect_explanations_json", "TEXT")
         _ensure_column(
             connection,

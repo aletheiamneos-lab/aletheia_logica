@@ -747,24 +747,39 @@ async function downloadFile(path, options = {}) {
 }
 
 export function loadStoredSession() {
-  const rawValue = readBrowserStorage(ACTIVE_SESSION_STORAGE_KEY)
+  const sessionValue = readSessionValue(ACTIVE_SESSION_STORAGE_KEY)
+  const browserValue = readBrowserStorage(ACTIVE_SESSION_STORAGE_KEY)
+  const rawValue = sessionValue ?? browserValue
   if (!rawValue) {
     return null
   }
 
   try {
-    return JSON.parse(rawValue)
+    const parsed = JSON.parse(rawValue)
+    if (!sessionValue && parsed?.role === "student") {
+      writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, null)
+      return null
+    }
+    return parsed
   } catch {
     return null
   }
 }
 
 export function persistSession(session) {
-  writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, JSON.stringify(session))
+  const serialized = JSON.stringify(session)
+  if (session?.role === "student") {
+    writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, null)
+    writeSessionValue(ACTIVE_SESSION_STORAGE_KEY, serialized)
+    return
+  }
+  writeSessionValue(ACTIVE_SESSION_STORAGE_KEY, null)
+  writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, serialized)
 }
 
 export function clearStoredSession() {
   writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, null)
+  writeSessionValue(ACTIVE_SESSION_STORAGE_KEY, null)
 }
 
 export function getPublicAppLink() {
@@ -995,10 +1010,10 @@ export function getProgressInsights() {
   return request("/progress/insights")
 }
 
-export function loginStudent(firstName, lastName) {
-  return request("/login/student", {
+export function loginStudent(email, name) {
+  return request("/auth/student-login", {
     method: "POST",
-    body: JSON.stringify({ first_name: firstName, last_name: lastName }),
+    body: JSON.stringify({ email, name }),
   })
 }
 
@@ -1015,6 +1030,34 @@ export function loginTeacher(password) {
 
 export function getCurrentSession() {
   return request("/auth/session")
+}
+
+export function getStudentAccessStatus() {
+  return request("/auth/student-access")
+}
+
+export function getAllowedStudents() {
+  return request("/admin/allowed-students")
+}
+
+export function createAllowedStudent(payload) {
+  return request("/admin/allowed-students", {
+    method: "POST",
+    body: JSON.stringify(payload),
+  })
+}
+
+export function updateAllowedStudent(studentId, payload) {
+  return request(`/admin/allowed-students/${studentId}`, {
+    method: "PATCH",
+    body: JSON.stringify(payload),
+  })
+}
+
+export function deleteAllowedStudent(studentId) {
+  return request(`/admin/allowed-students/${studentId}`, {
+    method: "DELETE",
+  })
 }
 
 export function getHomepageStudyPlan() {

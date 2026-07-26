@@ -12,6 +12,7 @@ from .access_routes import router as access_router
 from .activity_tracking_routes import router as activity_tracking_router
 from .admitere_student_reports_routes import router as admitere_student_reports_router
 from .admin_routes import router as admin_router
+from .allowed_students_routes import router as allowed_students_router
 from .auth_routes import router as auth_router
 from .bac_student_reports_routes import router as bac_student_reports_router
 from .bac_teacher_solution_routes import router as bac_teacher_solution_router
@@ -92,6 +93,7 @@ app.include_router(access_router)
 app.include_router(activity_tracking_router)
 app.include_router(admitere_student_reports_router)
 app.include_router(admin_router)
+app.include_router(allowed_students_router)
 app.include_router(auth_router)
 app.include_router(bac_student_reports_router)
 app.include_router(bac_teacher_solution_router)

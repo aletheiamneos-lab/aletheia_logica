@@ -56,6 +56,7 @@ def _serialize_session(row: sqlite3.Row) -> dict:
         "display_name": row["display_name"],
         "displayName": row["display_name"],
         "initials": row["initials"],
+        "email": row["email"] or "",
         "loginAt": login_at,
         "created_at": row["created_at"],
         "last_seen_at": row["last_seen_at"],
@@ -120,12 +121,15 @@ def verify_teacher_password(password: str) -> bool:
     return _verify_password(password, stored_hash)
 
 
-def create_student_session(first_name: str, last_name: str) -> dict:
-    normalized_first_name = _normalize_name(first_name)
-    normalized_last_name = _normalize_name(last_name)
+def create_student_session(name: str, email: str) -> dict:
+    normalized_name = _normalize_name(name)
+    normalized_email = email.strip().casefold()
+    name_parts = normalized_name.split()
+    normalized_first_name = " ".join(name_parts[:-1]) if len(name_parts) > 1 else normalized_name
+    normalized_last_name = name_parts[-1] if len(name_parts) > 1 else ""
 
-    if not normalized_first_name or not normalized_last_name:
-        raise _http_error(422, "Prenumele si numele sunt obligatorii.")
+    if not normalized_name or not normalized_email:
+        raise _http_error(422, "Emailul si numele sunt obligatorii.")
 
     session_id = str(uuid.uuid4())
     created_at = utc_now_iso()
@@ -135,19 +139,20 @@ def create_student_session(first_name: str, last_name: str) -> dict:
             """
             INSERT INTO auth_sessions (
                 id, role, first_name, last_name, display_name, initials,
-                created_at, last_seen_at, is_active
+                created_at, last_seen_at, is_active, email
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?)
             """,
             (
                 session_id,
                 "student",
                 normalized_first_name,
                 normalized_last_name,
-                f"{normalized_first_name} {normalized_last_name}",
+                normalized_name,
                 compute_initials(normalized_first_name, normalized_last_name),
                 created_at,
                 created_at,
+                normalized_email,
             ),
         )
         connection.commit()

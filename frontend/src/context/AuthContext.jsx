@@ -4,6 +4,7 @@ import {
   changeTeacherPassword,
   clearStoredSession,
   getCurrentSession,
+  getStudentAccessStatus,
   identifyTrackedStudent,
   loadStoredSession,
   loadTrackedStudent,
@@ -86,8 +87,36 @@ export function AuthProvider({ children }) {
     }
   }, [])
 
-  async function handleStudentLogin(firstName, lastName) {
-    const nextSession = await loginStudent(firstName, lastName)
+  useEffect(() => {
+    if (session?.role !== "student") {
+      return undefined
+    }
+
+    let active = true
+    const verifyAccess = async () => {
+      try {
+        const result = await getStudentAccessStatus()
+        if (active && result.should_logout) {
+          clearStoredSession()
+          setSession(null)
+        }
+      } catch (error) {
+        if (active && error?.code !== "NETWORK_ERROR" && error?.status === 401) {
+          clearStoredSession()
+          setSession(null)
+        }
+      }
+    }
+
+    const intervalId = window.setInterval(verifyAccess, 12_000)
+    return () => {
+      active = false
+      window.clearInterval(intervalId)
+    }
+  }, [session?.role, session?.sessionId])
+
+  async function handleStudentLogin(email, name) {
+    const nextSession = await loginStudent(email, name)
     persistSession(nextSession)
     const normalizedSession = normalizeSession(nextSession)
     setSession(normalizedSession)
