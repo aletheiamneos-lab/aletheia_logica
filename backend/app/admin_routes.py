@@ -4,11 +4,14 @@ import re
 import unicodedata
 from pathlib import Path
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse
 
 from .auth_service import get_admin_user
 from .integrated_tests_supabase_service import (
+    build_admin_attempts_pdf_zip,
+    delete_admin_attempts,
+    get_admin_attempts_summary,
     get_admin_pdf_path,
     get_admin_report,
     get_admin_report_email_delivery,
@@ -16,7 +19,8 @@ from .integrated_tests_supabase_service import (
     list_admin_reports,
 )
 from .pdf_service import build_content_disposition
-from .report_email_service import send_report_email
+from .report_email_service import send_report_email, send_reports_email
+from .schemas import AttemptBulkRequest
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -92,3 +96,77 @@ def admin_report_email(report_id: str, current_user: dict = Depends(get_admin_us
         delivery_payload["report"],
         Path(delivery_payload["pdf_path"]),
     )
+
+
+@router.get("/attempts/summary")
+def admin_attempts_summary(current_user: dict = Depends(get_admin_user)) -> dict:
+    return get_admin_attempts_summary(current_user)
+
+
+@router.post("/attempts/pdf-archive")
+def admin_attempts_pdf_archive(
+    payload: AttemptBulkRequest,
+    current_user: dict = Depends(get_admin_user),
+):
+    target_path = Path(build_admin_attempts_pdf_zip(current_user, payload.attempt_ids))
+    return FileResponse(
+        path=target_path,
+        media_type="application/zip",
+        filename=target_path.name,
+    )
+
+
+@router.post("/attempts/email")
+def admin_attempts_email(
+    payload: AttemptBulkRequest,
+    current_user: dict = Depends(get_admin_user),
+) -> dict:
+    deliveries_by_recipient: dict[str, list[dict]] = {}
+    preparation_failures = []
+
+    for attempt_id in payload.attempt_ids:
+        try:
+            delivery = get_admin_report_email_delivery(current_user, attempt_id)
+            recipient = str(delivery["recipient_email"]).strip().lower()
+            deliveries_by_recipient.setdefault(recipient, []).append(delivery)
+        except HTTPException as error:
+            preparation_failures.append(
+                {
+                    "attempt_id": attempt_id,
+                    "message": str(error.detail),
+                }
+            )
+
+    sent = []
+    failed = list(preparation_failures)
+    for recipient, deliveries in deliveries_by_recipient.items():
+        try:
+            sent.append(send_reports_email(recipient, deliveries))
+        except HTTPException as error:
+            failed.append(
+                {
+                    "recipient_email": recipient,
+                    "attempt_ids": [
+                        str(delivery["report"].get("attemptId") or delivery["report"].get("id"))
+                        for delivery in deliveries
+                    ],
+                    "message": str(error.detail),
+                }
+            )
+
+    return {
+        "requested_attempts_count": len(payload.attempt_ids),
+        "recipients_count": len(deliveries_by_recipient),
+        "sent_recipients_count": len(sent),
+        "failed_count": len(failed),
+        "sent": sent,
+        "failed": failed,
+    }
+
+
+@router.post("/attempts/delete")
+def admin_attempts_delete(
+    payload: AttemptBulkRequest,
+    current_user: dict = Depends(get_admin_user),
+) -> dict:
+    return delete_admin_attempts(current_user, payload.attempt_ids)

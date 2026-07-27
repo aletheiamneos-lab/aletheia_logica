@@ -113,6 +113,40 @@ def update_allowed_student(student_id: str, changes: dict) -> dict:
     return normalize_allowed_student(response.data[0])
 
 
+def update_all_allowed_students(is_blocked: bool) -> list[dict]:
+    students = list_allowed_students()
+    student_ids = [student["id"] for student in students if student.get("id")]
+    if not student_ids:
+        return []
+
+    LOGGER.info(
+        "[Supabase write] START table=allowed_students operation=bulk_block count=%s is_blocked=%s",
+        len(student_ids),
+        is_blocked,
+    )
+    try:
+        response = (
+            get_server_supabase()
+            .table("allowed_students")
+            .update({"is_blocked": is_blocked})
+            .in_("id", student_ids)
+            .execute()
+        )
+    except APIError as error:
+        LOGGER.exception(
+            "[Supabase write] ERROR table=allowed_students operation=bulk_block count=%s",
+            len(student_ids),
+        )
+        raise HTTPException(status_code=502, detail=f"Eroare Supabase: {error.message}") from error
+
+    updated_students = [normalize_allowed_student(row) for row in response.data or []]
+    LOGGER.info(
+        "[Supabase write] SUCCESS table=allowed_students operation=bulk_block affected=%s",
+        len(updated_students),
+    )
+    return updated_students
+
+
 def delete_allowed_student(student_id: str) -> None:
     try:
         response = (

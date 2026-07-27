@@ -560,6 +560,23 @@ def build_attempt_report_payload(
 def persist_report_bundle(report_data: dict) -> dict[str, str]:
     ensure_archive_directories()
 
+    bundle_paths = _report_bundle_paths(report_data)
+    json_path = bundle_paths["json_path"]
+    html_path = bundle_paths["html_path"]
+    pdf_path = bundle_paths["pdf_path"]
+    flat_pdf_path = bundle_paths["flat_pdf_path"]
+
+    rendered_html = render_report_html(report_data)
+
+    json_path.write_text(json.dumps(report_data, ensure_ascii=False, indent=2), encoding="utf-8")
+    html_path.write_text(rendered_html, encoding="utf-8")
+    generate_attempt_pdf(report_data, pdf_path)
+    shutil.copy2(pdf_path, flat_pdf_path)
+
+    return {key: str(path.resolve()) for key, path in bundle_paths.items()}
+
+
+def _report_bundle_paths(report_data: dict) -> dict[str, Path]:
     report_date = _parse_report_date(report_data.get("submittedAt") or report_data.get("submitted_at"))
     report_id = report_data["id"]
     attempt_id = report_data["attemptId"]
@@ -577,19 +594,27 @@ def persist_report_bundle(report_data: dict) -> dict[str, str]:
     pdf_path = pdf_dir / pdf_file_name
     flat_pdf_path = REPORT_PDF_DIR / f"{report_id}.pdf"
 
-    rendered_html = render_report_html(report_data)
-
-    json_path.write_text(json.dumps(report_data, ensure_ascii=False, indent=2), encoding="utf-8")
-    html_path.write_text(rendered_html, encoding="utf-8")
-    generate_attempt_pdf(report_data, pdf_path)
-    shutil.copy2(pdf_path, flat_pdf_path)
-
     return {
-        "json_path": str(json_path.resolve()),
-        "html_path": str(html_path.resolve()),
-        "pdf_path": str(pdf_path.resolve()),
-        "flat_pdf_path": str(flat_pdf_path.resolve()),
+        "json_path": json_path,
+        "html_path": html_path,
+        "pdf_path": pdf_path,
+        "flat_pdf_path": flat_pdf_path,
     }
+
+
+def delete_persisted_report_bundle(report_data: dict) -> list[str]:
+    removed_paths = []
+    bundle_paths = _report_bundle_paths(report_data)
+    for target_path in bundle_paths.values():
+        if target_path.exists() and target_path.is_file():
+            target_path.unlink()
+            removed_paths.append(str(target_path.resolve()))
+
+    nested_pdf_dir = bundle_paths["pdf_path"].parent
+    if nested_pdf_dir.exists() and nested_pdf_dir.is_dir() and not any(nested_pdf_dir.iterdir()):
+        nested_pdf_dir.rmdir()
+
+    return removed_paths
 
 
 def save_test_definition_snapshot(test_data: dict) -> str:

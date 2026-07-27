@@ -1054,6 +1054,13 @@ export function updateAllowedStudent(studentId, payload) {
   })
 }
 
+export function updateAllAllowedStudents(isBlocked) {
+  return request("/admin/allowed-students", {
+    method: "PATCH",
+    body: JSON.stringify({ is_blocked: isBlocked }),
+  })
+}
+
 export function deleteAllowedStudent(studentId) {
   return request(`/admin/allowed-students/${studentId}`, {
     method: "DELETE",
@@ -1233,6 +1240,37 @@ export function sendAdminReportEmail(reportId) {
   })
 }
 
+export function getAdminAttemptsSummary() {
+  return request("/admin/attempts/summary")
+}
+
+export function downloadAdminAttemptsPdfArchive(attemptIds) {
+  return downloadFile("/admin/attempts/pdf-archive", {
+    method: "POST",
+    headers: {
+      Accept: "application/zip",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ attempt_ids: attemptIds }),
+    expectedMimeType: "application/zip",
+    fallbackFilename: "rapoarte_selectate.zip",
+  })
+}
+
+export function sendAdminAttemptsEmail(attemptIds) {
+  return request("/admin/attempts/email", {
+    method: "POST",
+    body: JSON.stringify({ attempt_ids: attemptIds }),
+  })
+}
+
+export function deleteAdminAttempts(attemptIds) {
+  return request("/admin/attempts/delete", {
+    method: "POST",
+    body: JSON.stringify({ attempt_ids: attemptIds }),
+  })
+}
+
 export function downloadAdminPdf(reportId) {
   return downloadFile(`/admin/pdf/${reportId}`, {
     headers: { Accept: "application/pdf" },
@@ -1269,6 +1307,14 @@ export function downloadBacAdminPdf(reportId) {
 }
 
 export async function previewBacAdminPdf(reportId) {
+  const objectUrl = await getBacAdminPdfPreviewUrl(reportId)
+  window.open(objectUrl, "_blank", "noopener,noreferrer")
+  window.setTimeout(() => {
+    window.URL.revokeObjectURL(objectUrl)
+  }, 60_000)
+}
+
+export async function getBacAdminPdfPreviewUrl(reportId) {
   const storedSession = loadStoredSession()
   const sessionHeaders =
     storedSession?.session_id || storedSession?.sessionId
@@ -1304,13 +1350,39 @@ export async function previewBacAdminPdf(reportId) {
   }
 
   const blob = await response.blob()
-  const objectUrl = window.URL.createObjectURL(blob)
-  window.open(objectUrl, "_blank", "noopener,noreferrer")
+  return window.URL.createObjectURL(blob)
 }
 
 export function sendBacAdminReportEmail(reportId) {
   return request(`/bac/student-reports/admin/${encodeURIComponent(reportId)}/email`, {
     method: "POST",
+  })
+}
+
+export function downloadBacAdminReportsPdfArchive(reportIds) {
+  return downloadFile("/bac/student-reports/admin/bulk/reports/pdf-archive", {
+    method: "POST",
+    headers: {
+      Accept: "application/zip",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ report_ids: reportIds }),
+    expectedMimeType: "application/zip",
+    fallbackFilename: "rapoarte_bac_selectate.zip",
+  })
+}
+
+export function sendBacAdminReportsEmail(reportIds) {
+  return request("/bac/student-reports/admin/bulk/reports/email", {
+    method: "POST",
+    body: JSON.stringify({ report_ids: reportIds }),
+  })
+}
+
+export function deleteBacAdminReports(reportIds) {
+  return request("/bac/student-reports/admin/bulk/reports/delete", {
+    method: "POST",
+    body: JSON.stringify({ report_ids: reportIds }),
   })
 }
 
@@ -1338,6 +1410,14 @@ export function downloadAdmitereAdminPdf(reportId) {
 }
 
 export async function previewAdmitereAdminPdf(reportId) {
+  const objectUrl = await getAdmitereAdminPdfPreviewUrl(reportId)
+  window.open(objectUrl, "_blank", "noopener,noreferrer")
+  window.setTimeout(() => {
+    window.URL.revokeObjectURL(objectUrl)
+  }, 60_000)
+}
+
+export async function getAdmitereAdminPdfPreviewUrl(reportId) {
   const storedSession = loadStoredSession()
   const sessionHeaders =
     storedSession?.session_id || storedSession?.sessionId
@@ -1373,11 +1453,7 @@ export async function previewAdmitereAdminPdf(reportId) {
   }
 
   const blob = await response.blob()
-  const objectUrl = window.URL.createObjectURL(blob)
-  window.open(objectUrl, "_blank", "noopener,noreferrer")
-  window.setTimeout(() => {
-    window.URL.revokeObjectURL(objectUrl)
-  }, 60_000)
+  return window.URL.createObjectURL(blob)
 }
 
 export function sendAdmitereAdminReportEmail(reportId) {
@@ -1386,7 +1462,42 @@ export function sendAdmitereAdminReportEmail(reportId) {
   })
 }
 
+export function downloadAdmitereAdminReportsPdfArchive(reportIds) {
+  return downloadFile("/admitere/student-reports/admin/bulk/reports/pdf-archive", {
+    method: "POST",
+    headers: {
+      Accept: "application/zip",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ report_ids: reportIds }),
+    expectedMimeType: "application/zip",
+    fallbackFilename: "rapoarte_admitere_selectate.zip",
+  })
+}
+
+export function sendAdmitereAdminReportsEmail(reportIds) {
+  return request("/admitere/student-reports/admin/bulk/reports/email", {
+    method: "POST",
+    body: JSON.stringify({ report_ids: reportIds }),
+  })
+}
+
+export function deleteAdmitereAdminReports(reportIds) {
+  return request("/admitere/student-reports/admin/bulk/reports/delete", {
+    method: "POST",
+    body: JSON.stringify({ report_ids: reportIds }),
+  })
+}
+
 export async function previewAdminPdf(reportId) {
+  const objectUrl = await getAdminPdfPreviewUrl(reportId)
+  window.open(objectUrl, "_blank", "noopener,noreferrer")
+  window.setTimeout(() => {
+    window.URL.revokeObjectURL(objectUrl)
+  }, 60_000)
+}
+
+export async function getAdminPdfPreviewUrl(reportId) {
   const storedSession = loadStoredSession()
   const sessionHeaders =
     storedSession?.session_id || storedSession?.sessionId
@@ -1422,9 +1533,15 @@ export async function previewAdminPdf(reportId) {
   }
 
   const blob = await response.blob()
-  const objectUrl = window.URL.createObjectURL(blob)
-  window.open(objectUrl, "_blank", "noopener,noreferrer")
-  window.setTimeout(() => {
-    window.URL.revokeObjectURL(objectUrl)
-  }, 60_000)
+  return window.URL.createObjectURL(blob)
+}
+
+export function getAdminReportPdfPreviewUrl(reportId, testType = "integrated") {
+  if (testType === "bac") {
+    return getBacAdminPdfPreviewUrl(reportId)
+  }
+  if (testType === "admitere") {
+    return getAdmitereAdminPdfPreviewUrl(reportId)
+  }
+  return getAdminPdfPreviewUrl(reportId)
 }

@@ -153,6 +153,10 @@ class AllowedStudentPatchRequest(BaseModel):
         return self
 
 
+class AllowedStudentsBulkBlockRequest(BaseModel):
+    is_blocked: bool
+
+
 class TeacherLoginRequest(BaseModel):
     password: str = Field(..., min_length=1, max_length=128)
 
@@ -263,6 +267,34 @@ class TeacherCommentUpdateRequest(BaseModel):
 class StudentMarkerUpdateRequest(BaseModel):
     marker_label: str | None = Field(default=None, max_length=12)
     accent_color: str | None = Field(default=None, max_length=32)
+
+
+class AttemptBulkRequest(BaseModel):
+    attempt_ids: list[str] = Field(..., min_length=1, max_length=200)
+
+    @model_validator(mode="after")
+    def normalize_attempt_ids(self) -> "AttemptBulkRequest":
+        normalized_ids = list(
+            dict.fromkeys(str(attempt_id).strip() for attempt_id in self.attempt_ids if str(attempt_id).strip())
+        )
+        if not normalized_ids:
+            raise ValueError("Selecteaza cel putin o incercare.")
+        self.attempt_ids = normalized_ids
+        return self
+
+
+class ReportBulkRequest(BaseModel):
+    report_ids: list[str] = Field(..., min_length=1, max_length=200)
+
+    @model_validator(mode="after")
+    def normalize_report_ids(self) -> "ReportBulkRequest":
+        normalized_ids = list(
+            dict.fromkeys(str(report_id).strip() for report_id in self.report_ids if str(report_id).strip())
+        )
+        if not normalized_ids:
+            raise ValueError("Selecteaza cel putin un raport.")
+        self.report_ids = normalized_ids
+        return self
 
 
 class PdfCategoryStat(BaseModel):

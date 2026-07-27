@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import math
 import os
 import smtplib
@@ -22,6 +23,7 @@ EMAIL_CARD_WIDTH = 808
 EMAIL_CARD_HEIGHT = 1264
 EMAIL_CARD_CID = "logic-report-card"
 EDGE_SCALE_FACTOR = 2
+LOGGER = logging.getLogger("uvicorn.error")
 
 
 def _error(status_code: int, detail: str) -> HTTPException:
@@ -102,6 +104,21 @@ def load_smtp_settings() -> SmtpSettings:
         sender = gmail_address
         use_ssl = False
         use_starttls = True
+
+    LOGGER.info(
+        "[Email config] gmail_address_configured=%s gmail_app_password_configured=%s "
+        "smtp_host_configured=%s resolved_host=%s resolved_port=%s username_configured=%s "
+        "sender_configured=%s ssl=%s starttls=%s",
+        bool(gmail_address),
+        bool(gmail_app_password),
+        bool((_read_config_value("LOGICA_SMTP_HOST") or "").strip()),
+        host or "<missing>",
+        port_value,
+        bool(username),
+        bool(sender),
+        use_ssl,
+        use_starttls,
+    )
 
     if not host:
         raise _error(
@@ -399,6 +416,65 @@ def _build_plain_text(report_payload: dict, pdf_file_name: str) -> str:
     )
 
 
+def _send_smtp_message(settings: SmtpSettings, message: EmailMessage) -> None:
+    recipients = ", ".join(str(value) for value in message.get_all("To", []))
+    attachment_count = sum(1 for part in message.walk() if part.get_content_disposition() == "attachment")
+    LOGGER.info(
+        "[Email SMTP] START host=%s port=%s sender=%s recipients=%s ssl=%s starttls=%s attachments=%s",
+        settings.host,
+        settings.port,
+        settings.sender,
+        recipients or "<missing>",
+        settings.use_ssl,
+        settings.use_starttls,
+        attachment_count,
+    )
+    try:
+        if settings.use_ssl:
+            LOGGER.info("[Email SMTP] CONNECT_SSL host=%s port=%s", settings.host, settings.port)
+            with smtplib.SMTP_SSL(settings.host, settings.port, timeout=30) as smtp:
+                if settings.username:
+                    LOGGER.info("[Email SMTP] LOGIN username=%s", settings.username)
+                    smtp.login(settings.username, settings.password)
+                LOGGER.info("[Email SMTP] SEND subject=%s", message.get("Subject", ""))
+                smtp.send_message(message)
+        else:
+            LOGGER.info("[Email SMTP] CONNECT host=%s port=%s", settings.host, settings.port)
+            with smtplib.SMTP(settings.host, settings.port, timeout=30) as smtp:
+                smtp.ehlo()
+                if settings.use_starttls:
+                    LOGGER.info("[Email SMTP] STARTTLS")
+                    smtp.starttls()
+                    smtp.ehlo()
+                if settings.username:
+                    LOGGER.info("[Email SMTP] LOGIN username=%s", settings.username)
+                    smtp.login(settings.username, settings.password)
+                LOGGER.info("[Email SMTP] SEND subject=%s", message.get("Subject", ""))
+                smtp.send_message(message)
+        LOGGER.info(
+            "[Email SMTP] SUCCESS recipients=%s subject=%s attachments=%s",
+            recipients or "<missing>",
+            message.get("Subject", ""),
+            attachment_count,
+        )
+    except smtplib.SMTPException as error:
+        LOGGER.exception(
+            "[Email SMTP] ERROR type=%s recipients=%s message=%s",
+            type(error).__name__,
+            recipients or "<missing>",
+            error,
+        )
+        raise _error(502, f"Emailul nu a putut fi trimis: {error}") from error
+    except OSError as error:
+        LOGGER.exception(
+            "[Email SMTP] ERROR type=%s recipients=%s message=%s",
+            type(error).__name__,
+            recipients or "<missing>",
+            error,
+        )
+        raise _error(502, f"Serverul SMTP nu a putut fi contactat: {error}") from error
+
+
 def send_report_email(
     recipient_email: str,
     report_payload: dict,
@@ -407,6 +483,12 @@ def send_report_email(
     pdf_bytes: bytes | None = None,
     pdf_file_name: str | None = None,
 ) -> dict:
+    LOGGER.info(
+        "[Report email] PREPARE report_id=%s recipient=%s source=%s",
+        report_payload.get("id") or report_payload.get("reportId") or report_payload.get("attemptId") or "<missing>",
+        recipient_email.strip() or "<missing>",
+        "bytes" if pdf_bytes is not None else "path",
+    )
     settings = load_smtp_settings()
     if not recipient_email.strip():
         raise _error(400, "Elevul nu are o adresa de email salvata.")
@@ -440,29 +522,107 @@ def send_report_email(
         filename=attachment_name,
     )
 
-    try:
-        if settings.use_ssl:
-            with smtplib.SMTP_SSL(settings.host, settings.port, timeout=30) as smtp:
-                if settings.username:
-                    smtp.login(settings.username, settings.password)
-                smtp.send_message(message)
-        else:
-            with smtplib.SMTP(settings.host, settings.port, timeout=30) as smtp:
-                smtp.ehlo()
-                if settings.use_starttls:
-                    smtp.starttls()
-                    smtp.ehlo()
-                if settings.username:
-                    smtp.login(settings.username, settings.password)
-                smtp.send_message(message)
-    except smtplib.SMTPException as error:
-        raise _error(502, f"Emailul nu a putut fi trimis: {error}") from error
-    except OSError as error:
-        raise _error(502, f"Serverul SMTP nu a putut fi contactat: {error}") from error
+    _send_smtp_message(settings, message)
+    LOGGER.info(
+        "[Report email] SUCCESS report_id=%s recipient=%s file=%s",
+        report_payload.get("id") or report_payload.get("reportId") or report_payload.get("attemptId") or "<missing>",
+        recipient_email.strip(),
+        attachment_name,
+    )
 
     return {
         "ok": True,
         "recipient_email": recipient_email.strip(),
         "pdf_file_name": attachment_name,
+        "subject": message["Subject"],
+    }
+
+
+def send_reports_email(recipient_email: str, deliveries: list[dict]) -> dict:
+    LOGGER.info(
+        "[Report email bulk] PREPARE recipient=%s reports=%s",
+        recipient_email.strip() or "<missing>",
+        len(deliveries),
+    )
+    settings = load_smtp_settings()
+    normalized_recipient = recipient_email.strip()
+    if not normalized_recipient:
+        raise _error(400, "Elevul nu are o adresa de email salvata.")
+    if not deliveries:
+        raise _error(400, "Nu exista rapoarte selectate pentru aceasta adresa.")
+
+    attachments = []
+    for delivery in deliveries:
+        pdf_path_value = delivery.get("pdf_path")
+        pdf_path = Path(pdf_path_value) if pdf_path_value else None
+        pdf_bytes = delivery.get("pdf_bytes")
+        pdf_name = delivery.get("pdf_file_name") or (pdf_path.name if pdf_path is not None else "raport_elev.pdf")
+        if pdf_bytes is None and (pdf_path is None or not pdf_path.exists()):
+            raise _error(404, f"PDF-ul {pdf_name} nu este disponibil local.")
+        attachments.append(
+            {
+                "path": pdf_path,
+                "bytes": pdf_bytes,
+                "name": pdf_name,
+                "report": delivery["report"],
+            }
+        )
+
+    primary_attachment = attachments[0]
+    primary_report = primary_attachment["report"]
+    card_png = _capture_visual_card_png(primary_report, primary_attachment["name"])
+    card_cid = f"{EMAIL_CARD_CID}-{uuid.uuid4().hex}"
+    message = EmailMessage()
+    message["Subject"] = (
+        f"Rapoarte teste logica - {len(attachments)} fisiere"
+        if len(attachments) > 1
+        else f"Raport test logica - {_normalized_report_email_data(primary_report)['test_name']}"
+    )
+    message["From"] = settings.sender
+    message["To"] = normalized_recipient
+
+    report_lines = []
+    for attachment in attachments:
+        report_data = _normalized_report_email_data(attachment["report"])
+        report_lines.append(
+            f"- {report_data['test_name']} | {report_data['completed_at']} | "
+            f"scor {report_data['score']}% | {attachment['name']}"
+        )
+    message.set_content(
+        "Buna ziua,\n\n"
+        "Atasat gasiti rapoartele selectate din Platforma de Logica.\n\n"
+        + "\n".join(report_lines)
+        + "\n\nCu respect,\nPlatforma de Logica"
+    )
+    message.add_alternative(render_report_email_html(card_cid), subtype="html")
+    html_part = message.get_payload()[-1]
+    html_part.add_related(
+        card_png,
+        maintype="image",
+        subtype="png",
+        cid=f"<{card_cid}>",
+        disposition="inline",
+        filename=f"{card_cid}.png",
+    )
+
+    for attachment in attachments:
+        message.add_attachment(
+            attachment["bytes"] if attachment["bytes"] is not None else attachment["path"].read_bytes(),
+            maintype="application",
+            subtype="pdf",
+            filename=attachment["name"],
+        )
+
+    _send_smtp_message(settings, message)
+    LOGGER.info(
+        "[Report email bulk] SUCCESS recipient=%s reports=%s",
+        normalized_recipient,
+        len(attachments),
+    )
+    return {
+        "ok": True,
+        "recipient_email": normalized_recipient,
+        "pdf_file_names": [attachment["name"] for attachment in attachments],
+        "attachments_count": len(attachments),
         "subject": message["Subject"],
     }
