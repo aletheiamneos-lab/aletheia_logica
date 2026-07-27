@@ -6,6 +6,7 @@ import json
 import re
 import unicodedata
 import uuid
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,11 +19,13 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
+from .auth_service import resolve_unique_student_email
 from .database import DATA_DIR
 
 REPORT_ROOT = DATA_DIR / "archive" / "bac_student_reports"
 REPORT_JSON_DIR = REPORT_ROOT / "json"
 REPORT_PDF_DIR = REPORT_ROOT / "pdf"
+REPORT_EXPORT_DIR = REPORT_ROOT / "exports"
 TEACHER_SOLUTION_DIR = Path(__file__).resolve().parent / "teacher_solutions"
 TEACHER_SOLUTION_PATH = TEACHER_SOLUTION_DIR / "bac_2025_model" / "teacher_solution.json"
 FRONTEND_ZIP_DERIVED_DIR = Path(__file__).resolve().parents[2] / "frontend" / "src" / "data" / "exams" / "zipDerived"
@@ -84,6 +87,7 @@ FONT_SERIF, FONT_SERIF_BOLD = _resolve_serif_fonts()
 def _ensure_dirs() -> None:
     REPORT_JSON_DIR.mkdir(parents=True, exist_ok=True)
     REPORT_PDF_DIR.mkdir(parents=True, exist_ok=True)
+    REPORT_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def _safe_component(value: str) -> str:
@@ -1403,8 +1407,8 @@ def create_bac_student_report(current_user: dict, report: dict) -> dict:
         "student_first_name": current_user.get("first_name", ""),
         "studentLastName": current_user.get("last_name", ""),
         "student_last_name": current_user.get("last_name", ""),
-        "studentEmail": report.get("studentEmail") or report.get("student_email") or "",
-        "student_email": report.get("studentEmail") or report.get("student_email") or "",
+        "studentEmail": report.get("studentEmail") or report.get("student_email") or current_user.get("email") or "",
+        "student_email": report.get("studentEmail") or report.get("student_email") or current_user.get("email") or "",
         "testTitle": report.get("examTitle") or "Exercițiu BAC 2025, Model",
         "test_title": report.get("examTitle") or "Exercițiu BAC 2025, Model",
         "scorePercent": graded_report.get("scorePercent", 0),
@@ -1447,6 +1451,18 @@ def _refresh_stored_report(path: Path, report: dict) -> dict:
     return refreshed
 
 
+def _backfill_stored_student_email(path: Path, report: dict) -> dict:
+    existing_email = str(report.get("studentEmail") or report.get("student_email") or "").strip()
+    if existing_email:
+        return report
+    resolved_email = resolve_unique_student_email(report.get("studentName") or report.get("student_name") or "")
+    if not resolved_email:
+        return report
+    enriched = {**report, "studentEmail": resolved_email, "student_email": resolved_email}
+    path.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
+    return enriched
+
+
 def list_bac_student_reports(current_user: dict) -> list[dict]:
     if current_user["role"] != "admin":
         raise HTTPException(status_code=403, detail="Doar adminul poate vedea rapoartele BAC.")
@@ -1457,7 +1473,7 @@ def list_bac_student_reports(current_user: dict) -> list[dict]:
             payload = json.loads(path.read_text(encoding="utf-8"))
         except Exception:
             continue
-        reports.append(_refresh_stored_report(path, payload))
+        reports.append(_backfill_stored_student_email(path, _refresh_stored_report(path, payload)))
     return sorted(reports, key=lambda entry: entry.get("submittedAt") or "", reverse=True)
 
 
@@ -1525,4 +1541,82 @@ def get_bac_student_report_pdf_path_for_user(current_user: dict, report_id: str)
     pdf_path = Path(report.get("reportPdfPath") or "")
     _generate_pdf(report, pdf_path)
     return pdf_path
+
+
+def get_bac_student_report_email_delivery(current_user: dict, report_id: str) -> dict:
+    report = get_bac_student_report(current_user, report_id)
+    student_email = str(report.get("studentEmail") or report.get("student_email") or "").strip()
+    if not student_email:
+        student_email = resolve_unique_student_email(report.get("studentName") or report.get("student_name") or "")
+        if student_email:
+            report["studentEmail"] = student_email
+            report["student_email"] = student_email
+            (REPORT_JSON_DIR / f"{report_id}.json").write_text(
+                json.dumps(report, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+    if not student_email or student_email.endswith("@local.invalid"):
+        raise HTTPException(status_code=422, detail="Raportul BAC nu are email de elev salvat.")
+    pdf_path = get_bac_student_report_pdf_path(current_user, report_id)
+    return {
+        "recipient_email": student_email,
+        "report": report,
+        "pdf_path": str(pdf_path),
+        "pdf_file_name": pdf_path.name,
+    }
+
+
+def build_bac_student_reports_pdf_zip(current_user: dict, report_ids: list[str]) -> Path:
+    if current_user["role"] != "admin":
+        raise HTTPException(status_code=403, detail="Doar adminul poate descarca arhive BAC.")
+    _ensure_dirs()
+    archive_path = REPORT_EXPORT_DIR / f"rapoarte_bac_{uuid.uuid4().hex[:10]}.zip"
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for index, report_id in enumerate(report_ids, start=1):
+            report = get_bac_student_report(current_user, report_id)
+            pdf_path = get_bac_student_report_pdf_path(current_user, report_id)
+            archive.write(pdf_path, arcname=f"{index:03d}_{_safe_component(report.get('studentName') or 'elev')}_{pdf_path.name}")
+    return archive_path
+
+
+def delete_bac_student_reports(current_user: dict, report_ids: list[str]) -> dict:
+    if current_user["role"] != "admin":
+        raise HTTPException(status_code=403, detail="Doar adminul poate sterge rapoarte BAC.")
+    _ensure_dirs()
+    deleted_ids = []
+    missing_ids = []
+    removed_files = []
+
+    for report_id in report_ids:
+        try:
+            normalized_id = str(uuid.UUID(report_id))
+        except ValueError:
+            missing_ids.append(report_id)
+            continue
+
+        json_path = REPORT_JSON_DIR / f"{normalized_id}.json"
+        if not json_path.exists():
+            missing_ids.append(report_id)
+            continue
+
+        report = json.loads(json_path.read_text(encoding="utf-8"))
+        pdf_path_value = report.get("reportPdfPath") or report.get("report_pdf_path") or ""
+        pdf_path = Path(pdf_path_value).resolve() if pdf_path_value else None
+        pdf_root = REPORT_PDF_DIR.resolve()
+
+        json_path.unlink()
+        removed_files.append(str(json_path))
+        if pdf_path is not None and pdf_path.is_relative_to(pdf_root) and pdf_path.is_file():
+            pdf_path.unlink()
+            removed_files.append(str(pdf_path))
+        deleted_ids.append(normalized_id)
+
+    if not deleted_ids:
+        raise HTTPException(status_code=404, detail="Rapoartele BAC selectate nu mai exista.")
+    return {
+        "deleted_count": len(deleted_ids),
+        "deleted_report_ids": deleted_ids,
+        "not_found_report_ids": missing_ids,
+        "removed_files_count": len(removed_files),
+    }
 

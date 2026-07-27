@@ -5,6 +5,7 @@ import math
 import re
 import unicodedata
 import uuid
+import zipfile
 from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
@@ -18,10 +19,12 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
 from .admitere_report_pdf import build_admitere_pdf_report
+from .auth_service import resolve_unique_student_email
 from .database import DATA_DIR
 
 REPORT_ROOT = DATA_DIR / "archive" / "admitere_student_reports"
 REPORT_JSON_DIR = REPORT_ROOT / "json"
+REPORT_EXPORT_DIR = REPORT_ROOT / "exports"
 
 PAGE_W, PAGE_H = A4
 MARGIN = 28
@@ -90,6 +93,7 @@ FONT_REGULAR, FONT_BOLD = _resolve_fonts()
 
 def _ensure_dirs() -> None:
     REPORT_JSON_DIR.mkdir(parents=True, exist_ok=True)
+    REPORT_EXPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def _safe_component(value: str) -> str:
@@ -871,6 +875,15 @@ def list_admitere_student_reports(current_user: dict) -> list[dict]:
             payload = json.loads(path.read_text(encoding="utf-8"))
         except Exception:
             continue
+        existing_email = str(payload.get("studentEmail") or payload.get("student_email") or "").strip()
+        if not existing_email:
+            resolved_email = resolve_unique_student_email(
+                payload.get("studentName") or payload.get("student_name") or ""
+            )
+            if resolved_email:
+                payload["studentEmail"] = resolved_email
+                payload["student_email"] = resolved_email
+                path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         reports.append(payload)
     return sorted(reports, key=lambda entry: entry.get("submittedAt") or "", reverse=True)
 
@@ -940,3 +953,76 @@ def generate_admitere_student_report_pdf_for_user(current_user: dict, report_id:
     report = get_admitere_student_report_for_user(current_user, report_id)
     filename = report.get("reportPdfFileName") or report.get("report_pdf_file_name") or build_admitere_student_report_filename(report)
     return report, generate_admitere_student_report_pdf_bytes(report), filename
+
+
+def get_admitere_student_report_email_delivery(current_user: dict, report_id: str) -> dict:
+    report = get_admitere_student_report(current_user, report_id)
+    student_email = str(report.get("studentEmail") or report.get("student_email") or "").strip()
+    if not student_email:
+        student_email = resolve_unique_student_email(report.get("studentName") or report.get("student_name") or "")
+        if student_email:
+            report["studentEmail"] = student_email
+            report["student_email"] = student_email
+            (REPORT_JSON_DIR / f"{report_id}.json").write_text(
+                json.dumps(report, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+    if not student_email or student_email.endswith("@local.invalid"):
+        raise HTTPException(status_code=422, detail="Raportul Admitere nu are email de elev salvat.")
+    pdf_file_name = (
+        report.get("reportPdfFileName")
+        or report.get("report_pdf_file_name")
+        or build_admitere_student_report_filename(report)
+    )
+    return {
+        "recipient_email": student_email,
+        "report": report,
+        "pdf_bytes": generate_admitere_student_report_pdf_bytes(report),
+        "pdf_file_name": pdf_file_name,
+    }
+
+
+def build_admitere_student_reports_pdf_zip(current_user: dict, report_ids: list[str]) -> Path:
+    if current_user["role"] != "admin":
+        raise HTTPException(status_code=403, detail="Doar adminul poate descarca arhive Admitere.")
+    _ensure_dirs()
+    archive_path = REPORT_EXPORT_DIR / f"rapoarte_admitere_{uuid.uuid4().hex[:10]}.zip"
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for index, report_id in enumerate(report_ids, start=1):
+            report, pdf_bytes, file_name = generate_admitere_student_report_pdf(current_user, report_id)
+            archive.writestr(
+                f"{index:03d}_{_safe_component(report.get('studentName') or 'elev')}_{file_name}",
+                pdf_bytes,
+            )
+    return archive_path
+
+
+def delete_admitere_student_reports(current_user: dict, report_ids: list[str]) -> dict:
+    if current_user["role"] != "admin":
+        raise HTTPException(status_code=403, detail="Doar adminul poate sterge rapoarte Admitere.")
+    _ensure_dirs()
+    deleted_ids = []
+    missing_ids = []
+
+    for report_id in report_ids:
+        try:
+            normalized_id = str(uuid.UUID(report_id))
+        except ValueError:
+            missing_ids.append(report_id)
+            continue
+
+        json_path = REPORT_JSON_DIR / f"{normalized_id}.json"
+        if not json_path.is_file():
+            missing_ids.append(report_id)
+            continue
+        json_path.unlink()
+        deleted_ids.append(normalized_id)
+
+    if not deleted_ids:
+        raise HTTPException(status_code=404, detail="Rapoartele Admitere selectate nu mai exista.")
+    return {
+        "deleted_count": len(deleted_ids),
+        "deleted_report_ids": deleted_ids,
+        "not_found_report_ids": missing_ids,
+        "removed_files_count": len(deleted_ids),
+    }

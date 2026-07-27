@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import uuid
+import zipfile
 from pathlib import Path
 
 from fastapi import HTTPException
@@ -12,6 +13,9 @@ from .auth_service import compute_initials, normalize_student_key, utc_now_iso
 from .reporting_service import (
     build_attempt_report_payload,
     build_centralized_csv_export,
+    delete_persisted_report_bundle,
+    ensure_archive_directories,
+    EXPORTS_DIR,
     persist_report_bundle,
     save_test_definition_snapshot,
 )
@@ -1344,6 +1348,115 @@ def get_admin_report_email_delivery(current_user: dict, report_id: str) -> dict:
         raise _error(404, "Elevul nu are o adresa de email salvata.")
     report, bundle = _build_report(row, persist_files=True)
     return {"recipient_email": email, "pdf_path": bundle["pdf_path"], "report": report}
+
+
+def get_admin_attempts_summary(current_user: dict) -> dict:
+    if current_user["role"] != "admin":
+        raise _error(403, "Doar adminul poate vedea sumarul incercarilor.")
+    try:
+        total_response = get_server_supabase().table("attempts").select("id", count="exact").limit(1).execute()
+        finalized_response = (
+            get_server_supabase()
+            .table("attempts")
+            .select("id", count="exact")
+            .in_("status", list(FINAL_STATUSES))
+            .limit(1)
+            .execute()
+        )
+        in_progress_response = (
+            get_server_supabase()
+            .table("attempts")
+            .select("id", count="exact")
+            .eq("status", "in_progress")
+            .limit(1)
+            .execute()
+        )
+    except Exception as error:
+        raise _api_error(error, "Sumarul incercarilor nu a putut fi citit") from error
+
+    return {
+        "total_attempts": int(total_response.count or 0),
+        "finalized_attempts": int(finalized_response.count or 0),
+        "in_progress_attempts": int(in_progress_response.count or 0),
+    }
+
+
+def build_admin_attempts_pdf_zip(current_user: dict, attempt_ids: list[str]) -> str:
+    if current_user["role"] != "admin":
+        raise _error(403, "Doar adminul poate descarca arhiva rapoartelor.")
+
+    ensure_archive_directories()
+    archive_path = EXPORTS_DIR / f"rapoarte_selectate_{uuid.uuid4().hex[:10]}.zip"
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for index, attempt_id in enumerate(attempt_ids, start=1):
+            pdf_path = Path(get_admin_pdf_path(current_user, attempt_id))
+            archive.write(pdf_path, arcname=f"{index:03d}_{pdf_path.name}")
+
+    return str(archive_path.resolve())
+
+
+def delete_admin_attempts(current_user: dict, attempt_ids: list[str]) -> dict:
+    if current_user["role"] != "admin":
+        raise _error(403, "Doar adminul poate sterge incercari.")
+
+    try:
+        rows = (
+            get_server_supabase()
+            .table("attempts")
+            .select(ATTEMPT_COLUMNS)
+            .in_("id", attempt_ids)
+            .execute()
+            .data
+            or []
+        )
+    except Exception as error:
+        raise _api_error(error, "Incercarile selectate nu au putut fi verificate") from error
+
+    found_ids = [str(row["id"]) for row in rows]
+    if not found_ids:
+        raise _error(404, "Incercarile selectate nu mai exista.")
+
+    reports_for_cleanup = []
+    for row in rows:
+        try:
+            report, _ = _build_report(row, persist_files=False)
+            reports_for_cleanup.append(report)
+        except Exception:
+            LOGGER.exception(
+                "[Attempt delete] Raportul local nu a putut fi pregatit pentru curatare attempt_id=%s",
+                row.get("id"),
+            )
+
+    try:
+        _execute_write(
+            "attempts",
+            "bulk_delete",
+            get_server_supabase().table("attempts").delete().in_("id", found_ids),
+            ",".join(found_ids),
+        )
+    except Exception as error:
+        raise _api_error(error, "Incercarile selectate nu au putut fi sterse") from error
+
+    removed_files = []
+    cleanup_errors = []
+    for report in reports_for_cleanup:
+        try:
+            removed_files.extend(delete_persisted_report_bundle(report))
+        except OSError as error:
+            cleanup_errors.append(str(error))
+            LOGGER.exception(
+                "[Attempt delete] Fisierele locale nu au putut fi sterse attempt_id=%s",
+                report.get("attemptId"),
+            )
+
+    not_found_ids = [attempt_id for attempt_id in attempt_ids if attempt_id not in found_ids]
+    return {
+        "deleted_count": len(found_ids),
+        "deleted_attempt_ids": found_ids,
+        "not_found_attempt_ids": not_found_ids,
+        "removed_files_count": len(removed_files),
+        "cleanup_errors": cleanup_errors,
+    }
 
 
 def export_centralized_results(current_user: dict) -> str:

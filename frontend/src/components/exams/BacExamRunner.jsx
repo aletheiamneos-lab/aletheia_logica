@@ -1499,6 +1499,8 @@ function buildStudentSubmissionReport(exam, answers, session, finalizedAt) {
     exam_id: exam.examId ?? exam.id,
     examTitle: exam.title,
     studentName,
+    studentEmail: session?.email ?? session?.studentEmail ?? session?.student_email ?? "",
+    student_email: session?.email ?? session?.studentEmail ?? session?.student_email ?? "",
     finalizedAt: finalizedDate.toISOString(),
     finalizedAtLabel: finalizedDate.toLocaleString("ro-RO"),
     totalItems: flatItems.length,

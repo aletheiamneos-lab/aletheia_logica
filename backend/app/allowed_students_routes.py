@@ -3,11 +3,16 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends
 
 from .auth_service import get_admin_user
-from .schemas import AllowedStudentCreateRequest, AllowedStudentPatchRequest
+from .schemas import (
+    AllowedStudentCreateRequest,
+    AllowedStudentPatchRequest,
+    AllowedStudentsBulkBlockRequest,
+)
 from .supabase_service import (
     add_allowed_student,
     delete_allowed_student,
     list_allowed_students,
+    update_all_allowed_students,
     update_allowed_student,
 )
 
@@ -25,6 +30,19 @@ def create_allowed_student(
     _: dict = Depends(get_admin_user),
 ) -> dict:
     return add_allowed_student(payload.email, payload.name)
+
+
+@router.patch("")
+def patch_all_allowed_students(
+    payload: AllowedStudentsBulkBlockRequest,
+    _: dict = Depends(get_admin_user),
+) -> dict:
+    students = update_all_allowed_students(payload.is_blocked)
+    return {
+        "students": students,
+        "updated_count": len(students),
+        "is_blocked": payload.is_blocked,
+    }
 
 
 @router.patch("/{student_id}")

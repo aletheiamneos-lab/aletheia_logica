@@ -41,6 +41,34 @@ def compute_initials(first_name: str, last_name: str) -> str:
     return initials.upper()[:2] or "??"
 
 
+def resolve_unique_student_email(display_name: str) -> str:
+    normalized_name = _normalize_name(display_name)
+    if not normalized_name:
+        return ""
+
+    with get_connection() as connection:
+        rows = connection.execute(
+            """
+            SELECT email
+            FROM auth_sessions
+            WHERE role = 'student'
+              AND lower(trim(display_name)) = lower(trim(?))
+              AND trim(COALESCE(email, '')) <> ''
+            ORDER BY last_seen_at DESC
+            """,
+            (normalized_name,),
+        ).fetchall()
+
+    emails_by_key = {}
+    for row in rows:
+        email = str(row["email"] or "").strip()
+        if email:
+            emails_by_key.setdefault(email.casefold(), email)
+    if len(emails_by_key) != 1:
+        return ""
+    return next(iter(emails_by_key.values()))
+
+
 def _serialize_session(row: sqlite3.Row) -> dict:
     normalized_role = "admin" if row["role"] == "teacher" else row["role"]
     login_at = row["created_at"]

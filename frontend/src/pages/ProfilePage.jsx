@@ -1,17 +1,26 @@
 import { useEffect, useMemo, useState } from "react"
-import { Download, Eye, Mail } from "lucide-react"
+import { AlertTriangle, ChevronLeft, ChevronRight, Download, Eye, Mail, Trash2, X } from "lucide-react"
 import { Link } from "react-router-dom"
+import Checkbox from "@mui/material/Checkbox"
 import Paper from "@mui/material/Paper"
 import { DataGrid } from "@mui/x-data-grid"
 
 import {
+  deleteAdmitereAdminReports,
+  deleteAdminAttempts,
+  deleteBacAdminReports,
   downloadAdmitereAdminPdf,
+  downloadAdmitereAdminReportsPdfArchive,
+  downloadAdminAttemptsPdfArchive,
+  downloadBacAdminReportsPdfArchive,
   downloadBacAdminPdf,
   downloadAdminPdf,
   getAdmitereAdminReports,
   getAdminActivityOverview,
   getAdminActivityStudentDetail,
   getAdminActivityStudents,
+  getAdminAttemptsSummary,
+  getAdminReportPdfPreviewUrl,
   getAdminReports,
   getBacAdminReports,
   loadTrackedStudent,
@@ -20,7 +29,10 @@ import {
   previewAdminPdf,
   previewAdmitereAdminPdf,
   sendBacAdminReportEmail,
+  sendBacAdminReportsEmail,
   sendAdmitereAdminReportEmail,
+  sendAdmitereAdminReportsEmail,
+  sendAdminAttemptsEmail,
   sendAdminReportEmail,
 } from "../api/client"
 import { buildAppearancePreferenceScope } from "../appEnvironment"
@@ -326,6 +338,11 @@ function ProfilePage() {
   })
   const [students, setStudents] = useState([])
   const [reports, setReports] = useState([])
+  const [attemptSummary, setAttemptSummary] = useState({
+    total_attempts: 0,
+    finalized_attempts: 0,
+    in_progress_attempts: 0,
+  })
   const [selectedStudentId, setSelectedStudentId] = useState(0)
   const [selectedStudentDetail, setSelectedStudentDetail] = useState(null)
   const [reportPaginationModel, setReportPaginationModel] = useState({
@@ -337,6 +354,14 @@ function ProfilePage() {
   const [bacSearchQuery, setBacSearchQuery] = useState("")
   const [admitereSearchQuery, setAdmitereSearchQuery] = useState("")
   const [emailSendingReportId, setEmailSendingReportId] = useState("")
+  const [selectedAttemptIds, setSelectedAttemptIds] = useState([])
+  const [bulkAction, setBulkAction] = useState("")
+  const [isDeleteConfirmationOpen, setIsDeleteConfirmationOpen] = useState(false)
+  const [bulkPreviewRows, setBulkPreviewRows] = useState([])
+  const [bulkPreviewIndex, setBulkPreviewIndex] = useState(0)
+  const [bulkPreviewUrl, setBulkPreviewUrl] = useState("")
+  const [bulkPreviewError, setBulkPreviewError] = useState("")
+  const [isBulkPreviewLoading, setIsBulkPreviewLoading] = useState(false)
   const [studentPaginationModel, setStudentPaginationModel] = useState({
     page: 0,
     pageSize: 8,
@@ -351,12 +376,20 @@ function ProfilePage() {
 
     async function loadProfileData() {
       try {
-        const [overviewPayload, studentsPayload, reportsPayload, bacReportsPayload, admitereReportsPayload] = await Promise.all([
+        const [
+          overviewPayload,
+          studentsPayload,
+          reportsPayload,
+          bacReportsPayload,
+          admitereReportsPayload,
+          attemptSummaryPayload,
+        ] = await Promise.all([
           getAdminActivityOverview(),
           getAdminActivityStudents(),
           getAdminReports(),
           getBacAdminReports(),
           getAdmitereAdminReports(),
+          getAdminAttemptsSummary(),
         ])
 
         if (!active) {
@@ -366,6 +399,7 @@ function ProfilePage() {
         setOverview(overviewPayload)
         setStudents(studentsPayload)
         setReports([...(reportsPayload ?? []), ...(bacReportsPayload ?? []), ...(admitereReportsPayload ?? [])])
+        setAttemptSummary(attemptSummaryPayload)
         setError("")
 
         const nextSelectedId = selectedStudentId || studentsPayload[0]?.id || 0
@@ -395,6 +429,48 @@ function ProfilePage() {
       window.clearInterval(intervalId)
     }
   }, [isAdmin, selectedStudentId])
+
+  useEffect(() => {
+    if (!bulkPreviewRows.length) {
+      setBulkPreviewUrl("")
+      setBulkPreviewError("")
+      setIsBulkPreviewLoading(false)
+      return undefined
+    }
+
+    let active = true
+    let objectUrl = ""
+    const activeRow = bulkPreviewRows[bulkPreviewIndex]
+
+    setBulkPreviewUrl("")
+    setBulkPreviewError("")
+    setIsBulkPreviewLoading(true)
+
+    getAdminReportPdfPreviewUrl(activeRow.id, activeRow.testType)
+      .then((nextObjectUrl) => {
+        objectUrl = nextObjectUrl
+        if (active) {
+          setBulkPreviewUrl(nextObjectUrl)
+        }
+      })
+      .catch((previewError) => {
+        if (active) {
+          setBulkPreviewError(previewError.message)
+        }
+      })
+      .finally(() => {
+        if (active) {
+          setIsBulkPreviewLoading(false)
+        }
+      })
+
+    return () => {
+      active = false
+      if (objectUrl) {
+        window.URL.revokeObjectURL(objectUrl)
+      }
+    }
+  }, [bulkPreviewIndex, bulkPreviewRows])
 
   async function handleSelectStudent(studentId) {
     setSelectedStudentId(studentId)
@@ -528,22 +604,36 @@ function ProfilePage() {
   }
 
   async function handleSendReportEmail(reportId, testType, studentName, studentEmail) {
-    if (!studentEmail) {
-      setError(`Elevul ${studentName} nu are o adresa de email salvata.`)
-      return
-    }
-
     setError("")
     setEmailSendingReportId(reportId)
 
     try {
       const payload = await sendStudentReportEmail(reportId, testType)
-      setShareMessage(`Emailul a fost trimis catre ${payload.recipient_email || studentEmail}.`)
+      setShareMessage(`Emailul a fost trimis catre ${payload.recipient_email || studentEmail || studentName}.`)
     } catch (sendError) {
       setError(sendError.message)
     } finally {
       setEmailSendingReportId("")
     }
+  }
+
+  async function refreshReportData() {
+    const [reportsPayload, bacReportsPayload, admitereReportsPayload, attemptSummaryPayload] = await Promise.all([
+      getAdminReports(),
+      getBacAdminReports(),
+      getAdmitereAdminReports(),
+      getAdminAttemptsSummary(),
+    ])
+    setReports([...(reportsPayload ?? []), ...(bacReportsPayload ?? []), ...(admitereReportsPayload ?? [])])
+    setAttemptSummary(attemptSummaryPayload)
+  }
+
+  function toggleAttemptSelection(attemptId) {
+    setSelectedAttemptIds((current) =>
+      current.includes(attemptId)
+        ? current.filter((selectedId) => selectedId !== attemptId)
+        : [...current, attemptId],
+    )
   }
 
   const studentRows = useMemo(
@@ -715,6 +805,151 @@ function ProfilePage() {
       }),
     [activeReports],
   )
+  const selectedAttemptRows = useMemo(
+    () => activeReportRows.filter((row) => selectedAttemptIds.includes(row.id)),
+    [activeReportRows, selectedAttemptIds],
+  )
+  const allVisibleAttemptsSelected =
+    activeReportRows.length > 0 && activeReportRows.every((row) => selectedAttemptIds.includes(row.id))
+  const someVisibleAttemptsSelected =
+    !allVisibleAttemptsSelected && activeReportRows.some((row) => selectedAttemptIds.includes(row.id))
+
+  function toggleAllVisibleAttempts() {
+    if (allVisibleAttemptsSelected) {
+      const visibleIds = new Set(activeReportRows.map((row) => row.id))
+      setSelectedAttemptIds((current) => current.filter((attemptId) => !visibleIds.has(attemptId)))
+      return
+    }
+
+    setSelectedAttemptIds((current) => Array.from(new Set([...current, ...activeReportRows.map((row) => row.id)])))
+  }
+
+  async function handleBulkPreview() {
+    if (selectedAttemptRows.length === 1) {
+      await handlePreviewReport(selectedAttemptRows[0].id, selectedAttemptRows[0].testType)
+      return
+    }
+
+    if (selectedAttemptRows.length > 1) {
+      setBulkPreviewIndex(0)
+      setBulkPreviewRows(selectedAttemptRows)
+    }
+  }
+
+  async function handleBulkDownload() {
+    if (!selectedAttemptRows.length) {
+      return
+    }
+
+    setError("")
+    setShareMessage("")
+    setBulkAction("download")
+    try {
+      if (selectedAttemptRows.length === 1) {
+        await generateStudentReportPDF(selectedAttemptRows[0].id, selectedAttemptRows[0].testType)
+      } else if (selectedTestType === "bac") {
+        await downloadBacAdminReportsPdfArchive(selectedAttemptRows.map((row) => row.id))
+      } else if (selectedTestType === "admitere") {
+        await downloadAdmitereAdminReportsPdfArchive(selectedAttemptRows.map((row) => row.id))
+      } else {
+        await downloadAdminAttemptsPdfArchive(selectedAttemptRows.map((row) => row.id))
+      }
+      setShareMessage(
+        selectedAttemptRows.length === 1
+          ? "Raportul PDF a fost descărcat."
+          : `Arhiva ZIP cu ${selectedAttemptRows.length} rapoarte a fost descărcată.`,
+      )
+    } catch (downloadError) {
+      setError(downloadError.message)
+    } finally {
+      setBulkAction("")
+    }
+  }
+
+  async function handleBulkEmail() {
+    if (!selectedAttemptRows.length) {
+      return
+    }
+
+    const missingEmailRows = selectedAttemptRows.filter((row) => !row.studentEmail)
+    if (missingEmailRows.length) {
+      setError(
+        `${missingEmailRows.length} ${missingEmailRows.length === 1 ? "încercare nu are" : "încercări nu au"} o adresă de email asociată.`,
+      )
+      return
+    }
+
+    const recipientCount = new Set(selectedAttemptRows.map((row) => row.studentEmail.trim().toLowerCase())).size
+    if (!window.confirm(`Trimiți raportul către ${recipientCount} adrese de email?`)) {
+      return
+    }
+
+    setError("")
+    setShareMessage("")
+    setBulkAction("email")
+    try {
+      const selectedIds = selectedAttemptRows.map((row) => row.id)
+      const payload =
+        selectedTestType === "bac"
+          ? await sendBacAdminReportsEmail(selectedIds)
+          : selectedTestType === "admitere"
+            ? await sendAdmitereAdminReportsEmail(selectedIds)
+            : await sendAdminAttemptsEmail(selectedIds)
+      if (payload.failed_count) {
+        const firstFailure = payload.failed?.[0]?.message
+        setError(
+          `Trimiterea a reușit către ${payload.sent_recipients_count} din ${payload.recipients_count} adrese.${firstFailure ? ` ${firstFailure}` : ""}`,
+        )
+      } else {
+        setShareMessage(
+          `Rapoartele au fost trimise cu succes către ${payload.sent_recipients_count} ${
+            payload.sent_recipients_count === 1 ? "adresă" : "adrese"
+          } de email.`,
+        )
+      }
+    } catch (sendError) {
+      setError(sendError.message)
+    } finally {
+      setBulkAction("")
+    }
+  }
+
+  async function handleBulkDelete() {
+    if (!selectedAttemptRows.length) {
+      return
+    }
+
+    setError("")
+    setShareMessage("")
+    setBulkAction("delete")
+    try {
+      const selectedIds = selectedAttemptRows.map((row) => row.id)
+      const payload =
+        selectedTestType === "bac"
+          ? await deleteBacAdminReports(selectedIds)
+          : selectedTestType === "admitere"
+            ? await deleteAdmitereAdminReports(selectedIds)
+            : await deleteAdminAttempts(selectedIds)
+      await refreshReportData()
+      setSelectedAttemptIds([])
+      setIsDeleteConfirmationOpen(false)
+      setShareMessage(
+        `${payload.deleted_count} ${
+          payload.deleted_count === 1 ? "rezultat a fost șters" : "rezultate au fost șterse"
+        } din secțiunea ${selectedTestType === "bac" ? "BAC" : selectedTestType === "admitere" ? "Admitere" : "Teste integrate"}.`,
+      )
+    } catch (deleteError) {
+      setError(deleteError.message)
+    } finally {
+      setBulkAction("")
+    }
+  }
+
+  function closeBulkPreview() {
+    setBulkPreviewRows([])
+    setBulkPreviewIndex(0)
+  }
+
   const realProfileMetrics = useMemo(
     () => ({
       totalActivations: Number(overview.total_activations ?? 0),
@@ -729,6 +964,32 @@ function ProfilePage() {
       ? "Nu există rezultate pentru numele introdus."
       : "Nu există încă rapoarte salvate pentru această categorie."
   const reportColumns = [
+    {
+      field: "selection",
+      headerName: "",
+      width: 54,
+      sortable: false,
+      filterable: false,
+      disableColumnMenu: true,
+      renderHeader: () => (
+        <Checkbox
+          checked={allVisibleAttemptsSelected}
+          indeterminate={someVisibleAttemptsSelected}
+          onChange={toggleAllVisibleAttempts}
+          inputProps={{ "aria-label": "Selectează toate rezultatele afișate" }}
+          size="small"
+        />
+      ),
+      renderCell: (params) => (
+        <Checkbox
+          checked={selectedAttemptIds.includes(params.row.id)}
+          onChange={() => toggleAttemptSelection(params.row.id)}
+          onClick={(event) => event.stopPropagation()}
+          inputProps={{ "aria-label": `Selectează rezultatul elevului ${params.row.studentName}` }}
+          size="small"
+        />
+      ),
+    },
     {
       field: "studentName",
       headerName: "Elev",
@@ -812,11 +1073,11 @@ function ProfilePage() {
               event.stopPropagation()
               handleSendReportEmail(params.row.id, params.row.testType, params.row.studentName, params.row.studentEmail)
             }}
-            disabled={!params.row.studentEmail || emailSendingReportId === params.row.id}
+            disabled={emailSendingReportId === params.row.id}
             title={
               params.row.studentEmail
                 ? `Trimite pe ${params.row.studentEmail}`
-                : "Elevul nu a introdus o adresa de email"
+                : "Apasă pentru a vedea de ce emailul nu poate fi trimis"
             }
           >
             <Mail aria-hidden="true" size={15} strokeWidth={1.9} />
@@ -950,7 +1211,14 @@ function ProfilePage() {
               codul arhivei si actiuni directe de preview, descarcare sau trimitere pe email.
             </p>
           </div>
-          <span className="academic-monitor-count">{`${activeReportRows.length} rapoarte salvate`}</span>
+          <div className="academic-report-counters">
+            <span className="academic-monitor-count">{`${activeReportRows.length} rapoarte afișate`}</span>
+            {selectedTestType === "integrated" ? (
+              <span className="academic-monitor-count is-attempt-total">
+                {`${attemptSummary.total_attempts} încercări totale în Supabase`}
+              </span>
+            ) : null}
+          </div>
         </div>
 
         <div className="academic-report-tabs" role="tablist" aria-label="Categorii rapoarte teste">
@@ -961,6 +1229,7 @@ function ProfilePage() {
               className={`academic-report-tab${selectedTestType === entry.id ? " is-active" : ""}`}
               onClick={() => {
                 setSelectedTestType(entry.id)
+                setSelectedAttemptIds([])
                 setReportPaginationModel((current) => ({ ...current, page: 0 }))
               }}
               role="tab"
@@ -980,6 +1249,7 @@ function ProfilePage() {
               value={bacSearchQuery}
               onChange={(event) => {
                 setBacSearchQuery(event.target.value)
+                setSelectedAttemptIds([])
                 setReportPaginationModel((current) => ({ ...current, page: 0 }))
               }}
             />
@@ -991,6 +1261,7 @@ function ProfilePage() {
               value={admitereSearchQuery}
               onChange={(event) => {
                 setAdmitereSearchQuery(event.target.value)
+                setSelectedAttemptIds([])
                 setReportPaginationModel((current) => ({ ...current, page: 0 }))
               }}
             />
@@ -1002,11 +1273,62 @@ function ProfilePage() {
               value={integratedSearchQuery}
               onChange={(event) => {
                 setIntegratedSearchQuery(event.target.value)
+                setSelectedAttemptIds([])
                 setReportPaginationModel((current) => ({ ...current, page: 0 }))
               }}
             />
           )}
         </div>
+
+        {selectedAttemptRows.length ? (
+          <div className="academic-report-bulk-bar" role="region" aria-label="Acțiuni pentru rezultatele selectate">
+            <div>
+              <strong>{`${selectedAttemptRows.length} ${
+                selectedAttemptRows.length === 1 ? "rezultat selectat" : "rezultate selectate"
+              }`}</strong>
+              <span>
+                {selectedTestType === "integrated"
+                  ? "Acțiunile se aplică exclusiv rândurilor din tabela attempts."
+                  : `Acțiunile se aplică exclusiv fișierelor individuale de rezultat ${
+                      selectedTestType === "bac" ? "BAC" : "Admitere"
+                    }.`}
+              </span>
+            </div>
+            <div className="academic-report-bulk-actions">
+              <Button variant="secondary" onClick={handleBulkPreview} disabled={Boolean(bulkAction)}>
+                <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
+                Preview
+              </Button>
+              <Button
+                variant="secondary"
+                onClick={handleBulkDownload}
+                loading={bulkAction === "download"}
+                disabled={Boolean(bulkAction)}
+              >
+                <Download aria-hidden="true" size={16} strokeWidth={1.9} />
+                Descarcă PDF
+              </Button>
+              <Button
+                variant="secondary"
+                onClick={handleBulkEmail}
+                loading={bulkAction === "email"}
+                disabled={Boolean(bulkAction)}
+              >
+                <Mail aria-hidden="true" size={16} strokeWidth={1.9} />
+                Trimite email
+              </Button>
+              <Button
+                className="academic-report-delete-button"
+                variant="secondary"
+                onClick={() => setIsDeleteConfirmationOpen(true)}
+                disabled={Boolean(bulkAction)}
+              >
+                <Trash2 aria-hidden="true" size={16} strokeWidth={1.9} />
+                Șterge
+              </Button>
+            </div>
+          </div>
+        ) : null}
 
         <div className="academic-reports-grid-shell academic-unified-report-grid-shell">
           <Paper className="academic-reports-paper" elevation={0}>
@@ -1102,6 +1424,130 @@ function ProfilePage() {
       ) : null}
 
       <AllowedStudentsAdminPanel />
+
+      {bulkPreviewRows.length ? (
+        <div className="report-preview-dialog-shell" role="presentation">
+          <button
+            className="report-preview-dialog-backdrop"
+            type="button"
+            aria-label="Închide preview-ul"
+            onClick={closeBulkPreview}
+          />
+          <section
+            className="report-preview-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="report-preview-dialog-title"
+          >
+            <div className="report-preview-dialog-head">
+              <div>
+                <p className="section-kicker">Preview rapoarte selectate</p>
+                <h3 id="report-preview-dialog-title">
+                  {bulkPreviewRows[bulkPreviewIndex]?.studentName}
+                </h3>
+                <p>{bulkPreviewRows[bulkPreviewIndex]?.testTitle}</p>
+              </div>
+              <button type="button" aria-label="Închide" onClick={closeBulkPreview}>
+                <X aria-hidden="true" size={20} />
+              </button>
+            </div>
+
+            <div className="report-preview-dialog-frame">
+              {isBulkPreviewLoading ? <p>Se încarcă PDF-ul...</p> : null}
+              {bulkPreviewError ? <p className="is-error">{bulkPreviewError}</p> : null}
+              {bulkPreviewUrl ? (
+                <iframe
+                  src={bulkPreviewUrl}
+                  title={`Raport PDF ${bulkPreviewRows[bulkPreviewIndex]?.studentName}`}
+                />
+              ) : null}
+            </div>
+
+            <div className="report-preview-dialog-navigation">
+              <Button
+                variant="secondary"
+                disabled={bulkPreviewIndex === 0}
+                onClick={() => setBulkPreviewIndex((current) => Math.max(0, current - 1))}
+              >
+                <ChevronLeft aria-hidden="true" size={17} />
+                Anterior
+              </Button>
+              <span>{`${bulkPreviewIndex + 1} / ${bulkPreviewRows.length}`}</span>
+              <Button
+                variant="secondary"
+                disabled={bulkPreviewIndex >= bulkPreviewRows.length - 1}
+                onClick={() =>
+                  setBulkPreviewIndex((current) => Math.min(bulkPreviewRows.length - 1, current + 1))
+                }
+              >
+                Următor
+                <ChevronRight aria-hidden="true" size={17} />
+              </Button>
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {isDeleteConfirmationOpen ? (
+        <div className="allowed-students-dialog-shell" role="presentation">
+          <button
+            className="allowed-students-dialog-backdrop"
+            type="button"
+            aria-label="Închide confirmarea"
+            disabled={bulkAction === "delete"}
+            onClick={() => setIsDeleteConfirmationOpen(false)}
+          />
+          <section
+            className="allowed-students-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="report-delete-dialog-title"
+          >
+            <button
+              className="allowed-students-dialog-close"
+              type="button"
+              aria-label="Închide"
+              disabled={bulkAction === "delete"}
+              onClick={() => setIsDeleteConfirmationOpen(false)}
+            >
+              <X aria-hidden="true" size={18} />
+            </button>
+            <span className="allowed-students-dialog-icon" aria-hidden="true">
+              <AlertTriangle size={24} strokeWidth={1.8} />
+            </span>
+            <p className="section-kicker">Confirmare ștergere rezultate</p>
+            <h3 id="report-delete-dialog-title">
+              {`Ești sigur că vrei să ștergi ${selectedAttemptRows.length} ${
+                selectedAttemptRows.length === 1 ? "rezultat" : "rezultate"
+              }?`}
+            </h3>
+            <p>
+              Această acțiune este ireversibilă. Definițiile examenelor, întrebările și baremele asociate rămân
+              neatinse.
+            </p>
+            <div className="allowed-students-dialog-actions">
+              <button
+                className="btn-secondary"
+                type="button"
+                autoFocus
+                disabled={bulkAction === "delete"}
+                onClick={() => setIsDeleteConfirmationOpen(false)}
+              >
+                Renunță
+              </button>
+              <button
+                className="allowed-students-confirm-delete"
+                type="button"
+                disabled={bulkAction === "delete"}
+                onClick={handleBulkDelete}
+              >
+                <Trash2 aria-hidden="true" size={16} strokeWidth={1.9} />
+                {bulkAction === "delete" ? "Se șterg..." : "Șterge rezultatele"}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
     </div>
   )
 }

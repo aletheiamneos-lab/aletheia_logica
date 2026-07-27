@@ -15,6 +15,7 @@ import {
   createAllowedStudent,
   deleteAllowedStudent,
   getAllowedStudents,
+  updateAllAllowedStudents,
   updateAllowedStudent,
 } from "../../api/client"
 
@@ -27,6 +28,7 @@ function AllowedStudentsAdminPanel() {
   const [message, setMessage] = useState("")
   const [error, setError] = useState("")
   const [studentToDelete, setStudentToDelete] = useState(null)
+  const [bulkAccessAction, setBulkAccessAction] = useState("")
 
   const refresh = useCallback(async () => {
     setIsLoading(true)
@@ -86,6 +88,31 @@ function AllowedStudentsAdminPanel() {
       await updateAllowedStudent(student.id, changes)
       setMessage(successMessage)
       await refresh()
+    } catch (patchError) {
+      setError(patchError.message)
+    } finally {
+      setBusyId("")
+    }
+  }
+
+  async function handleBulkAccessUpdate() {
+    if (!bulkAccessAction) {
+      return
+    }
+
+    const shouldBlock = bulkAccessAction === "block"
+    setBusyId(`all:${bulkAccessAction}`)
+    setError("")
+    setMessage("")
+    try {
+      await updateAllAllowedStudents(shouldBlock)
+      await refresh()
+      setBulkAccessAction("")
+      setMessage(
+        shouldBlock
+          ? "Accesul a fost blocat pentru toți elevii din listă."
+          : "Accesul a fost deblocat pentru toți elevii din listă.",
+      )
     } catch (patchError) {
       setError(patchError.message)
     } finally {
@@ -201,7 +228,26 @@ function AllowedStudentsAdminPanel() {
               <p className="section-kicker">Lista aprobata</p>
               <h3>Elevi cu acces la aplicatie</h3>
             </div>
-            <p>Statusul poate fi schimbat oricand.</p>
+            <div className="allowed-students-global-actions">
+              <button
+                className="allowed-students-action-button is-block"
+                type="button"
+                disabled={Boolean(busyId) || students.length === 0}
+                onClick={() => setBulkAccessAction("block")}
+              >
+                <ShieldOff aria-hidden="true" size={16} strokeWidth={1.9} />
+                Blochează pe toți
+              </button>
+              <button
+                className="allowed-students-action-button is-unblock"
+                type="button"
+                disabled={Boolean(busyId) || students.length === 0}
+                onClick={() => setBulkAccessAction("unblock")}
+              >
+                <ShieldCheck aria-hidden="true" size={16} strokeWidth={1.9} />
+                Deblochează pe toți
+              </button>
+            </div>
           </div>
 
           <div className="allowed-students-table-scroll">
@@ -235,24 +281,44 @@ function AllowedStudentsAdminPanel() {
                       <td>
                         <div className="allowed-students-actions">
                           <button
-                            className="allowed-students-action-button"
+                            className={[
+                              "allowed-students-action-button",
+                              "is-block",
+                              student.is_blocked ? "is-current" : "",
+                            ].join(" ")}
                             type="button"
-                            disabled={isBusy}
-                            title={student.is_blocked ? "Deblocheaza accesul" : "Blocheaza accesul"}
+                            disabled={isBusy || student.is_blocked}
+                            title={student.is_blocked ? "Elevul este deja blocat" : "Blochează accesul"}
                             onClick={() =>
                               handlePatch(
                                 student,
-                                { is_blocked: !student.is_blocked },
-                                student.is_blocked ? "Accesul a fost deblocat." : "Accesul a fost blocat.",
+                                { is_blocked: true },
+                                "Accesul a fost blocat.",
                               )
                             }
                           >
-                            {student.is_blocked ? (
-                              <ShieldCheck aria-hidden="true" size={16} strokeWidth={1.9} />
-                            ) : (
-                              <ShieldOff aria-hidden="true" size={16} strokeWidth={1.9} />
-                            )}
-                            {student.is_blocked ? "Deblocheaza" : "Blocheaza"}
+                            <ShieldOff aria-hidden="true" size={16} strokeWidth={1.9} />
+                            Blochează
+                          </button>
+                          <button
+                            className={[
+                              "allowed-students-action-button",
+                              "is-unblock",
+                              !student.is_blocked ? "is-current" : "",
+                            ].join(" ")}
+                            type="button"
+                            disabled={isBusy || !student.is_blocked}
+                            title={!student.is_blocked ? "Elevul este deja deblocat" : "Deblochează accesul"}
+                            onClick={() =>
+                              handlePatch(
+                                student,
+                                { is_blocked: false },
+                                "Accesul a fost deblocat.",
+                              )
+                            }
+                          >
+                            <ShieldCheck aria-hidden="true" size={16} strokeWidth={1.9} />
+                            Deblochează
                           </button>
                           <button
                             className="allowed-students-action-button"
@@ -355,6 +421,71 @@ function AllowedStudentsAdminPanel() {
               >
                 <Trash2 aria-hidden="true" size={16} strokeWidth={1.9} />
                 {busyId ? "Se sterge..." : "Sterge accesul"}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {bulkAccessAction ? (
+        <div className="allowed-students-dialog-shell" role="presentation">
+          <button
+            className="allowed-students-dialog-backdrop"
+            type="button"
+            aria-label="Închide dialogul"
+            disabled={busyId.startsWith("all:")}
+            onClick={() => setBulkAccessAction("")}
+          />
+          <section
+            className="allowed-students-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="allowed-students-bulk-dialog-title"
+          >
+            <button
+              className="allowed-students-dialog-close"
+              type="button"
+              aria-label="Închide"
+              disabled={busyId.startsWith("all:")}
+              onClick={() => setBulkAccessAction("")}
+            >
+              <X aria-hidden="true" size={18} />
+            </button>
+            <span className="allowed-students-dialog-icon is-access-action" aria-hidden="true">
+              {bulkAccessAction === "block" ? (
+                <ShieldOff size={24} strokeWidth={1.8} />
+              ) : (
+                <ShieldCheck size={24} strokeWidth={1.8} />
+              )}
+            </span>
+            <p className="section-kicker">Confirmare acces general</p>
+            <h3 id="allowed-students-bulk-dialog-title">
+              {bulkAccessAction === "block"
+                ? "Ești sigur că vrei să blochezi accesul pentru TOȚI elevii din listă?"
+                : "Ești sigur că vrei să deblochezi accesul pentru TOȚI elevii din listă?"}
+            </h3>
+            <p>Schimbarea se aplică imediat tuturor celor {students.length} elevi afișați în listă.</p>
+            <div className="allowed-students-dialog-actions">
+              <button
+                className="btn-secondary"
+                type="button"
+                autoFocus
+                disabled={busyId.startsWith("all:")}
+                onClick={() => setBulkAccessAction("")}
+              >
+                Renunță
+              </button>
+              <button
+                className="btn-primary"
+                type="button"
+                disabled={busyId.startsWith("all:")}
+                onClick={handleBulkAccessUpdate}
+              >
+                {busyId.startsWith("all:")
+                  ? "Se actualizează..."
+                  : bulkAccessAction === "block"
+                    ? "Blochează pe toți"
+                    : "Deblochează pe toți"}
               </button>
             </div>
           </section>
