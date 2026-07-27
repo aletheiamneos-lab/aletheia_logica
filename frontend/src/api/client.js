@@ -1244,6 +1244,10 @@ export function getAdminAttemptsSummary() {
   return request("/admin/attempts/summary")
 }
 
+export function getAdminSupabaseUsage() {
+  return request("/admin/supabase-usage")
+}
+
 export function downloadAdminAttemptsPdfArchive(attemptIds) {
   return downloadFile("/admin/attempts/pdf-archive", {
     method: "POST",

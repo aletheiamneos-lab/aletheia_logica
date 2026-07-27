@@ -1,5 +1,16 @@
 import { useEffect, useMemo, useState } from "react"
-import { AlertTriangle, ChevronLeft, ChevronRight, Download, Eye, Mail, Trash2, X } from "lucide-react"
+import {
+  AlertTriangle,
+  ChevronLeft,
+  ChevronRight,
+  Database,
+  Download,
+  Eye,
+  Mail,
+  RefreshCw,
+  Trash2,
+  X,
+} from "lucide-react"
 import { Link } from "react-router-dom"
 import Checkbox from "@mui/material/Checkbox"
 import Paper from "@mui/material/Paper"
@@ -17,11 +28,11 @@ import {
   downloadAdminPdf,
   getAdmitereAdminReports,
   getAdminActivityOverview,
-  getAdminActivityStudentDetail,
   getAdminActivityStudents,
   getAdminAttemptsSummary,
   getAdminReportPdfPreviewUrl,
   getAdminReports,
+  getAdminSupabaseUsage,
   getBacAdminReports,
   loadTrackedStudent,
   getPublicAppLink,
@@ -81,6 +92,24 @@ function formatTimestamp(value) {
     hour: "2-digit",
     minute: "2-digit",
   }).format(parsed)
+}
+
+function formatStorageSize(value) {
+  const bytes = Number(value)
+  if (!Number.isFinite(bytes) || bytes < 0) {
+    return "-"
+  }
+
+  if (bytes >= 1024 ** 3) {
+    return `${(bytes / 1024 ** 3).toFixed(2)} GB`
+  }
+  if (bytes >= 1024 ** 2) {
+    return `${(bytes / 1024 ** 2).toFixed(1)} MB`
+  }
+  if (bytes >= 1024) {
+    return `${(bytes / 1024).toFixed(1)} KB`
+  }
+  return `${Math.round(bytes)} B`
 }
 
 function ProfileMetric({ label, value, helper }) {
@@ -343,8 +372,9 @@ function ProfilePage() {
     finalized_attempts: 0,
     in_progress_attempts: 0,
   })
-  const [selectedStudentId, setSelectedStudentId] = useState(0)
-  const [selectedStudentDetail, setSelectedStudentDetail] = useState(null)
+  const [supabaseUsage, setSupabaseUsage] = useState(null)
+  const [supabaseUsageError, setSupabaseUsageError] = useState("")
+  const [isSupabaseUsageLoading, setIsSupabaseUsageLoading] = useState(false)
   const [reportPaginationModel, setReportPaginationModel] = useState({
     page: 0,
     pageSize: 5,
@@ -401,19 +431,6 @@ function ProfilePage() {
         setReports([...(reportsPayload ?? []), ...(bacReportsPayload ?? []), ...(admitereReportsPayload ?? [])])
         setAttemptSummary(attemptSummaryPayload)
         setError("")
-
-        const nextSelectedId = selectedStudentId || studentsPayload[0]?.id || 0
-
-        if (nextSelectedId) {
-          const detailPayload = await getAdminActivityStudentDetail(nextSelectedId)
-          if (!active) {
-            return
-          }
-          setSelectedStudentId(nextSelectedId)
-          setSelectedStudentDetail(detailPayload)
-        } else {
-          setSelectedStudentDetail(null)
-        }
       } catch (loadError) {
         if (active) {
           setError(loadError.message)
@@ -428,7 +445,41 @@ function ProfilePage() {
       active = false
       window.clearInterval(intervalId)
     }
-  }, [isAdmin, selectedStudentId])
+  }, [isAdmin])
+
+  useEffect(() => {
+    if (!isAdmin) {
+      return undefined
+    }
+
+    let active = true
+
+    async function loadSupabaseUsage() {
+      setIsSupabaseUsageLoading(true)
+      try {
+        const payload = await getAdminSupabaseUsage()
+        if (active) {
+          setSupabaseUsage(payload)
+          setSupabaseUsageError("")
+        }
+      } catch (usageError) {
+        if (active) {
+          setSupabaseUsageError(usageError.message)
+        }
+      } finally {
+        if (active) {
+          setIsSupabaseUsageLoading(false)
+        }
+      }
+    }
+
+    loadSupabaseUsage()
+    const intervalId = window.setInterval(loadSupabaseUsage, 60000)
+    return () => {
+      active = false
+      window.clearInterval(intervalId)
+    }
+  }, [isAdmin])
 
   useEffect(() => {
     if (!bulkPreviewRows.length) {
@@ -471,18 +522,6 @@ function ProfilePage() {
       }
     }
   }, [bulkPreviewIndex, bulkPreviewRows])
-
-  async function handleSelectStudent(studentId) {
-    setSelectedStudentId(studentId)
-    setError("")
-
-    try {
-      const payload = await getAdminActivityStudentDetail(studentId)
-      setSelectedStudentDetail(payload)
-    } catch (detailError) {
-      setError(detailError.message)
-    }
-  }
 
   async function handleCopy(value, label) {
     try {
@@ -659,17 +698,9 @@ function ProfilePage() {
       minWidth: 180,
       flex: 1,
       renderCell: (params) => (
-        <button
-          className="testing-inline-link academic-monitor-link"
-          type="button"
-          onClick={(event) => {
-            event.stopPropagation()
-            handleSelectStudent(params.row.id)
-          }}
-          title={params.row.studentName}
-        >
+        <span className="academic-monitor-link" title={params.row.studentName}>
           <span className="academic-cell-text academic-cell-text-strong">{params.row.studentName}</span>
-        </button>
+        </span>
       ),
     },
     {
@@ -1351,77 +1382,92 @@ function ProfilePage() {
         </div>
       </section>
 
-      {selectedStudentDetail ? (
-        <section className="academic-surface-panel academic-profile-student-stage">
-          <div className="academic-panel-head">
-            <div>
-              <p className="section-kicker">Dosar elev</p>
-              <h2 className="academic-section-title">{selectedStudentDetail.student?.name}</h2>
-              <p className="academic-panel-note">
-                Istoric tehnic de activare, sesiuni de test si succesiunea evenimentelor salvate.
-              </p>
+      <section className="academic-surface-panel academic-supabase-usage-stage">
+        <div className="academic-panel-head">
+          <div>
+            <p className="section-kicker">Consum Supabase</p>
+            <h2 className="academic-section-title">Spațiul bazei de date din planul Free</h2>
+            <p className="academic-panel-note">
+              Valoarea include datele PostgreSQL și indecșii și este comparată cu limita de 500 MB.
+            </p>
+          </div>
+          <span className="academic-monitor-count academic-supabase-plan-badge">
+            <Database aria-hidden="true" size={15} />
+            Plan {supabaseUsage?.plan || "Free"}
+          </span>
+        </div>
+
+        {supabaseUsage ? (
+          <div
+            className="academic-supabase-usage-layout"
+            data-tone={
+              supabaseUsage.usage_percent >= 90
+                ? "danger"
+                : supabaseUsage.usage_percent >= 70
+                  ? "warning"
+                  : "healthy"
+            }
+          >
+            <div
+              className="academic-supabase-usage-chart"
+              style={{
+                "--usage-angle": `${Math.min(100, Math.max(0, supabaseUsage.usage_percent)) * 3.6}deg`,
+              }}
+              role="img"
+              aria-label={`${supabaseUsage.usage_percent}% din spațiul bazei de date Supabase este utilizat`}
+            >
+              <div className="academic-supabase-usage-chart-center">
+                <strong>{`${supabaseUsage.usage_percent.toFixed(1)}%`}</strong>
+                <span>utilizat</span>
+              </div>
             </div>
-            <span className="academic-monitor-count">{`ID ${selectedStudentDetail.student?.id ?? "-"}`}</span>
+
+            <div className="academic-supabase-usage-summary">
+              <div className="academic-supabase-usage-metric is-primary">
+                <span>Folosit</span>
+                <strong>{formatStorageSize(supabaseUsage.database_size_bytes)}</strong>
+              </div>
+              <div className="academic-supabase-usage-metric">
+                <span>Disponibil</span>
+                <strong>{formatStorageSize(supabaseUsage.remaining_bytes)}</strong>
+              </div>
+              <div className="academic-supabase-usage-metric">
+                <span>Limită plan</span>
+                <strong>{formatStorageSize(supabaseUsage.limit_bytes)}</strong>
+              </div>
+              <div className="academic-supabase-usage-metric">
+                <span>Tabele publice + indecși</span>
+                <strong>{formatStorageSize(supabaseUsage.public_tables_size_bytes)}</strong>
+              </div>
+            </div>
+
+            <div className="academic-supabase-usage-foot">
+              <span>
+                {supabaseUsage.usage_percent >= 90
+                  ? "Spațiul este aproape epuizat. Recomandăm curățarea încercărilor vechi."
+                  : supabaseUsage.usage_percent >= 70
+                    ? "Consumul a trecut de 70%. Urmărește periodic încercările salvate."
+                    : "Consumul este în limite bune."}
+              </span>
+              <span>{`Actualizat ${formatTimestamp(supabaseUsage.measured_at)}`}</span>
+            </div>
           </div>
-
-          <div className="academic-student-detail-columns">
-            <article className="academic-detail-column">
-              <p className="academic-detail-heading">Activari link</p>
-              <div className="academic-detail-stack">
-                {selectedStudentDetail.activations?.length ? (
-                  selectedStudentDetail.activations.map((entry) => (
-                    <div key={entry.id} className="academic-detail-entry">
-                      <p className="academic-detail-entry-title">{entry.device_type || "desktop"}</p>
-                      <p className="academic-detail-entry-meta">
-                        {entry.browser || "Browser"} / {entry.os || "OS"}
-                      </p>
-                      <p className="academic-detail-entry-meta">{formatTimestamp(entry.activated_at)}</p>
-                    </div>
-                  ))
-                ) : (
-                  <p className="academic-empty-copy">Fara activari salvate.</p>
-                )}
-              </div>
-            </article>
-
-            <article className="academic-detail-column">
-              <p className="academic-detail-heading">Sesiuni de test</p>
-              <div className="academic-detail-stack">
-                {selectedStudentDetail.test_sessions?.length ? (
-                  selectedStudentDetail.test_sessions.map((entry) => (
-                    <div key={entry.id} className="academic-detail-entry">
-                      <p className="academic-detail-entry-title">{entry.test_title}</p>
-                      <p className="academic-detail-entry-meta">{entry.status_label}</p>
-                      <p className="academic-detail-entry-meta">
-                        {`Progres ${entry.progress_percent}% · Scor ${entry.score ?? "-"}`}
-                      </p>
-                    </div>
-                  ))
-                ) : (
-                  <p className="academic-empty-copy">Nu exista sesiuni urmarite.</p>
-                )}
-              </div>
-            </article>
-
-            <article className="academic-detail-column">
-              <p className="academic-detail-heading">Timeline</p>
-              <div className="academic-detail-stack">
-                {selectedStudentDetail.event_timeline?.length ? (
-                  selectedStudentDetail.event_timeline.map((entry) => (
-                    <div key={entry.id} className="academic-detail-entry">
-                      <p className="academic-detail-entry-title">{entry.event_label}</p>
-                      {entry.test_title ? <p className="academic-detail-entry-meta">{entry.test_title}</p> : null}
-                      <p className="academic-detail-entry-meta">{formatTimestamp(entry.created_at)}</p>
-                    </div>
-                  ))
-                ) : (
-                  <p className="academic-empty-copy">Nu exista evenimente pentru acest elev.</p>
-                )}
-              </div>
-            </article>
+        ) : (
+          <div className="academic-supabase-usage-empty">
+            <RefreshCw
+              aria-hidden="true"
+              className={isSupabaseUsageLoading ? "is-spinning" : ""}
+              size={22}
+            />
+            <div>
+              <strong>
+                {isSupabaseUsageLoading ? "Se citește consumul Supabase..." : "Consumul nu este disponibil"}
+              </strong>
+              {supabaseUsageError ? <p>{supabaseUsageError}</p> : null}
+            </div>
           </div>
-        </section>
-      ) : null}
+        )}
+      </section>
 
       <AllowedStudentsAdminPanel />
 

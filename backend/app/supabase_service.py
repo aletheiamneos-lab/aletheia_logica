@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 import os
+from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
 
@@ -13,6 +14,7 @@ from supabase import Client, create_client
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BACKEND_DIR / ".env")
 LOGGER = logging.getLogger("uvicorn.error")
+FREE_PLAN_DATABASE_LIMIT_BYTES = 500 * 1024 * 1024
 
 
 def _configuration_error() -> HTTPException:
@@ -36,6 +38,64 @@ def get_server_supabase() -> Client:
         "url_configured=true"
     )
     return create_client(url, service_key)
+
+
+def get_supabase_database_usage() -> dict:
+    LOGGER.info("[Supabase usage] START rpc=get_database_usage")
+    try:
+        response = get_server_supabase().rpc("get_database_usage").execute()
+    except APIError as error:
+        LOGGER.exception(
+            "[Supabase usage] ERROR rpc=get_database_usage code=%s message=%s",
+            getattr(error, "code", ""),
+            getattr(error, "message", str(error)),
+        )
+        if getattr(error, "code", "") == "PGRST202":
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "Metrica de utilizare Supabase nu este instalata. "
+                    "Ruleaza migrarea supabase/migrations/20260727_add_database_usage_function.sql."
+                ),
+            ) from error
+        raise HTTPException(
+            status_code=502,
+            detail=f"Utilizarea Supabase nu a putut fi citita: {error.message}",
+        ) from error
+    except Exception as error:
+        LOGGER.exception("[Supabase usage] UNEXPECTED_ERROR rpc=get_database_usage")
+        raise HTTPException(
+            status_code=502,
+            detail="Utilizarea Supabase nu a putut fi citita.",
+        ) from error
+
+    raw_payload = response.data
+    if isinstance(raw_payload, list):
+        raw_payload = raw_payload[0] if raw_payload else {}
+    payload = raw_payload if isinstance(raw_payload, dict) else {}
+
+    database_size_bytes = max(0, int(payload.get("database_size_bytes") or 0))
+    public_tables_size_bytes = max(0, int(payload.get("public_tables_size_bytes") or 0))
+    usage_percent = round((database_size_bytes / FREE_PLAN_DATABASE_LIMIT_BYTES) * 100, 2)
+    remaining_bytes = max(0, FREE_PLAN_DATABASE_LIMIT_BYTES - database_size_bytes)
+    LOGGER.info(
+        "[Supabase usage] SUCCESS database_size_bytes=%s public_tables_size_bytes=%s "
+        "limit_bytes=%s usage_percent=%.2f",
+        database_size_bytes,
+        public_tables_size_bytes,
+        FREE_PLAN_DATABASE_LIMIT_BYTES,
+        usage_percent,
+    )
+    return {
+        "plan": "Free",
+        "database_size_bytes": database_size_bytes,
+        "public_tables_size_bytes": public_tables_size_bytes,
+        "limit_bytes": FREE_PLAN_DATABASE_LIMIT_BYTES,
+        "remaining_bytes": remaining_bytes,
+        "usage_percent": usage_percent,
+        "is_over_limit": database_size_bytes >= FREE_PLAN_DATABASE_LIMIT_BYTES,
+        "measured_at": datetime.now(timezone.utc).isoformat(),
+    }
 
 
 def normalize_allowed_student(row: dict) -> dict:
