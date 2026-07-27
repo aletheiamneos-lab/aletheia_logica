@@ -12,7 +12,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from .database import DATA_DIR
+from .storage_paths import DATA_DIR
 from .pdf_service import build_export_filename, generate_attempt_pdf
 
 ARCHIVE_ROOT = DATA_DIR / "archive"

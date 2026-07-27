@@ -237,7 +237,7 @@ cd e:\Side_Work\Logica_Aplicatie
 py -m venv .venv
 .venv\Scripts\activate
 python -m pip install -r backend\requirements.txt
-python backend\init_db.py --reset
+python -m playwright install chromium
 uvicorn app.main:app --reload --app-dir backend
 ```
 
@@ -268,3 +268,43 @@ npm run build
 cd e:\Side_Work\Logica_Aplicatie
 node scripts\validate_admitere_tests.js
 ```
+
+## Deploy backend pe Render
+
+Configuratia recomandata este versionata in `render.yaml` si foloseste
+`Dockerfile`, bazat pe imaginea oficiala Playwright Python. Imaginea include
+Chromium si toate bibliotecile Linux necesare. Pentru serviciul Render existent,
+selecteaza runtime-ul Docker si calea `./Dockerfile`.
+
+Daca pastrezi temporar runtime-ul Python nativ, foloseste:
+
+```bash
+# Build Command
+bash render-build.sh
+
+# Start Command
+python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+```
+
+Build-ul instaleaza dependentele Python si browserul Chromium compatibil cu
+versiunea Playwright folosita de backend. Varianta Docker ramane recomandata,
+deoarece reproduce exact dependentele de sistem Chromium pe Render.
+
+Inainte de primul deploy al versiunii fara SQLite:
+
+1. Ruleaza in Supabase SQL Editor
+   `supabase/migrations/20260728_migrate_legacy_sqlite_state.sql`.
+2. Verifica datele locale fara sa scrii in Supabase:
+
+   ```powershell
+   .venv\Scripts\python.exe backend\scripts\migrate_legacy_sqlite_state_to_supabase.py
+   ```
+
+3. Transfera datele:
+
+   ```powershell
+   .venv\Scripts\python.exe backend\scripts\migrate_legacy_sqlite_state_to_supabase.py --apply
+   ```
+
+Scriptul este idempotent si transfera setarile aplicatiei, sesiunile,
+progresul lectiilor/exercitiilor si toate datele din monitorizarea publica.

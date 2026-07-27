@@ -20,7 +20,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
 from .auth_service import resolve_unique_student_email
-from .database import DATA_DIR
+from .storage_paths import DATA_DIR
 
 REPORT_ROOT = DATA_DIR / "archive" / "bac_student_reports"
 REPORT_JSON_DIR = REPORT_ROOT / "json"

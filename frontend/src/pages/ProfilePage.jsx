@@ -7,6 +7,7 @@ import {
   Download,
   Eye,
   Mail,
+  MoreHorizontal,
   RefreshCw,
   Trash2,
   X,
@@ -75,6 +76,25 @@ const REPORT_TEST_TYPES = [
   { id: "admitere", label: "Teste Admitere" },
 ]
 
+const REPORTS_MOBILE_MEDIA_QUERY =
+  "(max-width: 760px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape)"
+
+function useReportsMobileLayout() {
+  const [isMobileLayout, setIsMobileLayout] = useState(
+    () => typeof window !== "undefined" && window.matchMedia(REPORTS_MOBILE_MEDIA_QUERY).matches,
+  )
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(REPORTS_MOBILE_MEDIA_QUERY)
+    const updateLayout = () => setIsMobileLayout(mediaQuery.matches)
+    updateLayout()
+    mediaQuery.addEventListener("change", updateLayout)
+    return () => mediaQuery.removeEventListener("change", updateLayout)
+  }, [])
+
+  return isMobileLayout
+}
+
 function formatTimestamp(value) {
   if (!value) {
     return "-"
@@ -122,6 +142,61 @@ function ProfileMetric({ label, value, helper }) {
   )
 }
 
+function closeContainingDetails(event) {
+  event.currentTarget.closest("details")?.removeAttribute("open")
+}
+
+function ReportMobileActions({
+  row,
+  emailSendingReportId,
+  onPreview,
+  onDownload,
+  onEmail,
+}) {
+  return (
+    <details className="academic-report-mobile-actions-menu">
+      <summary>
+        <MoreHorizontal aria-hidden="true" size={20} strokeWidth={2} />
+        Actiuni raport
+      </summary>
+      <div className="academic-report-mobile-actions-popover">
+        <button
+          type="button"
+          onClick={(event) => {
+            closeContainingDetails(event)
+            onPreview(row.id, row.testType)
+          }}
+        >
+          <Eye aria-hidden="true" size={18} strokeWidth={1.9} />
+          Preview
+        </button>
+        <button
+          type="button"
+          onClick={(event) => {
+            closeContainingDetails(event)
+            onDownload(row.id, row.testType)
+          }}
+        >
+          <Download aria-hidden="true" size={18} strokeWidth={1.9} />
+          Descarca PDF
+        </button>
+        <button
+          type="button"
+          disabled={emailSendingReportId === row.id}
+          title={row.studentEmail ? `Trimite pe ${row.studentEmail}` : "Raportul nu are o adresa de email asociata"}
+          onClick={(event) => {
+            closeContainingDetails(event)
+            onEmail(row.id, row.testType, row.studentName, row.studentEmail)
+          }}
+        >
+          <Mail aria-hidden="true" size={18} strokeWidth={1.9} />
+          {emailSendingReportId === row.id ? "Se trimite..." : "Trimite email"}
+        </button>
+      </div>
+    </details>
+  )
+}
+
 function getStudentInitials(session) {
   const directInitials = String(session?.initials ?? "").trim()
   if (directInitials) {
@@ -153,7 +228,6 @@ function StudentProfileView({ session }) {
     firstName: session?.firstName || trackedNameParts.slice(0, -1).join(" ") || trackedNameParts[0] || "",
     lastName: session?.lastName || (trackedNameParts.length > 1 ? trackedNameParts.at(-1) ?? "" : ""),
     email: trackedStudent.email ?? "",
-    className: trackedStudent.class_name ?? trackedStudent.className ?? "",
   })
   const [message, setMessage] = useState("")
   const preferenceScope = buildAppearancePreferenceScope(session)
@@ -237,15 +311,6 @@ function StudentProfileView({ session }) {
                 onChange={(event) => updateField("email", event.target.value)}
               />
             </label>
-            <label className="student-profile-field">
-              <span>Clasa / grupa</span>
-              <input
-                className="testing-input"
-                value={form.className}
-                onChange={(event) => updateField("className", event.target.value)}
-              />
-            </label>
-
             <div className="student-profile-actions">
               <button className="btn-primary" type="submit">
                 Salveaza profilul
@@ -355,6 +420,7 @@ function reportMatchesStudentSearch(report, searchQuery) {
 
 function ProfilePage() {
   const { isAdmin, session } = useAuth()
+  const isReportsMobileLayout = useReportsMobileLayout()
   const publicLink = useMemo(() => getPublicAppLink(), [])
   const [shareMessage, setShareMessage] = useState("")
   const [error, setError] = useState("")
@@ -1007,7 +1073,7 @@ function ProfilePage() {
           checked={allVisibleAttemptsSelected}
           indeterminate={someVisibleAttemptsSelected}
           onChange={toggleAllVisibleAttempts}
-          inputProps={{ "aria-label": "Selectează toate rezultatele afișate" }}
+          slotProps={{ input: { "aria-label": "Selectează toate rezultatele afișate" } }}
           size="small"
         />
       ),
@@ -1016,7 +1082,7 @@ function ProfilePage() {
           checked={selectedAttemptIds.includes(params.row.id)}
           onChange={() => toggleAttemptSelection(params.row.id)}
           onClick={(event) => event.stopPropagation()}
-          inputProps={{ "aria-label": `Selectează rezultatul elevului ${params.row.studentName}` }}
+          slotProps={{ input: { "aria-label": `Selectează rezultatul elevului ${params.row.studentName}` } }}
           size="small"
         />
       ),
@@ -1210,26 +1276,83 @@ function ProfilePage() {
           <span className="academic-monitor-count">{`${students.length} elevi urmariti`}</span>
         </div>
 
-        <div className="academic-reports-grid-shell academic-monitor-grid-shell">
-          <Paper className="academic-reports-paper academic-monitor-paper" elevation={0}>
-            <DataGrid
-              rows={studentRows}
-              columns={studentColumns}
-              paginationModel={studentPaginationModel}
-              onPaginationModelChange={setStudentPaginationModel}
-              pageSizeOptions={[8, 12, 20]}
-              disableRowSelectionOnClick
-              disableColumnMenu
-              rowHeight={68}
-              columnHeaderHeight={46}
-              density="compact"
-              localeText={{
-                noRowsLabel: "Nu exista elevi identificati momentan.",
-              }}
-              sx={{ border: 0 }}
-            />
-          </Paper>
-        </div>
+        {!isReportsMobileLayout ? (
+          <div className="academic-reports-grid-shell academic-monitor-grid-shell academic-desktop-data-grid">
+            <Paper className="academic-reports-paper academic-monitor-paper" elevation={0}>
+              <DataGrid
+                rows={studentRows}
+                columns={studentColumns}
+                paginationModel={studentPaginationModel}
+                onPaginationModelChange={setStudentPaginationModel}
+                pageSizeOptions={[8, 12, 20]}
+                disableRowSelectionOnClick
+                disableColumnMenu
+                rowHeight={68}
+                columnHeaderHeight={46}
+                density="compact"
+                localeText={{
+                  noRowsLabel: "Nu exista elevi identificati momentan.",
+                }}
+                sx={{ border: 0 }}
+              />
+            </Paper>
+          </div>
+        ) : null}
+
+        {isReportsMobileLayout ? (
+          <div className="academic-monitor-mobile-list" aria-label="Monitorizare elevi">
+          {studentRows.length ? (
+            studentRows.map((student) => (
+              <article className="academic-monitor-mobile-card" key={`mobile-${student.id}`}>
+                <div className="academic-mobile-card-head">
+                  <div>
+                    <p className="section-kicker">Elev</p>
+                    <h3>{student.studentName}</h3>
+                  </div>
+                  <span className="status-pill">{student.statusLabel}</span>
+                </div>
+
+                <p className="academic-mobile-card-title">{student.latestTestTitle}</p>
+
+                <dl className="academic-mobile-card-primary-facts">
+                  <div>
+                    <dt>Progres</dt>
+                    <dd>{student.progressPercent}</dd>
+                  </div>
+                  <div>
+                    <dt>Scor</dt>
+                    <dd>{student.scoreLabel}</dd>
+                  </div>
+                </dl>
+
+                <details className="academic-mobile-card-details">
+                  <summary>Vezi activitatea completa</summary>
+                  <dl>
+                    <div>
+                      <dt>Dispozitiv</dt>
+                      <dd>{student.deviceType}</dd>
+                    </div>
+                    <div>
+                      <dt>Ultima activitate</dt>
+                      <dd>{student.lastActivityAt}</dd>
+                    </div>
+                    <div>
+                      <dt>Teste incepute</dt>
+                      <dd>{student.testsStarted}</dd>
+                    </div>
+                    <div>
+                      <dt>Teste finalizate</dt>
+                      <dd>{student.testsCompleted}</dd>
+                    </div>
+                  </dl>
+                </details>
+              </article>
+            ))
+          ) : (
+            <p className="academic-mobile-empty-state">Nu exista elevi identificati momentan.</p>
+          )}
+          </div>
+        ) : null}
       </section>
 
       <section className="academic-surface-panel academic-profile-reports-stage">
@@ -1361,25 +1484,113 @@ function ProfilePage() {
           </div>
         ) : null}
 
-        <div className="academic-reports-grid-shell academic-unified-report-grid-shell">
-          <Paper className="academic-reports-paper" elevation={0}>
-            <DataGrid
-              rows={activeReportRows}
-              columns={reportColumns}
-              paginationModel={reportPaginationModel}
-              onPaginationModelChange={setReportPaginationModel}
-              pageSizeOptions={[5, 10, 20]}
-              disableRowSelectionOnClick
-              disableColumnMenu
-              autoHeight
-              rowHeight={58}
-              columnHeaderHeight={46}
-              density="compact"
-              localeText={{ noRowsLabel: reportNoRowsLabel }}
-              sx={reportGridSx}
-            />
-          </Paper>
-        </div>
+        {isReportsMobileLayout ? (
+          <div className="academic-report-mobile-list" aria-label="Rapoarte disponibile">
+          {activeReportRows.length ? (
+            <>
+              <div className="academic-report-mobile-select-all">
+                <Checkbox
+                  checked={allVisibleAttemptsSelected}
+                  indeterminate={someVisibleAttemptsSelected}
+                  onChange={toggleAllVisibleAttempts}
+                  slotProps={{ input: { "aria-label": "Selecteaza toate rapoartele afisate" } }}
+                  size="small"
+                />
+                <span>Selecteaza toate rapoartele afisate</span>
+              </div>
+
+              {activeReportRows.map((row) => (
+                <article className="academic-report-mobile-card" key={`mobile-${row.id}`}>
+                  <div className="academic-mobile-card-head academic-report-mobile-card-head">
+                    <div className="academic-report-mobile-identity">
+                      <Checkbox
+                        checked={selectedAttemptIds.includes(row.id)}
+                        onChange={() => toggleAttemptSelection(row.id)}
+                        slotProps={{ input: { "aria-label": `Selecteaza raportul elevului ${row.studentName}` } }}
+                        size="small"
+                      />
+                      <div>
+                        <p className="section-kicker">Elev</p>
+                        <h3>{row.studentName}</h3>
+                      </div>
+                    </div>
+                    <span className="status-pill academic-report-status-pill">{row.statusLabel}</span>
+                  </div>
+
+                  <p className="academic-mobile-card-title">{row.testTitle}</p>
+
+                  <dl className="academic-mobile-card-primary-facts">
+                    <div>
+                      <dt>Scor</dt>
+                      <dd>{row.scorePercent}</dd>
+                    </div>
+                    <div>
+                      <dt>Trimis</dt>
+                      <dd>{row.submittedAt}</dd>
+                    </div>
+                  </dl>
+
+                  <details className="academic-mobile-card-details">
+                    <summary>Vezi detaliile raportului</summary>
+                    <dl>
+                      <div>
+                        <dt>Tip test</dt>
+                        <dd>
+                          {row.testType === "bac"
+                            ? "BAC"
+                            : row.testType === "admitere"
+                              ? "Admitere"
+                              : "Test integrat"}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt>Cod arhiva</dt>
+                        <dd className="academic-report-code">{row.uniqueCode}</dd>
+                      </div>
+                      <div>
+                        <dt>Email</dt>
+                        <dd>{row.studentEmail || "Fara email asociat"}</dd>
+                      </div>
+                    </dl>
+                  </details>
+
+                  <ReportMobileActions
+                    row={row}
+                    emailSendingReportId={emailSendingReportId}
+                    onPreview={handlePreviewReport}
+                    onDownload={handleDownloadReport}
+                    onEmail={handleSendReportEmail}
+                  />
+                </article>
+              ))}
+            </>
+          ) : (
+            <p className="academic-mobile-empty-state">{reportNoRowsLabel}</p>
+          )}
+          </div>
+        ) : null}
+
+        {!isReportsMobileLayout ? (
+          <div className="academic-reports-grid-shell academic-unified-report-grid-shell academic-desktop-data-grid">
+            <Paper className="academic-reports-paper" elevation={0}>
+              <DataGrid
+                rows={activeReportRows}
+                columns={reportColumns}
+                paginationModel={reportPaginationModel}
+                onPaginationModelChange={setReportPaginationModel}
+                pageSizeOptions={[5, 10, 20]}
+                disableRowSelectionOnClick
+                disableColumnMenu
+                autoHeight
+                rowHeight={70}
+                columnHeaderHeight={46}
+                density="compact"
+                localeText={{ noRowsLabel: reportNoRowsLabel }}
+                sx={reportGridSx}
+              />
+            </Paper>
+          </div>
+        ) : null}
       </section>
 
       <section className="academic-surface-panel academic-supabase-usage-stage">

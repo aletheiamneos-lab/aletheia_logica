@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sqlite3
 import sys
 import uuid
 from pathlib import Path
@@ -10,10 +11,17 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 if str(BACKEND_ROOT) not in sys.path:
     sys.path.insert(0, str(BACKEND_ROOT))
 
-from app.database import DB_PATH, get_connection  # noqa: E402
 from app.supabase_service import get_server_supabase  # noqa: E402
 
+DB_PATH = BACKEND_ROOT / "data" / "logic_app.db"
 QUESTION_NAMESPACE = uuid.UUID("e7741c8e-b364-4e20-a2e0-555ae954caa8")
+
+
+def get_connection() -> sqlite3.Connection:
+    connection = sqlite3.connect(DB_PATH)
+    connection.row_factory = sqlite3.Row
+    connection.execute("PRAGMA foreign_keys = ON")
+    return connection
 
 
 def decode_json(value, default):

@@ -53,7 +53,7 @@ backend/data/archive/reports_html/
 backend/data/archive/pdf_test_output.pdf
 
 # Local validation artifacts and browser profiles
-/.codex-temp/
+**/.codex-temp/
 /.tmp*
 /tmp-*
 /tmp_*

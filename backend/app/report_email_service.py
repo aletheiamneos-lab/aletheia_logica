@@ -4,16 +4,17 @@ import logging
 import math
 import os
 import smtplib
-import subprocess
 import uuid
 from dataclasses import dataclass
 from datetime import datetime
 from email.message import EmailMessage
 from pathlib import Path
-from tempfile import TemporaryDirectory
 
 from fastapi import HTTPException
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from playwright.sync_api import Error as PlaywrightError
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+from playwright.sync_api import sync_playwright
 
 TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
 EMAIL_TEMPLATE_NAME = "report_email.html.jinja2"
@@ -22,7 +23,7 @@ ENV_FILE_CANDIDATES = [PROJECT_ROOT / ".env", PROJECT_ROOT / "backend" / ".env"]
 EMAIL_CARD_WIDTH = 808
 EMAIL_CARD_HEIGHT = 1264
 EMAIL_CARD_CID = "logic-report-card"
-EDGE_SCALE_FACTOR = 2
+EMAIL_CARD_DEVICE_SCALE_FACTOR = 2
 LOGGER = logging.getLogger("uvicorn.error")
 
 
@@ -301,80 +302,42 @@ def render_report_email_visual_html(report_payload: dict, pdf_file_name: str) ->
     )
 
 
-def _resolve_edge_executable() -> Path:
-    configured_path = (_read_config_value("LOGICA_EDGE_PATH") or "").strip()
-    candidates = []
-    if configured_path:
-        candidates.append(Path(configured_path))
-
-    program_files_x86 = Path(os.environ.get("PROGRAMFILES(X86)", "C:/Program Files (x86)"))
-    program_files = Path(os.environ.get("PROGRAMFILES", "C:/Program Files"))
-    local_app_data = Path(os.environ.get("LOCALAPPDATA", ""))
-
-    candidates.extend(
-        [
-            program_files_x86 / "Microsoft" / "Edge" / "Application" / "msedge.exe",
-            program_files / "Microsoft" / "Edge" / "Application" / "msedge.exe",
-            local_app_data / "Microsoft" / "Edge" / "Application" / "msedge.exe",
-        ]
-    )
-
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
-
-    raise _error(
-        500,
-        "Nu am gasit Microsoft Edge pentru randarea template-ului email. Instaleaza Edge sau seteaza `LOGICA_EDGE_PATH`.",
-    )
-
-
 def _capture_visual_card_png(report_payload: dict, pdf_file_name: str) -> bytes:
-    edge_path = _resolve_edge_executable()
     html_content = render_report_email_visual_html(report_payload, pdf_file_name)
-
-    with TemporaryDirectory(prefix="logic-email-card-") as temp_dir:
-        temp_path = Path(temp_dir)
-        html_path = temp_path / "report-email-card.html"
-        screenshot_path = temp_path / "report-email-card.png"
-        html_path.write_text(html_content, encoding="utf-8")
-
-        command = [
-            str(edge_path),
-            "--headless=new",
-            "--disable-gpu",
-            "--hide-scrollbars",
-            "--no-first-run",
-            "--no-default-browser-check",
-            "--run-all-compositor-stages-before-draw",
-            "--virtual-time-budget=1500",
-            "--default-background-color=00000000",
-            f"--window-size={EMAIL_CARD_WIDTH},{EMAIL_CARD_HEIGHT}",
-            f"--force-device-scale-factor={EDGE_SCALE_FACTOR}",
-            f"--screenshot={screenshot_path}",
-            html_path.as_uri(),
-        ]
-
-        try:
-            subprocess.run(
-                command,
-                check=True,
-                capture_output=True,
-                timeout=60,
+    try:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(
+                headless=True,
+                args=["--disable-dev-shm-usage"],
             )
-        except subprocess.CalledProcessError as error:
-            stderr = error.stderr.decode("utf-8", errors="ignore").strip()
-            raise _error(
-                500,
-                f"Template-ul email nu a putut fi randat in Edge: {stderr or 'eroare necunoscuta'}.",
-            ) from error
-        except subprocess.TimeoutExpired as error:
-            raise _error(500, "Randarea template-ului email a depasit timpul maxim permis.") from error
-
-        if not screenshot_path.exists():
-            raise _error(500, "Fisierul imagine al template-ului email nu a fost generat.")
-
-        return screenshot_path.read_bytes()
+            try:
+                page = browser.new_page(
+                    viewport={
+                        "width": EMAIL_CARD_WIDTH,
+                        "height": EMAIL_CARD_HEIGHT,
+                    },
+                    device_scale_factor=EMAIL_CARD_DEVICE_SCALE_FACTOR,
+                )
+                page.set_content(html_content, wait_until="networkidle", timeout=30_000)
+                return page.screenshot(
+                    type="png",
+                    full_page=True,
+                    omit_background=True,
+                    timeout=30_000,
+                )
+            finally:
+                browser.close()
+    except PlaywrightTimeoutError as error:
+        raise _error(500, "Randarea template-ului email a depasit timpul maxim permis.") from error
+    except PlaywrightError as error:
+        raise _error(
+            500,
+            (
+                "Template-ul email nu a putut fi randat cu Playwright Chromium. "
+                "Verifica instalarea browserului cu `python -m playwright install chromium`. "
+                f"Detalii: {error}"
+            ),
+        ) from error
 
 
 def render_report_email_html(card_cid: str = EMAIL_CARD_CID) -> str:

@@ -20,7 +20,7 @@ from reportlab.pdfgen import canvas
 
 from .admitere_report_pdf import build_admitere_pdf_report
 from .auth_service import resolve_unique_student_email
-from .database import DATA_DIR
+from .storage_paths import DATA_DIR
 
 REPORT_ROOT = DATA_DIR / "archive" / "admitere_student_reports"
 REPORT_JSON_DIR = REPORT_ROOT / "json"

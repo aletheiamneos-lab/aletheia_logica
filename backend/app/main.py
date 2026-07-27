@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import Depends, FastAPI
@@ -17,11 +16,10 @@ from .auth_routes import router as auth_router
 from .bac_student_reports_routes import router as bac_student_reports_router
 from .bac_teacher_solution_routes import router as bac_teacher_solution_router
 from .auth_service import get_current_user
-from .database import (
+from .learning_service import (
     get_lesson,
     get_progress_insights,
     get_progress_summary,
-    initialize_database,
     list_exercises,
     list_exercises_by_lesson,
     list_lessons,
@@ -66,17 +64,10 @@ def frontend_build_exists() -> bool:
     return INDEX_FILE.exists()
 
 
-@asynccontextmanager
-async def lifespan(_: FastAPI):
-    initialize_database()
-    yield
-
-
 app = FastAPI(
     title="Logica BAC",
     description="Aplicație locală pentru învățarea logicii.",
     version="1.0.0",
-    lifespan=lifespan,
 )
 
 app.add_middleware(
@@ -148,13 +139,16 @@ def read_exercises_by_lesson(lesson_id: int) -> list[dict]:
 
 
 @app.post("/submit-answer", response_model=SubmitAnswerResponse)
-def submit_answer_route(payload: SubmitAnswerRequest) -> dict:
-    return submit_answer(payload.exercise_id, payload.answer)
+def submit_answer_route(
+    payload: SubmitAnswerRequest,
+    current_user: dict = Depends(get_current_user),
+) -> dict:
+    return submit_answer(payload.exercise_id, payload.answer, current_user)
 
 
 @app.get("/progress/summary", response_model=ProgressSummary)
-def progress_summary() -> dict:
-    return get_progress_summary()
+def progress_summary(current_user: dict = Depends(get_current_user)) -> dict:
+    return get_progress_summary(current_user)
 
 
 @app.get("/progress/insights", response_model=ProgressInsights)
