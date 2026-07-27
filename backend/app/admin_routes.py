@@ -21,6 +21,7 @@ from .integrated_tests_supabase_service import (
 from .pdf_service import build_content_disposition
 from .report_email_service import send_report_email, send_reports_email
 from .schemas import AttemptBulkRequest
+from .supabase_service import get_supabase_database_usage
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -101,6 +102,11 @@ def admin_report_email(report_id: str, current_user: dict = Depends(get_admin_us
 @router.get("/attempts/summary")
 def admin_attempts_summary(current_user: dict = Depends(get_admin_user)) -> dict:
     return get_admin_attempts_summary(current_user)
+
+
+@router.get("/supabase-usage")
+def admin_supabase_usage(current_user: dict = Depends(get_admin_user)) -> dict:
+    return get_supabase_database_usage()
 
 
 @router.post("/attempts/pdf-archive")
