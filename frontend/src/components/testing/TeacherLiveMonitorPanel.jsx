@@ -54,11 +54,11 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
   const chartHeight = 252
   const maxAnswered = Math.max(
     25,
-    ...activeStudents.flatMap((entry) => entry.series.map((point) => point.answered_count)),
+    ...activeStudents.flatMap((entry) => (entry.series ?? []).map((point) => point.answered_count)),
   )
   const maxElapsed = Math.max(
     1,
-    ...activeStudents.flatMap((entry) => entry.series.map((point) => point.elapsed_seconds)),
+    ...activeStudents.flatMap((entry) => (entry.series ?? []).map((point) => point.elapsed_seconds)),
   )
 
   return (
@@ -79,8 +79,14 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
         <>
           <div className="mt-5 grid gap-4 xl:grid-cols-[minmax(0,1.28fr)_minmax(360px,0.92fr)]">
             <article className="muted-box p-4 testing-monitor-surface testing-monitor-chart-shell">
-              <div className="overflow-x-auto">
-                <svg viewBox={`0 0 ${chartWidth} ${chartHeight}`} className="testing-line-chart">
+              <div className="testing-monitor-chart-viewport">
+                <svg
+                  viewBox={`0 0 ${chartWidth} ${chartHeight}`}
+                  className="testing-line-chart"
+                  role="img"
+                  aria-labelledby="testing-live-chart-title"
+                >
+                  <title id="testing-live-chart-title">Progresul elevilor activi in timp</title>
                   {[0, 0.25, 0.5, 0.75, 1].map((ratio) => {
                     const y = chartHeight - chartHeight * ratio
                     return <line key={ratio} x1="0" y1={y} x2={chartWidth} y2={y} className="testing-line-grid" />
@@ -94,7 +100,7 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
                         stroke={student.marker.accent_color}
                         strokeWidth="3"
                       />
-                      {student.series.map((point) => {
+                      {(student.series ?? []).map((point) => {
                         const x = (point.elapsed_seconds / maxElapsed) * chartWidth
                         const y = chartHeight - (point.answered_count / Math.max(maxAnswered, 1)) * chartHeight
                         return (
@@ -114,7 +120,7 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
 
             <article className="muted-box p-4 testing-monitor-surface testing-monitor-table-shell">
               <div className="testing-monitor-table-scroll">
-                <table className="testing-table">
+                <table className="testing-table testing-monitor-desktop-table">
                   <thead>
                     <tr>
                       <th>Student</th>
@@ -138,6 +144,52 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
                     ))}
                   </tbody>
                 </table>
+
+                <div className="testing-monitor-mobile-list" aria-label="Elevi activi">
+                  {activeStudents.map((student) => {
+                    const progress =
+                      student.progress_percentage ??
+                      student.progressPercent ??
+                      student.progress_percent ??
+                      0
+                    const currentQuestion =
+                      (student.current_question_index ?? student.currentQuestionIndex ?? 0) + 1
+
+                    return (
+                      <article className="testing-monitor-mobile-card" key={`mobile-${student.id}`}>
+                        <div className="testing-monitor-mobile-head">
+                          <strong>{student.student_display_name}</strong>
+                          <span className="status-pill">{student.status_label}</span>
+                        </div>
+                        <p className="testing-monitor-mobile-test">{student.test_title}</p>
+                        <dl className="testing-monitor-mobile-facts">
+                          <div>
+                            <dt>Progres</dt>
+                            <dd>{progress}%</dd>
+                          </div>
+                          <div>
+                            <dt>Intrebare</dt>
+                            <dd>{currentQuestion}</dd>
+                          </div>
+                          <div>
+                            <dt>Timp</dt>
+                            <dd>{formatElapsed(student.duration_seconds)}</dd>
+                          </div>
+                        </dl>
+                        <div
+                          className="testing-monitor-progress"
+                          role="progressbar"
+                          aria-label={`Progres ${student.student_display_name}`}
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow={progress}
+                        >
+                          <span style={{ width: `${Math.max(0, Math.min(progress, 100))}%` }} />
+                        </div>
+                      </article>
+                    )
+                  })}
+                </div>
               </div>
             </article>
           </div>
@@ -165,7 +217,7 @@ function TeacherLiveMonitorPanel({ snapshot, onSaveMarker }) {
                       </p>
                     </div>
 
-                    <div className="grid gap-3 sm:grid-cols-[120px_160px_auto]">
+                    <div className="testing-monitor-marker-grid">
                       <label className="flex flex-col gap-2">
                         <span className="section-kicker">Marker</span>
                         <input

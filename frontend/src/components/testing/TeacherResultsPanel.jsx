@@ -169,7 +169,7 @@ function TeacherResultsPanel({
                     }))
                   }
                 />
-                <div className="mt-4 flex flex-wrap gap-2.5">
+                <div className="mt-4 testing-report-actions">
                   <button
                     className="btn-primary"
                     type="button"
@@ -196,8 +196,8 @@ function TeacherResultsPanel({
 
               <article className="muted-box p-4">
                 <p className="section-kicker">Raspunsuri</p>
-                <div className="mt-3 overflow-x-auto">
-                  <table className="testing-table">
+                <div className="mt-3 testing-responsive-table-shell">
+                  <table className="testing-table testing-responsive-table">
                     <thead>
                       <tr>
                         <th>#</th>
@@ -212,8 +212,8 @@ function TeacherResultsPanel({
                         const isCorrect = Boolean(question.is_correct ?? question.isCorrect)
                         return (
                           <tr key={question.id}>
-                            <td>{question.order_in_test ?? question.orderInTest}</td>
-                            <td>
+                            <td data-label="#">{question.order_in_test ?? question.orderInTest}</td>
+                            <td data-label="Categorie">
                               {formatTestingCategoryLabel(
                                 question.category_label ??
                                   question.categoryLabel ??
@@ -222,9 +222,16 @@ function TeacherResultsPanel({
                                   question.lessonLabel,
                               )}
                             </td>
-                            <td>{question.student_answer_label ?? question.studentAnswerLabel}</td>
-                            <td>{question.correct_answer_label ?? question.correctAnswerLabel}</td>
-                            <td className={isCorrect ? "text-emerald-700" : "text-rose-700"}>
+                            <td data-label="Raspuns elev">
+                              {question.student_answer_label ?? question.studentAnswerLabel}
+                            </td>
+                            <td data-label="Raspuns corect">
+                              {question.correct_answer_label ?? question.correctAnswerLabel}
+                            </td>
+                            <td
+                              data-label="Status"
+                              className={isCorrect ? "text-emerald-700" : "text-rose-700"}
+                            >
                               {question.status_label ?? question.statusLabel}
                             </td>
                           </tr>

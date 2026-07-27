@@ -1,15 +1,51 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 
 import AnimatedAnswerChoiceGroup from "../ui/AnimatedAnswerChoiceGroup"
 import { clearTestProgress, publishTestProgress } from "../../utils/testProgressChannel"
 
 const OPTION_KEYS = ["a", "b", "c", "d", "e"]
+const LONG_READING_WORD_COUNT = 120
 
 function formatElapsed(seconds) {
   const totalSeconds = Math.max(seconds, 0)
   const minutes = Math.floor(totalSeconds / 60)
   const remainingSeconds = totalSeconds % 60
   return `${minutes}:${String(remainingSeconds).padStart(2, "0")}`
+}
+
+function resolveSharedText(question) {
+  return String(
+    question?.shared_text ??
+      question?.sharedText ??
+      question?.source_text ??
+      question?.sourceText ??
+      question?.section_shared_text ??
+      question?.sectionSharedText ??
+      question?.zone_shared_text ??
+      question?.zoneSharedText ??
+      question?.passage ??
+      question?.stimulus ??
+      "",
+  ).trim()
+}
+
+function resolveSharedTextKey(question, sharedText) {
+  return String(
+    question?.shared_text_id ??
+      question?.sharedTextId ??
+      question?.source_text_id ??
+      question?.sourceTextId ??
+      question?.text_group_id ??
+      question?.textGroupId ??
+      sharedText,
+  )
+}
+
+function countWords(value) {
+  return String(value || "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length
 }
 
 function IntegratedTestRunner({
@@ -20,14 +56,23 @@ function IntegratedTestRunner({
   isEmbedded = false,
   examMode = false,
 }) {
-  const questions = Array.isArray(test?.questions) ? test.questions : []
+  const questions = useMemo(
+    () => (Array.isArray(test?.questions) ? test.questions : []),
+    [test?.questions],
+  )
   const [answers, setAnswers] = useState(attempt.answers ?? {})
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(attempt.current_question_index ?? 0)
   const [elapsedSeconds, setElapsedSeconds] = useState(attempt.duration_seconds ?? 0)
   const [isSaving, setIsSaving] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSharedTextExpanded, setIsSharedTextExpanded] = useState(false)
+  const [isReadingOverlayOpen, setIsReadingOverlayOpen] = useState(false)
   const [error, setError] = useState("")
   const dirtyRef = useRef(false)
   const persistProgressRef = useRef(async () => {})
+  const questionPanelRef = useRef(null)
+  const readingTriggerRef = useRef(null)
+  const readingCloseRef = useRef(null)
   const snapshotRef = useRef({
     answers: attempt.answers ?? {},
     currentQuestionIndex: attempt.current_question_index ?? 0,
@@ -107,6 +152,117 @@ function IntegratedTestRunner({
     ? Math.min(100, Math.round((answeredCount / totalQuestions) * 100))
     : 0
   const progressLabel = `${answeredCount} / ${totalQuestions} completate`
+  const sharedText = resolveSharedText(question)
+  const sharedTextKey = resolveSharedTextKey(question, sharedText)
+  const isLongSharedText = countWords(sharedText) > LONG_READING_WORD_COUNT
+
+  const sharedTextMeta = useMemo(() => {
+    if (!sharedText) {
+      return null
+    }
+
+    const groups = []
+    questions.forEach((entry) => {
+      const entryText = resolveSharedText(entry)
+      if (!entryText) {
+        return
+      }
+      const entryKey = resolveSharedTextKey(entry, entryText)
+      if (!groups.some((group) => group.key === entryKey)) {
+        groups.push({ key: entryKey, text: entryText })
+      }
+    })
+
+    const linkedQuestions = questions.filter((entry) => {
+      const entryText = resolveSharedText(entry)
+      return entryText && resolveSharedTextKey(entry, entryText) === sharedTextKey
+    })
+    const position = linkedQuestions.findIndex((entry) => entry.id === question?.id)
+
+    return {
+      textNumber: Math.max(1, groups.findIndex((group) => group.key === sharedTextKey) + 1),
+      questionNumber: Math.max(1, position + 1),
+      questionCount: Math.max(1, linkedQuestions.length),
+    }
+  }, [question?.id, questions, sharedText, sharedTextKey])
+
+  useEffect(() => {
+    setIsSharedTextExpanded(false)
+    setIsReadingOverlayOpen(false)
+  }, [sharedTextKey])
+
+  useEffect(() => {
+    if (!isReadingOverlayOpen) {
+      return undefined
+    }
+
+    document.body.classList.add("integrated-reading-overlay-open")
+    const readingTrigger = readingTriggerRef.current
+    const timeoutId = window.setTimeout(() => readingCloseRef.current?.focus(), 20)
+
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        setIsReadingOverlayOpen(false)
+      }
+    }
+
+    window.addEventListener("keydown", handleKeyDown)
+    return () => {
+      window.clearTimeout(timeoutId)
+      window.removeEventListener("keydown", handleKeyDown)
+      document.body.classList.remove("integrated-reading-overlay-open")
+      window.setTimeout(() => readingTrigger?.focus(), 0)
+    }
+  }, [isReadingOverlayOpen])
+
+  useEffect(() => {
+    if (isEmbedded || typeof window === "undefined") {
+      return undefined
+    }
+
+    const viewport = window.visualViewport
+    let scrollTimeoutId = null
+
+    function updateKeyboardOffset() {
+      const keyboardOffset = viewport
+        ? Math.max(0, window.innerHeight - viewport.height - viewport.offsetTop)
+        : 0
+      document.documentElement.style.setProperty("--integrated-keyboard-offset", `${keyboardOffset}px`)
+
+      const activeElement = document.activeElement
+      const isTextInput =
+        activeElement?.matches?.("input, textarea, select, [contenteditable='true']") ?? false
+      if (isTextInput) {
+        window.clearTimeout(scrollTimeoutId)
+        scrollTimeoutId = window.setTimeout(() => {
+          activeElement.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+        }, 80)
+      }
+    }
+
+    function handleFocusIn(event) {
+      if (!event.target?.matches?.("input, textarea, select, [contenteditable='true']")) {
+        return
+      }
+      window.clearTimeout(scrollTimeoutId)
+      scrollTimeoutId = window.setTimeout(() => {
+        event.target.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })
+      }, 120)
+    }
+
+    viewport?.addEventListener("resize", updateKeyboardOffset)
+    viewport?.addEventListener("scroll", updateKeyboardOffset)
+    window.addEventListener("focusin", handleFocusIn)
+    updateKeyboardOffset()
+
+    return () => {
+      viewport?.removeEventListener("resize", updateKeyboardOffset)
+      viewport?.removeEventListener("scroll", updateKeyboardOffset)
+      window.removeEventListener("focusin", handleFocusIn)
+      window.clearTimeout(scrollTimeoutId)
+      document.documentElement.style.removeProperty("--integrated-keyboard-offset")
+    }
+  }, [isEmbedded])
 
   useEffect(() => {
     if (!question) {
@@ -185,6 +341,9 @@ function IntegratedTestRunner({
       currentQuestionIndex: safeIndex,
     }
     dirtyRef.current = true
+    window.requestAnimationFrame(() => {
+      questionPanelRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+    })
     await persistProgress({
       eventType: "question_changed",
       trackActivity: true,
@@ -192,9 +351,24 @@ function IntegratedTestRunner({
   }
 
   async function handleSubmit() {
-    await persistProgress()
-    await onSubmit()
+    if (isSubmitting) {
+      return
+    }
+
+    setIsSubmitting(true)
+    try {
+      await persistProgress()
+      await onSubmit()
+    } catch (submitError) {
+      setError(submitError.message)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
+
+  const sharedTextLabel = sharedTextMeta
+    ? `Text ${sharedTextMeta.textNumber} · Intrebarea ${sharedTextMeta.questionNumber}/${sharedTextMeta.questionCount}`
+    : ""
 
   return (
     <div
@@ -205,7 +379,26 @@ function IntegratedTestRunner({
         examMode ? "integrated-test-runner-exam-shell" : "",
       ].join(" ")}
     >
-      <section className={isEmbedded ? "panel p-4 sm:p-5" : "hero-panel"}>
+      {!isEmbedded ? (
+        <header className="integrated-runner-sticky-header">
+          <div className="integrated-runner-sticky-copy">
+            <strong>{`Intrebarea ${currentQuestionIndex + 1}/${totalQuestions}`}</strong>
+            <span aria-live="polite">{isSaving ? "Se salveaza" : `${answeredCount} completate`}</span>
+          </div>
+          <div
+            className="integrated-runner-sticky-progress"
+            role="progressbar"
+            aria-label="Progresul testului"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow={progressValue}
+          >
+            <span style={{ width: `${progressValue}%` }} />
+          </div>
+        </header>
+      ) : null}
+
+      <section className={`${isEmbedded ? "panel p-4 sm:p-5" : "hero-panel"} integrated-runner-overview`}>
         <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div>
             <p className="section-kicker">{isEmbedded ? "Preview deschis" : "Sesiune activa"}</p>
@@ -225,7 +418,7 @@ function IntegratedTestRunner({
             >
               {isEmbedded
                 ? "Corectarea apare dupa submit."
-                : "Lucrezi pe itemul curent, iar progresul se salveaza in Supabase pe parcurs."}
+                : "Lucrezi pe itemul curent, iar progresul se salveaza automat pe parcurs."}
             </p>
           </div>
 
@@ -238,22 +431,15 @@ function IntegratedTestRunner({
                       <span className="floating-test-progress-label">Progresul testului</span>
                       <span className={`integrated-test-save-state${isSaving ? " is-saving" : ""}`}>
                         <span aria-hidden="true" />
-                        {isSaving ? "Se salvează" : "Salvare activă"}
+                        {isSaving ? "Se salveaza" : "Salvare activa"}
                       </span>
                     </div>
                     <p className="floating-test-progress-title">{progressLabel}</p>
-                    <div
-                      className="floating-test-progress-track"
-                      role="progressbar"
-                      aria-label="Progresul testului"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      aria-valuenow={progressValue}
-                    >
+                    <div className="floating-test-progress-track" aria-hidden="true">
                       <div className="floating-test-progress-fill" style={{ width: `${progressValue}%` }} />
                     </div>
                     <div className="floating-test-progress-meta">
-                      <span>{`Întrebarea ${currentQuestionIndex + 1} din ${totalQuestions}`}</span>
+                      <span>{`Intrebarea ${currentQuestionIndex + 1} din ${totalQuestions}`}</span>
                       <span>{`${answeredCount} completate`}</span>
                     </div>
                   </div>
@@ -272,32 +458,72 @@ function IntegratedTestRunner({
               </article>
             ) : null}
 
-            <div className={isEmbedded ? "testing-stat-card" : "testing-stat-card integrated-test-runner-stat-card"}>
+            <div className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}>
               <p className="section-kicker">Timp</p>
-              <p className={isEmbedded ? "testing-stat-value" : "testing-stat-value"}>{formatElapsed(elapsedSeconds)}</p>
+              <p className="testing-stat-value">{formatElapsed(elapsedSeconds)}</p>
             </div>
-            <div className={isEmbedded ? "testing-stat-card" : "testing-stat-card integrated-test-runner-stat-card"}>
+            <div className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}>
               <p className="section-kicker">Completate</p>
-              <p className={isEmbedded ? "testing-stat-value" : "testing-stat-value"}>{answeredCount}</p>
+              <p className="testing-stat-value">{answeredCount}</p>
             </div>
-            <div className={isEmbedded ? "testing-stat-card" : "testing-stat-card integrated-test-runner-stat-card"}>
+            <div className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}>
               <p className="section-kicker">Intrebarea curenta</p>
-              <p className={isEmbedded ? "testing-stat-value" : "testing-stat-value"}>{currentQuestionIndex + 1}</p>
+              <p className="testing-stat-value">{currentQuestionIndex + 1}</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="panel p-5 sm:p-6 integrated-test-question-panel">
-        <div className="flex flex-wrap items-center gap-2.5">
+      <section ref={questionPanelRef} className="panel p-5 sm:p-6 integrated-test-question-panel">
+        {sharedText ? (
+          <aside className="integrated-shared-text-card" aria-label={sharedTextLabel}>
+            <div className="integrated-shared-text-head">
+              <strong>{sharedTextLabel}</strong>
+              {isLongSharedText ? (
+                <button
+                  ref={readingTriggerRef}
+                  className="integrated-text-action"
+                  type="button"
+                  onClick={() => setIsReadingOverlayOpen(true)}
+                >
+                  Deschide textul
+                </button>
+              ) : (
+                <button
+                  className="integrated-text-action"
+                  type="button"
+                  aria-expanded={isSharedTextExpanded}
+                  onClick={() => setIsSharedTextExpanded((current) => !current)}
+                >
+                  {isSharedTextExpanded ? "Restrange" : "Vezi tot"}
+                </button>
+              )}
+            </div>
+            {!isLongSharedText ? (
+              <div className={`integrated-shared-text-copy${isSharedTextExpanded ? " is-expanded" : ""}`}>
+                {sharedText}
+              </div>
+            ) : (
+              <p className="integrated-shared-text-preview">
+                {sharedText.split(/\s+/).slice(0, 30).join(" ")}…
+              </p>
+            )}
+          </aside>
+        ) : null}
+
+        <div className="integrated-question-meta">
           <span className="tag">{question.lesson_label || question.lessonLabel || "Lectie"}</span>
-          <span className="status-pill">{`Intrebarea ${currentQuestionIndex + 1} din ${questions.length}`}</span>
-          <span className="status-pill">{isSaving ? "Se salveaza..." : "Salvare locala activa"}</span>
+          <span className="status-pill">
+            {sharedTextLabel || `Intrebarea ${currentQuestionIndex + 1} din ${questions.length}`}
+          </span>
+          <span className="status-pill" aria-live="polite">
+            {isSaving ? "Se salveaza..." : "Salvare automata activa"}
+          </span>
         </div>
 
-        <h2 className="mt-4 text-[1.45rem] leading-8 text-ink">{question.text || "Intrebare necompletata inca."}</h2>
+        <h2 className="integrated-question-title">{question.text || "Intrebare necompletata inca."}</h2>
 
-        <div className="mt-5">
+        <div className="integrated-question-options">
           <AnimatedAnswerChoiceGroup
             name={`question-${question.id}`}
             value={answers[question.id] == null ? null : String(answers[question.id])}
@@ -312,34 +538,36 @@ function IntegratedTestRunner({
           />
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-2.5">
-          <button
-            className="btn-secondary"
-            disabled={currentQuestionIndex === 0}
-            type="button"
-            onClick={() => handleNavigate(currentQuestionIndex - 1)}
-          >
-            Intrebarea anterioara
-          </button>
-          <button
-            className="btn-secondary"
-            disabled={currentQuestionIndex === questions.length - 1}
-            type="button"
-            onClick={() => handleNavigate(currentQuestionIndex + 1)}
-          >
-            Intrebarea urmatoare
-          </button>
-          <button className="btn-primary" type="button" onClick={handleSubmit}>
-            Submit
-          </button>
-        </div>
+        {isEmbedded ? (
+          <div className="integrated-runner-embedded-actions">
+            <button
+              className="btn-secondary"
+              disabled={currentQuestionIndex === 0}
+              type="button"
+              onClick={() => handleNavigate(currentQuestionIndex - 1)}
+            >
+              Intrebarea anterioara
+            </button>
+            <button
+              className="btn-secondary"
+              disabled={currentQuestionIndex === questions.length - 1}
+              type="button"
+              onClick={() => handleNavigate(currentQuestionIndex + 1)}
+            >
+              Intrebarea urmatoare
+            </button>
+            <button className="btn-primary" type="button" onClick={handleSubmit}>
+              Trimite
+            </button>
+          </div>
+        ) : null}
 
-        {error ? <div className="alert-panel mt-4">{error}</div> : null}
+        {error ? <div className="alert-panel mt-4" role="alert">{error}</div> : null}
       </section>
 
-      <section className="panel p-5 sm:p-6">
+      <section className="panel p-5 sm:p-6 integrated-runner-question-navigation">
         <p className="section-kicker">Navigare rapida</p>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="integrated-runner-nav-grid">
           {questions.map((entry, index) => {
             const isAnswered = Object.prototype.hasOwnProperty.call(answers, entry.id)
             const isCurrent = index === currentQuestionIndex
@@ -347,6 +575,8 @@ function IntegratedTestRunner({
               <button
                 key={entry.id}
                 type="button"
+                aria-label={`Mergi la intrebarea ${index + 1}${isAnswered ? ", completata" : ""}`}
+                aria-current={isCurrent ? "step" : undefined}
                 className={[
                   "testing-nav-chip",
                   isCurrent ? "is-current" : "",
@@ -360,6 +590,62 @@ function IntegratedTestRunner({
           })}
         </div>
       </section>
+
+      {!isEmbedded ? (
+        <footer className="integrated-runner-sticky-footer">
+          <button
+            className="btn-secondary integrated-runner-back-button"
+            disabled={currentQuestionIndex === 0 || isSubmitting}
+            type="button"
+            onClick={() => handleNavigate(currentQuestionIndex - 1)}
+          >
+            Inapoi
+          </button>
+          <button
+            className="btn-primary integrated-runner-primary-button"
+            disabled={isSubmitting}
+            type="button"
+            onClick={
+              currentQuestionIndex === questions.length - 1
+                ? handleSubmit
+                : () => handleNavigate(currentQuestionIndex + 1)
+            }
+          >
+            {isSubmitting
+              ? "Se trimite..."
+              : currentQuestionIndex === questions.length - 1
+                ? "Trimite testul"
+                : "Urmatoarea"}
+          </button>
+        </footer>
+      ) : null}
+
+      {isReadingOverlayOpen ? (
+        <div
+          className="integrated-reading-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="integrated-reading-title"
+        >
+          <header className="integrated-reading-header">
+            <div>
+              <p className="section-kicker">Lectura pentru intrebari</p>
+              <h2 id="integrated-reading-title">{sharedTextLabel}</h2>
+            </div>
+            <button
+              ref={readingCloseRef}
+              className="btn-secondary"
+              type="button"
+              onClick={() => setIsReadingOverlayOpen(false)}
+            >
+              Inchide
+            </button>
+          </header>
+          <article className="integrated-reading-content" tabIndex="0">
+            {sharedText}
+          </article>
+        </div>
+      ) : null}
     </div>
   )
 }
