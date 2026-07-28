@@ -6029,6 +6029,387 @@
   }
 }
 
+.academic-home-page :is(a, button, input, select) {
+  min-height: 44px !important;
+}
+
+/* Homepage mobile foundation: one-column flow, no horizontal Gantt overflow. */
+@media (max-width: 768px) {
+  .academic-home-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 0.9rem;
+    overflow-x: clip;
+    font-size: max(0.9375rem, 15px);
+  }
+
+  .academic-home-page > *,
+  .academic-home-page
+    :is(
+      .academic-home-hero,
+      .academic-chart-grid,
+      .academic-chart-panel,
+      .academic-surface-panel,
+      .academic-home-indicators,
+      .academic-task-grid,
+      .academic-roadmap-list,
+      .academic-module-rows,
+      .academic-gantt-shell,
+      .academic-gantt-toolbar,
+      .academic-gantt-board,
+      .academic-gantt-header,
+      .academic-gantt-row,
+      .academic-gantt-header-track,
+      .academic-gantt-track
+    ) {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .academic-home-page
+    :is(
+      .academic-home-hero,
+      .academic-chart-grid,
+      .academic-home-indicators,
+      .academic-roadmap-stats,
+      .academic-roadmap-focus,
+      .academic-roadmap-item,
+      .academic-module-row,
+      .academic-gantt-toolbar,
+      .academic-gantt-header,
+      .academic-gantt-row
+    ) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .academic-home-hero,
+  .academic-surface-panel,
+  .academic-chart-panel {
+    gap: 0.8rem;
+    padding-top: 0.75rem;
+  }
+
+  .academic-home-hero {
+    padding-top: 0;
+  }
+
+  .academic-home-title {
+    max-width: 100%;
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+    line-height: 1.04;
+  }
+
+  .academic-home-subtitle,
+  .academic-panel-note {
+    max-width: 100%;
+    font-size: max(0.9rem, 14px);
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-home-indicators {
+    gap: 0.75rem;
+  }
+
+  .academic-hero-indicator {
+    gap: 0.22rem;
+    padding: 0.7rem 0;
+  }
+
+  .academic-home-page
+    :is(
+      .section-kicker,
+      .academic-hero-indicator-label,
+      .academic-hero-indicator-helper,
+      .academic-module-label,
+      .academic-module-metric-helper,
+      .academic-roadmap-label,
+      .academic-roadmap-stats span,
+      .academic-roadmap-meta > span,
+      .academic-roadmap-meta small,
+      .academic-roadmap-sync,
+      .academic-brief-label,
+      .academic-task-kicker,
+      .academic-task-date,
+      .academic-task-copy,
+      .academic-task-status,
+      .academic-task-meta span,
+      .academic-empty-copy,
+      .academic-gantt-week-label,
+      .academic-gantt-duration-label,
+      .academic-gantt-row-label,
+      .academic-gantt-row-helper,
+      .academic-gantt-toolbar-note,
+      .academic-gantt-sync-state,
+      .academic-gantt-readonly-value,
+      .academic-gantt-mode-pill,
+      .academic-roadmap-focus p:last-child,
+      .academic-roadmap-score small,
+      .academic-roadmap-node
+    ) {
+    font-size: max(0.875rem, 14px) !important;
+  }
+
+  .academic-home-page
+    :is(
+      .academic-section-title,
+      .academic-task-title,
+      .academic-empty-title,
+      .academic-gantt-row-title,
+      .academic-module-title,
+      .academic-roadmap-title,
+      .academic-brief-value
+    ) {
+    overflow-wrap: anywhere;
+  }
+
+  .academic-panel-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 0.65rem;
+  }
+
+  .academic-roadmap-stats {
+    gap: 0;
+    padding-block: 0.4rem;
+  }
+
+  .academic-roadmap-stats div {
+    min-height: 64px;
+    padding: 0.75rem 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--workspace-line);
+  }
+
+  .academic-roadmap-stats div:last-child {
+    border-bottom: 0;
+  }
+
+  .academic-roadmap-stats span {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+  }
+
+  .academic-roadmap-focus {
+    gap: 0.75rem;
+    align-items: start;
+  }
+
+  .academic-roadmap-score {
+    width: 100%;
+    min-width: 0;
+    min-height: 64px;
+  }
+
+  .academic-roadmap-item {
+    gap: 0.7rem;
+    align-items: start;
+    padding-block: 0.85rem;
+  }
+
+  .academic-roadmap-title {
+    overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+  }
+
+  .academic-roadmap-meta {
+    width: 100%;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .academic-roadmap-select-label,
+  .academic-roadmap-select {
+    width: 100%;
+  }
+
+  .academic-roadmap-select {
+    min-height: 48px;
+    padding-inline: 0.85rem;
+    border-radius: 14px;
+    font-size: 16px;
+  }
+
+  .academic-roadmap-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .academic-roadmap-action {
+    width: 100%;
+    min-height: 48px;
+    justify-content: flex-start;
+    padding: 0.7rem 0.9rem;
+    border-radius: 14px;
+    font-size: max(0.9375rem, 15px);
+  }
+
+  .academic-roadmap-action svg,
+  .academic-empty-icon svg,
+  .academic-gantt-toolbar-note svg {
+    flex: 0 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .academic-task-card {
+    gap: 0.75rem;
+    padding-block: 0.9rem;
+  }
+
+  .academic-task-topline,
+  .academic-task-actions,
+  .academic-task-meta {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .academic-task-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .academic-task-actions .btn-primary {
+    width: 100%;
+    min-height: 48px;
+    font-size: max(0.9375rem, 15px) !important;
+  }
+
+  .academic-task-status {
+    max-width: 100%;
+  }
+
+  .academic-module-row {
+    gap: 0.55rem;
+    min-height: 72px;
+  }
+
+  .academic-module-metric {
+    justify-items: start;
+  }
+
+  .academic-brief-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+    min-height: 64px;
+    align-items: start;
+  }
+
+  .academic-gantt-toolbar {
+    gap: 0.75rem;
+  }
+
+  .academic-gantt-toolbar-meta,
+  .academic-gantt-toolbar-actions {
+    width: 100%;
+  }
+
+  .academic-gantt-toolbar-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .academic-gantt-toolbar-actions .btn-secondary,
+  .academic-gantt-row-remove {
+    width: 100%;
+    min-height: 48px !important;
+    justify-content: center;
+    padding: 0.7rem 0.9rem !important;
+    font-size: max(0.9375rem, 15px) !important;
+  }
+
+  .academic-gantt-date-input,
+  .academic-gantt-select,
+  .academic-gantt-inline-input {
+    width: 100%;
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  .academic-gantt-readonly-value {
+    min-height: 48px;
+  }
+
+  .academic-gantt-board {
+    overflow-x: visible;
+  }
+
+  .academic-gantt-header {
+    gap: 0;
+  }
+
+  .academic-gantt-header > .academic-gantt-header-label {
+    margin-bottom: 0.55rem;
+  }
+
+  .academic-gantt-header-label-end {
+    display: none;
+  }
+
+  .academic-gantt-header-track,
+  .academic-gantt-track {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .academic-gantt-week-head {
+    min-width: 0;
+    padding: 0.62rem 0.2rem;
+    place-items: center;
+  }
+
+  .academic-gantt-week-range {
+    display: none;
+  }
+
+  .academic-gantt-row {
+    gap: 0.7rem;
+    padding-block: 0.85rem;
+  }
+
+  .academic-gantt-row-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .academic-gantt-track {
+    min-height: 56px;
+  }
+
+  .academic-gantt-hit-area {
+    width: calc(100% - 8px);
+    min-height: 48px;
+    margin-inline: 4px;
+  }
+
+  .academic-gantt-bar {
+    min-width: 0;
+    padding-inline: 0.35rem;
+  }
+
+  .academic-gantt-bar-copy {
+    display: none;
+  }
+
+  .academic-gantt-duration-field {
+    width: 100%;
+    max-width: none;
+    justify-items: stretch;
+  }
+
+  .academic-empty-state {
+    min-width: 0;
+  }
+}
+
 .logic-flow-page {
   gap: 1rem !important;
 }
