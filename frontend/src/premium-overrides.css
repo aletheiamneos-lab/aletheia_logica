@@ -11420,12 +11420,36 @@
 .flash-panel,
 .flash-main-card,
 .flash-slots-page,
-.flash-slots-panel {
+.flash-slots-panel,
+/* Lecții: catalog and linked workspaces share the mobile content floors. */
+.lessons-page,
+.lesson-workspace-page {
   min-width: 0;
   max-width: 100%;
 }
 
+.lessons-page :is(img, video, canvas, iframe),
+.lesson-workspace-page :is(img, video, canvas, iframe) {
+  max-width: 100%;
+}
+
 @media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .app-shell-auth:has(.lessons-page),
+  .app-shell-auth:has(.lesson-workspace-page),
+  .app-shell-auth:has(.lessons-page) :is(
+    .app-layout-frame,
+    .app-content-stage,
+    .app-content-main-auth,
+    .app-content-shell-auth
+  ),
+  .app-shell-auth:has(.lesson-workspace-page) :is(
+    .app-layout-frame,
+    .app-content-stage,
+    .app-content-main-auth,
+    .app-content-shell-auth
+  ),
+  .lessons-page,
+  .lesson-workspace-page,
   .app-shell-auth :is(.learning-20-page, .logic-map-page, .flash-page) {
     width: 100%;
     min-width: 0;
@@ -11760,5 +11784,203 @@
     .learning-game-toggle
   ):active {
     filter: brightness(0.97);
+  }
+
+  .lessons-page {
+    gap: 0.85rem !important;
+  }
+
+  .app-shell-auth .lessons-page > :is(.hero-panel, .panel),
+  .app-shell-auth .lesson-workspace-page > :is(.hero-panel, .panel, section) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero,
+  .app-shell-auth .lesson-workspace-page .lesson-workspace-hero {
+    padding: 0.5rem 0 0.85rem !important;
+  }
+
+  .app-shell-auth .lessons-page :is(
+    .workspace-hero-grid,
+    .compact-section-header,
+    .lessons-catalog-list,
+    .lesson-list-card,
+    .lesson-list-main,
+    .lesson-list-copy,
+    .lesson-list-side,
+    .lesson-list-actions
+  ) {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-section-header {
+    display: grid;
+    gap: 0.5rem;
+    align-items: start;
+  }
+
+  .app-shell-auth .lessons-page .lessons-section-header .compact-section-note {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics span {
+    min-height: auto;
+    padding: 0 !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics span + span::before {
+    display: none;
+  }
+
+  .app-shell-auth .lessons-page .lessons-list-section {
+    padding: 0.95rem !important;
+    border-radius: 18px !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-catalog-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.7rem !important;
+    width: 100%;
+    min-height: 0;
+    padding: 1rem 0 !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-card:first-child {
+    padding-top: 0.8rem !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-index {
+    width: 2.4rem;
+    height: 2.4rem;
+    justify-content: center;
+    border: 1px solid rgba(var(--accent-rgb), 0.22);
+    background: rgba(var(--accent-rgb), 0.07);
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry :is(
+    .compact-module-description,
+    .lesson-list-summary
+  ) {
+    display: block;
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    -webkit-line-clamp: unset;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-side {
+    grid-column: auto;
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100%;
+    justify-content: stretch !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-actions > a {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
+  .lessons-page :is(button, a, input, textarea, select, [role="button"]),
+  .lesson-workspace-page :is(button, a, input, textarea, select, [role="button"]) {
+    min-height: 44px !important;
+  }
+
+  .lessons-page :is(input, textarea, select),
+  .lesson-workspace-page :is(input, textarea, select) {
+    max-width: 100%;
+    font-size: max(1rem, 16px) !important;
+  }
+
+  .app-shell-auth .lessons-page :is(p, li, span, label, a, button),
+  .app-shell-auth .lesson-workspace-page :is(p, li, span, label, a, button) {
+    font-size: max(0.875rem, 14px) !important;
+  }
+
+  .app-shell-auth .lessons-page :is(.section-subtitle, .compact-section-note),
+  .app-shell-auth .lesson-workspace-page .section-subtitle {
+    font-size: max(0.9375rem, 15px) !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .compact-module-title {
+    font-size: max(1.08rem, 17px) !important;
+    line-height: 1.32 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry :is(
+    .compact-module-description,
+    .lesson-list-summary
+  ) {
+    font-size: max(0.9375rem, 15px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .lesson-workspace-page .lesson-tabs-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .lesson-workspace-page .lesson-tab-button {
+    min-width: 0;
+    min-height: 48px !important;
+  }
+
+  .lesson-workspace-page :is(
+    .theory-page,
+    .theory-section,
+    .theory-grid,
+    .theory-embedded-panel,
+    .practice-layout,
+    .practice-grid
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .lesson-workspace-page img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .lesson-workspace-page :is(pre, code, table) {
+    max-width: 100%;
+  }
+
+  .lesson-workspace-page pre,
+  .lesson-workspace-page .overflow-x-auto {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
   }
 }
