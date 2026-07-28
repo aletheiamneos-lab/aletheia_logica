@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react"
+import { CheckCircle2 } from "lucide-react"
 
 import AnimatedAnswerChoiceGroup from "../ui/AnimatedAnswerChoiceGroup"
 import { clearTestProgress, publishTestProgress } from "../../utils/testProgressChannel"
@@ -70,7 +71,10 @@ function IntegratedTestRunner({
   const [error, setError] = useState("")
   const dirtyRef = useRef(false)
   const persistProgressRef = useRef(async () => {})
+  const runnerShellRef = useRef(null)
   const questionPanelRef = useRef(null)
+  const questionContentRef = useRef(null)
+  const sharedTextRef = useRef(null)
   const readingTriggerRef = useRef(null)
   const readingCloseRef = useRef(null)
   const snapshotRef = useRef({
@@ -190,6 +194,30 @@ function IntegratedTestRunner({
     setIsSharedTextExpanded(false)
     setIsReadingOverlayOpen(false)
   }, [sharedTextKey])
+
+  useEffect(() => {
+    const shell = runnerShellRef.current
+    const sharedTextCard = sharedTextRef.current
+    if (!shell) {
+      return undefined
+    }
+
+    function updateSharedTextOffset() {
+      const sharedTextHeight = sharedTextCard
+        ? Math.ceil(sharedTextCard.getBoundingClientRect().height)
+        : 0
+      shell.style.setProperty("--integrated-shared-text-height", `${sharedTextHeight}px`)
+    }
+
+    updateSharedTextOffset()
+    if (!sharedTextCard || typeof ResizeObserver === "undefined") {
+      return undefined
+    }
+
+    const resizeObserver = new ResizeObserver(updateSharedTextOffset)
+    resizeObserver.observe(sharedTextCard)
+    return () => resizeObserver.disconnect()
+  }, [currentQuestionIndex, isSharedTextExpanded, sharedTextKey])
 
   useEffect(() => {
     if (!isReadingOverlayOpen) {
@@ -335,6 +363,12 @@ function IntegratedTestRunner({
     }
 
     const safeIndex = Math.max(0, Math.min(nextIndex, questions.length - 1))
+    const nextQuestion = questions[safeIndex]
+    const nextSharedText = resolveSharedText(nextQuestion)
+    const keepsSharedTextPinned =
+      Boolean(sharedText && nextSharedText) &&
+      resolveSharedTextKey(nextQuestion, nextSharedText) === sharedTextKey
+
     setCurrentQuestionIndex(safeIndex)
     snapshotRef.current = {
       ...snapshotRef.current,
@@ -342,7 +376,15 @@ function IntegratedTestRunner({
     }
     dirtyRef.current = true
     window.requestAnimationFrame(() => {
-      questionPanelRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+      window.requestAnimationFrame(() => {
+        const scrollTarget = keepsSharedTextPinned
+          ? questionContentRef.current
+          : questionPanelRef.current
+        scrollTarget?.scrollIntoView({
+          behavior: keepsSharedTextPinned ? "auto" : "smooth",
+          block: "start",
+        })
+      })
     })
     await persistProgress({
       eventType: "question_changed",
@@ -372,6 +414,7 @@ function IntegratedTestRunner({
 
   return (
     <div
+      ref={runnerShellRef}
       className={[
         "page-stack",
         "integrated-test-runner-shell",
@@ -476,7 +519,12 @@ function IntegratedTestRunner({
 
       <section ref={questionPanelRef} className="panel p-5 sm:p-6 integrated-test-question-panel">
         {sharedText ? (
-          <aside className="integrated-shared-text-card" aria-label={sharedTextLabel}>
+          <aside
+            ref={sharedTextRef}
+            className="integrated-shared-text-card"
+            aria-label={sharedTextLabel}
+            data-shared-text-key={sharedTextKey}
+          >
             <div className="integrated-shared-text-head">
               <strong>{sharedTextLabel}</strong>
               {isLongSharedText ? (
@@ -511,31 +559,33 @@ function IntegratedTestRunner({
           </aside>
         ) : null}
 
-        <div className="integrated-question-meta">
-          <span className="tag">{question.lesson_label || question.lessonLabel || "Lectie"}</span>
-          <span className="status-pill">
-            {sharedTextLabel || `Intrebarea ${currentQuestionIndex + 1} din ${questions.length}`}
-          </span>
-          <span className="status-pill" aria-live="polite">
-            {isSaving ? "Se salveaza..." : "Salvare automata activa"}
-          </span>
-        </div>
+        <div ref={questionContentRef} className="integrated-question-content">
+          <div className="integrated-question-meta">
+            <span className="tag">{question.lesson_label || question.lessonLabel || "Lectie"}</span>
+            <span className="status-pill">
+              {sharedTextLabel || `Intrebarea ${currentQuestionIndex + 1} din ${questions.length}`}
+            </span>
+            <span className="status-pill" aria-live="polite">
+              {isSaving ? "Se salveaza..." : "Salvare automata activa"}
+            </span>
+          </div>
 
-        <h2 className="integrated-question-title">{question.text || "Intrebare necompletata inca."}</h2>
+          <h2 className="integrated-question-title">{question.text || "Intrebare necompletata inca."}</h2>
 
-        <div className="integrated-question-options">
-          <AnimatedAnswerChoiceGroup
-            name={`question-${question.id}`}
-            value={answers[question.id] == null ? null : String(answers[question.id])}
-            options={(Array.isArray(question.options) ? question.options : []).map((option, index) => ({
-              value: String(index),
-              label: option || "Varianta necompletata.",
-              hint: "Alege o singura varianta.",
-              choiceKey: OPTION_KEYS[index],
-              optionIndex: index,
-            }))}
-            onChange={(_, option) => handleSelectOption(option.optionIndex)}
-          />
+          <div className="integrated-question-options">
+            <AnimatedAnswerChoiceGroup
+              name={`question-${question.id}`}
+              value={answers[question.id] == null ? null : String(answers[question.id])}
+              options={(Array.isArray(question.options) ? question.options : []).map((option, index) => ({
+                value: String(index),
+                label: option || "Varianta necompletata.",
+                hint: "Alege o singura varianta.",
+                choiceKey: OPTION_KEYS[index],
+                optionIndex: index,
+              }))}
+              onChange={(_, option) => handleSelectOption(option.optionIndex)}
+            />
+          </div>
         </div>
 
         {isEmbedded ? (
@@ -602,7 +652,11 @@ function IntegratedTestRunner({
             Inapoi
           </button>
           <button
-            className="btn-primary integrated-runner-primary-button"
+            className={[
+              "btn-primary",
+              "integrated-runner-primary-button",
+              currentQuestionIndex === questions.length - 1 ? "is-finalize" : "is-next",
+            ].join(" ")}
             disabled={isSubmitting}
             type="button"
             onClick={
@@ -614,7 +668,12 @@ function IntegratedTestRunner({
             {isSubmitting
               ? "Se trimite..."
               : currentQuestionIndex === questions.length - 1
-                ? "Trimite testul"
+                ? (
+                    <>
+                      <CheckCircle2 aria-hidden="true" />
+                      Finalizare
+                    </>
+                  )
                 : "Urmatoarea"}
           </button>
         </footer>

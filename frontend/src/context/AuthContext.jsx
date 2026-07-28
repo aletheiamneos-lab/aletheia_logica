@@ -74,7 +74,7 @@ export function AuthProvider({ children }) {
         ensureTrackedIdentityForStudent(nextSession).catch(() => {})
       })
       .catch((error) => {
-        if (!active || error?.code === "NETWORK_ERROR") {
+        if (!active || ["NETWORK_ERROR", "SERVER_UNAVAILABLE"].includes(error?.code)) {
           return
         }
 
@@ -101,7 +101,11 @@ export function AuthProvider({ children }) {
           setSession(null)
         }
       } catch (error) {
-        if (active && error?.code !== "NETWORK_ERROR" && error?.status === 401) {
+        if (
+          active &&
+          !["NETWORK_ERROR", "SERVER_UNAVAILABLE"].includes(error?.code) &&
+          error?.status === 401
+        ) {
           clearStoredSession()
           setSession(null)
         }

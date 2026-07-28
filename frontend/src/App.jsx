@@ -11,6 +11,7 @@ import {
   resolveInitialFont,
   resolveInitialTheme,
 } from "./appEnvironment"
+import { subscribeToServerWakeState } from "./api/client"
 import RequireAuth from "./components/auth/RequireAuth"
 import Navbar from "./components/Navbar"
 import SessionBadge from "./components/auth/SessionBadge"
@@ -39,6 +40,26 @@ const IntegratedTestsPage = lazy(() => import("./pages/IntegratedTestsPage"))
 const IntegratedTestExamPage = lazy(() => import("./pages/IntegratedTestExamPage"))
 const ProfilePage = lazy(() => import("./pages/ProfilePage"))
 const ButtonSystemPreviewPage = lazy(() => import("./pages/ButtonSystemPreviewPage"))
+
+function ServerWakeNotice() {
+  const [wakeState, setWakeState] = useState({
+    isWaking: false,
+    message: "",
+  })
+
+  useEffect(() => subscribeToServerWakeState(setWakeState), [])
+
+  if (!wakeState.isWaking) {
+    return null
+  }
+
+  return (
+    <div className="server-wake-notice" role="status" aria-live="polite" aria-atomic="true">
+      <span className="server-wake-spinner" aria-hidden="true" />
+      <span>{wakeState.message}</span>
+    </div>
+  )
+}
 
 function PageFallback() {
   return (
@@ -187,7 +208,7 @@ function AppLayout() {
               <div
                 className="app-mobile-sidebar-overlay"
                 role="presentation"
-                onMouseDown={(event) => {
+                onPointerDown={(event) => {
                   if (event.target === event.currentTarget) {
                     closeMobileSidebar({ restoreFocus: true })
                   }
@@ -406,6 +427,7 @@ function App() {
 
   return (
     <AuthProvider>
+      <ServerWakeNotice />
       <Router>
         <AppLayout />
       </Router>

@@ -661,12 +661,13 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
                 </div>
               </div>
 
-              {group.sharedText && (
-                <div className="admitere-shared-text">
-                  <p>{group.sharedText}</p>
-                </div>
-              )}
             </div>
+
+            {group.sharedText && (
+              <aside className="admitere-shared-text" aria-label={`Text comun pentru ${getAdmitereGroupTitle(group, groupIndex)}`}>
+                <p>{group.sharedText}</p>
+              </aside>
+            )}
 
             <div className="mt-3 grid gap-3">
               {group.questions.map((question) => (

@@ -407,8 +407,8 @@ function IntegratedTestExamPage() {
           <h2 className="mt-2 text-2xl text-ink">Nu am putut deschide tentativa de examen</h2>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
             Popup-ul a pornit corect, dar aceasta fereastra nu a reusit sa incarce tentativa din
-            backend. Daca serverul local tocmai s-a restartat sau a fost oprit, poti reincerca din
-            aceasta fereastra fara sa refaci intreg fluxul.
+            server. Conexiunea a fost reincercata automat; poti porni o noua incercare din aceasta
+            fereastra fara sa refaci intreg fluxul.
           </p>
           <div className="mt-4 flex flex-wrap gap-2.5">
             <button className="btn-primary" type="button" onClick={handleRetryLoad}>

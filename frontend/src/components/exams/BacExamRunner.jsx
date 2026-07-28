@@ -1641,14 +1641,14 @@ function BacStudentReportModal({ isOpen, report, onClose }) {
   )
 }
 
-function renderContextBlock(contextBlock) {
+function renderContextBlock(contextBlock, className = "") {
   if (!contextBlock) {
     return null
   }
 
   if (Array.isArray(contextBlock.items)) {
     return (
-      <div className="mt-4 muted-box p-4">
+      <div className={["mt-4 muted-box p-4", className].filter(Boolean).join(" ")}>
         {contextBlock.title ? <p className="mb-2 text-sm font-semibold text-ink">{contextBlock.title}</p> : null}
         <ul className="grid gap-2 text-sm leading-7 text-slate-600">
           {contextBlock.items.map((item) => (
@@ -1665,7 +1665,7 @@ function renderContextBlock(contextBlock) {
   }
 
   return (
-    <div className="mt-4 muted-box p-4">
+    <div className={["mt-4 muted-box p-4", className].filter(Boolean).join(" ")}>
       {entries.map(([key, value]) => (
         <p key={key} className="text-sm leading-7 text-slate-600">
           {Array.isArray(value) ? value.join(" ") : String(value)}
@@ -2024,8 +2024,9 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
                     <p>{group.officialPrompt}</p>
                   </div>
                 ) : null}
-                {renderContextBlock(group.contextBlock)}
               </div>
+
+              {renderContextBlock(group.contextBlock, "bac-shared-context")}
 
               {group.groupDiagramInput ? (
                 <div className="px-4 sm:px-5">
