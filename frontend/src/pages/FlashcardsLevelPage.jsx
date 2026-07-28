@@ -19,7 +19,7 @@ function FlashcardsLevelPage() {
   const slots = getFlashcardSlots(level)
 
   return (
-    <div className="page-stack">
+    <div className="page-stack learning-20-page flashcards-level-page">
       <LearningPageHeader
         eyebrow="Flashcards"
         title={`Flashcards - ${flashcardLevel.label}`}

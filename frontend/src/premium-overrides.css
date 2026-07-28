@@ -11410,3 +11410,766 @@
     gap: 0.48rem;
   }
 }
+
+/* Exersare: catalog responsive and a focused mobile exercise runner. */
+.lesson-practice-mobile-runner {
+  display: none;
+}
+
+/* Learning 2.0: phone-first layout and explicit touch interaction floors. */
+.learning-20-page,
+.logic-map-page,
+.flash-page,
+.flash-shell,
+.flash-layout,
+.flash-panel,
+.flash-main-card,
+.flash-slots-page,
+.flash-slots-panel,
+/* Lecții: catalog and linked workspaces share the mobile content floors. */
+.lessons-page,
+.lesson-workspace-page {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lessons-page :is(img, video, canvas, iframe),
+.lesson-workspace-page :is(img, video, canvas, iframe) {
+  max-width: 100%;
+}
+
+@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .app-shell-auth:has(.lessons-page),
+  .app-shell-auth:has(.lesson-workspace-page),
+  .app-shell-auth:has(.lessons-page) :is(
+    .app-layout-frame,
+    .app-content-stage,
+    .app-content-main-auth,
+    .app-content-shell-auth
+  ),
+  .app-shell-auth:has(.lesson-workspace-page) :is(
+    .app-layout-frame,
+    .app-content-stage,
+    .app-content-main-auth,
+    .app-content-shell-auth
+  ),
+  .lessons-page,
+  .lesson-workspace-page,
+  .app-shell-auth :is(.learning-20-page, .logic-map-page, .flash-page),
+  .app-shell-auth :is(.practice-hub-page, .lesson-practice-tab, .lesson-practice-mobile-runner) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .practice-hub-page :is(
+    .workspace-hero-grid,
+    .compact-module-list,
+    .compact-module-row,
+    .compact-module-actions
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .practice-hub-page .compact-module-list,
+  .practice-hub-page .compact-module-row,
+  .practice-hub-page .compact-module-actions {
+    gap: 8px;
+  }
+
+  .practice-hub-page .compact-module-actions {
+    display: grid;
+    width: 100%;
+  }
+
+  .practice-hub-page .compact-module-actions > a {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
+  .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(p, li, label, span, a, button) {
+    font-size: max(0.875rem, 14px) !important;
+  }
+
+  .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(input, textarea, select) {
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(a, button, [role="button"]) {
+    min-height: 44px !important;
+  }
+
+  .lesson-practice-desktop-list {
+    display: none !important;
+  }
+
+  .lesson-practice-mobile-runner {
+    --practice-mobile-header-height: 68px;
+    display: grid;
+    min-width: 0;
+    gap: 8px;
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+    scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 8px);
+  }
+
+  .practice-mobile-sticky-header {
+    position: sticky;
+    z-index: 72;
+    top: env(safe-area-inset-top, 0px);
+    display: grid;
+    box-sizing: border-box;
+    min-height: var(--practice-mobile-header-height);
+    gap: 8px;
+    padding: 0.72rem 0.85rem;
+    border: 1px solid color-mix(in srgb, var(--workspace-line) 80%, transparent);
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--surface) 94%, white);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.09);
+    backdrop-filter: blur(16px) saturate(1.1);
+  }
+
+  .practice-mobile-progress-copy {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .practice-mobile-progress-copy span {
+    color: var(--text-muted);
+    text-align: right;
+  }
+
+  .practice-mobile-progress-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--workspace-line) 78%, var(--surface-soft));
+  }
+
+  .practice-mobile-progress-track > span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+    transition: width 180ms ease;
+  }
+
+  .exercise-card-mobile-runner {
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    overflow: visible !important;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-group {
+    display: grid;
+    min-width: 0;
+    gap: 8px !important;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-item {
+    min-width: 0;
+    min-height: 52px !important;
+    font-size: max(0.9375rem, 15px) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-title {
+    font-size: max(0.9375rem, 15px) !important;
+    line-height: 1.5 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .exercise-mobile-selection {
+    margin-top: 0.75rem;
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  .exercise-mobile-sticky-footer {
+    position: fixed;
+    z-index: 80;
+    left: 50%;
+    bottom: 0;
+    display: grid !important;
+    grid-template-columns: minmax(88px, 0.38fr) minmax(0, 1fr);
+    width: min(760px, calc(100% - 1rem));
+    margin: 0 !important;
+    padding:
+      0.7rem
+      max(0.7rem, env(safe-area-inset-right, 0px))
+      max(0.7rem, env(safe-area-inset-bottom, 0px))
+      max(0.7rem, env(safe-area-inset-left, 0px));
+    gap: 8px !important;
+    border: 1px solid color-mix(in srgb, var(--workspace-line) 82%, transparent);
+    border-bottom: 0;
+    border-radius: 18px 18px 0 0;
+    background: color-mix(in srgb, var(--surface) 95%, white);
+    box-shadow: 0 -14px 30px rgba(15, 23, 42, 0.11);
+    transform: translateX(-50%);
+    backdrop-filter: blur(18px) saturate(1.1);
+  }
+
+  .exercise-mobile-sticky-footer > button {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px !important;
+  }
+
+  .exercise-mobile-sticky-footer .exercise-mobile-primary-button {
+    border-color: var(--theme-secondary) !important;
+    background: linear-gradient(
+      135deg,
+      var(--theme-secondary),
+      var(--theme-secondary-ink)
+    ) !important;
+    color: #fff !important;
+    box-shadow: 0 12px 26px rgba(var(--theme-secondary-rgb), 0.22) !important;
+  }
+
+  .exercise-mobile-sticky-footer > button:disabled {
+    box-shadow: none !important;
+    opacity: 0.52;
+  }
+
+  .learning-20-page :is(
+    .workspace-hero-grid,
+    .content-split-grid,
+    .compact-module-row,
+    .compact-module-actions,
+    .learning-game-split,
+    .learning-game-square-grid,
+    .learning-game-grid-2,
+    .learning-game-example-grid,
+    .learning-training-summary
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .learning-20-page :is(
+    .compact-module-main,
+    .compact-module-copy,
+    .compact-section-header,
+    .learning-game-panel,
+    .learning-training-card,
+    .learning-training-step,
+    .immersive-stage
+  ) {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .learning-20-page .compact-module-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .learning-20-page .compact-module-row {
+    gap: 8px;
+  }
+
+  .learning-20-page .compact-module-actions,
+  .learning-hub-page .compact-inline-actions,
+  .learning-item-page > .hero-panel > .flex:first-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .learning-20-page :is(
+    .compact-module-actions,
+    .compact-inline-actions,
+    .learning-game-mode-switch,
+    .learning-game-actions,
+    .learning-training-actions
+  ) :is(a, button) {
+    min-height: 48px;
+  }
+
+  .learning-20-page :is(.compact-module-actions, .compact-inline-actions) > :is(a, button) {
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-mode-switch,
+  .learning-20-page .learning-game-actions,
+  .learning-20-page .learning-training-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-mode-switch > button,
+  .learning-20-page .learning-game-actions > button,
+  .learning-20-page .learning-training-actions > button {
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-panel-head,
+  .learning-20-page .learning-game-square-top,
+  .learning-20-page .learning-training-toggle {
+    gap: 8px;
+  }
+
+  .learning-20-page .learning-game-toggle {
+    min-height: 56px;
+    gap: 8px;
+    touch-action: manipulation;
+  }
+
+  .learning-20-page .learning-game-toggle-value,
+  .learning-20-page .learning-game-square-letter {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .learning-20-page .learning-game-table-wrap {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .learning-20-page .learning-game-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .learning-20-page .learning-game-table :is(th, td) {
+    min-width: 0;
+    padding-inline: clamp(0.45rem, 2.5vw, 0.8rem);
+    overflow-wrap: anywhere;
+  }
+
+  .learning-20-page .learning-game-select-inline {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 0.45rem;
+  }
+
+  .logic-map-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logic-map-tab {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px !important;
+    padding-inline: 0.5rem;
+    touch-action: manipulation;
+  }
+
+  .logic-map-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .logic-map-canvas-shell {
+    width: 100%;
+    height: min(62dvh, 540px);
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  .logic-map-flow,
+  .logic-map-flow .react-flow__pane,
+  .logic-map-flow .react-flow__node {
+    touch-action: none;
+  }
+
+  .logic-map-flow .react-flow__controls-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logic-map-node {
+    min-height: 44px;
+  }
+
+  .logic-map-details-shell {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .logic-map-details {
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .flash-page {
+    padding: 8px 0 12px;
+  }
+
+  .flash-layout,
+  .flash-level-grid,
+  .flash-slots-grid,
+  .flash-bottom-nav {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px;
+  }
+
+  .flash-level-card,
+  .flash-slot-tile,
+  .flash-nav-card {
+    min-height: 48px;
+    touch-action: manipulation;
+  }
+
+  .flash-level-card,
+  .flash-slot-tile {
+    gap: 12px;
+  }
+
+  .flash-sidebar,
+  .flash-main-card,
+  .flash-progress-panel {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .flash-main-card {
+    min-height: 390px;
+    padding: 22px 18px 22px 48px;
+    touch-action: manipulation;
+  }
+
+  .flash-card-grid,
+  .flash-card-grid.is-dense {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .flash-card-button,
+  .flash-card-grid.is-dense .flash-card-button {
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  .flash-actions,
+  .flash-action-group {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .flash-action-btn,
+  .flash-nav-card {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
+  .flash-progress-panel {
+    min-height: 280px;
+  }
+
+  .flash-progress-thermo {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-20-page .learning-game-mode-switch,
+  .learning-20-page .learning-game-actions,
+  .learning-20-page .learning-training-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .logic-map-canvas-shell {
+    min-height: 440px;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .lesson-practice-mobile-runner {
+    --practice-mobile-header-height: 58px;
+  }
+
+  .practice-mobile-sticky-header {
+    padding-block: 0.48rem;
+  }
+
+  .exercise-mobile-sticky-footer {
+    padding-top: 0.45rem;
+    padding-bottom: max(0.45rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  .logic-map-canvas-shell {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .flash-main-card {
+    min-height: 320px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .flash-main-card:is(.is-turning-forward, .is-turning-backward) {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .flash-main-card .flash-page-turn-sheet {
+    display: none;
+  }
+
+  .app-shell-auth :is(
+    .logic-map-tab,
+    .logic-map-node,
+    .flash-level-card,
+    .flash-slot-tile,
+    .flash-nav-card,
+    .flash-card-button
+  ):hover {
+    transform: none;
+  }
+
+  .app-shell-auth :is(
+    .logic-map-tab,
+    .flash-level-card,
+    .flash-slot-tile,
+    .flash-nav-card,
+    .flash-card-button,
+    .learning-game-toggle
+  ):active {
+    filter: brightness(0.97);
+  }
+
+  .lessons-page {
+    gap: 0.85rem !important;
+  }
+
+  .app-shell-auth .lessons-page > :is(.hero-panel, .panel),
+  .app-shell-auth .lesson-workspace-page > :is(.hero-panel, .panel, section) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero,
+  .app-shell-auth .lesson-workspace-page .lesson-workspace-hero {
+    padding: 0.5rem 0 0.85rem !important;
+  }
+
+  .app-shell-auth .lessons-page :is(
+    .workspace-hero-grid,
+    .compact-section-header,
+    .lessons-catalog-list,
+    .lesson-list-card,
+    .lesson-list-main,
+    .lesson-list-copy,
+    .lesson-list-side,
+    .lesson-list-actions
+  ) {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-section-header {
+    display: grid;
+    gap: 0.5rem;
+    align-items: start;
+  }
+
+  .app-shell-auth .lessons-page .lessons-section-header .compact-section-note {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics span {
+    min-height: auto;
+    padding: 0 !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-hero-metrics span + span::before {
+    display: none;
+  }
+
+  .app-shell-auth .lessons-page .lessons-list-section {
+    padding: 0.95rem !important;
+    border-radius: 18px !important;
+  }
+
+  .app-shell-auth .lessons-page .lessons-catalog-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0.7rem !important;
+    width: 100%;
+    min-height: 0;
+    padding: 1rem 0 !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-card:first-child {
+    padding-top: 0.8rem !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-list-index {
+    width: 2.4rem;
+    height: 2.4rem;
+    justify-content: center;
+    border: 1px solid rgba(var(--accent-rgb), 0.22);
+    background: rgba(var(--accent-rgb), 0.07);
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry :is(
+    .compact-module-description,
+    .lesson-list-summary
+  ) {
+    display: block;
+    max-width: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    -webkit-line-clamp: unset;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-side {
+    grid-column: auto;
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100%;
+    justify-content: stretch !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .lesson-list-actions > a {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
+  .lessons-page :is(button, a, input, textarea, select, [role="button"]),
+  .lesson-workspace-page :is(button, a, input, textarea, select, [role="button"]) {
+    min-height: 44px !important;
+  }
+
+  .lessons-page :is(input, textarea, select),
+  .lesson-workspace-page :is(input, textarea, select) {
+    max-width: 100%;
+    font-size: max(1rem, 16px) !important;
+  }
+
+  .app-shell-auth .lessons-page :is(p, li, span, label, a, button),
+  .app-shell-auth .lesson-workspace-page :is(p, li, span, label, a, button) {
+    font-size: max(0.875rem, 14px) !important;
+  }
+
+  .app-shell-auth .lessons-page :is(.section-subtitle, .compact-section-note),
+  .app-shell-auth .lesson-workspace-page .section-subtitle {
+    font-size: max(0.9375rem, 15px) !important;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry .compact-module-title {
+    font-size: max(1.08rem, 17px) !important;
+    line-height: 1.32 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .app-shell-auth .lessons-page .lesson-entry :is(
+    .compact-module-description,
+    .lesson-list-summary
+  ) {
+    font-size: max(0.9375rem, 15px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .lesson-workspace-page .lesson-tabs-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .lesson-workspace-page .lesson-tab-button {
+    min-width: 0;
+    min-height: 48px !important;
+  }
+
+  .lesson-workspace-page :is(
+    .theory-page,
+    .theory-section,
+    .theory-grid,
+    .theory-embedded-panel,
+    .practice-layout,
+    .practice-grid
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .lesson-workspace-page img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .lesson-workspace-page :is(pre, code, table) {
+    max-width: 100%;
+  }
+
+  .lesson-workspace-page pre,
+  .lesson-workspace-page .overflow-x-auto {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+}

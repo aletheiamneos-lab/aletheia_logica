@@ -24,6 +24,8 @@ function LessonPracticeTab({ lesson }) {
   const [exercises, setExercises] = useState([])
   const [error, setError] = useState("")
   const [isLoading, setIsLoading] = useState(lesson.practiceStatus === "available")
+  const [activeExerciseIndex, setActiveExerciseIndex] = useState(0)
+  const [answeredExerciseIds, setAnsweredExerciseIds] = useState([])
 
   useEffect(() => {
     if (lesson.practiceStatus !== "available") {
@@ -39,6 +41,8 @@ function LessonPracticeTab({ lesson }) {
           return
         }
         setExercises(exerciseData)
+        setActiveExerciseIndex(0)
+        setAnsweredExerciseIds([])
       } catch (loadError) {
         if (active) {
           setError(loadError.message)
@@ -75,16 +79,71 @@ function LessonPracticeTab({ lesson }) {
 
   const tools = <PracticeTools lessonId={lesson.id} />
   const whyItems = getWhyItemsForLesson(lesson.id)
+  const activeExercise = exercises[activeExerciseIndex] ?? exercises[0]
+  const progressPercent = ((activeExerciseIndex + 1) / exercises.length) * 100
+
+  function moveToExercise(nextIndex) {
+    setActiveExerciseIndex(nextIndex)
+    window.requestAnimationFrame(() => {
+      document.querySelector(".lesson-practice-mobile-runner")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    })
+  }
+
+  function handleMobileNext() {
+    moveToExercise(activeExerciseIndex === exercises.length - 1 ? 0 : activeExerciseIndex + 1)
+  }
+
+  function handleMobilePrevious() {
+    moveToExercise(Math.max(0, activeExerciseIndex - 1))
+  }
 
   return (
-    <div className="page-stack">
-      <section className="panel p-5 sm:p-6">
+    <div className="page-stack lesson-practice-tab">
+      <section className="panel p-5 sm:p-6 lesson-practice-intro">
         <p className="section-kicker">Practica</p>
         <h2 className="mt-2 text-2xl text-ink">Aplici imediat ce ai invatat</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{lesson.practiceSummary}</p>
         <div className="mt-5 flex flex-wrap items-center gap-2.5">
           <span className="status-pill">{exercises.length} exercitii locale in acest tab</span>
         </div>
+      </section>
+
+      <section className="lesson-practice-mobile-runner" aria-label="Exercitiu curent">
+        <header className="practice-mobile-sticky-header">
+          <div className="practice-mobile-progress-copy">
+            <strong>{`Exercitiul ${activeExerciseIndex + 1} din ${exercises.length}`}</strong>
+            <span>{`${answeredExerciseIds.length} verificate`}</span>
+          </div>
+          <div
+            className="practice-mobile-progress-track"
+            role="progressbar"
+            aria-valuemin="1"
+            aria-valuemax={exercises.length}
+            aria-valuenow={activeExerciseIndex + 1}
+          >
+            <span style={{ width: `${progressPercent}%` }} />
+          </div>
+        </header>
+
+        <ExerciseCard
+          key={`mobile-${activeExercise.id}`}
+          exercise={activeExercise}
+          compact
+          mobileRunner={{
+            isFirst: activeExerciseIndex === 0,
+            isLast: activeExerciseIndex === exercises.length - 1,
+            onPrevious: handleMobilePrevious,
+            onNext: handleMobileNext,
+          }}
+          onAnswered={() =>
+            setAnsweredExerciseIds((current) =>
+              current.includes(activeExercise.id) ? current : [...current, activeExercise.id],
+            )
+          }
+        />
       </section>
 
       {whyItems.length ? (
@@ -101,7 +160,7 @@ function LessonPracticeTab({ lesson }) {
 
       {tools}
 
-      <section className="grid gap-3">
+      <section className="grid gap-3 lesson-practice-desktop-list">
         {exercises.map((exercise) => (
           <ExerciseCard key={exercise.id} exercise={exercise} compact />
         ))}
