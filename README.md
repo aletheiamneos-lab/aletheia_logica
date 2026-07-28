@@ -171,8 +171,12 @@ Datele noi importante nu sunt scrise pe discul efemer al serviciului:
   direct clientului.
 
 Inainte de deploy se aplica migrarile SQL din `supabase/migrations`, inclusiv
-`20260728_persist_generated_reports.sql`. Bucket-ul poate fi schimbat prin
-`SUPABASE_REPORTS_BUCKET`; valoarea implicita este `generated-reports`.
+`20260728_persist_generated_reports.sql` si
+`20260728_update_database_usage_live_data.sql`. A doua migrare face indicatorul
+de raportare sensibil la stergerea imediata a randurilor, separat de spatiul
+fizic pe care PostgreSQL il pastreaza pentru reutilizare. Bucket-ul poate fi
+schimbat prin `SUPABASE_REPORTS_BUCKET`; valoarea implicita este
+`generated-reports`.
 
 Scripturile din `backend/scripts/migrate_*` citesc SQLite exclusiv pentru
 importuri manuale optionale ale datelor vechi. Ele nu sunt rulate de aplicatie

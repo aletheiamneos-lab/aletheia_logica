@@ -7,6 +7,7 @@ from unittest.mock import patch
 from starlette.requests import Request
 
 from app import (
+    activity_tracking_routes,
     activity_tracking_service,
     admitere_student_reports_service,
     auth_service,
@@ -14,6 +15,7 @@ from app import (
     learning_service,
     report_email_service,
     reporting_service,
+    supabase_service,
     supabase_storage_service,
 )
 
@@ -283,6 +285,110 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertEqual(overview["completed_tests"], 1)
         self.assertEqual(detail["test_sessions"][0]["status"], "completed")
         self.assertEqual(detail["test_sessions"][0]["score"], 80)
+        session_row = self.supabase.tables["activity_test_sessions"][0]
+        self.assertEqual(session_row["correct_answers"], 8)
+        self.assertEqual(session_row["wrong_answers"], 2)
+        self.assertEqual(session_row["answered_count"], 10)
+        self.assertEqual(session_row["progress_percent"], 100)
+
+    def test_activity_tracking_recovers_from_a_deleted_cached_student(self):
+        request = Request(
+            {
+                "type": "http",
+                "method": "POST",
+                "path": "/activity/tests/start",
+                "headers": [(b"user-agent", b"Mozilla/5.0 Mobile Safari")],
+                "client": ("127.0.0.1", 12345),
+            }
+        )
+        current_user = {
+            "role": "student",
+            "display_name": "Elev Reconectat",
+            "email": "elev.reconectat@example.com",
+        }
+        stale_payload = {
+            "session_id": "cached-browser-session",
+            "student_id": 999,
+            "test_id": "test-reconnect",
+            "test_title": "Test după ștergere",
+        }
+
+        with patch.object(
+            activity_tracking_service,
+            "get_server_supabase",
+            return_value=self.supabase,
+        ):
+            resolved_payload = activity_tracking_routes._authenticated_student_payload(
+                stale_payload,
+                current_user,
+                request,
+                record_event=True,
+            )
+            started = activity_tracking_service.start_test_session(resolved_payload)
+
+        self.assertNotEqual(resolved_payload["student_id"], 999)
+        self.assertEqual(started["student_id"], resolved_payload["student_id"])
+        self.assertEqual(len(self.supabase.tables["tracked_students"]), 1)
+        self.assertEqual(len(self.supabase.tables["activity_link_activations"]), 1)
+        self.assertEqual(len(self.supabase.tables["activity_test_sessions"]), 1)
+        self.assertEqual(
+            self.supabase.tables["activity_link_activations"][0]["student_id"],
+            resolved_payload["student_id"],
+        )
+
+    def test_supabase_usage_indicator_uses_live_rows_not_allocated_space(self):
+        class FakeRpc:
+            def execute(self):
+                return SimpleNamespace(
+                    data={
+                        "database_size_bytes": 100 * 1024 * 1024,
+                        "public_tables_size_bytes": 20 * 1024 * 1024,
+                        "active_data_size_bytes": 5 * 1024 * 1024,
+                        "active_rows_count": 42,
+                        "table_stats": {
+                            "activity_test_sessions": {
+                                "row_count": 2,
+                                "active_data_size_bytes": 2048,
+                            }
+                        },
+                    }
+                )
+
+        class FakeUsageSupabase:
+            def rpc(self, function_name):
+                self.function_name = function_name
+                return FakeRpc()
+
+        fake_usage_supabase = FakeUsageSupabase()
+        with patch.object(
+            supabase_service,
+            "get_server_supabase",
+            return_value=fake_usage_supabase,
+        ):
+            usage = supabase_service.get_supabase_database_usage()
+
+        self.assertEqual(fake_usage_supabase.function_name, "get_database_usage")
+        self.assertEqual(usage["active_rows_count"], 42)
+        self.assertEqual(usage["usage_percent"], 1.0)
+        self.assertEqual(usage["allocated_usage_percent"], 20.0)
+        self.assertEqual(usage["measurement_basis"], "active_rows")
+
+        FakeRpc.execute = lambda _self: SimpleNamespace(
+            data={
+                "database_size_bytes": 100 * 1024 * 1024,
+                "public_tables_size_bytes": 20 * 1024 * 1024,
+                "active_data_size_bytes": 0,
+                "active_rows_count": 0,
+            }
+        )
+        with patch.object(
+            supabase_service,
+            "get_server_supabase",
+            return_value=fake_usage_supabase,
+        ):
+            empty_usage = supabase_service.get_supabase_database_usage()
+        self.assertEqual(empty_usage["active_data_size_bytes"], 0)
+        self.assertEqual(empty_usage["usage_percent"], 0.0)
 
     def test_email_with_inline_image_is_rendered_by_playwright_chromium(self):
         settings = report_email_service.SmtpSettings(
