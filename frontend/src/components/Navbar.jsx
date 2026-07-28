@@ -59,7 +59,7 @@ const navigationGroups = [
   },
 ]
 
-function SidebarLink({ item, forceActive = false }) {
+function SidebarLink({ item, forceActive = false, onNavigate }) {
   const Icon = item.icon
   const location = useLocation()
   const blockedByNestedRoute = item.inactiveOn?.some(
@@ -69,6 +69,7 @@ function SidebarLink({ item, forceActive = false }) {
   return (
     <NavLink
       to={item.to}
+      onClick={onNavigate}
       className={({ isActive }) =>
         ["app-sidebar-link", (isActive && !blockedByNestedRoute) || forceActive ? "is-active" : ""].join(" ")
       }
@@ -141,7 +142,7 @@ function getStudentInitials(session) {
   )
 }
 
-function Navbar({ onHide }) {
+function Navbar({ onHide, onNavigate }) {
   const navigate = useNavigate()
   const { isAuthenticated, isAdmin, session, logout } = useAuth()
   const adminReportsItem = {
@@ -174,6 +175,7 @@ function Navbar({ onHide }) {
 
   async function handleLogout() {
     await logout()
+    onNavigate?.()
     navigate("/", { replace: true })
   }
 
@@ -211,7 +213,7 @@ function Navbar({ onHide }) {
             <p className="app-sidebar-label">{group.label}</p>
             <nav className="app-sidebar-nav">
               {group.items.map((item) => (
-                <SidebarLink key={item.to} item={item} />
+                <SidebarLink key={item.to} item={item} onNavigate={onNavigate} />
               ))}
             </nav>
           </section>
@@ -222,7 +224,7 @@ function Navbar({ onHide }) {
             <>
               {isAdmin ? (
                 <>
-                  <SidebarLink item={adminReportsItem} />
+                  <SidebarLink item={adminReportsItem} onNavigate={onNavigate} />
                   <SidebarLink
                     item={{
                       to: "/setari-acces",
@@ -230,10 +232,11 @@ function Navbar({ onHide }) {
                       note: "Setari acces",
                       icon: ShieldCheck,
                     }}
+                    onNavigate={onNavigate}
                   />
                 </>
               ) : (
-                <NavLink className="app-sidebar-student-profile-link" to="/profil">
+                <NavLink className="app-sidebar-student-profile-link" to="/profil" onClick={onNavigate}>
                   <span className="app-sidebar-student-avatar" aria-hidden="true">
                     {getStudentInitials(session)}
                   </span>
