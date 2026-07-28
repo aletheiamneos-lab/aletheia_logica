@@ -165,6 +165,23 @@ def track_link_open(payload: dict, request: Request) -> dict:
     operating_system = _detect_os(user_agent)
     is_mobile = _is_mobile_user_agent(user_agent)
     supabase = get_server_supabase()
+    existing_rows = (
+        supabase.table("activity_link_activations")
+        .select("*")
+        .eq("session_id", session_id)
+        .order("activated_at", desc=True)
+        .limit(1)
+        .execute()
+        .data
+        or []
+    )
+    if existing_rows:
+        return {
+            "ok": True,
+            "session_id": session_id,
+            "public_link_code": public_link_code,
+            "already_logged": True,
+        }
 
     supabase.table("activity_link_activations").insert(
         {
@@ -196,10 +213,20 @@ def track_link_open(payload: dict, request: Request) -> dict:
         }
     ).execute()
 
-    return {"ok": True, "session_id": session_id, "public_link_code": public_link_code}
+    return {
+        "ok": True,
+        "session_id": session_id,
+        "public_link_code": public_link_code,
+        "already_logged": False,
+    }
 
 
-def identify_student(payload: dict) -> dict:
+def identify_student(
+    payload: dict,
+    request: Request | None = None,
+    *,
+    record_event: bool = True,
+) -> dict:
     session_id = _normalize_text(payload.get("session_id", ""))
     name = _normalize_text(payload.get("name", ""))
     class_name = _normalize_optional_text(payload.get("class_name"))
@@ -213,32 +240,79 @@ def identify_student(payload: dict) -> dict:
     identity_key = _student_identity_key(name, class_name, email)
     created_at = utc_now_iso()
     supabase = get_server_supabase()
+    if request is not None:
+        track_link_open(
+            {
+                "session_id": session_id,
+                "public_link_code": payload.get("public_link_code") or PUBLIC_LINK_CODE,
+            },
+            request,
+        )
+
     rows = (
         supabase.table("tracked_students")
-        .upsert(
-            {
-                "identity_key": identity_key,
-                "name": name,
-                "class_name": class_name,
-                "email": email,
-                "created_at": created_at,
-            },
-            on_conflict="identity_key",
-        )
+        .select("*")
+        .eq("identity_key", identity_key)
+        .limit(1)
         .execute()
         .data
         or []
     )
-    if not rows:
-        rows = (
+    if not rows and email:
+        legacy_rows = (
             supabase.table("tracked_students")
             .select("*")
-            .eq("identity_key", identity_key)
+            .eq("name", name)
+            .eq("class_name", class_name)
+            .eq("email", "")
             .limit(1)
             .execute()
             .data
             or []
         )
+        if legacy_rows:
+            rows = (
+                supabase.table("tracked_students")
+                .update({"identity_key": identity_key, "email": email})
+                .eq("id", legacy_rows[0]["id"])
+                .execute()
+                .data
+                or legacy_rows
+            )
+    was_created = not rows
+    if not rows:
+        rows = (
+            supabase.table("tracked_students")
+            .insert(
+                {
+                    "identity_key": identity_key,
+                    "name": name,
+                    "class_name": class_name,
+                    "email": email,
+                    "created_at": created_at,
+                }
+            )
+            .execute()
+            .data
+            or []
+        )
+    else:
+        student_row = rows[0]
+        if (
+            student_row.get("name") != name
+            or (student_row.get("class_name") or "") != class_name
+            or (student_row.get("email") or "") != email
+        ):
+            updated_rows = (
+                supabase.table("tracked_students")
+                .update({"name": name, "class_name": class_name, "email": email})
+                .eq("id", student_row["id"])
+                .execute()
+                .data
+                or []
+            )
+            if updated_rows:
+                rows = updated_rows
     if not rows:
         raise _error(502, "Elevul nu a putut fi salvat in Supabase.")
 
@@ -251,18 +325,36 @@ def identify_student(payload: dict) -> dict:
         .is_("student_id", "null")
         .execute()
     )
-    supabase.table("activity_events").insert(
-        {
-            "student_id": student_id,
-            "session_id": session_id,
-            "test_session_id": None,
-            "event_type": "identified",
-            "event_data": {"name": name, "class_name": class_name, "email": email},
-            "created_at": utc_now_iso(),
-        }
-    ).execute()
+    if record_event:
+        existing_identification = (
+            supabase.table("activity_events")
+            .select("id")
+            .eq("student_id", student_id)
+            .eq("session_id", session_id)
+            .eq("event_type", "identified")
+            .limit(1)
+            .execute()
+            .data
+            or []
+        )
+        if not existing_identification:
+            supabase.table("activity_events").insert(
+                {
+                    "student_id": student_id,
+                    "session_id": session_id,
+                    "test_session_id": None,
+                    "event_type": "identified",
+                    "event_data": {"name": name, "class_name": class_name, "email": email},
+                    "created_at": utc_now_iso(),
+                }
+            ).execute()
 
-    return {"ok": True, "student_id": student_id, "student": _serialize_student(student_row)}
+    return {
+        "ok": True,
+        "student_id": student_id,
+        "student": _serialize_student(student_row),
+        "created": was_created,
+    }
 
 
 def start_test_session(payload: dict) -> dict:
@@ -334,7 +426,11 @@ def start_test_session(payload: dict) -> dict:
             "created_at": now_iso,
         }
     ).execute()
-    return {"ok": True, "test_session_id": test_session_id}
+    return {
+        "ok": True,
+        "test_session_id": test_session_id,
+        "student_id": student_id,
+    }
 
 
 def _validated_test_session(student_id: int, session_id: str, test_session_id: int) -> dict:

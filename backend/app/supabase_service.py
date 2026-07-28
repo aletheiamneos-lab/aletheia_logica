@@ -76,24 +76,53 @@ def get_supabase_database_usage() -> dict:
 
     database_size_bytes = max(0, int(payload.get("database_size_bytes") or 0))
     public_tables_size_bytes = max(0, int(payload.get("public_tables_size_bytes") or 0))
-    usage_percent = round((database_size_bytes / FREE_PLAN_DATABASE_LIMIT_BYTES) * 100, 2)
-    remaining_bytes = max(0, FREE_PLAN_DATABASE_LIMIT_BYTES - database_size_bytes)
+    raw_active_data_size_bytes = payload.get("active_data_size_bytes")
+    active_data_size_bytes = max(
+        0,
+        int(
+            public_tables_size_bytes
+            if raw_active_data_size_bytes is None
+            else raw_active_data_size_bytes
+        ),
+    )
+    active_rows_count = max(0, int(payload.get("active_rows_count") or 0))
+    table_stats = payload.get("table_stats")
+    if not isinstance(table_stats, dict):
+        table_stats = {}
+    usage_percent = round(
+        (active_data_size_bytes / FREE_PLAN_DATABASE_LIMIT_BYTES) * 100,
+        2,
+    )
+    allocated_usage_percent = round(
+        (database_size_bytes / FREE_PLAN_DATABASE_LIMIT_BYTES) * 100,
+        2,
+    )
+    remaining_bytes = max(0, FREE_PLAN_DATABASE_LIMIT_BYTES - active_data_size_bytes)
     LOGGER.info(
-        "[Supabase usage] SUCCESS database_size_bytes=%s public_tables_size_bytes=%s "
-        "limit_bytes=%s usage_percent=%.2f",
+        "[Supabase usage] SUCCESS active_data_size_bytes=%s active_rows_count=%s "
+        "database_size_bytes=%s public_tables_size_bytes=%s limit_bytes=%s "
+        "usage_percent=%.2f allocated_usage_percent=%.2f",
+        active_data_size_bytes,
+        active_rows_count,
         database_size_bytes,
         public_tables_size_bytes,
         FREE_PLAN_DATABASE_LIMIT_BYTES,
         usage_percent,
+        allocated_usage_percent,
     )
     return {
         "plan": "Free",
         "database_size_bytes": database_size_bytes,
         "public_tables_size_bytes": public_tables_size_bytes,
+        "active_data_size_bytes": active_data_size_bytes,
+        "active_rows_count": active_rows_count,
+        "table_stats": table_stats,
         "limit_bytes": FREE_PLAN_DATABASE_LIMIT_BYTES,
         "remaining_bytes": remaining_bytes,
         "usage_percent": usage_percent,
-        "is_over_limit": database_size_bytes >= FREE_PLAN_DATABASE_LIMIT_BYTES,
+        "allocated_usage_percent": allocated_usage_percent,
+        "is_over_limit": active_data_size_bytes >= FREE_PLAN_DATABASE_LIMIT_BYTES,
+        "measurement_basis": "active_rows",
         "measured_at": datetime.now(timezone.utc).isoformat(),
     }
 

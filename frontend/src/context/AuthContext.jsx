@@ -3,11 +3,11 @@ import { useEffect, useState } from "react"
 import {
   changeTeacherPassword,
   clearStoredSession,
+  ensurePublicLinkActivationLogged,
   getCurrentSession,
   getStudentAccessStatus,
   identifyTrackedStudent,
   loadStoredSession,
-  loadTrackedStudent,
   loginAdmin,
   loginStudent,
   logoutCurrentSession,
@@ -42,12 +42,14 @@ function normalizeSession(session) {
 }
 
 async function ensureTrackedIdentityForStudent(session) {
-  if (!session || session.role !== "student" || loadTrackedStudent()?.student_id) {
+  if (!session || session.role !== "student") {
     return
   }
 
+  await ensurePublicLinkActivationLogged()
   await identifyTrackedStudent({
     name: session.display_name ?? session.displayName ?? "",
+    email: session.email ?? "",
   })
 }
 

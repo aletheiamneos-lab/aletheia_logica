@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useState } from "react"
 import {
   AlertTriangle,
   ChevronLeft,
@@ -463,6 +463,23 @@ function ProfilePage() {
     pageSize: 8,
   })
 
+  const refreshSupabaseUsage = useCallback(async () => {
+    if (!isAdmin) {
+      return
+    }
+
+    setIsSupabaseUsageLoading(true)
+    try {
+      const payload = await getAdminSupabaseUsage()
+      setSupabaseUsage(payload)
+      setSupabaseUsageError("")
+    } catch (usageError) {
+      setSupabaseUsageError(usageError.message)
+    } finally {
+      setIsSupabaseUsageLoading(false)
+    }
+  }, [isAdmin])
+
   useEffect(() => {
     if (!isAdmin) {
       return undefined
@@ -518,34 +535,12 @@ function ProfilePage() {
       return undefined
     }
 
-    let active = true
-
-    async function loadSupabaseUsage() {
-      setIsSupabaseUsageLoading(true)
-      try {
-        const payload = await getAdminSupabaseUsage()
-        if (active) {
-          setSupabaseUsage(payload)
-          setSupabaseUsageError("")
-        }
-      } catch (usageError) {
-        if (active) {
-          setSupabaseUsageError(usageError.message)
-        }
-      } finally {
-        if (active) {
-          setIsSupabaseUsageLoading(false)
-        }
-      }
-    }
-
-    loadSupabaseUsage()
-    const intervalId = window.setInterval(loadSupabaseUsage, 60000)
+    refreshSupabaseUsage()
+    const intervalId = window.setInterval(refreshSupabaseUsage, 60000)
     return () => {
-      active = false
       window.clearInterval(intervalId)
     }
-  }, [isAdmin])
+  }, [isAdmin, refreshSupabaseUsage])
 
   useEffect(() => {
     if (!bulkPreviewRows.length) {
@@ -1027,7 +1022,7 @@ function ProfilePage() {
           : selectedTestType === "admitere"
             ? await deleteAdmitereAdminReports(selectedIds)
             : await deleteAdminAttempts(selectedIds)
-      await refreshReportData()
+      await Promise.all([refreshReportData(), refreshSupabaseUsage()])
       setSelectedAttemptIds([])
       setIsDeleteConfirmationOpen(false)
       setShareMessage(
@@ -1597,9 +1592,9 @@ function ProfilePage() {
         <div className="academic-panel-head">
           <div>
             <p className="section-kicker">Consum Supabase</p>
-            <h2 className="academic-section-title">Spațiul bazei de date din planul Free</h2>
+            <h2 className="academic-section-title">Date active în Supabase</h2>
             <p className="academic-panel-note">
-              Valoarea include datele PostgreSQL și indecșii și este comparată cu limita de 500 MB.
+              Indicatorul măsoară rândurile active și se actualizează imediat după ștergere.
             </p>
           </div>
           <span className="academic-monitor-count academic-supabase-plan-badge">
@@ -1625,18 +1620,18 @@ function ProfilePage() {
                 "--usage-angle": `${Math.min(100, Math.max(0, supabaseUsage.usage_percent)) * 3.6}deg`,
               }}
               role="img"
-              aria-label={`${supabaseUsage.usage_percent}% din spațiul bazei de date Supabase este utilizat`}
+              aria-label={`${supabaseUsage.usage_percent}% din limita Supabase este ocupată de date active`}
             >
               <div className="academic-supabase-usage-chart-center">
                 <strong>{`${supabaseUsage.usage_percent.toFixed(1)}%`}</strong>
-                <span>utilizat</span>
+                <span>date active</span>
               </div>
             </div>
 
             <div className="academic-supabase-usage-summary">
               <div className="academic-supabase-usage-metric is-primary">
-                <span>Folosit</span>
-                <strong>{formatStorageSize(supabaseUsage.database_size_bytes)}</strong>
+                <span>Date active</span>
+                <strong>{formatStorageSize(supabaseUsage.active_data_size_bytes)}</strong>
               </div>
               <div className="academic-supabase-usage-metric">
                 <span>Disponibil</span>
@@ -1647,8 +1642,12 @@ function ProfilePage() {
                 <strong>{formatStorageSize(supabaseUsage.limit_bytes)}</strong>
               </div>
               <div className="academic-supabase-usage-metric">
-                <span>Tabele publice + indecși</span>
-                <strong>{formatStorageSize(supabaseUsage.public_tables_size_bytes)}</strong>
+                <span>Rânduri active</span>
+                <strong>{Number(supabaseUsage.active_rows_count ?? 0).toLocaleString("ro-RO")}</strong>
+              </div>
+              <div className="academic-supabase-usage-metric">
+                <span>Spațiu fizic alocat</span>
+                <strong>{formatStorageSize(supabaseUsage.database_size_bytes)}</strong>
               </div>
             </div>
 
@@ -1661,6 +1660,9 @@ function ProfilePage() {
                     : "Consumul este în limite bune."}
               </span>
               <span>{`Actualizat ${formatTimestamp(supabaseUsage.measured_at)}`}</span>
+              <span>
+                Spațiul fizic poate rămâne alocat de PostgreSQL după ștergere, dar este reutilizat automat.
+              </span>
             </div>
           </div>
         ) : (

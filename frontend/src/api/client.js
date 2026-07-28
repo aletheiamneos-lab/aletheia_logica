@@ -1024,7 +1024,10 @@ async function ensureTrackedStudentIdentity() {
     throw new Error("Elevul trebuie identificat inainte de a fi urmarit.")
   }
 
-  const result = await identifyTrackedStudent({ name: displayName })
+  const result = await identifyTrackedStudent({
+    name: displayName,
+    email: activeSession?.email ?? "",
+  })
   return {
     student_id: result.student_id,
     name: displayName,
@@ -1034,7 +1037,7 @@ async function ensureTrackedStudentIdentity() {
 export async function startTrackedTestSession(testId, testTitle) {
   const trackedStudent = await ensureTrackedStudentIdentity()
   const sessionId = getOrCreatePublicSessionId()
-  return request("/activity/tests/start", {
+  const result = await request("/activity/tests/start", {
     method: "POST",
     body: JSON.stringify({
       session_id: sessionId,
@@ -1043,6 +1046,14 @@ export async function startTrackedTestSession(testId, testTitle) {
       test_title: testTitle,
     }),
   })
+  if (result?.student_id && result.student_id !== trackedStudent.student_id) {
+    persistTrackedStudent({
+      ...trackedStudent,
+      student_id: result.student_id,
+      session_id: sessionId,
+    })
+  }
+  return result
 }
 
 export async function saveTrackedTestProgress({
@@ -1373,7 +1384,9 @@ export function getAdminAttemptsSummary() {
 }
 
 export function getAdminSupabaseUsage() {
-  return request("/admin/supabase-usage")
+  return request("/admin/supabase-usage", {
+    cache: "no-store",
+  })
 }
 
 export function downloadAdminAttemptsPdfArchive(attemptIds) {
