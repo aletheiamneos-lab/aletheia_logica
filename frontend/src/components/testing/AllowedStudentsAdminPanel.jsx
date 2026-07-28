@@ -19,7 +19,100 @@ import {
   updateAllowedStudent,
 } from "../../api/client"
 
+const REPORTS_MOBILE_MEDIA_QUERY =
+  "(max-width: 760px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape)"
+
+function useReportsMobileLayout() {
+  const [isMobileLayout, setIsMobileLayout] = useState(
+    () => typeof window !== "undefined" && window.matchMedia(REPORTS_MOBILE_MEDIA_QUERY).matches,
+  )
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(REPORTS_MOBILE_MEDIA_QUERY)
+    const updateLayout = () => setIsMobileLayout(mediaQuery.matches)
+    updateLayout()
+    mediaQuery.addEventListener("change", updateLayout)
+    return () => mediaQuery.removeEventListener("change", updateLayout)
+  }, [])
+
+  return isMobileLayout
+}
+
+function AllowedStudentMobileCard({ student, isBusy, onPatch, onDelete }) {
+  return (
+    <article className="allowed-students-mobile-card">
+      <div className="allowed-students-mobile-card-head">
+        <div>
+          <p className="section-kicker">Elev autorizat</p>
+          <h4>{student.name}</h4>
+        </div>
+        <span
+          className={[
+            "allowed-students-status",
+            student.is_blocked ? "is-blocked" : "is-active",
+          ].join(" ")}
+        >
+          <span aria-hidden="true" />
+          {student.is_blocked ? "Blocat" : "Activ"}
+        </span>
+      </div>
+
+      <p className="allowed-students-mobile-email">{student.email}</p>
+
+      <details className="allowed-students-mobile-actions-menu">
+        <summary>Gestioneaza accesul</summary>
+        <div className="allowed-students-mobile-actions">
+          <button
+            className="allowed-students-action-button is-block"
+            type="button"
+            disabled={isBusy || student.is_blocked}
+            onClick={() => onPatch(student, { is_blocked: true }, "Accesul a fost blocat.")}
+          >
+            <ShieldOff aria-hidden="true" size={17} strokeWidth={1.9} />
+            Blocheaza
+          </button>
+          <button
+            className="allowed-students-action-button is-unblock"
+            type="button"
+            disabled={isBusy || !student.is_blocked}
+            onClick={() => onPatch(student, { is_blocked: false }, "Accesul a fost deblocat.")}
+          >
+            <ShieldCheck aria-hidden="true" size={17} strokeWidth={1.9} />
+            Deblocheaza
+          </button>
+          <button
+            className="allowed-students-action-button"
+            type="button"
+            disabled={isBusy}
+            onClick={() =>
+              onPatch(
+                student,
+                { force_logout: true },
+                "Deconectarea va avea loc la urmatoarea verificare.",
+              )
+            }
+          >
+            <RefreshCw aria-hidden="true" size={17} strokeWidth={1.9} />
+            Deconecteaza
+          </button>
+        </div>
+      </details>
+
+      <button
+        className="allowed-students-action-button is-delete allowed-students-mobile-delete"
+        type="button"
+        disabled={isBusy}
+        onClick={() => onDelete(student)}
+      >
+        <Trash2 aria-hidden="true" size={17} strokeWidth={1.9} />
+        Sterge accesul
+      </button>
+    </article>
+  )
+}
+
 function AllowedStudentsAdminPanel() {
+  const isMobileLayout = useReportsMobileLayout()
   const [students, setStudents] = useState([])
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -250,7 +343,8 @@ function AllowedStudentsAdminPanel() {
             </div>
           </div>
 
-          <div className="allowed-students-table-scroll">
+          {!isMobileLayout ? (
+            <div className="allowed-students-table-scroll allowed-students-desktop-table">
             <table className="allowed-students-table">
               <thead>
                 <tr>
@@ -367,7 +461,28 @@ function AllowedStudentsAdminPanel() {
                 ) : null}
               </tbody>
             </table>
-          </div>
+            </div>
+          ) : null}
+
+          {isMobileLayout ? (
+            <div className="allowed-students-mobile-list" aria-label="Elevi cu acces la aplicatie">
+            {students.map((student) => (
+              <AllowedStudentMobileCard
+                key={`mobile-${student.id}`}
+                student={student}
+                isBusy={busyId === student.id}
+                onPatch={handlePatch}
+                onDelete={setStudentToDelete}
+              />
+            ))}
+            {isLoading ? <p className="allowed-students-mobile-empty">Se incarca lista...</p> : null}
+            {!isLoading && students.length === 0 ? (
+              <p className="allowed-students-mobile-empty">
+                Lista este goala. Adauga primul elev autorizat.
+              </p>
+            ) : null}
+            </div>
+          ) : null}
         </div>
       </section>
 

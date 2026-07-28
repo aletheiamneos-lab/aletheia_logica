@@ -122,7 +122,7 @@ Campuri principale intrebare:
 
 Un test incomplet ramane draft si nu poate fi publicat pentru elevi.
 
-## Raportare locala
+## Raportare persistenta
 
 Dupa submit, sistemul:
 
@@ -131,14 +131,14 @@ Dupa submit, sistemul:
 3. calculeaza scorul total si scorurile pe lectii
 4. genereaza raportul editabil
 5. genereaza PDF-ul
-6. arhiveaza local fisierele
+6. arhiveaza artefactele in Supabase Storage
 
 Pentru fiecare incercare finalizata se pastreaza:
 
-- raspunsurile brute in SQLite
-- sursa editabila JSON
-- sursa editabila HTML
-- PDF generat
+- raspunsurile brute in tabela `attempts` din Supabase
+- sursa editabila JSON in bucket-ul privat `generated-reports`
+- sursa editabila HTML in bucket-ul privat `generated-reports`
+- PDF-ul generat in bucket-ul privat `generated-reports`
 
 Numele PDF-ului urmeaza structura:
 
@@ -158,16 +158,25 @@ Profesorul are un panou live in pagina `Teste integrate` unde vede:
 - marker personalizat sau fallback pe initiale
 - grafic de evolutie in timp
 
-## Persistenta locala
+## Persistenta pe Render
 
-Datele sunt pastrate local in:
+Datele noi importante nu sunt scrise pe discul efemer al serviciului:
 
-- baza de date: `backend/data/logic_app.db`
-- definitii teste: `backend/data/integrated_testing/definitions/`
-- rapoarte JSON: `backend/data/integrated_testing/reports/json/`
-- rapoarte HTML: `backend/data/integrated_testing/reports/html/`
-- PDF-uri: `backend/data/integrated_testing/reports/pdf/`
-- exporturi CSV: `backend/data/integrated_testing/exports/`
+- Testele integrate si incercarile sunt in tabelele Supabase existente.
+- Rapoartele BAC sunt in `bac_student_reports`.
+- Rapoartele Admitere sunt in `admitere_student_reports`.
+- PDF-urile si artefactele rapoartelor sunt in bucket-ul privat
+  `generated-reports`.
+- Arhivele ZIP si exporturile CSV sunt construite in memorie si trimise
+  direct clientului.
+
+Inainte de deploy se aplica migrarile SQL din `supabase/migrations`, inclusiv
+`20260728_persist_generated_reports.sql`. Bucket-ul poate fi schimbat prin
+`SUPABASE_REPORTS_BUCKET`; valoarea implicita este `generated-reports`.
+
+Scripturile din `backend/scripts/migrate_*` citesc SQLite exclusiv pentru
+importuri manuale optionale ale datelor vechi. Ele nu sunt rulate de aplicatie
+si nu participa la salvarea datelor noi.
 
 ## Modul Admitere
 
@@ -237,7 +246,7 @@ cd e:\Side_Work\Logica_Aplicatie
 py -m venv .venv
 .venv\Scripts\activate
 python -m pip install -r backend\requirements.txt
-python backend\init_db.py --reset
+python -m playwright install chromium
 uvicorn app.main:app --reload --app-dir backend
 ```
 
@@ -268,3 +277,43 @@ npm run build
 cd e:\Side_Work\Logica_Aplicatie
 node scripts\validate_admitere_tests.js
 ```
+
+## Deploy backend pe Render
+
+Configuratia recomandata este versionata in `render.yaml` si foloseste
+`Dockerfile`, bazat pe imaginea oficiala Playwright Python. Imaginea include
+Chromium si toate bibliotecile Linux necesare. Pentru serviciul Render existent,
+selecteaza runtime-ul Docker si calea `./Dockerfile`.
+
+Daca pastrezi temporar runtime-ul Python nativ, foloseste:
+
+```bash
+# Build Command
+bash render-build.sh
+
+# Start Command
+python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+```
+
+Build-ul instaleaza dependentele Python si browserul Chromium compatibil cu
+versiunea Playwright folosita de backend. Varianta Docker ramane recomandata,
+deoarece reproduce exact dependentele de sistem Chromium pe Render.
+
+Inainte de primul deploy al versiunii fara SQLite:
+
+1. Ruleaza in Supabase SQL Editor
+   `supabase/migrations/20260728_migrate_legacy_sqlite_state.sql`.
+2. Verifica datele locale fara sa scrii in Supabase:
+
+   ```powershell
+   .venv\Scripts\python.exe backend\scripts\migrate_legacy_sqlite_state_to_supabase.py
+   ```
+
+3. Transfera datele:
+
+   ```powershell
+   .venv\Scripts\python.exe backend\scripts\migrate_legacy_sqlite_state_to_supabase.py --apply
+   ```
+
+Scriptul este idempotent si transfera setarile aplicatiei, sesiunile,
+progresul lectiilor/exercitiilor si toate datele din monitorizarea publica.

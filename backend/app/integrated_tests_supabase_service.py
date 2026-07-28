@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import io
 import json
 import logging
 import uuid
 import zipfile
-from pathlib import Path
 
 from fastapi import HTTPException
 from postgrest.exceptions import APIError
@@ -14,12 +14,11 @@ from .reporting_service import (
     build_attempt_report_payload,
     build_centralized_csv_export,
     delete_persisted_report_bundle,
-    ensure_archive_directories,
-    EXPORTS_DIR,
     persist_report_bundle,
     save_test_definition_snapshot,
 )
 from .supabase_service import get_server_supabase
+from .supabase_storage_service import download_bytes
 
 LOGGER = logging.getLogger("uvicorn.error")
 
@@ -1321,7 +1320,7 @@ def get_admin_report(current_user: dict, report_id: str) -> dict:
     return report
 
 
-def get_report_file_path(current_user: dict, attempt_id: str, file_kind: str) -> str:
+def get_report_file(current_user: dict, attempt_id: str, file_kind: str) -> tuple[bytes, str]:
     row = _fetch_attempt(attempt_id)
     _ensure_attempt_access(current_user, row)
     if file_kind in {"json", "html"} and current_user["role"] != "admin":
@@ -1329,14 +1328,16 @@ def get_report_file_path(current_user: dict, attempt_id: str, file_kind: str) ->
     _, bundle = _build_report(row, persist_files=True)
     if not bundle or file_kind not in {"json", "html", "pdf"}:
         raise _error(404, "Fisierul raportului nu este disponibil.")
-    return str(bundle[f"{file_kind}_path"])
+    object_path = str(bundle[f"{file_kind}_path"])
+    file_name = bundle["pdf_file_name"] if file_kind == "pdf" else f"report.{file_kind}"
+    return download_bytes(object_path), file_name
 
 
-def get_admin_pdf_path(current_user: dict, report_id: str) -> str:
+def get_admin_pdf(current_user: dict, report_id: str) -> tuple[dict, bytes, str]:
     if current_user["role"] != "admin":
         raise _error(403, "Doar adminul poate accesa PDF-ul.")
-    _, bundle = _build_report(_fetch_attempt(report_id), persist_files=True)
-    return str(bundle["pdf_path"])
+    report, bundle = _build_report(_fetch_attempt(report_id), persist_files=True)
+    return report, download_bytes(bundle["pdf_path"]), bundle["pdf_file_name"]
 
 
 def get_admin_report_email_delivery(current_user: dict, report_id: str) -> dict:
@@ -1347,7 +1348,12 @@ def get_admin_report_email_delivery(current_user: dict, report_id: str) -> dict:
     if not email or email.endswith("@local.invalid"):
         raise _error(404, "Elevul nu are o adresa de email salvata.")
     report, bundle = _build_report(row, persist_files=True)
-    return {"recipient_email": email, "pdf_path": bundle["pdf_path"], "report": report}
+    return {
+        "recipient_email": email,
+        "pdf_bytes": download_bytes(bundle["pdf_path"]),
+        "pdf_file_name": bundle["pdf_file_name"],
+        "report": report,
+    }
 
 
 def get_admin_attempts_summary(current_user: dict) -> dict:
@@ -1381,18 +1387,17 @@ def get_admin_attempts_summary(current_user: dict) -> dict:
     }
 
 
-def build_admin_attempts_pdf_zip(current_user: dict, attempt_ids: list[str]) -> str:
+def build_admin_attempts_pdf_zip(current_user: dict, attempt_ids: list[str]) -> tuple[bytes, str]:
     if current_user["role"] != "admin":
         raise _error(403, "Doar adminul poate descarca arhiva rapoartelor.")
 
-    ensure_archive_directories()
-    archive_path = EXPORTS_DIR / f"rapoarte_selectate_{uuid.uuid4().hex[:10]}.zip"
-    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+    buffer = io.BytesIO()
+    archive_name = f"rapoarte_selectate_{uuid.uuid4().hex[:10]}.zip"
+    with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for index, attempt_id in enumerate(attempt_ids, start=1):
-            pdf_path = Path(get_admin_pdf_path(current_user, attempt_id))
-            archive.write(pdf_path, arcname=f"{index:03d}_{pdf_path.name}")
-
-    return str(archive_path.resolve())
+            _report, pdf_bytes, file_name = get_admin_pdf(current_user, attempt_id)
+            archive.writestr(f"{index:03d}_{file_name}", pdf_bytes)
+    return buffer.getvalue(), archive_name
 
 
 def delete_admin_attempts(current_user: dict, attempt_ids: list[str]) -> dict:
@@ -1459,7 +1464,7 @@ def delete_admin_attempts(current_user: dict, attempt_ids: list[str]) -> dict:
     }
 
 
-def export_centralized_results(current_user: dict) -> str:
+def export_centralized_results(current_user: dict) -> tuple[bytes, str]:
     reports = list_admin_reports(current_user)
     return build_centralized_csv_export(
         [

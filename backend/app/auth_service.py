@@ -4,14 +4,13 @@ import base64
 import hashlib
 import os
 import secrets
-import sqlite3
 import uuid
 from datetime import datetime, timezone
 from typing import Annotated
 
 from fastapi import Header, HTTPException
 
-from .database import get_connection
+from .supabase_service import get_server_supabase
 
 DEFAULT_ADMIN_PASSWORD = "NihilSineDeo"
 SESSION_HEADER_NAME = "X-Logica-Session"
@@ -46,21 +45,21 @@ def resolve_unique_student_email(display_name: str) -> str:
     if not normalized_name:
         return ""
 
-    with get_connection() as connection:
-        rows = connection.execute(
-            """
-            SELECT email
-            FROM auth_sessions
-            WHERE role = 'student'
-              AND lower(trim(display_name)) = lower(trim(?))
-              AND trim(COALESCE(email, '')) <> ''
-            ORDER BY last_seen_at DESC
-            """,
-            (normalized_name,),
-        ).fetchall()
+    rows = (
+        get_server_supabase()
+        .table("auth_sessions")
+        .select("email,display_name,last_seen_at")
+        .eq("role", "student")
+        .order("last_seen_at", desc=True)
+        .execute()
+        .data
+        or []
+    )
 
     emails_by_key = {}
     for row in rows:
+        if _normalize_name(str(row.get("display_name") or "")).casefold() != normalized_name.casefold():
+            continue
         email = str(row["email"] or "").strip()
         if email:
             emails_by_key.setdefault(email.casefold(), email)
@@ -69,7 +68,7 @@ def resolve_unique_student_email(display_name: str) -> str:
     return next(iter(emails_by_key.values()))
 
 
-def _serialize_session(row: sqlite3.Row) -> dict:
+def _serialize_session(row: dict) -> dict:
     normalized_role = "admin" if row["role"] == "teacher" else row["role"]
     login_at = row["created_at"]
     return {
@@ -77,14 +76,14 @@ def _serialize_session(row: sqlite3.Row) -> dict:
         "session_id": row["id"],
         "sessionId": row["id"],
         "role": normalized_role,
-        "first_name": row["first_name"] or "",
-        "firstName": row["first_name"] or "",
-        "last_name": row["last_name"] or "",
-        "lastName": row["last_name"] or "",
+        "first_name": row.get("first_name") or "",
+        "firstName": row.get("first_name") or "",
+        "last_name": row.get("last_name") or "",
+        "lastName": row.get("last_name") or "",
         "display_name": row["display_name"],
         "displayName": row["display_name"],
         "initials": row["initials"],
-        "email": row["email"] or "",
+        "email": row.get("email") or "",
         "loginAt": login_at,
         "created_at": row["created_at"],
         "last_seen_at": row["last_seen_at"],
@@ -119,27 +118,24 @@ def _verify_password(password: str, encoded_hash: str) -> bool:
 
 
 def get_setting(key: str) -> str | None:
-    with get_connection() as connection:
-        row = connection.execute(
-            "SELECT value FROM app_settings WHERE key = ?",
-            (key,),
-        ).fetchone()
-    return row["value"] if row else None
+    rows = (
+        get_server_supabase()
+        .table("app_settings")
+        .select("value")
+        .eq("key", key)
+        .limit(1)
+        .execute()
+        .data
+        or []
+    )
+    return str(rows[0]["value"]) if rows else None
 
 
 def set_setting(key: str, value: str) -> None:
-    with get_connection() as connection:
-        connection.execute(
-            """
-            INSERT INTO app_settings (key, value, updated_at)
-            VALUES (?, ?, ?)
-            ON CONFLICT(key) DO UPDATE SET
-                value = excluded.value,
-                updated_at = excluded.updated_at
-            """,
-            (key, value, utc_now_iso()),
-        )
-        connection.commit()
+    get_server_supabase().table("app_settings").upsert(
+        {"key": key, "value": value, "updated_at": utc_now_iso()},
+        on_conflict="key",
+    ).execute()
 
 
 def verify_teacher_password(password: str) -> bool:
@@ -162,28 +158,20 @@ def create_student_session(name: str, email: str) -> dict:
     session_id = str(uuid.uuid4())
     created_at = utc_now_iso()
 
-    with get_connection() as connection:
-        connection.execute(
-            """
-            INSERT INTO auth_sessions (
-                id, role, first_name, last_name, display_name, initials,
-                created_at, last_seen_at, is_active, email
-            )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?)
-            """,
-            (
-                session_id,
-                "student",
-                normalized_first_name,
-                normalized_last_name,
-                normalized_name,
-                compute_initials(normalized_first_name, normalized_last_name),
-                created_at,
-                created_at,
-                normalized_email,
-            ),
-        )
-        connection.commit()
+    get_server_supabase().table("auth_sessions").insert(
+        {
+            "id": session_id,
+            "role": "student",
+            "first_name": normalized_first_name,
+            "last_name": normalized_last_name,
+            "display_name": normalized_name,
+            "initials": compute_initials(normalized_first_name, normalized_last_name),
+            "created_at": created_at,
+            "last_seen_at": created_at,
+            "is_active": True,
+            "email": normalized_email,
+        }
+    ).execute()
 
     return get_session(session_id)
 
@@ -195,25 +183,20 @@ def create_admin_session(password: str) -> dict:
     session_id = str(uuid.uuid4())
     created_at = utc_now_iso()
 
-    with get_connection() as connection:
-        connection.execute(
-            """
-            INSERT INTO auth_sessions (
-                id, role, first_name, last_name, display_name, initials,
-                created_at, last_seen_at, is_active
-            )
-            VALUES (?, ?, '', '', ?, ?, ?, ?, 1)
-            """,
-            (
-                session_id,
-                "admin",
-                "Admin",
-                "AD",
-                created_at,
-                created_at,
-            ),
-        )
-        connection.commit()
+    get_server_supabase().table("auth_sessions").insert(
+        {
+            "id": session_id,
+            "role": "admin",
+            "first_name": "",
+            "last_name": "",
+            "display_name": "Admin",
+            "initials": "AD",
+            "created_at": created_at,
+            "last_seen_at": created_at,
+            "is_active": True,
+            "email": "",
+        }
+    ).execute()
 
     return get_session(session_id)
 
@@ -223,55 +206,45 @@ def create_teacher_session(password: str) -> dict:
 
 
 def get_session(session_id: str) -> dict:
-    with get_connection() as connection:
-        row = connection.execute(
-            """
-            SELECT *
-            FROM auth_sessions
-            WHERE id = ? AND is_active = 1
-            """,
-            (session_id,),
-        ).fetchone()
-
-    if row is None:
+    rows = (
+        get_server_supabase()
+        .table("auth_sessions")
+        .select("*")
+        .eq("id", session_id)
+        .eq("is_active", True)
+        .limit(1)
+        .execute()
+        .data
+        or []
+    )
+    if not rows:
         raise _http_error(401, "Sesiunea nu este valida sau a expirat.")
 
-    return _serialize_session(row)
+    return _serialize_session(rows[0])
 
 
 def touch_session(session_id: str) -> dict:
-    with get_connection() as connection:
-        row = connection.execute(
-            """
-            SELECT *
-            FROM auth_sessions
-            WHERE id = ? AND is_active = 1
-            """,
-            (session_id,),
-        ).fetchone()
-
-        if row is None:
-            raise _http_error(401, "Sesiunea nu este valida sau a expirat.")
-
-        updated_last_seen = utc_now_iso()
-        connection.execute(
-            "UPDATE auth_sessions SET last_seen_at = ? WHERE id = ?",
-            (updated_last_seen, session_id),
-        )
-        connection.commit()
-
-    session = _serialize_session(row)
-    session["last_seen_at"] = updated_last_seen
-    return session
+    session = get_session(session_id)
+    updated_last_seen = utc_now_iso()
+    rows = (
+        get_server_supabase()
+        .table("auth_sessions")
+        .update({"last_seen_at": updated_last_seen})
+        .eq("id", session_id)
+        .eq("is_active", True)
+        .execute()
+        .data
+        or []
+    )
+    if not rows:
+        raise _http_error(401, "Sesiunea nu este valida sau a expirat.")
+    return _serialize_session(rows[0])
 
 
 def logout_session(session_id: str) -> None:
-    with get_connection() as connection:
-        connection.execute(
-            "UPDATE auth_sessions SET is_active = 0, last_seen_at = ? WHERE id = ?",
-            (utc_now_iso(), session_id),
-        )
-        connection.commit()
+    get_server_supabase().table("auth_sessions").update(
+        {"is_active": False, "last_seen_at": utc_now_iso()}
+    ).eq("id", session_id).execute()
 
 
 def change_teacher_password(session_id: str, current_password: str, new_password: str) -> dict:
@@ -288,7 +261,7 @@ def change_teacher_password(session_id: str, current_password: str, new_password
         raise _http_error(400, "Parola noua trebuie sa aiba cel putin 8 caractere.")
 
     set_setting(PASSWORD_SETTING_KEY, _encode_password_hash(normalized_new_password))
-    return {"message": "Parola adminului a fost actualizata local."}
+    return {"message": "Parola adminului a fost actualizata."}
 
 
 def change_admin_password(session_id: str, current_password: str, new_password: str) -> dict:
@@ -296,15 +269,17 @@ def change_admin_password(session_id: str, current_password: str, new_password: 
 
 
 def list_active_student_sessions() -> list[dict]:
-    with get_connection() as connection:
-        rows = connection.execute(
-            """
-            SELECT *
-            FROM auth_sessions
-            WHERE role = 'student' AND is_active = 1
-            ORDER BY last_seen_at DESC
-            """
-        ).fetchall()
+    rows = (
+        get_server_supabase()
+        .table("auth_sessions")
+        .select("*")
+        .eq("role", "student")
+        .eq("is_active", True)
+        .order("last_seen_at", desc=True)
+        .execute()
+        .data
+        or []
+    )
 
     return [_serialize_session(row) for row in rows]
 

@@ -17,18 +17,16 @@ if not exist ".venv\Scripts\python.exe" (
   if errorlevel 1 goto :error
 )
 
-if not exist ".venv\logica-backend-deps-ready.stamp" (
+if not exist ".venv\logica-backend-deps-playwright-1.55-ready.stamp" (
   echo [backend-prod] Instalez dependentele necesare...
   ".venv\Scripts\python.exe" -m pip install -r backend\requirements.txt
   if errorlevel 1 goto :error
-  type nul > ".venv\logica-backend-deps-ready.stamp"
+  ".venv\Scripts\python.exe" -m playwright install chromium
+  if errorlevel 1 goto :error
+  type nul > ".venv\logica-backend-deps-playwright-1.55-ready.stamp"
 ) else (
   echo [backend-prod] Dependentele Python sunt deja pregatite.
 )
-
-echo [backend-prod] Initializare baza de date...
-".venv\Scripts\python.exe" backend\init_db.py
-if errorlevel 1 goto :error
 
 echo [backend-prod] Pornesc FastAPI + build-ul frontend pe http://0.0.0.0:%BACKEND_PORT%
 pushd backend

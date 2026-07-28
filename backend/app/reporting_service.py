@@ -2,41 +2,22 @@ from __future__ import annotations
 
 import csv
 import html
+import io
 import json
 import math
 import re
-import shutil
-import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from .database import DATA_DIR
-from .pdf_service import build_export_filename, generate_attempt_pdf
+from .pdf_service import build_export_filename, generate_attempt_pdf_bytes
+from .supabase_storage_service import remove_objects, upload_bytes
 
-ARCHIVE_ROOT = DATA_DIR / "archive"
-DEFINITIONS_DIR = ARCHIVE_ROOT / "definitions"
-REPORT_JSON_DIR = ARCHIVE_ROOT / "reports"
-REPORT_HTML_DIR = ARCHIVE_ROOT / "reports_html"
-REPORT_PDF_DIR = ARCHIVE_ROOT / "pdfs"
-EXPORTS_DIR = ARCHIVE_ROOT / "exports"
 TEMPLATES_DIR = Path(__file__).resolve().parent / "templates"
 REPORT_TEMPLATE_NAME = "integrated_test_report.html.jinja2"
 CANONICAL_CATEGORY_ORDER = ["Definitii", "Clasificare", "Propozitii", "Silogisme", "Erori"]
 DISPLAY_CATEGORY_ORDER = ["Definiții", "Clasificare", "Propoziții", "Silogisme", "Erori"]
-
-
-def ensure_archive_directories() -> None:
-    for path in [
-        ARCHIVE_ROOT,
-        DEFINITIONS_DIR,
-        REPORT_JSON_DIR,
-        REPORT_HTML_DIR,
-        REPORT_PDF_DIR,
-        EXPORTS_DIR,
-    ]:
-        path.mkdir(parents=True, exist_ok=True)
 
 
 def _safe_filename_component(value: str) -> str:
@@ -558,94 +539,77 @@ def build_attempt_report_payload(
 
 
 def persist_report_bundle(report_data: dict) -> dict[str, str]:
-    ensure_archive_directories()
-
     bundle_paths = _report_bundle_paths(report_data)
-    json_path = bundle_paths["json_path"]
-    html_path = bundle_paths["html_path"]
-    pdf_path = bundle_paths["pdf_path"]
-    flat_pdf_path = bundle_paths["flat_pdf_path"]
-
     rendered_html = render_report_html(report_data)
+    upload_bytes(
+        bundle_paths["json_path"],
+        json.dumps(report_data, ensure_ascii=False, indent=2).encode("utf-8"),
+        "application/json",
+    )
+    upload_bytes(bundle_paths["html_path"], rendered_html.encode("utf-8"), "text/html")
+    upload_bytes(bundle_paths["pdf_path"], generate_attempt_pdf_bytes(report_data), "application/pdf")
+    return bundle_paths
 
-    json_path.write_text(json.dumps(report_data, ensure_ascii=False, indent=2), encoding="utf-8")
-    html_path.write_text(rendered_html, encoding="utf-8")
-    generate_attempt_pdf(report_data, pdf_path)
-    shutil.copy2(pdf_path, flat_pdf_path)
 
-    return {key: str(path.resolve()) for key, path in bundle_paths.items()}
-
-
-def _report_bundle_paths(report_data: dict) -> dict[str, Path]:
+def _report_bundle_paths(report_data: dict) -> dict[str, str]:
     report_date = _parse_report_date(report_data.get("submittedAt") or report_data.get("submitted_at"))
     report_id = report_data["id"]
     attempt_id = report_data["attemptId"]
     test_slug = report_data.get("testSlug") or report_data.get("test_slug") or "test"
 
-    json_path = REPORT_JSON_DIR / f"{report_id}.json"
-    html_path = REPORT_HTML_DIR / f"{report_id}.html"
-    pdf_dir = REPORT_PDF_DIR / _safe_filename_component(test_slug).lower() / report_date / attempt_id
     pdf_file_name = build_export_filename(
         report_data.get("studentName") or report_data.get("student_name"),
         report_data.get("submittedAt") or report_data.get("submitted_at"),
         student_first_name=report_data.get("studentFirstName") or report_data.get("student_first_name"),
         student_last_name=report_data.get("studentLastName") or report_data.get("student_last_name"),
     )
-    pdf_path = pdf_dir / pdf_file_name
-    flat_pdf_path = REPORT_PDF_DIR / f"{report_id}.pdf"
-
     return {
-        "json_path": json_path,
-        "html_path": html_path,
-        "pdf_path": pdf_path,
-        "flat_pdf_path": flat_pdf_path,
+        "json_path": f"integrated/{attempt_id}/report.json",
+        "html_path": f"integrated/{attempt_id}/report.html",
+        "pdf_path": (
+            f"integrated/{_safe_filename_component(test_slug).lower()}/"
+            f"{report_date}/{attempt_id}/{pdf_file_name}"
+        ),
+        "pdf_file_name": pdf_file_name,
     }
 
 
 def delete_persisted_report_bundle(report_data: dict) -> list[str]:
-    removed_paths = []
     bundle_paths = _report_bundle_paths(report_data)
-    for target_path in bundle_paths.values():
-        if target_path.exists() and target_path.is_file():
-            target_path.unlink()
-            removed_paths.append(str(target_path.resolve()))
-
-    nested_pdf_dir = bundle_paths["pdf_path"].parent
-    if nested_pdf_dir.exists() and nested_pdf_dir.is_dir() and not any(nested_pdf_dir.iterdir()):
-        nested_pdf_dir.rmdir()
-
-    return removed_paths
+    object_paths = [bundle_paths[key] for key in ("json_path", "html_path", "pdf_path")]
+    remove_objects(object_paths)
+    return object_paths
 
 
 def save_test_definition_snapshot(test_data: dict) -> str:
-    ensure_archive_directories()
-    target_path = DEFINITIONS_DIR / f"{_safe_filename_component(test_data['slug'])}.json"
-    target_path.write_text(json.dumps(test_data, ensure_ascii=False, indent=2), encoding="utf-8")
-    return str(target_path.resolve())
+    object_path = f"integrated/definitions/{_safe_filename_component(test_data['slug']).lower()}.json"
+    upload_bytes(
+        object_path,
+        json.dumps(test_data, ensure_ascii=False, indent=2).encode("utf-8"),
+        "application/json",
+    )
+    return object_path
 
 
-def build_centralized_csv_export(report_rows: list[dict]) -> str:
-    ensure_archive_directories()
+def build_centralized_csv_export(report_rows: list[dict]) -> tuple[bytes, str]:
     timestamp_label = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    export_path = EXPORTS_DIR / f"export_centralizat_{timestamp_label}.csv"
-
-    with export_path.open("w", encoding="utf-8", newline="") as csv_file:
-        writer = csv.DictWriter(
-            csv_file,
-            fieldnames=[
-                "report_id",
-                "attempt_id",
-                "student_name",
-                "test_title",
-                "status",
-                "submitted_at",
-                "duration_seconds",
-                "score_percent",
-                "pdf_path",
-            ],
-        )
-        writer.writeheader()
-        for row in report_rows:
-            writer.writerow(row)
-
-    return str(export_path.resolve())
+    file_name = f"export_centralizat_{timestamp_label}.csv"
+    buffer = io.StringIO(newline="")
+    writer = csv.DictWriter(
+        buffer,
+        fieldnames=[
+            "report_id",
+            "attempt_id",
+            "student_name",
+            "test_title",
+            "status",
+            "submitted_at",
+            "duration_seconds",
+            "score_percent",
+            "pdf_path",
+        ],
+    )
+    writer.writeheader()
+    for row in report_rows:
+        writer.writerow(row)
+    return buffer.getvalue().encode("utf-8-sig"), file_name

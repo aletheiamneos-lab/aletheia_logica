@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 
 from fastapi import APIRouter, Body, Depends, HTTPException
-from fastapi.responses import FileResponse, Response
+from fastapi.responses import Response
 
 from .admitere_student_reports_service import (
     build_admitere_student_reports_pdf_zip,
@@ -100,8 +100,12 @@ def admin_reports_pdf_archive(
     payload: ReportBulkRequest,
     current_user: dict = Depends(get_admin_user),
 ):
-    archive_path = build_admitere_student_reports_pdf_zip(current_user, payload.report_ids)
-    return FileResponse(archive_path, media_type="application/zip", filename=archive_path.name)
+    archive_bytes, archive_name = build_admitere_student_reports_pdf_zip(current_user, payload.report_ids)
+    return Response(
+        content=archive_bytes,
+        media_type="application/zip",
+        headers={"Content-Disposition": build_content_disposition(archive_name), "Cache-Control": "no-store"},
+    )
 
 
 @router.post("/admin/bulk/reports/email")

@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-from pathlib import Path
-
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import Response
 
 from .auth_service import get_admin_user, get_current_user
 from .integrated_tests_supabase_service import (
@@ -14,7 +12,7 @@ from .integrated_tests_supabase_service import (
     get_integrated_attempt,
     get_integrated_test,
     get_live_monitor_snapshot,
-    get_report_file_path,
+    get_report_file,
     list_archive_entries,
     list_integrated_tests,
     list_teacher_results,
@@ -40,13 +38,13 @@ from .schemas import (
 router = APIRouter(prefix="/integrated-tests", tags=["integrated-tests"])
 
 
-def _pdf_download_response(target_path: Path, file_name: str) -> FileResponse:
-    return FileResponse(
-        path=target_path,
-        media_type="application/pdf",
-        filename=file_name,
+def _download_response(content: bytes, file_name: str, media_type: str) -> Response:
+    return Response(
+        content=content,
+        media_type=media_type,
         headers={
             "Content-Disposition": build_content_disposition(file_name, "attachment"),
+            "Cache-Control": "no-store",
         },
     )
 
@@ -150,15 +148,15 @@ def download_attempt_file(
         raise HTTPException(status_code=404, detail="Tipul de fisier cerut nu este disponibil.")
 
     if file_kind == "pdf":
-        target_path = Path(get_report_file_path(current_user, attempt_id, "pdf"))
-        return _pdf_download_response(target_path, target_path.name)
+        content, file_name = get_report_file(current_user, attempt_id, "pdf")
+        return _download_response(content, file_name, "application/pdf")
 
-    target_path = Path(get_report_file_path(current_user, attempt_id, file_kind))
     media_type = {
         "json": "application/json",
         "html": "text/html",
     }[file_kind]
-    return FileResponse(target_path, media_type=media_type, filename=target_path.name)
+    content, file_name = get_report_file(current_user, attempt_id, file_kind)
+    return _download_response(content, file_name, media_type)
 
 
 @router.post("/attempts/{attempt_id}/export/test-report-pdf")
@@ -166,8 +164,8 @@ def export_attempt_report_pdf(
     attempt_id: str,
     current_user: dict = Depends(get_admin_user),
 ):
-    target_path = Path(get_report_file_path(current_user, attempt_id, "pdf"))
-    return _pdf_download_response(target_path, target_path.name)
+    content, file_name = get_report_file(current_user, attempt_id, "pdf")
+    return _download_response(content, file_name, "application/pdf")
 
 
 @router.get("/teacher/results")
@@ -201,5 +199,5 @@ def teacher_marker_update(
 
 @router.get("/teacher/export/centralized")
 def teacher_export_centralized(current_user: dict = Depends(get_admin_user)):
-    target_path = Path(export_centralized_results(current_user))
-    return FileResponse(target_path, media_type="text/csv", filename=target_path.name)
+    content, file_name = export_centralized_results(current_user)
+    return _download_response(content, file_name, "text/csv")

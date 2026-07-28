@@ -9195,3 +9195,641 @@
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+/* Rapoarte / profil admin: mobile cards, safe actions and mandatory accessibility floors. */
+.academic-monitor-mobile-list,
+.academic-report-mobile-list,
+.allowed-students-mobile-list {
+  display: none;
+}
+
+.academic-profile-page {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.academic-profile-page > *,
+.academic-profile-page :is(
+  .academic-surface-panel,
+  .academic-panel-head,
+  .academic-public-link-row,
+  .academic-link-block,
+  .academic-supabase-usage-layout,
+  .academic-supabase-usage-summary,
+  .allowed-students-panel,
+  .allowed-students-add-card,
+  .allowed-students-list-card
+) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.academic-profile-page :is(input, textarea, select) {
+  min-height: 46px !important;
+  font-size: max(1rem, 16px) !important;
+}
+
+.academic-profile-page :is(
+  button,
+  [role="button"],
+  summary,
+  .btn-primary,
+  .btn-secondary,
+  .MuiButtonBase-root
+) {
+  min-height: 46px;
+  font-size: max(0.875rem, 14px);
+}
+
+.academic-profile-page :is(
+  .section-kicker,
+  .status-pill,
+  .academic-profile-metric-label,
+  .academic-profile-metric-helper,
+  .academic-link-label,
+  .academic-panel-note,
+  .academic-monitor-count,
+  .academic-report-tab,
+  .academic-report-bulk-bar strong,
+  .academic-report-bulk-bar span,
+  .academic-reports-paper .MuiDataGrid-columnHeaderTitle,
+  .academic-reports-paper .MuiDataGrid-cell,
+  .academic-reports-paper .MuiTablePagination-root,
+  .academic-reports-paper .MuiDataGrid-selectedRowCount,
+  .academic-supabase-usage-chart-center span,
+  .academic-supabase-usage-metric span,
+  .academic-supabase-usage-foot,
+  .allowed-students-count,
+  .allowed-students-action-button,
+  .allowed-students-status,
+  .academic-report-code,
+  .allowed-students-table th,
+  .allowed-students-table td,
+  .allowed-students-add-copy p,
+  .allowed-students-list-heading p,
+  .allowed-students-dialog p,
+  .report-preview-dialog-head p,
+  .report-preview-dialog-frame p,
+  .report-preview-dialog-navigation
+) {
+  font-size: max(0.875rem, 14px) !important;
+}
+
+.academic-profile-page :is(
+  button,
+  [role="button"],
+  summary,
+  input,
+  textarea,
+  select,
+  a
+):focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-strong) 72%, white) !important;
+  outline-offset: 3px !important;
+}
+
+.academic-profile-page :is(img, video, canvas, svg, iframe) {
+  max-width: 100%;
+}
+
+.academic-profile-page .academic-report-action-row,
+.academic-profile-page .academic-report-bulk-actions,
+.academic-profile-page .academic-link-actions,
+.academic-profile-page .academic-profile-hero-actions,
+.academic-profile-page .allowed-students-actions,
+.academic-profile-page .allowed-students-global-actions,
+.academic-profile-page .allowed-students-dialog-actions {
+  gap: max(0.5rem, 8px);
+}
+
+.academic-profile-page .academic-report-action-button,
+.academic-profile-page .allowed-students-action-button,
+.academic-profile-page .allowed-students-icon-button,
+.academic-profile-page .allowed-students-add-button,
+.academic-profile-page .allowed-students-confirm-delete,
+.academic-profile-page .report-preview-dialog-head > button,
+.academic-profile-page .allowed-students-dialog-close {
+  min-height: 46px !important;
+  font-size: max(0.875rem, 14px) !important;
+}
+
+.academic-profile-page .academic-report-action-button,
+.academic-profile-page .allowed-students-action-button {
+  padding: 0.65rem 0.75rem !important;
+}
+
+.academic-profile-page .report-preview-dialog-head > button,
+.academic-profile-page .allowed-students-dialog-close {
+  width: 46px !important;
+  min-width: 46px !important;
+  height: 46px !important;
+}
+
+.academic-profile-page .academic-report-search-input,
+.academic-profile-page .academic-link-input,
+.academic-profile-page .allowed-students-form .testing-input {
+  width: 100%;
+  min-width: 0;
+  font-size: max(1rem, 16px) !important;
+}
+
+.academic-profile-page .academic-report-tab {
+  min-height: 46px;
+  padding: 0.72rem 0.95rem;
+  font-size: max(0.875rem, 14px) !important;
+}
+
+.academic-profile-page .academic-public-link-row {
+  overflow: visible;
+}
+
+.academic-profile-page .academic-public-link-row .academic-link-actions :is(button, a),
+.academic-profile-page .academic-profile-hero-actions :is(button, a) {
+  min-height: 46px !important;
+  font-size: max(0.875rem, 14px) !important;
+}
+
+.academic-profile-page .academic-link-input {
+  text-overflow: ellipsis;
+}
+
+.academic-profile-page .academic-supabase-usage-chart {
+  width: clamp(124px, 32vw, 168px);
+  max-width: 100%;
+}
+
+.academic-profile-page .academic-supabase-usage-summary {
+  width: 100%;
+}
+
+.academic-profile-page .report-preview-dialog-shell,
+.academic-profile-page .allowed-students-dialog-shell {
+  padding:
+    max(0.5rem, env(safe-area-inset-top, 0px))
+    max(0.5rem, env(safe-area-inset-right, 0px))
+    max(0.5rem, env(safe-area-inset-bottom, 0px))
+    max(0.5rem, env(safe-area-inset-left, 0px));
+}
+
+.academic-profile-page .report-preview-dialog,
+.academic-profile-page .allowed-students-dialog {
+  max-height: calc(
+    100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 1rem
+  );
+}
+
+@media (max-width: 760px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape) {
+  .app-shell-auth:has(.academic-profile-page) .app-sidebar-edge-toggle {
+    position: absolute !important;
+    top: max(0.65rem, env(safe-area-inset-top, 0px)) !important;
+    width: 46px !important;
+    min-width: 46px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+  }
+
+  .academic-profile-page {
+    gap: 1rem;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  .academic-profile-page .academic-profile-hero {
+    padding-left: 4rem;
+  }
+
+  .academic-profile-page .academic-surface-panel {
+    padding: clamp(0.85rem, 4vw, 1.1rem);
+    border-radius: 20px;
+  }
+
+  .academic-profile-page .academic-panel-head,
+  .academic-profile-page .academic-report-counters {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .academic-profile-page .academic-monitor-title {
+    max-width: 100%;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-profile-page .academic-report-counters {
+    justify-content: flex-start;
+  }
+
+  .academic-profile-page .academic-desktop-data-grid,
+  .academic-profile-page .allowed-students-desktop-table {
+    display: none !important;
+  }
+
+  .academic-profile-page .academic-monitor-mobile-list,
+  .academic-profile-page .academic-report-mobile-list,
+  .academic-profile-page .allowed-students-mobile-list {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .academic-profile-page :is(
+    .academic-monitor-mobile-card,
+    .academic-report-mobile-card,
+    .allowed-students-mobile-card
+  ) {
+    min-width: 0;
+    padding: 0.9rem;
+    border: 1px solid color-mix(in srgb, var(--workspace-line) 82%, transparent);
+    border-radius: 18px;
+    background: color-mix(in srgb, var(--surface) 94%, var(--surface-soft));
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+  }
+
+  .academic-profile-page .academic-mobile-card-head,
+  .academic-profile-page .allowed-students-mobile-card-head {
+    display: flex;
+    min-width: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-head > div,
+    .academic-report-mobile-identity,
+    .academic-report-mobile-identity > div,
+    .allowed-students-mobile-card-head > div
+  ) {
+    min-width: 0;
+  }
+
+  .academic-profile-page .academic-report-mobile-identity {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-head h3,
+    .allowed-students-mobile-card-head h4
+  ) {
+    margin: 0.18rem 0 0;
+    color: var(--text);
+    font-family: var(--font-ui-premium);
+    font-size: max(1rem, 16px);
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-profile-page .academic-mobile-card-title,
+  .academic-profile-page .allowed-students-mobile-email {
+    margin: 0.75rem 0 0;
+    color: var(--text-muted);
+    font-size: max(0.9375rem, 15px);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-profile-page .academic-mobile-card-primary-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin: 0.85rem 0 0;
+  }
+
+  .academic-profile-page .academic-mobile-card-primary-facts > div {
+    min-width: 0;
+    padding: 0.72rem;
+    border-radius: 14px;
+    background: var(--surface-soft);
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-primary-facts dt,
+    .academic-mobile-card-details dt
+  ) {
+    color: var(--text-muted);
+    font-size: max(0.875rem, 14px);
+    font-weight: 650;
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-primary-facts dd,
+    .academic-mobile-card-details dd
+  ) {
+    min-width: 0;
+    margin: 0.25rem 0 0;
+    color: var(--text);
+    font-size: max(0.9375rem, 15px);
+    font-weight: 720;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-details,
+    .academic-report-mobile-actions-menu,
+    .allowed-students-mobile-actions-menu
+  ) {
+    margin-top: 0.75rem;
+    border-top: 1px solid var(--workspace-line);
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-details > summary,
+    .academic-report-mobile-actions-menu > summary,
+    .allowed-students-mobile-actions-menu > summary
+  ) {
+    display: flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.65rem 0.2rem;
+    color: var(--accent-strong);
+    cursor: pointer;
+    font-size: max(0.875rem, 14px);
+    font-weight: 740;
+    list-style: none;
+  }
+
+  .academic-profile-page :is(
+    .academic-mobile-card-details > summary,
+    .academic-report-mobile-actions-menu > summary,
+    .allowed-students-mobile-actions-menu > summary
+  )::-webkit-details-marker {
+    display: none;
+  }
+
+  .academic-profile-page .academic-mobile-card-details > summary::after,
+  .academic-profile-page .allowed-students-mobile-actions-menu > summary::after {
+    content: "+";
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .academic-profile-page .academic-mobile-card-details[open] > summary::after,
+  .academic-profile-page .allowed-students-mobile-actions-menu[open] > summary::after {
+    content: "−";
+  }
+
+  .academic-profile-page .academic-mobile-card-details > dl {
+    display: grid;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0.25rem 0 0.75rem;
+  }
+
+  .academic-profile-page .academic-mobile-card-details > dl > div {
+    min-width: 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid color-mix(in srgb, var(--workspace-line) 64%, transparent);
+  }
+
+  .academic-profile-page .academic-mobile-card-details > dl > div:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .academic-profile-page .academic-report-mobile-select-all {
+    display: flex;
+    min-height: 46px;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--workspace-line);
+    border-radius: 14px;
+    background: var(--surface-soft);
+    color: var(--text);
+    font-size: max(0.875rem, 14px);
+    font-weight: 700;
+  }
+
+  .academic-profile-page :is(
+    .academic-report-mobile-select-all,
+    .academic-report-mobile-identity
+  ) .MuiButtonBase-root {
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    margin: -0.35rem 0;
+  }
+
+  .academic-profile-page .academic-report-mobile-actions-menu > summary {
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--accent-strong) 22%, var(--workspace-line));
+    border-radius: 13px;
+    background: var(--accent-mist);
+  }
+
+  .academic-profile-page .academic-report-mobile-actions-popover,
+  .academic-profile-page .allowed-students-mobile-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: max(0.5rem, 8px);
+    padding-top: 0.5rem;
+  }
+
+  .academic-profile-page .academic-report-mobile-actions-popover button {
+    display: flex;
+    width: 100%;
+    min-height: 46px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.65rem;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--workspace-line);
+    border-radius: 13px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  .academic-profile-page .academic-report-mobile-actions-popover button:disabled {
+    cursor: wait;
+    opacity: 0.58;
+  }
+
+  .academic-profile-page .academic-report-bulk-bar {
+    position: sticky;
+    z-index: 72;
+    bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+    align-items: stretch;
+    padding-bottom: max(0.8rem, env(safe-area-inset-bottom, 0px));
+    border-color: color-mix(in srgb, var(--accent-strong) 28%, var(--workspace-line));
+    background: color-mix(in srgb, var(--surface) 94%, var(--accent-mist));
+    box-shadow: 0 16px 42px rgba(15, 23, 42, 0.18);
+    backdrop-filter: blur(18px);
+  }
+
+  .academic-profile-page .academic-report-bulk-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .academic-profile-page .academic-report-bulk-actions > * {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .academic-profile-page .academic-profile-hero-actions,
+  .academic-profile-page .academic-link-actions,
+  .academic-profile-page .allowed-students-global-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .academic-profile-page .academic-profile-hero-actions > *,
+  .academic-profile-page .academic-link-actions > *,
+  .academic-profile-page .allowed-students-global-actions > * {
+    width: 100% !important;
+    min-width: 0;
+  }
+
+  .academic-profile-page .academic-public-link-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .academic-profile-page .academic-supabase-usage-layout {
+    width: 100%;
+    padding-inline: 0;
+    overflow: hidden;
+  }
+
+  .academic-profile-page .academic-supabase-usage-chart {
+    width: clamp(120px, 42vw, 148px);
+  }
+
+  .academic-profile-page .academic-supabase-usage-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .academic-profile-page .academic-supabase-usage-metric {
+    padding: 0.75rem;
+  }
+
+  .academic-profile-page .allowed-students-add-card {
+    padding: 0.85rem;
+  }
+
+  .academic-profile-page .allowed-students-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .academic-profile-page .allowed-students-mobile-card-head {
+    align-items: center;
+  }
+
+  .academic-profile-page .allowed-students-mobile-actions-menu {
+    margin-top: 0.7rem;
+  }
+
+  .academic-profile-page .allowed-students-mobile-delete {
+    display: flex;
+    width: 100%;
+    margin-top: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+  }
+
+  .academic-profile-page .allowed-students-mobile-empty,
+  .academic-profile-page .academic-mobile-empty-state {
+    margin: 0;
+    padding: 1rem;
+    border: 1px dashed var(--workspace-line);
+    border-radius: 16px;
+    color: var(--text-muted);
+    font-size: max(0.9375rem, 15px);
+    line-height: 1.5;
+  }
+
+  .academic-profile-page .report-preview-dialog {
+    width: calc(100vw - 1rem);
+    height: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+  }
+
+  .academic-profile-page .report-preview-dialog-shell,
+  .academic-profile-page .allowed-students-dialog-shell {
+    align-items: start;
+    justify-items: center;
+    overflow-y: auto;
+  }
+
+  .academic-profile-page .report-preview-dialog-head,
+  .academic-profile-page .report-preview-dialog-navigation {
+    gap: 0.5rem;
+    padding: 0.65rem;
+  }
+
+  .academic-profile-page .report-preview-dialog-navigation > button {
+    min-width: 108px;
+  }
+
+  .academic-profile-page .allowed-students-dialog {
+    width: min(440px, calc(100vw - 1rem));
+    overflow-y: auto;
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+
+  .academic-profile-page .allowed-students-dialog-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .academic-profile-page .allowed-students-dialog-actions > * {
+    width: 100%;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 760px) {
+  .academic-profile-page .academic-profile-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 409px) {
+  .academic-profile-page .academic-profile-metrics-grid,
+  .academic-profile-page .academic-supabase-usage-summary {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 560px) and (max-width: 950px) and (max-height: 520px) and (orientation: landscape) {
+  .academic-profile-page .academic-link-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .academic-profile-page .allowed-students-global-actions,
+  .academic-profile-page .allowed-students-mobile-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .academic-profile-page .allowed-students-dialog-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) and (max-width: 950px) {
+  .academic-profile-page .report-preview-dialog {
+    grid-template-rows: auto minmax(150px, 1fr) auto;
+  }
+
+  .academic-profile-page .academic-report-bulk-bar {
+    position: relative;
+    bottom: auto;
+  }
+}

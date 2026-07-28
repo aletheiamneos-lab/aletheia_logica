@@ -2,17 +2,15 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from pathlib import Path
-
 from fastapi import APIRouter, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import Response
 
 from .auth_service import get_admin_user
 from .integrated_tests_supabase_service import (
     build_admin_attempts_pdf_zip,
     delete_admin_attempts,
     get_admin_attempts_summary,
-    get_admin_pdf_path,
+    get_admin_pdf,
     get_admin_report,
     get_admin_report_email_delivery,
     list_admin_live_attempts,
@@ -76,15 +74,14 @@ def admin_report(report_id: str, current_user: dict = Depends(get_admin_user)) -
 
 @router.get("/pdf/{report_id}")
 def admin_pdf(report_id: str, current_user: dict = Depends(get_admin_user)):
-    target_path = Path(get_admin_pdf_path(current_user, report_id))
-    report_payload = get_admin_report(current_user, report_id)
-    download_name = _build_student_report_filename(report_payload, target_path.name)
-    return FileResponse(
-        path=target_path,
+    report_payload, pdf_bytes, storage_name = get_admin_pdf(current_user, report_id)
+    download_name = _build_student_report_filename(report_payload, storage_name)
+    return Response(
+        content=pdf_bytes,
         media_type="application/pdf",
-        filename=download_name,
         headers={
-            "Content-Disposition": build_content_disposition(download_name, "attachment")
+            "Content-Disposition": build_content_disposition(download_name, "attachment"),
+            "Cache-Control": "no-store",
         }
     )
 
@@ -95,7 +92,8 @@ def admin_report_email(report_id: str, current_user: dict = Depends(get_admin_us
     return send_report_email(
         delivery_payload["recipient_email"],
         delivery_payload["report"],
-        Path(delivery_payload["pdf_path"]),
+        pdf_bytes=delivery_payload["pdf_bytes"],
+        pdf_file_name=delivery_payload["pdf_file_name"],
     )
 
 
@@ -114,11 +112,14 @@ def admin_attempts_pdf_archive(
     payload: AttemptBulkRequest,
     current_user: dict = Depends(get_admin_user),
 ):
-    target_path = Path(build_admin_attempts_pdf_zip(current_user, payload.attempt_ids))
-    return FileResponse(
-        path=target_path,
+    archive_bytes, archive_name = build_admin_attempts_pdf_zip(current_user, payload.attempt_ids)
+    return Response(
+        content=archive_bytes,
         media_type="application/zip",
-        filename=target_path.name,
+        headers={
+            "Content-Disposition": build_content_disposition(archive_name, "attachment"),
+            "Cache-Control": "no-store",
+        },
     )
 
 

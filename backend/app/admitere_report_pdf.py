@@ -1260,10 +1260,7 @@ def build_admitere_pdf_report(source: dict, target) -> None:
     ]
     page_count = 1 + len(overview_pages) + len(detail_pages)
 
-    if isinstance(target, Path):
-        target.parent.mkdir(parents=True, exist_ok=True)
-    canvas_target = str(target) if isinstance(target, Path) else target
-    pdf = canvas.Canvas(canvas_target, pagesize=A4, pageCompression=1)
+    pdf = canvas.Canvas(target, pagesize=A4, pageCompression=1)
     pdf.setTitle(report["test_title"])
     pdf.setAuthor("Logica by A mentor")
     pdf.setSubject("Raport finalizare test de admitere")
