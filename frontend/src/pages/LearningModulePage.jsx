@@ -18,7 +18,7 @@ function LearningModulePage() {
 
   if (!module) {
     return (
-      <div className="page-stack">
+      <div className="page-stack learning-20-page learning-module-page">
         <LearningPageHeader
           eyebrow="Learning 2.0"
           title="Modul inexistent"
@@ -35,7 +35,7 @@ function LearningModulePage() {
   }
 
   return (
-    <div className="page-stack">
+    <div className="page-stack learning-20-page learning-module-page">
       <LearningPageHeader
         eyebrow={module.eyebrow}
         title={module.title}
