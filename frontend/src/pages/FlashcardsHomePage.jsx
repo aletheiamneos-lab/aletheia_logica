@@ -6,7 +6,7 @@ function FlashcardsHomePage() {
   const levels = getFlashcardLevelsOverview()
 
   return (
-    <div className="page-stack flashcards-home-page">
+    <div className="page-stack learning-20-page flashcards-home-page">
       <LearningPageHeader
         eyebrow="Flashcards"
         title="Flashcards"

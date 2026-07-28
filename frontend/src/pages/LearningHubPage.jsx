@@ -27,7 +27,7 @@ function LearningHubPage() {
   const mindMapsModule = learningModules.find((module) => module.id === "mind-maps")
 
   return (
-    <div className="page-stack">
+    <div className="page-stack learning-20-page learning-hub-page">
       <section className="hero-panel workspace-hero">
         <div className="workspace-hero-grid">
           <div className="workspace-hero-main">
