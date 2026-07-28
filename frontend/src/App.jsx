@@ -1,5 +1,5 @@
-import { Suspense, lazy, useEffect, useState } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Suspense, lazy, useEffect, useRef, useState } from "react"
+import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react"
 import { BrowserRouter, HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 
 import {
@@ -57,6 +57,7 @@ function AppLayout() {
   const { isAuthenticated, isAdmin, session } = useAuth()
   const location = useLocation()
   const preferenceScope = buildAppearancePreferenceScope(session)
+  const mobileMenuButtonRef = useRef(null)
   const [isSidebarHidden, setIsSidebarHidden] = useState(() => {
     try {
       return window.localStorage.getItem(SIDEBAR_VISIBILITY_STORAGE_KEY) === "true"
@@ -64,6 +65,7 @@ function AppLayout() {
       return false
     }
   })
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
   const isIntegratedExamRoute =
     isAuthenticated && location.pathname.startsWith("/teste-integrate/examen/")
   const hasSidebar = isAuthenticated && !isIntegratedExamRoute
@@ -96,6 +98,48 @@ function AppLayout() {
     }
   }, [isSidebarHidden])
 
+  useEffect(() => {
+    if (!isMobileSidebarOpen) {
+      return undefined
+    }
+
+    const previousBodyOverflow = document.body.style.overflow
+    const previousHtmlOverflow = document.documentElement.style.overflow
+    document.body.style.overflow = "hidden"
+    document.documentElement.style.overflow = "hidden"
+
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        setIsMobileSidebarOpen(false)
+        window.requestAnimationFrame(() => mobileMenuButtonRef.current?.focus())
+      }
+    }
+
+    function handleDesktopTransition(event) {
+      if (!event.matches) {
+        setIsMobileSidebarOpen(false)
+      }
+    }
+
+    const mobileQuery = window.matchMedia("(max-width: 768px)")
+    document.addEventListener("keydown", handleKeyDown)
+    mobileQuery.addEventListener("change", handleDesktopTransition)
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow
+      document.documentElement.style.overflow = previousHtmlOverflow
+      document.removeEventListener("keydown", handleKeyDown)
+      mobileQuery.removeEventListener("change", handleDesktopTransition)
+    }
+  }, [isMobileSidebarOpen])
+
+  function closeMobileSidebar({ restoreFocus = false } = {}) {
+    setIsMobileSidebarOpen(false)
+    if (restoreFocus) {
+      window.requestAnimationFrame(() => mobileMenuButtonRef.current?.focus())
+    }
+  }
+
   return (
     <div
       className={`app-shell min-h-screen ${isAuthenticated ? "app-shell-auth" : "app-shell-public"} ${
@@ -125,6 +169,51 @@ function AppLayout() {
               <ChevronLeft size={18} strokeWidth={1.9} />
             )}
           </button>
+        ) : null}
+        {hasSidebar ? (
+          <>
+            <button
+              ref={mobileMenuButtonRef}
+              type="button"
+              className="app-mobile-sidebar-trigger"
+              aria-label="Deschide meniul de navigare"
+              aria-controls="app-mobile-sidebar-dialog"
+              aria-expanded={isMobileSidebarOpen}
+              onClick={() => setIsMobileSidebarOpen(true)}
+            >
+              <Menu aria-hidden="true" size={24} strokeWidth={2.2} />
+            </button>
+            {isMobileSidebarOpen ? (
+              <div
+                className="app-mobile-sidebar-overlay"
+                role="presentation"
+                onMouseDown={(event) => {
+                  if (event.target === event.currentTarget) {
+                    closeMobileSidebar({ restoreFocus: true })
+                  }
+                }}
+              >
+                <section
+                  id="app-mobile-sidebar-dialog"
+                  className="app-mobile-sidebar-panel"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label="Meniu de navigare"
+                >
+                  <button
+                    type="button"
+                    className="app-mobile-sidebar-close"
+                    aria-label="Inchide meniul de navigare"
+                    autoFocus
+                    onClick={() => closeMobileSidebar({ restoreFocus: true })}
+                  >
+                    <X aria-hidden="true" size={24} strokeWidth={2.2} />
+                  </button>
+                  <Navbar onNavigate={() => closeMobileSidebar()} />
+                </section>
+              </div>
+            ) : null}
+          </>
         ) : null}
         <div
           className={`app-content-shell ${
