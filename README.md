@@ -122,7 +122,7 @@ Campuri principale intrebare:
 
 Un test incomplet ramane draft si nu poate fi publicat pentru elevi.
 
-## Raportare locala
+## Raportare persistenta
 
 Dupa submit, sistemul:
 
@@ -131,14 +131,14 @@ Dupa submit, sistemul:
 3. calculeaza scorul total si scorurile pe lectii
 4. genereaza raportul editabil
 5. genereaza PDF-ul
-6. arhiveaza local fisierele
+6. arhiveaza artefactele in Supabase Storage
 
 Pentru fiecare incercare finalizata se pastreaza:
 
-- raspunsurile brute in SQLite
-- sursa editabila JSON
-- sursa editabila HTML
-- PDF generat
+- raspunsurile brute in tabela `attempts` din Supabase
+- sursa editabila JSON in bucket-ul privat `generated-reports`
+- sursa editabila HTML in bucket-ul privat `generated-reports`
+- PDF-ul generat in bucket-ul privat `generated-reports`
 
 Numele PDF-ului urmeaza structura:
 
@@ -158,16 +158,25 @@ Profesorul are un panou live in pagina `Teste integrate` unde vede:
 - marker personalizat sau fallback pe initiale
 - grafic de evolutie in timp
 
-## Persistenta locala
+## Persistenta pe Render
 
-Datele sunt pastrate local in:
+Datele noi importante nu sunt scrise pe discul efemer al serviciului:
 
-- baza de date: `backend/data/logic_app.db`
-- definitii teste: `backend/data/integrated_testing/definitions/`
-- rapoarte JSON: `backend/data/integrated_testing/reports/json/`
-- rapoarte HTML: `backend/data/integrated_testing/reports/html/`
-- PDF-uri: `backend/data/integrated_testing/reports/pdf/`
-- exporturi CSV: `backend/data/integrated_testing/exports/`
+- Testele integrate si incercarile sunt in tabelele Supabase existente.
+- Rapoartele BAC sunt in `bac_student_reports`.
+- Rapoartele Admitere sunt in `admitere_student_reports`.
+- PDF-urile si artefactele rapoartelor sunt in bucket-ul privat
+  `generated-reports`.
+- Arhivele ZIP si exporturile CSV sunt construite in memorie si trimise
+  direct clientului.
+
+Inainte de deploy se aplica migrarile SQL din `supabase/migrations`, inclusiv
+`20260728_persist_generated_reports.sql`. Bucket-ul poate fi schimbat prin
+`SUPABASE_REPORTS_BUCKET`; valoarea implicita este `generated-reports`.
+
+Scripturile din `backend/scripts/migrate_*` citesc SQLite exclusiv pentru
+importuri manuale optionale ale datelor vechi. Ele nu sunt rulate de aplicatie
+si nu participa la salvarea datelor noi.
 
 ## Modul Admitere
 

@@ -30,8 +30,7 @@ from .integrated_tests_routes import router as integrated_tests_router
 from .pdf_service import (
     build_content_disposition,
     build_export_filename,
-    create_temp_pdf_path,
-    generate_test_report_pdf,
+    generate_test_report_pdf_bytes,
 )
 from .submission_routes import router as submission_router
 from .schemas import (
@@ -105,10 +104,8 @@ def healthcheck() -> dict:
 def export_test_report_pdf(
     payload: TestReportPdfRequest,
 ):
-    target_path = create_temp_pdf_path(payload.student_name, payload.submitted_at)
-    generate_test_report_pdf(payload.model_dump(), target_path)
     return Response(
-        content=target_path.read_bytes(),
+        content=generate_test_report_pdf_bytes(payload.model_dump()),
         media_type="application/pdf",
         headers={
             "Content-Disposition": build_content_disposition(

@@ -3,9 +3,7 @@ from __future__ import annotations
 import io
 import math
 import re
-import tempfile
 import unicodedata
-import uuid
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
@@ -40,9 +38,6 @@ RED = HexColor("#c62828")
 GRID = HexColor("#d8dde6")
 LIGHT_LINE = HexColor("#dfe4ec")
 RADAR_FILL = colors.Color(31 / 255, 78 / 255, 121 / 255, alpha=0.18)
-
-EXPORT_TEMP_DIR = Path(tempfile.gettempdir()) / "logic_pdf_exports_final"
-EXPORT_TEMP_DIR.mkdir(parents=True, exist_ok=True)
 
 QUESTION_TITLE_FONT = 8.2
 QUESTION_TEXT_FONT = 8.2
@@ -189,11 +184,6 @@ def build_export_filename(
 def build_content_disposition(file_name: str, disposition: str = "attachment") -> str:
     safe_name = clean_text(file_name).replace('"', "") or "raport_evaluare.pdf"
     return f"{disposition}; filename=\"{safe_name}\"; filename*=UTF-8''{quote(safe_name)}"
-
-
-def create_temp_pdf_path(student_name: str | None = None, submitted_at: str | None = None) -> Path:
-    base_name = build_export_filename(student_name, submitted_at).removesuffix(".pdf")
-    return EXPORT_TEMP_DIR / f"{base_name}_{uuid.uuid4().hex}.pdf"
 
 
 def _coerce_int(value) -> int:
@@ -1079,10 +1069,12 @@ def _build_integrated_report_payload(source: dict, payload: dict) -> dict:
     }
 
 
-def generate_test_report_pdf(source: dict, output_path: Path) -> Path:
+def generate_test_report_pdf_bytes(source: dict) -> bytes:
     payload = normalize_export_payload(source)
-    return build_integrated_pdf_report(source, payload, output_path)
+    buffer = io.BytesIO()
+    build_integrated_pdf_report(source, payload, buffer)
+    return buffer.getvalue()
 
 
-def generate_attempt_pdf(report_data: dict, output_path: Path) -> None:
-    generate_test_report_pdf(report_data, output_path)
+def generate_attempt_pdf_bytes(report_data: dict) -> bytes:
+    return generate_test_report_pdf_bytes(report_data)

@@ -676,7 +676,7 @@ def _draw_detail_page(
     _draw_footer(pdf, page_number, page_count)
 
 
-def build_integrated_pdf_report(source: dict, normalized_payload: dict, output_path: Path) -> Path:
+def build_integrated_pdf_report(source: dict, normalized_payload: dict, output_target):
     questions = list(normalized_payload.get("questions") or [])
     zones = _build_zones(questions)
     groups = _group_questions(questions)
@@ -692,8 +692,7 @@ def build_integrated_pdf_report(source: dict, normalized_payload: dict, output_p
         "groups": groups,
     }
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    pdf = canvas.Canvas(str(output_path), pagesize=A4, pageCompression=1)
+    pdf = canvas.Canvas(output_target, pagesize=A4, pageCompression=1)
     pdf.setTitle(report["test_title"])
     pdf.setAuthor("Logica by A mentor")
     pdf.setSubject("Raport finalizare test integrat")
@@ -702,4 +701,4 @@ def build_integrated_pdf_report(source: dict, normalized_payload: dict, output_p
         pdf.showPage()
         _draw_detail_page(pdf, detail_page, page_index, page_count)
     pdf.save()
-    return output_path
+    return output_target

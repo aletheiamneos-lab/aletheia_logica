@@ -6,7 +6,16 @@ from unittest.mock import patch
 
 from starlette.requests import Request
 
-from app import activity_tracking_service, auth_service, learning_service, report_email_service
+from app import (
+    activity_tracking_service,
+    admitere_student_reports_service,
+    auth_service,
+    bac_student_reports_service,
+    learning_service,
+    report_email_service,
+    reporting_service,
+    supabase_storage_service,
+)
 
 
 class FakeQuery:
@@ -36,6 +45,10 @@ class FakeQuery:
     def update(self, payload):
         self.operation = "update"
         self.payload = payload
+        return self
+
+    def delete(self):
+        self.operation = "delete"
         return self
 
     def upsert(self, payload, on_conflict=None):
@@ -95,6 +108,12 @@ class FakeQuery:
                 updated.append(dict(row))
             return SimpleNamespace(data=updated)
 
+        if self.operation == "delete":
+            deleted = self._matching_rows()
+            for row in deleted:
+                self.rows.remove(row)
+            return SimpleNamespace(data=[dict(row) for row in deleted])
+
         upserted = []
         for payload in payloads:
             existing = next(
@@ -117,6 +136,7 @@ class FakeQuery:
 class FakeSupabase:
     def __init__(self):
         self.tables: dict[str, list[dict]] = {}
+        self.storage = FakeStorage()
 
     def table(self, table_name: str) -> FakeQuery:
         return FakeQuery(self, table_name)
@@ -124,6 +144,31 @@ class FakeSupabase:
     def next_id(self, table_name: str) -> int:
         ids = [int(row["id"]) for row in self.tables.get(table_name, []) if "id" in row]
         return max(ids, default=0) + 1
+
+
+class FakeBucket:
+    def __init__(self, objects: dict[str, bytes]):
+        self.objects = objects
+
+    def upload(self, path, file, file_options=None):
+        self.objects[path] = bytes(file)
+        return {"path": path}
+
+    def download(self, path):
+        return self.objects[path]
+
+    def remove(self, paths):
+        for path in paths:
+            self.objects.pop(path, None)
+        return []
+
+
+class FakeStorage:
+    def __init__(self):
+        self.buckets: dict[str, dict[str, bytes]] = {}
+
+    def from_(self, bucket_name: str) -> FakeBucket:
+        return FakeBucket(self.buckets.setdefault(bucket_name, {}))
 
 
 class RenderCompatibilityTests(unittest.TestCase):
@@ -289,6 +334,89 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertGreater(len(inline_pngs[0].get_payload(decode=True)), 10_000)
         self.assertEqual(len(pdfs), 1)
         self.assertEqual(pdfs[0].get_filename(), "raport-test.pdf")
+
+    def test_bac_report_and_pdf_are_persisted_only_in_supabase(self):
+        current_user = {
+            "role": "student",
+            "email": "elev@example.com",
+            "display_name": "Elev Test",
+            "first_name": "Elev",
+            "last_name": "Test",
+        }
+        with patch.object(
+            bac_student_reports_service, "get_server_supabase", return_value=self.supabase
+        ), patch.object(
+            supabase_storage_service, "get_server_supabase", return_value=self.supabase
+        ):
+            report = bac_student_reports_service.create_bac_student_report(
+                current_user,
+                {"examTitle": "BAC model", "sections": []},
+            )
+            stored_report, pdf_bytes, _file_name = (
+                bac_student_reports_service.get_bac_student_report_pdf_for_user(
+                    current_user, report["id"]
+                )
+            )
+
+        self.assertEqual(len(self.supabase.tables["bac_student_reports"]), 1)
+        self.assertEqual(stored_report["id"], report["id"])
+        self.assertTrue(pdf_bytes.startswith(b"%PDF"))
+        self.assertTrue(report["reportPdfPath"].startswith("bac/"))
+
+    def test_admitere_report_and_pdf_are_persisted_only_in_supabase(self):
+        current_user = {
+            "role": "student",
+            "email": "elev@example.com",
+            "display_name": "Elev Test",
+            "first_name": "Elev",
+            "last_name": "Test",
+        }
+        with patch.object(
+            admitere_student_reports_service, "get_server_supabase", return_value=self.supabase
+        ), patch.object(
+            supabase_storage_service, "get_server_supabase", return_value=self.supabase
+        ):
+            report = admitere_student_reports_service.create_admitere_student_report(
+                current_user,
+                {
+                    "testTitle": "Admitere model",
+                    "totalQuestions": 1,
+                    "correctCount": 1,
+                    "groups": [],
+                },
+            )
+            stored_report, pdf_bytes, _file_name = (
+                admitere_student_reports_service.generate_admitere_student_report_pdf_for_user(
+                    current_user, report["id"]
+                )
+            )
+
+        self.assertEqual(len(self.supabase.tables["admitere_student_reports"]), 1)
+        self.assertEqual(stored_report["id"], report["id"])
+        self.assertTrue(pdf_bytes.startswith(b"%PDF"))
+        self.assertTrue(report["reportPdfPath"].startswith("admitere/"))
+
+    def test_integrated_report_artifacts_are_persisted_in_supabase_storage(self):
+        report = {
+            "id": "22222222-2222-2222-2222-222222222222",
+            "attemptId": "22222222-2222-2222-2222-222222222222",
+            "studentName": "Elev Test",
+            "testTitle": "Test integrat",
+            "testSlug": "test-integrat",
+            "submittedAt": "2026-07-28T12:00:00+03:00",
+            "durationSeconds": 60,
+            "questionRows": [],
+        }
+        with patch.object(
+            supabase_storage_service, "get_server_supabase", return_value=self.supabase
+        ):
+            bundle = reporting_service.persist_report_bundle(report)
+
+        objects = self.supabase.storage.buckets[supabase_storage_service.REPORTS_BUCKET]
+        self.assertIn(bundle["json_path"], objects)
+        self.assertIn(bundle["html_path"], objects)
+        self.assertIn(bundle["pdf_path"], objects)
+        self.assertTrue(objects[bundle["pdf_path"]].startswith(b"%PDF"))
 
 
 if __name__ == "__main__":

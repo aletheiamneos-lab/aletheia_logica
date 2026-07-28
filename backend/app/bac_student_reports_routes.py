@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 import logging
-from pathlib import Path
 
 from fastapi import APIRouter, Body, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import Response
 
 from .auth_service import get_admin_user, get_current_user
 from .bac_student_reports_service import (
@@ -13,9 +12,8 @@ from .bac_student_reports_service import (
     delete_bac_student_reports,
     get_bac_student_report,
     get_bac_student_report_email_delivery,
-    get_bac_student_report_for_user,
-    get_bac_student_report_pdf_path,
-    get_bac_student_report_pdf_path_for_user,
+    get_bac_student_report_pdf,
+    get_bac_student_report_pdf_for_user,
     list_bac_student_reports,
 )
 from .pdf_service import build_content_disposition
@@ -26,9 +24,12 @@ router = APIRouter(prefix="/bac/student-reports", tags=["bac-student-reports"])
 LOGGER = logging.getLogger("uvicorn.error")
 
 
-def _download_name(report: dict, pdf_path: Path) -> str:
-    student = str(report.get("studentName") or "elev").replace(" ", "_")
-    return f"raport_bac_{student}_{report.get('id') or pdf_path.stem}.pdf"
+def _file_response(content: bytes, media_type: str, file_name: str) -> Response:
+    return Response(
+        content=content,
+        media_type=media_type,
+        headers={"Content-Disposition": build_content_disposition(file_name), "Cache-Control": "no-store"},
+    )
 
 
 @router.post("")
@@ -51,24 +52,14 @@ def admin_report(report_id: str, current_user: dict = Depends(get_admin_user)) -
 
 @router.get("/admin/{report_id}/pdf")
 def admin_report_pdf(report_id: str, current_user: dict = Depends(get_admin_user)):
-    report = get_bac_student_report(current_user, report_id)
-    pdf_path = get_bac_student_report_pdf_path(current_user, report_id)
-    return FileResponse(
-        pdf_path,
-        media_type="application/pdf",
-        headers={"Content-Disposition": build_content_disposition(_download_name(report, pdf_path))},
-    )
+    _report, pdf_bytes, file_name = get_bac_student_report_pdf(current_user, report_id)
+    return _file_response(pdf_bytes, "application/pdf", file_name)
 
 
 @router.get("/{report_id}/pdf")
 def own_report_pdf(report_id: str, current_user: dict = Depends(get_current_user)):
-    report = get_bac_student_report_for_user(current_user, report_id)
-    pdf_path = get_bac_student_report_pdf_path_for_user(current_user, report_id)
-    return FileResponse(
-        pdf_path,
-        media_type="application/pdf",
-        headers={"Content-Disposition": build_content_disposition(_download_name(report, pdf_path))},
-    )
+    _report, pdf_bytes, file_name = get_bac_student_report_pdf_for_user(current_user, report_id)
+    return _file_response(pdf_bytes, "application/pdf", file_name)
 
 
 @router.post("/admin/{report_id}/email")
@@ -79,7 +70,8 @@ def admin_report_email(report_id: str, current_user: dict = Depends(get_admin_us
         response = send_report_email(
             delivery["recipient_email"],
             delivery["report"],
-            Path(delivery["pdf_path"]),
+            pdf_bytes=delivery["pdf_bytes"],
+            pdf_file_name=delivery["pdf_file_name"],
         )
         LOGGER.info(
             "[BAC email endpoint] SUCCESS report_id=%s recipient=%s",
@@ -105,8 +97,8 @@ def admin_reports_pdf_archive(
     payload: ReportBulkRequest,
     current_user: dict = Depends(get_admin_user),
 ):
-    archive_path = build_bac_student_reports_pdf_zip(current_user, payload.report_ids)
-    return FileResponse(archive_path, media_type="application/zip", filename=archive_path.name)
+    archive_bytes, archive_name = build_bac_student_reports_pdf_zip(current_user, payload.report_ids)
+    return _file_response(archive_bytes, "application/zip", archive_name)
 
 
 @router.post("/admin/bulk/reports/email")
