@@ -104,7 +104,11 @@ export default function MindMapCanvas({ map, onSelectNode, flowKey }) {
         maxZoom={1.4}
         nodesDraggable
         nodesConnectable={false}
+        panOnDrag
         panOnScroll
+        zoomOnPinch
+        zoomOnDoubleClick
+        preventScrolling
         selectionOnDrag={false}
         defaultEdgeOptions={{ type: "smoothstep" }}
         proOptions={{ hideAttribution: true }}

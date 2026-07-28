@@ -29,7 +29,7 @@ function LearningItemPage() {
 
   if (!module || !item) {
     return (
-      <div className="page-stack">
+      <div className="page-stack learning-20-page learning-item-page">
         <LearningPageHeader
           eyebrow="Learning 2.0"
           title="Item inexistent"
@@ -46,7 +46,7 @@ function LearningItemPage() {
   }
 
   return (
-    <div className="page-stack">
+    <div className="page-stack learning-20-page learning-item-page">
       <section className="hero-panel">
         <div className="flex flex-wrap gap-2.5">
           <Link className="btn-secondary" to={`/learning/module/${module.id}`}>

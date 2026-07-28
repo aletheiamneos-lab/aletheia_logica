@@ -11410,3 +11410,355 @@
     gap: 0.48rem;
   }
 }
+
+/* Learning 2.0: phone-first layout and explicit touch interaction floors. */
+.learning-20-page,
+.logic-map-page,
+.flash-page,
+.flash-shell,
+.flash-layout,
+.flash-panel,
+.flash-main-card,
+.flash-slots-page,
+.flash-slots-panel {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .app-shell-auth :is(.learning-20-page, .logic-map-page, .flash-page) {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .app-shell-auth :is(
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(p, li, label, span, a, button) {
+    font-size: max(0.875rem, 14px) !important;
+  }
+
+  .app-shell-auth :is(
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(input, textarea, select) {
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  .app-shell-auth :is(
+    .learning-20-page,
+    .logic-map-page,
+    .flash-page
+  ) :is(a, button, [role="button"]) {
+    min-height: 44px !important;
+  }
+
+  .learning-20-page :is(
+    .workspace-hero-grid,
+    .content-split-grid,
+    .compact-module-row,
+    .compact-module-actions,
+    .learning-game-split,
+    .learning-game-square-grid,
+    .learning-game-grid-2,
+    .learning-game-example-grid,
+    .learning-training-summary
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .learning-20-page :is(
+    .compact-module-main,
+    .compact-module-copy,
+    .compact-section-header,
+    .learning-game-panel,
+    .learning-training-card,
+    .learning-training-step,
+    .immersive-stage
+  ) {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .learning-20-page .compact-module-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .learning-20-page .compact-module-row {
+    gap: 8px;
+  }
+
+  .learning-20-page .compact-module-actions,
+  .learning-hub-page .compact-inline-actions,
+  .learning-item-page > .hero-panel > .flex:first-child {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .learning-20-page :is(
+    .compact-module-actions,
+    .compact-inline-actions,
+    .learning-game-mode-switch,
+    .learning-game-actions,
+    .learning-training-actions
+  ) :is(a, button) {
+    min-height: 48px;
+  }
+
+  .learning-20-page :is(.compact-module-actions, .compact-inline-actions) > :is(a, button) {
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-mode-switch,
+  .learning-20-page .learning-game-actions,
+  .learning-20-page .learning-training-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-mode-switch > button,
+  .learning-20-page .learning-game-actions > button,
+  .learning-20-page .learning-training-actions > button {
+    width: 100%;
+  }
+
+  .learning-20-page .learning-game-panel-head,
+  .learning-20-page .learning-game-square-top,
+  .learning-20-page .learning-training-toggle {
+    gap: 8px;
+  }
+
+  .learning-20-page .learning-game-toggle {
+    min-height: 56px;
+    gap: 8px;
+    touch-action: manipulation;
+  }
+
+  .learning-20-page .learning-game-toggle-value,
+  .learning-20-page .learning-game-square-letter {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .learning-20-page .learning-game-table-wrap {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .learning-20-page .learning-game-table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .learning-20-page .learning-game-table :is(th, td) {
+    min-width: 0;
+    padding-inline: clamp(0.45rem, 2.5vw, 0.8rem);
+    overflow-wrap: anywhere;
+  }
+
+  .learning-20-page .learning-game-select-inline {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 0.45rem;
+  }
+
+  .logic-map-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .logic-map-tab {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px !important;
+    padding-inline: 0.5rem;
+    touch-action: manipulation;
+  }
+
+  .logic-map-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .logic-map-canvas-shell {
+    width: 100%;
+    height: min(62dvh, 540px);
+    min-height: 420px;
+    overflow: hidden;
+  }
+
+  .logic-map-flow,
+  .logic-map-flow .react-flow__pane,
+  .logic-map-flow .react-flow__node {
+    touch-action: none;
+  }
+
+  .logic-map-flow .react-flow__controls-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logic-map-node {
+    min-height: 44px;
+  }
+
+  .logic-map-details-shell {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .logic-map-details {
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .flash-page {
+    padding: 8px 0 12px;
+  }
+
+  .flash-layout,
+  .flash-level-grid,
+  .flash-slots-grid,
+  .flash-bottom-nav {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px;
+  }
+
+  .flash-level-card,
+  .flash-slot-tile,
+  .flash-nav-card {
+    min-height: 48px;
+    touch-action: manipulation;
+  }
+
+  .flash-level-card,
+  .flash-slot-tile {
+    gap: 12px;
+  }
+
+  .flash-sidebar,
+  .flash-main-card,
+  .flash-progress-panel {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  .flash-main-card {
+    min-height: 390px;
+    padding: 22px 18px 22px 48px;
+    touch-action: manipulation;
+  }
+
+  .flash-card-grid,
+  .flash-card-grid.is-dense {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .flash-card-button,
+  .flash-card-grid.is-dense .flash-card-button {
+    width: 100%;
+    min-width: 0;
+    height: 44px;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  .flash-actions,
+  .flash-action-group {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .flash-action-btn,
+  .flash-nav-card {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
+  .flash-progress-panel {
+    min-height: 280px;
+  }
+
+  .flash-progress-thermo {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-20-page .learning-game-mode-switch,
+  .learning-20-page .learning-game-actions,
+  .learning-20-page .learning-training-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .logic-map-canvas-shell {
+    min-height: 440px;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .logic-map-canvas-shell {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .flash-main-card {
+    min-height: 320px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .flash-main-card:is(.is-turning-forward, .is-turning-backward) {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .flash-main-card .flash-page-turn-sheet {
+    display: none;
+  }
+
+  .app-shell-auth :is(
+    .logic-map-tab,
+    .logic-map-node,
+    .flash-level-card,
+    .flash-slot-tile,
+    .flash-nav-card,
+    .flash-card-button
+  ):hover {
+    transform: none;
+  }
+
+  .app-shell-auth :is(
+    .logic-map-tab,
+    .flash-level-card,
+    .flash-slot-tile,
+    .flash-nav-card,
+    .flash-card-button,
+    .learning-game-toggle
+  ):active {
+    filter: brightness(0.97);
+  }
+}
