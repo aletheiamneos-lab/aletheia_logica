@@ -10,6 +10,11 @@ import {
 import { useAuth } from "../../context/useAuth"
 import { downloadTeacherSolutionPdf } from "../../utils/generateTeacherSolutionPdf"
 import { clearTestProgress, publishTestProgress } from "../../utils/testProgressChannel"
+import {
+  MobileExamFooter,
+  MobileExamHeader,
+  MobileSharedText,
+} from "../testing/MobileExamNavigation"
 import AnimatedAnswerChoiceGroup from "../ui/AnimatedAnswerChoiceGroup"
 import OfficialPaperViewer from "./OfficialPaperViewer"
 import TeacherSolutionPreview from "./TeacherSolutionPreview"
@@ -171,6 +176,60 @@ function collectItems(exam) {
       }),
     ),
   )
+}
+
+function resolveMobileItemEntries(exam, items) {
+  return items.map((item) => {
+    for (const section of exam?.sections ?? []) {
+      for (const group of section.groups ?? []) {
+        const sourceItem = (group.items ?? []).find(
+          (entry) =>
+            entry.id === item.id ||
+            (entry.items ?? []).some((subItem) => subItem.id === item.id),
+        )
+
+        if (sourceItem) {
+          return {
+            group,
+            item,
+            section,
+          }
+        }
+      }
+    }
+
+    return {
+      group: null,
+      item,
+      section: null,
+    }
+  })
+}
+
+function contextBlockToText(contextBlock) {
+  if (!contextBlock) {
+    return ""
+  }
+
+  if (typeof contextBlock === "string") {
+    return contextBlock
+  }
+
+  const parts = []
+  if (contextBlock.title) {
+    parts.push(contextBlock.title)
+  }
+  if (Array.isArray(contextBlock.items)) {
+    parts.push(...contextBlock.items)
+  } else {
+    Object.entries(contextBlock).forEach(([key, value]) => {
+      if (key !== "title" && value && typeof value !== "boolean") {
+        parts.push(Array.isArray(value) ? value.join(" ") : String(value))
+      }
+    })
+  }
+
+  return parts.join("\n")
 }
 
 function getAnswerValue(answers, itemId, fieldKey = "value") {
@@ -1641,14 +1700,14 @@ function BacStudentReportModal({ isOpen, report, onClose }) {
   )
 }
 
-function renderContextBlock(contextBlock) {
+function renderContextBlock(contextBlock, className = "") {
   if (!contextBlock) {
     return null
   }
 
   if (Array.isArray(contextBlock.items)) {
     return (
-      <div className="mt-4 muted-box p-4">
+      <div className={["mt-4 muted-box p-4", className].filter(Boolean).join(" ")}>
         {contextBlock.title ? <p className="mb-2 text-sm font-semibold text-ink">{contextBlock.title}</p> : null}
         <ul className="grid gap-2 text-sm leading-7 text-slate-600">
           {contextBlock.items.map((item) => (
@@ -1665,7 +1724,7 @@ function renderContextBlock(contextBlock) {
   }
 
   return (
-    <div className="mt-4 muted-box p-4">
+    <div className={["mt-4 muted-box p-4", className].filter(Boolean).join(" ")}>
       {entries.map(([key, value]) => (
         <p key={key} className="text-sm leading-7 text-slate-600">
           {Array.isArray(value) ? value.join(" ") : String(value)}
@@ -1703,8 +1762,14 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
   const [isTeacherPreviewOpen, setIsTeacherPreviewOpen] = useState(false)
   const [teacherSolutionError, setTeacherSolutionError] = useState("")
   const [isTeacherSolutionLoading, setIsTeacherSolutionLoading] = useState(false)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const exam = moduleData.answerSheet
   const items = useMemo(() => collectItems(exam), [exam])
+  const mobileItemEntries = useMemo(
+    () => resolveMobileItemEntries(exam, items),
+    [exam, items],
+  )
+  const currentMobileEntry = mobileItemEntries[currentQuestionIndex] ?? null
   const answeredCount = items.filter((item) => isItemAnswered(item, answers)).length
   const progressValue = items.length ? Math.round((answeredCount / items.length) * 100) : 0
   const canSeeBarem = isTeacher || isAdmin
@@ -1732,10 +1797,11 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
       progress: progressValue,
       answeredCount,
       totalQuestions: items.length,
+      currentQuestion: currentQuestionIndex + 1,
     })
 
     return () => clearTestProgress()
-  }, [answeredCount, exam.title, items.length, progressValue])
+  }, [answeredCount, currentQuestionIndex, exam.title, items.length, progressValue])
 
   function handleAnswerChange(itemId, key, value) {
     if (isFinalized) {
@@ -1790,6 +1856,21 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
     setBacReportId("")
     setReportSyncMessage("")
     setFinalizedReportPayload(null)
+    setCurrentQuestionIndex(0)
+  }
+
+  function handleMobileNavigate(nextIndex) {
+    const safeIndex = Math.max(0, Math.min(nextIndex, mobileItemEntries.length - 1))
+    const currentGroupId = currentMobileEntry?.group?.id
+    const nextGroupId = mobileItemEntries[safeIndex]?.group?.id
+    setCurrentQuestionIndex(safeIndex)
+
+    window.requestAnimationFrame(() => {
+      document.querySelector(".bac-mobile-question-stage")?.scrollIntoView({
+        behavior: currentGroupId === nextGroupId ? "auto" : "smooth",
+        block: "start",
+      })
+    })
   }
 
   async function handleDownloadStudentReport() {
@@ -1879,8 +1960,17 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
   }
 
   return (
-    <div className="page-stack bac-exam-runner">
-      <section className="hero-panel bac-exam-hero">
+    <div className="page-stack bac-exam-runner integrated-test-runner-shell exam-mobile-runner">
+      {!isFinalized && currentMobileEntry ? (
+        <MobileExamHeader
+          answeredCount={answeredCount}
+          currentIndex={currentQuestionIndex}
+          label="Progres BAC"
+          totalQuestions={mobileItemEntries.length}
+        />
+      ) : null}
+
+      <section className="hero-panel bac-exam-hero exam-desktop-only">
         <Link className="back-link" to={`/${trackSlug}`}>
           Inapoi la {trackSlug === "bac" ? "BAC" : "Admitere"}
         </Link>
@@ -1941,6 +2031,7 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
         )
       ) : (
         <>
+      <div className="exam-desktop-only bac-desktop-exam-content">
       <section className="panel p-5 sm:p-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
@@ -2024,8 +2115,9 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
                     <p>{group.officialPrompt}</p>
                   </div>
                 ) : null}
-                {renderContextBlock(group.contextBlock)}
               </div>
+
+              {renderContextBlock(group.contextBlock, "bac-shared-context")}
 
               {group.groupDiagramInput ? (
                 <div className="px-4 sm:px-5">
@@ -2084,6 +2176,103 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
           </div>
         </div>
       </section>
+      </div>
+
+      {currentMobileEntry ? (
+        <section className="exam-mobile-only bac-mobile-question-stage integrated-test-question-panel">
+          <div className="panel bac-mobile-question-heading">
+            <div>
+              <p className="section-kicker">
+                {formatSectionPoints(currentMobileEntry.section?.points)}
+              </p>
+              <h2>{normalizeSectionTitle(currentMobileEntry.section?.title)}</h2>
+              <p>{currentMobileEntry.group?.title}</p>
+            </div>
+            <span className="status-pill">
+              {`${currentQuestionIndex + 1} din ${mobileItemEntries.length}`}
+            </span>
+          </div>
+
+          {canAccessTeacherResources ? (
+            <div className="panel bac-mobile-teacher-actions">
+              <strong>Resurse profesor</strong>
+              <button
+                type="button"
+                className="btn-secondary"
+                disabled={isTeacherSolutionLoading}
+                onClick={handlePreviewTeacherSolution}
+              >
+                Vezi rezolvarea
+              </button>
+              <button
+                type="button"
+                className="btn-secondary"
+                disabled={isTeacherSolutionLoading}
+                onClick={handleDownloadTeacherSolution}
+              >
+                Descarcă PDF
+              </button>
+            </div>
+          ) : null}
+
+          <MobileSharedText
+            label={`${normalizeSectionTitle(currentMobileEntry.section?.title)} · text comun`}
+            text={contextBlockToText(
+              currentMobileEntry.group?.contextBlock ??
+                currentMobileEntry.section?.contextBlock,
+            )}
+            textKey={
+              currentMobileEntry.group?.contextBlock
+                ? currentMobileEntry.group?.id
+                : currentMobileEntry.section?.id
+            }
+          />
+
+          {currentMobileEntry.group?.officialPrompt ? (
+            <div className="bac-official-instruction">
+              <p className="section-kicker">Instrucțiune oficială</p>
+              <p>{currentMobileEntry.group.officialPrompt}</p>
+            </div>
+          ) : null}
+
+          {currentMobileEntry.group?.groupDiagramInput ? (
+            <div className="panel bac-mobile-diagram-answer">
+              <DiagramAnswerBox
+                diagramInput={currentMobileEntry.group.groupDiagramInput}
+                value={getAnswerValue(
+                  answers,
+                  getGroupDiagramAnswerId(currentMobileEntry.group),
+                )}
+                onChange={(value) =>
+                  handleAnswerChange(
+                    getGroupDiagramAnswerId(currentMobileEntry.group),
+                    "value",
+                    value,
+                  )
+                }
+                disabled={isFinalized}
+              />
+            </div>
+          ) : null}
+
+          <BacItemCard
+            item={currentMobileEntry.item}
+            answers={answers}
+            onAnswerChange={handleAnswerChange}
+            disabled={isFinalized}
+          />
+        </section>
+      ) : null}
+
+      {currentMobileEntry ? (
+        <MobileExamFooter
+          currentIndex={currentQuestionIndex}
+          onBack={() => handleMobileNavigate(currentQuestionIndex - 1)}
+          onFinalize={handleFinalizeExam}
+          onNext={() => handleMobileNavigate(currentQuestionIndex + 1)}
+          totalQuestions={mobileItemEntries.length}
+        />
+      ) : null}
         </>
       )}
 

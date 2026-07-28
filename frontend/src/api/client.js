@@ -7,8 +7,16 @@ const API_HOST_FALLBACK = String(import.meta.env.VITE_API_FALLBACK_HOST ?? "loca
 const LOCALHOST_API_URL = `${LOCAL_API_PROTOCOL}://localhost:${LOCAL_API_PORT}`
 const LOOPBACK_API_URL = `${LOCAL_API_PROTOCOL}://127.0.0.1:${LOCAL_API_PORT}`
 const DEFAULT_LOCAL_API_URL = `${LOCAL_API_PROTOCOL}://${API_HOST_FALLBACK}:${LOCAL_API_PORT}`
-const LOCAL_CONNECTION_ERROR_MESSAGE =
-  `Conexiunea catre serverul local nu a reusit. Backend-ul trebuie sa ruleze pe portul ${LOCAL_API_PORT}, iar frontend-ul trebuie sa foloseasca host-ul curent al paginii.`
+const SERVER_WAKE_MESSAGE = "Serverul se încarcă, te rugăm așteaptă câteva secunde..."
+const SERVER_CONNECTION_ERROR_MESSAGE =
+  "Serverul nu poate fi contactat momentan. Verifică conexiunea la internet și încearcă din nou în câteva momente."
+const SERVER_UNAVAILABLE_ERROR_MESSAGE =
+  "Serverul este temporar indisponibil. Te rugăm să încerci din nou în câteva momente."
+const SERVER_WAKE_SLOW_THRESHOLD_MS = 2_500
+const SERVER_WAKE_ATTEMPT_TIMEOUT_MS = 55_000
+const SERVER_WAKE_RETRY_DELAYS_MS = [3_000, 5_000]
+const SERVER_READY_TTL_MS = 10 * 60 * 1_000
+const RETRYABLE_SERVER_STATUSES = new Set([502, 503, 504])
 const PREVIEW_STORAGE_KEY = "logica_preview_progress"
 const PREVIEW_HOMEPAGE_STUDY_PLAN_KEY = "logica_preview_homepage_study_plan"
 const ACTIVE_SESSION_STORAGE_KEY = "logica_active_session"
@@ -70,12 +78,22 @@ function resolveAlternateRuntimeApiBase() {
 }
 
 function createNetworkError(cause = null) {
-  const error = new Error(LOCAL_CONNECTION_ERROR_MESSAGE)
+  const error = new Error(SERVER_CONNECTION_ERROR_MESSAGE)
   error.code = "NETWORK_ERROR"
   if (cause) {
     error.cause = cause
   }
   return error
+}
+
+function createServerUnavailableError(status = 503) {
+  const error = createHttpError(SERVER_UNAVAILABLE_ERROR_MESSAGE, status)
+  error.code = "SERVER_UNAVAILABLE"
+  return error
+}
+
+function isServerConnectionError(error) {
+  return error?.code === "NETWORK_ERROR" || error?.code === "SERVER_UNAVAILABLE"
 }
 
 function createHttpError(message, status) {
@@ -102,6 +120,31 @@ function resolveApiBase() {
 
 const API_BASE = resolveApiBase()
 let preferredApiBase = API_BASE
+let serverReadyAt = 0
+let serverReadinessPromise = null
+let serverWakeState = {
+  isWaking: false,
+  message: SERVER_WAKE_MESSAGE,
+}
+const serverWakeListeners = new Set()
+
+function publishServerWakeState(isWaking) {
+  if (serverWakeState.isWaking === isWaking) {
+    return
+  }
+
+  serverWakeState = {
+    isWaking,
+    message: SERVER_WAKE_MESSAGE,
+  }
+  serverWakeListeners.forEach((listener) => listener(serverWakeState))
+}
+
+export function subscribeToServerWakeState(listener) {
+  serverWakeListeners.add(listener)
+  listener(serverWakeState)
+  return () => serverWakeListeners.delete(listener)
+}
 
 export function buildApiUrl(path) {
   const normalizedPath = String(path || "").startsWith("/") ? String(path || "") : `/${String(path || "")}`
@@ -136,7 +179,7 @@ function collectApiBaseCandidates() {
   return candidates
 }
 
-async function fetchFromApi(path, options) {
+async function fetchFromApiWithoutReadiness(path, options) {
   const candidates = collectApiBaseCandidates()
   let lastNetworkFailure = null
 
@@ -151,6 +194,91 @@ async function fetchFromApi(path, options) {
   }
 
   throw createNetworkError(lastNetworkFailure)
+}
+
+function waitForRetry(delayMs) {
+  return new Promise((resolve) => {
+    window.setTimeout(resolve, delayMs)
+  })
+}
+
+function isServerReadinessFresh() {
+  return serverReadyAt > 0 && Date.now() - serverReadyAt < SERVER_READY_TTL_MS
+}
+
+async function wakeServerWithRetry() {
+  let slowTimerId = window.setTimeout(() => {
+    publishServerWakeState(true)
+  }, SERVER_WAKE_SLOW_THRESHOLD_MS)
+
+  try {
+    for (let attemptIndex = 0; attemptIndex <= SERVER_WAKE_RETRY_DELAYS_MS.length; attemptIndex += 1) {
+      let response = null
+      let networkError = null
+      const attemptController = new AbortController()
+      const attemptTimeoutId = window.setTimeout(() => {
+        attemptController.abort()
+      }, SERVER_WAKE_ATTEMPT_TIMEOUT_MS)
+
+      try {
+        response = await fetchFromApiWithoutReadiness("/health", {
+          method: "GET",
+          cache: "no-store",
+          signal: attemptController.signal,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+      } catch (error) {
+        networkError = error
+      } finally {
+        window.clearTimeout(attemptTimeoutId)
+      }
+
+      if (response?.ok) {
+        serverReadyAt = Date.now()
+        return
+      }
+
+      const canRetry = attemptIndex < SERVER_WAKE_RETRY_DELAYS_MS.length
+      const hasRetryableStatus = response && RETRYABLE_SERVER_STATUSES.has(response.status)
+      if (!canRetry || (!networkError && !hasRetryableStatus)) {
+        if (networkError) {
+          throw networkError
+        }
+        throw createServerUnavailableError(response?.status)
+      }
+
+      window.clearTimeout(slowTimerId)
+      slowTimerId = null
+      publishServerWakeState(true)
+      await waitForRetry(SERVER_WAKE_RETRY_DELAYS_MS[attemptIndex])
+    }
+  } finally {
+    if (slowTimerId) {
+      window.clearTimeout(slowTimerId)
+    }
+    publishServerWakeState(false)
+  }
+}
+
+async function ensureServerIsReady() {
+  if (isServerReadinessFresh()) {
+    return
+  }
+
+  if (!serverReadinessPromise) {
+    serverReadinessPromise = wakeServerWithRetry().finally(() => {
+      serverReadinessPromise = null
+    })
+  }
+
+  return serverReadinessPromise
+}
+
+async function fetchFromApi(path, options) {
+  await ensureServerIsReady()
+  return fetchFromApiWithoutReadiness(path, options)
 }
 
 function normalizeAnswer(value) {
@@ -669,7 +797,7 @@ async function request(path, options = {}) {
       },
     })
   } catch (error) {
-    throw error?.code === "NETWORK_ERROR" ? error : createNetworkError(error)
+    throw isServerConnectionError(error) ? error : createNetworkError(error)
   }
 
   if (!response.ok) {
@@ -709,7 +837,7 @@ async function downloadFile(path, options = {}) {
       },
     })
   } catch (error) {
-    throw error?.code === "NETWORK_ERROR" ? error : createNetworkError(error)
+    throw isServerConnectionError(error) ? error : createNetworkError(error)
   }
 
   if (!response.ok) {
@@ -1337,7 +1465,7 @@ export async function getBacAdminPdfPreviewUrl(reportId) {
       },
     })
   } catch (error) {
-    throw error?.code === "NETWORK_ERROR" ? error : createNetworkError(error)
+    throw isServerConnectionError(error) ? error : createNetworkError(error)
   }
 
   if (!response.ok) {
@@ -1440,7 +1568,7 @@ export async function getAdmitereAdminPdfPreviewUrl(reportId) {
       },
     })
   } catch (error) {
-    throw error?.code === "NETWORK_ERROR" ? error : createNetworkError(error)
+    throw isServerConnectionError(error) ? error : createNetworkError(error)
   }
 
   if (!response.ok) {
@@ -1520,7 +1648,7 @@ export async function getAdminPdfPreviewUrl(reportId) {
       },
     })
   } catch (error) {
-    throw error?.code === "NETWORK_ERROR" ? error : createNetworkError(error)
+    throw isServerConnectionError(error) ? error : createNetworkError(error)
   }
 
   if (!response.ok) {
