@@ -8457,6 +8457,315 @@
   }
 }
 
+/* BAC + Admitere reuse the mobile exam chrome from Teste integrate. */
+.exam-mobile-only {
+  display: none !important;
+}
+
+.bac-desktop-exam-content {
+  display: contents;
+}
+
+@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .exam-mobile-runner,
+  .bac-exam-runner,
+  .admitere-exam-runner,
+  .exam-track-page.is-bac-track-page,
+  .exam-track-page.is-admitere-track-page {
+    --integrated-touch-size: 46px;
+    --integrated-touch-gap: 8px;
+    --integrated-sticky-header-height: 72px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow: visible !important;
+  }
+
+  .app-shell-auth:has(.exam-mobile-runner),
+  .app-shell-auth:has(.exam-mobile-runner) :is(
+    .app-layout-frame,
+    .app-content-stage,
+    .app-content-main-auth,
+    .app-content-shell-auth
+  ) {
+    min-width: 0;
+    overflow: visible !important;
+  }
+
+  .app-shell-auth:has(.exam-mobile-runner) .app-content-shell-auth {
+    padding:
+      max(0.5rem, env(safe-area-inset-top, 0px))
+      max(0.5rem, env(safe-area-inset-right, 0px))
+      calc(5.6rem + env(safe-area-inset-bottom, 0px))
+      max(0.5rem, env(safe-area-inset-left, 0px)) !important;
+  }
+
+  .app-shell-auth:has(.exam-mobile-runner) .session-badge-shell {
+    display: none !important;
+  }
+
+  .exam-desktop-only,
+  .bac-desktop-exam-content {
+    display: none !important;
+  }
+
+  .exam-mobile-only {
+    display: block !important;
+  }
+
+  .exam-mobile-sticky-header {
+    display: grid !important;
+    margin-top: calc(-1 * max(0.5rem, env(safe-area-inset-top, 0px)));
+    border-top: 0;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .exam-mobile-sticky-footer {
+    display: flex !important;
+    width: 100%;
+    padding-left: max(4.65rem, calc(env(safe-area-inset-left, 0px) + 4.15rem));
+    border-right: 0;
+    border-left: 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .exam-mobile-runner :is(
+    button,
+    a,
+    [role="button"],
+    summary,
+    input,
+    textarea,
+    select
+  ),
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page) :is(
+    button,
+    a,
+    [role="button"],
+    summary,
+    input,
+    textarea,
+    select
+  ) {
+    min-height: var(--integrated-touch-size) !important;
+  }
+
+  .exam-mobile-runner :is(input, textarea, select),
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page) :is(input, textarea, select) {
+    max-width: 100%;
+    font-size: max(1rem, 16px) !important;
+  }
+
+  .exam-mobile-runner :is(p, li, span, label, button, a),
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page) :is(
+    p,
+    li,
+    span,
+    label,
+    button,
+    a
+  ) {
+    font-size: max(0.875rem, 14px);
+  }
+
+  .exam-mobile-runner :is(img, svg, canvas, video, iframe),
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page) :is(
+    img,
+    svg,
+    canvas,
+    video,
+    iframe
+  ) {
+    max-width: 100%;
+  }
+
+  .exam-mobile-runner :is(.panel, .muted-box, .subtle-card),
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page) :is(
+    .panel,
+    .muted-box,
+    .subtle-card
+  ) {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .exam-mobile-question-stage {
+    display: grid !important;
+    min-width: 0;
+    gap: var(--integrated-touch-gap);
+    margin-bottom: calc(5.6rem + env(safe-area-inset-bottom, 0px));
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    scroll-margin-top: calc(
+      var(--integrated-sticky-header-height) +
+      env(safe-area-inset-top, 0px) +
+      8px
+    );
+  }
+
+  .exam-mobile-group-heading,
+  .bac-mobile-question-heading,
+  .bac-mobile-teacher-actions,
+  .bac-mobile-diagram-answer {
+    padding: 0.9rem !important;
+    border-radius: 16px !important;
+  }
+
+  .bac-mobile-question-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--integrated-touch-gap);
+  }
+
+  .bac-mobile-question-heading h2 {
+    margin-top: 0.25rem;
+    color: var(--text);
+    font-size: max(1.1rem, 18px);
+    line-height: 1.3;
+  }
+
+  .bac-mobile-question-heading p:last-child {
+    margin-top: 0.3rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+
+  .bac-mobile-teacher-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--integrated-touch-gap);
+  }
+
+  .bac-mobile-teacher-actions > button {
+    width: 100%;
+  }
+
+  .exam-mobile-shared-text {
+    top: calc(
+      var(--integrated-sticky-header-height) +
+      env(safe-area-inset-top, 0px)
+    );
+    z-index: 55;
+    margin: 0 !important;
+  }
+
+  .bac-mobile-question-stage .bac-official-instruction {
+    margin: 0;
+    padding: 0.85rem;
+    border-radius: 15px;
+  }
+
+  .bac-mobile-question-stage .bac-requirement-card,
+  .admitere-mobile-question-stage .admitere-question-card {
+    padding: 1rem !important;
+    border-radius: 18px !important;
+  }
+
+  .bac-mobile-question-stage .bac-requirement-head,
+  .bac-mobile-question-stage .bac-answer-zone,
+  .admitere-mobile-question-stage .answer-choice-group,
+  .admitere-mobile-question-stage .admitere-answer-option-grid {
+    min-width: 0;
+    gap: var(--integrated-touch-gap) !important;
+  }
+
+  .bac-mobile-question-stage :is(
+    .answer-choice-item,
+    .option-button,
+    .bac-true-false-row,
+    .bac-diagram-tools button,
+    .bac-diagram-shape-tools button
+  ),
+  .admitere-mobile-question-stage :is(.answer-choice-item, .option-button) {
+    min-height: 48px !important;
+  }
+
+  .bac-mobile-question-stage .bac-diagram-tools,
+  .bac-mobile-question-stage .bac-diagram-shape-tools,
+  .bac-mobile-question-stage .bac-requirement-head > div,
+  .admitere-mobile-question-stage .admitere-group-heading {
+    gap: var(--integrated-touch-gap) !important;
+  }
+
+  .bac-mobile-question-stage .bac-diagram-canvas,
+  .bac-mobile-question-stage canvas {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .exam-mobile-result-actions {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .exam-mobile-result-actions .panel > div,
+  .exam-mobile-result-actions .panel > div > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--integrated-touch-gap);
+  }
+
+  .exam-mobile-result-actions :is(button, a) {
+    width: 100%;
+  }
+
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page)
+    :is(
+      .workspace-hero-grid,
+      .content-split-grid,
+      .summary-strip,
+      .exam-track-module-grid,
+      .compact-module-row,
+      .compact-module-actions
+    ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page)
+    .compact-module-row {
+    display: grid;
+    gap: var(--integrated-touch-gap);
+  }
+
+  .exam-track-page:is(.is-bac-track-page, .is-admitere-track-page)
+    .exam-track-module-actions
+    > a {
+    width: 100%;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .exam-mobile-runner {
+    --integrated-sticky-header-height: 58px;
+  }
+
+  .exam-mobile-sticky-header {
+    height: var(--integrated-sticky-header-height);
+    min-height: var(--integrated-sticky-header-height);
+    gap: 0.35rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+  }
+
+  .exam-mobile-shared-text {
+    gap: 0.4rem;
+    padding: 0.5rem 0.65rem;
+  }
+
+  .exam-mobile-shared-text .integrated-shared-text-copy {
+    max-height: 42px;
+  }
+
+  .exam-mobile-sticky-footer {
+    padding-top: 0.4rem;
+    padding-bottom: max(0.4rem, env(safe-area-inset-bottom, 0px));
+  }
+}
+
 @media (max-width: 640px) {
   .session-badge-shell:has(.floating-test-progress) {
     left: 0.75rem !important;

@@ -14,6 +14,11 @@ import {
 } from "../../data/admitere/admitereTestUtils"
 import { useAuth } from "../../context/useAuth"
 import { clearTestProgress, publishTestProgress } from "../../utils/testProgressChannel"
+import {
+  MobileExamFooter,
+  MobileExamHeader,
+  MobileSharedText,
+} from "../testing/MobileExamNavigation"
 import AdmitereTestQuestionCard from "./AdmitereTestQuestionCard"
 
 function formatDateLabel(timestamp) {
@@ -382,6 +387,7 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
   const [finalizedReportPayload, setFinalizedReportPayload] = useState(null)
   const [startedAt, setStartedAt] = useState(() => Date.now())
   const [submittedAt, setSubmittedAt] = useState(null)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
 
   useEffect(() => {
     if (!test || hasSubmitted) {
@@ -400,8 +406,9 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
         : 0,
       answeredCount: liveScore.answeredCount,
       totalQuestions: liveScore.totalQuestions,
+      currentQuestion: currentQuestionIndex + 1,
     })
-  }, [answersByQuestionId, hasSubmitted, moduleEntry.title, test])
+  }, [answersByQuestionId, currentQuestionIndex, hasSubmitted, moduleEntry.title, test])
 
   useEffect(() => {
     return () => {
@@ -420,6 +427,18 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
     () => normalizeAdmitereReportGroups(displayGroups, questions),
     [displayGroups, questions],
   )
+  const mobileQuestionEntries = useMemo(
+    () =>
+      displayGroups.flatMap((group, groupIndex) =>
+        (group.questions ?? []).map((question) => ({
+          group,
+          groupIndex,
+          question,
+        })),
+      ),
+    [displayGroups],
+  )
+  const currentMobileEntry = mobileQuestionEntries[currentQuestionIndex] ?? null
   const reportData = useMemo(() => {
     const submittedTimestamp = submittedAt ?? Date.now()
     const candidateName = session?.displayName || [session?.firstName, session?.lastName].filter(Boolean).join(" ")
@@ -513,7 +532,22 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
     setFinalizedReportPayload(null)
     setStartedAt(Date.now())
     setSubmittedAt(null)
+    setCurrentQuestionIndex(0)
     window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  function handleMobileNavigate(nextIndex) {
+    const safeIndex = Math.max(0, Math.min(nextIndex, mobileQuestionEntries.length - 1))
+    const currentGroupId = currentMobileEntry?.group?.id
+    const nextGroupId = mobileQuestionEntries[safeIndex]?.group?.id
+    setCurrentQuestionIndex(safeIndex)
+
+    window.requestAnimationFrame(() => {
+      document.querySelector(".admitere-mobile-question-stage")?.scrollIntoView({
+        behavior: currentGroupId === nextGroupId ? "auto" : "smooth",
+        block: "start",
+      })
+    })
   }
 
   async function handleDownloadReport() {
@@ -551,8 +585,17 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
   }
 
   return (
-    <div className="page-stack">
-      <section className="hero-panel">
+    <div className="page-stack admitere-exam-runner integrated-test-runner-shell exam-mobile-runner">
+      {!hasSubmitted && currentMobileEntry ? (
+        <MobileExamHeader
+          answeredCount={score.answeredCount}
+          currentIndex={currentQuestionIndex}
+          label="Progres Admitere"
+          totalQuestions={mobileQuestionEntries.length}
+        />
+      ) : null}
+
+      <section className="hero-panel exam-desktop-only">
         <Link className="back-link" to="/admitere">
           Inapoi la toate seturile
         </Link>
@@ -572,7 +615,7 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
         </p>
       </section>
 
-      <section className="grid gap-3 xl:grid-cols-[1.08fr_0.92fr]">
+      <section className="grid gap-3 xl:grid-cols-[1.08fr_0.92fr] exam-desktop-only">
         <section className="panel p-5 sm:p-6">
           <p className="section-kicker">{hasSubmitted ? "Scor" : "Lucru curent"}</p>
           <h2 className="mt-2 text-2xl text-ink">
@@ -637,19 +680,21 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
         </aside>
       </section>
 
-      <ActionBar
-        answeredCount={score.answeredCount}
-        unansweredCount={score.unansweredCount}
-        hasSubmitted={hasSubmitted}
-        isGeneratingReport={isGeneratingReport}
-        isSavingReport={isSavingReport}
-        onFinalize={handleFinalize}
-        onDownloadReport={handleDownloadReport}
-        onReset={handleReset}
-        reportSyncMessage={reportSyncMessage}
-      />
+      <div className="exam-desktop-only">
+        <ActionBar
+          answeredCount={score.answeredCount}
+          unansweredCount={score.unansweredCount}
+          hasSubmitted={hasSubmitted}
+          isGeneratingReport={isGeneratingReport}
+          isSavingReport={isSavingReport}
+          onFinalize={handleFinalize}
+          onDownloadReport={handleDownloadReport}
+          onReset={handleReset}
+          reportSyncMessage={reportSyncMessage}
+        />
+      </div>
 
-      <section className="grid gap-3">
+      <section className="grid gap-3 exam-desktop-only">
         {displayGroups.map((group, groupIndex) => (
           <div key={group.id} style={{ marginBottom: "30px" }}>
             <div className="panel admitere-group-panel p-5 sm:p-6">
@@ -687,17 +732,84 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
         ))}
       </section>
 
-      <ActionBar
-        answeredCount={score.answeredCount}
-        unansweredCount={score.unansweredCount}
-        hasSubmitted={hasSubmitted}
-        isGeneratingReport={isGeneratingReport}
-        isSavingReport={isSavingReport}
-        onFinalize={handleFinalize}
-        onDownloadReport={handleDownloadReport}
-        onReset={handleReset}
-        reportSyncMessage={reportSyncMessage}
-      />
+      <div className="exam-desktop-only">
+        <ActionBar
+          answeredCount={score.answeredCount}
+          unansweredCount={score.unansweredCount}
+          hasSubmitted={hasSubmitted}
+          isGeneratingReport={isGeneratingReport}
+          isSavingReport={isSavingReport}
+          onFinalize={handleFinalize}
+          onDownloadReport={handleDownloadReport}
+          onReset={handleReset}
+          reportSyncMessage={reportSyncMessage}
+        />
+      </div>
+
+      {currentMobileEntry ? (
+        <section className="exam-mobile-only admitere-mobile-question-stage integrated-test-question-panel">
+          <div className="panel admitere-group-panel exam-mobile-group-heading">
+            <div className="admitere-group-heading">
+              <span className="admitere-group-code">
+                {getAdmitereGroupCode(currentMobileEntry.group, currentMobileEntry.groupIndex)}
+              </span>
+              <div className="admitere-group-heading-copy">
+                <p className="section-kicker">
+                  {currentMobileEntry.group.questionRange
+                    ? `Întrebările ${currentMobileEntry.group.questionRange}`
+                    : "Bloc de lucru"}
+                </p>
+                <h3 className="admitere-group-title">
+                  {getAdmitereGroupTitle(currentMobileEntry.group, currentMobileEntry.groupIndex)}
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <MobileSharedText
+            label={`${getAdmitereGroupCode(currentMobileEntry.group, currentMobileEntry.groupIndex)} · text comun`}
+            text={currentMobileEntry.group.sharedText}
+            textKey={currentMobileEntry.group.id}
+          />
+
+          <AdmitereTestQuestionCard
+            question={currentMobileEntry.question}
+            questionIndex={currentQuestionIndex}
+            totalQuestions={score.totalQuestions}
+            selectedKeys={answersByQuestionId[currentMobileEntry.question.id] ?? []}
+            isSubmitted={hasSubmitted}
+            result={score.questionResultsById[currentMobileEntry.question.id]}
+            onSelectAnswer={(answerKey) =>
+              handleSelectAnswer(currentMobileEntry.question, answerKey)
+            }
+          />
+        </section>
+      ) : null}
+
+      {hasSubmitted ? (
+        <div className="exam-mobile-only exam-mobile-result-actions">
+          <ActionBar
+            answeredCount={score.answeredCount}
+            unansweredCount={score.unansweredCount}
+            hasSubmitted={hasSubmitted}
+            isGeneratingReport={isGeneratingReport}
+            isSavingReport={isSavingReport}
+            onFinalize={handleFinalize}
+            onDownloadReport={handleDownloadReport}
+            onReset={handleReset}
+            reportSyncMessage={reportSyncMessage}
+          />
+        </div>
+      ) : currentMobileEntry ? (
+        <MobileExamFooter
+          busy={isSavingReport}
+          currentIndex={currentQuestionIndex}
+          onBack={() => handleMobileNavigate(currentQuestionIndex - 1)}
+          onFinalize={handleFinalize}
+          onNext={() => handleMobileNavigate(currentQuestionIndex + 1)}
+          totalQuestions={mobileQuestionEntries.length}
+        />
+      ) : null}
     </div>
   )
 }
