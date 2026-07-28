@@ -11411,6 +11411,11 @@
   }
 }
 
+/* Exersare: catalog responsive and a focused mobile exercise runner. */
+.lesson-practice-mobile-runner {
+  display: none;
+}
+
 /* Learning 2.0: phone-first layout and explicit touch interaction floors. */
 .learning-20-page,
 .logic-map-page,
@@ -11450,14 +11455,43 @@
   ),
   .lessons-page,
   .lesson-workspace-page,
-  .app-shell-auth :is(.learning-20-page, .logic-map-page, .flash-page) {
+  .app-shell-auth :is(.learning-20-page, .logic-map-page, .flash-page),
+  .app-shell-auth :is(.practice-hub-page, .lesson-practice-tab, .lesson-practice-mobile-runner) {
     width: 100%;
     min-width: 0;
     max-width: 100%;
     overflow-x: clip;
   }
 
+  .practice-hub-page :is(
+    .workspace-hero-grid,
+    .compact-module-list,
+    .compact-module-row,
+    .compact-module-actions
+  ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .practice-hub-page .compact-module-list,
+  .practice-hub-page .compact-module-row,
+  .practice-hub-page .compact-module-actions {
+    gap: 8px;
+  }
+
+  .practice-hub-page .compact-module-actions {
+    display: grid;
+    width: 100%;
+  }
+
+  .practice-hub-page .compact-module-actions > a {
+    width: 100%;
+    min-height: 48px !important;
+  }
+
   .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
     .learning-20-page,
     .logic-map-page,
     .flash-page
@@ -11466,6 +11500,9 @@
   }
 
   .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
     .learning-20-page,
     .logic-map-page,
     .flash-page
@@ -11475,11 +11512,150 @@
   }
 
   .app-shell-auth :is(
+    .practice-hub-page,
+    .lesson-practice-tab,
+    .lesson-practice-mobile-runner,
     .learning-20-page,
     .logic-map-page,
     .flash-page
   ) :is(a, button, [role="button"]) {
     min-height: 44px !important;
+  }
+
+  .lesson-practice-desktop-list {
+    display: none !important;
+  }
+
+  .lesson-practice-mobile-runner {
+    --practice-mobile-header-height: 68px;
+    display: grid;
+    min-width: 0;
+    gap: 8px;
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+    scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 8px);
+  }
+
+  .practice-mobile-sticky-header {
+    position: sticky;
+    z-index: 72;
+    top: env(safe-area-inset-top, 0px);
+    display: grid;
+    box-sizing: border-box;
+    min-height: var(--practice-mobile-header-height);
+    gap: 8px;
+    padding: 0.72rem 0.85rem;
+    border: 1px solid color-mix(in srgb, var(--workspace-line) 80%, transparent);
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--surface) 94%, white);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.09);
+    backdrop-filter: blur(16px) saturate(1.1);
+  }
+
+  .practice-mobile-progress-copy {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .practice-mobile-progress-copy span {
+    color: var(--text-muted);
+    text-align: right;
+  }
+
+  .practice-mobile-progress-track {
+    height: 7px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--workspace-line) 78%, var(--surface-soft));
+  }
+
+  .practice-mobile-progress-track > span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--accent-strong), var(--accent));
+    transition: width 180ms ease;
+  }
+
+  .exercise-card-mobile-runner {
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    overflow: visible !important;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-group {
+    display: grid;
+    min-width: 0;
+    gap: 8px !important;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-item {
+    min-width: 0;
+    min-height: 52px !important;
+    font-size: max(0.9375rem, 15px) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .exercise-card-mobile-runner .answer-choice-title {
+    font-size: max(0.9375rem, 15px) !important;
+    line-height: 1.5 !important;
+    overflow-wrap: anywhere;
+  }
+
+  .exercise-mobile-selection {
+    margin-top: 0.75rem;
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  .exercise-mobile-sticky-footer {
+    position: fixed;
+    z-index: 80;
+    left: 50%;
+    bottom: 0;
+    display: grid !important;
+    grid-template-columns: minmax(88px, 0.38fr) minmax(0, 1fr);
+    width: min(760px, calc(100% - 1rem));
+    margin: 0 !important;
+    padding:
+      0.7rem
+      max(0.7rem, env(safe-area-inset-right, 0px))
+      max(0.7rem, env(safe-area-inset-bottom, 0px))
+      max(0.7rem, env(safe-area-inset-left, 0px));
+    gap: 8px !important;
+    border: 1px solid color-mix(in srgb, var(--workspace-line) 82%, transparent);
+    border-bottom: 0;
+    border-radius: 18px 18px 0 0;
+    background: color-mix(in srgb, var(--surface) 95%, white);
+    box-shadow: 0 -14px 30px rgba(15, 23, 42, 0.11);
+    transform: translateX(-50%);
+    backdrop-filter: blur(18px) saturate(1.1);
+  }
+
+  .exercise-mobile-sticky-footer > button {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px !important;
+  }
+
+  .exercise-mobile-sticky-footer .exercise-mobile-primary-button {
+    border-color: var(--theme-secondary) !important;
+    background: linear-gradient(
+      135deg,
+      var(--theme-secondary),
+      var(--theme-secondary-ink)
+    ) !important;
+    color: #fff !important;
+    box-shadow: 0 12px 26px rgba(var(--theme-secondary-rgb), 0.22) !important;
+  }
+
+  .exercise-mobile-sticky-footer > button:disabled {
+    box-shadow: none !important;
+    opacity: 0.52;
   }
 
   .learning-20-page :is(
@@ -11744,6 +11920,19 @@
 }
 
 @media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .lesson-practice-mobile-runner {
+    --practice-mobile-header-height: 58px;
+  }
+
+  .practice-mobile-sticky-header {
+    padding-block: 0.48rem;
+  }
+
+  .exercise-mobile-sticky-footer {
+    padding-top: 0.45rem;
+    padding-bottom: max(0.45rem, env(safe-area-inset-bottom, 0px));
+  }
+
   .logic-map-canvas-shell {
     height: 300px;
     min-height: 300px;

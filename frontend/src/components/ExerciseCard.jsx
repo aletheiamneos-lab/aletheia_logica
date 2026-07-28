@@ -36,7 +36,7 @@ function formatDifficulty(value) {
   return value ?? ""
 }
 
-function ExerciseCard({ exercise, compact = false, onAnswered }) {
+function ExerciseCard({ exercise, compact = false, onAnswered, mobileRunner = null }) {
   const [selectedAnswer, setSelectedAnswer] = useState("")
   const [feedback, setFeedback] = useState(null)
   const [error, setError] = useState("")
@@ -65,8 +65,33 @@ function ExerciseCard({ exercise, compact = false, onAnswered }) {
     }
   }
 
+  function handlePrimaryAction() {
+    if (feedback && mobileRunner) {
+      mobileRunner.onNext()
+      return
+    }
+
+    handleSubmit()
+  }
+
+  const primaryLabel = feedback && mobileRunner
+    ? mobileRunner.isLast
+      ? "Reia setul"
+      : "Exercitiul urmator"
+    : isSubmitting
+      ? "Se verifica..."
+      : "Trimite raspunsul"
+
   return (
-    <article className={`panel exercise-card ${compact ? "exercise-card-compact p-3.5 sm:p-4" : "p-4 sm:p-5"}`}>
+    <article
+      className={[
+        "panel exercise-card",
+        compact ? "exercise-card-compact p-3.5 sm:p-4" : "p-4 sm:p-5",
+        mobileRunner ? "exercise-card-mobile-runner" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
       <div className="flex flex-wrap items-center justify-between gap-2.5">
         <span className="tag">{typeLabels[exercise.type] ?? "Exercitiu"}</span>
         <span className={difficultyStyles[exercise.difficulty] ?? "status-pill"}>
@@ -104,17 +129,41 @@ function ExerciseCard({ exercise, compact = false, onAnswered }) {
         />
       </div>
 
-      <div className={`${compact ? "mt-3.5 gap-2" : "mt-4 gap-2.5"} flex flex-wrap items-center`}>
+      <div
+        className={[
+          compact ? "mt-3.5 gap-2" : "mt-4 gap-2.5",
+          "exercise-card-actions flex flex-wrap items-center",
+          mobileRunner ? "exercise-mobile-sticky-footer" : "",
+        ].join(" ")}
+      >
+        {mobileRunner ? (
+          <button
+            className="btn-secondary exercise-mobile-back-button"
+            disabled={mobileRunner.isFirst || isSubmitting}
+            type="button"
+            onClick={mobileRunner.onPrevious}
+          >
+            Inapoi
+          </button>
+        ) : null}
         <button
-          className="btn-primary"
+          className="btn-primary exercise-mobile-primary-button"
           disabled={isSubmitting}
           type="button"
-          onClick={handleSubmit}
+          onClick={handlePrimaryAction}
         >
-          {isSubmitting ? "Se verifica..." : "Trimite raspunsul"}
+          {primaryLabel}
         </button>
-        {selectedChoiceKey && <span className="status-pill">Selectat: {selectedChoiceKey}</span>}
+        {selectedChoiceKey && !mobileRunner ? (
+          <span className="status-pill">Selectat: {selectedChoiceKey}</span>
+        ) : null}
       </div>
+
+      {selectedChoiceKey && mobileRunner ? (
+        <p className="exercise-mobile-selection" aria-live="polite">
+          Selectat: {selectedChoiceKey}
+        </p>
+      ) : null}
 
       {error && <p className="mt-4 text-sm font-medium text-rose-700">{error}</p>}
       <div className="mt-4">
