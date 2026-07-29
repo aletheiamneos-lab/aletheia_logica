@@ -19,6 +19,11 @@ import { AuthProvider } from "./context/AuthContext"
 import { useAuth } from "./context/useAuth"
 
 const SIDEBAR_VISIBILITY_STORAGE_KEY = "logica-sidebar-hidden"
+const MOBILE_MENU_COLLISION_GAP = 8
+const MOBILE_MENU_AVOID_SELECTOR = [
+  ".lesson-practice-tab .learning-why-shell-toggle",
+  ".lesson-practice-tab .exercise-mobile-sticky-footer > button:not(:disabled)",
+].join(",")
 
 const HomePage = lazy(() => import("./pages/HomePage"))
 const BibliotecaPage = lazy(() => import("./pages/BibliotecaPage"))
@@ -74,6 +79,170 @@ function PageFallback() {
   )
 }
 
+function useMobileMenuCollisionOffset({
+  enabled,
+  isMenuOpen,
+  routeKey,
+  triggerRef,
+}) {
+  const [collisionOffset, setCollisionOffset] = useState(0)
+
+  useEffect(() => {
+    const mobileQuery = window.matchMedia("(max-width: 768px)")
+    let animationFrameId = 0
+
+    function resetOffset() {
+      setCollisionOffset((current) => (current === 0 ? current : 0))
+    }
+
+    function measureCollision() {
+      animationFrameId = 0
+
+      const trigger = triggerRef.current
+      if (!enabled || isMenuOpen || !mobileQuery.matches || !trigger) {
+        resetOffset()
+        return
+      }
+
+      const triggerRect = trigger.getBoundingClientRect()
+      const appliedOffset =
+        Number.parseFloat(
+          window
+            .getComputedStyle(trigger)
+            .getPropertyValue("--mobile-menu-collision-offset"),
+        ) || 0
+      const baseTriggerRect = {
+        top: triggerRect.top + appliedOffset,
+        right: triggerRect.right,
+        bottom: triggerRect.bottom + appliedOffset,
+        left: triggerRect.left,
+      }
+      const viewportWidth = window.innerWidth
+      const viewportHeight = window.innerHeight
+      const interactiveRects = [...document.querySelectorAll(MOBILE_MENU_AVOID_SELECTOR)]
+        .filter((node) => {
+          if (
+            node === trigger ||
+            trigger.contains(node) ||
+            node.closest(".app-mobile-sidebar-overlay") ||
+            node.disabled ||
+            node.getAttribute("aria-disabled") === "true"
+          ) {
+            return false
+          }
+
+          const style = window.getComputedStyle(node)
+          if (
+            style.display === "none" ||
+            style.visibility === "hidden" ||
+            style.pointerEvents === "none" ||
+            Number(style.opacity) === 0
+          ) {
+            return false
+          }
+
+          const rect = node.getBoundingClientRect()
+          return (
+            rect.width > 0 &&
+            rect.height > 0 &&
+            rect.right > 0 &&
+            rect.left < viewportWidth &&
+            rect.bottom > 0 &&
+            rect.top < viewportHeight
+          )
+        })
+        .map((node) => node.getBoundingClientRect())
+
+      function intersectsWithGap(candidate, target) {
+        return (
+          candidate.left - MOBILE_MENU_COLLISION_GAP < target.right &&
+          candidate.right + MOBILE_MENU_COLLISION_GAP > target.left &&
+          candidate.top - MOBILE_MENU_COLLISION_GAP < target.bottom &&
+          candidate.bottom + MOBILE_MENU_COLLISION_GAP > target.top
+        )
+      }
+
+      let nextOffset = 0
+      for (let index = 0; index <= interactiveRects.length; index += 1) {
+        const candidateRect = {
+          ...baseTriggerRect,
+          top: baseTriggerRect.top - nextOffset,
+          bottom: baseTriggerRect.bottom - nextOffset,
+        }
+        const collision = interactiveRects.find((rect) =>
+          intersectsWithGap(candidateRect, rect),
+        )
+
+        if (!collision) {
+          break
+        }
+
+        nextOffset = Math.max(
+          nextOffset,
+          Math.ceil(
+            baseTriggerRect.bottom - collision.top + MOBILE_MENU_COLLISION_GAP,
+          ),
+        )
+      }
+
+      const maximumOffset = Math.max(0, Math.floor(baseTriggerRect.top - 8))
+      nextOffset = Math.min(nextOffset, maximumOffset)
+      setCollisionOffset((current) =>
+        Math.abs(current - nextOffset) <= 1 ? current : nextOffset,
+      )
+    }
+
+    function scheduleMeasurement() {
+      if (!animationFrameId) {
+        animationFrameId = window.requestAnimationFrame(measureCollision)
+      }
+    }
+
+    if (!enabled || isMenuOpen) {
+      resetOffset()
+      return undefined
+    }
+
+    const resizeObserver =
+      typeof ResizeObserver === "undefined"
+        ? null
+        : new ResizeObserver(scheduleMeasurement)
+    const mutationObserver = new MutationObserver(scheduleMeasurement)
+
+    resizeObserver?.observe(document.body)
+    mutationObserver.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["aria-hidden", "class", "disabled", "style"],
+      childList: true,
+      subtree: true,
+    })
+    window.addEventListener("scroll", scheduleMeasurement, {
+      capture: true,
+      passive: true,
+    })
+    window.addEventListener("resize", scheduleMeasurement)
+    window.visualViewport?.addEventListener("resize", scheduleMeasurement)
+    window.visualViewport?.addEventListener("scroll", scheduleMeasurement)
+    mobileQuery.addEventListener("change", scheduleMeasurement)
+    scheduleMeasurement()
+
+    return () => {
+      if (animationFrameId) {
+        window.cancelAnimationFrame(animationFrameId)
+      }
+      resizeObserver?.disconnect()
+      mutationObserver.disconnect()
+      window.removeEventListener("scroll", scheduleMeasurement, true)
+      window.removeEventListener("resize", scheduleMeasurement)
+      window.visualViewport?.removeEventListener("resize", scheduleMeasurement)
+      window.visualViewport?.removeEventListener("scroll", scheduleMeasurement)
+      mobileQuery.removeEventListener("change", scheduleMeasurement)
+    }
+  }, [enabled, isMenuOpen, routeKey, triggerRef])
+
+  return collisionOffset
+}
+
 function AppLayout() {
   const { isAuthenticated, isAdmin, session } = useAuth()
   const location = useLocation()
@@ -90,6 +259,13 @@ function AppLayout() {
   const isIntegratedExamRoute =
     isAuthenticated && location.pathname.startsWith("/teste-integrate/examen/")
   const hasSidebar = isAuthenticated && !isIntegratedExamRoute
+  const isLessonPracticeRoute = /^\/lectii\/\d+\/practica\/?$/.test(location.pathname)
+  const mobileMenuCollisionOffset = useMobileMenuCollisionOffset({
+    enabled: hasSidebar && isLessonPracticeRoute,
+    isMenuOpen: isMobileSidebarOpen,
+    routeKey: location.pathname,
+    triggerRef: mobileMenuButtonRef,
+  })
   const authenticatedLayoutStyle =
     hasSidebar && !isSidebarHidden
       ? { gridTemplateColumns: "var(--workspace-sidebar-width, 280px) minmax(0, 1fr)" }
@@ -197,6 +373,9 @@ function AppLayout() {
               ref={mobileMenuButtonRef}
               type="button"
               className="app-mobile-sidebar-trigger"
+              style={{
+                "--mobile-menu-collision-offset": `${mobileMenuCollisionOffset}px`,
+              }}
               aria-label="Deschide meniul de navigare"
               aria-controls="app-mobile-sidebar-dialog"
               aria-expanded={isMobileSidebarOpen}

@@ -9972,7 +9972,10 @@
   .app-mobile-sidebar-trigger {
     position: fixed;
     left: calc(12px + env(safe-area-inset-left, 0px));
-    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    bottom: calc(
+      12px + env(safe-area-inset-bottom, 0px) +
+        var(--mobile-menu-collision-offset, 0px)
+    );
     z-index: 240;
     display: inline-grid;
     place-items: center;
