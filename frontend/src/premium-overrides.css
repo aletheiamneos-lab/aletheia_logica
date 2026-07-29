@@ -6029,12 +6029,12 @@
   }
 }
 
-.academic-home-page :is(a, button, input, select) {
-  min-height: 44px !important;
-}
-
 /* Homepage mobile foundation: one-column flow, no horizontal Gantt overflow. */
 @media (max-width: 768px) {
+  .academic-home-page :is(a, button, input, select) {
+    min-height: 44px !important;
+  }
+
   .academic-home-page {
     width: 100%;
     max-width: 100%;
@@ -7921,7 +7921,92 @@
   stroke-width: 2.35 !important;
 }
 
-/* Teste integrate: mobile-first exam shell and mandatory touch/accessibility floors. */
+/* Teste integrate: mobile-only exam shell and mandatory touch/accessibility floors. */
+.integrated-runner-sticky-header,
+.integrated-runner-sticky-footer {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .integrated-question-meta,
+  .integrated-runner-sticky-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .integrated-question-title {
+    margin-top: 1rem;
+    color: var(--text);
+    font-size: 1.45rem;
+    line-height: 2rem;
+  }
+
+  .integrated-question-options {
+    margin-top: 1.25rem;
+  }
+
+  .integrated-shared-text-card {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--workspace-line);
+    border-radius: 16px;
+    background: var(--surface);
+  }
+
+  .integrated-shared-text-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .integrated-text-action {
+    flex: 0 0 auto;
+  }
+
+  .integrated-shared-text-copy {
+    color: var(--text);
+    line-height: 1.62;
+    white-space: pre-wrap;
+  }
+
+  .integrated-shared-text-preview {
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+
+  .integrated-runner-question-navigation {
+    margin-bottom: 0 !important;
+  }
+
+  .integrated-runner-nav-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .integrated-runner-sticky-footer {
+    position: static;
+    width: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    backdrop-filter: none;
+  }
+
+  .integrated-runner-primary-button {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
 .integrated-tests-page,
 .integrated-test-exam-page,
 .integrated-test-runner-shell {
@@ -8309,6 +8394,7 @@
   font-size: max(1rem, 16px);
   line-height: 1.75;
   white-space: pre-wrap;
+}
 }
 
 @media (max-width: 700px) {
@@ -11417,6 +11503,7 @@
 }
 
 /* Learning 2.0: phone-first layout and explicit touch interaction floors. */
+@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
 .learning-20-page,
 .logic-map-page,
 .flash-page,
@@ -11438,7 +11525,6 @@
   max-width: 100%;
 }
 
-@media (max-width: 768px), (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
   .app-shell-auth:has(.lessons-page),
   .app-shell-auth:has(.lesson-workspace-page),
   .app-shell-auth:has(.lessons-page) :is(
