@@ -1299,17 +1299,6 @@ export function getIntegratedAttemptReport(attemptId) {
   return request(`/integrated-tests/attempts/${attemptId}/report`)
 }
 
-export function saveTeacherComment(attemptId, teacherComment) {
-  return request(`/integrated-tests/attempts/${attemptId}/comment`, {
-    method: "PUT",
-    body: JSON.stringify({ teacher_comment: teacherComment }),
-  })
-}
-
-export function getTeacherResults() {
-  return request("/integrated-tests/teacher/results")
-}
-
 export function getAdminReports() {
   return request("/admin/reports")
 }
@@ -1322,31 +1311,8 @@ export function getAdmitereAdminReports() {
   return request("/admitere/student-reports/admin")
 }
 
-export function getTeacherLiveMonitor() {
-  return request("/integrated-tests/teacher/live")
-}
-
 export function getAdminLiveAttempts() {
   return request("/admin/live-attempts")
-}
-
-export function getTeacherArchive() {
-  return request("/integrated-tests/teacher/archive")
-}
-
-export function updateTeacherMarker(studentKey, payload) {
-  return request(`/integrated-tests/teacher/markers/${encodeURIComponent(studentKey)}`, {
-    method: "PUT",
-    body: JSON.stringify(payload),
-  })
-}
-
-export function downloadAttemptFile(attemptId, fileKind) {
-  if (fileKind === "pdf") {
-    return downloadIntegratedAttemptPdf(attemptId)
-  }
-
-  return downloadFile(`/integrated-tests/attempts/${attemptId}/download/${fileKind}`)
 }
 
 export function buildIntegratedAttemptPdfDownloadUrl(attemptId) {
@@ -1359,18 +1325,6 @@ export function downloadIntegratedAttemptPdf(attemptId) {
     expectedMimeType: "application/pdf",
     fallbackFilename: "raport_evaluare.pdf",
   })
-}
-
-export function exportIntegratedAttemptReportPdf(attemptId) {
-  return downloadIntegratedAttemptPdf(attemptId)
-}
-
-export function downloadCentralizedExport() {
-  return downloadFile("/integrated-tests/teacher/export/centralized")
-}
-
-export function getAdminReport(reportId) {
-  return request(`/admin/report/${reportId}`)
 }
 
 export function sendAdminReportEmail(reportId) {
