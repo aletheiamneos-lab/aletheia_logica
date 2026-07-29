@@ -8467,35 +8467,35 @@
   }
 }
 
-/* Shared reading material in full-sheet BAC and Admitere tests.
-   These flows render every question at once, so there is no per-question
-   next button; the shared material remains pinned across its whole group. */
-.bac-subject-group,
-.admitere-group-panel,
-.admitere-shared-text {
-  overflow: visible !important;
-}
+/* Shared reading material is pinned only in the compact mobile exam flow. */
+@media (max-width: 768px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .bac-subject-group,
+  .admitere-group-panel,
+  .admitere-shared-text {
+    overflow: visible !important;
+  }
 
-.bac-shared-context,
-.admitere-shared-text {
-  position: sticky;
-  z-index: 38;
-  top: max(0px, env(safe-area-inset-top, 0px));
-}
+  .bac-shared-context,
+  .admitere-shared-text {
+    position: sticky;
+    z-index: 38;
+    top: max(0px, env(safe-area-inset-top, 0px));
+  }
 
-.bac-shared-context {
-  margin-top: 0 !important;
-  border-left: 4px solid var(--theme-secondary) !important;
-  background: color-mix(in srgb, var(--surface) 94%, white) !important;
-  box-shadow: 0 10px 26px rgba(var(--theme-secondary-rgb), 0.1) !important;
-}
+  .bac-shared-context {
+    margin-top: 0 !important;
+    border-left: 4px solid var(--theme-secondary) !important;
+    background: color-mix(in srgb, var(--surface) 94%, white) !important;
+    box-shadow: 0 10px 26px rgba(var(--theme-secondary-rgb), 0.1) !important;
+  }
 
-.admitere-shared-text {
-  margin-top: 0.75rem;
-  border-left-color: var(--theme-secondary);
-  background: color-mix(in srgb, var(--surface) 94%, white);
-  box-shadow: 0 10px 26px rgba(var(--theme-secondary-rgb), 0.1);
-  backdrop-filter: blur(16px);
+  .admitere-shared-text {
+    margin-top: 0.75rem;
+    border-left-color: var(--theme-secondary);
+    background: color-mix(in srgb, var(--surface) 94%, white);
+    box-shadow: 0 10px 26px rgba(var(--theme-secondary-rgb), 0.1);
+    backdrop-filter: blur(16px);
+  }
 }
 
 @media (max-width: 768px) {
