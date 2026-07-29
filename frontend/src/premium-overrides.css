@@ -9801,45 +9801,45 @@
   table-layout: auto;
 }
 
-.testing-responsive-table :is(th, td) {
-  min-height: 46px;
-  font-size: max(0.875rem, 14px) !important;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
-
 .integrated-tests-page .testing-catalog-actions,
 .integrated-tests-page .testing-admin-editor-actions,
 .integrated-tests-page .testing-editor-toggle-actions {
   gap: var(--integrated-touch-gap, 8px) !important;
 }
 
-.integrated-tests-page .testing-input,
-.integrated-tests-page .testing-textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.72rem 0.85rem !important;
-  line-height: 1.45;
-}
-
-.integrated-tests-page textarea.testing-input {
-  min-height: 112px !important;
-  resize: vertical;
-}
-
 .integrated-tests-page label {
   min-width: 0;
 }
 
-.integrated-tests-page input[type="checkbox"],
-.integrated-tests-page input[type="radio"] {
-  width: 46px;
-  min-width: 46px;
-  min-height: 46px !important;
-  margin: 0;
-}
-
 @media (max-width: 760px) {
+  .testing-responsive-table :is(th, td) {
+    min-height: 46px;
+    font-size: max(0.875rem, 14px) !important;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .integrated-tests-page .testing-input,
+  .integrated-tests-page .testing-textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.72rem 0.85rem !important;
+    line-height: 1.45;
+  }
+
+  .integrated-tests-page textarea.testing-input {
+    min-height: 112px !important;
+    resize: vertical;
+  }
+
+  .integrated-tests-page input[type="checkbox"],
+  .integrated-tests-page input[type="radio"] {
+    width: 46px;
+    min-width: 46px;
+    min-height: 46px !important;
+    margin: 0;
+  }
+
   .integrated-tests-page {
     gap: 0.75rem !important;
   }
@@ -10341,17 +10341,14 @@
   outline-offset: 3px !important;
 }
 
-.app-shell-auth:has(.integrated-tests-page) .app-sidebar-edge-toggle {
-  width: 46px !important;
-  min-width: 46px !important;
-  height: 46px !important;
-  min-height: 46px !important;
-}
-
 @media (max-width: 760px) {
   .app-shell-auth:has(.integrated-tests-page) .app-sidebar-edge-toggle {
     position: absolute !important;
     top: max(0.65rem, env(safe-area-inset-top, 0px)) !important;
+    width: 46px !important;
+    min-width: 46px !important;
+    height: 46px !important;
+    min-height: 46px !important;
   }
 
   .integrated-tests-page .integrated-tests-hero {
@@ -10375,6 +10372,7 @@
   display: none;
 }
 
+@media (max-width: 760px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape) {
 .academic-profile-page {
   max-width: 100%;
   overflow-x: clip;
@@ -10550,7 +10548,6 @@
   );
 }
 
-@media (max-width: 760px), (max-width: 950px) and (max-height: 520px) and (orientation: landscape) {
   .app-shell-auth:has(.academic-profile-page) .app-sidebar-edge-toggle {
     position: absolute !important;
     top: max(0.65rem, env(safe-area-inset-top, 0px)) !important;
