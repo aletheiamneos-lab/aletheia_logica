@@ -2,28 +2,18 @@ import { Fragment, useEffect, useMemo, useRef, useState } from "react"
 
 import {
   createIntegratedTest,
-  downloadAttemptFile,
-  downloadCentralizedExport,
-  getAdminReport,
   getIntegratedTestAnswerKey,
   getIntegratedTestTemplate,
   getIntegratedTests,
-  getTeacherLiveMonitor,
-  getTeacherResults,
   publishIntegratedTest,
-  previewAdminPdf,
   saveIntegratedAttemptProgress,
-  saveTeacherComment,
   saveTrackedTestProgress,
   startIntegratedAttempt,
   startTrackedTestSession,
   submitIntegratedAttempt,
   submitTrackedTestSession,
   updateIntegratedTest,
-  updateTeacherMarker,
 } from "../api/client"
-import TeacherLiveMonitorPanel from "../components/testing/TeacherLiveMonitorPanel"
-import TeacherResultsPanel from "../components/testing/TeacherResultsPanel"
 import TeacherTestEditor from "../components/testing/TeacherTestEditor"
 import IntegratedTestCatalogCard from "../components/testing/IntegratedTestCatalogCard"
 import StudentIntegratedReportPanel from "../components/testing/StudentIntegratedReportPanel"
@@ -121,11 +111,6 @@ function IntegratedTestsPage() {
     stringifyStandardIntegratedTestJson(createIntegratedTestStandardTemplate()),
   )
   const [selectedAnswerKey, setSelectedAnswerKey] = useState(null)
-  const [teacherResults, setTeacherResults] = useState([])
-  const [selectedReportId, setSelectedReportId] = useState("")
-  const [selectedAttemptId, setSelectedAttemptId] = useState("")
-  const [selectedAttemptReport, setSelectedAttemptReport] = useState(null)
-  const [liveSnapshot, setLiveSnapshot] = useState({ active_students: [] })
   const activeRunnerTestId = activeRunner?.test?.id ?? ""
   const activeStudentTestId = studentExamSession?.testId ?? ""
 
@@ -152,18 +137,6 @@ function IntegratedTestsPage() {
         }
 
         setTests(testsData)
-
-        if (isAdmin) {
-          const [resultsData, liveData] = await Promise.all([
-            getTeacherResults(),
-            getTeacherLiveMonitor(),
-          ])
-          if (!active) {
-            return
-          }
-          setTeacherResults(resultsData)
-          setLiveSnapshot(liveData)
-        }
       } catch (loadError) {
         if (active) {
           setError(loadError.message)
@@ -178,33 +151,6 @@ function IntegratedTestsPage() {
     loadPageData()
     return () => {
       active = false
-    }
-  }, [isAdmin, session?.sessionId])
-
-  useEffect(() => {
-    if (!isAdmin) {
-      return undefined
-    }
-
-    let active = true
-    const intervalId = window.setInterval(async () => {
-      try {
-        const [liveData, resultsData] = await Promise.all([
-          getTeacherLiveMonitor(),
-          getTeacherResults(),
-        ])
-        if (active) {
-          setLiveSnapshot(liveData)
-          setTeacherResults(resultsData)
-        }
-      } catch {
-        // A transient polling failure must not replace the last usable snapshot.
-      }
-    }, 5000)
-
-    return () => {
-      active = false
-      window.clearInterval(intervalId)
     }
   }, [isAdmin, session?.sessionId])
 
@@ -467,61 +413,6 @@ function IntegratedTestsPage() {
     setTests(testsData)
   }
 
-  async function refreshTeacherPanels() {
-    if (!isAdmin) {
-      return
-    }
-
-    const [resultsData, liveData] = await Promise.all([
-      getTeacherResults(),
-      getTeacherLiveMonitor(),
-    ])
-    setTeacherResults(resultsData)
-    setLiveSnapshot(liveData)
-  }
-
-  async function handleSelectAttempt(result) {
-    setError("")
-    try {
-      const payload = await getAdminReport(result.id)
-      setSelectedReportId(result.id)
-      setSelectedAttemptId(result.attemptId ?? result.attempt_id ?? "")
-      setSelectedAttemptReport(payload)
-    } catch (reportError) {
-      setError(reportError.message)
-    }
-  }
-
-  async function handleSaveTeacherComment(attemptId, teacherComment) {
-    setError("")
-    try {
-      const payload = await saveTeacherComment(attemptId, teacherComment)
-      const matchingReport = teacherResults.find(
-        (entry) => (entry.attemptId ?? entry.attempt_id) === attemptId,
-      )
-      setSelectedReportId(matchingReport?.id ?? "")
-      setSelectedAttemptId(attemptId)
-      setSelectedAttemptReport(payload.report)
-      await refreshTeacherPanels()
-    } catch (commentError) {
-      setError(commentError.message)
-    }
-  }
-
-  async function handleSaveMarker(studentKey, markerPayload) {
-    setError("")
-    try {
-      await updateTeacherMarker(studentKey, markerPayload)
-      await refreshTeacherPanels()
-    } catch (markerError) {
-      setError(markerError.message)
-    }
-  }
-
-  function handlePdfExportError(pdfError) {
-    setError(pdfError?.message || "PDF-ul nu a putut fi exportat.")
-  }
-
   async function handleRefreshStudentCatalog() {
     setError("")
     try {
@@ -635,7 +526,6 @@ function IntegratedTestsPage() {
     setStudentReportState(submission)
     setActiveRunner(null)
     await refreshTests()
-    await refreshTeacherPanels()
   }
 
   async function handleCreateBlankEditor() {
@@ -721,7 +611,6 @@ function IntegratedTestsPage() {
           : "Numele testului a fost actualizat direct din administrare.",
       )
       await refreshTests()
-      await refreshTeacherPanels()
       return updatedTest
     } catch (quickError) {
       setError(quickError.message)
@@ -766,7 +655,6 @@ function IntegratedTestsPage() {
       setSelectedAnswerKey(savedTest)
       setEditorMessage("Draft salvat in Supabase.")
       await refreshTests()
-      await refreshTeacherPanels()
     } catch (saveError) {
       setError(saveError.message)
     } finally {
@@ -801,7 +689,6 @@ function IntegratedTestsPage() {
           : "Test publicat, dar inca ascuns elevilor.",
       )
       await refreshTests()
-      await refreshTeacherPanels()
     } catch (publishError) {
       setError(publishError.message)
     } finally {
@@ -835,7 +722,6 @@ function IntegratedTestsPage() {
           : "Testul a fost ascuns din lista elevilor.",
       )
       await refreshTests()
-      await refreshTeacherPanels()
     } catch (toggleError) {
       setError(toggleError.message)
     }
@@ -1187,22 +1073,6 @@ function IntegratedTestsPage() {
               </div>
             </section>
           ) : null}
-
-          <TeacherLiveMonitorPanel snapshot={liveSnapshot} onSaveMarker={handleSaveMarker} />
-
-          <TeacherResultsPanel
-            results={teacherResults}
-            selectedReportId={selectedReportId}
-            selectedAttemptId={selectedAttemptId}
-            selectedReportPayload={selectedAttemptReport}
-            onSelectAttempt={handleSelectAttempt}
-            onSaveComment={handleSaveTeacherComment}
-            onDownloadFile={downloadAttemptFile}
-            onDownloadCentralized={downloadCentralizedExport}
-            onPreviewPdf={previewAdminPdf}
-            onExportError={handlePdfExportError}
-          />
-
         </>
       ) : null}
     </div>
