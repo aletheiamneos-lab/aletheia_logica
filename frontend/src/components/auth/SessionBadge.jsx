@@ -9,7 +9,23 @@ function SessionBadge() {
   const { session, isAdmin, logout } = useAuth()
   const [isOpen, setIsOpen] = useState(false)
   const [testProgress, setTestProgress] = useState(null)
+  const [isMobileViewport, setIsMobileViewport] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(max-width: 767px)").matches,
+  )
   const shellRef = useRef(null)
+
+  useEffect(() => {
+    const mobileViewport = window.matchMedia("(max-width: 767px)")
+
+    function handleViewportChange(event) {
+      setIsMobileViewport(event.matches)
+    }
+
+    mobileViewport.addEventListener("change", handleViewportChange)
+    return () => {
+      mobileViewport.removeEventListener("change", handleViewportChange)
+    }
+  }, [])
 
   useEffect(() => {
     function handlePointerDown(event) {
@@ -61,7 +77,7 @@ function SessionBadge() {
     navigate("/", { replace: true })
   }
 
-  if (testProgress) {
+  if (testProgress && isMobileViewport) {
     return (
       <div ref={shellRef} className="session-badge-shell">
         <div className="floating-test-progress" role="status" aria-live="polite">
