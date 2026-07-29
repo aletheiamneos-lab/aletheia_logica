@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useRef, useState } from "react"
-import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react"
+import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import { BrowserRouter, HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 
 import {
@@ -13,6 +13,7 @@ import {
 } from "./appEnvironment"
 import { subscribeToServerWakeState } from "./api/client"
 import RequireAuth from "./components/auth/RequireAuth"
+import MenuToggleButton from "./components/MenuToggleButton"
 import Navbar from "./components/Navbar"
 import SessionBadge from "./components/auth/SessionBadge"
 import { AuthProvider } from "./context/AuthContext"
@@ -23,6 +24,9 @@ const MOBILE_MENU_COLLISION_GAP = 8
 const MOBILE_MENU_AVOID_SELECTOR = [
   ".lesson-practice-tab .learning-why-shell-toggle",
   ".lesson-practice-tab .exercise-mobile-sticky-footer > button:not(:disabled)",
+  ".integrated-runner-sticky-footer > button:not(:disabled)",
+  ".exam-mobile-sticky-footer > button:not(:disabled)",
+  ".academic-report-bulk-bar button:not(:disabled)",
 ].join(",")
 
 const HomePage = lazy(() => import("./pages/HomePage"))
@@ -259,9 +263,8 @@ function AppLayout() {
   const isIntegratedExamRoute =
     isAuthenticated && location.pathname.startsWith("/teste-integrate/examen/")
   const hasSidebar = isAuthenticated && !isIntegratedExamRoute
-  const isLessonPracticeRoute = /^\/lectii\/\d+\/practica\/?$/.test(location.pathname)
   const mobileMenuCollisionOffset = useMobileMenuCollisionOffset({
-    enabled: hasSidebar && isLessonPracticeRoute,
+    enabled: hasSidebar,
     isMenuOpen: isMobileSidebarOpen,
     routeKey: location.pathname,
     triggerRef: mobileMenuButtonRef,
@@ -369,20 +372,18 @@ function AppLayout() {
         ) : null}
         {hasSidebar ? (
           <>
-            <button
+            <MenuToggleButton
               ref={mobileMenuButtonRef}
-              type="button"
-              className="app-mobile-sidebar-trigger"
-              style={{
-                "--mobile-menu-collision-offset": `${mobileMenuCollisionOffset}px`,
+              collisionOffset={mobileMenuCollisionOffset}
+              isOpen={isMobileSidebarOpen}
+              onToggle={() => {
+                if (isMobileSidebarOpen) {
+                  closeMobileSidebar()
+                  return
+                }
+                setIsMobileSidebarOpen(true)
               }}
-              aria-label="Deschide meniul de navigare"
-              aria-controls="app-mobile-sidebar-dialog"
-              aria-expanded={isMobileSidebarOpen}
-              onClick={() => setIsMobileSidebarOpen(true)}
-            >
-              <Menu aria-hidden="true" size={24} strokeWidth={2.2} />
-            </button>
+            />
             {isMobileSidebarOpen ? (
               <div
                 className="app-mobile-sidebar-overlay"
