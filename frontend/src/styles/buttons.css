@@ -937,8 +937,7 @@ body {
 }
 
 .app-shell-auth .app-sidebar-toggle,
-.app-shell-auth .app-sidebar-reveal,
-.app-shell-auth .app-sidebar-edge-toggle {
+.app-shell-auth .app-sidebar-reveal {
   width: 34px !important;
   min-width: 34px !important;
   height: 34px !important;
@@ -953,19 +952,8 @@ body {
   outline: none !important;
 }
 
-.app-shell-auth .app-sidebar-edge-toggle {
-  top: 1rem !important;
-  left: calc(var(--workspace-sidebar-width) - 17px) !important;
-}
-
-.app-shell-auth .app-sidebar-edge-toggle.is-hidden {
-  left: 0.9rem !important;
-}
-
 .app-shell-auth .app-sidebar-toggle:hover,
-.app-shell-auth .app-sidebar-reveal:hover,
-.app-shell-auth .app-sidebar-edge-toggle:hover,
-.app-shell-auth .app-sidebar-edge-toggle.is-hidden:hover {
+.app-shell-auth .app-sidebar-reveal:hover {
   border-color: rgba(15, 23, 42, 0.2) !important;
   background: #fff !important;
   color: var(--accent) !important;
@@ -977,16 +965,13 @@ body {
 .app-shell-auth .app-sidebar-toggle::before,
 .app-shell-auth .app-sidebar-toggle::after,
 .app-shell-auth .app-sidebar-reveal::before,
-.app-shell-auth .app-sidebar-reveal::after,
-.app-shell-auth .app-sidebar-edge-toggle::before,
-.app-shell-auth .app-sidebar-edge-toggle::after {
+.app-shell-auth .app-sidebar-reveal::after {
   content: none !important;
   display: none !important;
 }
 
 .app-shell-auth .app-sidebar-toggle > svg,
-.app-shell-auth .app-sidebar-reveal > svg,
-.app-shell-auth .app-sidebar-edge-toggle > svg {
+.app-shell-auth .app-sidebar-reveal > svg {
   width: 18px !important;
   height: 18px !important;
   filter: none !important;

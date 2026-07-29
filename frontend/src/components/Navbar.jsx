@@ -98,20 +98,12 @@ function SidebarLink({ item, forceActive = false, onNavigate }) {
 function SidebarBrandMark() {
   return (
     <span className="app-sidebar-brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 124 190" role="img" focusable="false">
+      <svg viewBox="0 0 56 56" role="img" focusable="false">
         <path
-          className="app-sidebar-brand-mark-frame"
-          d="M34 8h56c14.36 0 26 11.64 26 26v122c0 14.36-11.64 26-26 26H34c-14.36 0-26-11.64-26-26V34C8 19.64 19.64 8 34 8Z"
+          className="app-sidebar-brand-mark-folder"
+          d="M8 16 V44 A2 2 0 0 0 10 46 H46 A2 2 0 0 0 48 44 V20 A2 2 0 0 0 46 18 H26 L22 12 H10 A2 2 0 0 0 8 14 Z"
         />
-        <path
-          className="app-sidebar-brand-mark-fold"
-          d="M72 8 116 52"
-        />
-        <path
-          className="app-sidebar-brand-mark-fold"
-          d="M116 132 80 182"
-        />
-        <text x="63" y="130" textAnchor="middle" className="app-sidebar-brand-mark-letter">
+        <text x="28" y="37" textAnchor="middle" className="app-sidebar-brand-mark-letter">
           L
         </text>
       </svg>

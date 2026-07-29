@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useRef, useState } from "react"
-import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import { ChevronLeft, X } from "lucide-react"
 import { BrowserRouter, HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 
 import {
@@ -350,25 +350,23 @@ function AppLayout() {
         className={`app-layout-frame min-h-screen ${hasSidebar && !isSidebarHidden ? "lg:grid" : ""}`}
         style={authenticatedLayoutStyle}
       >
-        {hasSidebar && !isSidebarHidden ? (
-          <div className="app-sidebar-column lg:min-h-screen">
-            <Navbar />
-          </div>
-        ) : null}
         {hasSidebar ? (
-          <button
-            type="button"
-            className={`app-sidebar-edge-toggle ${isSidebarHidden ? "is-hidden" : "is-visible"}`}
-            aria-label={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
-            title={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
-            onClick={() => setIsSidebarHidden((current) => !current)}
+          <div
+            className={`app-sidebar-column lg:min-h-screen ${
+              isSidebarHidden ? "is-collapsed" : "is-expanded"
+            }`}
           >
-            {isSidebarHidden ? (
-              <ChevronRight size={18} strokeWidth={1.9} />
-            ) : (
-              <ChevronLeft size={18} strokeWidth={1.9} />
-            )}
-          </button>
+            {!isSidebarHidden ? <Navbar /> : null}
+            <button
+              type="button"
+              className={`app-sidebar-edge-toggle ${isSidebarHidden ? "is-hidden" : "is-visible"}`}
+              aria-label={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
+              title={isSidebarHidden ? "Afiseaza sidebar-ul" : "Ascunde sidebar-ul"}
+              onClick={() => setIsSidebarHidden((current) => !current)}
+            >
+              <ChevronLeft size={12} strokeWidth={1.9} />
+            </button>
+          </div>
         ) : null}
         {hasSidebar ? (
           <>
