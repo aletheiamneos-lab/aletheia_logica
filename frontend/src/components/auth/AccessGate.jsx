@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { lazy, Suspense, useState } from "react"
 import { GraduationCap, ShieldCheck } from "lucide-react"
 import { useLocation, useNavigate } from "react-router-dom"
 
@@ -18,18 +18,13 @@ const roleCards = [
   },
 ]
 
+const HomepageThreeScene = lazy(() => import("../homepage/HomepageThreeScene"))
+
 function AccessGateBrand() {
   return (
-    <div className="access-gate-grid-stage">
-      <div className="access-gate-brand-orbit" aria-hidden="true" />
-      <div className="access-gate-brand-mark" aria-hidden="true">
-        <GraduationCap />
-      </div>
-      <div className="access-gate-grid-ambient" aria-hidden="true" />
-      <div className="access-gate-grid-content">
-        <h1 className="access-gate-grid-title">Logica si Argumentare</h1>
-      </div>
-    </div>
+    <Suspense fallback={<div className="access-gate-three-fallback" aria-hidden="true" />}>
+      <HomepageThreeScene />
+    </Suspense>
   )
 }
 
