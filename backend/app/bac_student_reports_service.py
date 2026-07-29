@@ -3,6 +3,7 @@
 import base64
 import io
 import json
+import logging
 import re
 import unicodedata
 import uuid
@@ -19,12 +20,14 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
+from .activity_tracking_service import sync_report_attempt
 from .auth_service import resolve_unique_student_email
 from .supabase_service import get_server_supabase
 from .supabase_storage_service import download_bytes, remove_objects, upload_bytes
 
 REPORT_TABLE = "bac_student_reports"
 REPORT_STORAGE_PREFIX = "bac"
+LOGGER = logging.getLogger("uvicorn.error")
 TEACHER_SOLUTION_DIR = Path(__file__).resolve().parent / "teacher_solutions"
 TEACHER_SOLUTION_PATH = TEACHER_SOLUTION_DIR / "bac_2025_model" / "teacher_solution.json"
 FRONTEND_ZIP_DERIVED_DIR = Path(__file__).resolve().parents[2] / "frontend" / "src" / "data" / "exams" / "zipDerived"
@@ -1510,7 +1513,15 @@ def create_bac_student_report(current_user: dict, report: dict) -> dict:
         except Exception:
             pass
         raise HTTPException(status_code=502, detail=f"Raportul BAC nu a putut fi salvat in Supabase: {error}") from error
-    return _row_to_report(response.data[0])
+    saved_report = _row_to_report(response.data[0])
+    try:
+        sync_report_attempt(current_user, saved_report, source_type="bac")
+    except Exception:
+        LOGGER.exception(
+            "[Activity tracking] Raportul BAC %s nu a putut fi sincronizat",
+            report_id,
+        )
+    return saved_report
 
 
 def list_bac_student_reports(current_user: dict) -> list[dict]:

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import logging
 from datetime import datetime, timedelta, timezone
 
 from fastapi import HTTPException, Request
@@ -9,6 +10,7 @@ from .supabase_service import get_server_supabase
 
 PUBLIC_LINK_CODE = "main-public-link"
 ABANDONED_AFTER_MINUTES = 45
+LOGGER = logging.getLogger("uvicorn.error")
 
 
 def utc_now_iso() -> str:
@@ -558,6 +560,439 @@ def submit_test_session(payload: dict) -> dict:
     return {"ok": True, "test_session_id": test_session_id}
 
 
+def _source_session_id(source_type: str, source_id: str) -> str:
+    normalized_type = _normalize_text(source_type).casefold() or "test"
+    normalized_id = _normalize_text(source_id)
+    return f"source:{normalized_type}:{normalized_id}"
+
+
+def _safe_int(value, default: int = 0) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _safe_float(value, default: float = 0) -> float:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _first_value(payload: dict, *keys: str):
+    for key in keys:
+        if key in payload and payload[key] is not None:
+            return payload[key]
+    return None
+
+
+def _activity_identity(current_user: dict, session_id: str) -> dict | None:
+    if current_user.get("role") != "student":
+        return None
+
+    name = _normalize_text(
+        current_user.get("display_name")
+        or current_user.get("displayName")
+        or " ".join(
+            part
+            for part in (
+                _normalize_text(current_user.get("first_name") or current_user.get("firstName") or ""),
+                _normalize_text(current_user.get("last_name") or current_user.get("lastName") or ""),
+            )
+            if part
+        )
+    )
+    email = _normalize_optional_text(current_user.get("email"))
+    if not name:
+        return None
+
+    return identify_student(
+        {
+            "session_id": session_id,
+            "name": name,
+            "email": email,
+        },
+        record_event=False,
+    )
+
+
+def sync_external_test_attempt(
+    current_user: dict,
+    *,
+    source_type: str,
+    source_id: str,
+    test_id: str,
+    test_title: str,
+    status: str,
+    started_at: str | None = None,
+    last_activity_at: str | None = None,
+    completed_at: str | None = None,
+    score: float | int | None = None,
+    correct_answers: int | None = None,
+    wrong_answers: int | None = None,
+    total_questions: int | None = None,
+    answered_count: int | None = None,
+    current_question_index: int | None = None,
+    tracking_session_id: int | None = None,
+) -> dict | None:
+    """Mirror a real test attempt into the unified activity monitor.
+
+    The source-derived session id makes retries and historical backfills
+    idempotent without requiring an additional database migration.
+    """
+
+    if current_user.get("role") != "student":
+        return None
+
+    normalized_source_id = _normalize_text(source_id)
+    normalized_test_id = _normalize_text(test_id)
+    normalized_test_title = _normalize_text(test_title)
+    if not normalized_source_id or not normalized_test_id or not normalized_test_title:
+        return None
+
+    source_session_id = _source_session_id(source_type, normalized_source_id)
+    identity = _activity_identity(current_user, source_session_id)
+    if not identity:
+        return None
+
+    student_id = int(identity["student_id"])
+    supabase = get_server_supabase()
+    existing_rows = []
+    if tracking_session_id:
+        existing_rows = (
+            supabase.table("activity_test_sessions")
+            .select("*")
+            .eq("id", int(tracking_session_id))
+            .eq("student_id", student_id)
+            .limit(1)
+            .execute()
+            .data
+            or []
+        )
+
+    if not existing_rows:
+        existing_rows = (
+            supabase.table("activity_test_sessions")
+            .select("*")
+            .eq("session_id", source_session_id)
+            .eq("student_id", student_id)
+            .limit(1)
+            .execute()
+            .data
+            or []
+        )
+
+    normalized_status = "completed" if status == "completed" else "in_progress"
+    if not existing_rows and normalized_status == "completed":
+        existing_rows = (
+            supabase.table("activity_test_sessions")
+            .select("*")
+            .eq("student_id", student_id)
+            .eq("test_id", normalized_test_id)
+            .in_("status", ["started", "in_progress"])
+            .order("last_activity_at", desc=True)
+            .limit(1)
+            .execute()
+            .data
+            or []
+        )
+
+    now_iso = utc_now_iso()
+    normalized_started_at = started_at or now_iso
+    normalized_last_activity = last_activity_at or completed_at or now_iso
+    normalized_total = max(0, _safe_int(total_questions))
+    normalized_correct = max(0, _safe_int(correct_answers))
+    normalized_wrong = max(0, _safe_int(wrong_answers))
+    normalized_answered = max(
+        0,
+        _safe_int(
+            answered_count,
+            normalized_correct + normalized_wrong,
+        ),
+    )
+    normalized_answered = min(normalized_answered, normalized_total) if normalized_total else normalized_answered
+    progress_percent = (
+        100
+        if normalized_status == "completed"
+        else round((normalized_answered / normalized_total) * 100)
+        if normalized_total
+        else 0
+    )
+    values = {
+        "test_id": normalized_test_id,
+        "test_title": normalized_test_title,
+        "last_activity_at": normalized_last_activity,
+        "status": normalized_status,
+        "score": _safe_float(score) if score is not None else None,
+        "correct_answers": normalized_correct,
+        "wrong_answers": normalized_wrong,
+        "total_questions": normalized_total,
+        "current_question_index": max(0, _safe_int(current_question_index)),
+        "answered_count": normalized_answered,
+        "progress_percent": max(0, min(100, progress_percent)),
+    }
+    if normalized_status == "completed":
+        values["completed_at"] = completed_at or normalized_last_activity
+
+    was_created = not existing_rows
+    if existing_rows:
+        rows = (
+            supabase.table("activity_test_sessions")
+            .update(values)
+            .eq("id", existing_rows[0]["id"])
+            .execute()
+            .data
+            or existing_rows
+        )
+    else:
+        rows = (
+            supabase.table("activity_test_sessions")
+            .insert(
+                {
+                    "student_id": student_id,
+                    "session_id": source_session_id,
+                    "started_at": normalized_started_at,
+                    **values,
+                }
+            )
+            .execute()
+            .data
+            or []
+        )
+    if not rows:
+        raise _error(502, "Incercarea nu a putut fi sincronizata in monitorizare.")
+
+    session_row = rows[0]
+    test_session_id = int(session_row["id"])
+    if was_created:
+        supabase.table("activity_events").insert(
+            {
+                "student_id": student_id,
+                "session_id": session_row["session_id"],
+                "test_session_id": test_session_id,
+                "event_type": "test_started",
+                "event_data": {
+                    "test_id": normalized_test_id,
+                    "test_title": normalized_test_title,
+                    "source_type": source_type,
+                    "source_id": normalized_source_id,
+                },
+                "created_at": normalized_started_at,
+            }
+        ).execute()
+
+    if normalized_status == "completed":
+        submitted_events = (
+            supabase.table("activity_events")
+            .select("id")
+            .eq("test_session_id", test_session_id)
+            .eq("event_type", "test_submitted")
+            .limit(1)
+            .execute()
+            .data
+            or []
+        )
+        if not submitted_events:
+            supabase.table("activity_events").insert(
+                {
+                    "student_id": student_id,
+                    "session_id": session_row["session_id"],
+                    "test_session_id": test_session_id,
+                    "event_type": "test_submitted",
+                    "event_data": {
+                        "score": values["score"],
+                        "correct_answers": normalized_correct,
+                        "wrong_answers": normalized_wrong,
+                        "total_questions": normalized_total,
+                        "source_type": source_type,
+                        "source_id": normalized_source_id,
+                    },
+                    "created_at": values["completed_at"],
+                }
+            ).execute()
+
+    return {
+        "test_session_id": test_session_id,
+        "student_id": student_id,
+        "status": normalized_status,
+    }
+
+
+def sync_integrated_attempt(
+    current_user: dict,
+    attempt_row: dict,
+    test_title: str,
+    *,
+    total_questions: int,
+) -> dict | None:
+    raw_answers = _decode_json(attempt_row.get("raw_answers"), {})
+    answers = _decode_json(raw_answers.get("answers"), {})
+    if "answers" not in raw_answers:
+        answers = {
+            str(key): value
+            for key, value in raw_answers.items()
+            if not str(key).startswith("_")
+        }
+    meta = _decode_json(raw_answers.get("_meta"), {})
+    questions = _decode_json(meta.get("question_snapshot"), [])
+    correct_answers = sum(
+        1
+        for question in questions
+        if str(question.get("id")) in answers
+        and answers[str(question.get("id"))] == question.get("correct_option_index")
+    )
+    wrong_answers = max(len(answers) - correct_answers, 0)
+    normalized_status = (
+        "completed"
+        if str(attempt_row.get("status") or "").lower() in {"submitted", "graded", "finalized"}
+        else "in_progress"
+    )
+    return sync_external_test_attempt(
+        current_user,
+        source_type="integrated",
+        source_id=str(attempt_row["id"]),
+        test_id=str(attempt_row["test_id"]),
+        test_title=test_title,
+        status=normalized_status,
+        started_at=attempt_row.get("started_at") or attempt_row.get("created_at"),
+        last_activity_at=attempt_row.get("updated_at"),
+        completed_at=attempt_row.get("submitted_at"),
+        score=attempt_row.get("score_total"),
+        correct_answers=correct_answers,
+        wrong_answers=wrong_answers,
+        total_questions=total_questions,
+        answered_count=len(answers),
+        current_question_index=_safe_int(meta.get("current_question_index")),
+    )
+
+
+def sync_report_attempt(
+    current_user: dict,
+    report: dict,
+    *,
+    source_type: str,
+) -> dict | None:
+    report_id = str(report.get("id") or report.get("reportId") or "")
+    test_title = str(
+        report.get("testTitle")
+        or report.get("test_title")
+        or report.get("examTitle")
+        or f"Test {source_type.upper()}"
+    )
+    raw_test_id = str(
+        report.get("testId")
+        or report.get("test_id")
+        or report.get("examId")
+        or report.get("exam_id")
+        or report.get("testSlug")
+        or report.get("test_slug")
+        or report_id
+    )
+    tracking_session_id = _safe_int(
+        _first_value(report, "trackingTestSessionId", "tracking_test_session_id")
+    )
+    total_questions = _safe_int(
+        _first_value(
+            report,
+            "totalQuestions",
+            "total_questions",
+            "totalItems",
+            "total_items",
+        )
+    )
+    correct_answers = _safe_int(
+        _first_value(report, "correctCount", "correct_count", "score")
+    )
+    wrong_answers = _safe_int(
+        _first_value(report, "wrongCount", "wrong_count"),
+        max(total_questions - correct_answers, 0),
+    )
+    answered_count = _safe_int(
+        _first_value(report, "answeredCount", "answered_count"),
+        correct_answers + wrong_answers,
+    )
+    return sync_external_test_attempt(
+        current_user,
+        source_type=source_type,
+        source_id=report_id,
+        test_id=f"{source_type}:{raw_test_id}",
+        test_title=test_title,
+        status="completed",
+        started_at=report.get("startedAt") or report.get("started_at"),
+        last_activity_at=report.get("submittedAt") or report.get("submitted_at"),
+        completed_at=report.get("submittedAt") or report.get("submitted_at"),
+        score=_first_value(report, "scorePercent", "score_percentage", "percentage"),
+        correct_answers=correct_answers,
+        wrong_answers=wrong_answers,
+        total_questions=total_questions,
+        answered_count=answered_count,
+        current_question_index=max(total_questions - 1, 0),
+        tracking_session_id=tracking_session_id or None,
+    )
+
+
+def backfill_historical_activity_attempts() -> dict:
+    """Idempotently imports persisted student results into monitorizare."""
+
+    supabase = get_server_supabase()
+    imported = {"integrated": 0, "bac": 0, "admitere": 0}
+    tests = supabase.table("tests").select("id,title").execute().data or []
+    test_titles = {str(row["id"]): str(row.get("title") or "Test integrat") for row in tests}
+    attempts = supabase.table("attempts").select("*").execute().data or []
+    for row in attempts:
+        raw_answers = _decode_json(row.get("raw_answers"), {})
+        meta = _decode_json(raw_answers.get("_meta"), {})
+        if meta.get("role") != "student":
+            continue
+        current_user = {
+            "role": "student",
+            "session_id": meta.get("session_id") or _source_session_id("integrated", str(row["id"])),
+            "display_name": row.get("student_name") or "Elev",
+            "email": row.get("student_email") or "",
+            "first_name": meta.get("student_first_name") or "",
+            "last_name": meta.get("student_last_name") or "",
+        }
+        questions = _decode_json(meta.get("question_snapshot"), [])
+        sync_integrated_attempt(
+            current_user,
+            row,
+            test_titles.get(str(row.get("test_id")), "Test integrat"),
+            total_questions=len(questions),
+        )
+        imported["integrated"] += 1
+
+    for source_type, table_name in (
+        ("bac", "bac_student_reports"),
+        ("admitere", "admitere_student_reports"),
+    ):
+        try:
+            report_rows = supabase.table(table_name).select("*").execute().data or []
+        except Exception:
+            LOGGER.exception("[Activity backfill] Tabela %s nu a putut fi citita", table_name)
+            continue
+        for row in report_rows:
+            email = _normalize_optional_text(row.get("student_email"))
+            payload = _decode_json(row.get("payload"), {})
+            if not email:
+                continue
+            report = {
+                **payload,
+                "id": str(row.get("id") or payload.get("id") or ""),
+                "submittedAt": row.get("submitted_at") or payload.get("submittedAt"),
+            }
+            current_user = {
+                "role": "student",
+                "session_id": _source_session_id(source_type, report["id"]),
+                "display_name": row.get("student_name") or payload.get("studentName") or "Elev",
+                "email": email,
+            }
+            sync_report_attempt(current_user, report, source_type=source_type)
+            imported[source_type] += 1
+
+    return imported
+
+
 def _serialize_recent_event(
     row: dict,
     students_by_id: dict[int, dict],
@@ -654,6 +1089,7 @@ def get_admin_activity_overview(current_user: dict) -> dict:
     return {
         "total_activations": len(activations),
         "identified_students": len(students),
+        "total_test_sessions": len(sessions),
         "active_test_sessions": active_test_sessions,
         "completed_tests": sum(1 for row in sessions if row.get("status") == "completed"),
         "recent_activity": [

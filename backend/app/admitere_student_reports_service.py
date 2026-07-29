@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 import math
 import re
 import unicodedata
@@ -17,6 +18,7 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
+from .activity_tracking_service import sync_report_attempt
 from .admitere_report_pdf import build_admitere_pdf_report
 from .auth_service import resolve_unique_student_email
 from .supabase_service import get_server_supabase
@@ -24,6 +26,7 @@ from .supabase_storage_service import download_bytes, remove_objects, upload_byt
 
 REPORT_TABLE = "admitere_student_reports"
 REPORT_STORAGE_PREFIX = "admitere"
+LOGGER = logging.getLogger("uvicorn.error")
 
 PAGE_W, PAGE_H = A4
 MARGIN = 28
@@ -881,7 +884,15 @@ def create_admitere_student_report(current_user: dict, report: dict) -> dict:
         except Exception:
             pass
         raise HTTPException(status_code=502, detail=f"Raportul Admitere nu a putut fi salvat in Supabase: {error}") from error
-    return _row_to_report(response.data[0])
+    saved_report = _row_to_report(response.data[0])
+    try:
+        sync_report_attempt(current_user, saved_report, source_type="admitere")
+    except Exception:
+        LOGGER.exception(
+            "[Activity tracking] Raportul Admitere %s nu a putut fi sincronizat",
+            report_id,
+        )
+    return saved_report
 
 
 def _row_to_report(row: dict) -> dict:

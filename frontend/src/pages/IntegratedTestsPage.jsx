@@ -7,11 +7,8 @@ import {
   getIntegratedTests,
   publishIntegratedTest,
   saveIntegratedAttemptProgress,
-  saveTrackedTestProgress,
   startIntegratedAttempt,
-  startTrackedTestSession,
   submitIntegratedAttempt,
-  submitTrackedTestSession,
   updateIntegratedTest,
 } from "../api/client"
 import TeacherTestEditor from "../components/testing/TeacherTestEditor"
@@ -429,14 +426,7 @@ function IntegratedTestsPage() {
 
       try {
         const data = await startIntegratedAttempt(test.id)
-        let trackingSessionId = null
-
-        try {
-          const trackingSession = await startTrackedTestSession(test.id, test.title)
-          trackingSessionId = trackingSession?.test_session_id ?? null
-        } catch {
-          trackingSessionId = null
-        }
+        const trackingSessionId = data.tracking_session_id ?? null
 
         const targetUrl = buildIntegratedExamUrl(data.attempt.id, trackingSessionId)
         if (popupWindow && !popupWindow.closed) {
@@ -476,22 +466,6 @@ function IntegratedTestsPage() {
 
   async function handleRunnerProgress(payload) {
     const updatedAttempt = await saveIntegratedAttemptProgress(activeRunner.attempt.id, payload)
-    const answeredCount = Object.keys(payload.answers ?? updatedAttempt.answers ?? {}).length
-
-    if (session?.role === "student" && activeRunner.trackingSessionId && payload.track_activity) {
-      try {
-        await saveTrackedTestProgress({
-          testSessionId: activeRunner.trackingSessionId,
-          questionIndex: payload.current_question_index,
-          selectedAnswer: payload.selected_answer ?? null,
-          answeredCount,
-          totalQuestions: activeRunner.test.questions.length,
-          eventType: payload.event_type ?? "answer_saved",
-        })
-      } catch {
-        // Tracking failures should not block the test flow.
-      }
-    }
 
     setActiveRunner((current) => ({
       ...current,
@@ -502,26 +476,6 @@ function IntegratedTestsPage() {
   async function handleRunnerSubmit() {
     const runnerState = activeRunner
     const submission = await submitIntegratedAttempt(runnerState.attempt.id)
-
-    if (session?.role === "student" && runnerState.trackingSessionId) {
-      try {
-        await submitTrackedTestSession({
-          testSessionId: runnerState.trackingSessionId,
-          score: submission.score ?? 0,
-          correctAnswers:
-            submission.attempt?.correctCount ??
-            submission.attempt?.correct_count ??
-            0,
-          wrongAnswers:
-            submission.attempt?.wrongCount ??
-            submission.attempt?.wrong_count ??
-            0,
-          totalQuestions: runnerState.test.questions.length,
-        })
-      } catch {
-        // Tracking failures should not block the final report display.
-      }
-    }
 
     setStudentReportState(submission)
     setActiveRunner(null)

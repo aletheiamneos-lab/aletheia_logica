@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 
 import {
   downloadAdmitereStudentReportPdf,
+  saveTrackedTestProgress,
+  startTrackedTestSession,
   submitAdmitereStudentReport,
 } from "../../api/client"
 import {
@@ -388,6 +390,11 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
   const [startedAt, setStartedAt] = useState(() => Date.now())
   const [submittedAt, setSubmittedAt] = useState(null)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [trackingSessionId, setTrackingSessionId] = useState(null)
+  const [trackingAttemptVersion, setTrackingAttemptVersion] = useState(0)
+  const hasTrackingTest = Boolean(test)
+  const trackingTestId = `admitere:${test?.id ?? moduleEntry?.testId ?? moduleEntry?.slug ?? "test"}`
+  const trackingTestTitle = moduleEntry?.title ?? test?.title ?? "Test Admitere"
 
   useEffect(() => {
     if (!test || hasSubmitted) {
@@ -415,6 +422,36 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
       clearTestProgress()
     }
   }, [])
+
+  useEffect(() => {
+    if (session?.role !== "student" || !hasTrackingTest || hasSubmitted) {
+      return undefined
+    }
+
+    let isCancelled = false
+    startTrackedTestSession(trackingTestId, trackingTestTitle)
+      .then((result) => {
+        if (!isCancelled) {
+          setTrackingSessionId(result?.test_session_id ?? null)
+        }
+      })
+      .catch(() => {
+        if (!isCancelled) {
+          setTrackingSessionId(null)
+        }
+      })
+
+    return () => {
+      isCancelled = true
+    }
+  }, [
+    hasSubmitted,
+    hasTrackingTest,
+    session?.role,
+    trackingAttemptVersion,
+    trackingTestId,
+    trackingTestTitle,
+  ])
 
   const score = gradeAdmitereTest(test, answersByQuestionId)
   const groups = getAdmitereQuestionGroups(test)
@@ -480,10 +517,27 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
       return
     }
 
-    setAnswersByQuestionId((currentAnswers) => ({
-      ...currentAnswers,
-      [question.id]: toggleQuestionAnswer(question, currentAnswers[question.id] ?? [], answerKey),
-    }))
+    setAnswersByQuestionId((currentAnswers) => {
+      const nextAnswers = {
+        ...currentAnswers,
+        [question.id]: toggleQuestionAnswer(
+          question,
+          currentAnswers[question.id] ?? [],
+          answerKey,
+        ),
+      }
+      if (trackingSessionId) {
+        const nextScore = gradeAdmitereTest(test, nextAnswers)
+        void saveTrackedTestProgress({
+          testSessionId: trackingSessionId,
+          questionIndex: questionIndexById[question.id] ?? 0,
+          selectedAnswer: String(answerKey ?? "").slice(0, 20) || null,
+          answeredCount: nextScore.answeredCount,
+          totalQuestions: nextScore.totalQuestions,
+        }).catch(() => {})
+      }
+      return nextAnswers
+    })
   }
 
   async function handleFinalize() {
@@ -492,16 +546,20 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
     }
 
     const submittedTimestamp = Date.now()
-    const nextReportPayload = buildAdmitereReportPayload({
-      displayGroups: reportGroups,
-      moduleEntry,
-      questions,
-      score,
-      session,
-      startedAt,
-      submittedTimestamp,
-      test,
-    })
+    const nextReportPayload = {
+      ...buildAdmitereReportPayload({
+        displayGroups: reportGroups,
+        moduleEntry,
+        questions,
+        score,
+        session,
+        startedAt,
+        submittedTimestamp,
+        test,
+      }),
+      trackingTestSessionId: trackingSessionId,
+      tracking_test_session_id: trackingSessionId,
+    }
 
     setSubmittedAt(submittedTimestamp)
     setFinalizedReportPayload(nextReportPayload)
@@ -533,6 +591,8 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
     setStartedAt(Date.now())
     setSubmittedAt(null)
     setCurrentQuestionIndex(0)
+    setTrackingSessionId(null)
+    setTrackingAttemptVersion((current) => current + 1)
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
 
