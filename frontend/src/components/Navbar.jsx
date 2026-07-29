@@ -239,8 +239,12 @@ function Navbar({ onHide, onNavigate }) {
                 </NavLink>
               )}
 
-              <div className="compact-inline-actions mt-3">
-                <button className="btn-secondary" type="button" onClick={handleLogout}>
+              <div className="app-sidebar-logout-actions compact-inline-actions mt-3">
+                <button
+                  className="app-sidebar-logout-button btn-secondary"
+                  type="button"
+                  onClick={handleLogout}
+                >
                   Logout
                 </button>
               </div>

@@ -1,5 +1,5 @@
 import { Suspense, lazy, useEffect, useRef, useState } from "react"
-import { ChevronLeft, X } from "lucide-react"
+import { ChevronLeft } from "lucide-react"
 import { BrowserRouter, HashRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 
 import {
@@ -399,15 +399,6 @@ function AppLayout() {
                   aria-modal="true"
                   aria-label="Meniu de navigare"
                 >
-                  <button
-                    type="button"
-                    className="app-mobile-sidebar-close"
-                    aria-label="Inchide meniul de navigare"
-                    autoFocus
-                    onClick={() => closeMobileSidebar({ restoreFocus: true })}
-                  >
-                    <X aria-hidden="true" size={24} strokeWidth={2.2} />
-                  </button>
                   <Navbar onNavigate={() => closeMobileSidebar()} />
                 </section>
               </div>

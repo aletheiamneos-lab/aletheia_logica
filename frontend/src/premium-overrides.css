@@ -155,6 +155,7 @@
 
 .app-shell-auth .app-sidebar-column {
   position: relative;
+  z-index: 79;
   background: var(--workspace-sidebar-background) !important;
   border-right: 3px solid rgba(15, 23, 42, 0.16) !important;
   box-shadow: 12px 0 30px rgba(15, 23, 42, 0.1) !important;
@@ -752,10 +753,10 @@
 }
 
 .app-shell-auth .app-sidebar-edge-toggle {
-  position: absolute;
-  top: 50%;
-  right: -1px;
-  left: auto;
+  position: fixed;
+  top: 50dvh;
+  right: auto;
+  left: calc(var(--workspace-sidebar-width) - 11px);
   z-index: 80;
   display: inline-grid !important;
   place-items: center !important;
@@ -765,11 +766,12 @@
   min-height: 44px !important;
   padding: 0 !important;
   border: 1px solid var(--workspace-sidebar-line) !important;
-  border-right: none !important;
-  border-radius: 10px 0 0 10px !important;
+  border-radius: 10px !important;
   background: #ffffff !important;
-  color: var(--workspace-sidebar-muted) !important;
-  box-shadow: -2px 0 6px rgba(22, 33, 62, 0.06) !important;
+  color: var(--workspace-sidebar-heading) !important;
+  box-shadow:
+    -2px 0 6px rgba(22, 33, 62, 0.08),
+    2px 2px 8px rgba(22, 33, 62, 0.08) !important;
   pointer-events: auto;
   transform: translateY(-50%);
   transition:
@@ -783,7 +785,9 @@
   border-color: var(--workspace-sidebar-line) !important;
   background: var(--surface-soft) !important;
   color: var(--workspace-sidebar-heading) !important;
-  box-shadow: -2px 0 6px rgba(22, 33, 62, 0.06) !important;
+  box-shadow:
+    -2px 0 6px rgba(22, 33, 62, 0.1),
+    2px 2px 8px rgba(22, 33, 62, 0.1) !important;
   transform: translateY(-50%);
 }
 
@@ -801,6 +805,10 @@
 
 .app-shell-auth .app-sidebar-edge-toggle.is-hidden > svg {
   transform: rotate(180deg);
+}
+
+.app-shell-auth .app-sidebar-edge-toggle.is-hidden {
+  left: 11px;
 }
 
 .app-shell-auth .panel,
@@ -10071,8 +10079,7 @@
     transform: rotate(-45deg);
   }
 
-  .app-mobile-sidebar-trigger:focus-visible,
-  .app-mobile-sidebar-close:focus-visible {
+  .app-mobile-sidebar-trigger:focus-visible {
     outline: 3px solid color-mix(in srgb, var(--accent) 62%, white);
     outline-offset: 3px;
   }
@@ -10112,26 +10119,6 @@
     animation: app-mobile-sidebar-panel-in 190ms ease-out both;
   }
 
-  .app-mobile-sidebar-close {
-    position: absolute;
-    top: calc(12px + env(safe-area-inset-top, 0px));
-    right: calc(12px + env(safe-area-inset-right, 0px));
-    z-index: 4;
-    display: inline-grid;
-    place-items: center;
-    width: 48px;
-    min-width: 48px;
-    height: 48px;
-    min-height: 48px;
-    padding: 0;
-    border: 1px solid var(--workspace-sidebar-toggle-border);
-    border-radius: 999px;
-    background: var(--workspace-sidebar-toggle-bg);
-    color: var(--workspace-sidebar-heading);
-    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
-    -webkit-tap-highlight-color: transparent;
-  }
-
   .app-mobile-sidebar-panel > .app-sidebar {
     display: flex;
     flex-direction: column;
@@ -10145,7 +10132,6 @@
   .app-mobile-sidebar-panel .app-sidebar-header {
     flex: 0 0 auto;
     min-height: 72px;
-    padding-right: 72px !important;
   }
 
   .app-mobile-sidebar-panel .app-sidebar-body {
@@ -10191,13 +10177,20 @@
     margin-top: 8px;
   }
 
-  .app-mobile-sidebar-panel .compact-inline-actions {
-    display: grid;
-    gap: 8px;
+  .app-mobile-sidebar-panel .app-sidebar-logout-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    padding-left: 62px;
+    padding-right: 0;
   }
 
-  .app-mobile-sidebar-panel .compact-inline-actions > button {
+  .app-mobile-sidebar-panel .app-sidebar-logout-button {
+    width: 112px;
+    min-width: 112px;
+    max-width: 112px;
     min-height: 48px;
+    padding-inline: 16px;
     font-size: max(0.9375rem, 15px);
   }
 }
