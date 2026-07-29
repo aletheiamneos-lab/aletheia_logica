@@ -47,6 +47,12 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 FRONTEND_DIST = PROJECT_ROOT / "frontend" / "dist"
 FRONTEND_ASSETS = FRONTEND_DIST / "assets"
 INDEX_FILE = FRONTEND_DIST / "index.html"
+ALLOWED_CORS_ORIGINS = [
+    "https://amentor.ro",
+    "https://www.amentor.ro",
+    "http://127.0.0.1:5173",
+    "http://localhost:5173",
+]
 LAN_ORIGIN_REGEX = (
     r"^https?://("
     r"localhost"
@@ -71,7 +77,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    allow_origins=ALLOWED_CORS_ORIGINS,
     allow_origin_regex=LAN_ORIGIN_REGEX,
     allow_credentials=True,
     allow_methods=["*"],
