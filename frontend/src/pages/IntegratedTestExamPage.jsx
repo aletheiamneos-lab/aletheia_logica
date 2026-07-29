@@ -1,13 +1,11 @@
 import { useEffect, useRef, useState } from "react"
-import { Navigate, useParams, useSearchParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 
 import {
   getIntegratedAttempt,
   getIntegratedAttemptReport,
   saveIntegratedAttemptProgress,
-  saveTrackedTestProgress,
   submitIntegratedAttempt,
-  submitTrackedTestSession,
 } from "../api/client"
 import StudentIntegratedReportPanel from "../components/testing/StudentIntegratedReportPanel"
 import IntegratedTestRunner from "../components/testing/IntegratedTestRunner"
@@ -53,7 +51,6 @@ function closeExamWindow() {
 function IntegratedTestExamPage() {
   const { session } = useAuth()
   const { attemptId = "" } = useParams()
-  const [searchParams] = useSearchParams()
   const [runnerState, setRunnerState] = useState(null)
   const [reportPayload, setReportPayload] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
@@ -65,7 +62,6 @@ function IntegratedTestExamPage() {
   const guardNoticeTimeoutRef = useRef(null)
   const allowWindowCloseRef = useRef(false)
   const guardArmedAtRef = useRef(0)
-  const trackingSessionId = searchParams.get("tracking") ?? ""
   const isExamGuardActive = Boolean(runnerState && !reportPayload && !isLoading && !error)
 
   useEffect(() => {
@@ -254,22 +250,6 @@ function IntegratedTestExamPage() {
     }
 
     const updatedAttempt = await saveIntegratedAttemptProgress(attemptId, payload)
-    const answeredCount = Object.keys(payload.answers ?? updatedAttempt.answers ?? {}).length
-
-    if (trackingSessionId && payload.track_activity) {
-      try {
-        await saveTrackedTestProgress({
-          testSessionId: trackingSessionId,
-          questionIndex: payload.current_question_index,
-          selectedAnswer: payload.selected_answer ?? null,
-          answeredCount,
-          totalQuestions: runnerState.test.questions.length,
-          eventType: payload.event_type ?? "answer_saved",
-        })
-      } catch {
-        // Tracking failures should not block the student attempt.
-      }
-    }
 
     setRunnerState((current) =>
       current
@@ -287,26 +267,6 @@ function IntegratedTestExamPage() {
     }
 
     const submission = await submitIntegratedAttempt(attemptId)
-
-    if (trackingSessionId) {
-      try {
-        await submitTrackedTestSession({
-          testSessionId: trackingSessionId,
-          score: submission.score ?? 0,
-          correctAnswers:
-            submission.attempt?.correctCount ??
-            submission.attempt?.correct_count ??
-            0,
-          wrongAnswers:
-            submission.attempt?.wrongCount ??
-            submission.attempt?.wrong_count ??
-            0,
-          totalQuestions: runnerState.test.questions.length,
-        })
-      } catch {
-        // Tracking failures should not block the final report.
-      }
-    }
 
     setRunnerState((current) =>
       current

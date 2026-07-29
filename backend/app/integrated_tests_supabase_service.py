@@ -9,6 +9,7 @@ import zipfile
 from fastapi import HTTPException
 from postgrest.exceptions import APIError
 
+from .activity_tracking_service import sync_integrated_attempt
 from .auth_service import compute_initials, normalize_student_key, utc_now_iso
 from .reporting_service import (
     build_attempt_report_payload,
@@ -896,7 +897,17 @@ def start_attempt(current_user: dict, test_id: str) -> dict:
     public_questions = [_public_question(question) for question in private_questions]
     test = _test_from_row(test_row, private_questions)
     test["questions"] = public_questions
-    return {"attempt": _attempt_from_row(attempt_row, private_questions), "test": test}
+    tracking = sync_integrated_attempt(
+        current_user,
+        attempt_row,
+        str(test_row.get("title") or "Test integrat"),
+        total_questions=len(private_questions),
+    )
+    return {
+        "attempt": _attempt_from_row(attempt_row, private_questions),
+        "test": test,
+        "tracking_session_id": tracking.get("test_session_id") if tracking else None,
+    }
 
 
 def update_attempt_progress(current_user: dict, attempt_id: str, payload: dict) -> dict:
@@ -948,6 +959,13 @@ def update_attempt_progress(current_user: dict, attempt_id: str, payload: dict) 
         )
     except Exception as error:
         raise _api_error(error, "Progresul nu a putut fi salvat") from error
+    test_row = _fetch_test(str(updated["test_id"]))
+    sync_integrated_attempt(
+        current_user,
+        updated,
+        str(test_row.get("title") or "Test integrat"),
+        total_questions=len(questions),
+    )
     return _attempt_from_row(updated, questions)
 
 
@@ -1052,6 +1070,13 @@ def submit_attempt(current_user: dict, attempt_id: str) -> dict:
     except Exception as error:
         raise _api_error(error, "Incercarea nu a putut fi finalizata") from error
     attempt = _attempt_from_row(updated, questions)
+    test_row = _fetch_test(str(updated["test_id"]))
+    sync_integrated_attempt(
+        current_user,
+        updated,
+        str(test_row.get("title") or "Test integrat"),
+        total_questions=len(questions),
+    )
     report, _ = _build_report(updated, persist_files=current_user["role"] == "student")
     return {
         "status": "submitted",

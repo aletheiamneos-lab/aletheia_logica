@@ -427,6 +427,7 @@ function ProfilePage() {
   const [overview, setOverview] = useState({
     total_activations: 0,
     identified_students: 0,
+    total_test_sessions: 0,
     active_test_sessions: 0,
     completed_tests: 0,
     recent_activity: [],
@@ -1047,9 +1048,9 @@ function ProfilePage() {
       totalActivations: Number(overview.total_activations ?? 0),
       identifiedStudents: students.length,
       activeTestSessions: Number(overview.active_test_sessions ?? 0),
-      completedTests: reports.length,
+      completedTests: Number(overview.completed_tests ?? 0),
     }),
-    [overview, reports.length, students.length],
+    [overview, students.length],
   )
   const reportNoRowsLabel =
     activeCategoryTotal > 0 && activeSearchQuery.trim()
@@ -1268,7 +1269,12 @@ function ProfilePage() {
               Monitorizare curenta pentru utilizatorii non-admin
             </h2>
           </div>
-          <span className="academic-monitor-count">{`${students.length} elevi urmariti`}</span>
+          <div className="flex flex-wrap items-center justify-end gap-2">
+            <span className="academic-monitor-count">{`${students.length} elevi urmariti`}</span>
+            <span className="academic-monitor-count">
+              {`${Number(overview.total_test_sessions ?? 0)} incercari inregistrate`}
+            </span>
+          </div>
         </div>
 
         {!isReportsMobileLayout ? (

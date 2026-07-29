@@ -5,6 +5,8 @@ import { Brush, Circle, Eraser, FileText, ListChecks, Move, PenLine, RotateCcw, 
 import {
   downloadBacStudentReportPdf,
   getBacTeacherSolution,
+  saveTrackedTestProgress,
+  startTrackedTestSession,
   submitBacStudentReport,
 } from "../../api/client"
 import { useAuth } from "../../context/useAuth"
@@ -1763,8 +1765,12 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
   const [teacherSolutionError, setTeacherSolutionError] = useState("")
   const [isTeacherSolutionLoading, setIsTeacherSolutionLoading] = useState(false)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+  const [trackingSessionId, setTrackingSessionId] = useState(null)
+  const [trackingAttemptVersion, setTrackingAttemptVersion] = useState(0)
   const exam = moduleData.answerSheet
   const items = useMemo(() => collectItems(exam), [exam])
+  const trackingTestId = `bac:${exam.examId ?? exam.id ?? moduleSlug}`
+  const trackingTestTitle = exam.title ?? moduleEntry.title ?? "Test BAC"
   const mobileItemEntries = useMemo(
     () => resolveMobileItemEntries(exam, items),
     [exam, items],
@@ -1803,22 +1809,69 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
     return () => clearTestProgress()
   }, [answeredCount, currentQuestionIndex, exam.title, items.length, progressValue])
 
+  useEffect(() => {
+    if (session?.role !== "student" || !items.length || isFinalized) {
+      return undefined
+    }
+
+    let isCancelled = false
+    startTrackedTestSession(trackingTestId, trackingTestTitle)
+      .then((result) => {
+        if (!isCancelled) {
+          setTrackingSessionId(result?.test_session_id ?? null)
+        }
+      })
+      .catch(() => {
+        if (!isCancelled) {
+          setTrackingSessionId(null)
+        }
+      })
+
+    return () => {
+      isCancelled = true
+    }
+  }, [
+    isFinalized,
+    items.length,
+    session?.role,
+    trackingAttemptVersion,
+    trackingTestId,
+    trackingTestTitle,
+  ])
+
   function handleAnswerChange(itemId, key, value) {
     if (isFinalized) {
       return
     }
 
-    setAnswers((current) => ({
-      ...current,
-      [itemId]: {
-        ...(current[itemId] ?? {}),
-        [key]: value,
-      },
-    }))
+    setAnswers((current) => {
+      const nextAnswers = {
+        ...current,
+        [itemId]: {
+          ...(current[itemId] ?? {}),
+          [key]: value,
+        },
+      }
+      if (trackingSessionId) {
+        const nextAnsweredCount = items.filter((item) => isItemAnswered(item, nextAnswers)).length
+        void saveTrackedTestProgress({
+          testSessionId: trackingSessionId,
+          questionIndex: Math.max(0, items.findIndex((item) => item.id === itemId)),
+          selectedAnswer: String(value ?? "").slice(0, 20) || null,
+          answeredCount: nextAnsweredCount,
+          totalQuestions: items.length,
+        }).catch(() => {})
+      }
+      return nextAnswers
+    })
   }
 
   async function handleFinalizeExam() {
-    const report = buildStudentSubmissionReport(exam, answers, session, new Date().toISOString())
+    const report = {
+      ...buildStudentSubmissionReport(exam, answers, session, new Date().toISOString()),
+      trackingTestSessionId: trackingSessionId,
+      tracking_test_session_id: trackingSessionId,
+    }
     const message =
       report.missingCount > 0
         ? `Ai ${report.missingCount} cerinte necompletate. Vrei sa finalizezi testul acum?`
@@ -1857,6 +1910,8 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
     setReportSyncMessage("")
     setFinalizedReportPayload(null)
     setCurrentQuestionIndex(0)
+    setTrackingSessionId(null)
+    setTrackingAttemptVersion((current) => current + 1)
   }
 
   function handleMobileNavigate(nextIndex) {

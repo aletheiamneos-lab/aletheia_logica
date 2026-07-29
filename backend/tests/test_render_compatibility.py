@@ -282,6 +282,7 @@ class RenderCompatibilityTests(unittest.TestCase):
             )
 
         self.assertEqual(overview["identified_students"], 1)
+        self.assertEqual(overview["total_test_sessions"], 1)
         self.assertEqual(overview["completed_tests"], 1)
         self.assertEqual(detail["test_sessions"][0]["status"], "completed")
         self.assertEqual(detail["test_sessions"][0]["score"], 80)
@@ -290,6 +291,66 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertEqual(session_row["wrong_answers"], 2)
         self.assertEqual(session_row["answered_count"], 10)
         self.assertEqual(session_row["progress_percent"], 100)
+
+    def test_external_attempt_sync_is_idempotent_and_counts_every_attempt(self):
+        current_user = {
+            "role": "student",
+            "session_id": "student-session",
+            "display_name": "Elev Cu Istoric",
+            "email": "istoric@example.com",
+        }
+        with patch.object(
+            activity_tracking_service,
+            "get_server_supabase",
+            return_value=self.supabase,
+        ):
+            first = activity_tracking_service.sync_external_test_attempt(
+                current_user,
+                source_type="bac",
+                source_id="bac-report-1",
+                test_id="bac:model-2025",
+                test_title="Model BAC 2025",
+                status="completed",
+                score=80,
+                correct_answers=8,
+                wrong_answers=2,
+                total_questions=10,
+                answered_count=10,
+            )
+            duplicate = activity_tracking_service.sync_external_test_attempt(
+                current_user,
+                source_type="bac",
+                source_id="bac-report-1",
+                test_id="bac:model-2025",
+                test_title="Model BAC 2025",
+                status="completed",
+                score=80,
+                correct_answers=8,
+                wrong_answers=2,
+                total_questions=10,
+                answered_count=10,
+            )
+            second_attempt = activity_tracking_service.sync_external_test_attempt(
+                current_user,
+                source_type="bac",
+                source_id="bac-report-2",
+                test_id="bac:model-2025",
+                test_title="Model BAC 2025",
+                status="completed",
+                score=90,
+                correct_answers=9,
+                wrong_answers=1,
+                total_questions=10,
+                answered_count=10,
+            )
+            overview = activity_tracking_service.get_admin_activity_overview({"role": "admin"})
+
+        self.assertEqual(first["test_session_id"], duplicate["test_session_id"])
+        self.assertNotEqual(first["test_session_id"], second_attempt["test_session_id"])
+        self.assertEqual(len(self.supabase.tables["tracked_students"]), 1)
+        self.assertEqual(len(self.supabase.tables["activity_test_sessions"]), 2)
+        self.assertEqual(overview["total_test_sessions"], 2)
+        self.assertEqual(overview["completed_tests"], 2)
 
     def test_activity_tracking_recovers_from_a_deleted_cached_student(self):
         request = Request(
@@ -453,6 +514,8 @@ class RenderCompatibilityTests(unittest.TestCase):
             bac_student_reports_service, "get_server_supabase", return_value=self.supabase
         ), patch.object(
             supabase_storage_service, "get_server_supabase", return_value=self.supabase
+        ), patch.object(
+            activity_tracking_service, "get_server_supabase", return_value=self.supabase
         ):
             report = bac_student_reports_service.create_bac_student_report(
                 current_user,
@@ -468,6 +531,7 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertEqual(stored_report["id"], report["id"])
         self.assertTrue(pdf_bytes.startswith(b"%PDF"))
         self.assertTrue(report["reportPdfPath"].startswith("bac/"))
+        self.assertEqual(len(self.supabase.tables["activity_test_sessions"]), 1)
 
     def test_admitere_report_and_pdf_are_persisted_only_in_supabase(self):
         current_user = {
@@ -481,6 +545,8 @@ class RenderCompatibilityTests(unittest.TestCase):
             admitere_student_reports_service, "get_server_supabase", return_value=self.supabase
         ), patch.object(
             supabase_storage_service, "get_server_supabase", return_value=self.supabase
+        ), patch.object(
+            activity_tracking_service, "get_server_supabase", return_value=self.supabase
         ):
             report = admitere_student_reports_service.create_admitere_student_report(
                 current_user,
@@ -501,6 +567,7 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertEqual(stored_report["id"], report["id"])
         self.assertTrue(pdf_bytes.startswith(b"%PDF"))
         self.assertTrue(report["reportPdfPath"].startswith("admitere/"))
+        self.assertEqual(len(self.supabase.tables["activity_test_sessions"]), 1)
 
     def test_integrated_report_artifacts_are_persisted_in_supabase_storage(self):
         report = {
