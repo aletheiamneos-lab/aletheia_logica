@@ -249,21 +249,24 @@
 
 .app-shell-auth .app-sidebar-header-copy {
   min-width: 0;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .app-shell-auth .app-sidebar-brand-lockup {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: 2.55rem minmax(0, 1fr);
   align-items: center;
-  gap: 0.78rem;
+  gap: 0.7rem;
+  width: 100%;
   min-width: 0;
 }
 
 .app-shell-auth .app-sidebar-brand-mark {
   display: inline-grid;
   place-items: center;
-  width: 2.85rem;
-  height: 4.25rem;
+  width: 2.55rem;
+  height: 3.7rem;
   color: var(--workspace-sidebar-link-hover-icon);
 }
 
@@ -341,25 +344,35 @@
 
 .app-shell-auth .app-sidebar-brand {
   margin-top: 0;
-  font-size: clamp(1.6rem, 1.95vw, 2rem);
-  line-height: 0.98;
-  letter-spacing: 0;
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -0.025em;
 }
 
 .app-shell-auth .app-sidebar-brand-line {
-  display: flex;
-  align-items: baseline;
-  gap: 0.45rem;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 0.24rem;
   min-width: 0;
-  white-space: nowrap;
 }
 
 .app-shell-auth .app-sidebar-brand-credit {
+  display: block;
+  max-width: 100%;
   font-family: var(--font-ui-premium);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.035em;
   color: var(--workspace-sidebar-muted);
+  white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+  .app-shell-auth .app-sidebar-header {
+    padding-right: 2.55rem !important;
+  }
 }
 
 .app-shell-auth .app-sidebar-copy,
