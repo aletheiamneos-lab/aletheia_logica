@@ -3,6 +3,7 @@ import { useMemo, useState } from "react"
 import TheoryBlockRenderer from "../components/lesson/TheoryBlockRenderer"
 import LessonTheoryRenderer from "../components/lesson/LessonTheoryRenderer"
 import ChaosToOrderInteractive from "../components/theory/ChaosToOrderInteractive"
+import DefinitionClassificationSupplement from "../components/theory/DefinitionClassificationSupplement"
 import EulerRelationsExplorer from "../components/theory/EulerRelationsExplorer"
 import IntensionExtensionBalance from "../components/theory/IntensionExtensionBalance"
 import PrinciplesTemple from "../components/theory/PrinciplesTemple"
@@ -13,6 +14,7 @@ import TheoryHero from "../components/theory/TheoryHero"
 import TheorySectionCard from "../components/theory/TheorySectionCard"
 import ThreeFormsFlow from "../components/theory/ThreeFormsFlow"
 import lesson1Theory from "../data/theory/lesson1Theory.json"
+import { lesson1PdfSupplement } from "../data/theory/lesson1Supplement"
 import { studyPosters } from "../data/theory/studyPosters"
 
 function LessonPosterInset({ title, description, poster }) {
@@ -50,6 +52,7 @@ function Lesson1TheoryPage() {
         description="L-am așezat după exercițiul de clasificare, ca să rămână aproape de reguli, de criteriul unic și de exemplele bune sau greșite."
         poster={studyPosters.clasificareaSiDiviziunea}
       />
+      <DefinitionClassificationSupplement section={lesson1PdfSupplement} />
       <EulerRelationsExplorer section={lesson1Theory.eulerExplorer} />
 
       <TheorySectionCard

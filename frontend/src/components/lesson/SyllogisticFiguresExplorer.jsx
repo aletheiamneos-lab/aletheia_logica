@@ -170,7 +170,7 @@ function SyllogisticFiguresExplorer({ block, variant = "default" }) {
   const activeFigure = figures[activeIndex] ?? figures[0]
   const referenceImage = resolveCourseAsset(block.imageAsset)
   const embedded = variant === "embedded"
-  const rootClassName = `syllogistic-explorer ${embedded ? "is-embedded" : ""}`
+  const rootClassName = `lesson-interactive syllogistic-explorer ${embedded ? "is-embedded lesson-interactive-embedded" : ""}`
 
   if (!activeFigure) {
     return null

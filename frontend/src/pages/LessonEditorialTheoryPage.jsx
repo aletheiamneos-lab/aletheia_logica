@@ -24,13 +24,20 @@ function EmbeddedInteractiveBlock({ interactive }) {
 
   return (
     <section className="theory-embedded-panel">
-      <div className="theory-embedded-copy">
-        <p className="theory-eyebrow">Aplici imediat</p>
-        <h3 className="theory-embedded-title">{interactive.title}</h3>
-        <p className="theory-embedded-description">{interactive.description}</p>
-      </div>
+      <header className="theory-embedded-header">
+        <span className="theory-embedded-marker" aria-hidden="true">
+          <span />
+        </span>
+        <div className="theory-embedded-copy">
+          <p className="theory-eyebrow">Aplici imediat</p>
+          <h3 className="theory-embedded-title">{interactive.title}</h3>
+          <p className="theory-embedded-description">{interactive.description}</p>
+        </div>
+      </header>
 
-      <Component block={interactive.block} variant={interactive.variant ?? "default"} />
+      <div className="theory-embedded-stage">
+        <Component block={interactive.block} variant={interactive.variant ?? "default"} />
+      </div>
     </section>
   )
 }

@@ -32,9 +32,11 @@ function ImageTheoryBlock({ block }) {
 
   if (!hotspots.length) {
     return (
-      <figure className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+      <figure className="theory-media-figure">
         {source ? (
-          <img className="w-full object-cover" src={source} alt={block.alt} />
+          <div className="theory-media-frame">
+            <img className="theory-media-image" src={source} alt={block.alt} loading="lazy" decoding="async" />
+          </div>
         ) : (
           <div className="flex min-h-56 items-center justify-center bg-slate-50 px-6 text-center text-sm text-slate-500">
             Imaginea locală nu a fost găsită.
@@ -48,11 +50,11 @@ function ImageTheoryBlock({ block }) {
   }
 
   return (
-    <figure className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+    <figure className="theory-media-figure">
       <div className="grid gap-4 p-4 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+        <div className="theory-media-hotspot-frame">
           {source ? (
-            <img className="w-full object-cover" src={source} alt={block.alt} />
+            <img className="theory-media-image" src={source} alt={block.alt} loading="lazy" decoding="async" />
           ) : (
             <div className="flex min-h-56 items-center justify-center px-6 text-center text-sm text-slate-500">
               Imaginea locală nu a fost găsită.
@@ -205,13 +207,13 @@ function TheoryBlockRenderer({ block, variant = "default" }) {
 
   if (block.type === "table") {
     return (
-      <div className="overflow-hidden rounded-xl border border-slate-200">
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse bg-white text-left text-sm">
-            <thead className="bg-slate-50 text-slate-700">
+      <div className="theory-data-table-shell">
+        <div className="theory-data-table-scroll">
+          <table className="theory-data-table">
+            <thead>
               <tr>
                 {block.columns.map((column) => (
-                  <th key={column} className="px-4 py-3 font-semibold">
+                  <th key={column}>
                     {column}
                   </th>
                 ))}
@@ -219,9 +221,9 @@ function TheoryBlockRenderer({ block, variant = "default" }) {
             </thead>
             <tbody>
               {block.rows.map((row, index) => (
-                <tr key={`${row.join("-")}-${index}`} className="border-t border-slate-100 align-top">
+                <tr key={`${row.join("-")}-${index}`}>
                   {row.map((cell, cellIndex) => (
-                    <td key={`${cellIndex}-${cell}`} className="px-4 py-3 text-sm leading-6 text-slate-600">
+                    <td key={`${cellIndex}-${cell}`} data-label={block.columns[cellIndex] ?? ""}>
                       {cell}
                     </td>
                   ))}
@@ -231,9 +233,7 @@ function TheoryBlockRenderer({ block, variant = "default" }) {
           </table>
         </div>
         {block.footnote && (
-          <div className="border-t border-slate-100 bg-slate-50 px-4 py-3 text-sm text-slate-500">
-            {block.footnote}
-          </div>
+          <div className="theory-data-table-footnote">{block.footnote}</div>
         )}
       </div>
     )
