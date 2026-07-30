@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MindMapToolbar({ tab, setTab }) {
+export default function MindMapToolbar({ tab, setTab, allowedTabs }) {
   const tabs = [
     { id: "materie", label: "Materie" },
     { id: "bac", label: "BAC" },
@@ -10,7 +10,7 @@ export default function MindMapToolbar({ tab, setTab }) {
   return (
     <div className="logic-map-toolbar">
       <div className="logic-map-tabs" aria-label="Tip hartă">
-        {tabs.map((item) => (
+        {tabs.filter((item) => !allowedTabs || allowedTabs.includes(item.id)).map((item) => (
           <button
             key={item.id}
             type="button"

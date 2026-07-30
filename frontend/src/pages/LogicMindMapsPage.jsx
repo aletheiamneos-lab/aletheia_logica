@@ -5,8 +5,10 @@ import MindMapDetailsPanel from "../components/logic-mindmaps/MindMapDetailsPane
 import MindMapToolbar from "../components/logic-mindmaps/MindMapToolbar";
 import "../components/logic-mindmaps/logic-mindmaps.css";
 import { maps } from "../data/logic_mindmaps_seed_v2";
+import { useAuth } from "../context/useAuth";
 
 export default function LogicMindMapsPage() {
+  const { isDemo } = useAuth();
   const [tab, setTab] = useState("materie");
   const [selectedNode, setSelectedNode] = useState(null);
   const [flowKey, setFlowKey] = useState(0);
@@ -35,6 +37,7 @@ export default function LogicMindMapsPage() {
 
       <MindMapToolbar
         tab={tab}
+        allowedTabs={isDemo ? ["materie"] : undefined}
         setTab={(next) => {
           setTab(next);
           setSelectedNode(null);

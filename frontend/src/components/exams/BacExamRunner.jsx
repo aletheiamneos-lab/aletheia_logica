@@ -1749,7 +1749,7 @@ function filterOfficialPaperForRole(paper, canSeeBarem) {
 }
 
 function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlug }) {
-  const { isTeacher, isAdmin, session } = useAuth()
+  const { isTeacher, isAdmin, isDemo, session } = useAuth()
   const [answers, setAnswers] = useState({})
   const [isFinalized, setIsFinalized] = useState(false)
   const [finalizedAt, setFinalizedAt] = useState("")
@@ -1881,6 +1881,12 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
       setFinalizedAt(report.finalizedAt)
       setFinalizedReportPayload(report)
       setIsFinalized(true)
+      if (isDemo) {
+        setReportSyncMessage(
+          "Rezultat calculat local în modul Demo. Nu a fost trimis și nu a fost salvat în Supabase.",
+        )
+        return
+      }
       setReportSyncMessage("Salvez raportul BAC pentru Profil...")
       try {
         const savedReport = await submitBacStudentReport(report)
@@ -1930,6 +1936,10 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
 
   async function handleDownloadStudentReport() {
     if (!studentReport) {
+      return
+    }
+    if (isDemo) {
+      setReportSyncMessage("Exportul PDF nu este disponibil în modul Demo.")
       return
     }
 

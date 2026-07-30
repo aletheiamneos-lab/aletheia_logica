@@ -19,9 +19,9 @@ function renderGamePlayground(game) {
   }
 }
 
-function GameDetailView({ game }) {
+function GameDetailView({ game, demo = false }) {
   const [showExplanation, setShowExplanation] = useState(false)
-  const [activeMode, setActiveMode] = useState("play")
+  const [activeMode, setActiveMode] = useState(demo ? "training" : "play")
 
   return (
     <div className="space-y-3">
@@ -33,13 +33,13 @@ function GameDetailView({ game }) {
             <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{game.description}</p>
           </div>
           <div className="learning-game-mode-switch">
-            <button
+            {!demo ? <button
               type="button"
               className={activeMode === "play" ? "btn-primary" : "btn-secondary"}
               onClick={() => setActiveMode("play")}
             >
               {game.gameMode.title}
-            </button>
+            </button> : null}
             <button
               type="button"
               className={activeMode === "training" ? "btn-primary" : "btn-secondary"}

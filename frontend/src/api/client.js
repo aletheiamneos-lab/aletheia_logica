@@ -828,6 +828,13 @@ async function request(path, options = {}) {
   }
 
   const storedSession = loadStoredSession()
+  if (storedSession?.role === "demo") {
+    const error = new Error(
+      "Modul Demo este izolat de backend. Datele și rezultatele rămân numai în această filă.",
+    )
+    error.code = "DEMO_NETWORK_BLOCKED"
+    throw error
+  }
   const sessionHeaders =
     storedSession?.session_id || storedSession?.sessionId
       ? {
@@ -947,7 +954,7 @@ export function loadStoredSession() {
 
 export function persistSession(session) {
   const serialized = JSON.stringify(session)
-  if (session?.role === "student") {
+  if (session?.role === "student" || session?.role === "demo") {
     writeBrowserStorage(ACTIVE_SESSION_STORAGE_KEY, null)
     writeSessionValue(ACTIVE_SESSION_STORAGE_KEY, serialized)
     return

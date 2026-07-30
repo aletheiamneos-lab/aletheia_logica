@@ -1,10 +1,11 @@
 import { Navigate, useLocation } from "react-router-dom"
 
 import { useAuth } from "../../context/useAuth"
+import { isDemoRouteAllowed } from "../../demo/demoAccess"
 
 function RequireAuth({ children, teacherOnly = false }) {
   const location = useLocation()
-  const { isAuthenticated, isLoading, isAdmin } = useAuth()
+  const { isAuthenticated, isLoading, isAdmin, isDemo } = useAuth()
 
   if (isLoading) {
     return (
@@ -20,6 +21,10 @@ function RequireAuth({ children, teacherOnly = false }) {
 
   if (!isAuthenticated) {
     return <Navigate replace to="/" state={{ from: location }} />
+  }
+
+  if (isDemo && !isDemoRouteAllowed(location.pathname)) {
+    return <Navigate replace to="/" state={{ demoBlockedPath: location.pathname }} />
   }
 
   if (teacherOnly && !isAdmin) {

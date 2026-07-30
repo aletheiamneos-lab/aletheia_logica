@@ -1,6 +1,8 @@
 import { Navigate, useParams } from "react-router-dom"
 
 import FlashcardSlotView from "../components/flashcards/FlashcardSlotView"
+import { useAuth } from "../context/useAuth"
+import { DEMO_FLASHCARD_IDS } from "../demo/demoAccess"
 import {
   getAdjacentFlashcardSlots,
   getFlashcardLevel,
@@ -10,6 +12,7 @@ import {
 
 function FlashcardSlotPage() {
   const { level, slotId } = useParams()
+  const { isDemo } = useAuth()
 
   if (!isFlashcardLevel(level)) {
     return <Navigate replace to="/learning/module/flash-cards" />
@@ -23,13 +26,20 @@ function FlashcardSlotPage() {
   }
 
   const adjacentSlots = getAdjacentFlashcardSlots(level, slotId)
+  const visibleSlotData = isDemo
+    ? {
+        ...slotData,
+        cards: slotData.cards.filter((card) => DEMO_FLASHCARD_IDS.has(card.id)),
+        cardCount: 8,
+      }
+    : slotData
 
   return (
     <FlashcardSlotView
-      slotData={slotData}
+      slotData={visibleSlotData}
       level={flashcardLevel}
-      previousSlot={adjacentSlots.previous}
-      nextSlot={adjacentSlots.next}
+      previousSlot={isDemo ? null : adjacentSlots.previous}
+      nextSlot={isDemo ? null : adjacentSlots.next}
     />
   )
 }

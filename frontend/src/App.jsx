@@ -13,6 +13,7 @@ import {
 } from "./appEnvironment"
 import { subscribeToServerWakeState } from "./api/client"
 import RequireAuth from "./components/auth/RequireAuth"
+import DemoBadge from "./components/demo/DemoBadge"
 import MenuToggleButton from "./components/MenuToggleButton"
 import Navbar from "./components/Navbar"
 import SessionBadge from "./components/auth/SessionBadge"
@@ -47,6 +48,7 @@ const ExamModulePage = lazy(() => import("./pages/ExamModulePage"))
 const PracticePage = lazy(() => import("./pages/PracticePage"))
 const IntegratedTestsPage = lazy(() => import("./pages/IntegratedTestsPage"))
 const IntegratedTestExamPage = lazy(() => import("./pages/IntegratedTestExamPage"))
+const DemoIntegratedTestPage = lazy(() => import("./pages/DemoIntegratedTestPage"))
 const ProfilePage = lazy(() => import("./pages/ProfilePage"))
 const ButtonSystemPreviewPage = lazy(() => import("./pages/ButtonSystemPreviewPage"))
 
@@ -248,7 +250,7 @@ function useMobileMenuCollisionOffset({
 }
 
 function AppLayout() {
-  const { isAuthenticated, isAdmin, session } = useAuth()
+  const { isAuthenticated, isAdmin, isDemo, session } = useAuth()
   const location = useLocation()
   const preferenceScope = buildAppearancePreferenceScope(session)
   const mobileMenuButtonRef = useRef(null)
@@ -410,6 +412,7 @@ function AppLayout() {
             isAuthenticated ? "app-content-shell-auth app-content-stage" : "app-content-shell-public"
           }`}
         >
+          {isDemo ? <DemoBadge /> : null}
           <main
             className={`app-content-main ${
               isAuthenticated ? "app-content-main-auth" : "app-content-main-public"
@@ -559,7 +562,7 @@ function AppLayout() {
                   path="/teste-integrate"
                   element={
                     <RequireAuth>
-                      <IntegratedTestsPage />
+                      {isDemo ? <DemoIntegratedTestPage /> : <IntegratedTestsPage />}
                     </RequireAuth>
                   }
                 />
@@ -580,7 +583,10 @@ function AppLayout() {
                   }
                 />
                 <Route path="/progres" element={<Navigate replace to="/teste-integrate" />} />
-                <Route path="/button-preview" element={<ButtonSystemPreviewPage />} />
+                <Route
+                  path="/button-preview"
+                  element={isDemo ? <Navigate replace to="/" /> : <ButtonSystemPreviewPage />}
+                />
               </Routes>
             </Suspense>
           </main>

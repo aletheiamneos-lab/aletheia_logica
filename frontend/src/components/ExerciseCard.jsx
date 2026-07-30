@@ -3,6 +3,7 @@ import { useState } from "react"
 import { submitAnswer } from "../api/client"
 import FeedbackBox from "./FeedbackBox"
 import AnimatedAnswerChoiceGroup from "./ui/AnimatedAnswerChoiceGroup"
+import { useAuth } from "../context/useAuth"
 
 const typeLabels = {
   multiple_choice: "Alegere multipla",
@@ -37,6 +38,7 @@ function formatDifficulty(value) {
 }
 
 function ExerciseCard({ exercise, compact = false, onAnswered, mobileRunner = null }) {
+  const { isDemo } = useAuth()
   const [selectedAnswer, setSelectedAnswer] = useState("")
   const [feedback, setFeedback] = useState(null)
   const [error, setError] = useState("")
@@ -55,7 +57,16 @@ function ExerciseCard({ exercise, compact = false, onAnswered, mobileRunner = nu
     setError("")
 
     try {
-      const result = await submitAnswer(exercise.id, selectedAnswer)
+      const result = isDemo
+        ? {
+            was_correct: selectedAnswer === exercise.correct_answer,
+            correct_answer: exercise.correct_answer,
+            explanation:
+              selectedAnswer === exercise.correct_answer
+                ? exercise.explanation
+                : exercise.incorrect_explanations?.[selectedAnswer] ?? exercise.explanation,
+          }
+        : await submitAnswer(exercise.id, selectedAnswer)
       setFeedback(result)
       onAnswered?.(result)
     } catch (submitError) {

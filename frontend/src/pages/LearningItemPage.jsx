@@ -4,14 +4,16 @@ import GameDetailView from "../components/learning/GameDetailView"
 import LearningPageHeader from "../components/learning/LearningPageHeader"
 import { getLearningItem, getLearningModule } from "../data/learning/learningCatalog"
 import LogicMindMapsPage from "./LogicMindMapsPage"
+import { useAuth } from "../context/useAuth"
+import { restrictDemoGame } from "../demo/demoAccess"
 
-function renderLearningItem(moduleId, item) {
+function renderLearningItem(moduleId, item, isDemo) {
   if (moduleId === "mind-maps") {
     return <LogicMindMapsPage />
   }
 
   if (moduleId === "games") {
-    return <GameDetailView game={item.data} />
+    return <GameDetailView game={isDemo ? restrictDemoGame(item.data) : item.data} demo={isDemo} />
   }
 
   return null
@@ -19,6 +21,7 @@ function renderLearningItem(moduleId, item) {
 
 function LearningItemPage() {
   const { moduleId, itemId } = useParams()
+  const { isDemo } = useAuth()
 
   if (moduleId === "flash-cards") {
     return <Navigate replace to="/learning/module/flash-cards" />
@@ -89,7 +92,7 @@ function LearningItemPage() {
         </div>
       </section>
 
-      <section className="immersive-stage">{renderLearningItem(module.id, item)}</section>
+      <section className="immersive-stage">{renderLearningItem(module.id, item, isDemo)}</section>
     </div>
   )
 }

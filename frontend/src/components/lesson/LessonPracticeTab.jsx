@@ -7,6 +7,8 @@ import TruthTableGenerator from "../TruthTableGenerator"
 import VennDiagramInteractive from "../VennDiagramInteractive"
 import { getWhyItemsForLesson } from "../../data/learning/whyModule"
 import EmptyPracticeState from "./EmptyPracticeState"
+import { useAuth } from "../../context/useAuth"
+import { staticExercises } from "../../content/staticData"
 
 function PracticeTools({ lessonId }) {
   if (lessonId === 1) {
@@ -21,9 +23,12 @@ function PracticeTools({ lessonId }) {
 }
 
 function LessonPracticeTab({ lesson }) {
+  const { isDemo } = useAuth()
   const [exercises, setExercises] = useState([])
   const [error, setError] = useState("")
-  const [isLoading, setIsLoading] = useState(lesson.practiceStatus === "available")
+  const [isLoading, setIsLoading] = useState(
+    lesson.practiceStatus === "available" && !isDemo,
+  )
   const [activeExerciseIndex, setActiveExerciseIndex] = useState(0)
   const [answeredExerciseIds, setAnsweredExerciseIds] = useState([])
 
@@ -33,6 +38,12 @@ function LessonPracticeTab({ lesson }) {
     }
 
     let active = true
+
+    if (isDemo) {
+      return () => {
+        active = false
+      }
+    }
 
     async function loadExercises() {
       try {
@@ -59,7 +70,7 @@ function LessonPracticeTab({ lesson }) {
     return () => {
       active = false
     }
-  }, [lesson.id, lesson.practiceStatus])
+  }, [isDemo, lesson.id, lesson.practiceStatus])
 
   if (lesson.practiceStatus !== "available") {
     return <EmptyPracticeState lessonId={lesson.id} />
@@ -73,14 +84,20 @@ function LessonPracticeTab({ lesson }) {
     return <section className="panel p-5 text-slate-600">Se incarca exercitiile lectiei...</section>
   }
 
-  if (!exercises.length) {
+  const visibleExercises = isDemo
+    ? lesson.id === 1
+      ? staticExercises.filter((exercise) => exercise.lesson_id === 1).slice(0, 5)
+      : []
+    : exercises
+
+  if (!visibleExercises.length) {
     return <EmptyPracticeState lessonId={lesson.id} />
   }
 
   const tools = <PracticeTools lessonId={lesson.id} />
-  const whyItems = getWhyItemsForLesson(lesson.id)
-  const activeExercise = exercises[activeExerciseIndex] ?? exercises[0]
-  const progressPercent = ((activeExerciseIndex + 1) / exercises.length) * 100
+  const whyItems = isDemo ? [] : getWhyItemsForLesson(lesson.id)
+  const activeExercise = visibleExercises[activeExerciseIndex] ?? visibleExercises[0]
+  const progressPercent = ((activeExerciseIndex + 1) / visibleExercises.length) * 100
 
   function moveToExercise(nextIndex) {
     setActiveExerciseIndex(nextIndex)
@@ -93,7 +110,9 @@ function LessonPracticeTab({ lesson }) {
   }
 
   function handleMobileNext() {
-    moveToExercise(activeExerciseIndex === exercises.length - 1 ? 0 : activeExerciseIndex + 1)
+    moveToExercise(
+      activeExerciseIndex === visibleExercises.length - 1 ? 0 : activeExerciseIndex + 1,
+    )
   }
 
   function handleMobilePrevious() {
@@ -107,21 +126,21 @@ function LessonPracticeTab({ lesson }) {
         <h2 className="mt-2 text-2xl text-ink">Aplici imediat ce ai invatat</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{lesson.practiceSummary}</p>
         <div className="mt-5 flex flex-wrap items-center gap-2.5">
-          <span className="status-pill">{exercises.length} exercitii locale in acest tab</span>
+          <span className="status-pill">{visibleExercises.length} exercitii locale in acest tab</span>
         </div>
       </section>
 
       <section className="lesson-practice-mobile-runner" aria-label="Exercitiu curent">
         <header className="practice-mobile-sticky-header">
           <div className="practice-mobile-progress-copy">
-            <strong>{`Exercitiul ${activeExerciseIndex + 1} din ${exercises.length}`}</strong>
+            <strong>{`Exercitiul ${activeExerciseIndex + 1} din ${visibleExercises.length}`}</strong>
             <span>{`${answeredExerciseIds.length} verificate`}</span>
           </div>
           <div
             className="practice-mobile-progress-track"
             role="progressbar"
             aria-valuemin="1"
-            aria-valuemax={exercises.length}
+            aria-valuemax={visibleExercises.length}
             aria-valuenow={activeExerciseIndex + 1}
           >
             <span style={{ width: `${progressPercent}%` }} />
@@ -134,7 +153,7 @@ function LessonPracticeTab({ lesson }) {
           compact
           mobileRunner={{
             isFirst: activeExerciseIndex === 0,
-            isLast: activeExerciseIndex === exercises.length - 1,
+            isLast: activeExerciseIndex === visibleExercises.length - 1,
             onPrevious: handleMobilePrevious,
             onNext: handleMobileNext,
           }}
@@ -158,10 +177,10 @@ function LessonPracticeTab({ lesson }) {
         />
       ) : null}
 
-      {tools}
+      {!isDemo ? tools : null}
 
       <section className="grid gap-3 lesson-practice-desktop-list">
-        {exercises.map((exercise) => (
+        {visibleExercises.map((exercise) => (
           <ExerciseCard key={exercise.id} exercise={exercise} compact />
         ))}
       </section>

@@ -14,6 +14,7 @@ import {
   persistSession,
 } from "../api/client"
 import AuthContext from "./auth-context"
+import { buildDemoSession, isDemoSession } from "../demo/demoAccess"
 
 function normalizeSession(session) {
   if (!session) {
@@ -60,6 +61,9 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const storedSession = loadStoredSession()
     if (!storedSession) {
+      return
+    }
+    if (isDemoSession(storedSession)) {
       return
     }
 
@@ -138,7 +142,21 @@ export function AuthProvider({ children }) {
     return normalizedSession
   }
 
+  function handleDemoLogin() {
+    const nextSession = buildDemoSession()
+    persistSession(nextSession)
+    const normalizedSession = normalizeSession(nextSession)
+    setSession(normalizedSession)
+    return normalizedSession
+  }
+
   async function handleLogout() {
+    if (isDemoSession(session)) {
+      clearStoredSession()
+      setSession(null)
+      return
+    }
+
     try {
       await logoutCurrentSession()
     } catch {
@@ -169,9 +187,11 @@ export function AuthProvider({ children }) {
     isAdmin: session?.role === "admin",
     isTeacher: session?.role === "admin",
     isStudent: session?.role === "student",
+    isDemo: session?.role === "demo",
     isLoading,
     loginStudent: handleStudentLogin,
     loginAdmin: handleAdminLogin,
+    loginDemo: handleDemoLogin,
     loginTeacher: handleAdminLogin,
     logout: handleLogout,
     refreshSession: handleRefreshSession,

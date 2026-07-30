@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from "react"
-import { GraduationCap, ShieldCheck } from "lucide-react"
+import { GraduationCap, PlayCircle, ShieldCheck } from "lucide-react"
 import { useLocation, useNavigate } from "react-router-dom"
 
 import { loadTrackedStudent } from "../../api/client"
@@ -16,6 +16,11 @@ const roleCards = [
     title: "Admin",
     icon: ShieldCheck,
   },
+  {
+    key: "demo",
+    title: "Demo",
+    icon: PlayCircle,
+  },
 ]
 
 const HomepageThreeScene = lazy(() => import("../homepage/HomepageThreeScene"))
@@ -31,7 +36,7 @@ function AccessGateBrand() {
 function AccessGate() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { loginStudent, loginAdmin } = useAuth()
+  const { loginStudent, loginAdmin, loginDemo } = useAuth()
   const trackedStudent = loadTrackedStudent()
   const [mode, setMode] = useState("student")
   const [studentName, setStudentName] = useState(trackedStudent?.name ?? "")
@@ -48,8 +53,10 @@ function AccessGate() {
     try {
       if (mode === "student") {
         await loginStudent(studentEmail, studentName)
-      } else {
+      } else if (mode === "admin") {
         await loginAdmin(adminPassword)
+      } else {
+        loginDemo()
       }
 
       const nextPath = location.state?.from?.pathname ?? "/"
@@ -120,7 +127,7 @@ function AccessGate() {
                   />
                 </label>
               </div>
-            ) : (
+            ) : mode === "admin" ? (
               <label className="access-input-shell">
                 <span className="section-kicker">Parola adminului</span>
                 <input
@@ -132,6 +139,14 @@ function AccessGate() {
                   autoComplete="current-password"
                 />
               </label>
+            ) : (
+              <div className="access-demo-summary">
+                <p className="section-kicker">Acces fără cont</p>
+                <p>
+                  Explorezi selecția demonstrativă fără whitelist și fără ca activitatea să fie
+                  salvată în Supabase.
+                </p>
+              </div>
             )}
 
             <button className="btn-primary w-full" disabled={isSubmitting} type="submit">
@@ -139,7 +154,9 @@ function AccessGate() {
                 ? "Se valideaza..."
                 : mode === "student"
                   ? "Intra ca student"
-                  : "Intra ca admin"}
+                  : mode === "admin"
+                    ? "Intra ca admin"
+                    : "Intră în modul demo"}
             </button>
 
             {error ? <div className="alert-panel">{error}</div> : null}
