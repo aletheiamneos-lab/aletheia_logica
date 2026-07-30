@@ -23,12 +23,12 @@ const roleCards = [
   },
 ]
 
-const HomepageThreeScene = lazy(() => import("../homepage/HomepageThreeScene"))
+const SplineHeroScene = lazy(() => import("../homepage/SplineHeroScene"))
 
 function AccessGateBrand() {
   return (
-    <Suspense fallback={<div className="access-gate-three-fallback" aria-hidden="true" />}>
-      <HomepageThreeScene />
+    <Suspense fallback={<div className="access-gate-spline-fallback" aria-hidden="true" />}>
+      <SplineHeroScene />
     </Suspense>
   )
 }
