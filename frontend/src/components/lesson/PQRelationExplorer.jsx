@@ -51,8 +51,8 @@ function PQRelationExplorer({ block, variant = "default" }) {
   const activeRowExample = activeOperator.rowExamples?.[activeRow.id] ?? null
 
   const rootClassName = embedded
-    ? "rounded-[26px] border border-slate-200 bg-white p-3 sm:p-4"
-    : "rounded-xl border border-slate-200 bg-white p-5"
+    ? "lesson-interactive lesson-interactive-embedded rounded-[26px] border border-slate-200 bg-white p-3 sm:p-4"
+    : "lesson-interactive rounded-xl border border-slate-200 bg-white p-5"
   const panelClassName = embedded
     ? "rounded-[22px] border border-slate-200 bg-slate-50 p-4"
     : "rounded-xl border border-slate-200 bg-slate-50 p-4"

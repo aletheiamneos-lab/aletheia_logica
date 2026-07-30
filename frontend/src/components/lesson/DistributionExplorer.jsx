@@ -19,8 +19,8 @@ function DistributionExplorer({ block, variant = "default" }) {
   const activeForm = block.forms[activeIndex] ?? block.forms[0]
   const embedded = variant === "embedded"
   const rootClassName = embedded
-    ? "rounded-[28px] bg-[linear-gradient(180deg,rgba(245,248,252,0.96),rgba(255,255,255,0.92))] p-3 sm:p-4"
-    : "rounded-xl border border-slate-200 bg-white p-5"
+    ? "lesson-interactive lesson-interactive-embedded rounded-[28px] bg-[linear-gradient(180deg,rgba(245,248,252,0.96),rgba(255,255,255,0.92))] p-3 sm:p-4"
+    : "lesson-interactive rounded-xl border border-slate-200 bg-white p-5"
 
   return (
     <div className={rootClassName}>

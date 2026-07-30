@@ -118,12 +118,12 @@ function PosterPanel({ panel, index }) {
 function StudyPosterBlock({ block }) {
   if (block.imageSrc) {
     return (
-      <figure className="mx-auto w-full max-w-5xl">
-        <div className="overflow-hidden rounded-[28px] border border-[#dccfb7] bg-[#fffaf0] shadow-[0_30px_70px_-52px_rgba(15,23,42,0.45)]">
+      <figure className="study-poster-figure">
+        <div className="study-poster-frame">
           <img
             src={block.imageSrc}
             alt={block.alt ?? block.title}
-            className="block h-auto w-full object-contain"
+            className="study-poster-image"
             loading="lazy"
             decoding="async"
           />

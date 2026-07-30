@@ -56,10 +56,10 @@ const baseForms = [
 ]
 
 const nodePositions = {
-  A: { x: "20%", y: "18%" },
-  E: { x: "80%", y: "18%" },
-  I: { x: "20%", y: "82%" },
-  O: { x: "80%", y: "82%" },
+  A: { x: "24%", y: "18%" },
+  E: { x: "76%", y: "18%" },
+  I: { x: "24%", y: "82%" },
+  O: { x: "76%", y: "82%" },
 }
 
 const relationBadges = {
@@ -298,8 +298,8 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
   const [truthValue, setTruthValue] = useState(true)
   const embedded = variant === "embedded"
   const rootClassName = embedded
-    ? "rounded-[28px] bg-[linear-gradient(180deg,rgba(245,248,252,0.96),rgba(255,255,255,0.92))] p-3 sm:p-4"
-    : "rounded-xl border border-slate-200 bg-white p-5"
+    ? "lesson-interactive lesson-interactive-embedded rounded-[28px] bg-[linear-gradient(180deg,rgba(245,248,252,0.96),rgba(255,255,255,0.92))] p-3 sm:p-4"
+    : "lesson-interactive rounded-xl border border-slate-200 bg-white p-5"
 
   const activeForm = forms.find((form) => form.symbol === activeSymbol) ?? forms[0]
   const inference = inferFromSquare(activeSymbol, truthValue)
@@ -318,7 +318,7 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
             universalele, jos sunt particularele; in stanga stau afirmativele, in dreapta negativele.
           </p>
 
-          <div className="mt-5 grid grid-cols-[92px_repeat(2,minmax(0,1fr))] gap-2 text-center">
+          <div className="opposition-form-matrix mt-5 grid grid-cols-[92px_repeat(2,minmax(0,1fr))] gap-2 text-center">
             <div />
             <div className="rounded-xl border border-slate-200 bg-white px-3 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
               Afirmativa
@@ -469,7 +469,7 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
         </div>
 
         <div className="mt-5 grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
-          <div className="relative mx-auto min-h-[540px] w-full max-w-[780px] rounded-[36px] border border-slate-200 bg-white p-6 sm:min-h-[600px]">
+          <div className="opposition-square-diagram relative mx-auto min-h-[540px] w-full max-w-[780px] rounded-[36px] border border-slate-200 bg-white p-6 sm:min-h-[600px]">
             <svg
               viewBox="0 0 100 100"
               className="absolute inset-0 h-full w-full p-12 text-slate-300"
@@ -483,19 +483,19 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
               <line x1="76" y1="18" x2="24" y2="82" stroke="currentColor" strokeWidth="1.6" />
             </svg>
 
-            <span className="absolute left-1/2 top-8 -translate-x-1/2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-orange-900 sm:text-[11px]">
+            <span className="opposition-relation-label opposition-relation-label-top absolute left-1/2 top-8 -translate-x-1/2 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-orange-900 sm:text-[11px]">
               Contrarietate
             </span>
-            <span className="absolute bottom-8 left-1/2 -translate-x-1/2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-emerald-900 sm:text-[11px]">
+            <span className="opposition-relation-label opposition-relation-label-bottom absolute bottom-8 left-1/2 -translate-x-1/2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-emerald-900 sm:text-[11px]">
               Subcontrarietate
             </span>
-            <span className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-blue-900 sm:left-8 sm:text-[11px]">
+            <span className="opposition-relation-label opposition-relation-label-left absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-blue-900 sm:left-8 sm:text-[11px]">
               Subalternare
             </span>
-            <span className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-blue-900 sm:right-8 sm:text-[11px]">
+            <span className="opposition-relation-label opposition-relation-label-right absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-blue-900 sm:right-8 sm:text-[11px]">
               Subalternare
             </span>
-            <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-rose-900 sm:text-[11px]">
+            <span className="opposition-relation-label opposition-relation-label-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-rose-900 sm:text-[11px]">
               Contradictie
             </span>
 
@@ -510,8 +510,9 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
                   key={form.symbol}
                   type="button"
                   onClick={() => setActiveSymbol(form.symbol)}
+                  data-form={form.symbol}
                   className={[
-                    "absolute w-[156px] -translate-x-1/2 -translate-y-1/2 rounded-2xl border px-3 py-3 text-left shadow-sm transition hover:shadow-md sm:w-[182px] sm:px-4 sm:py-4 lg:w-[196px]",
+                    "opposition-square-node absolute w-[156px] -translate-x-1/2 -translate-y-1/2 rounded-2xl border px-3 py-3 text-left shadow-sm transition hover:shadow-md sm:w-[182px] sm:px-4 sm:py-4 lg:w-[196px]",
                     statusClasses(state, isActive),
                   ].join(" ")}
                   style={{ left: position.x, top: position.y }}
