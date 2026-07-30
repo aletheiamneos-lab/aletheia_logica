@@ -13,7 +13,10 @@ function IntensionExtensionBalance({ section }) {
       description={section.description}
     >
       <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="rounded-[30px] border border-slate-200 bg-white p-6">
+        <div
+          key={activeStep.term}
+          className="lesson-state-transition rounded-[30px] border border-slate-200 bg-white p-6"
+        >
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">{section.sliderLabel}</p>

@@ -98,7 +98,11 @@ function TheoryHero({ hero }) {
             </button>
           </div>
 
-          <p className="theory-hero-helper" aria-live="polite">
+          <p
+            key={`helper-${mode}`}
+            className="theory-hero-helper lesson-state-transition"
+            aria-live="polite"
+          >
             {helperText}
           </p>
         </div>
@@ -135,7 +139,10 @@ function TheoryHero({ hero }) {
             })}
           </div>
 
-          <p className="theory-hero-visual-note">
+          <p
+            key={`note-${mode}`}
+            className="theory-hero-visual-note lesson-state-transition"
+          >
             {mode === "chaos"
               ? "Intuiția oferă semnale rapide, dar încă nu le compară riguros."
               : "Logica aduce criterii, relații și un traseu clar de verificare."}

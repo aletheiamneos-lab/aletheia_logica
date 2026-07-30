@@ -382,7 +382,10 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
         </div>
 
         <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+          <div
+            key={activeForm.symbol}
+            className="lesson-state-transition rounded-2xl border border-slate-200 bg-white p-4"
+          >
             <p className="section-kicker">Legatura rapida</p>
             <div className="mt-3 grid gap-4 md:grid-cols-[0.7fr_1.3fr] md:items-center">
               <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
@@ -544,7 +547,10 @@ function OppositionSquareExplorer({ block, variant = "default" }) {
             })}
           </div>
 
-          <div className="space-y-4">
+          <div
+            key={`${activeForm.symbol}-${truthValue}`}
+            className="lesson-state-transition space-y-4"
+          >
             <div className="rounded-2xl border border-slate-200 bg-white px-4 py-4">
               <p className="section-kicker">Consecinte imediate</p>
               <p className="mt-2 text-sm leading-7 text-slate-600">

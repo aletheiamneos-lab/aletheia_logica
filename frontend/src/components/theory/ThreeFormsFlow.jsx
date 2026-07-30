@@ -59,7 +59,10 @@ function ThreeFormsFlow({ section }) {
           ))}
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+        <div
+          key={activeForm.id}
+          className="lesson-state-transition grid gap-5 lg:grid-cols-[1.15fr_0.85fr]"
+        >
           <div className="rounded-[28px] border border-slate-200 bg-slate-950 px-6 py-6 text-white">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Detaliu activ</p>
             <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{activeForm.title}</h3>

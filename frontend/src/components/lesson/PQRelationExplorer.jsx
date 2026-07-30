@@ -81,7 +81,10 @@ function PQRelationExplorer({ block, variant = "default" }) {
       </div>
 
       <div className="mt-4 grid gap-4 lg:grid-cols-[0.94fr_1.06fr]">
-        <div className={panelClassName}>
+        <div
+          key={activeOperator.id}
+          className={`${panelClassName} lesson-state-transition`}
+        >
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="max-w-xl">
               <p className="section-kicker">Relatia dintre p si q</p>
@@ -169,7 +172,10 @@ function PQRelationExplorer({ block, variant = "default" }) {
             })}
           </div>
 
-          <div className={resultPanelClassName}>
+          <div
+            key={`${activeOperator.id}-${activeRow.id}`}
+            className={`${resultPanelClassName} lesson-state-transition`}
+          >
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <p className="section-kicker">Caz selectat</p>

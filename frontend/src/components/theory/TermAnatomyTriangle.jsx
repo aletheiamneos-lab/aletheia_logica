@@ -85,7 +85,10 @@ function TermAnatomyTriangle({ section }) {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[28px] border border-slate-200 bg-white p-6">
+          <div
+            key={activeNode.id}
+            className="lesson-state-transition rounded-[28px] border border-slate-200 bg-white p-6"
+          >
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">Nod activ</p>
             <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-slate-950">{activeNode.label}</h3>
             <p className="mt-4 text-sm leading-7 text-slate-600">{activeNode.explanation}</p>

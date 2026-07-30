@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react"
 import { ArrowRight } from "lucide-react"
 
 import TheorySectionCard from "./TheorySectionCard"
@@ -71,6 +71,58 @@ const categorySlots = [
 
 function ChaosToOrderInteractive({ section }) {
   const [organized, setOrganized] = useState(false)
+  const boardRef = useRef(null)
+  const sourceAnchorsRef = useRef({})
+  const targetAnchorsRef = useRef({})
+  const movingShapesRef = useRef({})
+
+  const registerAnchor = useCallback((anchorMap, shapeId, node) => {
+    if (node) {
+      anchorMap.current[shapeId] = node
+      return
+    }
+
+    delete anchorMap.current[shapeId]
+  }, [])
+
+  const measureShapePositions = useCallback(() => {
+    const board = boardRef.current
+    if (!board) {
+      return
+    }
+
+    const boardBounds = board.getBoundingClientRect()
+    shapes.forEach((shape) => {
+      const anchor = organized
+        ? targetAnchorsRef.current[shape.id]
+        : sourceAnchorsRef.current[shape.id]
+      const movingShape = movingShapesRef.current[shape.id]
+
+      if (!anchor || !movingShape) {
+        return
+      }
+
+      const anchorBounds = anchor.getBoundingClientRect()
+      movingShape.style.setProperty("--shape-x", `${anchorBounds.left - boardBounds.left}px`)
+      movingShape.style.setProperty("--shape-y", `${anchorBounds.top - boardBounds.top}px`)
+      movingShape.classList.add("is-positioned")
+    })
+  }, [organized])
+
+  useLayoutEffect(() => {
+    measureShapePositions()
+  }, [measureShapePositions])
+
+  useEffect(() => {
+    if (!boardRef.current || typeof ResizeObserver === "undefined") {
+      return undefined
+    }
+
+    const observer = new ResizeObserver(measureShapePositions)
+    observer.observe(boardRef.current)
+
+    return () => observer.disconnect()
+  }, [measureShapePositions])
 
   return (
     <TheorySectionCard
@@ -87,7 +139,10 @@ function ChaosToOrderInteractive({ section }) {
         </button>
       }
     >
-      <div className={`chaos-order-board ${organized ? "is-organized" : ""}`}>
+      <div
+        ref={boardRef}
+        className={`chaos-order-board ${organized ? "is-organized" : ""}`}
+      >
         <section className="chaos-order-panel is-chaos">
           <div className="chaos-order-panel-head">
             <p>{section.leftLabel}</p>
@@ -98,9 +153,9 @@ function ChaosToOrderInteractive({ section }) {
             {shapes.map((shape) => (
               <span
                 key={shape.id}
+                ref={(node) => registerAnchor(sourceAnchorsRef, shape.id, node)}
                 className={[
-                  "chaos-order-scatter-shape bg-gradient-to-br",
-                  shape.color,
+                  "chaos-order-shape-anchor",
                   shape.size,
                   shape.shape,
                 ].join(" ")}
@@ -140,9 +195,10 @@ function ChaosToOrderInteractive({ section }) {
                     return (
                       <span
                         key={shapeId}
+                        ref={(node) => registerAnchor(targetAnchorsRef, shapeId, node)}
                         className={[
-                          "chaos-order-category-shape bg-gradient-to-br",
-                          shape.color,
+                          "chaos-order-shape-anchor is-target",
+                          shape.size,
                           shape.shape,
                         ].join(" ")}
                       />
@@ -153,6 +209,28 @@ function ChaosToOrderInteractive({ section }) {
             ))}
           </div>
         </section>
+
+        <div className="chaos-order-moving-layer" aria-hidden="true">
+          {shapes.map((shape, index) => {
+            return (
+              <span
+                key={shape.id}
+                ref={(node) => registerAnchor(movingShapesRef, shape.id, node)}
+                className={[
+                  "chaos-order-moving-shape bg-gradient-to-br",
+                  shape.color,
+                  shape.size,
+                  shape.shape,
+                ].join(" ")}
+                style={{
+                  "--move-delay": `${
+                    organized ? index * 55 : (shapes.length - index - 1) * 35
+                  }ms`,
+                }}
+              />
+            )
+          })}
+        </div>
       </div>
 
       <p className="chaos-order-footer">{section.footer}</p>
