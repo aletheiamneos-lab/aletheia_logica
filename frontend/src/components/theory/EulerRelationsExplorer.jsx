@@ -281,7 +281,10 @@ function EulerRelationsExplorer({ section }) {
         </div>
       }
     >
-      <div className="grid gap-6 lg:grid-cols-[1.02fr_0.98fr]">
+      <div
+        key={`${activeRelation.id}-${exampleIndex}`}
+        className="lesson-state-transition grid gap-6 lg:grid-cols-[1.02fr_0.98fr]"
+      >
         <div className="rounded-[28px] border border-slate-200 bg-white p-6">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>

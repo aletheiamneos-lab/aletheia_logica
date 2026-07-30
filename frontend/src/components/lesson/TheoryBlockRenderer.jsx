@@ -113,7 +113,10 @@ function ImageTheoryBlock({ block }) {
           </div>
 
           {activeHotspot && (
-            <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-4">
+            <div
+              key={activeHotspot.label}
+              className="lesson-state-transition rounded-xl border border-blue-100 bg-blue-50 px-4 py-4"
+            >
               <p className="text-sm font-semibold text-blue-900">{activeHotspot.label}</p>
               <p className="mt-2 text-sm leading-6 text-blue-900/80">{activeHotspot.text}</p>
             </div>

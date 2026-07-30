@@ -136,7 +136,7 @@ function getStudentInitials(session) {
 
 function Navbar({ onHide, onNavigate }) {
   const navigate = useNavigate()
-  const { isAuthenticated, isAdmin, session, logout } = useAuth()
+  const { isAuthenticated, isAdmin, isDemo, session, logout } = useAuth()
   const adminReportsItem = {
     to: "/profil",
     label: "Rapoarte",
@@ -147,11 +147,17 @@ function Navbar({ onHide, onNavigate }) {
   const visibleGroups = navigationGroups
     .map((group) => ({
       ...group,
-      items: isAuthenticated ? group.items : group.items.filter((item) => item.to === "/"),
+      items: isAuthenticated
+        ? group.items.filter(
+            (item) =>
+              !isDemo ||
+              !["/biblioteca", "/learning/silogismul"].includes(item.to),
+          )
+        : group.items.filter((item) => item.to === "/"),
     }))
     .filter((group) => group.items.length > 0)
 
-  if (isAuthenticated && !isAdmin) {
+  if (isAuthenticated && !isAdmin && !isDemo) {
     visibleGroups.push({
       label: "Cont",
       items: [
@@ -227,6 +233,14 @@ function Navbar({ onHide, onNavigate }) {
                     onNavigate={onNavigate}
                   />
                 </>
+              ) : isDemo ? (
+                <div className="app-sidebar-student-profile-link demo-sidebar-profile">
+                  <span className="app-sidebar-student-avatar" aria-hidden="true">DE</span>
+                  <span className="app-sidebar-student-copy">
+                    <span className="section-kicker">Mod Demo</span>
+                    <span className="app-sidebar-footer-title">Vizitator temporar</span>
+                  </span>
+                </div>
               ) : (
                 <NavLink className="app-sidebar-student-profile-link" to="/profil" onClick={onNavigate}>
                   <span className="app-sidebar-student-avatar" aria-hidden="true">

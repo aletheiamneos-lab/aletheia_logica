@@ -196,7 +196,10 @@ function SyllogisticFiguresExplorer({ block, variant = "default" }) {
         ))}
       </div>
 
-      <div className="syllogistic-figure-body">
+      <div
+        key={activeFigure.id}
+        className="lesson-state-transition syllogistic-figure-body"
+      >
         <div className="syllogistic-figure-visual">
           <div className="syllogistic-panel-heading">
             <div>

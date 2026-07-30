@@ -4,6 +4,8 @@ import { admitereDatasetStats } from "../data/exams/admitereTestsCatalog"
 import examTracks from "../data/exams/examTracks.json"
 import { getExamEntries } from "../data/exams/examCatalog"
 import Button from "../components/ui/Button"
+import { useAuth } from "../context/useAuth"
+import { DEMO_ADMITERE_SLUG, DEMO_BAC_SLUG } from "../demo/demoAccess"
 
 const fallbackCategories = [
   {
@@ -140,8 +142,10 @@ function buildAdmitereMetrics(modules) {
 }
 
 function ExamTrackPage({ trackSlug }) {
+  const { isDemo } = useAuth()
   const track = examTracks.find((entry) => entry.slug === trackSlug)
-  const modules = getExamEntries(trackSlug)
+  const demoSlug = trackSlug === "bac" ? DEMO_BAC_SLUG : DEMO_ADMITERE_SLUG
+  const modules = getExamEntries(trackSlug).filter((entry) => !isDemo || entry.slug === demoSlug)
   const categories = track?.categories?.length ? track.categories : fallbackCategories
   const shouldShowFacts = shouldRenderTrackFacts(trackSlug)
   const shouldShowSummary = shouldRenderTrackSummary(trackSlug)
@@ -150,7 +154,17 @@ function ExamTrackPage({ trackSlug }) {
     ...category,
     modules: modules.filter((entry) => (entry.category ?? "example") === category.id),
   }))
-  const admitereMetrics = trackSlug === "admitere" ? buildAdmitereMetrics(modules) : []
+  const admitereMetrics =
+    trackSlug === "admitere"
+      ? isDemo
+        ? [
+            { label: "Teste", value: 1, helper: "Set demonstrativ disponibil." },
+            { label: "Întrebări", value: 20, helper: "Itemi grilă în setul Demo." },
+            { label: "Întrebări/test", value: 20, helper: "Structura setului selectat." },
+            { label: "An", value: 2025, helper: "Examenul din 23 iulie." },
+          ]
+        : buildAdmitereMetrics(modules)
+      : []
 
   if (!track) {
     return (

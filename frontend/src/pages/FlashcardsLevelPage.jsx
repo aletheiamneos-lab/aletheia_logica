@@ -2,6 +2,7 @@ import { Navigate, useParams } from "react-router-dom"
 
 import FlashcardsLevelView from "../components/flashcards/FlashcardsLevelView"
 import LearningPageHeader from "../components/learning/LearningPageHeader"
+import { useAuth } from "../context/useAuth"
 import {
   getFlashcardLevel,
   getFlashcardSlots,
@@ -10,6 +11,11 @@ import {
 
 function FlashcardsLevelPage() {
   const { level } = useParams()
+  const { isDemo } = useAuth()
+
+  if (isDemo) {
+    return <Navigate replace to="/learning/module/flash-cards/basic/slot_1" />
+  }
 
   if (!isFlashcardLevel(level)) {
     return <Navigate replace to="/learning/module/flash-cards" />

@@ -3,6 +3,8 @@ import { Link, Navigate, useParams } from "react-router-dom"
 import LearningPageHeader from "../components/learning/LearningPageHeader"
 import Button from "../components/ui/Button"
 import { getLearningModule } from "../data/learning/learningCatalog"
+import { useAuth } from "../context/useAuth"
+import { DEMO_GAME_ID } from "../demo/demoAccess"
 
 function getModuleStatusLabel(module) {
   if (!module) {
@@ -14,7 +16,15 @@ function getModuleStatusLabel(module) {
 
 function LearningModulePage() {
   const { moduleId } = useParams()
-  const module = getLearningModule(moduleId)
+  const { isDemo } = useAuth()
+  const sourceModule = getLearningModule(moduleId)
+  const module =
+    isDemo && sourceModule?.id === "games"
+      ? {
+          ...sourceModule,
+          items: sourceModule.items.filter((item) => item.id === DEMO_GAME_ID),
+        }
+      : sourceModule
 
   if (!module) {
     return (

@@ -10050,6 +10050,169 @@
   }
 }
 
+/* Demo mode: temporary, read-only access with an explicit visual boundary. */
+.demo-mode-badge {
+  position: fixed;
+  z-index: 340;
+  top: 50%;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 8px 10px;
+  border: 1px solid color-mix(in srgb, var(--accent) 34%, var(--workspace-line));
+  border-right: 0;
+  border-radius: 12px 0 0 12px;
+  background: color-mix(in srgb, var(--workspace-surface) 94%, transparent);
+  box-shadow: -4px 4px 16px rgba(22, 33, 62, 0.1);
+  color: var(--text);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  transform: translateY(-50%);
+  backdrop-filter: blur(12px);
+}
+
+.demo-mode-badge > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+.demo-lock-panel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  padding: 20px;
+  border: 1px dashed color-mix(in srgb, var(--accent) 32%, var(--workspace-line));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--workspace-surface) 90%, var(--workspace-muted));
+  color: var(--text);
+}
+
+.demo-lock-icon {
+  display: grid;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid var(--workspace-line);
+  border-radius: 15px;
+  background: var(--workspace-surface);
+  color: var(--accent);
+}
+
+.demo-lock-panel h2 {
+  margin-top: 4px;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
+
+.demo-lock-panel p:last-child {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.demo-locked-catalog-item {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.55fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid var(--workspace-line);
+  border-radius: 20px;
+  background: var(--workspace-surface);
+}
+
+.demo-locked-catalog-item h3 {
+  margin-top: 10px;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.demo-home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.demo-home-card {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--workspace-line);
+  border-radius: 18px;
+  background: var(--workspace-surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.demo-home-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--workspace-line));
+  transform: translateY(-2px);
+}
+
+.demo-home-card span,
+.demo-local-note,
+.access-demo-summary p:last-child {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.demo-local-note {
+  margin-top: 18px;
+  max-width: 720px;
+  padding: 14px 16px;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, var(--workspace-surface));
+}
+
+.demo-sidebar-profile {
+  cursor: default;
+}
+
+.access-demo-summary {
+  min-height: 92px;
+  padding: 16px;
+  border: 1px solid var(--workspace-line);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--workspace-surface) 94%, var(--workspace-muted));
+}
+
+.access-demo-summary p:last-child {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .demo-mode-badge {
+    top: calc(env(safe-area-inset-top, 0px) + 10px);
+    right: 10px;
+    border-right: 1px solid color-mix(in srgb, var(--accent) 34%, var(--workspace-line));
+    border-radius: 999px;
+    transform: none;
+  }
+
+  .demo-locked-catalog-item,
+  .demo-home-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .demo-lock-panel {
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+}
+
 /* Mobile navigation drawer. Desktop sidebar rules above remain unchanged. */
 .app-mobile-sidebar-trigger,
 .app-mobile-sidebar-overlay {
@@ -12229,5 +12392,34 @@
   .lesson-workspace-page .overflow-x-auto {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+  }
+}
+
+/* Final public-login role layout: Student, Admin and Demo. */
+.app-shell-public .access-login-mode-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .app-shell-public .access-login-mode-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .app-shell-public .access-mode-card {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 0.35rem;
+    min-height: 68px;
+    padding-inline: 0.4rem;
+    text-align: center;
+  }
+
+  .app-shell-public .access-mode-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .app-shell-public .access-mode-title {
+    font-size: 0.78rem;
   }
 }

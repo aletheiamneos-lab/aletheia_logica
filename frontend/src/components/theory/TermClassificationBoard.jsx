@@ -213,7 +213,10 @@ function TermClassificationBoard({ section }) {
         </div>
       }
     >
-      <div className="space-y-5">
+      <div
+        key={activeTab.id}
+        className="lesson-state-transition space-y-5"
+      >
         {activeTab.boards.map((board) => (
           <ClassificationPairCard
             key={board.id}

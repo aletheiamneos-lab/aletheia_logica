@@ -49,7 +49,9 @@ function PrinciplesTemple({ section }) {
           </div>
         </div>
 
-        <PrincipleDemoCard principle={activePrinciple} />
+        <div key={activePrinciple.id} className="lesson-state-transition">
+          <PrincipleDemoCard principle={activePrinciple} />
+        </div>
       </div>
     </TheorySectionCard>
   )

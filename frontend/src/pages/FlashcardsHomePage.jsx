@@ -1,8 +1,15 @@
+import { Navigate } from "react-router-dom"
+
 import FlashcardsHome from "../components/flashcards/FlashcardsHome"
 import LearningPageHeader from "../components/learning/LearningPageHeader"
+import { useAuth } from "../context/useAuth"
 import { getFlashcardLevelsOverview } from "../data/learning/flashcardsCatalog"
 
 function FlashcardsHomePage() {
+  const { isDemo } = useAuth()
+  if (isDemo) {
+    return <Navigate replace to="/learning/module/flash-cards/basic/slot_1" />
+  }
   const levels = getFlashcardLevelsOverview()
 
   return (

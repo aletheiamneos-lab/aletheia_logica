@@ -158,7 +158,10 @@ function ArgumentSchemeExplorer({ block, variant = "default" }) {
 
       <div className="mt-4 grid gap-4 xl:grid-cols-[0.96fr_1.04fr]">
         <div className="space-y-3">
-          <div className={panelClassName}>
+          <div
+            key={activeFamily.id}
+            className={`${panelClassName} lesson-state-transition`}
+          >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="max-w-xl">
                 <p className="section-kicker">Familie logica</p>
@@ -195,7 +198,10 @@ function ArgumentSchemeExplorer({ block, variant = "default" }) {
             </div>
           </div>
 
-          <div className={solidPanelClassName}>
+          <div
+            key={activeScheme.id}
+            className={`${solidPanelClassName} lesson-state-transition`}
+          >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <p className="section-kicker">Schema activa</p>
@@ -291,7 +297,10 @@ function ArgumentSchemeExplorer({ block, variant = "default" }) {
             </div>
           </div>
 
-          <div className={solidPanelClassName}>
+          <div
+            key={`${activeScheme.id}-${selectedRow.id}`}
+            className={`${solidPanelClassName} lesson-state-transition`}
+          >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <p className="section-kicker">Rand selectat</p>

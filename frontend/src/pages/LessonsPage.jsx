@@ -1,7 +1,10 @@
 import LessonCard from "../components/LessonCard"
+import DemoLock from "../components/demo/DemoLock"
+import { useAuth } from "../context/useAuth"
 import courseManifest from "../data/courseManifest.json"
 
 function LessonsPage() {
+  const { isDemo } = useAuth()
   const availablePracticeCount = courseManifest.filter((lesson) => lesson.practiceStatus === "available").length
 
   return (
@@ -33,9 +36,19 @@ function LessonsPage() {
         </div>
 
         <div className="lessons-catalog-list">
-          {courseManifest.map((lesson) => (
-            <LessonCard key={lesson.id} lesson={lesson} />
-          ))}
+          {courseManifest.map((lesson) =>
+            isDemo && lesson.id !== 1 ? (
+              <article key={lesson.id} className="demo-locked-catalog-item">
+                <div>
+                  <span className="tag">{`Lecția ${lesson.id}`}</span>
+                  <h3>{lesson.title}</h3>
+                </div>
+                <DemoLock description="Lecțiile 2–5 se deblochează în versiunea completă." />
+              </article>
+            ) : (
+              <LessonCard key={lesson.id} lesson={lesson} />
+            ),
+          )}
         </div>
       </section>
     </div>

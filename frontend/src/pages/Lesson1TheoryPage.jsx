@@ -16,6 +16,8 @@ import ThreeFormsFlow from "../components/theory/ThreeFormsFlow"
 import lesson1Theory from "../data/theory/lesson1Theory.json"
 import { lesson1PdfSupplement } from "../data/theory/lesson1Supplement"
 import { studyPosters } from "../data/theory/studyPosters"
+import DemoLock from "../components/demo/DemoLock"
+import { useAuth } from "../context/useAuth"
 
 function LessonPosterInset({ title, description, poster }) {
   return (
@@ -26,6 +28,7 @@ function LessonPosterInset({ title, description, poster }) {
 }
 
 function Lesson1TheoryPage() {
+  const { isDemo } = useAuth()
   const [activeRecapIndex, setActiveRecapIndex] = useState(0)
 
   const activeRecap = useMemo(
@@ -46,50 +49,58 @@ function Lesson1TheoryPage() {
         poster={studyPosters.notiuneaTermenulLogic}
       />
       <IntensionExtensionBalance section={lesson1Theory.intensionExtension} />
-      <TermClassificationBoard section={lesson1Theory.classification} />
-      <LessonPosterInset
-        title="Clasificarea și diviziunea, sintetizate vizual"
-        description="L-am așezat după exercițiul de clasificare, ca să rămână aproape de reguli, de criteriul unic și de exemplele bune sau greșite."
-        poster={studyPosters.clasificareaSiDiviziunea}
-      />
-      <DefinitionClassificationSupplement section={lesson1PdfSupplement} />
-      <EulerRelationsExplorer section={lesson1Theory.eulerExplorer} />
+      {isDemo ? (
+        <DemoLock
+          description="Clasificarea termenilor și toate secțiunile următoare sunt disponibile în versiunea completă."
+        />
+      ) : (
+        <>
+          <TermClassificationBoard section={lesson1Theory.classification} />
+          <LessonPosterInset
+            title="Clasificarea și diviziunea, sintetizate vizual"
+            description="L-am așezat după exercițiul de clasificare, ca să rămână aproape de reguli, de criteriul unic și de exemplele bune sau greșite."
+            poster={studyPosters.clasificareaSiDiviziunea}
+          />
+          <DefinitionClassificationSupplement section={lesson1PdfSupplement} />
+          <EulerRelationsExplorer section={lesson1Theory.eulerExplorer} />
 
-      <TheorySectionCard
-        kicker="Pasul 9"
-        title={lesson1Theory.recap.title}
-        description={lesson1Theory.recap.description}
-      >
-        <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
-          <div className="grid gap-4">
-            {lesson1Theory.recap.bullets.map((bullet, index) => (
-              <button
-                key={bullet.label}
-                type="button"
-                onClick={() => setActiveRecapIndex(index)}
-                className={["theory-recap-selector", activeRecapIndex === index ? "is-active" : ""].join(" ")}
-              >
-                <p className="text-lg font-semibold tracking-[-0.03em] text-slate-950">{bullet.label}</p>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{bullet.detail}</p>
-              </button>
-            ))}
-          </div>
+          <TheorySectionCard
+            kicker="Pasul 9"
+            title={lesson1Theory.recap.title}
+            description={lesson1Theory.recap.description}
+          >
+            <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
+              <div className="grid gap-4">
+                {lesson1Theory.recap.bullets.map((bullet, index) => (
+                  <button
+                    key={bullet.label}
+                    type="button"
+                    onClick={() => setActiveRecapIndex(index)}
+                    className={["theory-recap-selector", activeRecapIndex === index ? "is-active" : ""].join(" ")}
+                  >
+                    <p className="text-lg font-semibold tracking-[-0.03em] text-slate-950">{bullet.label}</p>
+                    <p className="mt-3 text-sm leading-7 text-slate-600">{bullet.detail}</p>
+                  </button>
+                ))}
+              </div>
 
-          <div className="theory-recap-spotlight">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Acum fixezi</p>
-            <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{activeRecap.label}</h3>
-            <p className="mt-4 text-base leading-8 text-slate-200">{activeRecap.detail}</p>
+              <div className="theory-recap-spotlight">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Acum fixezi</p>
+                <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{activeRecap.label}</h3>
+                <p className="mt-4 text-base leading-8 text-slate-200">{activeRecap.detail}</p>
 
-            <div className="theory-recap-next mt-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Urmeaza</p>
-              <p className="mt-3 text-lg leading-8 text-white">{lesson1Theory.recap.next}</p>
+                <div className="theory-recap-next mt-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Urmeaza</p>
+                  <p className="mt-3 text-lg leading-8 text-white">{lesson1Theory.recap.next}</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </TheorySectionCard>
+          </TheorySectionCard>
 
-      <LessonTheoryRenderer theory={lesson1Theory} showIntro={false} />
-      <TheoryCheckpoint section={lesson1Theory.checkpoints} />
+          <LessonTheoryRenderer theory={lesson1Theory} showIntro={false} />
+          <TheoryCheckpoint section={lesson1Theory.checkpoints} />
+        </>
+      )}
     </div>
   )
 }

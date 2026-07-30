@@ -379,7 +379,7 @@ function ActionBar({
 }
 
 function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
-  const { session } = useAuth()
+  const { session, isDemo } = useAuth()
   const [answersByQuestionId, setAnswersByQuestionId] = useState({})
   const [hasSubmitted, setHasSubmitted] = useState(false)
   const [isGeneratingReport, setIsGeneratingReport] = useState(false)
@@ -564,6 +564,14 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
     setSubmittedAt(submittedTimestamp)
     setFinalizedReportPayload(nextReportPayload)
     setHasSubmitted(true)
+    if (isDemo) {
+      setReportSyncMessage(
+        "Rezultat calculat local în modul Demo. Nu a fost trimis și nu a fost salvat în Supabase.",
+      )
+      window.scrollTo({ top: 0, behavior: "smooth" })
+      return
+    }
+
     setIsSavingReport(true)
     setReportSyncMessage("Salvez raportul Admitere in Profil...")
 
@@ -612,6 +620,10 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
 
   async function handleDownloadReport() {
     if (!hasSubmitted || isGeneratingReport) {
+      return
+    }
+    if (isDemo) {
+      setReportSyncMessage("Exportul PDF nu este disponibil în modul Demo.")
       return
     }
 

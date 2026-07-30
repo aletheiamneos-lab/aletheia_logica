@@ -737,7 +737,7 @@ function StudyTimelineBoard({
 }
 
 function HomePage() {
-  const { isAuthenticated, isAdmin, session } = useAuth()
+  const { isAuthenticated, isAdmin, isDemo, session } = useAuth()
   const [summary, setSummary] = useState(initialSummary)
   const [insights, setInsights] = useState(initialInsights)
   const [publishedTests, setPublishedTests] = useState([])
@@ -750,7 +750,7 @@ function HomePage() {
   const lastSyncedStudyPlanRef = useRef(JSON.stringify(serializeStudyPlanStateForApi(createDefaultStudyPlanState())))
 
   useEffect(() => {
-    if (!isAuthenticated) {
+    if (!isAuthenticated || isDemo) {
       return () => {}
     }
 
@@ -816,7 +816,7 @@ function HomePage() {
     return () => {
       active = false
     }
-  }, [isAdmin, isAuthenticated])
+  }, [isAdmin, isAuthenticated, isDemo])
 
   useEffect(() => {
     if (!isAdmin || !isAuthenticated || !isStudyPlanLoaded || typeof window === "undefined") {
@@ -853,6 +853,43 @@ function HomePage() {
 
   if (!isAuthenticated) {
     return <AccessGate />
+  }
+
+  if (isDemo) {
+    return (
+      <div className="page-stack demo-home-page">
+        <section className="hero-panel workspace-hero">
+          <div className="workspace-hero-main">
+            <p className="section-kicker">Bun venit în modul Demo</p>
+            <h1 className="section-title mt-2">Explorează logica fără cont</h1>
+            <p className="section-subtitle mt-3">
+              Ai acces la o selecție complet funcțională. Activitatea și rezultatele nu sunt
+              trimise către backend și dispar când închizi fila.
+            </p>
+            <div className="compact-inline-actions mt-5">
+              <Link className="btn-primary" to="/lectii/1/teorie">Începe Lecția 1</Link>
+              <Link className="btn-secondary" to="/teste-integrate">Deschide testul demo</Link>
+            </div>
+          </div>
+        </section>
+        <section className="panel compact-section">
+          <p className="section-kicker">Selecție demonstrativă</p>
+          <div className="demo-home-grid mt-4">
+            {[
+              ["Lecția 1", "Primele 5 blocuri, până la Intensiune vs. extensiune", "/lectii/1/teorie"],
+              ["Learning 2.0", "Materie, 8 flashcarduri și primul joc Pătratul logic", "/learning"],
+              ["Evaluare", "BAC 2025 V6, Admitere 23 iulie 2025 și Test Logica Set 8", "/bac"],
+              ["Exersare", "Primele 5 exerciții din Lecția 1", "/exersare"],
+            ].map(([title, copy, to]) => (
+              <Link key={title} className="demo-home-card" to={to}>
+                <strong>{title}</strong>
+                <span>{copy}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+    )
   }
 
   const studentName = session?.displayName || "Student"

@@ -42,7 +42,10 @@ function DistributionExplorer({ block, variant = "default" }) {
         ))}
       </div>
 
-      <div className="mt-5 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+      <div
+        key={activeForm.symbol}
+        className="lesson-state-transition mt-5 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]"
+      >
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
           <p className="section-kicker">Distribuirea în {activeForm.formula}</p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">

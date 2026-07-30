@@ -4,12 +4,17 @@ import { Link } from "react-router-dom"
 import { getExercises } from "../api/client"
 import Button from "../components/ui/Button"
 import courseManifest from "../data/courseManifest.json"
+import { useAuth } from "../context/useAuth"
 
 function PracticeHubPage() {
+  const { isDemo } = useAuth()
   const [exerciseCounts, setExerciseCounts] = useState({})
   const [error, setError] = useState("")
 
   useEffect(() => {
+    if (isDemo) {
+      return undefined
+    }
     let active = true
 
     async function loadCounts() {
@@ -37,7 +42,8 @@ function PracticeHubPage() {
     return () => {
       active = false
     }
-  }, [])
+  }, [isDemo])
+  const visibleExerciseCounts = isDemo ? { 1: 5 } : exerciseCounts
 
   return (
     <div className="page-stack practice-hub-page">
@@ -61,12 +67,12 @@ function PracticeHubPage() {
         </div>
 
         <div className="compact-module-list">
-        {courseManifest.map((lesson) => (
+        {(isDemo ? courseManifest.slice(0, 1) : courseManifest).map((lesson) => (
           <article key={lesson.id} className="compact-module-row">
             <div className="compact-module-main">
               <div className="compact-inline-facts">
               <span className="tag">{`Lectia ${lesson.id}`}</span>
-              <span className="status-pill">{exerciseCounts[lesson.id] ?? 0} exercitii locale</span>
+              <span className="status-pill">{visibleExerciseCounts[lesson.id] ?? 0} exercitii locale</span>
               </div>
 
               <div className="compact-module-copy">
