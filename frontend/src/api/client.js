@@ -19,6 +19,7 @@ const SERVER_READY_TTL_MS = 10 * 60 * 1_000
 const RETRYABLE_SERVER_STATUSES = new Set([502, 503, 504])
 const PREVIEW_STORAGE_KEY = "logica_preview_progress"
 const PREVIEW_HOMEPAGE_STUDY_PLAN_KEY = "logica_preview_homepage_study_plan"
+const PREVIEW_LIBRARY_VISIBILITY_KEY = "logica_preview_library_visibility"
 const ACTIVE_SESSION_STORAGE_KEY = "logica_active_session"
 export const PUBLIC_LINK_CODE = "main-public-link"
 export const PUBLIC_SESSION_STORAGE_KEY = "logica_public_session_id"
@@ -689,6 +690,47 @@ async function previewRequest(path, options = {}) {
     return loadPreviewHomepageStudyPlan()
   }
 
+  if (path === "/library-settings/documents") {
+    const storedSession = loadStoredSession()
+    const canManage = storedSession?.role === "admin"
+    const defaultVisibility = {
+      "lectia-1": true,
+      "lectia-2": true,
+      "lectia-3": true,
+      "lectia-4": true,
+      "lectia-5": true,
+      "manual-integral": true,
+    }
+    const storedVisibility = JSON.parse(
+      readBrowserStorage(PREVIEW_LIBRARY_VISIBILITY_KEY) ?? "{}",
+    )
+    const visibility = { ...defaultVisibility, ...storedVisibility }
+
+    return {
+      can_manage: canManage,
+      documents: Object.entries(visibility)
+        .filter(([, isVisible]) => canManage || isVisible)
+        .map(([documentId, isVisible]) => ({
+          document_id: documentId,
+          is_visible_to_students: Boolean(isVisible),
+        })),
+    }
+  }
+
+  if (path.startsWith("/library-settings/documents/")) {
+    const documentId = decodeURIComponent(path.split("/").pop())
+    const payload = JSON.parse(options.body ?? "{}")
+    const storedVisibility = JSON.parse(
+      readBrowserStorage(PREVIEW_LIBRARY_VISIBILITY_KEY) ?? "{}",
+    )
+    storedVisibility[documentId] = Boolean(payload.is_visible_to_students)
+    writeBrowserStorage(PREVIEW_LIBRARY_VISIBILITY_KEY, JSON.stringify(storedVisibility))
+    return {
+      document_id: documentId,
+      is_visible_to_students: storedVisibility[documentId],
+    }
+  }
+
   if (path === "/submit-answer") {
     const payload = JSON.parse(options.body ?? "{}")
     const exercise = staticExercises.find((item) => item.id === payload.exercise_id)
@@ -1214,6 +1256,17 @@ export function updateHomepageStudyPlan(payload) {
   return request("/homepage-settings/study-plan", {
     method: "PUT",
     body: JSON.stringify(payload),
+  })
+}
+
+export function getLibraryDocumentsVisibility() {
+  return request("/library-settings/documents")
+}
+
+export function updateLibraryDocumentVisibility(documentId, isVisibleToStudents) {
+  return request(`/library-settings/documents/${encodeURIComponent(documentId)}`, {
+    method: "PATCH",
+    body: JSON.stringify({ is_visible_to_students: isVisibleToStudents }),
   })
 }
 

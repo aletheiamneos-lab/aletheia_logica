@@ -27,6 +27,7 @@ from .learning_service import (
 )
 from .homepage_settings_routes import router as homepage_settings_router
 from .integrated_tests_routes import router as integrated_tests_router
+from .library_settings_routes import router as library_settings_router
 from .pdf_service import (
     build_content_disposition,
     build_export_filename,
@@ -95,6 +96,7 @@ app.include_router(bac_student_reports_router)
 app.include_router(bac_teacher_solution_router)
 app.include_router(homepage_settings_router)
 app.include_router(integrated_tests_router)
+app.include_router(library_settings_router)
 app.include_router(submission_router)
 
 if FRONTEND_ASSETS.exists():

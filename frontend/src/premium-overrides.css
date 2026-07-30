@@ -8934,6 +8934,32 @@
   background: transparent;
 }
 
+.library-card.is-hidden-for-students .library-document-preview {
+  opacity: 0.58;
+  filter: grayscale(0.72);
+}
+
+.library-feedback {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--workspace-line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
+.library-feedback.is-error {
+  border-color: rgba(185, 28, 28, 0.2);
+  background: rgba(254, 226, 226, 0.58);
+  color: #991b1b;
+}
+
+.library-visibility-status.is-hidden {
+  background: rgba(148, 163, 184, 0.16);
+  color: var(--text-muted);
+}
+
 .library-document-preview {
   position: relative;
   display: block;
@@ -9018,6 +9044,13 @@
   padding: 0.46rem 0.62rem;
   font-size: 0.7rem;
   letter-spacing: 0;
+}
+
+.library-visibility-toggle {
+  width: 100%;
+  min-height: 36px;
+  justify-content: center;
+  font-size: 0.72rem;
 }
 
 .library-modal-shell {

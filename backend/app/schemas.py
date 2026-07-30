@@ -192,6 +192,20 @@ class HomepageStudyPlanPayload(BaseModel):
     rows: list[HomepageStudyPlanRow] = Field(default_factory=list)
 
 
+class LibraryDocumentVisibility(BaseModel):
+    document_id: str
+    is_visible_to_students: bool
+
+
+class LibraryDocumentsVisibilityResponse(BaseModel):
+    can_manage: bool
+    documents: list[LibraryDocumentVisibility]
+
+
+class LibraryDocumentVisibilityUpdate(BaseModel):
+    is_visible_to_students: bool
+
+
 class IntegratedTestQuestionInput(BaseModel):
     id: str | None = None
     lesson_number: int = Field(..., ge=1, le=5)
