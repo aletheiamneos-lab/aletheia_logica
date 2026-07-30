@@ -8982,6 +8982,15 @@
   object-fit: cover;
 }
 
+.library-document-preview.is-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.library-document-preview.is-image img {
+  object-fit: contain;
+}
+
 .library-document-preview-button {
   position: absolute;
   inset: 0;
@@ -9062,6 +9071,12 @@
   padding: 1.25rem;
 }
 
+@media (min-width: 769px) {
+  .app-shell-auth.app-shell-sidebar-visible .library-modal-shell {
+    left: var(--workspace-sidebar-width, 280px);
+  }
+}
+
 .library-modal-backdrop {
   position: absolute;
   inset: 0;
@@ -9114,6 +9129,22 @@
   min-height: 0;
   border: 0;
   background: #f8fafc;
+}
+
+.library-modal-image-stage {
+  min-height: 0;
+  overflow: auto;
+  padding: 1rem;
+  background: #f8fafc;
+}
+
+.library-modal-image-stage img {
+  display: block;
+  width: min(100%, 1536px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.1);
 }
 
 @media (max-width: 720px) {

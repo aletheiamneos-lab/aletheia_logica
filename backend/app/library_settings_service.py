@@ -9,9 +9,18 @@ from .auth_service import get_setting, set_setting
 LIBRARY_VISIBILITY_SETTING_KEY = "library_document_visibility_v1"
 LIBRARY_DOCUMENT_IDS = (
     "lectia-1",
+    "poster-lectia-1-termenul-logic",
     "lectia-2",
+    "poster-lectia-2-definitia",
+    "poster-lectia-2-propozitiile-categorice",
     "lectia-3",
+    "poster-lectia-3-patratul-logic",
+    "poster-lectia-3-silogismul",
     "lectia-4",
+    "poster-lectia-4-operatorii-logici",
+    "poster-lectia-4-limbaj-natural-in-formal",
+    "poster-lectia-4-limbaj-formal-in-natural",
+    "poster-lectia-4-argumentarea-logica",
     "lectia-5",
     "manual-integral",
 )

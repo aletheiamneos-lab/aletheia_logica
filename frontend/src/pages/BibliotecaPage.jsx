@@ -17,6 +17,10 @@ function previewSource(document) {
   return `${document.href}#toolbar=1&navpanes=0`
 }
 
+function isImageDocument(document) {
+  return document.mediaType === "image"
+}
+
 function BibliotecaPage() {
   const { session } = useAuth()
   const [previewDocument, setPreviewDocument] = useState(null)
@@ -118,15 +122,15 @@ function BibliotecaPage() {
       <section className="library-hero">
         <div>
           <p className="section-kicker">Biblioteca</p>
-          <h1>Documente PDF</h1>
+          <h1>Documente și fișe vizuale</h1>
           <p>
-            Manualul integral si rapoartele pe lectii pot fi previzualizate sau descarcate direct.
+            Materialele sunt ordonate pe lecții și pot fi previzualizate sau descărcate direct.
           </p>
         </div>
         <span className="status-pill">
           {canManage
             ? `${visibleToStudentsCount}/${libraryDocuments.length} vizibile elevilor`
-            : `${visibleDocuments.length} documente PDF`}
+            : `${visibleDocuments.length} resurse`}
         </span>
       </section>
 
@@ -156,12 +160,14 @@ function BibliotecaPage() {
               return (
                 <article
                   key={document.id}
-                  className={`library-card${canManage && !isVisibleToStudents ? " is-hidden-for-students" : ""}`}
+                  className={`library-card${isImageDocument(document) ? " is-image" : ""}${canManage && !isVisibleToStudents ? " is-hidden-for-students" : ""}`}
                 >
-                  <div className="library-document-preview">
+                  <div
+                    className={`library-document-preview${isImageDocument(document) ? " is-image" : ""}`}
+                  >
                     <img
                       src={firstPageSource(document)}
-                      alt={`Prima pagina - ${document.title}`}
+                      alt={document.alt ?? `Prima pagina - ${document.title}`}
                       loading="lazy"
                     />
                     <button
@@ -232,7 +238,9 @@ function BibliotecaPage() {
             aria-label="Inchide preview-ul"
             onClick={() => setPreviewDocument(null)}
           />
-          <section className="library-modal">
+          <section
+            className={`library-modal${isImageDocument(previewDocument) ? " is-image" : ""}`}
+          >
             <div className="library-modal-header">
               <div>
                 <p className="section-kicker">{previewDocument.eyebrow}</p>
@@ -247,11 +255,17 @@ function BibliotecaPage() {
                 Inchide
               </button>
             </div>
-            <iframe
-              className="library-modal-frame"
-              src={previewSource(previewDocument)}
-              title={`Preview PDF - ${previewDocument.title}`}
-            />
+            {isImageDocument(previewDocument) ? (
+              <div className="library-modal-image-stage">
+                <img src={previewDocument.href} alt={previewDocument.alt ?? previewDocument.title} />
+              </div>
+            ) : (
+              <iframe
+                className="library-modal-frame"
+                src={previewSource(previewDocument)}
+                title={`Preview PDF - ${previewDocument.title}`}
+              />
+            )}
           </section>
         </div>
       ) : null}

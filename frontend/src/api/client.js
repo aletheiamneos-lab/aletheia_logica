@@ -695,9 +695,18 @@ async function previewRequest(path, options = {}) {
     const canManage = storedSession?.role === "admin"
     const defaultVisibility = {
       "lectia-1": true,
+      "poster-lectia-1-termenul-logic": true,
       "lectia-2": true,
+      "poster-lectia-2-definitia": true,
+      "poster-lectia-2-propozitiile-categorice": true,
       "lectia-3": true,
+      "poster-lectia-3-patratul-logic": true,
+      "poster-lectia-3-silogismul": true,
       "lectia-4": true,
+      "poster-lectia-4-operatorii-logici": true,
+      "poster-lectia-4-limbaj-natural-in-formal": true,
+      "poster-lectia-4-limbaj-formal-in-natural": true,
+      "poster-lectia-4-argumentarea-logica": true,
       "lectia-5": true,
       "manual-integral": true,
     }

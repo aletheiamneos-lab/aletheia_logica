@@ -46,7 +46,11 @@ class LibrarySettingsTests(unittest.TestCase):
         )
 
     def test_hidden_document_is_removed_from_student_response_but_kept_for_admin(self):
-        library_settings_service.update_library_document_visibility("lectia-2", False)
+        hidden_document_id = "poster-lectia-2-definitia"
+        library_settings_service.update_library_document_visibility(
+            hidden_document_id,
+            False,
+        )
 
         student_response = library_settings_service.get_library_documents_visibility(
             {"role": "student"}
@@ -56,13 +60,13 @@ class LibrarySettingsTests(unittest.TestCase):
         )
 
         self.assertNotIn(
-            "lectia-2",
+            hidden_document_id,
             [document["document_id"] for document in student_response["documents"]],
         )
         hidden_admin_document = next(
             document
             for document in admin_response["documents"]
-            if document["document_id"] == "lectia-2"
+            if document["document_id"] == hidden_document_id
         )
         self.assertFalse(hidden_admin_document["is_visible_to_students"])
         self.assertTrue(admin_response["can_manage"])
