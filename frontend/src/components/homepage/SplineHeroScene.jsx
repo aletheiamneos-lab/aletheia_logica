@@ -1,9 +1,8 @@
 import Spline from "@splinetool/react-spline"
 import { useCallback, useEffect, useRef, useState } from "react"
 
-// PLACEHOLDER_SPLINE_SCENE_URL: înlocuiește valoarea de mai jos cu URL-ul
-// scene.splinecode primit după exportul public al scenei din Spline.
-const SPLINE_SCENE_URL = "PLACEHOLDER_SPLINE_SCENE_URL"
+const SPLINE_SCENE_URL =
+  "https://prod.spline.design/djTvwII-ulueJZAn/scene.splinecode"
 
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(() =>
