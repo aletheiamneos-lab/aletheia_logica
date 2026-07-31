@@ -76,7 +76,11 @@ function AccessGate() {
         </div>
 
         <aside className="access-login-panel">
-          <div className="access-login-mode-grid" aria-label="Alege tipul de acces">
+          <div
+            className="access-login-mode-grid"
+            aria-label="Alege tipul de acces"
+            role="tablist"
+          >
             {roleCards.map((card) => {
               const isActive = mode === card.key
               const RoleIcon = card.icon
@@ -89,7 +93,8 @@ function AccessGate() {
                     setMode(card.key)
                     setError("")
                   }}
-                  aria-pressed={isActive}
+                  role="tab"
+                  aria-selected={isActive}
                 >
                   <span className="access-mode-icon" aria-hidden="true">
                     <RoleIcon />
