@@ -1,15 +1,15 @@
-import heroIllustration from "../../assets/square-of-opposition.png"
+import AppBrandMark from "../AppBrandMark"
 
 function HomepageHeroIllustration() {
   return (
-    <div className="homepage-hero-illustration" aria-hidden="true">
-      <img
-        className="homepage-hero-illustration-image square-of-opposition-hero-image"
-        src={heroIllustration}
-        alt=""
-        loading="eager"
-        decoding="async"
-      />
+    <div className="homepage-hero-illustration">
+      <div className="homepage-brand-lockup" role="img" aria-label="Logica by A mentor">
+        <AppBrandMark className="homepage-brand-mark" />
+        <span className="homepage-brand-copy" aria-hidden="true">
+          <span className="homepage-brand-name">Logica</span>
+          <span className="homepage-brand-credit">by A mentor</span>
+        </span>
+      </div>
     </div>
   )
 }

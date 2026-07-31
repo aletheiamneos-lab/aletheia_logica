@@ -15,6 +15,7 @@ import {
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
 
 import { useAuth } from "../context/useAuth"
+import AppBrandMark from "./AppBrandMark"
 
 const navigationGroups = [
   {
@@ -95,22 +96,6 @@ function SidebarLink({ item, forceActive = false, onNavigate }) {
   )
 }
 
-function SidebarBrandMark() {
-  return (
-    <span className="app-sidebar-brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 56 56" role="img" focusable="false">
-        <path
-          className="app-sidebar-brand-mark-folder"
-          d="M8 16 V44 A2 2 0 0 0 10 46 H46 A2 2 0 0 0 48 44 V20 A2 2 0 0 0 46 18 H26 L22 12 H10 A2 2 0 0 0 8 14 Z"
-        />
-        <text x="28" y="37" textAnchor="middle" className="app-sidebar-brand-mark-letter">
-          L
-        </text>
-      </svg>
-    </span>
-  )
-}
-
 function getStudentInitials(session) {
   const directInitials = String(session?.initials ?? "").trim()
   if (directInitials) {
@@ -182,7 +167,7 @@ function Navbar({ onHide, onNavigate }) {
       <div className="app-sidebar-header">
         <div className="app-sidebar-header-main">
           <div className="app-sidebar-brand-lockup">
-            <SidebarBrandMark />
+            <AppBrandMark className="app-sidebar-brand-mark" />
             <div className="app-sidebar-header-copy min-w-0">
               <div className="app-sidebar-brand-line">
                 <div className="app-sidebar-brand">Logica</div>
