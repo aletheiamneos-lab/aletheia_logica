@@ -11190,6 +11190,11 @@
   user-select: none;
 }
 
+.app-shell-public .square-of-opposition-hero-image {
+  transform: scale(1.25);
+  transform-origin: center;
+}
+
 .app-shell-public .access-gate-hero-fallback {
   background: transparent;
 }
@@ -11518,6 +11523,14 @@
   .app-shell-public .homepage-hero-illustration-image {
     width: min(94%, 620px);
     max-height: 94%;
+  }
+
+  .app-shell-public .square-of-opposition-hero-image {
+    width: 28dvh !important;
+    height: 28dvh !important;
+    max-width: none;
+    max-height: none;
+    transform: scale(1.45);
   }
 
   .app-shell-public .access-login-panel {
