@@ -78,7 +78,7 @@ function OppositionSquareTrainer({ game, hideIntro = false }) {
 
   const interactiveArea = (
     <div className="learning-game-split">
-      <article className="learning-game-panel">
+      <article className="learning-action-panel">
         <div className="learning-game-panel-head">
           <div>
             <p className="section-kicker">Completezi</p>
@@ -123,7 +123,7 @@ function OppositionSquareTrainer({ game, hideIntro = false }) {
         </div>
       </article>
 
-      <article className="learning-game-panel">
+      <article className="learning-action-panel">
         <div className="learning-game-panel-head">
           <div>
             <p className="section-kicker">Feedback imediat</p>

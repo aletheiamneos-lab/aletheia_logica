@@ -1602,12 +1602,79 @@ textarea {
     box-shadow: 0 8px 18px rgba(15, 23, 42, 0.035);
   }
 
+  /* Panou pentru continut informativ: introducere, exemple, explicatii.
+     Fundal gri deschis, fara chenar puternic - semnaleaza "doar citesti". */
+  .learning-info-panel {
+    @apply rounded-[24px] px-5 py-5;
+    background: rgba(248, 250, 252, 0.9);
+    border: 1px solid rgba(100, 116, 139, 0.14);
+    box-shadow: none;
+  }
+
+  /* Panou pentru continut interactiv: formulare, butoane, feedback.
+     Chenar mult mai vizibil + accent pe marginea stanga - semnaleaza "aici actionezi". */
+  .learning-action-panel {
+    @apply rounded-[24px] bg-white px-5 py-5;
+    border: 1px solid rgba(51, 65, 85, 0.18);
+    border-left: 3px solid var(--accent);
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+  }
+
   .learning-game-panel-head {
     @apply flex items-start justify-between gap-4;
   }
 
   .learning-game-panel-title {
     @apply mt-2 text-xl text-ink;
+  }
+
+  /* Bara de etape: Invata / Exerseaza / Intelege de ce */
+  .learning-game-stepper {
+    @apply flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em];
+  }
+
+  .learning-game-stepper-item {
+    @apply rounded-full px-3 py-1.5 text-slate-500;
+    background: rgba(148, 163, 184, 0.14);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .learning-game-stepper-item.is-active {
+    color: #ffffff;
+    background: var(--accent);
+  }
+
+  /* Linie de separare reala intre blocuri mari (nu doar umbra discreta) */
+  .learning-game-section-divider {
+    @apply my-1;
+    height: 1px;
+    background: rgba(100, 116, 139, 0.22);
+  }
+
+  /* Cod de culoare pentru literele logice A / E / I / O, folosit consecvent
+     in exemple, feedback si training. */
+  .learning-form-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+
+  .learning-form-badge-A {
+    background: rgba(51, 95, 145, 0.14);
+    color: var(--accent);
+  }
+
+  .learning-form-badge-E {
+    background: rgba(220, 38, 38, 0.1);
+    color: #b91c1c;
+  }
+
+  .learning-form-badge-I {
+    background: rgba(22, 163, 74, 0.12);
+    color: #15803d;
+  }
+
+  .learning-form-badge-O {
+    background: rgba(217, 119, 6, 0.14);
+    color: #b45309;
   }
 
   .learning-game-square-grid {
@@ -1775,6 +1842,8 @@ textarea {
 
   .learning-why-shell-embedded {
     background: rgba(248, 250, 252, 0.98);
+    border-color: rgba(100, 116, 139, 0.14);
+    box-shadow: none;
   }
 
   .learning-why-shell-toggle {

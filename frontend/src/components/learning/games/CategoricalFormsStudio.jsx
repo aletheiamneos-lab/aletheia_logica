@@ -44,7 +44,7 @@ function CategoricalFormsStudio({ game, hideIntro = false }) {
 
   const interactiveArea = (
     <div className="learning-game-split">
-      <article className="learning-game-panel">
+      <article className="learning-action-panel">
         <div className="learning-game-panel-head">
           <div>
             <p className="section-kicker">Completezi</p>
@@ -137,7 +137,7 @@ function CategoricalFormsStudio({ game, hideIntro = false }) {
         </div>
       </article>
 
-      <article className="learning-game-panel">
+      <article className="learning-action-panel">
         <div className="learning-game-panel-head">
           <div>
             <p className="section-kicker">Feedback imediat</p>
@@ -159,8 +159,22 @@ function CategoricalFormsStudio({ game, hideIntro = false }) {
                 }`}
               >
                 <strong>Litera</strong>
-                <span>{`Raspunsul tau: ${answers.form || "-"}`}</span>
-                <span>{`Corect: ${item.form}`}</span>
+                <span>
+                  Raspunsul tau:{" "}
+                  {answers.form ? (
+                    <span className={`learning-form-badge learning-form-badge-${answers.form}`}>
+                      {answers.form}
+                    </span>
+                  ) : (
+                    "-"
+                  )}
+                </span>
+                <span>
+                  Corect:{" "}
+                  <span className={`learning-form-badge learning-form-badge-${item.form}`}>
+                    {item.form}
+                  </span>
+                </span>
               </div>
               <div
                 className={`learning-game-feedback-row${

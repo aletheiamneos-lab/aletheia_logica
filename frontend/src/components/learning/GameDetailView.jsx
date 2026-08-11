@@ -23,6 +23,8 @@ function GameDetailView({ game, demo = false }) {
   const [showExplanation, setShowExplanation] = useState(false)
   const [activeMode, setActiveMode] = useState(demo ? "training" : "play")
 
+  const currentStep = showExplanation ? "explain" : activeMode === "training" ? "practice" : "learn"
+
   return (
     <div className="space-y-3">
       <article className="panel p-5 sm:p-6">
@@ -30,7 +32,7 @@ function GameDetailView({ game, demo = false }) {
           <div>
             <p className="section-kicker">Joc dedicat</p>
             <h2 className="mt-2 text-2xl text-ink">{game.title}</h2>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{game.description}</p>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{game.introduction}</p>
           </div>
           <div className="learning-game-mode-switch">
             {!demo ? <button
@@ -56,16 +58,28 @@ function GameDetailView({ game, demo = false }) {
             </button>
           </div>
         </div>
+
+        <div className="learning-game-stepper mt-4">
+          <span className={`learning-game-stepper-item${currentStep === "learn" ? " is-active" : ""}`}>
+            1. Invata
+          </span>
+          <span className={`learning-game-stepper-item${currentStep === "practice" ? " is-active" : ""}`}>
+            2. Exerseaza
+          </span>
+          <span className={`learning-game-stepper-item${currentStep === "explain" ? " is-active" : ""}`}>
+            3. Intelege de ce
+          </span>
+        </div>
       </article>
 
       <div className="learning-game-split">
-        <article className="learning-game-panel">
+        <article className="learning-info-panel">
           <p className="section-kicker">Introducere</p>
           <h3 className="mt-2 text-xl text-ink">Ce urmaresti in joc</h3>
           <p className="mt-3 text-sm leading-7 text-slate-600">{game.introduction}</p>
         </article>
 
-        <article className="learning-game-panel">
+        <article className="learning-info-panel">
           <p className="section-kicker">Exemple</p>
           <h3 className="mt-2 text-xl text-ink">Repere rapide inainte sa incepi</h3>
           <div className="learning-game-example-grid mt-4">
@@ -81,9 +95,11 @@ function GameDetailView({ game, demo = false }) {
         </article>
       </div>
 
+      <div className="learning-game-section-divider" />
+
       {showExplanation ? (
         <div className="space-y-3">
-          <article className="learning-game-panel">
+          <article className="learning-info-panel">
             <p className="section-kicker">Vezi de ce</p>
             <h3 className="mt-2 text-xl text-ink">Explicatia regulii</h3>
             <p className="mt-3 text-sm leading-7 text-slate-600">{game.explanation}</p>
@@ -96,12 +112,14 @@ function GameDetailView({ game, demo = false }) {
             description="Explicatiile sunt dedicate acestui joc si stau doar in pagina lui."
             items={game.whyItems}
           />
+
+          <div className="learning-game-section-divider" />
         </div>
       ) : null}
 
       {activeMode === "play" ? (
         <div className="space-y-3">
-          <article className="learning-game-panel">
+          <article className="learning-action-panel">
             <p className="section-kicker">{game.gameMode.title}</p>
             <h3 className="mt-2 text-xl text-ink">Rezolvare si feedback imediat</h3>
             <p className="mt-3 text-sm leading-7 text-slate-600">{game.gameMode.description}</p>

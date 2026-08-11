@@ -11988,12 +11988,22 @@
     .compact-module-copy,
     .compact-section-header,
     .learning-game-panel,
+    .learning-info-panel,
+    .learning-action-panel,
     .learning-training-card,
     .learning-training-step,
     .immersive-stage
   ) {
     min-width: 0;
     max-width: 100%;
+  }
+
+  .learning-20-page .learning-game-stepper {
+    gap: 0.4rem;
+  }
+
+  .learning-20-page .learning-game-stepper-item {
+    padding: 0.3rem 0.65rem;
   }
 
   .learning-20-page .compact-module-list {
