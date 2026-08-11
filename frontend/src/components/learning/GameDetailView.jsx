@@ -71,7 +71,7 @@ function GameDetailView({ game, demo = false }) {
         </div>
       </article>
 
-      <div className="learning-game-split">
+      <div className="learning-game-split learning-game-overview">
         <article className="learning-info-panel">
           <p className="section-kicker">Introducere</p>
           <h3 className="mt-2 text-xl text-ink">Ce urmaresti in joc</h3>

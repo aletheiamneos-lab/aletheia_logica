@@ -6798,6 +6798,11 @@
   border-bottom-color: color-mix(in srgb, var(--workspace-line) 68%, transparent) !important;
 }
 
+.app-shell-auth .learning-game-item-page > .hero-panel {
+  padding-bottom: 0.35rem !important;
+  border-bottom: 0 !important;
+}
+
 .app-shell-auth .compact-section,
 .app-shell-auth .student-focus-panel,
 .app-shell-auth .admin-control-panel,
@@ -8919,10 +8924,54 @@
   box-shadow: none !important;
 }
 
+.library-resource-groups {
+  display: grid;
+  gap: 2.35rem;
+}
+
+.library-resource-group {
+  display: grid;
+  min-width: 0;
+  gap: 1.15rem;
+}
+
+.library-resource-group + .library-resource-group {
+  padding-top: 1.65rem;
+  border-top: 1px solid var(--workspace-line);
+}
+
+.library-resource-group-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.library-resource-group-header h2 {
+  margin: 0.15rem 0 0;
+  color: var(--text);
+  font-family: var(--font-ui-premium);
+  font-size: clamp(1.15rem, 1.45vw, 1.42rem);
+  font-weight: 760;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.library-resource-group-header p:not(.section-kicker) {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .library-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
   gap: 1.05rem 1.15rem;
+}
+
+.library-resource-group.is-pdf .library-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .library-card {
@@ -9151,6 +9200,20 @@
   .library-hero {
     align-items: start;
     flex-direction: column;
+  }
+
+  .library-resource-groups {
+    gap: 1.8rem;
+  }
+
+  .library-resource-group + .library-resource-group {
+    padding-top: 1.35rem;
+  }
+
+  .library-resource-group-header {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.65rem;
   }
 
   .library-grid {
@@ -11983,6 +12046,24 @@
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
+  .learning-20-page .learning-game-overview {
+    align-items: start;
+    gap: 10px;
+  }
+
+  .learning-20-page .learning-game-overview .learning-info-panel {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .learning-20-page .learning-game-overview .learning-game-example-grid {
+    gap: 10px;
+  }
+
+  .learning-game-item-page > .immersive-stage {
+    padding-left: 2rem;
+  }
+
   .learning-20-page :is(
     .compact-module-main,
     .compact-module-copy,
@@ -12063,6 +12144,9 @@
     flex: 1 1 0;
     min-width: 0;
     padding-inline: 0.5rem;
+    font-size: clamp(0.72rem, 3.2vw, 0.875rem);
+    line-height: 1.2;
+    white-space: normal;
   }
 
   .learning-20-page .learning-game-panel-head,

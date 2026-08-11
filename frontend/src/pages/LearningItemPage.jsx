@@ -49,7 +49,11 @@ function LearningItemPage() {
   }
 
   return (
-    <div className="page-stack learning-20-page learning-item-page">
+    <div
+      className={`page-stack learning-20-page learning-item-page${
+        module.id === "games" ? " learning-game-item-page" : ""
+      }`}
+    >
       <section className="hero-panel">
         <div className="flex flex-wrap gap-2.5">
           <Link className="btn-secondary" to={`/learning/module/${module.id}`}>

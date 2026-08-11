@@ -93,6 +93,22 @@ function BibliotecaPage() {
   const visibleToStudentsCount = libraryDocuments.filter(
     (document) => visibilityById[document.id] === true,
   ).length
+  const visibleDocumentGroups = [
+    {
+      id: "pdf",
+      eyebrow: "Materiale PDF",
+      title: "Manuale",
+      description: "Manualul integral și lecțiile complete în format PDF.",
+      documents: visibleDocuments.filter((document) => document.mediaType === "pdf"),
+    },
+    {
+      id: "images",
+      eyebrow: "Materiale vizuale",
+      title: "Poze",
+      description: "Pozele și planșele ilustrate ale lecțiilor.",
+      documents: visibleDocuments.filter((document) => document.mediaType === "image"),
+    },
+  ].filter((group) => group.documents.length > 0)
 
   async function handleVisibilityToggle(document) {
     const nextVisibility = visibilityById[document.id] !== true
@@ -122,7 +138,7 @@ function BibliotecaPage() {
       <section className="library-hero">
         <div>
           <p className="section-kicker">Biblioteca</p>
-          <h1>Documente și fișe vizuale</h1>
+          <h1>Manuale și poze</h1>
           <p>
             Materialele sunt ordonate pe lecții și pot fi previzualizate sau descărcate direct.
           </p>
@@ -153,79 +169,97 @@ function BibliotecaPage() {
           </p>
         ) : null}
 
-        {!isLoading && visibleDocuments.length > 0 ? (
-          <div className="library-grid">
-            {visibleDocuments.map((document) => {
-              const isVisibleToStudents = visibilityById[document.id] === true
-              return (
-                <article
-                  key={document.id}
-                  className={`library-card${isImageDocument(document) ? " is-image" : ""}${canManage && !isVisibleToStudents ? " is-hidden-for-students" : ""}`}
-                >
-                  <div
-                    className={`library-document-preview${isImageDocument(document) ? " is-image" : ""}`}
-                  >
-                    <img
-                      src={firstPageSource(document)}
-                      alt={document.alt ?? `Prima pagina - ${document.title}`}
-                      loading="lazy"
-                    />
-                    <button
-                      type="button"
-                      className="library-document-preview-button"
-                      onClick={() => setPreviewDocument(document)}
-                      aria-label={`Previzualizeaza ${document.title}`}
-                    >
-                      <span className="library-document-preview-overlay" aria-hidden="true">
-                        <Eye size={18} strokeWidth={1.9} />
-                        Preview
-                      </span>
-                    </button>
+        {!isLoading && visibleDocumentGroups.length > 0 ? (
+          <div className="library-resource-groups">
+            {visibleDocumentGroups.map((group) => (
+              <section
+                className={`library-resource-group is-${group.id}`}
+                key={group.id}
+              >
+                <header className="library-resource-group-header">
+                  <div>
+                    <p className="section-kicker">{group.eyebrow}</p>
+                    <h2>{group.title}</h2>
+                    <p>{group.description}</p>
                   </div>
+                  <span className="status-pill">{group.documents.length} resurse</span>
+                </header>
 
-                  <div className="library-card-body">
-                    <div className="compact-inline-facts">
-                      <span className="tag">{document.eyebrow}</span>
-                      {canManage ? (
-                        <span
-                          className={`tag library-visibility-status${isVisibleToStudents ? "" : " is-hidden"}`}
+                <div className="library-grid">
+                  {group.documents.map((document) => {
+                    const isVisibleToStudents = visibilityById[document.id] === true
+                    return (
+                      <article
+                        key={document.id}
+                        className={`library-card${isImageDocument(document) ? " is-image" : ""}${canManage && !isVisibleToStudents ? " is-hidden-for-students" : ""}`}
+                      >
+                        <div
+                          className={`library-document-preview${isImageDocument(document) ? " is-image" : ""}`}
                         >
-                          {isVisibleToStudents ? "Vizibil elevilor" : "Ascuns elevilor"}
-                        </span>
-                      ) : null}
-                    </div>
-                    <h2 className="library-card-title">{document.title}</h2>
-                  </div>
+                          <img
+                            src={firstPageSource(document)}
+                            alt={document.alt ?? `Prima pagina - ${document.title}`}
+                            loading="lazy"
+                          />
+                          <button
+                            type="button"
+                            className="library-document-preview-button"
+                            onClick={() => setPreviewDocument(document)}
+                            aria-label={`Previzualizeaza ${document.title}`}
+                          >
+                            <span className="library-document-preview-overlay" aria-hidden="true">
+                              <Eye size={18} strokeWidth={1.9} />
+                              Preview
+                            </span>
+                          </button>
+                        </div>
 
-                  <div className="library-card-actions">
-                    <Button variant="secondary" onClick={() => setPreviewDocument(document)}>
-                      <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
-                      Preview
-                    </Button>
-                    <Button as="a" href={document.href} download={document.fileName}>
-                      <Download aria-hidden="true" size={16} strokeWidth={1.9} />
-                      Download
-                    </Button>
-                  </div>
-                  {canManage ? (
-                    <Button
-                      variant="secondary"
-                      className="library-visibility-toggle"
-                      loading={savingDocumentId === document.id}
-                      disabled={Boolean(savingDocumentId)}
-                      onClick={() => handleVisibilityToggle(document)}
-                    >
-                      {isVisibleToStudents ? (
-                        <EyeOff aria-hidden="true" size={16} strokeWidth={1.9} />
-                      ) : (
-                        <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
-                      )}
-                      {isVisibleToStudents ? "Ascunde elevilor" : "Arata elevilor"}
-                    </Button>
-                  ) : null}
-                </article>
-              )
-            })}
+                        <div className="library-card-body">
+                          <div className="compact-inline-facts">
+                            <span className="tag">{document.eyebrow}</span>
+                            {canManage ? (
+                              <span
+                                className={`tag library-visibility-status${isVisibleToStudents ? "" : " is-hidden"}`}
+                              >
+                                {isVisibleToStudents ? "Vizibil elevilor" : "Ascuns elevilor"}
+                              </span>
+                            ) : null}
+                          </div>
+                          <h3 className="library-card-title">{document.title}</h3>
+                        </div>
+
+                        <div className="library-card-actions">
+                          <Button variant="secondary" onClick={() => setPreviewDocument(document)}>
+                            <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
+                            Preview
+                          </Button>
+                          <Button as="a" href={document.href} download={document.fileName}>
+                            <Download aria-hidden="true" size={16} strokeWidth={1.9} />
+                            Download
+                          </Button>
+                        </div>
+                        {canManage ? (
+                          <Button
+                            variant="secondary"
+                            className="library-visibility-toggle"
+                            loading={savingDocumentId === document.id}
+                            disabled={Boolean(savingDocumentId)}
+                            onClick={() => handleVisibilityToggle(document)}
+                          >
+                            {isVisibleToStudents ? (
+                              <EyeOff aria-hidden="true" size={16} strokeWidth={1.9} />
+                            ) : (
+                              <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
+                            )}
+                            {isVisibleToStudents ? "Ascunde elevilor" : "Arata elevilor"}
+                          </Button>
+                        ) : null}
+                      </article>
+                    )
+                  })}
+                </div>
+              </section>
+            ))}
           </div>
         ) : null}
       </section>
