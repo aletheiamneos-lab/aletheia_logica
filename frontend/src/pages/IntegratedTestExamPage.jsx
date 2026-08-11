@@ -385,6 +385,7 @@ function IntegratedTestExamPage() {
         <IntegratedTestRunner
           test={runnerState.test}
           attempt={runnerState.attempt}
+          attemptKey={attemptId}
           onSaveProgress={handleRunnerProgress}
           onSubmit={handleRunnerSubmit}
           examMode

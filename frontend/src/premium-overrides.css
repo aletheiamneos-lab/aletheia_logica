@@ -2808,20 +2808,25 @@
   display: grid;
   gap: 0.75rem;
   min-width: min(100%, 420px);
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.integrated-test-progress-card {
-  gap: 0.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .integrated-test-runner-stat-card {
   min-height: auto !important;
 }
 
+/* Blur-ul de fundal (backdrop-filter) e costisitor de recalculat vizual si
+   se aplica global pe .testing-stat-card; in interiorul testului activ,
+   unde cronometrul se actualizeaza in fiecare secunda, il dezactivam ca
+   sa nu mai apara senzatia de miscare "grea" la navigarea intre intrebari. */
+.integrated-test-runner-shell .testing-stat-card {
+  backdrop-filter: none !important;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05) !important;
+}
+
 @media (min-width: 860px) {
   .integrated-test-runner-side {
-    grid-template-columns: minmax(0, 1fr) repeat(3, minmax(108px, 1fr));
+    grid-template-columns: repeat(3, minmax(108px, 1fr));
     align-items: stretch;
   }
 }
@@ -8519,6 +8524,11 @@
   }
 
   .integrated-test-runner-exam-shell .integrated-runner-overview {
+    display: block;
+    padding: 0.5rem !important;
+  }
+
+  .integrated-test-runner-exam-shell .integrated-runner-overview > div > div:first-child {
     display: none;
   }
 

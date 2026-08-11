@@ -14,6 +14,41 @@ function formatElapsed(seconds) {
   return `${minutes}:${String(remainingSeconds).padStart(2, "0")}`
 }
 
+// Cronometrul are propria stare si propriul interval, izolate intr-o
+// componenta mica - astfel doar acest bloc se re-randeaza in fiecare
+// secunda, nu intreaga pagina de examen (carduri, text asociat, navigare).
+function ElapsedTimeStat({ initialSeconds, resetToken, onTick, className }) {
+  const [seconds, setSeconds] = useState(initialSeconds)
+  const [lastResetToken, setLastResetToken] = useState(resetToken)
+
+  if (resetToken !== lastResetToken) {
+    setLastResetToken(resetToken)
+    setSeconds(initialSeconds)
+  }
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setSeconds((current) => {
+        const next = current + 1
+        onTick?.(next)
+        return next
+      })
+    }, 1000)
+
+    return () => {
+      window.clearInterval(timer)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resetToken])
+
+  return (
+    <div className={className}>
+      <p className="section-kicker">Timp</p>
+      <p className="testing-stat-value">{formatElapsed(seconds)}</p>
+    </div>
+  )
+}
+
 function resolveSharedText(question) {
   return String(
     question?.shared_text ??
@@ -52,6 +87,7 @@ function countWords(value) {
 function IntegratedTestRunner({
   test,
   attempt,
+  attemptKey = null,
   onSaveProgress,
   onSubmit,
   isEmbedded = false,
@@ -61,15 +97,24 @@ function IntegratedTestRunner({
     () => (Array.isArray(test?.questions) ? test.questions : []),
     [test?.questions],
   )
+  const resolvedAttemptKey =
+    attemptKey ??
+    attempt?.uniqueCode ??
+    attempt?.unique_code ??
+    attempt?.id ??
+    attempt?.attempt_id ??
+    "attempt"
+
   const [answers, setAnswers] = useState(attempt.answers ?? {})
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(attempt.current_question_index ?? 0)
-  const [elapsedSeconds, setElapsedSeconds] = useState(attempt.duration_seconds ?? 0)
+  const [loadedAttemptKey, setLoadedAttemptKey] = useState(resolvedAttemptKey)
   const [isSaving, setIsSaving] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSharedTextExpanded, setIsSharedTextExpanded] = useState(false)
   const [isReadingOverlayOpen, setIsReadingOverlayOpen] = useState(false)
   const [error, setError] = useState("")
   const dirtyRef = useRef(false)
+  const elapsedSecondsRef = useRef(attempt.duration_seconds ?? 0)
   const persistProgressRef = useRef(async () => {})
   const runnerShellRef = useRef(null)
   const questionPanelRef = useRef(null)
@@ -83,35 +128,26 @@ function IntegratedTestRunner({
     elapsedSeconds: attempt.duration_seconds ?? 0,
   })
 
-  useEffect(() => {
+  // Resincronizam din raspunsul serverului DOAR cand se schimba efectiv
+  // tentativa (identificator stabil), nu de fiecare data cand primim un
+  // obiect "attempt" proaspat dupa un simplu salvare de progres - altfel
+  // fiecare click pe "Urmatoarea" declansa un al doilea re-randare complet,
+  // dupa raspunsul serverului, ceea ce se simtea ca o intarziere vizibila.
+  if (resolvedAttemptKey !== loadedAttemptKey) {
+    setLoadedAttemptKey(resolvedAttemptKey)
     const nextAnswers = attempt.answers ?? {}
     const nextQuestionIndex = attempt.current_question_index ?? 0
     const nextElapsedSeconds = attempt.duration_seconds ?? 0
     setAnswers(nextAnswers)
     setCurrentQuestionIndex(nextQuestionIndex)
-    setElapsedSeconds(nextElapsedSeconds)
+    elapsedSecondsRef.current = nextElapsedSeconds
     snapshotRef.current = {
       answers: nextAnswers,
       currentQuestionIndex: nextQuestionIndex,
       elapsedSeconds: nextElapsedSeconds,
     }
     dirtyRef.current = false
-  }, [attempt])
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setElapsedSeconds((current) => current + 1)
-      snapshotRef.current = {
-        ...snapshotRef.current,
-        elapsedSeconds: snapshotRef.current.elapsedSeconds + 1,
-      }
-      dirtyRef.current = true
-    }, 1000)
-
-    return () => {
-      window.clearInterval(timer)
-    }
-  }, [])
+  }
 
   async function persistProgress(metadata = {}) {
     if (!dirtyRef.current) {
@@ -155,10 +191,48 @@ function IntegratedTestRunner({
   const progressValue = totalQuestions
     ? Math.min(100, Math.round((answeredCount / totalQuestions) * 100))
     : 0
-  const progressLabel = `${answeredCount} / ${totalQuestions} completate`
   const sharedText = resolveSharedText(question)
   const sharedTextKey = resolveSharedTextKey(question, sharedText)
   const isLongSharedText = countWords(sharedText) > LONG_READING_WORD_COUNT
+
+  // Actualizat la fiecare randare (fara sa declanseze el insusi un re-randare),
+  // ca sa poata fi citit din interiorul cronometrului izolat, care ruleaza pe
+  // propriul interval si altfel ar prinde valori vechi din momentul montarii.
+  const publishSnapshotRef = useRef(null)
+  publishSnapshotRef.current = {
+    hasQuestion: Boolean(question),
+    label: isEmbedded ? "Preview test" : "Progres test",
+    title: test.title,
+    progress: progressValue,
+    answeredCount,
+    totalQuestions,
+    currentQuestion: currentQuestionIndex + 1,
+    isSaving,
+  }
+
+  function handleElapsedTick(nextElapsedSeconds) {
+    elapsedSecondsRef.current = nextElapsedSeconds
+    snapshotRef.current = {
+      ...snapshotRef.current,
+      elapsedSeconds: nextElapsedSeconds,
+    }
+    dirtyRef.current = true
+
+    const snapshot = publishSnapshotRef.current
+    if (snapshot?.hasQuestion) {
+      publishTestProgress({
+        active: true,
+        label: snapshot.label,
+        title: snapshot.title,
+        progress: snapshot.progress,
+        answeredCount: snapshot.answeredCount,
+        totalQuestions: snapshot.totalQuestions,
+        currentQuestion: snapshot.currentQuestion,
+        elapsed: formatElapsed(nextElapsedSeconds),
+        isSaving: snapshot.isSaving,
+      })
+    }
+  }
 
   const sharedTextMeta = useMemo(() => {
     if (!sharedText) {
@@ -306,13 +380,12 @@ function IntegratedTestRunner({
       answeredCount,
       totalQuestions,
       currentQuestion: currentQuestionIndex + 1,
-      elapsed: formatElapsed(elapsedSeconds),
+      elapsed: formatElapsed(elapsedSecondsRef.current),
       isSaving,
     })
   }, [
     answeredCount,
     currentQuestionIndex,
-    elapsedSeconds,
     isEmbedded,
     isSaving,
     progressValue,
@@ -376,14 +449,12 @@ function IntegratedTestRunner({
     }
     dirtyRef.current = true
     window.requestAnimationFrame(() => {
-      window.requestAnimationFrame(() => {
-        const scrollTarget = keepsSharedTextPinned
-          ? questionContentRef.current
-          : questionPanelRef.current
-        scrollTarget?.scrollIntoView({
-          behavior: keepsSharedTextPinned ? "auto" : "smooth",
-          block: "start",
-        })
+      const scrollTarget = keepsSharedTextPinned
+        ? questionContentRef.current
+        : questionPanelRef.current
+      scrollTarget?.scrollIntoView({
+        behavior: keepsSharedTextPinned ? "auto" : "smooth",
+        block: "start",
       })
     })
     await persistProgress({
@@ -466,45 +537,12 @@ function IntegratedTestRunner({
           </div>
 
           <div className={isEmbedded ? "grid gap-3 sm:grid-cols-3" : "integrated-test-runner-side"}>
-            {!isEmbedded ? (
-              <article className="testing-stat-card integrated-test-progress-card">
-                <div className="integrated-test-progress-layout">
-                  <div className="integrated-test-progress-copy">
-                    <div className="floating-test-progress-head">
-                      <span className="floating-test-progress-label">Progresul testului</span>
-                      <span className={`integrated-test-save-state${isSaving ? " is-saving" : ""}`}>
-                        <span aria-hidden="true" />
-                        {isSaving ? "Se salveaza" : "Salvare activa"}
-                      </span>
-                    </div>
-                    <p className="floating-test-progress-title">{progressLabel}</p>
-                    <div className="floating-test-progress-track" aria-hidden="true">
-                      <div className="floating-test-progress-fill" style={{ width: `${progressValue}%` }} />
-                    </div>
-                    <div className="floating-test-progress-meta">
-                      <span>{`Intrebarea ${currentQuestionIndex + 1} din ${totalQuestions}`}</span>
-                      <span>{`${answeredCount} completate`}</span>
-                    </div>
-                  </div>
-
-                  <div
-                    className="integrated-test-progress-ring"
-                    style={{ "--integrated-progress-value": `${progressValue}%` }}
-                    aria-hidden="true"
-                  >
-                    <span>
-                      <strong>{progressValue}%</strong>
-                      <small>parcurs</small>
-                    </span>
-                  </div>
-                </div>
-              </article>
-            ) : null}
-
-            <div className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}>
-              <p className="section-kicker">Timp</p>
-              <p className="testing-stat-value">{formatElapsed(elapsedSeconds)}</p>
-            </div>
+            <ElapsedTimeStat
+              initialSeconds={attempt.duration_seconds ?? 0}
+              resetToken={resolvedAttemptKey}
+              onTick={handleElapsedTick}
+              className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}
+            />
             <div className={`testing-stat-card${isEmbedded ? "" : " integrated-test-runner-stat-card"}`}>
               <p className="section-kicker">Completate</p>
               <p className="testing-stat-value">{answeredCount}</p>
