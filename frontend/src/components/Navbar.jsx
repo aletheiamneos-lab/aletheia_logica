@@ -15,6 +15,7 @@ import {
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
 
 import { useAuth } from "../context/useAuth"
+import { useProfileAvatar } from "../utils/profileAvatar"
 import AppBrandMark from "./AppBrandMark"
 
 const navigationGroups = [
@@ -122,6 +123,7 @@ function getStudentInitials(session) {
 function Navbar({ onHide, onNavigate }) {
   const navigate = useNavigate()
   const { isAuthenticated, isAdmin, isDemo, session, logout } = useAuth()
+  const { avatar } = useProfileAvatar(session)
   const adminReportsItem = {
     to: "/profil",
     label: "Rapoarte",
@@ -229,7 +231,11 @@ function Navbar({ onHide, onNavigate }) {
               ) : (
                 <NavLink className="app-sidebar-student-profile-link" to="/profil" onClick={onNavigate}>
                   <span className="app-sidebar-student-avatar" aria-hidden="true">
-                    {getStudentInitials(session)}
+                    {avatar ? (
+                      <img src={avatar} alt="" className="app-sidebar-student-avatar-image" />
+                    ) : (
+                      getStudentInitials(session)
+                    )}
                   </span>
                   <span className="app-sidebar-student-copy">
                     <span className="section-kicker">Student</span>

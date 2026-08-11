@@ -153,6 +153,45 @@
   margin-top: 1.15rem !important;
 }
 
+/* Pagina de start are mai multe blocuri distincte (hero, calendar, progres,
+   sarcini) decat alte pagini care refolosesc .page-stack - le dam mai mult
+   aer intre ele, fara sa schimbam spatierea generica de mai sus. */
+.academic-home-page.page-stack > * + * {
+  margin-top: 1.85rem !important;
+}
+
+/* Antetul paginii de start: mai mult spatiu intre titlu, subtitlu si
+   indicatori, pentru un aspect mai calm. */
+.academic-home-hero {
+  row-gap: 1.4rem;
+}
+
+.academic-home-hero-main {
+  gap: 0.6rem;
+}
+
+.academic-home-hero .academic-hero-indicator {
+  border-bottom-color: rgba(15, 23, 42, 0.08);
+}
+
+/* Randul "Prioritate imediata / Lectii finalizate" din panoul de calendar
+   e o nota secundara, nu inca un bloc de date - il facem vizual mai discret. */
+.academic-chart-panel-gantt-full .academic-chart-brief {
+  margin-top: 0.4rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.academic-chart-panel-gantt-full .academic-brief-row {
+  padding: 0.5rem 0;
+  border-bottom-color: rgba(15, 23, 42, 0.06);
+}
+
+.academic-chart-panel-gantt-full .academic-brief-label {
+  font-weight: 500;
+  color: rgba(71, 85, 105, 0.7);
+}
+
 .app-shell-auth .app-sidebar-column {
   position: relative;
   z-index: 79;
@@ -705,6 +744,7 @@
 .app-shell-auth .app-sidebar-student-avatar {
   display: inline-grid;
   place-items: center;
+  overflow: hidden;
   width: 2.35rem;
   height: 2.35rem;
   border: 1px solid var(--workspace-sidebar-line);
@@ -715,6 +755,12 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--workspace-sidebar-heading);
+}
+
+.app-sidebar-student-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .app-shell-auth .app-sidebar-student-copy {
@@ -5040,6 +5086,47 @@
   margin-top: 0.9rem;
   margin-bottom: 0;
   font-size: 1.65rem;
+}
+
+.student-profile-avatar-image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.student-profile-avatar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.student-profile-avatar-upload {
+  position: relative;
+  cursor: pointer;
+}
+
+.student-profile-avatar-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.student-profile-avatar-error {
+  margin-top: 0.6rem;
+  color: #b91c1c;
+  font-size: 0.8rem;
+}
+
+.student-profile-avatar-note {
+  margin-top: 0.6rem;
+  color: var(--muted, #64748b);
+  font-size: 0.75rem;
+  line-height: 1.45;
 }
 
 .student-profile-grid {

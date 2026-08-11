@@ -17,6 +17,8 @@ import Checkbox from "@mui/material/Checkbox"
 import Paper from "@mui/material/Paper"
 import { DataGrid } from "@mui/x-data-grid"
 
+import { MAX_AVATAR_BYTES, useProfileAvatar } from "../utils/profileAvatar"
+
 import {
   deleteAdmitereAdminReports,
   deleteAdminAttempts,
@@ -232,6 +234,39 @@ function StudentProfileView({ session }) {
   const [message, setMessage] = useState("")
   const preferenceScope = buildAppearancePreferenceScope(session)
   const appearance = useAppearancePreferences(preferenceScope, setMessage)
+  const { avatar, saveAvatar, removeAvatar } = useProfileAvatar(session)
+  const [avatarError, setAvatarError] = useState("")
+
+  function handleAvatarSelect(event) {
+    const file = event.target.files?.[0]
+    event.target.value = ""
+
+    if (!file) {
+      return
+    }
+
+    if (!file.type.startsWith("image/")) {
+      setAvatarError("Alege un fisier imagine (JPG, PNG sau WEBP).")
+      return
+    }
+
+    if (file.size > MAX_AVATAR_BYTES) {
+      setAvatarError("Imaginea e prea mare. Alege una sub 2 MB.")
+      return
+    }
+
+    const reader = new FileReader()
+    reader.onload = () => {
+      if (typeof reader.result === "string") {
+        saveAvatar(reader.result)
+        setAvatarError("")
+      }
+    }
+    reader.onerror = () => {
+      setAvatarError("Nu am putut citi imaginea. Incearca alt fisier.")
+    }
+    reader.readAsDataURL(file)
+  }
 
   function updateField(field, value) {
     setForm((current) => ({
@@ -250,7 +285,7 @@ function StudentProfileView({ session }) {
       <section className="academic-profile-hero student-profile-hero">
         <div className="academic-profile-hero-main student-profile-hero-main">
           <div className="student-profile-avatar-large" aria-hidden="true">
-            {getStudentInitials(session)}
+            {avatar ? <img src={avatar} alt="" className="student-profile-avatar-image" /> : getStudentInitials(session)}
           </div>
           <div className="student-profile-hero-copy">
             <p className="section-kicker">Profil student</p>
@@ -269,12 +304,40 @@ function StudentProfileView({ session }) {
           <div className="academic-panel-head">
             <div>
               <p className="section-kicker">Avatar</p>
-              <h2 className="academic-section-title">Slot pregatit pentru imagine.</h2>
+              <h2 className="academic-section-title">
+                {avatar ? "Poza ta de profil." : "Alege o poza de profil."}
+              </h2>
             </div>
           </div>
-          <div className="student-profile-avatar-preview" aria-hidden="true">
-            {getStudentInitials(session)}
+          <div className="student-profile-avatar-preview">
+            {avatar ? (
+              <img src={avatar} alt="Poza de profil" className="student-profile-avatar-image" />
+            ) : (
+              <span aria-hidden="true">{getStudentInitials(session)}</span>
+            )}
           </div>
+
+          <div className="student-profile-avatar-actions">
+            <label className="btn-secondary student-profile-avatar-upload">
+              <input
+                type="file"
+                accept="image/*"
+                className="student-profile-avatar-input"
+                onChange={handleAvatarSelect}
+              />
+              {avatar ? "Schimba poza" : "Incarca o poza"}
+            </label>
+            {avatar ? (
+              <button type="button" className="btn-secondary" onClick={removeAvatar}>
+                Elimina poza
+              </button>
+            ) : null}
+          </div>
+
+          {avatarError ? <p className="student-profile-avatar-error">{avatarError}</p> : null}
+          <p className="student-profile-avatar-note">
+            Poza ramane salvata doar in acest browser, nu este trimisa niciunui server.
+          </p>
         </article>
 
         <article className="academic-surface-panel student-profile-form-panel">
