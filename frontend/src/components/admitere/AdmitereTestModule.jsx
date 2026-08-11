@@ -680,14 +680,9 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
         </div>
 
         <h1 className="section-title mt-3 max-w-4xl">{moduleEntry.title}</h1>
-        <p className="section-subtitle mt-3 max-w-4xl">
-          Set interactiv construit exclusiv din fisierul JSON integrat in proiect. Raspunsurile
-          corecte raman ascunse pana la finalizare, iar apoi vezi scorul, procentajul si
-          corectarea fiecarei intrebari.
-        </p>
       </section>
 
-      <section className="grid gap-3 xl:grid-cols-[1.08fr_0.92fr] exam-desktop-only">
+      <section className="grid gap-3 exam-desktop-only">
         <section className="panel p-5 sm:p-6">
           <p className="section-kicker">{hasSubmitted ? "Scor" : "Lucru curent"}</p>
           <h2 className="mt-2 text-2xl text-ink">
@@ -721,35 +716,6 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
             />
           </div>
         </section>
-
-        <aside className="muted-box p-5 sm:p-6">
-          <p className="section-kicker">Reguli integrate</p>
-          <div className="mt-4 space-y-3">
-            <div className="subtle-card">
-              <p className="text-sm leading-7 text-slate-700">
-                Raspunsurile corecte apar doar dupa apasarea butonului <strong>Finalizeaza testul</strong>.
-              </p>
-            </div>
-            <div className="subtle-card">
-              <p className="text-sm leading-7 text-slate-700">
-                Itemii fara raspuns sunt marcati automat drept gresiti in rezumatul final.
-              </p>
-            </div>
-            <div className="subtle-card">
-              <p className="text-sm leading-7 text-slate-700">
-                Corectarea respecta campul <strong>answerType</strong>. Pentru raspunsul multiplu
-                selectia trebuie sa fie exacta.
-              </p>
-            </div>
-            {moduleEntry.multipleQuestionCount ? (
-              <div className="subtle-card">
-                <p className="text-sm leading-7 text-slate-700">
-                  Acest set contine {moduleEntry.multipleQuestionCount} item cu selectie multipla.
-                </p>
-              </div>
-            ) : null}
-          </div>
-        </aside>
       </section>
 
       <div className="exam-desktop-only">
@@ -771,7 +737,7 @@ function AdmitereTestModule({ moduleEntry, categoryTitle, trackTitle, test }) {
           <div key={group.id} style={{ marginBottom: "30px" }}>
             <div className="panel admitere-group-panel p-5 sm:p-6">
               <div className="admitere-group-heading">
-                <span className="admitere-group-code">{getAdmitereGroupCode(groupIndex)}</span>
+                <span className="admitere-group-code">{getAdmitereGroupCode(group, groupIndex)}</span>
                 <div className="admitere-group-heading-copy">
                   <p className="section-kicker">{group.questionRange ? `Întrebările ${group.questionRange}` : "Bloc de lucru"}</p>
                   <h3 className="admitere-group-title">{getAdmitereGroupTitle(group, groupIndex)}</h3>

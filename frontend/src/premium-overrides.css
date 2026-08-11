@@ -12709,3 +12709,327 @@
     font-size: 0.78rem;
   }
 }
+
+/* UI audit: consistent visual hierarchy and accessible component boundaries. */
+.app-shell-auth {
+  --workspace-line: color-mix(in srgb, var(--text) 13%, transparent);
+  --workspace-line-strong: color-mix(in srgb, var(--text) 19%, transparent);
+  --workspace-sidebar-line: color-mix(
+    in srgb,
+    var(--workspace-sidebar-heading) 14%,
+    transparent
+  );
+  --workspace-sidebar-toggle-border: var(--workspace-sidebar-line);
+  --audit-info-surface: color-mix(in srgb, var(--surface-soft) 76%, white);
+  --audit-action-surface: color-mix(in srgb, var(--surface) 92%, var(--accent-mist));
+}
+
+.app-shell-auth .hero-panel {
+  border-bottom-color: var(--workspace-line) !important;
+}
+
+.app-shell-auth .learning-game-item-page > .hero-panel {
+  border-bottom: 0 !important;
+}
+
+.app-shell-auth :is(.compact-section, .student-focus-panel, .admin-control-panel) {
+  border-top-color: var(--workspace-line) !important;
+}
+
+.app-shell-auth :is(
+  .academic-panel-head,
+  .academic-hero-indicator,
+  .academic-profile-metric,
+  .academic-brief-row,
+  .academic-module-row,
+  .academic-metadata-row,
+  .academic-detail-entry,
+  .academic-quick-action,
+  .academic-activity-entry,
+  .academic-reports-paper,
+  .summary-item,
+  .metric-card,
+  .testing-stat-card
+) {
+  border-color: var(--workspace-line) !important;
+}
+
+.app-shell-auth :is(.field-select, .testing-input, .learning-game-select, .learning-training-input) {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+/* Lesson navigation needs a visible selected state, not white text on white. */
+.lesson-workspace-page .lesson-tabs-row {
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--workspace-line);
+  border-radius: 16px;
+  background: var(--audit-info-surface);
+}
+
+.lesson-workspace-page .lesson-tab-button {
+  min-height: 44px;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 12px !important;
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+  color: var(--text-muted) !important;
+  box-shadow: none !important;
+}
+
+.lesson-workspace-page .lesson-tab-button.is-active {
+  border-color: var(--accent) !important;
+  background: var(--accent) !important;
+  color: #ffffff !important;
+  box-shadow: 0 7px 16px rgba(var(--accent-rgb), 0.17) !important;
+}
+
+.lesson-workspace-page .lesson-tab-button.is-inactive:hover {
+  border-color: color-mix(in srgb, var(--accent) 38%, var(--workspace-line)) !important;
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+
+/* Learning, practice and exam catalogs: one item equals one clearly bounded unit. */
+.app-shell-auth :is(
+  .learning-hub-page,
+  .learning-module-page,
+  .practice-hub-page
+) .compact-module-list {
+  gap: 0.85rem;
+}
+
+.app-shell-auth :is(
+  .learning-hub-page,
+  .learning-module-page,
+  .practice-hub-page
+) .compact-module-row,
+.app-shell-auth .exam-track-page .exam-track-module-card {
+  padding: 1rem 1.05rem !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 18px !important;
+  background: var(--audit-info-surface) !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035) !important;
+}
+
+.app-shell-auth :is(
+  .learning-hub-page,
+  .learning-module-page,
+  .practice-hub-page
+) .compact-module-row.is-featured {
+  border-left: 4px solid var(--accent) !important;
+  padding-left: calc(1.05rem - 3px) !important;
+}
+
+.app-shell-auth :is(
+  .learning-hub-page,
+  .learning-module-page,
+  .practice-hub-page
+) .compact-module-actions {
+  align-self: stretch;
+  justify-content: flex-end;
+}
+
+.app-shell-auth :is(
+  .learning-hub-page,
+  .learning-module-page,
+  .practice-hub-page
+) .compact-module-actions > :is(a, button) {
+  min-height: 44px;
+}
+
+.app-shell-auth .learning-game-overview .learning-info-panel,
+.app-shell-auth .learning-info-panel,
+.app-shell-auth .learning-game-example-card,
+.app-shell-auth .learning-game-select {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+/* Integrated tests: readable overview cards and an explicit action zone. */
+.integrated-tests-page .integrated-tests-hero {
+  padding: clamp(1rem, 2vw, 1.4rem) !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 20px !important;
+  background: var(--audit-info-surface) !important;
+}
+
+.integrated-tests-page .integrated-tests-hero .summary-strip {
+  gap: 0.7rem !important;
+}
+
+.integrated-tests-page .integrated-tests-hero .summary-item {
+  min-height: 98px !important;
+  padding: 0.8rem 0.85rem !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 14px !important;
+  background: color-mix(in srgb, var(--surface) 88%, transparent) !important;
+}
+
+.integrated-tests-page .integrated-tests-note-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem !important;
+}
+
+.integrated-tests-page .integrated-tests-note-list > .compact-note {
+  padding: 0.8rem 0.85rem !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 14px !important;
+  background: color-mix(in srgb, var(--surface) 84%, transparent) !important;
+}
+
+.app-shell-auth .integrated-tests-page .student-focus-panel {
+  padding: 1rem 1.05rem !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-left: 4px solid var(--accent) !important;
+  border-radius: 18px !important;
+  background: var(--audit-action-surface) !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04) !important;
+}
+
+.integrated-tests-page .testing-student-catalog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+}
+
+.app-shell-auth .integrated-tests-page .testing-student-catalog-grid > :is(
+  .testing-catalog-card,
+  .panel,
+  .integrated-test-popup-inline-note
+) {
+  padding: 1rem 1.05rem !important;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 18px !important;
+  background: var(--audit-info-surface) !important;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.035) !important;
+}
+
+/* Static previews and profile controls keep their outlines on a white workspace. */
+.library-document-preview,
+.library-feedback,
+.app-shell-auth .student-appearance-panel :is(.theme-option-card, .font-option-card),
+.app-shell-auth :is(
+  .student-profile-avatar-large,
+  .student-profile-avatar-preview,
+  .profile-input,
+  .profile-select,
+  .profile-textarea,
+  .button-preview-card
+) {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+.app-shell-auth :is(
+  .academic-gantt-header-track,
+  .academic-gantt-week-head,
+  .academic-gantt-track,
+  .academic-chart-brief,
+  .button-system-preview-theme,
+  .button-system-preview-card,
+  .button-system-preview-code
+),
+.app-shell-auth .button-system-preview-grid > div {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+/* Interactive theory diagrams retain their state colors, with clearer neutral frames. */
+.lesson-workspace-page :is(
+  .theory-hero,
+  .theory-hero-badge,
+  .theory-hero-helper,
+  .theory-hero-visual,
+  .theory-hero-stage,
+  .theory-hero-lane,
+  .theory-hero-visual-note,
+  .chaos-order-panel,
+  .chaos-order-footer,
+  .principles-framework
+) {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+.lesson-workspace-page .theory-hero-stage::after {
+  background: var(--workspace-line) !important;
+}
+
+.lesson-workspace-page .chaos-order-scatter {
+  border-color: rgba(180, 83, 9, 0.18) !important;
+}
+
+.lesson-workspace-page .principles-framework-head {
+  border-bottom-color: var(--workspace-line-strong) !important;
+}
+
+.app-shell-auth .syllogism-header,
+.app-shell-auth .logic-stack-inner-chip:not(.is-selected) {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+.app-shell-auth :is(.workspace-hero-side, .editorial-side-panel, .compact-aside-panel),
+.app-shell-auth :is(.compact-note, .editorial-note-item) {
+  border-color: var(--workspace-line) !important;
+}
+
+.lesson-workspace-page :is(
+  .lesson1-supplement-panel,
+  .lesson1-definition-structure,
+  .lesson1-definition-part,
+  .lesson1-supplement-rule,
+  .lesson1-classification-tree,
+  .theory-data-table-shell,
+  .theory-data-table-footnote,
+  .theory-media-figure,
+  .theory-media-hotspot-frame
+) {
+  border-color: var(--workspace-line-strong) !important;
+}
+
+.lesson-workspace-page .theory-data-table tbody tr {
+  border-top-color: var(--workspace-line) !important;
+}
+
+@media (max-width: 768px) {
+  /* Reserve a small navigation row so the menu control never covers page content. */
+  .app-shell-auth:not(.app-shell-exam) .app-mobile-sidebar-trigger {
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    bottom: auto;
+  }
+
+  .app-shell-auth:not(.app-shell-exam) .app-content-shell-auth {
+    padding-top: calc(4.5rem + env(safe-area-inset-top, 0px)) !important;
+  }
+
+  .integrated-tests-page .integrated-tests-hero {
+    padding: 1rem !important;
+  }
+
+  .integrated-tests-page .integrated-tests-note-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-shell-auth :is(
+    .learning-hub-page,
+    .learning-module-page,
+    .practice-hub-page
+  ) .compact-module-row,
+  .app-shell-auth .exam-track-page .exam-track-module-card {
+    padding: 0.9rem !important;
+    border-radius: 16px !important;
+  }
+
+  .app-shell-auth :is(
+    .learning-hub-page,
+    .learning-module-page,
+    .practice-hub-page
+  ) .compact-module-row.is-featured {
+    padding-left: calc(0.9rem - 3px) !important;
+  }
+
+  .app-shell-auth :is(
+    .learning-hub-page,
+    .learning-module-page,
+    .practice-hub-page
+  ) .compact-module-actions > :is(a, button),
+  .integrated-tests-page :is(.btn-primary, .btn-secondary) {
+    width: 100%;
+    min-height: 48px !important;
+    justify-content: center;
+  }
+}

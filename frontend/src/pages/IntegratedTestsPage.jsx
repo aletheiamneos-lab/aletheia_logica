@@ -843,7 +843,7 @@ function IntegratedTestsPage() {
                 <p className="section-kicker">Disponibilitate</p>
                 <h2 className="mt-2 text-2xl text-ink">Nu exista teste disponibile</h2>
                 <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-                  Nu exista teste disponibile momentan.
+                  Testele publicate de profesor vor aparea aici imediat ce devin disponibile.
                 </p>
               </section>
             )}

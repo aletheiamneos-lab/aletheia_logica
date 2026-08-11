@@ -1010,7 +1010,9 @@ function HomePage() {
             <div className="academic-brief-row">
               <span className="academic-brief-label">Prioritate imediata</span>
               <span className="academic-brief-value">
-                {weakestLesson ? trimLessonTitle(weakestLesson.title) : "Nu exista date suficiente"}
+                {weakestLesson
+                  ? trimLessonTitle(weakestLesson.title)
+                  : "Finalizeaza un exercitiu pentru o recomandare."}
               </span>
             </div>
             <div className="academic-brief-row">
