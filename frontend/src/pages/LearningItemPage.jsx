@@ -65,7 +65,13 @@ function LearningItemPage() {
           <span className="status-pill">{item.meta}</span>
         </div>
 
-        <div className="mt-4 grid gap-5 xl:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] xl:items-start">
+        <div
+          className={`mt-4 grid gap-5 ${
+            module.id === "games"
+              ? ""
+              : "xl:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] xl:items-start"
+          }`}
+        >
           <div>
             <h1 className="section-title max-w-4xl">{item.title}</h1>
             <p className="section-subtitle mt-3 max-w-3xl">{item.subtitle}</p>
@@ -74,21 +80,23 @@ function LearningItemPage() {
             ) : null}
           </div>
 
-          <aside className="editorial-side-panel">
-            <p className="section-kicker">Cadru de lucru</p>
-            <div className="editorial-note-list">
-              <div className="editorial-note-item">
-                <p className="section-kicker">Modul</p>
-                <p className="mt-2 text-base text-ink">{module.title}</p>
+          {module.id === "games" ? null : (
+            <aside className="editorial-side-panel">
+              <p className="section-kicker">Cadru de lucru</p>
+              <div className="editorial-note-list">
+                <div className="editorial-note-item">
+                  <p className="section-kicker">Modul</p>
+                  <p className="mt-2 text-base text-ink">{module.title}</p>
+                </div>
+                <div className="editorial-note-item">
+                  <p className="section-kicker">Deschidere</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
+                    Itemul se ruleaza pe pagina lui completa, cu spatiu dedicat si fara blocuri paralele.
+                  </p>
+                </div>
               </div>
-              <div className="editorial-note-item">
-                <p className="section-kicker">Deschidere</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Itemul se ruleaza pe pagina lui completa, cu spatiu dedicat si fara blocuri paralele.
-                </p>
-              </div>
-            </div>
-          </aside>
+            </aside>
+          )}
         </div>
       </section>
 

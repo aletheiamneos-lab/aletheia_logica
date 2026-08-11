@@ -1589,7 +1589,13 @@ textarea {
   }
 
   .learning-game-mode-switch {
-    @apply flex flex-wrap gap-2.5;
+    @apply flex items-stretch gap-2.5;
+    width: 100%;
+  }
+
+  .learning-game-mode-switch > button {
+    flex: 1 1 0;
+    min-width: 0;
   }
 
   .learning-game-split {

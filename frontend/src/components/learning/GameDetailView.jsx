@@ -28,35 +28,34 @@ function GameDetailView({ game, demo = false }) {
   return (
     <div className="space-y-3">
       <article className="panel p-5 sm:p-6">
-        <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <p className="section-kicker">Joc dedicat</p>
-            <h2 className="mt-2 text-2xl text-ink">{game.title}</h2>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{game.introduction}</p>
-          </div>
-          <div className="learning-game-mode-switch">
-            {!demo ? <button
-              type="button"
-              className={activeMode === "play" ? "btn-primary" : "btn-secondary"}
-              onClick={() => setActiveMode("play")}
-            >
-              {game.gameMode.title}
-            </button> : null}
-            <button
-              type="button"
-              className={activeMode === "training" ? "btn-primary" : "btn-secondary"}
-              onClick={() => setActiveMode("training")}
-            >
-              {game.trainingMode.title}
-            </button>
-            <button
-              type="button"
-              className={showExplanation ? "btn-primary" : "btn-secondary"}
-              onClick={() => setShowExplanation((current) => !current)}
-            >
-              {showExplanation ? "Ascunde de ce" : "Vezi de ce"}
-            </button>
-          </div>
+        <div>
+          <p className="section-kicker">Joc dedicat</p>
+          <h2 className="mt-2 text-2xl text-ink">{game.title}</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{game.introduction}</p>
+        </div>
+
+        <div className="learning-game-mode-switch mt-4">
+          {!demo ? <button
+            type="button"
+            className={activeMode === "play" ? "btn-primary" : "btn-secondary"}
+            onClick={() => setActiveMode("play")}
+          >
+            {game.gameMode.title}
+          </button> : null}
+          <button
+            type="button"
+            className={activeMode === "training" ? "btn-primary" : "btn-secondary"}
+            onClick={() => setActiveMode("training")}
+          >
+            {game.trainingMode.title}
+          </button>
+          <button
+            type="button"
+            className={showExplanation ? "btn-primary" : "btn-secondary"}
+            onClick={() => setShowExplanation((current) => !current)}
+          >
+            {showExplanation ? "Ascunde de ce" : "Vezi de ce"}
+          </button>
         </div>
 
         <div className="learning-game-stepper mt-4">
@@ -121,8 +120,7 @@ function GameDetailView({ game, demo = false }) {
         <div className="space-y-3">
           <article className="learning-action-panel">
             <p className="section-kicker">{game.gameMode.title}</p>
-            <h3 className="mt-2 text-xl text-ink">Rezolvare si feedback imediat</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">{game.gameMode.description}</p>
+            <h3 className="mt-2 text-xl text-ink">Rezolvare</h3>
           </article>
           {renderGamePlayground(game)}
         </div>

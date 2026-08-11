@@ -12054,6 +12054,17 @@
     width: 100%;
   }
 
+  .learning-20-page .learning-game-mode-switch {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .learning-20-page .learning-game-mode-switch > button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-inline: 0.5rem;
+  }
+
   .learning-20-page .learning-game-panel-head,
   .learning-20-page .learning-game-square-top,
   .learning-20-page .learning-training-toggle {

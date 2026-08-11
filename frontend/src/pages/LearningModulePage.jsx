@@ -55,7 +55,7 @@ function LearningModulePage() {
         status={getModuleStatusLabel(module)}
       />
 
-      <section className="content-split-grid">
+      <section className={module.id === "games" ? undefined : "content-split-grid"}>
         <section className="panel compact-section">
           <div className="compact-section-header">
             <div>
@@ -102,23 +102,25 @@ function LearningModulePage() {
           </div>
         </section>
 
-        <aside className="editorial-side-panel compact-aside-panel">
-          <p className="section-kicker">Repere</p>
-          <h2 className="mt-2 text-2xl text-ink">Itemi organizati clar pentru studiu.</h2>
-          <p className="mt-3 text-sm leading-7 text-slate-600">
-            Alege itemul potrivit si intra direct in zona lui de lucru.
-          </p>
+        {module.id === "games" ? null : (
+          <aside className="editorial-side-panel compact-aside-panel">
+            <p className="section-kicker">Repere</p>
+            <h2 className="mt-2 text-2xl text-ink">Itemi organizati clar pentru studiu.</h2>
+            <p className="mt-3 text-sm leading-7 text-slate-600">
+              Alege itemul potrivit si intra direct in zona lui de lucru.
+            </p>
 
-          <div className="compact-note-list">
-            {module.items.map((item) => (
-              <div key={`note-${item.id}`} className="editorial-note-item compact-note">
-                <p className="section-kicker">{item.meta}</p>
-                <p className="mt-2 text-base text-ink">{item.title}</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{item.subtitle}</p>
-              </div>
-            ))}
-          </div>
-        </aside>
+            <div className="compact-note-list">
+              {module.items.map((item) => (
+                <div key={`note-${item.id}`} className="editorial-note-item compact-note">
+                  <p className="section-kicker">{item.meta}</p>
+                  <p className="mt-2 text-base text-ink">{item.title}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{item.subtitle}</p>
+                </div>
+              ))}
+            </div>
+          </aside>
+        )}
       </section>
     </div>
   )
