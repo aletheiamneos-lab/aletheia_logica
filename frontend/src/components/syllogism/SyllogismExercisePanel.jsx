@@ -4,6 +4,44 @@ const STATEMENTS = [
   { key: "conclusion", label: "Concluzie" },
 ]
 
+const PROGRESS_LAYERS = [
+  { id: "terms", label: "Termeni" },
+  { id: "forms", label: "Propozitii" },
+  { id: "fractions", label: "Fractii" },
+  { id: "figure", label: "Figura" },
+  { id: "validation", label: "Validare" },
+]
+
+function isLayerDone(layerId, answer) {
+  if (layerId === "terms") {
+    return Boolean(answer.terms?.S && answer.terms?.P && answer.terms?.M)
+  }
+
+  if (layerId === "forms") {
+    return Boolean(
+      answer.forms?.majorPremise && answer.forms?.minorPremise && answer.forms?.conclusion,
+    )
+  }
+
+  if (layerId === "fractions") {
+    return Boolean(
+      answer.fractions?.majorPremise &&
+        answer.fractions?.minorPremise &&
+        answer.fractions?.conclusion,
+    )
+  }
+
+  if (layerId === "figure") {
+    return Boolean(answer.figure)
+  }
+
+  if (layerId === "validation") {
+    return Boolean(answer.validationChecks?.finalValidity)
+  }
+
+  return false
+}
+
 export function SyllogismExercisePanel({ exercise, mode, answer, activeLayer, activeTarget, onFocus }) {
   if (!exercise) {
     return null
@@ -17,6 +55,9 @@ export function SyllogismExercisePanel({ exercise, mode, answer, activeLayer, ac
         <div>
           <p className="section-kicker">{isLearning ? "Demonstratie ghidata" : "Exercitiu activ"}</p>
           <h2>{exercise.title}</h2>
+          <p className="syllogism-panel-subtitle">
+            Citesti silogismul si alegi premisa; raspunsul se completeaza in panoul din dreapta.
+          </p>
         </div>
         <span className="syllogism-level">{exercise.level}</span>
       </div>
@@ -35,23 +76,22 @@ export function SyllogismExercisePanel({ exercise, mode, answer, activeLayer, ac
         ))}
       </div>
 
-      <div className="syllogism-answer-map">
-        <p className="section-kicker">Raspuns curent</p>
-        <div className="syllogism-map-grid">
-          <AnswerMetric label="S" value={answer.terms?.S || "neales"} />
-          <AnswerMetric label="P" value={answer.terms?.P || "neales"} />
-          <AnswerMetric label="M" value={answer.terms?.M || "neales"} />
-          <AnswerMetric
-            label="A/E/I/O"
-            value={`${answer.forms?.majorPremise || "-"} ${answer.forms?.minorPremise || "-"} ${answer.forms?.conclusion || "-"}`}
-          />
-          <AnswerMetric
-            label="Fractii"
-            value={`${answer.fractions?.majorPremise || "---"} / ${answer.fractions?.minorPremise || "---"} / ${answer.fractions?.conclusion || "---"}`}
-          />
-          <AnswerMetric label="Figura" value={answer.figure ? `Figura ${answer.figure}` : "nealeasa"} />
+      {!isLearning ? (
+        <div className="syllogism-progress-checklist">
+          <p className="section-kicker">Progres</p>
+          <ul>
+            {PROGRESS_LAYERS.map((layer) => {
+              const done = isLayerDone(layer.id, answer)
+              return (
+                <li key={layer.id} className={done ? "is-done" : ""}>
+                  <span className="syllogism-progress-mark">{done ? "✓" : "○"}</span>
+                  <span>{layer.label}</span>
+                </li>
+              )
+            })}
+          </ul>
         </div>
-      </div>
+      ) : null}
 
       {isLearning ? (
         <div className="syllogism-learning-answer">
@@ -60,14 +100,5 @@ export function SyllogismExercisePanel({ exercise, mode, answer, activeLayer, ac
         </div>
       ) : null}
     </article>
-  )
-}
-
-function AnswerMetric({ label, value }) {
-  return (
-    <div className="syllogism-answer-metric">
-      <span>{label}</span>
-      <strong>{value}</strong>
-    </div>
   )
 }

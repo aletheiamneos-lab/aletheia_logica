@@ -41,6 +41,7 @@ function SilogismulPage() {
   const [testStartedAt, setTestStartedAt] = useState(0)
   const [elapsedSeconds, setElapsedSeconds] = useState(0)
   const [testFinished, setTestFinished] = useState(false)
+  const [showHowTo, setShowHowTo] = useState(true)
 
   const exercisesByMode = useMemo(
     () => ({
@@ -275,13 +276,48 @@ function SilogismulPage() {
             Invata, exerseaza si testeaza rezolvarea silogismelor printr-un traseu ghidat: Termeni, Propozitii, Fractii, Figuri, Validare si Verdict.
           </p>
         </div>
-        <SyllogismModeTabs
-          mode={mode}
-          currentExerciseId={exercise?.id}
-          exercisesByMode={exercisesByMode}
-          onSelect={handleModeExerciseSelect}
-        />
+        <div className="syllogism-header-actions">
+          <SyllogismModeTabs
+            mode={mode}
+            currentExerciseId={exercise?.id}
+            exercisesByMode={exercisesByMode}
+            onSelect={handleModeExerciseSelect}
+          />
+          <button
+            type="button"
+            className="btn-secondary syllogism-howto-toggle"
+            onClick={() => setShowHowTo((current) => !current)}
+          >
+            {showHowTo ? "Ascunde ghidul" : "Cum functioneaza?"}
+          </button>
+        </div>
       </header>
+
+      {showHowTo ? (
+        <div className="syllogism-howto">
+          <div className="syllogism-howto-item">
+            <span className="syllogism-howto-number">1</span>
+            <div>
+              <strong>Text si progres</strong>
+              <p>In stanga citesti silogismul si vezi ce ai completat pana acum.</p>
+            </div>
+          </div>
+          <div className="syllogism-howto-item">
+            <span className="syllogism-howto-number">2</span>
+            <div>
+              <strong>Traseul ghidat</strong>
+              <p>In mijloc urmezi cei 6 pasi in ordine si vezi previzualizarea alegerii tale.</p>
+            </div>
+          </div>
+          <div className="syllogism-howto-item">
+            <span className="syllogism-howto-number">3</span>
+            <div>
+              <strong>Raspunsul tau</strong>
+              <p>In dreapta completezi efectiv fiecare pas si apesi butonul de actiune.</p>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       <div className="syllogism-topline">
         <span>{`${currentIndex + 1}/${availableExercises.length} exercitii`}</span>

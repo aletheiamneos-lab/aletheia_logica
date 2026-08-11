@@ -94,6 +94,7 @@ export function FeedbackPanel({
         <div>
           <p className="section-kicker">{mode === "test" ? "Panel de test" : "Panel contextual"}</p>
           <h2>{LAYER_LABELS[activeLayer] ?? "Analiza"}</h2>
+          <p className="syllogism-panel-subtitle">Aici completezi raspunsul pentru pasul activ.</p>
         </div>
       </div>
 
@@ -144,6 +145,9 @@ export function FeedbackPanel({
         )
       ) : null}
 
+      <p className="syllogism-actions-hint">
+        {getActionHelperText({ mode, activeLayer, isLastItem })}
+      </p>
       <div className="syllogism-actions">
         {mode === "learning" ? (
           <>
@@ -172,6 +176,30 @@ export function FeedbackPanel({
       </div>
     </aside>
   )
+}
+
+function getActionHelperText({ mode, activeLayer, isLastItem }) {
+  if (mode === "learning") {
+    return "Foloseste Inapoi / Continua ca sa parcurgi explicatia pas cu pas, in ordine."
+  }
+
+  if (mode === "test") {
+    if (activeLayer !== "validation") {
+      return "Continua te duce la pasul urmator. Scorul si feedback-ul apar abia la Validare, dupa ultimul exercitiu."
+    }
+
+    return isLastItem
+      ? "Acesta e ultimul exercitiu din test - Finalizeaza testul incheie evaluarea si arata rezultatul."
+      : "Salveaza exercitiul si treci automat la urmatorul din test."
+  }
+
+  if (activeLayer === "verdict") {
+    return "Ai rezultatul final pentru acest exercitiu. Reseteaza pentru a incerca din nou."
+  }
+
+  return activeLayer === "validation"
+    ? "Finalizeaza afiseaza scorul si explicatia completa pentru acest exercitiu."
+    : "Verifica stratul curent, apoi treci la pasul urmator din traseu."
 }
 
 function getPrimaryActionLabel({ mode, activeLayer, isLastItem }) {

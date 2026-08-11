@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 import { VALIDATION_RULES } from "../../utils/syllogismEngine"
 import { LAYERS, LOGIC_STACK_LAYERS } from "./logicStackLayers"
 
@@ -7,17 +9,33 @@ const STATEMENT_LABELS = {
   conclusion: "Concluzie",
 }
 
+const CONTEXT_STATEMENT_LABELS = {
+  majorPremise: "Premisa majora",
+  minorPremise: "Premisa minora",
+  conclusion: "Concluzie",
+}
+
 export function LogicStack3D({
   exercise,
   answer,
   result,
   mode,
   activeLayer = "terms",
+  activeTarget = null,
   maxUnlockedLayer = 0,
   revealSolution = false,
   onFocus,
   onAnswerPatch,
 }) {
+  const [lockedHint, setLockedHint] = useState("")
+  const [lockedHintKey, setLockedHintKey] = useState(`${exercise?.id ?? ""}-${mode}`)
+  const currentKey = `${exercise?.id ?? ""}-${mode}`
+
+  if (currentKey !== lockedHintKey) {
+    setLockedHintKey(currentKey)
+    setLockedHint("")
+  }
+
   if (!exercise) {
     return null
   }
@@ -43,9 +61,14 @@ export function LogicStack3D({
 
   function focus(layerId) {
     if (!canOpenLayer(layerId)) {
+      const targetLayer = LAYERS[getLayerIndex(layerId)]
+      setLockedHint(
+        `Termina pasul curent ca sa deblochezi "${targetLayer?.title ?? "acest pas"}".`,
+      )
       return
     }
 
+    setLockedHint("")
     onFocus?.(layerId, getDefaultTarget(layerId))
   }
 
@@ -60,9 +83,25 @@ export function LogicStack3D({
           <p className="section-kicker">Proces ghidat</p>
           <h2>Rezolvarea silogismului</h2>
           <p>Urmeaza cele 6 etape in ordine. Detaliile pasului selectat apar dedesubt.</p>
+          <p className="logic-stack-context-line">
+            {`Pasul ${activeIndex + 1}/6 - ${activeLayerConfig.title}`}
+            {CONTEXT_STATEMENT_LABELS[activeTarget]
+              ? ` - ${CONTEXT_STATEMENT_LABELS[activeTarget]}`
+              : ""}
+          </p>
         </div>
         <span>{`${activeIndex + 1}/${LAYERS.length}`}</span>
       </div>
+
+      <div className="logic-stack-legend" aria-hidden="true">
+        <span className="is-active">Activ</span>
+        <span className="is-completed">Rezolvat</span>
+        <span className="is-partial">Partial</span>
+        <span className="is-error">Gresit</span>
+        <span className="is-locked">Blocat</span>
+      </div>
+
+      {lockedHint ? <p className="logic-stack-locked-hint">{lockedHint}</p> : null}
 
       <div className="logic-stack-rail" aria-label="Procesul de rezolvare">
         {LAYERS.map((layer, index) => (
@@ -94,6 +133,9 @@ export function LogicStack3D({
             <span>{activeLayerConfig.id === "verdict" && !canShowVerdict ? "Ascuns" : activeLayerConfig.code}</span>
           </div>
           <p className="logic-stack-focus-copy">{activeLayerConfig.detail}</p>
+          <p className="logic-stack-preview-label section-kicker">
+            Previzualizare - completezi in panoul din dreapta
+          </p>
           <StackLayerPreview
             layer={activeLayerConfig.id}
             exercise={exercise}
