@@ -13450,3 +13450,105 @@
     font-size: max(0.75rem, 12px) !important;
   }
 }
+
+/* Lesson practice only: keep palette feedback visible without flooding the answers. */
+.lesson-practice-tab .exercise-card .answer-choice-group {
+  --lesson-choice-line:
+    color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 38%, var(--workspace-line));
+  --lesson-choice-text:
+    color-mix(in srgb, var(--accent-strong) 78%, var(--text));
+  border-color: color-mix(
+    in srgb,
+    rgb(var(--theme-secondary-rgb)) 24%,
+    var(--workspace-line)
+  ) !important;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 10%, var(--surface)) 0%,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 6%, var(--surface)) 48%,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 3%, var(--surface)) 100%
+    ) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-group::before {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--lesson-choice-line) 44%, transparent) 16%,
+    color-mix(in srgb, var(--lesson-choice-line) 44%, transparent) 84%,
+    transparent
+  ) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item {
+  border-bottom-color: color-mix(
+    in srgb,
+    rgb(var(--theme-secondary-rgb)) 18%,
+    var(--workspace-line)
+  ) !important;
+  background: transparent !important;
+  background-image: none !important;
+  color: var(--text) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item:hover {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 12%, var(--surface)),
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 6%, var(--surface)) 64%,
+      transparent
+    ) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 54%, transparent) !important;
+  outline-offset: -3px;
+  box-shadow: none !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item[data-state="checked"] {
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 18%, var(--surface)),
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 10%, var(--surface)) 60%,
+      color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 5%, var(--surface))
+    ) !important;
+  box-shadow: inset 3px 0 0 color-mix(in srgb, var(--accent) 68%, transparent) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-indicator {
+  border-color: color-mix(in srgb, var(--accent-strong) 54%, var(--workspace-line)) !important;
+  background: color-mix(in srgb, var(--surface) 96%, white) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item[data-state="checked"] .answer-choice-indicator {
+  border-color: var(--accent-strong) !important;
+  background: radial-gradient(
+    circle,
+    var(--accent-strong) 0 42%,
+    color-mix(in srgb, var(--surface) 96%, white) 46%
+  ) !important;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 13%, transparent) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-prefix {
+  color: var(--lesson-choice-text) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-title {
+  color: var(--text) !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item[data-tone="correct"] {
+  background: color-mix(in srgb, #ecfdf5 94%, var(--accent)) !important;
+  box-shadow: inset 3px 0 0 #10b981 !important;
+}
+
+.lesson-practice-tab .exercise-card .answer-choice-item[data-tone="incorrect"] {
+  background: color-mix(in srgb, #fff1f2 94%, var(--accent)) !important;
+  box-shadow: inset 3px 0 0 #f43f5e !important;
+}
