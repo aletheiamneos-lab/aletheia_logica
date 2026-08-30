@@ -169,9 +169,10 @@ function LessonPracticeTab({ lesson }) {
         <WhyExplainersPanel
           embedded
           items={whyItems}
-          eyebrow="Explicatii rapide"
-          title="De ce functioneaza in lectia aceasta?"
-          description="Panoul explicativ din Learning 2.0 este legat si aici, ca sa vezi mecanismul regulii direct langa exercitii."
+          eyebrow="Ghid de înțelegere"
+          title="De ce funcționează în lecția aceasta?"
+          description="Pornește de la mecanism, apoi verifică exemplul, limita și capcana fiecărei reguli."
+          footerNote="Panoul explicativ din Learning 2.0 este legat și aici, ca să vezi mecanismul regulii direct lângă exerciții."
           shellCollapsible
           defaultShellOpen={false}
         />

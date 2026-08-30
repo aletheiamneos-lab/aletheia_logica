@@ -13158,3 +13158,295 @@
     width: 100%;
   }
 }
+
+/* Lesson practice: compact, progressive guide for the rule explanations. */
+.lesson-practice-tab .learning-why-lesson-guide {
+  min-width: 0;
+}
+
+.lesson-practice-tab .learning-why-lesson-guide .learning-why-shell {
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid var(--workspace-line) !important;
+  border-radius: 16px !important;
+  background: color-mix(in srgb, var(--surface-soft) 70%, white) !important;
+}
+
+.lesson-practice-tab .learning-why-guide-toggle {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: 100%;
+  min-width: 0;
+  min-height: 0 !important;
+  padding: 0.9rem 1rem;
+  gap: 0.75rem !important;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.lesson-practice-tab .learning-why-guide-toggle:hover {
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+}
+
+.lesson-practice-tab .learning-why-guide-heading {
+  min-width: 0;
+}
+
+.lesson-practice-tab .learning-why-guide-title-row {
+  display: flex;
+  min-width: 0;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lesson-practice-tab .learning-why-guide-title {
+  margin-top: 0.22rem;
+  font-family: var(--font-ui-premium);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 720;
+  line-height: 1.25;
+  letter-spacing: -0.018em;
+  color: var(--text);
+}
+
+.lesson-practice-tab .learning-why-guide-count {
+  flex: none;
+  color: var(--text-muted);
+  font-size: 0.75rem !important;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.lesson-practice-tab .learning-why-guide-description {
+  max-width: 70ch;
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.82rem !important;
+  line-height: 1.45;
+}
+
+.lesson-practice-tab :is(.learning-why-guide-chevron, .learning-why-item-chevron) {
+  display: grid;
+  place-items: center;
+  flex: none;
+  color: var(--text-muted);
+  transition: transform 160ms ease, color 160ms ease;
+}
+
+.lesson-practice-tab .learning-why-guide-chevron {
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid var(--workspace-line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.lesson-practice-tab :is(.learning-why-guide-chevron, .learning-why-item-chevron).is-open {
+  transform: rotate(180deg);
+  color: var(--accent-strong);
+}
+
+.lesson-practice-tab :is(.learning-why-guide-chevron, .learning-why-item-chevron) svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.lesson-practice-tab .learning-why-lesson-list {
+  border-top: 1px solid var(--workspace-line);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+}
+
+.lesson-practice-tab .learning-why-lesson-item + .learning-why-lesson-item {
+  border-top: 1px solid var(--workspace-line);
+}
+
+.lesson-practice-tab .learning-why-lesson-item.is-open {
+  background: var(--surface);
+}
+
+.lesson-practice-tab .learning-why-lesson-summary {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  width: 100%;
+  min-width: 0;
+  min-height: 0 !important;
+  padding: 0.72rem 1rem;
+  gap: 0.7rem;
+  align-items: start;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+}
+
+.lesson-practice-tab .learning-why-lesson-summary:hover {
+  background: color-mix(in srgb, var(--accent) 3.5%, transparent);
+}
+
+.lesson-practice-tab .learning-why-lesson-index {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  color: var(--accent-strong);
+  font-size: 0.68rem !important;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.lesson-practice-tab .learning-why-lesson-copy {
+  display: grid;
+  min-width: 0;
+  gap: 0.18rem;
+}
+
+.lesson-practice-tab .learning-why-lesson-topic {
+  color: var(--accent-strong);
+  font-size: 0.65rem !important;
+  font-weight: 720;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.lesson-practice-tab .learning-why-lesson-rule {
+  color: var(--text);
+  font-family: var(--font-ui-premium);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.lesson-practice-tab .learning-why-lesson-mechanism {
+  max-width: 88ch;
+  color: var(--text-muted);
+  font-size: 0.82rem !important;
+  line-height: 1.45;
+}
+
+.lesson-practice-tab .learning-why-item-chevron {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: 0.12rem;
+}
+
+.lesson-practice-tab .learning-why-lesson-detail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0 1rem 0.85rem 3.7rem;
+  gap: 0.55rem;
+}
+
+.lesson-practice-tab .learning-why-lesson-step {
+  min-width: 0;
+  padding: 0.68rem 0.75rem;
+  border-left: 2px solid color-mix(in srgb, var(--accent) 42%, transparent);
+  background: color-mix(in srgb, var(--surface-soft) 72%, white);
+}
+
+.lesson-practice-tab .learning-why-lesson-step.is-limit {
+  border-left-color: color-mix(in srgb, var(--text-muted) 48%, transparent);
+}
+
+.lesson-practice-tab .learning-why-lesson-step.is-trap {
+  border-left-color: color-mix(in srgb, #b45309 58%, transparent);
+  background: color-mix(in srgb, #fff7ed 72%, white);
+}
+
+.lesson-practice-tab .learning-why-lesson-step-label {
+  margin-bottom: 0.25rem;
+  color: var(--text-muted);
+  font-size: 0.65rem !important;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.lesson-practice-tab .learning-why-lesson-step > p:last-child {
+  color: var(--text);
+  font-size: 0.8rem !important;
+  line-height: 1.48;
+}
+
+.lesson-practice-tab .learning-why-guide-footer-note {
+  padding: 0.65rem 1rem;
+  border-top: 1px solid var(--workspace-line);
+  color: var(--text-muted);
+  font-size: 0.72rem !important;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .lesson-practice-tab .learning-why-lesson-detail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .lesson-practice-tab:has(.learning-why-lesson-guide.is-open) .exercise-mobile-sticky-footer {
+    display: none !important;
+  }
+
+  .lesson-practice-tab .learning-why-guide-toggle {
+    padding: 0.78rem 0.8rem;
+  }
+
+  .lesson-practice-tab .learning-why-guide-title-row {
+    align-items: flex-start;
+    padding-left: 2.75rem;
+  }
+
+  .lesson-practice-tab .learning-why-guide-count {
+    margin-top: 0.15rem;
+  }
+
+  .lesson-practice-tab .learning-why-guide-description {
+    padding-left: 2.75rem;
+    font-size: max(0.8125rem, 13px) !important;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-summary {
+    grid-template-columns: 1.75rem minmax(0, 1fr) auto;
+    padding: 0.7rem 0.8rem;
+    gap: 0.55rem;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-index {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-rule {
+    font-size: max(0.9375rem, 15px);
+  }
+
+  .lesson-practice-tab .learning-why-lesson-mechanism,
+  .lesson-practice-tab .learning-why-lesson-step > p:last-child {
+    font-size: max(0.875rem, 14px) !important;
+    line-height: 1.5;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-item:not(.is-open) .learning-why-lesson-mechanism {
+    display: none;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-detail {
+    padding: 0 0.8rem 0.75rem 3.1rem;
+    gap: 0.45rem;
+  }
+
+  .lesson-practice-tab .learning-why-lesson-step {
+    padding: 0.62rem 0.68rem;
+  }
+
+  .lesson-practice-tab .learning-why-guide-footer-note {
+    padding: 0.6rem 0.8rem;
+    font-size: max(0.75rem, 12px) !important;
+  }
+}
