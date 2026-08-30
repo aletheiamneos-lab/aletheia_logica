@@ -22,7 +22,7 @@ function IdentityDemo({ principle }) {
         </div>
 
         <div className="mt-5 flex flex-wrap items-center gap-4">
-          <div className="flex h-16 w-16 items-center justify-center rounded-[22px] bg-slate-950 text-2xl font-semibold text-white">
+          <div className="flex h-16 w-16 items-center justify-center rounded-[22px] bg-blue-600 text-2xl font-semibold text-white">
             A
           </div>
           <div className="rounded-[22px] border border-slate-200 bg-slate-50 px-5 py-4 text-sm font-semibold text-slate-700">
@@ -55,7 +55,7 @@ function NonContradictionDemo({ principle }) {
             onClick={() => setIsWhite((current) => !current)}
             className={[
               "rounded-full px-4 py-2 text-sm font-semibold transition",
-              isWhite ? "bg-slate-950 text-white" : "border border-slate-200 bg-slate-50 text-slate-700",
+              isWhite ? "bg-blue-600 text-white" : "border border-slate-200 bg-slate-50 text-slate-700",
             ].join(" ")}
           >
             {principle.demo.toggleA}
@@ -65,7 +65,7 @@ function NonContradictionDemo({ principle }) {
             onClick={() => setIsNotWhite((current) => !current)}
             className={[
               "rounded-full px-4 py-2 text-sm font-semibold transition",
-              isNotWhite ? "bg-slate-950 text-white" : "border border-slate-200 bg-slate-50 text-slate-700",
+              isNotWhite ? "bg-blue-600 text-white" : "border border-slate-200 bg-slate-50 text-slate-700",
             ].join(" ")}
           >
             {principle.demo.toggleB}
@@ -208,29 +208,29 @@ function PrincipleDemoCard({ principle }) {
 
   return (
     <div className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
-      <div className="rounded-[28px] border border-slate-200 bg-slate-950 px-6 py-6 text-white">
+      <div className="theory-soft-feature-panel rounded-[28px] border px-6 py-6 text-slate-950">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Principiu activ</p>
-            <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{principle.title}</h3>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">Principiu activ</p>
+            <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-slate-950">{principle.title}</h3>
           </div>
-          <span className="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-sm font-semibold">
+          <span className="rounded-full border border-blue-200 bg-white px-3 py-2 text-sm font-semibold text-blue-700">
             {principle.formula}
           </span>
         </div>
 
         <div className="mt-6 space-y-5">
-          <div className="rounded-[22px] border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-200">Pe scurt</p>
-            <p className="mt-3 text-base leading-8 text-slate-200">{principle.simpleText}</p>
+          <div className="theory-soft-feature-inset rounded-[22px] border p-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Pe scurt</p>
+            <p className="mt-3 text-base leading-8 text-slate-600">{principle.simpleText}</p>
           </div>
-          <div className="rounded-[22px] border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-200">Formulare formală</p>
-            <p className="mt-3 text-base leading-8 text-slate-200">{principle.formalText}</p>
+          <div className="theory-soft-feature-inset rounded-[22px] border p-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Formulare formală</p>
+            <p className="mt-3 text-base leading-8 text-slate-600">{principle.formalText}</p>
           </div>
-          <div className="rounded-[22px] border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-200">Exemplu din viața reală</p>
-            <p className="mt-3 text-base leading-8 text-slate-200">{principle.example}</p>
+          <div className="theory-soft-feature-inset rounded-[22px] border p-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Exemplu din viața reală</p>
+            <p className="mt-3 text-base leading-8 text-slate-600">{principle.example}</p>
           </div>
         </div>
       </div>

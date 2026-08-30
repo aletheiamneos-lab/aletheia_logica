@@ -131,7 +131,7 @@ function IntensionExtensionBalance({ section }) {
             ))}
           </div>
 
-          <div className="mt-6 rounded-[24px] border border-slate-200 bg-slate-950 px-5 py-4 text-sm leading-7 text-slate-200">
+          <div className="theory-soft-note mt-6 rounded-[24px] border px-5 py-4 text-sm leading-7 text-slate-700">
             {section.footer}
           </div>
         </div>

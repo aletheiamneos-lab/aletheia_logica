@@ -320,8 +320,8 @@ function EulerRelationsExplorer({ section }) {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[28px] border border-slate-200 bg-slate-950 px-6 py-6 text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">Exemple</p>
+          <div className="theory-soft-feature-panel rounded-[28px] border px-6 py-6 text-slate-950">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">Exemple</p>
             <div className="mt-4 flex flex-wrap gap-3">
               {activeRelation.examples.map((example, index) => (
                 <button
@@ -331,8 +331,8 @@ function EulerRelationsExplorer({ section }) {
                   className={[
                     "rounded-full px-4 py-2 text-sm font-semibold transition",
                     exampleIndex === index
-                      ? "bg-white text-slate-950"
-                      : "border border-white/10 bg-white/10 text-slate-200 hover:bg-white/15",
+                      ? "bg-blue-600 text-white"
+                      : "border border-blue-100 bg-white text-slate-600 hover:border-blue-200 hover:bg-blue-50",
                   ].join(" ")}
                 >
                   Exemplul {index + 1}
@@ -340,14 +340,14 @@ function EulerRelationsExplorer({ section }) {
               ))}
             </div>
 
-            <div className="mt-5 rounded-[22px] border border-white/10 bg-white/5 p-5">
-              <h4 className="text-xl font-semibold tracking-[-0.03em]">{activeExample.title}</h4>
-              <p className="mt-3 text-sm leading-7 text-slate-200">{activeExample.description}</p>
+            <div className="theory-soft-feature-inset mt-5 rounded-[22px] border p-5">
+              <h4 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">{activeExample.title}</h4>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{activeExample.description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
-                <span className="rounded-full bg-white/10 px-3 py-2 text-sm font-semibold text-slate-100">
+                <span className="rounded-full bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">
                   A = {activeExample.aLabel}
                 </span>
-                <span className="rounded-full bg-white/10 px-3 py-2 text-sm font-semibold text-slate-100">
+                <span className="rounded-full bg-blue-50 px-3 py-2 text-sm font-semibold text-blue-800">
                   B = {activeExample.bLabel}
                 </span>
               </div>

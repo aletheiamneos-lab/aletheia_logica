@@ -27,15 +27,15 @@ function TermAnatomyTriangle({ section }) {
     >
       <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
         <div className="rounded-[30px] border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-5">
-          <div className="relative h-[360px] overflow-hidden rounded-[26px] border border-slate-100 bg-slate-950">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.28),_transparent_38%)]" />
+          <div className="theory-light-diagram relative h-[360px] overflow-hidden rounded-[26px] border">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_42%)]" />
             <svg aria-hidden="true" className="absolute inset-0 h-full w-full" viewBox="0 0 520 360">
               <line
                 x1="260"
                 y1="76"
                 x2="126"
                 y2="270"
-                stroke={highlightedNode === "cuvant" || highlightedNode === "notiune" ? "#60a5fa" : "#334155"}
+                stroke={highlightedNode === "cuvant" || highlightedNode === "notiune" ? "#3b82f6" : "#cbd5e1"}
                 strokeWidth="4"
                 strokeLinecap="round"
               />
@@ -44,7 +44,7 @@ function TermAnatomyTriangle({ section }) {
                 y1="76"
                 x2="394"
                 y2="270"
-                stroke={highlightedNode === "cuvant" || highlightedNode === "obiect" ? "#60a5fa" : "#334155"}
+                stroke={highlightedNode === "cuvant" || highlightedNode === "obiect" ? "#3b82f6" : "#cbd5e1"}
                 strokeWidth="4"
                 strokeLinecap="round"
               />
@@ -53,13 +53,13 @@ function TermAnatomyTriangle({ section }) {
                 y1="270"
                 x2="394"
                 y2="270"
-                stroke={highlightedNode === "notiune" || highlightedNode === "obiect" ? "#60a5fa" : "#334155"}
+                stroke={highlightedNode === "notiune" || highlightedNode === "obiect" ? "#3b82f6" : "#cbd5e1"}
                 strokeWidth="4"
                 strokeLinecap="round"
               />
             </svg>
 
-            <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-blue-300/30 bg-blue-500/10 text-center text-base font-semibold text-blue-100 shadow-[0_0_0_18px_rgba(59,130,246,0.08)]">
+            <div className="absolute left-1/2 top-1/2 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-blue-200 bg-white text-center text-base font-semibold text-blue-800 shadow-[0_0_0_18px_rgba(59,130,246,0.06)]">
               {section.centerLabel}
             </div>
 
@@ -72,7 +72,7 @@ function TermAnatomyTriangle({ section }) {
                   nodePositions[node.id],
                   activeNodeId === node.id
                     ? "border-blue-300 bg-blue-500 text-white shadow-[0_22px_40px_-28px_rgba(59,130,246,0.75)]"
-                    : "border-white/10 bg-white/10 text-blue-100 hover:border-blue-300/40 hover:bg-blue-500/20",
+                    : "border-blue-100 bg-white/90 text-slate-700 hover:border-blue-300 hover:bg-blue-50",
                 ].join(" ")}
                 onClick={() => setActiveNodeId(node.id)}
                 onMouseEnter={() => setHoveredNodeId(node.id)}

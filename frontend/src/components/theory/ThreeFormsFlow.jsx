@@ -63,14 +63,14 @@ function ThreeFormsFlow({ section }) {
           key={activeForm.id}
           className="lesson-state-transition grid gap-5 lg:grid-cols-[1.15fr_0.85fr]"
         >
-          <div className="rounded-[28px] border border-slate-200 bg-slate-950 px-6 py-6 text-white">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Detaliu activ</p>
-            <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{activeForm.title}</h3>
-            <p className="mt-4 text-base leading-8 text-slate-200">{activeForm.definition}</p>
+          <div className="theory-soft-feature-panel rounded-[28px] border px-6 py-6 text-slate-950">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">Detaliu activ</p>
+            <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em] text-slate-950">{activeForm.title}</h3>
+            <p className="mt-4 text-base leading-8 text-slate-600">{activeForm.definition}</p>
 
-            <div className="mt-6 rounded-[22px] border border-white/10 bg-white/5 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Exemplu</p>
-              <p className="mt-3 text-lg leading-8 text-white">{activeForm.example}</p>
+            <div className="theory-soft-feature-inset mt-6 rounded-[22px] border p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-700">Exemplu</p>
+              <p className="mt-3 text-lg leading-8 text-slate-900">{activeForm.example}</p>
             </div>
           </div>
 

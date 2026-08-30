@@ -16,7 +16,7 @@ const courseAssets = import.meta.glob("../../assets/course/**/*.{png,jpg,jpeg,sv
 const calloutToneClasses = {
   info: "border-blue-200 bg-blue-50 text-blue-900",
   warning: "border-amber-200 bg-amber-50 text-amber-900",
-  accent: "border-slate-200 bg-slate-900 text-white",
+  accent: "border-blue-200 bg-blue-50 text-blue-900",
 }
 
 function resolveCourseAsset(asset) {
