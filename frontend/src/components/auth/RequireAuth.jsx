@@ -20,7 +20,7 @@ function RequireAuth({ children, teacherOnly = false }) {
   }
 
   if (!isAuthenticated) {
-    return <Navigate replace to="/" state={{ from: location }} />
+    return <Navigate replace to={teacherOnly ? "/auth" : "/"} state={{ from: location }} />
   }
 
   if (isDemo && !isDemoRouteAllowed(location.pathname)) {

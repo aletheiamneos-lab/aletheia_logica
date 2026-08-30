@@ -31,6 +31,7 @@ const MOBILE_MENU_AVOID_SELECTOR = [
 ].join(",")
 
 const HomePage = lazy(() => import("./pages/HomePage"))
+const AdminAuthPage = lazy(() => import("./pages/AdminAuthPage"))
 const BibliotecaPage = lazy(() => import("./pages/BibliotecaPage"))
 const AccessSettingsPage = lazy(() => import("./pages/AccessSettingsPage"))
 const LessonsPage = lazy(() => import("./pages/LessonsPage"))
@@ -421,6 +422,7 @@ function AppLayout() {
             <Suspense fallback={<PageFallback />}>
               <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/auth" element={<AdminAuthPage />} />
                 <Route
                   path="/biblioteca"
                   element={

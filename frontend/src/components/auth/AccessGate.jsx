@@ -1,20 +1,15 @@
 import { lazy, Suspense, useState } from "react"
 import { GraduationCap, PlayCircle, ShieldCheck } from "lucide-react"
-import { useLocation, useNavigate } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 
 import { loadTrackedStudent } from "../../api/client"
 import { useAuth } from "../../context/useAuth"
 
-const roleCards = [
+const publicRoleCards = [
   {
     key: "student",
     title: "Student",
     icon: GraduationCap,
-  },
-  {
-    key: "admin",
-    title: "Admin",
-    icon: ShieldCheck,
   },
   {
     key: "demo",
@@ -33,12 +28,12 @@ function AccessGateBrand() {
   )
 }
 
-function AccessGate() {
+function AccessGate({ adminOnly = false }) {
   const navigate = useNavigate()
   const location = useLocation()
   const { loginStudent, loginAdmin, loginDemo } = useAuth()
   const trackedStudent = loadTrackedStudent()
-  const [mode, setMode] = useState("student")
+  const [mode, setMode] = useState(adminOnly ? "admin" : "student")
   const [studentName, setStudentName] = useState(trackedStudent?.name ?? "")
   const [studentEmail, setStudentEmail] = useState(trackedStudent?.email ?? "")
   const [adminPassword, setAdminPassword] = useState("")
@@ -76,34 +71,49 @@ function AccessGate() {
         </div>
 
         <aside className="access-login-panel">
-          <div
-            className="access-login-mode-grid"
-            aria-label="Alege tipul de acces"
-            role="tablist"
-          >
-            {roleCards.map((card) => {
-              const isActive = mode === card.key
-              const RoleIcon = card.icon
-              return (
-                <button
-                  key={card.key}
-                  type="button"
-                  className={["access-mode-card", isActive ? "is-active" : ""].join(" ")}
-                  onClick={() => {
-                    setMode(card.key)
-                    setError("")
-                  }}
-                  role="tab"
-                  aria-selected={isActive}
-                >
-                  <span className="access-mode-icon" aria-hidden="true">
-                    <RoleIcon />
-                  </span>
-                  <h3 className="access-mode-title">{card.title}</h3>
-                </button>
-              )
-            })}
-          </div>
+          {adminOnly ? (
+            <div className="access-login-header access-admin-login-header">
+              <span className="access-admin-icon" aria-hidden="true">
+                <ShieldCheck />
+              </span>
+              <div>
+                <p className="section-kicker">Acces securizat</p>
+                <h1 className="access-admin-title">Administrare</h1>
+                <p className="access-login-caption">
+                  Autentificare dedicată administratorului platformei.
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div
+              className="access-login-mode-grid"
+              aria-label="Alege tipul de acces"
+              role="tablist"
+            >
+              {publicRoleCards.map((card) => {
+                const isActive = mode === card.key
+                const RoleIcon = card.icon
+                return (
+                  <button
+                    key={card.key}
+                    type="button"
+                    className={["access-mode-card", isActive ? "is-active" : ""].join(" ")}
+                    onClick={() => {
+                      setMode(card.key)
+                      setError("")
+                    }}
+                    role="tab"
+                    aria-selected={isActive}
+                  >
+                    <span className="access-mode-icon" aria-hidden="true">
+                      <RoleIcon />
+                    </span>
+                    <h3 className="access-mode-title">{card.title}</h3>
+                  </button>
+                )
+              })}
+            </div>
+          )}
 
           <form className="access-login-form" onSubmit={handleSubmit}>
             {mode === "student" ? (
@@ -142,6 +152,7 @@ function AccessGate() {
                   onChange={(event) => setAdminPassword(event.target.value)}
                   placeholder="Introdu parola"
                   autoComplete="current-password"
+                  required
                 />
               </label>
             ) : (
@@ -165,6 +176,12 @@ function AccessGate() {
             </button>
 
             {error ? <div className="alert-panel">{error}</div> : null}
+
+            {adminOnly ? (
+              <Link className="access-admin-back-link" to="/">
+                Înapoi la accesul pentru elevi
+              </Link>
+            ) : null}
           </form>
         </aside>
       </section>
