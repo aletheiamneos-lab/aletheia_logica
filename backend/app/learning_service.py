@@ -50,6 +50,13 @@ def list_exercises_by_lesson(lesson_id: int) -> list[dict]:
     ]
 
 
+def get_exercise_lesson_id(exercise_id: int) -> int:
+    exercise = _EXERCISES_BY_ID.get(int(exercise_id))
+    if exercise is None:
+        raise HTTPException(status_code=404, detail="Exercitiul nu a fost gasit.")
+    return int(exercise["lesson_id"])
+
+
 def _normalize_answer(value: str) -> str:
     return " ".join(str(value or "").strip().casefold().split())
 

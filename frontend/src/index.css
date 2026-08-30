@@ -1090,6 +1090,24 @@ textarea {
     @apply flex flex-col items-start gap-3 self-start lg:items-end;
   }
 
+  .lesson-list-card.is-hidden-for-students {
+    opacity: 0.72;
+  }
+
+  .lesson-visibility-status.is-hidden {
+    background: rgba(239, 68, 68, 0.1);
+    color: #b91c1c;
+  }
+
+  .lesson-visibility-toggle {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .lessons-access-feedback {
+    @apply py-10 text-center text-sm leading-6;
+    color: var(--text-muted);
+  }
+
   .lesson-list-summary {
     @apply max-w-3xl text-sm leading-7 text-slate-500;
   }

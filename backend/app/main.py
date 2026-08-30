@@ -17,6 +17,7 @@ from .bac_student_reports_routes import router as bac_student_reports_router
 from .bac_teacher_solution_routes import router as bac_teacher_solution_router
 from .auth_service import get_current_user
 from .learning_service import (
+    get_exercise_lesson_id,
     get_lesson,
     get_progress_insights,
     get_progress_summary,
@@ -28,6 +29,8 @@ from .learning_service import (
 from .homepage_settings_routes import router as homepage_settings_router
 from .integrated_tests_routes import router as integrated_tests_router
 from .library_settings_routes import router as library_settings_router
+from .lesson_settings_routes import router as lesson_settings_router
+from .lesson_settings_service import ensure_lesson_access, visible_lesson_ids
 from .pdf_service import (
     build_content_disposition,
     build_export_filename,
@@ -97,6 +100,7 @@ app.include_router(bac_teacher_solution_router)
 app.include_router(homepage_settings_router)
 app.include_router(integrated_tests_router)
 app.include_router(library_settings_router)
+app.include_router(lesson_settings_router)
 app.include_router(submission_router)
 
 if FRONTEND_ASSETS.exists():
@@ -124,22 +128,36 @@ def export_test_report_pdf(
 
 
 @app.get("/lessons", response_model=list[Lesson])
-def read_lessons() -> list[dict]:
-    return list_lessons()
+def read_lessons(current_user: dict = Depends(get_current_user)) -> list[dict]:
+    allowed_lesson_ids = visible_lesson_ids(current_user)
+    return [lesson for lesson in list_lessons() if int(lesson["id"]) in allowed_lesson_ids]
 
 
 @app.get("/lessons/{lesson_id}", response_model=Lesson)
-def read_lesson(lesson_id: int) -> dict:
+def read_lesson(
+    lesson_id: int,
+    current_user: dict = Depends(get_current_user),
+) -> dict:
+    ensure_lesson_access(lesson_id, current_user)
     return get_lesson(lesson_id)
 
 
 @app.get("/exercises", response_model=list[Exercise])
-def read_exercises() -> list[dict]:
-    return list_exercises()
+def read_exercises(current_user: dict = Depends(get_current_user)) -> list[dict]:
+    allowed_lesson_ids = visible_lesson_ids(current_user)
+    return [
+        exercise
+        for exercise in list_exercises()
+        if int(exercise["lesson_id"]) in allowed_lesson_ids
+    ]
 
 
 @app.get("/exercises/by-lesson/{lesson_id}", response_model=list[Exercise])
-def read_exercises_by_lesson(lesson_id: int) -> list[dict]:
+def read_exercises_by_lesson(
+    lesson_id: int,
+    current_user: dict = Depends(get_current_user),
+) -> list[dict]:
+    ensure_lesson_access(lesson_id, current_user)
     return list_exercises_by_lesson(lesson_id)
 
 
@@ -148,6 +166,7 @@ def submit_answer_route(
     payload: SubmitAnswerRequest,
     current_user: dict = Depends(get_current_user),
 ) -> dict:
+    ensure_lesson_access(get_exercise_lesson_id(payload.exercise_id), current_user)
     return submit_answer(payload.exercise_id, payload.answer, current_user)
 
 

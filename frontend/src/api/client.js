@@ -20,6 +20,7 @@ const RETRYABLE_SERVER_STATUSES = new Set([502, 503, 504])
 const PREVIEW_STORAGE_KEY = "logica_preview_progress"
 const PREVIEW_HOMEPAGE_STUDY_PLAN_KEY = "logica_preview_homepage_study_plan"
 const PREVIEW_LIBRARY_VISIBILITY_KEY = "logica_preview_library_visibility"
+const PREVIEW_LESSON_VISIBILITY_KEY = "logica_preview_lesson_visibility"
 const ACTIVE_SESSION_STORAGE_KEY = "logica_active_session"
 export const PUBLIC_LINK_CODE = "main-public-link"
 export const PUBLIC_SESSION_STORAGE_KEY = "logica_public_session_id"
@@ -726,6 +727,40 @@ async function previewRequest(path, options = {}) {
     }
   }
 
+  if (path === "/lesson-settings/lessons") {
+    const storedSession = loadStoredSession()
+    const canManage = storedSession?.role === "admin"
+    const defaultVisibility = Object.fromEntries(staticLessons.map((lesson) => [lesson.id, false]))
+    const storedVisibility = JSON.parse(
+      readBrowserStorage(PREVIEW_LESSON_VISIBILITY_KEY) ?? "{}",
+    )
+    const visibility = { ...defaultVisibility, ...storedVisibility }
+
+    return {
+      can_manage: canManage,
+      lessons: Object.entries(visibility)
+        .filter(([, isVisible]) => canManage || isVisible)
+        .map(([lessonId, isVisible]) => ({
+          lesson_id: Number(lessonId),
+          is_visible_to_students: Boolean(isVisible),
+        })),
+    }
+  }
+
+  if (path.startsWith("/lesson-settings/lessons/")) {
+    const lessonId = Number(path.split("/").pop())
+    const payload = JSON.parse(options.body ?? "{}")
+    const storedVisibility = JSON.parse(
+      readBrowserStorage(PREVIEW_LESSON_VISIBILITY_KEY) ?? "{}",
+    )
+    storedVisibility[lessonId] = Boolean(payload.is_visible_to_students)
+    writeBrowserStorage(PREVIEW_LESSON_VISIBILITY_KEY, JSON.stringify(storedVisibility))
+    return {
+      lesson_id: lessonId,
+      is_visible_to_students: storedVisibility[lessonId],
+    }
+  }
+
   if (path.startsWith("/library-settings/documents/")) {
     const documentId = decodeURIComponent(path.split("/").pop())
     const payload = JSON.parse(options.body ?? "{}")
@@ -1281,6 +1316,17 @@ export function getLibraryDocumentsVisibility() {
 
 export function updateLibraryDocumentVisibility(documentId, isVisibleToStudents) {
   return request(`/library-settings/documents/${encodeURIComponent(documentId)}`, {
+    method: "PATCH",
+    body: JSON.stringify({ is_visible_to_students: isVisibleToStudents }),
+  })
+}
+
+export function getLessonsVisibility() {
+  return request("/lesson-settings/lessons")
+}
+
+export function updateLessonVisibility(lessonId, isVisibleToStudents) {
+  return request(`/lesson-settings/lessons/${lessonId}`, {
     method: "PATCH",
     body: JSON.stringify({ is_visible_to_students: isVisibleToStudents }),
   })

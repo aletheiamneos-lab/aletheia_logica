@@ -13,6 +13,7 @@ import { Link } from "react-router-dom"
 import {
   getHomepageStudyPlan,
   getIntegratedTests,
+  getLessonsVisibility,
   getProgressInsights,
   getProgressSummary,
   updateHomepageStudyPlan,
@@ -310,6 +311,7 @@ function LearningProgressMapPanel({
   learningActions,
   summary,
   planState,
+  courseLessons = courseManifest,
   isEditable = false,
   isSaving = false,
   saveError = "",
@@ -320,17 +322,17 @@ function LearningProgressMapPanel({
   const safePlanRows = Array.isArray(planState?.rows) ? planState.rows : buildDefaultStudyPlanRows()
   const metricsByLessonId = new Map(safeLessonBreakdown.map((entry) => [entry.lesson_id, entry]))
   const planRowByLessonId = new Map(safePlanRows.filter((row) => row.lessonId).map((row) => [row.lessonId, row]))
-  const lessonProgress = courseManifest.map((lesson) => ({
+  const lessonProgress = courseLessons.map((lesson) => ({
     lesson,
     row: planRowByLessonId.get(lesson.id),
     progress: normalizeProgressPercent(planRowByLessonId.get(lesson.id)?.progressPercent, 0),
   }))
   const focusEntry = lessonProgress.find((entry) => entry.progress < 100) ?? lessonProgress.at(-1)
-  const focusLessonId = focusEntry?.lesson.id ?? nextLesson?.id ?? courseManifest[0]?.id
-  const focusLesson = courseManifest.find((lesson) => lesson.id === focusLessonId) ?? nextLesson ?? courseManifest[0]
+  const focusLessonId = focusEntry?.lesson.id ?? nextLesson?.id ?? courseLessons[0]?.id
+  const focusLesson = courseLessons.find((lesson) => lesson.id === focusLessonId) ?? nextLesson ?? courseLessons[0]
   const focusProgress = normalizeProgressPercent(planRowByLessonId.get(focusLesson?.id)?.progressPercent, 0)
   const completedCount = lessonProgress.filter((entry) => entry.progress >= 100).length
-  const totalLessons = summary?.total_lessons || courseManifest.length
+  const totalLessons = courseLessons.length
   const averageProgress = Math.round(
     lessonProgress.reduce((total, entry) => total + entry.progress, 0) / Math.max(lessonProgress.length, 1),
   )
@@ -414,7 +416,7 @@ function LearningProgressMapPanel({
       </div>
 
       <div className="academic-roadmap-list">
-        {courseManifest.map((lesson) => {
+        {courseLessons.map((lesson) => {
           const metrics = metricsByLessonId.get(lesson.id)
           const isFocus = lesson.id === focusLesson?.id
           const hasWork = Number(metrics?.total_exercises ?? 0) > 0
@@ -741,6 +743,7 @@ function HomePage() {
   const [summary, setSummary] = useState(initialSummary)
   const [insights, setInsights] = useState(initialInsights)
   const [publishedTests, setPublishedTests] = useState([])
+  const [accessibleLessonIds, setAccessibleLessonIds] = useState(null)
   const [studyPlanState, setStudyPlanState] = useState(() => createDefaultStudyPlanState())
   const [isStudyPlanLoaded, setIsStudyPlanLoaded] = useState(false)
   const [isSavingStudyPlan, setIsSavingStudyPlan] = useState(false)
@@ -757,11 +760,12 @@ function HomePage() {
     let active = true
 
     async function loadHomeData() {
-      const [summaryResult, insightsResult, testsResult, studyPlanResult] = await Promise.allSettled([
+      const [summaryResult, insightsResult, testsResult, studyPlanResult, lessonsResult] = await Promise.allSettled([
         getProgressSummary(),
         getProgressInsights(),
         getIntegratedTests(),
         getHomepageStudyPlan(),
+        getLessonsVisibility(),
       ])
 
       if (!active) {
@@ -798,6 +802,15 @@ function HomePage() {
         setStudyPlanState(fallbackPlan)
         lastSyncedStudyPlanRef.current = JSON.stringify(serializeStudyPlanStateForApi(fallbackPlan))
         errorMessages.push(studyPlanResult.reason?.message ?? "Nu am putut incarca calendarul comun.")
+      }
+
+      if (lessonsResult.status === "fulfilled") {
+        setAccessibleLessonIds(
+          new Set((lessonsResult.value.lessons ?? []).map((lesson) => Number(lesson.lesson_id))),
+        )
+      } else {
+        setAccessibleLessonIds(new Set())
+        errorMessages.push(lessonsResult.reason?.message ?? "Nu am putut incarca lectiile disponibile.")
       }
 
       setStudyPlanSyncMessage(
@@ -892,12 +905,27 @@ function HomePage() {
     )
   }
 
+  if (!isAdmin && accessibleLessonIds === null) {
+    return (
+      <section className="hero-panel">
+        <p className="section-kicker">Panou student</p>
+        <h1 className="mt-2 text-2xl text-ink">Se verifică lecțiile disponibile...</h1>
+      </section>
+    )
+  }
+
   const studentName = session?.displayName || "Student"
-  const completedLessons = Array.isArray(summary?.completed_lessons) ? summary.completed_lessons : []
-  const safeLessonBreakdown = Array.isArray(insights?.lesson_breakdown) ? insights.lesson_breakdown : []
+  const accessibleCourseManifest = isAdmin
+    ? courseManifest
+    : courseManifest.filter((lesson) => accessibleLessonIds?.has(lesson.id))
+  const completedLessons = (Array.isArray(summary?.completed_lessons) ? summary.completed_lessons : [])
+    .filter((lesson) => isAdmin || accessibleLessonIds?.has(lesson.id))
+  const safeLessonBreakdown = (Array.isArray(insights?.lesson_breakdown) ? insights.lesson_breakdown : [])
+    .filter((lesson) => isAdmin || accessibleLessonIds?.has(lesson.lesson_id))
   const completedLessonIds = new Set(completedLessons.map((lesson) => lesson.id))
   const nextLesson =
-    courseManifest.find((lesson) => !completedLessonIds.has(lesson.id)) ?? courseManifest[courseManifest.length - 1]
+    accessibleCourseManifest.find((lesson) => !completedLessonIds.has(lesson.id))
+      ?? accessibleCourseManifest[accessibleCourseManifest.length - 1]
   const weakestLesson =
     safeLessonBreakdown
       .slice()
@@ -926,7 +954,7 @@ function HomePage() {
   const lessonBreakdown =
     safeLessonBreakdown.length > 0
       ? safeLessonBreakdown
-      : courseManifest.map((lesson) => ({
+      : accessibleCourseManifest.map((lesson) => ({
           lesson_id: lesson.id,
           title: lesson.title,
           short_label: `L${lesson.id}`,
@@ -964,6 +992,19 @@ function HomePage() {
       copy: "Deschizi rapid laboratoarele interactive si lucrezi prin exercitii scurte, cu feedback imediat.",
     },
   ]
+  const visibleStudyPlanState = isAdmin
+    ? studyPlanState
+    : {
+        ...studyPlanState,
+        rows: studyPlanState.rows.filter(
+          (row) => !row.lessonId || accessibleLessonIds?.has(row.lessonId),
+        ),
+      }
+  const visibilityAwareSummary = {
+    ...summary,
+    completed_lessons_count: completedLessons.length,
+    total_lessons: accessibleCourseManifest.length,
+  }
 
   return (
     <div className="page-stack academic-home-page">
@@ -996,7 +1037,7 @@ function HomePage() {
           </div>
 
           <StudyTimelineBoard
-            planState={studyPlanState}
+            planState={visibleStudyPlanState}
             completedLessonIds={completedLessonIds}
             lessonBreakdown={lessonBreakdown}
             isEditable={isAdmin}
@@ -1017,7 +1058,7 @@ function HomePage() {
             </div>
             <div className="academic-brief-row">
               <span className="academic-brief-label">Lecii finalizate</span>
-              <span className="academic-brief-value">{`${summary.completed_lessons_count}/${summary.total_lessons || courseManifest.length}`}</span>
+              <span className="academic-brief-value">{`${completedLessons.length}/${accessibleCourseManifest.length}`}</span>
             </div>
           </div>
         </article>
@@ -1028,8 +1069,9 @@ function HomePage() {
           lessonBreakdown={lessonBreakdown}
           nextLesson={nextLesson}
           learningActions={studentLearningActions}
-          summary={summary}
-          planState={studyPlanState}
+          summary={visibilityAwareSummary}
+          planState={visibleStudyPlanState}
+          courseLessons={accessibleCourseManifest}
           isEditable={isAdmin}
           isSaving={isAdmin ? isSavingStudyPlan : false}
           saveError={isAdmin ? studyPlanSaveError : ""}
@@ -1081,7 +1123,7 @@ function HomePage() {
             </div>
 
             <div className="academic-module-rows">
-              {courseManifest.map((lesson) => {
+              {accessibleCourseManifest.map((lesson) => {
                 const metrics = lessonBreakdown.find((entry) => entry.lesson_id === lesson.id)
                 return (
                   <article key={lesson.id} className="academic-module-row">

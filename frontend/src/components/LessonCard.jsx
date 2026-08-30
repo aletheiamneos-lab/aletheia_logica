@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom"
+import { Eye, EyeOff } from "lucide-react"
 
 import Button from "./ui/Button"
 
-function LessonCard({ lesson }) {
+function LessonCard({
+  lesson,
+  canManage = false,
+  isVisibleToStudents = true,
+  isSavingVisibility = false,
+  isVisibilityDisabled = false,
+  onVisibilityToggle,
+}) {
   const studySummary = lesson.practiceSummary ?? lesson.formalText ?? lesson.shortText
 
   return (
-    <article className="lesson-list-card lesson-entry">
+    <article
+      className={`lesson-list-card lesson-entry${canManage && !isVisibleToStudents ? " is-hidden-for-students" : ""}`}
+    >
       <div className="lesson-list-index">{String(lesson.id).padStart(2, "0")}</div>
 
       <div className="lesson-list-main">
@@ -16,6 +26,11 @@ function LessonCard({ lesson }) {
             <span className="status-pill">
               {lesson.practiceStatus === "available" ? "teorie + practica" : "teorie disponibila"}
             </span>
+            {canManage ? (
+              <span className={`tag lesson-visibility-status${isVisibleToStudents ? "" : " is-hidden"}`}>
+                {isVisibleToStudents ? "Vizibila elevilor" : "Ascunsa elevilor"}
+              </span>
+            ) : null}
           </div>
 
           <div className="compact-module-heading">
@@ -46,6 +61,22 @@ function LessonCard({ lesson }) {
             Practica
           </Button>
         </div>
+        {canManage ? (
+          <Button
+            variant="secondary"
+            className="lesson-visibility-toggle"
+            loading={isSavingVisibility}
+            disabled={isVisibilityDisabled}
+            onClick={() => onVisibilityToggle?.(lesson)}
+          >
+            {isVisibleToStudents ? (
+              <EyeOff aria-hidden="true" size={16} strokeWidth={1.9} />
+            ) : (
+              <Eye aria-hidden="true" size={16} strokeWidth={1.9} />
+            )}
+            {isVisibleToStudents ? "Ascunde elevilor" : "Arata elevilor"}
+          </Button>
+        ) : null}
       </div>
     </article>
   )

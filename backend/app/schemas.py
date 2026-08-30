@@ -206,6 +206,20 @@ class LibraryDocumentVisibilityUpdate(BaseModel):
     is_visible_to_students: bool
 
 
+class LessonVisibility(BaseModel):
+    lesson_id: int
+    is_visible_to_students: bool
+
+
+class LessonsVisibilityResponse(BaseModel):
+    can_manage: bool
+    lessons: list[LessonVisibility]
+
+
+class LessonVisibilityUpdate(BaseModel):
+    is_visible_to_students: bool
+
+
 class IntegratedTestQuestionInput(BaseModel):
     id: str | None = None
     lesson_number: int = Field(..., ge=1, le=5)

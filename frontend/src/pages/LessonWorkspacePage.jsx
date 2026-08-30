@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react"
 import { Link, Navigate, useParams } from "react-router-dom"
 
+import { getLesson } from "../api/client"
 import CourseTranscriptSection from "../components/lesson/CourseTranscriptSection"
 import LessonPracticeTab from "../components/lesson/LessonPracticeTab"
 import LessonTabs from "../components/lesson/LessonTabs"
 import LessonTheoryRenderer from "../components/lesson/LessonTheoryRenderer"
+import { useAuth } from "../context/useAuth"
 import courseManifest from "../data/courseManifest.json"
 import lesson1Theory from "../data/theory/lesson1Theory.json"
 import lesson2Theory from "../data/theory/lesson2Theory.json"
@@ -63,7 +66,44 @@ const customTheoryMetaByLessonId = {
 
 function LessonWorkspacePage() {
   const { lessonId, tab } = useParams()
+  const { isDemo } = useAuth()
   const lesson = courseManifest.find((entry) => entry.id === Number(lessonId))
+  const [accessResult, setAccessResult] = useState(null)
+
+  useEffect(() => {
+    if (!lesson || isDemo) {
+      return undefined
+    }
+
+    let active = true
+
+    getLesson(lesson.id)
+      .then(() => {
+        if (active) {
+          setAccessResult({ lessonId: lesson.id, error: "" })
+        }
+      })
+      .catch((error) => {
+        if (active) {
+          setAccessResult({
+            lessonId: lesson.id,
+            error: error?.message ?? "Această lecție nu este disponibilă momentan.",
+          })
+        }
+      })
+
+    return () => {
+      active = false
+    }
+  }, [isDemo, lesson])
+
+  const demoAccessError = isDemo && lesson?.id !== 1
+    ? "Această lecție nu este disponibilă în modul Demo."
+    : ""
+  const isCheckingAccess = Boolean(lesson) && !isDemo && accessResult?.lessonId !== lesson.id
+  const accessError = demoAccessError || (
+    accessResult?.lessonId === lesson?.id ? accessResult.error : ""
+  )
 
   if (!lesson) {
     return (
@@ -73,6 +113,30 @@ function LessonWorkspacePage() {
         <div className="mt-5">
           <Link className="btn-secondary" to="/lectii">
             Inapoi la lectii
+          </Link>
+        </div>
+      </section>
+    )
+  }
+
+  if (isCheckingAccess) {
+    return (
+      <section className="hero-panel">
+        <p className="section-kicker">Lecție</p>
+        <h1 className="mt-2 text-2xl text-ink">Se verifică accesul...</h1>
+      </section>
+    )
+  }
+
+  if (accessError) {
+    return (
+      <section className="hero-panel">
+        <p className="section-kicker">Lecție indisponibilă</p>
+        <h1 className="mt-2 text-2xl text-ink">Nu ai acces la această lecție</h1>
+        <p className="section-subtitle mt-3">{accessError}</p>
+        <div className="mt-5">
+          <Link className="btn-secondary" to="/lectii">
+            Înapoi la lecții
           </Link>
         </div>
       </section>

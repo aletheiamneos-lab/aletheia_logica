@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-import { getExercises } from "../api/client"
+import { getExercises, getLessonsVisibility } from "../api/client"
 import Button from "../components/ui/Button"
 import courseManifest from "../data/courseManifest.json"
 import { useAuth } from "../context/useAuth"
@@ -9,6 +9,7 @@ import { useAuth } from "../context/useAuth"
 function PracticeHubPage() {
   const { isDemo } = useAuth()
   const [exerciseCounts, setExerciseCounts] = useState({})
+  const [accessibleLessonIds, setAccessibleLessonIds] = useState(null)
   const [error, setError] = useState("")
 
   useEffect(() => {
@@ -19,7 +20,10 @@ function PracticeHubPage() {
 
     async function loadCounts() {
       try {
-        const exercises = await getExercises()
+        const [exercises, visibility] = await Promise.all([
+          getExercises(),
+          getLessonsVisibility(),
+        ])
         if (!active) {
           return
         }
@@ -30,6 +34,9 @@ function PracticeHubPage() {
         }, {})
 
         setExerciseCounts(counts)
+        setAccessibleLessonIds(
+          new Set((visibility.lessons ?? []).map((lesson) => Number(lesson.lesson_id))),
+        )
       } catch (loadError) {
         if (active) {
           setError(loadError.message)
@@ -44,6 +51,11 @@ function PracticeHubPage() {
     }
   }, [isDemo])
   const visibleExerciseCounts = isDemo ? { 1: 5 } : exerciseCounts
+  const visibleLessons = isDemo
+    ? courseManifest.slice(0, 1)
+    : accessibleLessonIds
+      ? courseManifest.filter((lesson) => accessibleLessonIds.has(lesson.id))
+      : []
 
   return (
     <div className="page-stack practice-hub-page">
@@ -67,7 +79,7 @@ function PracticeHubPage() {
         </div>
 
         <div className="compact-module-list">
-        {(isDemo ? courseManifest.slice(0, 1) : courseManifest).map((lesson) => (
+        {visibleLessons.map((lesson) => (
           <article key={lesson.id} className="compact-module-row">
             <div className="compact-module-main">
               <div className="compact-inline-facts">
@@ -100,6 +112,11 @@ function PracticeHubPage() {
             </div>
           </article>
         ))}
+        {!error && accessibleLessonIds && visibleLessons.length === 0 ? (
+          <p className="lessons-access-feedback" role="status">
+            Nu există lecții disponibile momentan. Adminul trebuie să îți ofere acces.
+          </p>
+        ) : null}
         </div>
       </section>
     </div>
