@@ -13555,20 +13555,38 @@
 
 /* Theory workspace: calm, light surfaces instead of heavy black content panels. */
 .lesson-workspace-page .theory-page-shell {
+  --theory-panel-color-rgb: var(--theme-secondary-rgb);
   --theory-calm-surface:
-    color-mix(in srgb, var(--surface) 90%, rgb(var(--theme-secondary-rgb)) 10%);
+    color-mix(in srgb, var(--surface) 84%, rgb(var(--theory-panel-color-rgb)) 16%);
   --theory-calm-surface-soft:
-    color-mix(in srgb, var(--surface) 95%, rgb(var(--theme-secondary-rgb)) 5%);
+    color-mix(in srgb, var(--surface) 91%, rgb(var(--theory-panel-color-rgb)) 9%);
   --theory-calm-line:
-    color-mix(in srgb, rgb(var(--theme-secondary-rgb)) 18%, var(--workspace-line));
+    color-mix(in srgb, rgb(var(--theory-panel-color-rgb)) 28%, var(--workspace-line));
+}
+
+:root:is(
+  [data-theme="blue-sage-amber"],
+  [data-theme="teal-sand-coral"],
+  [data-theme="plum-mint-gold"],
+  [data-theme="custom"]
+) .lesson-workspace-page .theory-page-shell {
+  --theory-panel-color-rgb: var(--theme-primary-rgb);
+}
+
+:root:is(
+  [data-theme="sunny-peachy-vibes"],
+  [data-theme="sunny"],
+  [data-theme="fiery-arctic-midnight"],
+  [data-theme="fiery"]
+) .lesson-workspace-page .theory-page-shell {
+  --theory-panel-color-rgb: var(--accent-rgb);
 }
 
 .lesson-workspace-page .theory-page-shell :is(
   .theory-soft-feature-panel,
   .theory-soft-note,
   .theory-light-diagram,
-  .theory-recap-panel,
-  .theory-recap-spotlight
+  .theory-recap-panel
 ) {
   border: 1px solid var(--theory-calm-line) !important;
   background:
@@ -13582,8 +13600,16 @@
 }
 
 .lesson-workspace-page .theory-page-shell .theory-soft-feature-inset {
-  border-color: color-mix(in srgb, var(--accent) 14%, var(--workspace-line)) !important;
-  background: color-mix(in srgb, var(--surface) 97%, var(--accent) 3%) !important;
+  border-color: color-mix(
+    in srgb,
+    rgb(var(--theory-panel-color-rgb)) 18%,
+    var(--workspace-line)
+  ) !important;
+  background: color-mix(
+    in srgb,
+    var(--surface) 95%,
+    rgb(var(--theory-panel-color-rgb)) 5%
+  ) !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
 }
 
@@ -13612,21 +13638,6 @@
   background: var(--accent) !important;
 }
 
-.lesson-workspace-page .theory-page-shell .theory-recap-spotlight > :is(h3, p),
-.lesson-workspace-page .theory-page-shell .theory-recap-next > p {
-  color: var(--text) !important;
-}
-
-.lesson-workspace-page .theory-page-shell .theory-recap-spotlight > .text-blue-200,
-.lesson-workspace-page .theory-page-shell .theory-recap-next > .text-blue-200 {
-  color: var(--accent-strong) !important;
-}
-
-.lesson-workspace-page .theory-page-shell .theory-recap-next {
-  border: 1px solid color-mix(in srgb, var(--accent) 12%, var(--workspace-line));
-  background: color-mix(in srgb, var(--surface) 96%, var(--accent) 4%) !important;
-}
-
 /* Former dark utility states stay clear through a light palette accent. */
 .lesson-workspace-page .theory-page-shell :is(.bg-slate-950, .bg-slate-900),
 .lesson-workspace-page .theory-page-shell :is(.bg-slate-950, .bg-slate-900):hover,
@@ -13637,13 +13648,13 @@
 ) {
   border-color: color-mix(
     in srgb,
-    rgb(var(--theme-secondary-rgb)) 34%,
+    rgb(var(--theory-panel-color-rgb)) 34%,
     var(--workspace-line)
   ) !important;
   background-color: color-mix(
     in srgb,
     var(--surface) 84%,
-    rgb(var(--theme-secondary-rgb)) 16%
+    rgb(var(--theory-panel-color-rgb)) 16%
   ) !important;
   background-image: none !important;
   color: var(--accent-strong) !important;

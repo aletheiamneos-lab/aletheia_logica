@@ -1,5 +1,3 @@
-import { useMemo, useState } from "react"
-
 import TheoryBlockRenderer from "../components/lesson/TheoryBlockRenderer"
 import LessonTheoryRenderer from "../components/lesson/LessonTheoryRenderer"
 import ChaosToOrderInteractive from "../components/theory/ChaosToOrderInteractive"
@@ -29,12 +27,6 @@ function LessonPosterInset({ title, description, poster }) {
 
 function Lesson1TheoryPage() {
   const { isDemo } = useAuth()
-  const [activeRecapIndex, setActiveRecapIndex] = useState(0)
-
-  const activeRecap = useMemo(
-    () => lesson1Theory.recap.bullets[activeRecapIndex] ?? lesson1Theory.recap.bullets[0],
-    [activeRecapIndex],
-  )
 
   return (
     <div id="teorie" className="theory-page-shell">
@@ -63,39 +55,6 @@ function Lesson1TheoryPage() {
           />
           <DefinitionClassificationSupplement section={lesson1PdfSupplement} />
           <EulerRelationsExplorer section={lesson1Theory.eulerExplorer} />
-
-          <TheorySectionCard
-            kicker="Pasul 9"
-            title={lesson1Theory.recap.title}
-            description={lesson1Theory.recap.description}
-          >
-            <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
-              <div className="grid gap-4">
-                {lesson1Theory.recap.bullets.map((bullet, index) => (
-                  <button
-                    key={bullet.label}
-                    type="button"
-                    onClick={() => setActiveRecapIndex(index)}
-                    className={["theory-recap-selector", activeRecapIndex === index ? "is-active" : ""].join(" ")}
-                  >
-                    <p className="text-lg font-semibold tracking-[-0.03em] text-slate-950">{bullet.label}</p>
-                    <p className="mt-3 text-sm leading-7 text-slate-600">{bullet.detail}</p>
-                  </button>
-                ))}
-              </div>
-
-              <div className="theory-recap-spotlight">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Acum fixezi</p>
-                <h3 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">{activeRecap.label}</h3>
-                <p className="mt-4 text-base leading-8 text-slate-200">{activeRecap.detail}</p>
-
-                <div className="theory-recap-next mt-8">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-blue-200">Urmeaza</p>
-                  <p className="mt-3 text-lg leading-8 text-white">{lesson1Theory.recap.next}</p>
-                </div>
-              </div>
-            </div>
-          </TheorySectionCard>
 
           <LessonTheoryRenderer theory={lesson1Theory} showIntro={false} />
           <TheoryCheckpoint section={lesson1Theory.checkpoints} />

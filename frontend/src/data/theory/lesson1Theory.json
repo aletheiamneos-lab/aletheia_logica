@@ -454,27 +454,8 @@
       }
     ]
   },
-  "recap": {
-    "title": "De la teorie la strategie",
-    "description": "Dacă stăpânești aceste idei, începi să vezi imediat unde se rupe sau se întărește un argument.",
-    "bullets": [
-      {
-        "label": "Validarea termenilor și a definițiilor",
-        "detail": "Mai întâi clarifici sensul termenilor, apoi verifici dacă rămân stabili în argument."
-      },
-      {
-        "label": "Evitarea sofismelor de confuzie",
-        "detail": "Principiile gândirii te ajută să depistezi ambiguitatea, contradicția și concluziile fără temei."
-      },
-      {
-        "label": "Vizualizarea spațială a relațiilor logice",
-        "detail": "Diagramele Euler transformă o relație abstractă într-o imagine pe care o recunoști mai rapid la examen."
-      }
-    ],
-    "next": "Urmează: Logica propozițiilor și silogismul"
-  },
   "checkpoints": {
-    "kicker": "Pasul 10",
+    "kicker": "Pasul 9",
     "title": "Checkpoint-uri rapide",
     "description": "Verifică imediat dacă noțiunile-cheie au rămas clare. Aici nu memorezi, ci alegi rapid și justificat.",
     "items": [
