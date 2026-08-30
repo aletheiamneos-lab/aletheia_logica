@@ -62,7 +62,9 @@ function LearningModulePage() {
               <p className="section-kicker">Lista de itemi</p>
               <h2 className="mt-2 text-2xl text-ink">Itemi disponibili</h2>
             </div>
-            <p className="compact-section-note">{module.summary}</p>
+            {module.summary ? (
+              <p className="compact-section-note">{module.summary}</p>
+            ) : null}
           </div>
 
           <div className="compact-module-list">

@@ -70,8 +70,12 @@ function LearningHubPage() {
 
                 <div className="compact-module-copy">
                   <h3 className="compact-module-title">{module.title}</h3>
-                  <p className="compact-module-description">{module.description}</p>
-                  <p className="compact-module-summary">{module.summary}</p>
+                  {module.description ? (
+                    <p className="compact-module-description">{module.description}</p>
+                  ) : null}
+                  {module.summary ? (
+                    <p className="compact-module-summary">{module.summary}</p>
+                  ) : null}
                 </div>
               </div>
 

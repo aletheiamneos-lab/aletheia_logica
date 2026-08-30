@@ -6,10 +6,6 @@ const modules = [
     id: "mind-maps",
     eyebrow: "Modul 1",
     title: "Mind Map-uri",
-    description:
-      "3 mind map-uri de logica integrate intr-o singura pagina: Materie, BAC si Admitere.",
-    summary:
-      "Mind map real cu React Flow, nod central vizibil, noduri principale la incarcare si panou de detalii pentru fiecare nod.",
     statusLabel: "1 harta principala",
     items: [
       {
@@ -26,10 +22,6 @@ const modules = [
     id: "flash-cards",
     eyebrow: "Modul 2",
     title: "Flashcards",
-    description:
-      "Structura noua este fixa si clara: alegi nivelul, apoi slotul, iar fiecare slot incarca un fisier JSON separat care poate contine unul sau mai multe carduri.",
-    summary:
-      "Nu mai exista pachete BAC, admitere sau lectii. Modulul foloseste exclusiv nivelurile basic, mediu si avansat, fiecare cu 30 de sloturi.",
     statusLabel: `${flashcardsModuleStats.totalLevels} niveluri`,
     items: [],
   },
@@ -37,10 +29,6 @@ const modules = [
     id: "games",
     eyebrow: "Modul 3",
     title: "Jocuri Logice",
-    description:
-      "Exact 3 jocuri, fiecare cu pagina proprie, introducere, exemple, mod de joc, antrenament complet si explicatii locale.",
-    summary:
-      "Nu mai exista deschidere inline. Fiecare joc se lucreaza pe ecranul lui complet.",
     items: games.map((game) => ({
       id: game.id,
       title: game.title,
