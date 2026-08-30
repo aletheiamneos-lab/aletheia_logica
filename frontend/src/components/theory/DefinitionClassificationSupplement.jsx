@@ -9,6 +9,18 @@ function RuleCard({ rule, index }) {
       <div className="min-w-0">
         <h4>{rule.title}</h4>
         <p>{rule.detail}</p>
+        {rule.correctExample && rule.errorExample ? (
+          <div className="lesson1-rule-examples">
+            <div className="lesson1-rule-example is-correct">
+              <span>Exemplu corect</span>
+              <p>{rule.correctExample}</p>
+            </div>
+            <div className="lesson1-rule-example is-error">
+              <span>Eroare tipică</span>
+              <p>{rule.errorExample}</p>
+            </div>
+          </div>
+        ) : null}
       </div>
     </article>
   )
@@ -36,15 +48,19 @@ function DefinitionPanel({ section }) {
         ))}
       </div>
 
-      <div className="lesson1-definition-formula">
+      <div className="theory-soft-feature-panel lesson1-definition-formula">
         <p className="section-kicker">Forma clasică</p>
         <strong>{section.formula}</strong>
         <p>{section.formulaExample}</p>
       </div>
 
       <div>
-        <h4 className="lesson1-supplement-subtitle">Regulile unei definiții corecte</h4>
-        <div className="lesson1-supplement-rules-grid">
+        <h4 className="lesson1-supplement-subtitle">Cele 7 reguli ale unei definiții corecte</h4>
+        <p className="lesson1-definition-rules-intro">
+          Le exersăm separat, inclusiv claritatea și evitarea limbajului figurat, ca să poți
+          identifica mai ușor fiecare tip de greșeală.
+        </p>
+        <div className="lesson1-supplement-rules-grid lesson1-definition-rules-grid">
           {section.rules.map((rule, index) => (
             <RuleCard key={rule.title} rule={rule} index={index} />
           ))}

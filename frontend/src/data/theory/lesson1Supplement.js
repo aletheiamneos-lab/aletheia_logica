@@ -32,26 +32,45 @@ export const lesson1PdfSupplement = {
       {
         title: "Adecvare",
         detail: "Definiția nu trebuie să fie nici prea largă, nici prea îngustă și nici încrucișată.",
+        correctExample: "„Triunghiul este poligonul cu trei laturi.”",
+        errorExample: "„Pasărea este un animal cu aripi.” — definiție prea largă.",
+      },
+      {
+        title: "Exprimarea esenței",
+        detail: "Definiția indică însușirile esențiale ale obiectului, nu trăsături accidentale.",
+        correctExample: "„Pătratul este dreptunghiul cu toate laturile egale.”",
+        errorExample: "„Cartea este obiectul decorativ din bibliotecă.” — trăsătură accidentală.",
       },
       {
         title: "Fără circularitate",
         detail: "Termenul definit nu este explicat prin el însuși sau printr-un sinonim neclar.",
+        correctExample: "„Pilotul este persoana calificată care conduce o aeronavă.”",
+        errorExample: "„Pilotul este persoana care pilotează o aeronavă.” — explicație circulară.",
       },
       {
         title: "Claritate și precizie",
         detail: "Se folosesc cuvinte cunoscute, fără formulări ambigue.",
+        correctExample: "„Termometrul este instrumentul utilizat pentru măsurarea temperaturii.”",
+        errorExample: "„Cultura este ceva important pentru oameni.” — formulare vagă.",
       },
       {
         title: "Formă afirmativă",
         detail: "Când este posibil, spunem ce este obiectul, nu doar ce nu este.",
+        correctExample:
+          "„Democrația este sistemul politic în care puterea este exercitată de cetățeni.”",
+        errorExample: "„Democrația este ceea ce nu este dictatură.” — formulare negativă.",
       },
       {
         title: "Fără limbaj figurat",
         detail: "Metaforele și comparațiile expresive nu țin locul unei explicații exacte.",
+        correctExample: "„Cămila este un mamifer erbivor adaptat regiunilor aride.”",
+        errorExample: "„Cămila este corabia deșertului.” — metaforă, nu definiție.",
       },
       {
         title: "Consistență",
         detail: "Definiția trebuie să fie compatibilă cu informațiile deja acceptate.",
+        correctExample: "„Pătratul este patrulaterul cu laturi egale și unghiuri drepte.”",
+        errorExample: "„Pătratul este un triunghi cu patru laturi.” — contradicție.",
       },
     ],
     types: [
