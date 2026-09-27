@@ -1,4 +1,3 @@
-import TheoryBlockRenderer from "../components/lesson/TheoryBlockRenderer"
 import LessonTheoryRenderer from "../components/lesson/LessonTheoryRenderer"
 import ChaosToOrderInteractive from "../components/theory/ChaosToOrderInteractive"
 import DefinitionClassificationSupplement from "../components/theory/DefinitionClassificationSupplement"
@@ -13,14 +12,15 @@ import TheorySectionCard from "../components/theory/TheorySectionCard"
 import ThreeFormsFlow from "../components/theory/ThreeFormsFlow"
 import lesson1Theory from "../data/theory/lesson1Theory.json"
 import { lesson1PdfSupplement } from "../data/theory/lesson1Supplement"
-import { studyPosters } from "../data/theory/studyPosters"
+import { lessonSheets } from "../data/theory/lessonSheets"
+import LessonSheet from "../components/lesson/LessonSheet"
 import DemoLock from "../components/demo/DemoLock"
 import { useAuth } from "../context/useAuth"
 
-function LessonPosterInset({ title, description, poster }) {
+function LessonSheetInset({ title, description, sheet }) {
   return (
     <TheorySectionCard kicker="Fișă de fixare" title={title} description={description}>
-      <TheoryBlockRenderer block={poster} />
+      <LessonSheet sheet={sheet} />
     </TheorySectionCard>
   )
 }
@@ -35,10 +35,10 @@ function Lesson1TheoryPage() {
       <ThreeFormsFlow section={lesson1Theory.formsSection} />
       <PrinciplesTemple section={lesson1Theory.principlesSection} />
       <TermAnatomyTriangle section={lesson1Theory.termAnatomy} />
-      <LessonPosterInset
+      <LessonSheetInset
         title="Noțiunea și termenul logic, într-o singură privire"
-        description="Posterul este plasat imediat după analiza termenului, ca rezumat vizual pentru conținut, sferă, scara noțiunilor și raporturile dintre termeni."
-        poster={studyPosters.notiuneaTermenulLogic}
+        description="Rezumatul pentru conținut, sferă, scara noțiunilor și raporturile dintre termeni."
+        sheet={lessonSheets.notiuneaTermenulLogic}
       />
       <IntensionExtensionBalance section={lesson1Theory.intensionExtension} />
       {isDemo ? (
@@ -48,10 +48,10 @@ function Lesson1TheoryPage() {
       ) : (
         <>
           <TermClassificationBoard section={lesson1Theory.classification} />
-          <LessonPosterInset
-            title="Clasificarea și diviziunea, sintetizate vizual"
-            description="L-am așezat după exercițiul de clasificare, ca să rămână aproape de reguli, de criteriul unic și de exemplele bune sau greșite."
-            poster={studyPosters.clasificareaSiDiviziunea}
+          <LessonSheetInset
+            title="Clasificarea și diviziunea, pe scurt"
+            description="Criteriul unic, regulile și diferența dintre o împărțire corectă și una greșită."
+            sheet={lessonSheets.clasificareaSiDiviziunea}
           />
           <DefinitionClassificationSupplement section={lesson1PdfSupplement} />
           <EulerRelationsExplorer section={lesson1Theory.eulerExplorer} />
