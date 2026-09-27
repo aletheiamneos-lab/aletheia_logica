@@ -4,6 +4,8 @@
  * blocuri tipizate: definiții, reguli, scări, diagrame Venn, arbori, tabele, pași.
  */
 
+import { useState } from "react"
+
 const tones = {
   blue: { chip: "bg-blue-600 text-white", soft: "border-blue-200 bg-blue-50/70", ink: "text-blue-900", stroke: "#2563eb", fill: "rgba(37,99,235,0.10)" },
   green: { chip: "bg-emerald-600 text-white", soft: "border-emerald-200 bg-emerald-50/70", ink: "text-emerald-900", stroke: "#059669", fill: "rgba(5,150,105,0.10)" },
@@ -514,17 +516,59 @@ function ArgumentBlock({ block }) {
   )
 }
 
+// Ce se poate deduce în pătratul logic dintr-o propoziție presupusă adevărată/falsă.
+const squareInference = {
+  A: { true: { E: false, I: true, O: false }, false: { O: true, E: null, I: null } },
+  E: { true: { A: false, O: true, I: false }, false: { I: true, A: null, O: null } },
+  I: { true: { E: false, A: null, O: null }, false: { E: true, A: false, O: true } },
+  O: { true: { A: false, E: null, I: null }, false: { A: true, E: false, I: true } },
+}
+
+const squareRelation = {
+  AE: "contrarietate", AI: "subalternare", AO: "contradicție",
+  EI: "contradicție", EO: "subalternare", IO: "subcontrarietate",
+}
+
+function relationBetween(x, y) {
+  return squareRelation[[x, y].sort().join("")]
+}
+
 function SquareBlock({ block }) {
+  const [chosen, setChosen] = useState(null)
+  const [assumed, setAssumed] = useState(true)
   const corner = {
     A: { x: 20, y: 20, fill: "#dbeafe", stroke: "#2563eb", text: "Toți S sunt P" },
     E: { x: 300, y: 20, fill: "#ffe4e6", stroke: "#e11d48", text: "Niciun S nu este P" },
     I: { x: 20, y: 230, fill: "#d1fae5", stroke: "#059669", text: "Unii S sunt P" },
     O: { x: 300, y: 230, fill: "#fef3c7", stroke: "#d97706", text: "Unii S nu sunt P" },
   }
+  const values = chosen ? { [chosen]: assumed, ...squareInference[chosen][assumed] } : {}
+  const badge = (value) =>
+    value === true ? { label: "A", fill: "#059669" } : value === false ? { label: "F", fill: "#e11d48" } : { label: "?", fill: "#94a3b8" }
   const label = { fontSize: 13, fill: "#334155", fontWeight: 600, textAnchor: "middle" }
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-3">
       <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="mb-2 flex flex-wrap items-center gap-2 text-sm">
+        <span className="text-slate-600">Încearcă: apasă pe o propoziție și presupune că e</span>
+        <div className="inline-flex overflow-hidden rounded-lg border border-slate-200">
+          {[true, false].map((value) => (
+            <button
+              key={String(value)}
+              type="button"
+              onClick={() => setAssumed(value)}
+              className={`px-3 py-1 text-sm font-semibold ${assumed === value ? (value ? "bg-emerald-600 text-white" : "bg-rose-600 text-white") : "bg-white text-slate-600"}`}
+            >
+              {value ? "adevărată" : "falsă"}
+            </button>
+          ))}
+        </div>
+        {chosen ? (
+          <button type="button" onClick={() => setChosen(null)} className="text-xs font-semibold text-slate-500 underline">
+            resetează
+          </button>
+        ) : null}
+      </div>
       <svg viewBox="0 0 440 320" className="mx-auto w-full max-w-[520px]" role="img" aria-label="Pătratul logic: A, E, I, O și relațiile dintre ele">
         <defs>
           <marker id="sq-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -543,24 +587,90 @@ function SquareBlock({ block }) {
         <line x1="295" y1="85" x2="145" y2="228" stroke="#1e293b" strokeWidth="1.6" strokeDasharray="6 5" markerStart="url(#sq-arrow)" markerEnd="url(#sq-arrow)" />
         <rect x="170" y="146" width="100" height="22" rx="6" fill="white" />
         <text x="220" y="161" {...label}>contradicție</text>
-        {Object.entries(corner).map(([letter, c]) => (
-          <g key={letter}>
-            <rect x={c.x} y={c.y} width="120" height="70" rx="12" fill={c.fill} stroke={c.stroke} strokeWidth="1.8" />
-            <text x={c.x + 60} y={c.y + 32} textAnchor="middle" fontSize="26" fontWeight="700" fill="#0f172a">{letter}</text>
-            <text x={c.x + 60} y={c.y + 54} textAnchor="middle" fontSize="11.5" fill="#334155">{c.text}</text>
-          </g>
-        ))}
+        {Object.entries(corner).map(([letter, c]) => {
+          const hasValue = chosen && letter in values
+          const mark = badge(values[letter])
+          return (
+            <g
+              key={letter}
+              role="button"
+              tabIndex={0}
+              aria-label={`Presupune ${letter} ${assumed ? "adevărată" : "falsă"}`}
+              onClick={() => setChosen(letter)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault()
+                  setChosen(letter)
+                }
+              }}
+              className="cursor-pointer outline-none"
+            >
+              <rect
+                x={c.x}
+                y={c.y}
+                width="120"
+                height="70"
+                rx="12"
+                fill={c.fill}
+                stroke={c.stroke}
+                strokeWidth={chosen === letter ? 4 : 1.8}
+              />
+              <text x={c.x + 60} y={c.y + 32} textAnchor="middle" fontSize="26" fontWeight="700" fill="#0f172a">{letter}</text>
+              <text x={c.x + 60} y={c.y + 54} textAnchor="middle" fontSize="11.5" fill="#334155">{c.text}</text>
+              {hasValue ? (
+                <g>
+                  <circle cx={c.x + 112} cy={c.y + 8} r="13" fill={mark.fill} stroke="white" strokeWidth="2" />
+                  <text x={c.x + 112} y={c.y + 13} textAnchor="middle" fontSize="13" fontWeight="700" fill="white">{mark.label}</text>
+                </g>
+              ) : null}
+            </g>
+          )
+        })}
       </svg>
+      <div className="mt-1 min-h-[3rem] rounded-xl bg-slate-50 px-3 py-2 text-sm leading-6 text-slate-700" aria-live="polite">
+        {chosen ? (
+          <>
+            Dacă <b>{chosen}</b> e <b>{assumed ? "adevărată" : "falsă"}</b>:{" "}
+            {Object.entries(squareInference[chosen][assumed]).map(([letter, value], index) => (
+              <span key={letter}>
+                {index > 0 ? "; " : ""}
+                <b>{letter}</b> e {value === true ? "adevărată" : value === false ? "falsă" : "nedeterminată"}
+                <span className="text-slate-400"> ({relationBetween(chosen, letter)})</span>
+              </span>
+            ))}
+            .
+          </>
+        ) : (
+          <span className="text-slate-500">Alege „adevărată” sau „falsă”, apoi apasă pe A, E, I sau O. Vezi ce se deduce pentru celelalte.</span>
+        )}
+      </div>
     </div>
   )
 }
 
 function TruthBlock({ block }) {
+  const [practice, setPractice] = useState(false)
+  const [revealed, setRevealed] = useState({})
   const cell = (value) =>
     value === "A" ? "bg-emerald-50 text-emerald-700" : value === "F" ? "bg-rose-50 text-rose-700" : "text-slate-800"
+  const total = block.tables.reduce((sum, table) => sum + table.rows.length, 0)
+  const shown = Object.keys(revealed).length
   return (
     <div>
-      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+        <button
+          type="button"
+          onClick={() => {
+            setPractice((value) => !value)
+            setRevealed({})
+          }}
+          className={`rounded-full border px-3 py-1 text-xs font-semibold ${practice ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-700"}`}
+          aria-pressed={practice}
+        >
+          {practice ? `Exersare: ${shown}/${total} descoperite · arată tot` : "Exersează: ascunde rezultatele"}
+        </button>
+      </div>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
         {block.tables.map((table) => (
           <div key={table.name} className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -581,14 +691,32 @@ function TruthBlock({ block }) {
               <tbody>
                 {table.rows.map((row, rowIndex) => (
                   <tr key={rowIndex}>
-                    {row.map((value, cellIndex) => (
-                      <td
-                        key={cellIndex}
-                        className={`border-b border-slate-100 px-1.5 py-1.5 font-semibold ${cellIndex === row.length - 1 ? cell(value) : "text-slate-600"}`}
-                      >
-                        {value}
-                      </td>
-                    ))}
+                    {row.map((value, cellIndex) => {
+                      const isResult = cellIndex === row.length - 1
+                      const key = `${table.name}-${rowIndex}`
+                      if (isResult && practice && !revealed[key]) {
+                        return (
+                          <td key={cellIndex} className="border-b border-slate-100 p-1">
+                            <button
+                              type="button"
+                              onClick={() => setRevealed((current) => ({ ...current, [key]: true }))}
+                              className="w-full rounded-md bg-slate-100 py-0.5 font-semibold text-slate-500 hover:bg-slate-200"
+                              aria-label={`Arată rezultatul pentru ${table.symbol}, rândul ${rowIndex + 1}`}
+                            >
+                              ?
+                            </button>
+                          </td>
+                        )
+                      }
+                      return (
+                        <td
+                          key={cellIndex}
+                          className={`border-b border-slate-100 px-1.5 py-1.5 font-semibold ${isResult ? cell(value) : "text-slate-600"}`}
+                        >
+                          {value}
+                        </td>
+                      )
+                    })}
                   </tr>
                 ))}
               </tbody>
@@ -596,7 +724,7 @@ function TruthBlock({ block }) {
           </div>
         ))}
       </div>
-      {block.note ? <p className="mt-2 text-xs text-slate-500">{block.note}</p> : null}
+      {block.note ? <p className="mt-2 text-xs text-slate-500">{block.note}{practice ? " · Gândește-te la rezultat, apoi apasă pe „?”." : ""}</p> : null}
     </div>
   )
 }
