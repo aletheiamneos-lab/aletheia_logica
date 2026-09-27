@@ -595,10 +595,10 @@ def page_refs(pdf_path: Path, variant_id: str, prefix: str, engine: RapidOCR) ->
     pages = []
 
     for index in range(len(doc)):
-        image_path = PUBLIC_DIR / variant_id / f"{prefix}-{index + 1}.jpg"
+        image_path = PUBLIC_DIR / variant_id / f"{prefix}-{index + 1}.webp"
         render_page_image(doc[index], image_path)
         ocr_payload = ocr_page(engine, image_path, index + 1)
-        refs.append({"title": f"{'Subiectul oficial' if prefix == 'subject' else 'Baremul oficial'} - pagina {index + 1}", "src": f"/generated-exams/bac/{variant_id}/{prefix}-{index + 1}.jpg"})
+        refs.append({"title": f"{'Subiectul oficial' if prefix == 'subject' else 'Baremul oficial'} - pagina {index + 1}", "src": f"/generated-exams/bac/{variant_id}/{prefix}-{index + 1}.webp"})
         pages.append(ocr_payload)
 
     return refs, pages

@@ -11,21 +11,21 @@
     "subjectPages": [
       {
         "title": "Subiectul oficial - pagina 1",
-        "src": "/generated-exams/bac/2014_v4/subject-1.jpg"
+        "src": "/generated-exams/bac/2014_v4/subject-1.webp"
       },
       {
         "title": "Subiectul oficial - pagina 2",
-        "src": "/generated-exams/bac/2014_v4/subject-2.jpg"
+        "src": "/generated-exams/bac/2014_v4/subject-2.webp"
       }
     ],
     "baremPages": [
       {
         "title": "Baremul oficial - pagina 1",
-        "src": "/generated-exams/bac/2014_v4/barem-1.jpg"
+        "src": "/generated-exams/bac/2014_v4/barem-1.webp"
       },
       {
         "title": "Baremul oficial - pagina 2",
-        "src": "/generated-exams/bac/2014_v4/barem-2.jpg"
+        "src": "/generated-exams/bac/2014_v4/barem-2.webp"
       }
     ],
     "subjectDownload": {
