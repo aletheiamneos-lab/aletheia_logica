@@ -15,6 +15,7 @@ import {
 } from "../api/client"
 import AuthContext from "./auth-context"
 import { buildDemoSession, isDemoSession } from "../demo/demoAccess"
+import { consumeLoginHandoff } from "../auth/loginHandoff"
 
 function normalizeSession(session) {
   if (!session) {
@@ -55,7 +56,10 @@ async function ensureTrackedIdentityForStudent(session) {
 }
 
 export function AuthProvider({ children }) {
-  const [session, setSession] = useState(() => normalizeSession(loadStoredSession()))
+  const [session, setSession] = useState(() => {
+    consumeLoginHandoff()
+    return normalizeSession(loadStoredSession())
+  })
   const isLoading = false
 
   useEffect(() => {
