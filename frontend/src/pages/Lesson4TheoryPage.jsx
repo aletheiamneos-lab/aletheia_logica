@@ -11,8 +11,8 @@ function Lesson4TheoryPage() {
 
       <TheorySectionCard
         kicker="Fișă de fixare"
-        title="Operatorii și tabelele de adevăr, într-un singur suport vizual"
-        description="Posterul este adăugat după teoria principală, ca rezumat compact pentru condițiile de adevăr și pentru citirea rapidă a operatorului principal."
+        title="Operatorii și tabelele de adevăr, pe scurt"
+        description="Rezumat pentru condițiile de adevăr și pentru citirea rapidă a operatorului principal."
       >
         <TheoryBlockRenderer block={studyPosters.operatoriLogiciSiTabeleDeAdevar} />
       </TheorySectionCard>
@@ -20,7 +20,7 @@ function Lesson4TheoryPage() {
       <TheorySectionCard
         kicker="Fișe de traducere"
         title="Din limbaj natural în formal și înapoi"
-        description="Cele două postere sunt grupate împreună pentru partea de traducere, astfel încât să poți compara direct sensul enunțului cu forma simbolică fără să mărești inutil fluxul lecției."
+        description="Cele două direcții ale traducerii, una după alta, ca să compari direct sensul enunțului cu forma simbolică."
         contentClassName="space-y-6"
       >
         <TheoryBlockRenderer block={studyPosters.dinLimbajNaturalInFormal} />
@@ -29,8 +29,8 @@ function Lesson4TheoryPage() {
 
       <TheorySectionCard
         kicker="Recapitulare vizuală"
-        title="Argumentarea logică, condensată într-o fișă scurtă"
-        description="Am păstrat posterul separat, la final, ca să funcționeze ca recapitulare pentru structura argumentului, diferența dintre valid și invalid și indicatorii de concluzie."
+        title="Argumentarea logică, pe scurt"
+        description="Recapitulare pentru structura argumentului, diferența dintre valid și invalid și indicatorii de concluzie."
       >
         <TheoryBlockRenderer block={studyPosters.argumentareaLogica} />
       </TheorySectionCard>

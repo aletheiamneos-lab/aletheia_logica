@@ -1,4 +1,5 @@
 import { cn } from "../../lib/utils"
+import LessonSheet from "./LessonSheet"
 
 const accentStyles = {
   sage: {
@@ -116,6 +117,10 @@ function PosterPanel({ panel, index }) {
 }
 
 function StudyPosterBlock({ block }) {
+  if (block.sheet) {
+    return <LessonSheet sheet={block.sheet} />
+  }
+
   if (block.imageSrc) {
     return (
       <figure className="study-poster-figure">

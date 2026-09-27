@@ -9,6 +9,7 @@ const tones = {
   green: { chip: "bg-emerald-600 text-white", soft: "border-emerald-200 bg-emerald-50/70", ink: "text-emerald-900", stroke: "#059669", fill: "rgba(5,150,105,0.10)" },
   amber: { chip: "bg-amber-500 text-white", soft: "border-amber-200 bg-amber-50/80", ink: "text-amber-900", stroke: "#d97706", fill: "rgba(217,119,6,0.12)" },
   red: { chip: "bg-rose-600 text-white", soft: "border-rose-200 bg-rose-50/80", ink: "text-rose-900", stroke: "#e11d48", fill: "rgba(225,29,72,0.10)" },
+  purple: { chip: "bg-violet-600 text-white", soft: "border-violet-200 bg-violet-50/70", ink: "text-violet-900", stroke: "#7c3aed", fill: "rgba(124,58,237,0.10)" },
   slate: { chip: "bg-slate-800 text-white", soft: "border-slate-200 bg-slate-50", ink: "text-slate-900", stroke: "#334155", fill: "rgba(51,65,85,0.08)" },
 }
 
@@ -35,17 +36,25 @@ function BlockTitle({ number, title, tone }) {
 }
 
 function Rich({ text }) {
-  // **cuvânt** → evidențiat
-  const parts = String(text).split(/(\*\*[^*]+\*\*)/g)
-  return parts.map((part, index) =>
-    part.startsWith("**") ? (
-      <strong key={index} className="font-semibold text-slate-900">
-        {part.slice(2, -2)}
-      </strong>
-    ) : (
-      <span key={index}>{part}</span>
-    ),
-  )
+  // **cuvânt** → evidențiat; `SaP` → notație logică
+  const parts = String(text).split(/(\*\*[^*]+\*\*|`[^`]+`)/g)
+  return parts.map((part, index) => {
+    if (part.startsWith("**")) {
+      return (
+        <strong key={index} className="font-semibold text-slate-900">
+          {part.slice(2, -2)}
+        </strong>
+      )
+    }
+    if (part.startsWith("`")) {
+      return (
+        <span key={index} className="whitespace-nowrap font-mono text-[1.05em] font-bold text-blue-800">
+          {part.slice(1, -1)}
+        </span>
+      )
+    }
+    return <span key={index}>{part}</span>
+  })
 }
 
 /* ---------- blocuri ---------- */
@@ -294,6 +303,11 @@ function CompareBlock({ block }) {
               </span>
               {side.title}
             </p>
+            {side.text ? (
+              <p className="text-base leading-7 text-slate-800">
+                <Rich text={side.text} />
+              </p>
+            ) : (
             <p className="text-sm leading-6 text-slate-700">
               <span className="font-semibold text-slate-900">{side.root}</span> → {side.criterion ? <span className="text-slate-500">{side.criterion}: </span> : null}
               {side.parts.map((part, partIndex) => (
@@ -303,6 +317,7 @@ function CompareBlock({ block }) {
                 </span>
               ))}
             </p>
+            )}
             {side.verdict ? <p className={`mt-2 text-sm font-medium ${tone.ink}`}>{side.verdict}</p> : null}
           </div>
         )
@@ -358,6 +373,256 @@ function TableBlock({ block }) {
           </tbody>
         </table>
       </div>
+      {block.note ? (
+        <p className="mt-2 text-xs text-slate-500">
+          <Rich text={block.note} />
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
+function FormulaBlock({ block }) {
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-4">
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="flex flex-wrap items-center gap-2">
+        {block.parts.map((part, index) => (
+          <span key={part.label} className="flex items-center gap-2">
+            {index > 0 ? (
+              <span aria-hidden="true" className="text-lg font-semibold text-slate-400">
+                {block.result && index === block.parts.length - 1 ? "→" : "+"}
+              </span>
+            ) : null}
+            <span className={`rounded-xl border px-3 py-1.5 text-sm font-semibold ${toneOf(part.tone).soft} ${toneOf(part.tone).ink}`}>
+              {part.label}
+            </span>
+          </span>
+        ))}
+      </div>
+      {block.example ? (
+        <div className="mt-4 flex flex-wrap items-start gap-x-4 gap-y-3 border-t border-dashed border-slate-200 pt-4">
+          {block.example.map((item) => (
+            <div key={item.word} className="flex flex-col items-center text-center">
+              <span className={`text-lg font-semibold ${toneOf(item.tone).ink}`}>{item.word}</span>
+              <span className="mt-0.5 text-[0.7rem] font-semibold uppercase tracking-wide text-slate-400">↓ {item.role}</span>
+            </div>
+          ))}
+        </div>
+      ) : null}
+      {block.exampleText ? (
+        <p className="mt-4 border-t border-dashed border-slate-200 pt-4 text-base leading-7 text-slate-700">
+          <Rich text={block.exampleText} />
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
+function GlossaryBlock({ block }) {
+  const tone = toneOf(block.tone)
+  return (
+    <div className={`rounded-2xl border p-4 ${block.plain ? "border-slate-200 bg-white" : tone.soft}`}>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <dl className="grid gap-2">
+        {block.items.map((item) => (
+          <div key={item.key} className="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-3 border-b border-dashed border-slate-200 pb-2 last:border-0 last:pb-0">
+            <dt className={`min-w-8 font-bold ${item.big ? "text-2xl leading-none" : "text-sm uppercase tracking-wide"} ${toneOf(item.tone ?? block.tone).ink}`}>
+              {item.key}
+            </dt>
+            <dd className="text-sm leading-6 text-slate-600">
+              <Rich text={item.text} />
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  )
+}
+
+function ChipsBlock({ block }) {
+  const tone = toneOf(block.tone ?? "slate")
+  return (
+    <div className={`rounded-2xl border p-4 ${tone.soft}`}>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      {block.text ? (
+        <p className="mb-3 text-sm leading-6 text-slate-600">
+          <Rich text={block.text} />
+        </p>
+      ) : null}
+      <div className="flex flex-wrap gap-2">
+        {block.items.map((item) => (
+          <span key={item} className={`rounded-full border border-current/20 bg-white px-3.5 py-1 text-sm font-semibold italic ${tone.ink}`}>
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function ArgumentBlock({ block }) {
+  const tone = toneOf(block.tone ?? "slate")
+  return (
+    <div className={`rounded-2xl border p-4 ${block.tone ? tone.soft : "border-slate-200 bg-white"}`}>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="grid gap-4 sm:grid-cols-[minmax(0,1fr)_auto]">
+        <ol className="grid gap-1.5 text-[0.95rem] leading-7 text-slate-700">
+          {block.premises.map((premise, index) => (
+            <li key={premise} className="flex gap-2.5">
+              <span className="w-5 shrink-0 text-right font-semibold text-slate-400">{index + 1}.</span>
+              <Rich text={premise} />
+            </li>
+          ))}
+          <li className="mt-1 flex gap-2.5 border-t-2 border-slate-800/70 pt-2 font-medium text-slate-900">
+            <span className="w-5 shrink-0 text-right font-semibold text-slate-400">∴</span>
+            <span>
+              <span className={`font-bold ${tone.ink}`}>Deci </span>
+              <Rich text={block.conclusion} />
+            </span>
+          </li>
+        </ol>
+        {block.legend ? (
+          <dl className="grid content-start gap-1.5 border-slate-200 text-sm sm:border-l sm:pl-4">
+            {block.legend.map((item) => (
+              <div key={item.key} className="flex items-center gap-2">
+                <dt className={`inline-grid h-7 w-7 place-items-center rounded-full text-xs font-bold ${toneOf(item.tone).chip}`}>{item.key}</dt>
+                <dd className="text-slate-600">= {item.text}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
+      </div>
+      {block.verdict ? (
+        <p className={`mt-3 flex items-center gap-2 text-sm font-semibold ${tone.ink}`}>
+          <span aria-hidden="true" className={`inline-grid h-5 w-5 place-items-center rounded-full text-xs ${tone.chip}`}>
+            {block.valid === false ? "✕" : "✓"}
+          </span>
+          {block.verdict}
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
+function SquareBlock({ block }) {
+  const corner = {
+    A: { x: 20, y: 20, fill: "#dbeafe", stroke: "#2563eb", text: "Toți S sunt P" },
+    E: { x: 300, y: 20, fill: "#ffe4e6", stroke: "#e11d48", text: "Niciun S nu este P" },
+    I: { x: 20, y: 230, fill: "#d1fae5", stroke: "#059669", text: "Unii S sunt P" },
+    O: { x: 300, y: 230, fill: "#fef3c7", stroke: "#d97706", text: "Unii S nu sunt P" },
+  }
+  const label = { fontSize: 13, fill: "#334155", fontWeight: 600, textAnchor: "middle" }
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-3">
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <svg viewBox="0 0 440 320" className="mx-auto w-full max-w-[520px]" role="img" aria-label="Pătratul logic: A, E, I, O și relațiile dintre ele">
+        <defs>
+          <marker id="sq-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M1 1L9 5L1 9" fill="none" stroke="#1e293b" strokeWidth="1.6" />
+          </marker>
+        </defs>
+        <line x1="145" y1="50" x2="295" y2="50" stroke="#1e293b" strokeWidth="1.8" markerStart="url(#sq-arrow)" markerEnd="url(#sq-arrow)" />
+        <text x="220" y="40" {...label}>contrarietate</text>
+        <line x1="145" y1="262" x2="295" y2="262" stroke="#1e293b" strokeWidth="1.8" markerStart="url(#sq-arrow)" markerEnd="url(#sq-arrow)" />
+        <text x="220" y="252" {...label}>subcontrarietate</text>
+        <line x1="80" y1="85" x2="80" y2="225" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#sq-arrow)" />
+        <text x="66" y="158" {...label} transform="rotate(-90 66 158)">subalternare</text>
+        <line x1="360" y1="85" x2="360" y2="225" stroke="#1e293b" strokeWidth="1.8" markerEnd="url(#sq-arrow)" />
+        <text x="374" y="158" {...label} transform="rotate(90 374 158)">subalternare</text>
+        <line x1="145" y1="85" x2="295" y2="228" stroke="#1e293b" strokeWidth="1.6" strokeDasharray="6 5" markerStart="url(#sq-arrow)" markerEnd="url(#sq-arrow)" />
+        <line x1="295" y1="85" x2="145" y2="228" stroke="#1e293b" strokeWidth="1.6" strokeDasharray="6 5" markerStart="url(#sq-arrow)" markerEnd="url(#sq-arrow)" />
+        <rect x="170" y="146" width="100" height="22" rx="6" fill="white" />
+        <text x="220" y="161" {...label}>contradicție</text>
+        {Object.entries(corner).map(([letter, c]) => (
+          <g key={letter}>
+            <rect x={c.x} y={c.y} width="120" height="70" rx="12" fill={c.fill} stroke={c.stroke} strokeWidth="1.8" />
+            <text x={c.x + 60} y={c.y + 32} textAnchor="middle" fontSize="26" fontWeight="700" fill="#0f172a">{letter}</text>
+            <text x={c.x + 60} y={c.y + 54} textAnchor="middle" fontSize="11.5" fill="#334155">{c.text}</text>
+          </g>
+        ))}
+      </svg>
+    </div>
+  )
+}
+
+function TruthBlock({ block }) {
+  const cell = (value) =>
+    value === "A" ? "bg-emerald-50 text-emerald-700" : value === "F" ? "bg-rose-50 text-rose-700" : "text-slate-800"
+  return (
+    <div>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+        {block.tables.map((table) => (
+          <div key={table.name} className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <div className="bg-slate-900 px-3 py-2 text-center text-white">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-300">{table.name}</p>
+              <p className="font-mono text-lg font-bold">{table.symbol}</p>
+            </div>
+            <table className="w-full border-collapse text-center text-sm">
+              <thead>
+                <tr>
+                  {table.columns.map((column) => (
+                    <th key={column} className="border-b border-slate-200 bg-slate-50 px-1.5 py-1.5 font-mono font-semibold text-slate-700">
+                      {column}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {table.rows.map((row, rowIndex) => (
+                  <tr key={rowIndex}>
+                    {row.map((value, cellIndex) => (
+                      <td
+                        key={cellIndex}
+                        className={`border-b border-slate-100 px-1.5 py-1.5 font-semibold ${cellIndex === row.length - 1 ? cell(value) : "text-slate-600"}`}
+                      >
+                        {value}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+      {block.note ? <p className="mt-2 text-xs text-slate-500">{block.note}</p> : null}
+    </div>
+  )
+}
+
+function CardsBlock({ block }) {
+  return (
+    <div>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="grid gap-3 md:[grid-template-columns:repeat(var(--cards),minmax(0,1fr))]" style={{ "--cards": block.items.length }}>
+        {block.items.map((item) => {
+          const tone = toneOf(item.tone ?? block.tone)
+          return (
+            <div key={item.title} className={`rounded-2xl border p-4 ${tone.soft}`}>
+              <p className="flex items-center gap-2 text-base font-semibold text-slate-900">
+                {item.badge ? <span className={`inline-grid h-8 w-8 place-items-center rounded-full text-sm font-bold ${tone.chip}`}>{item.badge}</span> : null}
+                <Rich text={item.title} />
+              </p>
+              {item.lines ? (
+                <ul className="mt-2 grid gap-1 text-sm leading-6 text-slate-600">
+                  {item.lines.map((line) => (
+                    <li key={line}>
+                      <Rich text={line} />
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {item.note ? (
+                <p className={`mt-2 text-sm font-medium leading-6 ${tone.ink}`}>
+                  <Rich text={item.note} />
+                </p>
+              ) : null}
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
@@ -373,6 +638,13 @@ const renderers = {
   compare: CompareBlock,
   steps: StepsBlock,
   table: TableBlock,
+  formula: FormulaBlock,
+  glossary: GlossaryBlock,
+  chips: ChipsBlock,
+  argument: ArgumentBlock,
+  square: SquareBlock,
+  truth: TruthBlock,
+  cards: CardsBlock,
 }
 
 function Row({ row }) {
@@ -395,6 +667,7 @@ function Row({ row }) {
 function LessonSheet({ sheet }) {
   return (
     <article className="rounded-[26px] border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-4 sm:p-6">
+      {sheet.title ? <h3 className="mb-4 text-xl font-semibold text-slate-900 sm:text-2xl">{sheet.title}</h3> : null}
       <div className="grid gap-5">
         {sheet.rows.map((row, index) => (
           <Row key={index} row={row} />
@@ -404,7 +677,7 @@ function LessonSheet({ sheet }) {
         <div className="mt-5 flex items-start gap-3 rounded-2xl bg-slate-900 px-4 py-3.5 text-white sm:px-5">
           <span aria-hidden="true" className="mt-0.5 text-lg">💡</span>
           <p className="text-sm leading-6 sm:text-base">
-            <span className="font-semibold text-amber-300">Întrebarea-cheie: </span>
+            <span className="font-semibold text-amber-300">{sheet.keyLabel ?? "Întrebarea-cheie"}: </span>
             <span className="italic">{sheet.keyQuestion}</span>
           </p>
         </div>
