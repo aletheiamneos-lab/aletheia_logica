@@ -432,7 +432,11 @@ class RenderCompatibilityTests(unittest.TestCase):
         self.assertEqual(usage["active_rows_count"], 42)
         self.assertEqual(usage["usage_percent"], 1.0)
         self.assertEqual(usage["allocated_usage_percent"], 20.0)
-        self.assertEqual(usage["measurement_basis"], "active_rows")
+        self.assertEqual(usage["measurement_basis"], "supabase_total")
+        self.assertEqual(usage["total"]["used_bytes"], 100 * 1024 * 1024)
+        self.assertEqual(usage["total"]["categories"][0]["key"], "reports")
+        self.assertEqual(usage["total"]["categories"][0]["bytes"], 2048)
+        self.assertFalse(usage["total"]["exact_categories"])
 
         FakeRpc.execute = lambda _self: SimpleNamespace(
             data={

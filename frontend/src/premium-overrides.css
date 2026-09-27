@@ -13740,3 +13740,89 @@
   background-image: none !important;
   color: var(--accent-strong) !important;
 }
+
+/* Spațiul total Supabase pe categorii (aceeași măsurătoare ca în aplicația de economie) */
+.academic-supabase-usage-breakdown {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.academic-supabase-usage-stack {
+  display: flex;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.2);
+}
+
+.academic-supabase-usage-stack i {
+  display: block;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.academic-supabase-usage-breakdown [data-category="reports"] { --category-color: #2563eb; }
+.academic-supabase-usage-breakdown [data-category="documents"] { --category-color: #d97706; }
+.academic-supabase-usage-breakdown [data-category="other"] { --category-color: #0d9488; }
+.academic-supabase-usage-breakdown [data-category="system"] { --category-color: #94a3b8; }
+
+.academic-supabase-usage-stack i,
+.academic-supabase-usage-dot {
+  background: var(--category-color);
+}
+
+.academic-supabase-usage-breakdown ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.academic-supabase-usage-breakdown li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto 3.6rem;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.academic-supabase-usage-breakdown li small {
+  color: var(--muted);
+}
+
+.academic-supabase-usage-breakdown li b {
+  text-align: right;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.academic-supabase-usage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.academic-supabase-usage-layout .academic-supabase-usage-foot {
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 720px) {
+  .academic-supabase-usage-layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .academic-supabase-usage-summary,
+  .academic-supabase-usage-breakdown {
+    width: 100%;
+  }
+
+  .academic-supabase-usage-breakdown ul {
+    grid-template-columns: 1fr;
+  }
+}

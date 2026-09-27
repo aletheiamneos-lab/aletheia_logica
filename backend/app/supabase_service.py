@@ -11,6 +11,8 @@ from fastapi import HTTPException
 from postgrest.exceptions import APIError
 from supabase import Client, create_client
 
+from .supabase_usage_breakdown import build_total_usage
+
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BACKEND_DIR / ".env")
 LOGGER = logging.getLogger("uvicorn.error")
@@ -122,7 +124,8 @@ def get_supabase_database_usage() -> dict:
         "usage_percent": usage_percent,
         "allocated_usage_percent": allocated_usage_percent,
         "is_over_limit": active_data_size_bytes >= FREE_PLAN_DATABASE_LIMIT_BYTES,
-        "measurement_basis": "active_rows",
+        "total": build_total_usage(payload),
+        "measurement_basis": "supabase_total",
         "measured_at": datetime.now(timezone.utc).isoformat(),
     }
 

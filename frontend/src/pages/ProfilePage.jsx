@@ -1661,9 +1661,10 @@ function ProfilePage() {
         <div className="academic-panel-head">
           <div>
             <p className="section-kicker">Consum Supabase</p>
-            <h2 className="academic-section-title">Date active în Supabase</h2>
+            <h2 className="academic-section-title">Tot spațiul ocupat în Supabase</h2>
             <p className="academic-panel-note">
-              Indicatorul măsoară rândurile active și se actualizează imediat după ștergere.
+              Baza de date completă plus fișierele din Storage, împărțite pe rapoarte, documente, elevi și sistem.
+              Aceeași măsurătoare apare și în aplicația de economie.
             </p>
           </div>
           <span className="academic-monitor-count academic-supabase-plan-badge">
@@ -1672,13 +1673,13 @@ function ProfilePage() {
           </span>
         </div>
 
-        {supabaseUsage ? (
+        {supabaseUsage?.total ? (
           <div
             className="academic-supabase-usage-layout"
             data-tone={
-              supabaseUsage.usage_percent >= 90
+              supabaseUsage.total.percent >= 90
                 ? "danger"
-                : supabaseUsage.usage_percent >= 70
+                : supabaseUsage.total.percent >= 70
                   ? "warning"
                   : "healthy"
             }
@@ -1686,51 +1687,77 @@ function ProfilePage() {
             <div
               className="academic-supabase-usage-chart"
               style={{
-                "--usage-angle": `${Math.min(100, Math.max(0, supabaseUsage.usage_percent)) * 3.6}deg`,
+                "--usage-angle": `${Math.min(100, Math.max(0, supabaseUsage.total.percent)) * 3.6}deg`,
               }}
               role="img"
-              aria-label={`${supabaseUsage.usage_percent}% din limita Supabase este ocupată de date active`}
+              aria-label={`${supabaseUsage.total.percent}% din spațiul Supabase gratuit este ocupat`}
             >
               <div className="academic-supabase-usage-chart-center">
-                <strong>{`${supabaseUsage.usage_percent.toFixed(1)}%`}</strong>
-                <span>date active</span>
+                <strong>{`${supabaseUsage.total.percent.toFixed(1)}%`}</strong>
+                <span>ocupat total</span>
               </div>
             </div>
 
             <div className="academic-supabase-usage-summary">
               <div className="academic-supabase-usage-metric is-primary">
-                <span>Date active</span>
-                <strong>{formatStorageSize(supabaseUsage.active_data_size_bytes)}</strong>
+                <span>Total ocupat</span>
+                <strong>{formatStorageSize(supabaseUsage.total.used_bytes)}</strong>
               </div>
               <div className="academic-supabase-usage-metric">
                 <span>Disponibil</span>
-                <strong>{formatStorageSize(supabaseUsage.remaining_bytes)}</strong>
+                <strong>{formatStorageSize(supabaseUsage.total.remaining_bytes)}</strong>
               </div>
               <div className="academic-supabase-usage-metric">
-                <span>Limită plan</span>
-                <strong>{formatStorageSize(supabaseUsage.limit_bytes)}</strong>
+                <span>{`Bază de date · ${supabaseUsage.total.database_percent.toFixed(1)}%`}</span>
+                <strong>{`${formatStorageSize(supabaseUsage.total.database_bytes)} / ${formatStorageSize(supabaseUsage.total.database_limit_bytes)}`}</strong>
               </div>
               <div className="academic-supabase-usage-metric">
-                <span>Rânduri active</span>
-                <strong>{Number(supabaseUsage.active_rows_count ?? 0).toLocaleString("ro-RO")}</strong>
+                <span>{`Fișiere · ${supabaseUsage.total.storage_percent.toFixed(1)}%`}</span>
+                <strong>{`${formatStorageSize(supabaseUsage.total.storage_bytes)} / ${formatStorageSize(supabaseUsage.total.storage_limit_bytes)}`}</strong>
               </div>
-              <div className="academic-supabase-usage-metric">
-                <span>Spațiu fizic alocat</span>
-                <strong>{formatStorageSize(supabaseUsage.database_size_bytes)}</strong>
+            </div>
+
+            <div className="academic-supabase-usage-breakdown">
+              <div className="academic-supabase-usage-stack" role="img" aria-label="Împărțirea spațiului pe categorii">
+                {supabaseUsage.total.categories.map((category) =>
+                  category.bytes > 0 ? (
+                    <i
+                      key={category.key}
+                      data-category={category.key}
+                      style={{ width: `${Math.max(1, category.share_percent)}%` }}
+                      title={`${category.label}: ${category.share_percent.toFixed(1)}%`}
+                    />
+                  ) : null
+                )}
               </div>
+              <ul>
+                {supabaseUsage.total.categories.map((category) => (
+                  <li key={category.key} data-category={category.key}>
+                    <span className="academic-supabase-usage-dot" aria-hidden="true" />
+                    <span>
+                      {category.label}
+                      {category.files ? <small>{` · ${category.files} fișiere`}</small> : null}
+                    </span>
+                    <strong>{formatStorageSize(category.bytes)}</strong>
+                    <b>{`${category.share_percent.toFixed(1)}%`}</b>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className="academic-supabase-usage-foot">
               <span>
-                {supabaseUsage.usage_percent >= 90
-                  ? "Spațiul este aproape epuizat. Recomandăm curățarea încercărilor vechi."
-                  : supabaseUsage.usage_percent >= 70
-                    ? "Consumul a trecut de 70%. Urmărește periodic încercările salvate."
+                {supabaseUsage.total.percent >= 90
+                  ? "Spațiul este aproape epuizat. Recomandăm curățarea rapoartelor vechi."
+                  : supabaseUsage.total.percent >= 70
+                    ? "Consumul a trecut de 70%. Urmărește periodic rapoartele salvate."
                     : "Consumul este în limite bune."}
               </span>
               <span>{`Actualizat ${formatTimestamp(supabaseUsage.measured_at)}`}</span>
               <span>
-                Spațiul fizic poate rămâne alocat de PostgreSQL după ștergere, dar este reutilizat automat.
+                {supabaseUsage.total.exact_categories
+                  ? "„Sistem Supabase” e spațiul de bază al oricărei baze de date, ocupat chiar și fără date."
+                  : "Împărțire estimată: rulează migrarea 20260927_supabase_total_usage.sql în Supabase pentru cifre exacte."}
               </span>
             </div>
           </div>
