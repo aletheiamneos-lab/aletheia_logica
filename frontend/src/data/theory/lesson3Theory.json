@@ -172,32 +172,8 @@
           "footnote": "Fracțiile reprezintă forma exactă cerută în barem."
         },
         {
-          "type": "image",
-          "asset": "lesson-3/figuri-silogistice.png",
-          "alt": "Cele patru figuri silogistice marcate prin poziția termenului mediu în premise",
-          "caption": "Schemă locală a figurilor silogistice, utilă pentru identificarea rapidă a poziției termenului mediu.",
-          "interactiveTitle": "Identifică figura după poziția termenului mediu",
-          "helpText": "Marcajele îți arată unde stă termenul mediu în premise. Asta decide imediat figura silogistică.",
-          "hotspots": [
-            {
-              "label": "Figura I",
-              "x": 12,
-              "y": 47,
-              "text": "În figura I, termenul mediu este subiect în premisa majoră și predicat în premisa minoră. Este figura de referință pentru modurile perfecte."
-            },
-            {
-              "label": "Figura II",
-              "x": 38,
-              "y": 47,
-              "text": "În figura II, termenul mediu apare ca predicat în ambele premise. De aici apar frecvent moduri care cer conversiune pentru reducere."
-            },
-            {
-              "label": "Figura III și IV",
-              "x": 73,
-              "y": 47,
-              "text": "În figura III, termenul mediu este subiect în ambele premise. În figura IV, el este predicat în premisa majoră și subiect în premisa minoră."
-            }
-          ]
+          "type": "sheet",
+          "sheetId": "figuriSilogistice"
         }
       ]
     },

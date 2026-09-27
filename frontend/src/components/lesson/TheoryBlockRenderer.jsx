@@ -6,6 +6,8 @@ import DistributionExplorer from "./DistributionExplorer"
 import OppositionSquareExplorer from "./OppositionSquareExplorer"
 import PQRelationExplorer from "./PQRelationExplorer"
 import StudyPosterBlock from "./StudyPosterBlock"
+import LessonSheet from "./LessonSheet"
+import { lessonSheets } from "../../data/theory/lessonSheets"
 import SyllogisticFiguresExplorer from "./SyllogisticFiguresExplorer"
 
 const courseAssets = import.meta.glob("../../assets/course/**/*.{png,jpg,jpeg,svg}", {
@@ -240,6 +242,11 @@ function TheoryBlockRenderer({ block, variant = "default" }) {
         )}
       </div>
     )
+  }
+
+  if (block.type === "sheet") {
+    const sheet = lessonSheets[block.sheetId]
+    return sheet ? <LessonSheet sheet={sheet} /> : null
   }
 
   if (block.type === "image") {

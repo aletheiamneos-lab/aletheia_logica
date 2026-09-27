@@ -647,4 +647,64 @@ export const lessonSheets = {
     ],
     keyQuestion: "Concluzia chiar se sprijină pe premise?",
   },
+
+  eulerGuide: {
+    title: "Metoda diagramelor Euler",
+    rows: [
+      {
+        type: "relations",
+        number: 1,
+        title: "Raporturile dintre termeni",
+        tone: "blue",
+        items: [
+          { kind: "identitate", name: "Identitate", text: "Cei doi termeni au exact aceeași sferă și se referă la aceleași obiecte.", example: "A = om; B = animal rațional" },
+          { kind: "subordonare", name: "Ordonare (subordonare)", text: "Sfera unui termen este inclusă complet în sfera celuilalt, fără a fi identice.", example: "A = felină (gen); B = pisică (specie)" },
+          { kind: "incrucisare", name: "Încrucișare", text: "Sferele au o parte comună, dar fiecare are și elemente proprii.", example: "A = student; B = sportiv" },
+          { kind: "contrarietate", name: "Contrarietate", frame: "genul", text: "Specii ale aceluiași gen care se exclud, dar nu epuizează genul.", example: "gen = culoare; A = roșu; B = albastru" },
+          { kind: "contradictie", name: "Contradicție", frame: "universul de discurs", text: "Un termen e negația celuilalt; împreună acoperă tot universul.", example: "univers = numere întregi; A = par; B = impar" },
+        ],
+      },
+      {
+        type: "euler",
+        number: 2,
+        title: "Propozițiile categorice în diagrame Euler",
+        tone: "blue",
+        items: [
+          { form: "A", name: "Universală afirmativă", reading: "Toți S sunt P", text: "Sfera lui **S** este inclusă total în sfera lui **P** (poate fi și identitate: S și P coincid)." },
+          { form: "E", name: "Universală negativă", reading: "Niciun S nu este P", text: "Sferele se exclud **complet**: nu există niciun element comun." },
+          { form: "I", name: "Particulară afirmativă", reading: "Unii S sunt P", text: "Sferele se **intersectează**: există cel puțin un element comun." },
+          { form: "O", name: "Particulară negativă", reading: "Unii S nu sunt P", text: "Există cel puțin un element din **S** care nu aparține lui **P** (zona hașurată)." },
+        ],
+      },
+      {
+        type: "cards",
+        number: 3,
+        title: "De ce sunt utile diagramele Euler?",
+        tone: "blue",
+        items: [
+          { title: "Simplifică abstracțiile", note: "Transformă enunțurile și relațiile logice în imagini intuitive, ușor de memorat." },
+          { title: "Verifică rapid validitatea", note: "Permit testarea vizuală a inferențelor imediate și a silogismelor simple." },
+          { title: "Instrument-cheie la Bacalaureat", note: "Economisesc timp la exercițiile de examen și cresc acuratețea răspunsurilor." },
+        ],
+      },
+    ],
+    keyQuestion: "Ce raport există între sferele celor doi termeni?",
+  },
+
+  figuriSilogistice: {
+    rows: [
+      {
+        type: "figures",
+        title: "Cele patru figuri silogistice",
+        tone: "amber",
+        note: "Figura se recunoaște după **poziția termenului mediu (M)** în cele două premise.",
+        items: [
+          { name: "Figura I", major: ["M", "P"], minor: ["S", "M"], text: "M este **subiect** în majoră și **predicat** în minoră. Figura de referință pentru modurile perfecte." },
+          { name: "Figura II", major: ["P", "M"], minor: ["S", "M"], text: "M este **predicat** în ambele premise. Apar des moduri care cer conversiune pentru reducere." },
+          { name: "Figura III", major: ["M", "P"], minor: ["M", "S"], text: "M este **subiect** în ambele premise." },
+          { name: "Figura IV", major: ["P", "M"], minor: ["M", "S"], text: "M este **predicat** în majoră și **subiect** în minoră." },
+        ],
+      },
+    ],
+  },
 }

@@ -639,32 +639,8 @@
           ]
         },
         {
-          "type": "image",
-          "asset": "lesson-1/euler-guide.jpeg",
-          "alt": "Ghid vizual pentru diagrame Euler și relațiile dintre termeni și propoziții categorice",
-          "caption": "Imagine extrasă local din curs: relațiile dintre termeni și formele propozițiilor categorice pot fi înțelese vizual.",
-          "interactiveTitle": "Explorează diagrama Euler din curs",
-          "helpText": "Marcajele evidențiază zonele care fixează raporturile dintre termeni și legătura lor cu propozițiile categorice.",
-          "hotspots": [
-            {
-              "label": "Raporturi între termeni",
-              "x": 28,
-              "y": 28,
-              "text": "Partea stângă sintetizează identitatea, subordonarea, încrucișarea, contrarietatea și contradicția. Aici vezi exact ce tip de raport trebuie recunoscut între două noțiuni."
-            },
-            {
-              "label": "Formele A, E, I, O",
-              "x": 74,
-              "y": 29,
-              "text": "Partea dreaptă traduce vizual propozițiile categorice: incluziune pentru A, separare pentru E, intersecție pentru I și excludere parțială pentru O."
-            },
-            {
-              "label": "Aplicația practică",
-              "x": 74,
-              "y": 78,
-              "text": "Zona de jos explică de ce diagrama Euler este utilă: simplifică abstracțiile și ajută la verificarea rapidă a validității."
-            }
-          ]
+          "type": "sheet",
+          "sheetId": "eulerGuide"
         },
         {
           "type": "callout",

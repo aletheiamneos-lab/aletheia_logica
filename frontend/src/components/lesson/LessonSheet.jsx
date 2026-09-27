@@ -157,12 +157,19 @@ function LadderBlock({ block }) {
   )
 }
 
-function Venn({ kind }) {
+function Venn({ kind, frame }) {
   const a = tones.green
   const b = tones.blue
   const text = { fontSize: 13, fontWeight: 600, fill: "#1e293b", textAnchor: "middle", dominantBaseline: "middle" }
   return (
     <svg viewBox="0 0 140 84" className="h-20 w-full" role="img" aria-label={kind}>
+      {frame ? (
+        <>
+          <rect x="3" y="3" width="134" height="78" rx="8" fill="none" stroke="#94a3b8" strokeWidth="1.2" strokeDasharray="3 3" />
+          <text x="10" y="14" fontSize="8.5" fill="#64748b" fontWeight="600">{frame}</text>
+        </>
+      ) : null}
+      <g transform={frame ? "translate(12 12) scale(0.83)" : undefined}>
       {kind === "identitate" && (
         <>
           <circle cx="70" cy="42" r="32" fill={a.fill} stroke={a.stroke} strokeWidth="2" />
@@ -204,6 +211,7 @@ function Venn({ kind }) {
           <text x="94" y="42" {...text} fill="#be123c">non-A</text>
         </>
       )}
+      </g>
     </svg>
   )
 }
@@ -219,7 +227,8 @@ function RelationsBlock({ block }) {
               <span className="text-xs text-slate-400">{index + 1}.</span>
               {item.name}
             </p>
-            <Venn kind={item.kind} />
+            <Venn kind={item.kind} frame={item.frame} />
+            {item.text ? <p className="mb-2 text-xs leading-5 text-slate-600">{item.text}</p> : null}
             <p className="mt-auto text-xs leading-5 text-slate-500">
               <span className="font-semibold text-slate-700">Ex.: </span>
               {item.example}
@@ -627,6 +636,124 @@ function CardsBlock({ block }) {
   )
 }
 
+function EulerDiagram({ form }) {
+  const s = tones.blue
+  const p = tones.green
+  const text = { fontSize: 14, fontWeight: 700, fill: "#0f172a", textAnchor: "middle", dominantBaseline: "middle" }
+  return (
+    <svg viewBox="0 0 160 90" className="h-24 w-full" role="img" aria-label={`Diagrama Euler pentru ${form}`}>
+      <defs>
+        <pattern id="euler-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="6" stroke="#d97706" strokeWidth="2" />
+        </pattern>
+      </defs>
+      {form === "A" && (
+        <>
+          <circle cx="80" cy="45" r="40" fill={p.fill} stroke={p.stroke} strokeWidth="2" />
+          <circle cx="80" cy="56" r="20" fill="white" stroke={s.stroke} strokeWidth="2" />
+          <text x="80" y="20" {...text}>P</text>
+          <text x="80" y="56" {...text}>S</text>
+        </>
+      )}
+      {form === "E" && (
+        <>
+          <circle cx="45" cy="45" r="30" fill={s.fill} stroke={s.stroke} strokeWidth="2" />
+          <circle cx="115" cy="45" r="30" fill={p.fill} stroke={p.stroke} strokeWidth="2" />
+          <text x="45" y="45" {...text}>S</text>
+          <text x="115" y="45" {...text}>P</text>
+        </>
+      )}
+      {form === "I" && (
+        <>
+          <circle cx="62" cy="45" r="32" fill={s.fill} stroke={s.stroke} strokeWidth="2" />
+          <circle cx="98" cy="45" r="32" fill={p.fill} stroke={p.stroke} strokeWidth="2" />
+          <circle cx="80" cy="45" r="4" fill="#0f172a" />
+          <text x="48" y="45" {...text}>S</text>
+          <text x="112" y="45" {...text}>P</text>
+        </>
+      )}
+      {form === "O" && (
+        <>
+          <circle cx="62" cy="45" r="32" fill="url(#euler-hatch)" fillOpacity="0.5" stroke={s.stroke} strokeWidth="2" />
+          <circle cx="98" cy="45" r="32" fill="#e6f5ee" stroke={p.stroke} strokeWidth="2" />
+          <text x="46" y="45" {...text}>S</text>
+          <text x="112" y="45" {...text}>P</text>
+        </>
+      )}
+    </svg>
+  )
+}
+
+function EulerFormsBlock({ block }) {
+  const colors = { A: "blue", E: "green", I: "amber", O: "red" }
+  return (
+    <div>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="grid gap-3 sm:grid-cols-2">
+        {block.items.map((item) => {
+          const tone = toneOf(colors[item.form])
+          return (
+            <div key={item.form} className="flex flex-col rounded-2xl border border-slate-200 bg-white p-3">
+              <p className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                <span className={`inline-grid h-7 w-7 place-items-center rounded-full text-sm font-bold ${tone.chip}`}>{item.form}</span>
+                {item.name}
+                <span className="font-normal italic text-slate-500">„{item.reading}”</span>
+              </p>
+              <EulerDiagram form={item.form} />
+              <p className="text-xs leading-5 text-slate-600">
+                <Rich text={item.text} />
+              </p>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+function Premise({ terms }) {
+  // terms: ["M", "P"] — termenul mediu e evidențiat
+  return (
+    <span className="inline-flex items-center gap-1 font-mono text-base font-bold text-slate-700">
+      {terms.map((term, index) => (
+        <span key={index} className="inline-flex items-center gap-1">
+          {index > 0 ? <span className="text-slate-400">–</span> : null}
+          <span className={term === "M" ? "rounded-md bg-amber-100 px-1.5 text-amber-800 ring-1 ring-amber-300" : ""}>{term}</span>
+        </span>
+      ))}
+    </span>
+  )
+}
+
+function FiguresBlock({ block }) {
+  return (
+    <div>
+      <BlockTitle number={block.number} title={block.title} tone={block.tone} />
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {block.items.map((figure) => (
+          <div key={figure.name} className="flex flex-col rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="text-sm font-semibold uppercase tracking-wide text-slate-800">{figure.name}</p>
+            <div className="my-3 grid justify-center gap-1 text-center">
+              <Premise terms={figure.major} />
+              <Premise terms={figure.minor} />
+              <span className="mx-auto mt-0.5 h-0.5 w-16 bg-slate-700" aria-hidden="true" />
+              <Premise terms={["S", "P"]} />
+            </div>
+            <p className="text-xs leading-5 text-slate-600">
+              <Rich text={figure.text} />
+            </p>
+          </div>
+        ))}
+      </div>
+      {block.note ? (
+        <p className="mt-2 text-xs text-slate-500">
+          <Rich text={block.note} />
+        </p>
+      ) : null}
+    </div>
+  )
+}
+
 const renderers = {
   definition: DefinitionBlock,
   pair: PairBlock,
@@ -645,6 +772,8 @@ const renderers = {
   square: SquareBlock,
   truth: TruthBlock,
   cards: CardsBlock,
+  euler: EulerFormsBlock,
+  figures: FiguresBlock,
 }
 
 function Row({ row }) {

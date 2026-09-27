@@ -34,10 +34,6 @@ export const lesson3EditorialTheory = createLegacyEditorialTheory(lesson3Theory,
         ...silogismReferenceTables,
         {
           type: "syllogistic_figures",
-          imageAsset: "lesson-3/figuri-silogistice.png",
-          imageAlt: "Figurile silogistice clasice folosite ca reper vizual pentru fracții",
-          imageCaption:
-            "Imaginea ta rămâne dedesubt ca reper rapid, iar schema vectorială de sus explică fiecare figură ca un graf logic.",
           figures: [
             {
               id: "figure-1",
