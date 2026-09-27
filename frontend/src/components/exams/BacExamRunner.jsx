@@ -10,7 +10,6 @@ import {
   submitBacStudentReport,
 } from "../../api/client"
 import { useAuth } from "../../context/useAuth"
-import { downloadTeacherSolutionPdf } from "../../utils/generateTeacherSolutionPdf"
 import { clearTestProgress, publishTestProgress } from "../../utils/testProgressChannel"
 import {
   MobileExamFooter,
@@ -2018,6 +2017,8 @@ function BacExamRunner({ category, moduleData, moduleEntry, moduleSlug, trackSlu
   async function handleDownloadTeacherSolution() {
     try {
       const payload = await loadTeacherSolution()
+      // Generatorul PDF (cu fonturile incluse, ~700 KB) se încarcă doar când e nevoie.
+      const { downloadTeacherSolutionPdf } = await import("../../utils/generateTeacherSolutionPdf")
       downloadTeacherSolutionPdf(payload, teacherSolutionPdfFileName)
     } catch {
       // Error is rendered in the teacher resource panel.

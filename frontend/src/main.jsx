@@ -20,6 +20,13 @@ import "@fontsource/karla/400.css";
 import "@fontsource/karla/500.css";
 import "@fontsource/karla/600.css";
 import "@fontsource/karla/700.css";
+// Newsreader + Work Sans: combinația de fonturi „newsreader-work-sans” din setări.
+// Browserul descarcă doar fontul ales efectiv, deci celelalte nu încetinesc pagina.
+import "@fontsource/newsreader/400.css";
+import "@fontsource/newsreader/600.css";
+import "@fontsource/work-sans/400.css";
+import "@fontsource/work-sans/500.css";
+import "@fontsource/work-sans/600.css";
 import "@fontsource/newsreader/400.css";
 import "@fontsource/newsreader/600.css";
 import "@fontsource/newsreader/700.css";
