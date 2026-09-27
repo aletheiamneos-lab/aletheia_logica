@@ -23,7 +23,6 @@ La intrare, utilizatorul alege unul dintre cele doua moduri:
   - intra in interfata obisnuita a aplicatiei
 - `Profesor`
   - introduce parola
-  - parola implicita initiala este `NihilSineDeo`
   - dupa autentificare primeste acces la administrare, monitorizare si raportare
 
 Pe toate paginile autentificate exista un badge fix in coltul stanga-jos:
@@ -41,7 +40,7 @@ Profesorul poate schimba parola direct din aplicatie:
 - parola noua
 - confirmare parola noua
 
-Parola este salvata persistent local in SQLite. Daca nu exista una salvata, se foloseste parola implicita `NihilSineDeo`.
+Parola este salvata persistent. Parola initiala nu este trecuta in documentatie.
 
 ### 3. Teste integrate
 
