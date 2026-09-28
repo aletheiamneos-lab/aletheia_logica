@@ -13826,3 +13826,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Audit telefon: ținte de atingere și etichete puțin mai mari */
+@media (max-width: 768px) {
+  .back-link {
+    min-height: 40px;
+    padding-block: 8px;
+  }
+
+  .tag,
+  .status-pill {
+    font-size: 11px;
+  }
+}

@@ -357,11 +357,29 @@ function StepsBlock({ block }) {
 }
 
 function TableBlock({ block }) {
+  const wide = block.columns.length > 2
   return (
     <div>
       <BlockTitle number={block.number} title={block.title} tone={block.tone} />
-      <div className="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
-        <table className="w-full min-w-[420px] border-collapse text-sm">
+      {/* Pe telefon, tabelele cu 3+ coloane devin carduri (fără derulare orizontală). */}
+      {wide ? (
+        <div className="grid gap-2 sm:hidden">
+          {block.rows.map((row, rowIndex) => (
+            <dl key={rowIndex} className="grid gap-1 rounded-2xl border border-slate-200 bg-white p-3 text-sm">
+              {row.map((cell, cellIndex) => (
+                <div key={cellIndex} className="grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] gap-2">
+                  <dt className="text-xs font-semibold uppercase tracking-wide text-slate-400">{block.columns[cellIndex]}</dt>
+                  <dd className="leading-6 text-slate-700">
+                    <Rich text={cell} />
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          ))}
+        </div>
+      ) : null}
+      <div className={`overflow-hidden rounded-2xl border border-slate-200 bg-white ${wide ? "hidden sm:block" : ""}`}>
+        <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="bg-slate-50">
               {block.columns.map((column) => (
@@ -375,7 +393,7 @@ function TableBlock({ block }) {
             {block.rows.map((row, rowIndex) => (
               <tr key={rowIndex} className="odd:bg-white even:bg-slate-50/50">
                 {row.map((cell, cellIndex) => (
-                  <td key={cellIndex} className="border-b border-slate-100 px-3 py-2 align-top leading-6 text-slate-700">
+                  <td key={cellIndex} className="border-b border-slate-100 px-3 py-2 align-top leading-6 text-slate-700 [overflow-wrap:anywhere]">
                     <Rich text={cell} />
                   </td>
                 ))}
@@ -557,14 +575,14 @@ function SquareBlock({ block }) {
               key={String(value)}
               type="button"
               onClick={() => setAssumed(value)}
-              className={`px-3 py-1 text-sm font-semibold ${assumed === value ? (value ? "bg-emerald-600 text-white" : "bg-rose-600 text-white") : "bg-white text-slate-600"}`}
+              className={`min-h-10 px-3.5 py-1.5 text-sm font-semibold ${assumed === value ? (value ? "bg-emerald-600 text-white" : "bg-rose-600 text-white") : "bg-white text-slate-600"}`}
             >
               {value ? "adevărată" : "falsă"}
             </button>
           ))}
         </div>
         {chosen ? (
-          <button type="button" onClick={() => setChosen(null)} className="text-xs font-semibold text-slate-500 underline">
+          <button type="button" onClick={() => setChosen(null)} className="min-h-10 px-2 text-xs font-semibold text-slate-500 underline">
             resetează
           </button>
         ) : null}
@@ -665,7 +683,7 @@ function TruthBlock({ block }) {
             setPractice((value) => !value)
             setRevealed({})
           }}
-          className={`rounded-full border px-3 py-1 text-xs font-semibold ${practice ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-700"}`}
+          className={`min-h-10 rounded-full border px-3.5 py-1.5 text-xs font-semibold ${practice ? "border-slate-900 bg-slate-900 text-white" : "border-slate-300 bg-white text-slate-700"}`}
           aria-pressed={practice}
         >
           {practice ? `Exersare: ${shown}/${total} descoperite · arată tot` : "Exersează: ascunde rezultatele"}
@@ -700,7 +718,7 @@ function TruthBlock({ block }) {
                             <button
                               type="button"
                               onClick={() => setRevealed((current) => ({ ...current, [key]: true }))}
-                              className="w-full rounded-md bg-slate-100 py-0.5 font-semibold text-slate-500 hover:bg-slate-200"
+                              className="min-h-8 w-full rounded-md bg-slate-100 py-1 font-semibold text-slate-500 hover:bg-slate-200"
                               aria-label={`Arată rezultatul pentru ${table.symbol}, rândul ${rowIndex + 1}`}
                             >
                               ?

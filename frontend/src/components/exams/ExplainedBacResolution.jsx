@@ -51,13 +51,32 @@ const FINAL_ANSWER_ORDER = [
   "answers",
 ]
 
+const DEFAULT_MODES = [
+  { id: MODE_STEP_BY_STEP, label: "Rezolvare pas cu pas" },
+  { id: MODE_BAREM, label: "Barem explicat" },
+]
+
 function normalizeModes(modes = []) {
-  return modes.length
-    ? modes
-    : [
-        { id: MODE_STEP_BY_STEP, label: "Rezolvare pas cu pas" },
-        { id: MODE_BAREM, label: "Barem explicat" },
-      ]
+  if (!Array.isArray(modes) || !modes.length) {
+    return DEFAULT_MODES
+  }
+
+  // Unele variante au modurile scrise doar ca text („Barem explicat”), nu ca obiecte {id, label}.
+  const normalized = modes
+    .map((mode) => {
+      if (mode && typeof mode === "object" && mode.id) {
+        return { id: mode.id, label: mode.label ?? mode.id }
+      }
+      const label = String(mode ?? "").trim()
+      if (!label) {
+        return null
+      }
+      const id = /barem/i.test(label) ? MODE_BAREM : MODE_STEP_BY_STEP
+      return { id, label }
+    })
+    .filter(Boolean)
+
+  return normalized.length ? normalized : DEFAULT_MODES
 }
 
 function formatPoints(points) {
